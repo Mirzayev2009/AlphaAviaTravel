@@ -1,0 +1,200 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "tours": "Tour",
+      "destinations": "Destinazioni",
+      "about": "Chi Siamo",
+      "gallery": "Galleria",
+      "contact": "Contatti"
+    },
+    "language": "Lingua"
+  },
+  "hero": {
+    "title": "Scopri i Tesori Nascosti dell'Uzbekistan",
+    "subtitle": "Vivi la magia della Via della Seta con tour selezionati con cura",
+    "cta": "Esplora i Tour",
+    "ctaSecondary": "Visualizza le Destinazioni"
+  },
+  "home": {
+    "featuredTitle": "Tour in Evidenza",
+    "featuredSubtitle": "Viaggi selezionati attraverso le destinazioni più iconiche dell'Uzbekistan",
+    "aboutTitle": "Perché Scegliere AlphaTravel?",
+    "aboutText": "Con oltre 15 anni di esperienza, AlphaTravel offre esperienze autentiche e coinvolgenti in tutto l'Uzbekistan. Le nostre guide esperte danno vita alla storia, mentre la nostra attenzione ai dettagli garantisce un viaggio senza intoppi e indimenticabile.",
+    "aboutCta": "Scopri di più su di noi"
+  },
+  "tours": {
+    "title": "I Nostri Tour",
+    "subtitle": "Esperienze curate in tutto l'Uzbekistan",
+    "filter": {
+      "all": "Tutti i Tour",
+      "destination": "Per Destinazione",
+      "duration": "Per Durata",
+      "price": "Per Prezzo"
+    },
+    "card": {
+      "from": "Da",
+      "perPerson": "a persona",
+      "viewDetails": "Vedi Dettagli",
+      "register": "Iscriviti Ora"
+    },
+    "modal": {
+      "itinerary": "Itinerario",
+      "highlights": "Punti Salienti",
+      "day": "Giorno",
+      "close": "Chiudi",
+      "registerNow": "Iscriviti a questo Tour"
+    }
+  },
+  "destinations": {
+    "title": "Destinazioni",
+    "subtitle": "Esplora i luoghi più affascinanti dell'Uzbekistan",
+    "card": {
+      "learnMore": "Scopri di più",
+      "bestTime": "Periodo Migliore per Visitare"
+    },
+    "drawer": {
+      "close": "Chiudi",
+      "relatedTours": "Tour Correlati",
+      "viewTours": "Visualizza Tour Disponibili"
+    }
+  },
+  "registration": {
+    "title": "Registrazione al Tour",
+    "subtitle": "Compila il modulo sottostante e ti contatteremo entro 24 ore",
+    "form": {
+      "name": "Nome Completo",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Email",
+      "emailPlaceholder": "mario@example.com",
+      "phone": "Numero di Telefono",
+      "phonePlaceholder": "+39 123 456 7890",
+      "numberOfPeople": "Numero di Persone",
+      "notes": "Note Aggiuntive",
+      "notesPlaceholder": "Restrizioni alimentari, richieste speciali, ecc.",
+      "submit": "Invia Registrazione",
+      "submitting": "Invio in corso..."
+    },
+    "validation": {
+      "nameRequired": "Il nome è obbligatorio",
+      "emailRequired": "L'email è obbligatoria",
+      "emailInvalid": "Inserisci un'email valida",
+      "phoneRequired": "Il numero di telefono è obbligatorio",
+      "phoneInvalid": "Inserisci un numero di telefono valido",
+      "peopleMin": "È richiesta almeno 1 persona"
+    },
+    "success": "Registrazione completata! Ti contatteremo entro 24 ore.",
+    "error": "Registrazione fallita. Riprova.",
+    "organizer": {
+      "title": "Contatta il nostro Organizzatore del Tour",
+      "phone": "Chiamaci",
+      "email": "Scrivici una Email",
+      "hours": "Disponibile dalle 9 alle 20 (GMT+5)"
+    }
+  },
+  "about": {
+    "title": "Informazioni su AlphaTravel",
+    "subtitle": "Il tuo partner di fiducia per avventure in Uzbekistan",
+    "story": "Fondata nel 2008 dalla nativa di Samarcanda Aziza Karimova, AlphaTravel è diventata il principale tour operator dell'Uzbekistan. Siamo appassionati nel condividere la ricca storia, l'architettura straordinaria e l'ospitalità calorosa del nostro paese con viaggiatori da tutto il mondo.",
+    "mission": "La nostra missione è creare esperienze turistiche autentiche e sostenibili che beneficiano le comunità locali offrendo ricordi indimenticabili ai nostri ospiti.",
+    "teamTitle": "Incontra il Nostro Team",
+    "teamSubtitle": "Guide esperte e professionisti appassionati",
+    "storiesTitle": "Storie di Successo",
+    "storiesSubtitle": "Ascolta i viaggiatori che hanno scoperto l'Uzbekistan con noi"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per pianificare la tua avventura perfetta in Uzbekistan",
+    "form": {
+      "name": "Il tuo Nome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "La tua Email",
+      "emailPlaceholder": "mario@example.com",
+      "subject": "Oggetto",
+      "subjectPlaceholder": "Richiesta Tour",
+      "message": "Messaggio",
+      "messagePlaceholder": "Parlaci dei tuoi piani di viaggio...",
+      "submit": "Invia Messaggio",
+      "submitting": "Invio in corso..."
+    },
+    "validation": {
+      "nameRequired": "Il nome è obbligatorio",
+      "emailRequired": "L'email è obbligatoria",
+      "emailInvalid": "Inserisci un'email valida",
+      "subjectRequired": "L'oggetto è obbligatorio",
+      "messageRequired": "Il messaggio è obbligatorio"
+    },
+    "success": "Messaggio inviato con successo! Risponderemo presto.",
+    "error": "Invio del messaggio fallito. Riprova.",
+    "info": {
+      "title": "Informazioni di Contatto",
+      "office": "Ufficio Principale",
+      "address": "123 Via Registan, Samarcanda, Uzbekistan",
+      "phone": "Telefono",
+      "email": "Email",
+      "hours": "Orari di Apertura",
+      "hoursDetail": "Lunedì - Sabato: 9 - 20\nDomenica: 10 - 18"
+    }
+  },
+  "gallery": {
+    "title": "Galleria Fotografica",
+    "subtitle": "Un viaggio visivo attraverso le meraviglie dell'Uzbekistan",
+    "lightbox": {
+      "previous": "Precedente",
+      "next": "Successivo",
+      "close": "Chiudi"
+    }
+  },
+  "footer": {
+    "about": "AlphaTravel è specializzato in tour autentici in Uzbekistan, dalle antiche città della Via della Seta ai tesori culturali nascosti.",
+    "quickLinks": "Link Veloci",
+    "contactInfo": "Contatti",
+    "followUs": "Seguici",
+    "copyright": "© 2025 AlphaTravel. Tutti i diritti riservati."
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore",
+    "backToTop": "Torna Su",
+    "readMore": "Leggi di più",
+    "bookNow": "Prenota Ora",
+    "learnMore": "Scopri di più"
+  },
+  
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per aiutarti a pianificare la tua perfetta avventura in Uzbekistan",
+    "form": {
+      "name": "Il tuo nome",
+      "namePlaceholder": "Mario Rossi",
+      "email": "La tua email",
+      "emailPlaceholder": "mario@example.com",
+      "subject": "Oggetto",
+      "subjectPlaceholder": "Richiesta sul tour",
+      "message": "Messaggio",
+      "messagePlaceholder": "Raccontaci dei tuoi piani di viaggio...",
+      "submit": "Invia",
+      "submitting": "Invio..."
+    },
+    "validation": {
+      "nameRequired": "Il nome è obbligatorio",
+      "emailRequired": "L'email è obbligatoria",
+      "emailInvalid": "Inserisci un'email valida",
+      "subjectRequired": "L'oggetto è obbligatorio",
+      "messageRequired": "Il messaggio è obbligatorio"
+    },
+    "success": "Messaggio inviato con successo! Risponderemo presto.",
+    "error": "Invio del messaggio fallito. Riprova.",
+    "info": {
+      "title": "Informazioni di contatto",
+      "office": "Ufficio principale",
+      "address": "123 via Registan, Samarcanda, Uzbekistan",
+      "phone": "Telefono",
+      "email": "Email",
+      "hours": "Orari di apertura",
+      "hoursDetail": "Lunedì - Sabato: 9:00 - 20:00\nDomenica: 10:00 - 18:00"
+    }
+  }
+
+
+}

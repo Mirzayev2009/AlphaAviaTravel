@@ -1,0 +1,199 @@
+{
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "tours": "Tours",
+      "destinations": "Destinos",
+      "about": "Acerca de",
+      "gallery": "Galería",
+      "contact": "Contacto"
+    },
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Descubre los Tesoros Ocultos de Uzbekistán",
+    "subtitle": "Experimenta la magia de la Ruta de la Seda con tours cuidadosamente seleccionados",
+    "cta": "Explorar Tours",
+    "ctaSecondary": "Ver Destinos"
+  },
+  "home": {
+    "featuredTitle": "Tours Destacados",
+    "featuredSubtitle": "Viajes seleccionados por los destinos más icónicos de Uzbekistán",
+    "aboutTitle": "¿Por qué elegir AlphaTravel?",
+    "aboutText": "Con más de 15 años de experiencia, AlphaTravel ofrece experiencias auténticas e inmersivas por todo Uzbekistán. Nuestros guías expertos dan vida a la historia, mientras que nuestra atención al detalle asegura un viaje impecable e inolvidable.",
+    "aboutCta": "Conozca más sobre nosotros"
+  },
+  "tours": {
+    "title": "Nuestros Tours",
+    "subtitle": "Experiencias cuidadosamente seleccionadas en Uzbekistán",
+    "filter": {
+      "all": "Todos los Tours",
+      "destination": "Por Destino",
+      "duration": "Por Duración",
+      "price": "Por Precio"
+    },
+    "card": {
+      "from": "Desde",
+      "perPerson": "por persona",
+      "viewDetails": "Ver Detalles",
+      "register": "Registrarse Ahora"
+    },
+    "modal": {
+      "itinerary": "Itinerario",
+      "highlights": "Aspectos Destacados",
+      "day": "Día",
+      "close": "Cerrar",
+      "registerNow": "Registrarse en este Tour"
+    }
+  },
+  "destinations": {
+    "title": "Destinos",
+    "subtitle": "Explora los lugares más fascinantes de Uzbekistán",
+    "card": {
+      "learnMore": "Aprende Más",
+      "bestTime": "Mejor época para visitar"
+    },
+    "drawer": {
+      "close": "Cerrar",
+      "relatedTours": "Tours Relacionados",
+      "viewTours": "Ver Tours Disponibles"
+    }
+  },
+  "registration": {
+    "title": "Registro para el Tour",
+    "subtitle": "Rellena el formulario y nos pondremos en contacto en 24 horas",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Correo Electrónico",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "+1 234 567 8900",
+      "numberOfPeople": "Número de Personas",
+      "notes": "Notas Adicionales",
+      "notesPlaceholder": "Restricciones dietéticas, solicitudes especiales, etc.",
+      "submit": "Enviar Registro",
+      "submitting": "Enviando..."
+    },
+    "validation": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Ingrese un correo válido",
+      "phoneRequired": "El número de teléfono es obligatorio",
+      "phoneInvalid": "Ingrese un número de teléfono válido",
+      "peopleMin": "Se requiere al menos 1 persona"
+    },
+    "success": "¡Registro exitoso! Nos pondremos en contacto en 24 horas.",
+    "error": "El registro falló. Intente de nuevo.",
+    "organizer": {
+      "title": "Contacta a nuestro organizador de tours",
+      "phone": "Llámanos",
+      "email": "Envíanos un correo",
+      "hours": "Disponible de 9 AM a 8 PM (GMT+5)"
+    }
+  },
+  "about": {
+    "title": "Acerca de AlphaTravel",
+    "subtitle": "Tu socio confiable para aventuras en Uzbekistán",
+    "story": "Fundada en 2008 por la nativa de Samarcanda Aziza Karimova, AlphaTravel se ha convertido en el principal operador turístico de Uzbekistán. Nos apasiona compartir la rica historia, la arquitectura impresionante y la cálida hospitalidad de nuestro país con viajeros de todo el mundo.",
+    "mission": "Nuestra misión es crear experiencias turísticas auténticas y sostenibles que beneficien a las comunidades locales mientras brindamos recuerdos inolvidables a nuestros invitados.",
+    "teamTitle": "Conoce a nuestro equipo",
+    "teamSubtitle": "Guías expertos y profesionales apasionados",
+    "storiesTitle": "Historias de Éxito",
+    "storiesSubtitle": "Escucha a viajeros que han experimentado Uzbekistán con nosotros"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Estamos aquí para planear tu aventura perfecta en Uzbekistán",
+    "form": {
+      "name": "Tu Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Tu Correo",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Consulta sobre tour",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tus planes de viaje...",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando..."
+    },
+    "validation": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Ingrese un correo válido",
+      "subjectRequired": "El asunto es obligatorio",
+      "messageRequired": "El mensaje es obligatorio"
+    },
+    "success": "¡Mensaje enviado con éxito! Responderemos pronto.",
+    "error": "Error al enviar el mensaje. Intente de nuevo.",
+    "info": {
+      "title": "Información de Contacto",
+      "office": "Oficina Principal",
+      "address": "123 Calle Registán, Samarcanda, Uzbekistán",
+      "phone": "Teléfono",
+      "email": "Correo",
+      "hours": "Horario de Atención",
+      "hoursDetail": "Lunes - Sábado: 9 AM - 8 PM\nDomingo: 10 AM - 6 PM"
+    }
+  },
+  "gallery": {
+    "title": "Galería de Fotos",
+    "subtitle": "Un viaje visual por las maravillas de Uzbekistán",
+    "lightbox": {
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "close": "Cerrar"
+    }
+  },
+  "footer": {
+    "about": "AlphaTravel se especializa en tours auténticos en Uzbekistán, desde las antiguas ciudades de la Ruta de la Seda hasta joyas culturales ocultas.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactInfo": "Información de Contacto",
+    "followUs": "Síguenos",
+    "copyright": "© 2025 AlphaTravel. Todos los derechos reservados."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "backToTop": "Volver Arriba",
+    "readMore": "Leer Más",
+    "bookNow": "Reservar Ahora",
+    "learnMore": "Saber Más"
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "Estamos aquí para ayudarte a planificar tu aventura perfecta en Uzbekistán",
+    "form": {
+      "name": "Su nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Su correo electrónico",
+      "emailPlaceholder": "juan@example.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Consulta sobre el tour",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntenos sobre sus planes de viaje...",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando..."
+    },
+    "validation": {
+      "nameRequired": "El nombre es obligatorio",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "emailInvalid": "Por favor ingrese un correo electrónico válido",
+      "subjectRequired": "El asunto es obligatorio",
+      "messageRequired": "El mensaje es obligatorio"
+    },
+    "success": "¡Mensaje enviado con éxito! Responderemos pronto.",
+    "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo.",
+    "info": {
+      "title": "Información de contacto",
+      "office": "Oficina principal",
+      "address": "Calle Registán 123, Samarcanda, Uzbekistán",
+      "phone": "Teléfono",
+      "email": "Correo electrónico",
+      "hours": "Horario de atención",
+      "hoursDetail": "Lunes - Sábado: 9:00 - 20:00\nDomingo: 10:00 - 18:00"
+    }
+  }
+
+
+}

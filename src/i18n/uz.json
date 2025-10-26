@@ -1,0 +1,200 @@
+{
+  "header": {
+    "nav": {
+      "home": "Bosh sahifa",
+      "tours": "Turlar",
+      "destinations": "Yo‘nalishlar",
+      "about": "Biz haqimizda",
+      "gallery": "Galereya",
+      "contact": "Kontaktlar"
+    },
+    "language": "Til"
+  },
+  "hero": {
+    "title": "O‘zbekistonning Yashirin Xazinalarini Kashf eting",
+    "subtitle": "Ixtisoslashgan sayohatlar orqali Ipak Yo‘li sehrini his qiling",
+    "cta": "Turlarni Ko‘rish",
+    "ctaSecondary": "Yo‘nalishlarni Ko‘rish"
+  },
+  "home": {
+    "featuredTitle": "Tanlangan Turlar",
+    "featuredSubtitle": "O‘zbekistonning eng mashhur yo‘nalishlariga mo‘ljallangan sayohatlar",
+    "aboutTitle": "Nima uchun AlphaTravel?",
+    "aboutText": "15 yildan ortiq tajribaga ega AlphaTravel O‘zbekistonda haqiqiy va chuqur sayohat tajribasini taklif etadi. Bizning tajribali qo‘llanmalarimiz tarixni jonlantiradi, detallarga e’tibor esa sizning sayohatingizni silliq va unutilmas qiladi.",
+    "aboutCta": "Biz haqimizda ko‘proq bilish"
+  },
+  "tours": {
+    "title": "Bizning Turlar",
+    "subtitle": "O‘zbekiston bo‘ylab tanlab tuzilgan tajribalar",
+    "filter": {
+      "all": "Barcha Turlar",
+      "destination": "Yo‘nalish bo‘yicha",
+      "duration": "Davomiylik bo‘yicha",
+      "price": "Narx bo‘yicha"
+    },
+    "card": {
+      "from": "Dan",
+      "perPerson": "shaxsga",
+      "viewDetails": "Tafsilotlarni Ko‘rish",
+      "register": "Hozir Ro‘yxatdan O‘tish"
+    },
+    "modal": {
+      "itinerary": "Marshrut",
+      "highlights": "Asosiy Nuqtalar",
+      "day": "Kun",
+      "close": "Yopish",
+      "registerNow": "Ushbu Turgacha Ro‘yxatdan O‘tish"
+    }
+  },
+  "destinations": {
+    "title": "Yo‘nalishlar",
+    "subtitle": "O‘zbekistonning eng qiziqarli joylarini kashf eting",
+    "card": {
+      "learnMore": "Ko‘proq Bilish",
+      "bestTime": "Tashrif uchun Eng Yaxshi Vaqt"
+    },
+    "drawer": {
+      "close": "Yopish",
+      "relatedTours": "Tegishli Turlar",
+      "viewTours": "Mavjud Turlarni Ko‘rish"
+    }
+  },
+  "registration": {
+    "title": "Turga Ro‘yxatdan O‘tish",
+    "subtitle": "Quyidagi shaklni to‘ldiring va biz 24 soat ichida siz bilan bog‘lanamiz",
+    "form": {
+      "name": "To‘liq Ism",
+      "namePlaceholder": "Ali Mirzayev",
+      "email": "Elektron Pochta",
+      "emailPlaceholder": "ali@example.com",
+      "phone": "Telefon Raqami",
+      "phonePlaceholder": "+998 90 123 45 67",
+      "numberOfPeople": "Odamlar soni",
+      "notes": "Qo‘shimcha Izohlar",
+      "notesPlaceholder": "Dietaga oid cheklovlar, maxsus so‘rovlar va h.k.",
+      "submit": "Ro‘yxatdan O‘tishni Yuborish",
+      "submitting": "Yuborilmoqda..."
+    },
+    "validation": {
+      "nameRequired": "Ism talab qilinadi",
+      "emailRequired": "Elektron pochta talab qilinadi",
+      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "phoneRequired": "Telefon raqami talab qilinadi",
+      "phoneInvalid": "Iltimos, haqiqiy telefon raqami kiriting",
+      "peopleMin": "Kamida 1 kishi talab qilinadi"
+    },
+    "success": "Ro‘yxatdan o‘tish muvaffaqiyatli! Biz 24 soat ichida siz bilan bog‘lanamiz.",
+    "error": "Ro‘yxatdan o‘tishda xatolik yuz berdi. Iltimos, qayta urinib ko‘ring.",
+    "organizer": {
+      "title": "Tur Tashkilotchimiz bilan Bog‘lanish",
+      "phone": "Qo‘ng‘iroq Qilish",
+      "email": "Email Yuborish",
+      "hours": "9:00 dan 20:00 gacha mavjud (GMT+5)"
+    }
+  },
+  "about": {
+    "title": "AlphaTravel haqida",
+    "subtitle": "O‘zbekistondagi sarguzashtlaringiz uchun ishonchli hamkoringiz",
+    "story": "2008 yilda Samarqandlik Aziza Karimova tomonidan tashkil etilgan AlphaTravel O‘zbekistonning yetakchi tur operatoriga aylangan. Biz mamlakatimizning boy tarixini, ajoyib arxitekturasini va iliq mehmondo‘stligini butun dunyo sayohatchilari bilan baham ko‘rishni yaxshi ko‘ramiz.",
+    "mission": "Bizning missiyamiz — mahalliy jamoalarga foyda keltiradigan, mehmonlarimiz uchun unutilmas xotiralar qoldiradigan haqiqiy va barqaror turizm tajribalarini yaratishdir.",
+    "teamTitle": "Jamoamiz bilan tanishing",
+    "teamSubtitle": "Tajriba qo‘llanmalar va ishtiyoqli mutaxassislar",
+    "storiesTitle": "Muvaffaqiyat Hikoyalari",
+    "storiesSubtitle": "Biz bilan O‘zbekistonda sayohat qilgan sayohatchilardan hikoyalar"
+  },
+  "contact": {
+    "title": "Bog‘lanish",
+    "subtitle": "Biz sizning mukammal O‘zbekiston sarguzashtingizni rejalashtirishga yordam beramiz",
+    "form": {
+      "name": "Ismingiz",
+      "namePlaceholder": "Ali Mirzayev",
+      "email": "Elektron pochtangiz",
+      "emailPlaceholder": "ali@example.com",
+      "subject": "Mavzu",
+      "subjectPlaceholder": "Tur bo‘yicha so‘rov",
+      "message": "Xabar",
+      "messagePlaceholder": "Sayohat rejalaringiz haqida ayting...",
+      "submit": "Xabar Yuborish",
+      "submitting": "Yuborilmoqda..."
+    },
+    "validation": {
+      "nameRequired": "Ism talab qilinadi",
+      "emailRequired": "Elektron pochta talab qilinadi",
+      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "subjectRequired": "Mavzu talab qilinadi",
+      "messageRequired": "Xabar talab qilinadi"
+    },
+    "success": "Xabar muvaffaqiyatli yuborildi! Tez orada javob beramiz.",
+    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+    "info": {
+      "title": "Kontakt Ma’lumotlari",
+      "office": "Bosh Ofis",
+      "address": "123 Registon ko‘chasi, Samarqand, O‘zbekiston",
+      "phone": "Telefon",
+      "email": "Email",
+      "hours": "Ish vaqti",
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshanba: 10:00 - 18:00"
+    }
+  },
+  "gallery": {
+    "title": "Foto Galereya",
+    "subtitle": "O‘zbekiston mo‘jizalariga vizual sayohat",
+    "lightbox": {
+      "previous": "Oldingi",
+      "next": "Keyingi",
+      "close": "Yopish"
+    }
+  },
+  "footer": {
+    "about": "AlphaTravel O‘zbekistondagi haqiqiy turlarga ixtisoslashgan, Ipak Yo‘li qadimiy shaharlaridan yashirin madaniy xazinalargacha.",
+    "quickLinks": "Tezkor Havolalar",
+    "contactInfo": "Kontakt Ma’lumotlari",
+    "followUs": "Bizni Kuzatish",
+    "copyright": "© 2025 AlphaTravel. Barcha huquqlar himoyalangan."
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Xatolik yuz berdi",
+    "backToTop": "Yuqoriga",
+    "readMore": "Batafsil o‘qish",
+    "bookNow": "Hozir Buyurtma Berish",
+    "learnMore": "Batafsil Bilish"
+  },
+  
+  "contact": {
+    "title": "Bog‘lanish",
+    "subtitle": "Biz sizning mukammal O‘zbekiston sarguzashtingizni rejalashtirishga yordam beramiz",
+    "form": {
+      "name": "Ismingiz",
+      "namePlaceholder": "Ali Mirzayev",
+      "email": "Elektron pochta",
+      "emailPlaceholder": "ali@example.com",
+      "subject": "Mavzu",
+      "subjectPlaceholder": "Tur bo‘yicha so‘rov",
+      "message": "Xabar",
+      "messagePlaceholder": "Sayohat rejalaringiz haqida ayting...",
+      "submit": "Xabar Yuborish",
+      "submitting": "Yuborilmoqda..."
+    },
+    "validation": {
+      "nameRequired": "Ism talab qilinadi",
+      "emailRequired": "Elektron pochta talab qilinadi",
+      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "subjectRequired": "Mavzu talab qilinadi",
+      "messageRequired": "Xabar talab qilinadi"
+    },
+    "success": "Xabar muvaffaqiyatli yuborildi! Tez orada javob beramiz.",
+    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+    "info": {
+      "title": "Kontakt Ma’lumotlari",
+      "office": "Bosh Ofis",
+      "address": "123 Registon ko‘chasi, Samarqand, O‘zbekiston",
+      "phone": "Telefon",
+      "email": "Email",
+      "hours": "Ish vaqti",
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshanba: 10:00 - 18:00"
+    }
+  }
+
+
+}

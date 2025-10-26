@@ -1,0 +1,247 @@
+{
+  "header": {
+    "nav": {
+      "home": "Home",
+      "tours": "Tours",
+      "destinations": "Destinations",
+      "about": "About",
+      "gallery": "Gallery",
+      "contact": "Contact"
+    },
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Discover Uzbekistan's Hidden Treasures",
+    "subtitle": "Experience the magic of the Silk Road with expertly curated tours",
+    "cta": "Explore Tours",
+    "ctaSecondary": "View Destinations"
+  },
+  "home": {
+    "featuredTitle": "Featured Tours",
+    "featuredSubtitle": "Handpicked journeys through Uzbekistan's most iconic destinations",
+    "aboutTitle": "Why Choose AlphaTravel?",
+    "aboutText": "With over 15 years of experience, AlphaTravel offers authentic, immersive experiences across Uzbekistan. Our expert guides bring history alive, while our attention to detail ensures your journey is seamless and unforgettable.",
+    "aboutCta": "Learn More About Us"
+  },
+  "tours": {
+    "title": "Our Tours",
+    "subtitle": "Curated experiences across Uzbekistan",
+    "filter": {
+      "all": "All Tours",
+      "destination": "By Destination",
+      "duration": "By Duration",
+      "price": "By Price"
+    },
+    "card": {
+      "from": "From",
+      "perPerson": "per person",
+      "viewDetails": "View Details",
+      "register": "Register Now"
+    },
+    "modal": {
+      "itinerary": "Itinerary",
+      "highlights": "Highlights",
+      "day": "Day",
+      "close": "Close",
+      "registerNow": "Register for This Tour"
+    }
+  },
+  "destinations": {
+    "title": "Destinations",
+    "subtitle": "Explore Uzbekistan's most captivating places",
+    "card": {
+      "learnMore": "Learn More",
+      "bestTime": "Best Time to Visit"
+    },
+    "drawer": {
+      "close": "Close",
+      "relatedTours": "Related Tours",
+      "viewTours": "View Available Tours"
+    }
+  },
+  "registration": {
+    "title": "Register for Tour",
+    "subtitle": "Fill out the form below and we'll contact you within 24 hours",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 234 567 8900",
+      "numberOfPeople": "Number of People",
+      "notes": "Additional Notes",
+      "notesPlaceholder": "Dietary restrictions, special requests, etc.",
+      "submit": "Submit Registration",
+      "submitting": "Submitting..."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number",
+      "peopleMin": "At least 1 person required"
+    },
+    "success": "Registration successful! We'll contact you within 24 hours.",
+    "error": "Registration failed. Please try again.",
+    "organizer": {
+      "title": "Contact Our Tour Organizer",
+      "phone": "Call Us",
+      "email": "Email Us",
+      "hours": "Available 9 AM - 8 PM (GMT+5)"
+    }
+  },
+  "about": {
+    "title": "About AlphaTravel",
+    "subtitle": "Your trusted partner for Uzbekistan adventures",
+    "story": "Founded in 2008 by Samarkand native Aziza Karimova, AlphaTravel has grown into Uzbekistan's premier tour operator. We're passionate about sharing our country's rich history, stunning architecture, and warm hospitality with travelers from around the world.",
+    "mission": "Our mission is to create authentic, sustainable tourism experiences that benefit local communities while providing unforgettable memories for our guests.",
+    "teamTitle": "Meet Our Team",
+    "teamSubtitle": "Expert guides and passionate professionals",
+    "storiesTitle": "Success Stories",
+    "storiesSubtitle": "Hear from travelers who've experienced Uzbekistan with us"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Your Email",
+      "emailPlaceholder": "john@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Tour inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your travel plans...",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
+    },
+    "success": "Message sent successfully! We'll respond soon.",
+    "error": "Failed to send message. Please try again.",
+    "info": {
+      "title": "Contact Information",
+      "office": "Main Office",
+      "address": "123 Registan Street, Samarkand, Uzbekistan",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "A visual journey through Uzbekistan's wonders",
+    "lightbox": {
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "about": "AlphaTravel specializes in authentic Uzbekistan tours, from the ancient cities of the Silk Road to hidden cultural gems.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 AlphaTravel. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToTop": "Back to Top",
+    "readMore": "Read More",
+    "bookNow": "Book Now",
+    "learnMore": "Learn More"
+  },
+  
+  "form": {
+    "bookThisTour": "Register for this tour",
+    "fillDetails": "Fill your contact info to reserve a spot",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "participants": "Participants",
+    "notes": "Notes (optional)",
+    "bookNow": "Book now",
+    "submitting": "Submitting...",
+    "thanks": "Thanks — we received your registration.",
+    "savedOffline": "Saved locally — we'll try to send it later.",
+    "contactOrganizer": "Contact organizer"
+  },
+  "tours": {
+    "detail": {
+      "title": "Alpha Avia tours",
+      "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
+      "duration": "Duration",
+      "dates": "Dates",
+      "price": "Price",
+      "highlights": "Highlights",
+      "itinerary": "Itinerary",
+      "organizerContact": "Organizer contact"
+    },
+    "card": {
+      "viewDetails":"View Details",
+      "register":"Register Now",
+      "perPerson":"per person"
+    },
+    "filter": {
+        "all":"All Tours"
+    }
+
+  },
+  "contact": {
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website"
+  },
+  "validation": {
+    "required": "{{field}} is required",
+    "invalidEmail": "Invalid email address",
+    "minParticipants": "At least one participant required"
+  
+},
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Your Email",
+      "emailPlaceholder": "john@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Tour inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your travel plans...",
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Subject is required",
+      "messageRequired": "Message is required"
+    },
+    "success": "Message sent successfully! We'll respond soon.",
+    "error": "Failed to send message. Please try again.",
+    "info": {
+      "title": "Contact Information",
+      "office": "Main Office",
+      "address": "123 Registan Street, Samarkand, Uzbekistan",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
+    }
+  }
+
+
+
+}

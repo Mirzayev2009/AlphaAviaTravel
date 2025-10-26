@@ -1,0 +1,199 @@
+{
+  "header": {
+    "nav": {
+      "home": "首页",
+      "tours": "旅游",
+      "destinations": "目的地",
+      "about": "关于我们",
+      "gallery": "画廊",
+      "contact": "联系"
+    },
+    "language": "语言"
+  },
+  "hero": {
+    "title": "探索乌兹别克斯坦的隐藏宝藏",
+    "subtitle": "通过精心策划的旅行体验丝绸之路的魔力",
+    "cta": "探索旅游",
+    "ctaSecondary": "查看目的地"
+  },
+  "home": {
+    "featuredTitle": "精选旅游",
+    "featuredSubtitle": "乌兹别克斯坦最具代表性目的地的精选旅行",
+    "aboutTitle": "为什么选择AlphaTravel？",
+    "aboutText": "凭借15年以上的经验，AlphaTravel在乌兹别克斯坦提供真实且沉浸式的旅行体验。我们的专业导游让历史生动呈现，同时关注细节，确保您的旅程顺畅且难忘。",
+    "aboutCta": "了解更多关于我们"
+  },
+  "tours": {
+    "title": "我们的旅游",
+    "subtitle": "乌兹别克斯坦的精选体验",
+    "filter": {
+      "all": "所有旅游",
+      "destination": "按目的地",
+      "duration": "按时长",
+      "price": "按价格"
+    },
+    "card": {
+      "from": "起价",
+      "perPerson": "每人",
+      "viewDetails": "查看详情",
+      "register": "立即报名"
+    },
+    "modal": {
+      "itinerary": "行程",
+      "highlights": "亮点",
+      "day": "天",
+      "close": "关闭",
+      "registerNow": "报名此行程"
+    }
+  },
+  "destinations": {
+    "title": "目的地",
+    "subtitle": "探索乌兹别克斯坦最迷人的地方",
+    "card": {
+      "learnMore": "了解更多",
+      "bestTime": "最佳访问时间"
+    },
+    "drawer": {
+      "close": "关闭",
+      "relatedTours": "相关旅游",
+      "viewTours": "查看可用旅游"
+    }
+  },
+  "registration": {
+    "title": "旅游报名",
+    "subtitle": "填写以下表格，我们将在24小时内与您联系",
+    "form": {
+      "name": "全名",
+      "namePlaceholder": "张三",
+      "email": "电子邮件",
+      "emailPlaceholder": "zhang@example.com",
+      "phone": "电话号码",
+      "phonePlaceholder": "+86 123 4567 8900",
+      "numberOfPeople": "人数",
+      "notes": "附加说明",
+      "notesPlaceholder": "饮食限制、特殊要求等",
+      "submit": "提交报名",
+      "submitting": "提交中..."
+    },
+    "validation": {
+      "nameRequired": "姓名为必填项",
+      "emailRequired": "电子邮件为必填项",
+      "emailInvalid": "请输入有效电子邮件",
+      "phoneRequired": "电话号码为必填项",
+      "phoneInvalid": "请输入有效电话号码",
+      "peopleMin": "至少需要1人"
+    },
+    "success": "报名成功！我们将在24小时内与您联系。",
+    "error": "报名失败，请重试。",
+    "organizer": {
+      "title": "联系旅游组织者",
+      "phone": "拨打电话",
+      "email": "发送邮件",
+      "hours": "服务时间 9:00 - 20:00 (GMT+5)"
+    }
+  },
+  "about": {
+    "title": "关于AlphaTravel",
+    "subtitle": "您在乌兹别克斯坦冒险的可靠伙伴",
+    "story": "AlphaTravel由撒马尔罕本地人Aziza Karimova于2008年创立，已发展为乌兹别克斯坦领先的旅行社。我们热衷于与世界各地的旅行者分享我们国家丰富的历史、壮丽的建筑和热情好客。",
+    "mission": "我们的使命是创造真实、可持续的旅游体验，为当地社区带来益处，同时为游客留下难忘的回忆。",
+    "teamTitle": "认识我们的团队",
+    "teamSubtitle": "专业导游和充满热情的专业人士",
+    "storiesTitle": "成功故事",
+    "storiesSubtitle": "听听与我们一起体验乌兹别克斯坦的旅行者的故事"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们为您的乌兹别克斯坦完美旅行提供帮助",
+    "form": {
+      "name": "您的姓名",
+      "namePlaceholder": "张三",
+      "email": "您的邮箱",
+      "emailPlaceholder": "zhang@example.com",
+      "subject": "主题",
+      "subjectPlaceholder": "旅游咨询",
+      "message": "信息",
+      "messagePlaceholder": "告诉我们您的旅行计划...",
+      "submit": "发送信息",
+      "submitting": "发送中..."
+    },
+    "validation": {
+      "nameRequired": "姓名为必填项",
+      "emailRequired": "电子邮件为必填项",
+      "emailInvalid": "请输入有效电子邮件",
+      "subjectRequired": "主题为必填项",
+      "messageRequired": "信息为必填项"
+    },
+    "success": "信息发送成功！我们将尽快回复。",
+    "error": "信息发送失败，请重试。",
+    "info": {
+      "title": "联系信息",
+      "office": "主办公室",
+      "address": "乌兹别克斯坦撒马尔罕，雷吉斯坦街123号",
+      "phone": "电话",
+      "email": "电子邮件",
+      "hours": "办公时间",
+      "hoursDetail": "周一至周六: 9:00 - 20:00\n周日: 10:00 - 18:00"
+    }
+  },
+  "gallery": {
+    "title": "照片库",
+    "subtitle": "乌兹别克斯坦奇观的视觉之旅",
+    "lightbox": {
+      "previous": "上一张",
+      "next": "下一张",
+      "close": "关闭"
+    }
+  },
+  "footer": {
+    "about": "AlphaTravel专注于乌兹别克斯坦的真实旅游，从丝绸之路古城到隐藏的文化宝藏。",
+    "quickLinks": "快速链接",
+    "contactInfo": "联系信息",
+    "followUs": "关注我们",
+    "copyright": "© 2025 AlphaTravel. 保留所有权利。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "backToTop": "回到顶部",
+    "readMore": "阅读更多",
+    "bookNow": "立即预订",
+    "learnMore": "了解更多"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们帮助您规划完美的乌兹别克斯坦之旅",
+    "form": {
+      "name": "您的姓名",
+      "namePlaceholder": "张三",
+      "email": "您的邮箱",
+      "emailPlaceholder": "zhang@example.com",
+      "subject": "主题",
+      "subjectPlaceholder": "旅游咨询",
+      "message": "信息",
+      "messagePlaceholder": "告诉我们您的旅行计划...",
+      "submit": "发送信息",
+      "submitting": "发送中..."
+    },
+    "validation": {
+      "nameRequired": "姓名为必填项",
+      "emailRequired": "电子邮件为必填项",
+      "emailInvalid": "请输入有效电子邮件",
+      "subjectRequired": "主题为必填项",
+      "messageRequired": "信息为必填项"
+    },
+    "success": "信息发送成功！我们将尽快回复。",
+    "error": "信息发送失败，请重试。",
+    "info": {
+      "title": "联系信息",
+      "office": "主办公室",
+      "address": "乌兹别克斯坦撒马尔罕，雷吉斯坦街123号",
+      "phone": "电话",
+      "email": "电子邮件",
+      "hours": "办公时间",
+      "hoursDetail": "周一至周六: 9:00 - 20:00\n周日: 10:00 - 18:00"
+    }
+  }
+
+
+}
