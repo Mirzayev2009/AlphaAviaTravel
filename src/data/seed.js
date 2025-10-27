@@ -1,11 +1,13 @@
 // src/data/data.js
-// Enhanced, presentation-ready seed data for AlphaTravel
-// You can later replace with API integration if needed
+// Enhanced, presentation-ready seed data for AlphaTravel with i18n support
 
 export const tours = [
   {
     id: "t1",
     title: "Samarkand Essentials — 3 Days",
+    titleKey: "tours.samarkand.title",
+    short: "Discover the crown jewel of the Silk Road — Registan, Gur-e-Amir, and the timeless charm of Samarkand's old city.",
+    shortKey: "tours.samarkand.short",
     destination: "Samarkand",
     region: "Central Uzbekistan",
     images: [
@@ -16,8 +18,6 @@ export const tours = [
     duration: "3 days / 2 nights",
     rating: 4.8,
     availableDates: ["2025-11-10", "2025-11-20", "2025-12-05"],
-    short:
-      "Discover the crown jewel of the Silk Road — Registan, Gur-e-Amir, and the timeless charm of Samarkand’s old city.",
     itinerary: [
       {
         day: 1,
@@ -55,6 +55,9 @@ export const tours = [
   {
     id: "t2",
     title: "Khiva Ancient City — 2 Days",
+    titleKey: "tours.khiva.title",
+    short: "Step into a living museum — explore Ichan-Kala's ancient walls, turquoise minarets, and the spirit of old Khiva.",
+    shortKey: "tours.khiva.short",
     destination: "Khiva",
     region: "Khorezm Region",
     images: [
@@ -65,8 +68,6 @@ export const tours = [
     duration: "2 days / 1 night",
     rating: 4.7,
     availableDates: ["2025-11-12", "2025-11-26", "2025-12-10"],
-    short:
-      "Step into a living museum — explore Ichan-Kala’s ancient walls, turquoise minarets, and the spirit of old Khiva.",
     itinerary: [
       {
         day: 1,
@@ -96,6 +97,9 @@ export const tours = [
   {
     id: "t3",
     title: "Bukhara Heritage — 4 Days",
+    titleKey: "tours.bukhara.title",
+    short: "Immerse yourself in the timeless beauty of Bukhara — where every street whispers stories of scholars and caravans.",
+    shortKey: "tours.bukhara.short",
     destination: "Bukhara",
     region: "Bukhara Region",
     images: [
@@ -106,8 +110,6 @@ export const tours = [
     duration: "4 days / 3 nights",
     rating: 4.9,
     availableDates: ["2025-11-14", "2025-12-01", "2025-12-20"],
-    short:
-      "Immerse yourself in the timeless beauty of Bukhara — where every street whispers stories of scholars and caravans.",
     itinerary: [
       {
         day: 1,
@@ -137,6 +139,9 @@ export const tours = [
   {
     id: "t4",
     title: "Tashkent Modern & Historic — 2 Days",
+    titleKey: "tours.tashkent.title",
+    short: "Experience the fusion of modern life and ancient heritage — metro art, bustling bazaars, and sacred landmarks.",
+    shortKey: "tours.tashkent.short",
     destination: "Tashkent",
     region: "Tashkent Region",
     images: [
@@ -147,8 +152,6 @@ export const tours = [
     duration: "2 days / 1 night",
     rating: 4.6,
     availableDates: ["2025-11-09", "2025-11-23", "2025-12-07"],
-    short:
-      "Experience the fusion of modern life and ancient heritage — metro art, bustling bazaars, and sacred landmarks.",
     itinerary: [
       {
         day: 1,
@@ -170,6 +173,9 @@ export const tours = [
   {
     id: "t5",
     title: "Silk Road Grand Tour — 10 Days",
+    titleKey: "tours.silkroad.title",
+    short: "The complete Uzbekistan experience — from Khiva's ancient walls to Samarkand's turquoise domes and Bukhara's mystic charm.",
+    shortKey: "tours.silkroad.short",
     destination: "Multi-city",
     region: "Nationwide",
     images: [
@@ -181,8 +187,6 @@ export const tours = [
     duration: "10 days / 9 nights",
     rating: 5.0,
     availableDates: ["2025-11-01", "2025-11-28", "2025-12-15"],
-    short:
-      "The complete Uzbekistan experience — from Khiva’s ancient walls to Samarkand’s turquoise domes and Bukhara’s mystic charm.",
     itinerary: [
       { day: 1, activities: ["Arrive Tashkent", "City tour", "Welcome dinner"] },
       { day: 2, activities: ["Fly to Urgench", "Transfer to Khiva", "Ichan-Kala tour"] },
@@ -218,7 +222,6 @@ export const getTourById = (id) => tours.find((tour) => tour.id === id);
 // Get tours filtered by destination
 export const getToursByDestination = (destinationName) =>
   tours.filter((tour) => tour.destination === destinationName);
-
 
 
 export const destinations = [
