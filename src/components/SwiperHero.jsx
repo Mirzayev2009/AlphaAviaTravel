@@ -12,22 +12,25 @@ import "swiper/css/effect-fade";
 
 const heroSlides = [
   {
-    image: "https://images.unsplash.com/photo-1559628376-f3fe5f782a2e?w=1920&q=80",
+    image:
+      "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg?s=612x612&w=0&k=20&c=4dssHu44u48kyZmzw5IzpWff1zAev9vRcZ1HKIzHJ8I=",
     alt: "Registan Square, Samarkand",
-    title: "Discover the Silk Road",
-    subtitle: "Journey through ancient cities and timeless beauty",
+    titleKey: "hero.slides.0.title",
+    subtitleKey: "hero.slides.0.subtitle",
   },
   {
-    image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1920&q=80",
+    image:
+      "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg?s=612x612&w=0&k=20&c=GJV7czcCrZ0jaa9K7J9juZDu84Ke7f-U2cswo6Z7SKQ=",
     alt: "Bukhara Old Town",
-    title: "Experience Living History",
-    subtitle: "Walk in the footsteps of merchants and scholars",
+    titleKey: "hero.slides.1.title",
+    subtitleKey: "hero.slides.1.subtitle",
   },
   {
-    image: "https://images.unsplash.com/photo-1597074866923-dc0589150e38?w=1920&q=80",
+    image:
+      "https://media.gettyimages.com/id/1402157472/photo/khiva-kalta-minor-minaret-itchan-kala-uzbekistan.jpg?s=612x612&w=0&k=20&c=FvS0cjMNaR0Z-_h-oDT1QZXjHzfhQS9uxP3QRY8zcOc=",
     alt: "Khiva Fortress",
-    title: "Uncover Hidden Treasures",
-    subtitle: "Explore UNESCO World Heritage wonders",
+    titleKey: "hero.slides.2.title",
+    subtitleKey: "hero.slides.2.subtitle",
   },
 ];
 
@@ -75,12 +78,13 @@ const SwiperHero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    <h1 className="text-4xl  md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
-                      {slide.title}
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg">
+                      {t(slide.titleKey)}
                     </h1>
                     <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md">
-                      {slide.subtitle}
+                      {t(slide.subtitleKey)}
                     </p>
+
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                       <Button
                         size="lg"

@@ -240,7 +240,28 @@
       "hours": "Business Hours",
       "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
     }
-  }
+  },
+  "hero": {
+  "title": "Discover Uzbekistan's Hidden Treasures",
+  "subtitle": "Experience the magic of the Silk Road with expertly curated tours",
+  "cta": "Explore Tours",
+  "ctaSecondary": "View Destinations",
+  "slides": [
+    {
+      "title": "Discover the Silk Road",
+      "subtitle": "Journey through ancient cities and timeless beauty"
+    },
+    {
+      "title": "Experience Living History",
+      "subtitle": "Walk in the footsteps of merchants and scholars"
+    },
+    {
+      "title": "Uncover Hidden Treasures",
+      "subtitle": "Explore UNESCO World Heritage wonders"
+    }
+  ]
+}
+
 
 
 

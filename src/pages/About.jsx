@@ -16,7 +16,9 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl text-orange-400 font-bold mb-4">{t("about.title")}</h1>
+            <h1 className="text-4xl md:text-5xl text-orange-400 font-bold mb-4">
+              {t("about.title")}
+            </h1>
             <p className="text-xl text-blue-600 max-w-2xl mx-auto">
               {t("about.subtitle")}
             </p>
@@ -25,17 +27,27 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-16">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="prose prose-lg max-w-none"
+              className="space-y-6 text-center"
             >
-              <p className="text-lg text-muted-foreground mb-6">{t("about.story")}</p>
-              <p className="text-lg text-muted-foreground">{t("about.mission")}</p>
+              <p
+                className="text-lg md:text-xl text-gray-600 font-light leading-relaxed tracking-wide italic"
+          style={{ fontFamily: "'Playfair Display', serif" }} 
+                >
+                {t("about.story")}
+              </p>
+              <p
+                className="text-lg md:text-xl text-gray-700 font-medium leading-relaxed tracking-tight"
+                style={{ fontFamily: "'Playfair Display', serif" }}
+                >
+                {t("about.mission")}
+              </p>
             </motion.div>
           </div>
         </div>
@@ -50,8 +62,12 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("about.teamTitle")}</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">{t("about.teamSubtitle")}</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-400">
+              {t("about.teamTitle")}
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {t("about.teamSubtitle")}
+            </p>
           </motion.div>
 
           <TeamGrid />
@@ -67,7 +83,9 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{t("about.storiesTitle")}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              {t("about.storiesTitle")}
+            </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               {t("about.storiesSubtitle")}
             </p>

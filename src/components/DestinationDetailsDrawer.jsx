@@ -10,12 +10,10 @@ import {
 } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { MapPin, Calendar, Lightbulb } from "lucide-react";
+import { motion } from "framer-motion";
 
 /**
  * DestinationDetailsDrawer - Right-side drawer with full destination info
- * @param {Object} destination - Destination data
- * @param {boolean} open - Drawer open state
- * @param {Function} onClose - Close handler
  */
 const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
   const { t } = useTranslation();
@@ -25,43 +23,55 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
 
   return (
     <Sheet open={open} onOpenChange={onClose}>
-      <SheetContent className="w-full sm:max-w-2xl p-0">
-        <SheetHeader className="p-6 pb-4">
-          <SheetTitle className="text-2xl font-bold pr-8">{destination.name}</SheetTitle>
+      <SheetContent className="w-full sm:max-w-2xl p-0 bg-white shadow-xl rounded-l-2xl">
+        {/* Header */}
+        <SheetHeader className="p-6 pb-4 border-b">
+          <SheetTitle className="text-2xl font-bold text-orange-500 pr-8">
+            {destination.name}
+          </SheetTitle>
           <SheetClose />
         </SheetHeader>
 
+        {/* Scrollable Content */}
         <ScrollArea className="h-[calc(100vh-120px)]">
           <div className="p-6 pt-0">
             {/* Hero Image */}
             <img
               src={destination.heroImage}
               alt={destination.name}
-              className="w-full h-64 object-cover rounded-lg mb-6"
+              className="w-full h-64 object-cover rounded-xl mb-6"
               loading="lazy"
             />
 
             {/* Quick Info */}
-            <div className="grid grid-cols-1 gap-4 mb-6 p-4 bg-muted rounded-lg">
+            <div className="grid grid-cols-1 gap-4 mb-6 p-4 bg-orange-50 rounded-xl border border-orange-100">
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-xs text-muted-foreground mb-1">Summary</p>
-                  <p className="text-sm">{destination.summary}</p>
+                  <p className="text-sm text-gray-700">{destination.summary}</p>
                 </div>
               </div>
+
               <div className="flex items-start gap-3">
-                <Calendar className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <Calendar className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">Best Time to Visit</p>
-                  <p className="text-sm font-semibold">{destination.bestTime}</p>
+                  <p className="text-xs text-muted-foreground mb-1">
+                    Best Time to Visit
+                  </p>
+                  <p className="text-sm font-semibold text-gray-800">
+                    {destination.bestTime}
+                  </p>
                 </div>
               </div>
+
               <div className="flex items-start gap-3">
-                <Lightbulb className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <Lightbulb className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">Travel Tips</p>
-                  <p className="text-sm">{destination.travelTips}</p>
+                  <p className="text-xs text-muted-foreground mb-1">
+                    Travel Tips
+                  </p>
+                  <p className="text-sm text-gray-700">{destination.travelTips}</p>
                 </div>
               </div>
             </div>
@@ -72,18 +82,19 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
               dangerouslySetInnerHTML={{ __html: destination.extendedHtml }}
             />
 
-            {/* CTA */}
-            <div className="sticky bottom-0 bg-background pt-4 border-t">
-              <Button
-                size="lg"
+            {/* Call To Action */}
+            <div className="sticky bottom-0 bg-white pt-4 border-t">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
                 onClick={() => {
                   navigate("/tours");
                   onClose();
                 }}
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                className="w-full px-6 py-3 rounded-xl bg-orange-500 text-white font-semibold shadow-md hover:bg-orange-600 transition-all duration-300"
               >
                 {t("destinations.drawer.viewTours")}
-              </Button>
+              </motion.button>
             </div>
           </div>
         </ScrollArea>

@@ -15,7 +15,7 @@ const Gallery = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl text-range-400 font-bold mb-4">{t("gallery.title")}</h1>
+            <h1 className="text-4xl md:text-5xl text-range-400 text-orange-400 font-bold mb-4">{t("gallery.title")}</h1>
             <p className="text-xl text-blue-600 max-w-2xl mx-auto">
               {t("gallery.subtitle")}
             </p>
