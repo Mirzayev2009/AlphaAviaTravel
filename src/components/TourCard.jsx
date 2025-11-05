@@ -11,12 +11,54 @@ import {
 
 /**
  * TourCard component
- * @param {Object} tour - Tour data object
+ * - Uses translations from `tours` namespace (detail.<tour.id>.*)
+ * - Falls back to values from `tour` prop when translations are missing
+ *
+ * @param {Object} tour - Tour data object (must include stable `id`)
  * @param {Function} onViewDetails - Handler for viewing full tour details
  * @param {Function} onRegister - Handler for registration
  */
 const TourCard = ({ tour, onViewDetails, onRegister }) => {
-  const { t } = useTranslation();
+  // use the 'tours' namespace so translations live under public/locales/<lang>/tours.json
+  const { t, i18n } = useTranslation("tours");
+
+  // Safe helper: return translated string or fallback
+  const tx = (path, fallback) =>
+    // use defaultValue so i18next returns fallback if key missing
+    t(path, { defaultValue: fallback });
+
+  // Strings (simple)
+  const title = tx(`detail.${tour.id}.title`, tour.title || "");
+  const destination = tx(`detail.${tour.id}.destination`, tour.destination || "");
+  const duration = tx(`detail.${tour.id}.duration`, tour.duration || "");
+  const price = tx(`detail.${tour.id}.price`, tour.price || "");
+  const dates = tx(`detail.${tour.id}.dates`, tour.dates || "");
+  const short = tx(`detail.${tour.id}.short`, tour.short || "");
+
+  // Arrays / objects: use returnObjects:true and fallback to provided tour fields
+  const highlights =
+    t(`detail.${tour.id}.highlights`, {
+      returnObjects: true,
+      defaultValue: tour.highlights || [],
+    }) || [];
+
+  const itinerary =
+    t(`detail.${tour.id}.itinerary`, {
+      returnObjects: true,
+      defaultValue: tour.itinerary || [],
+    }) || [];
+
+  // UI labels inside the same namespace (or your common namespace) — adjust if needed
+  const perPersonLabel = t("card.perPerson", { defaultValue: "per person" });
+  const viewDetailsLabel = t("card.viewDetails", { defaultValue: "View Details" });
+  const registerLabel = t("card.register", { defaultValue: "Register Now" });
+  const dayLabel = t("modal.day", { defaultValue: "Day" });
+
+  // image fallback (some tours use `images` array, some `image`)
+  const imageSrc =
+    (tour.images && tour.images.length > 0 && tour.images[0]) ||
+    tour.image ||
+    "";
 
   return (
     <motion.div
@@ -31,19 +73,19 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
         {/* Tour Image */}
         <div className="relative h-64 overflow-hidden">
           <img
-            src={tour.images[0]}
-            alt={tour.title}
+            src={imageSrc}
+            alt={title}
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
             loading="lazy"
           />
           <div className="absolute top-2 right-2 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
-            {tour.duration}
+            {duration}
           </div>
         </div>
 
         <CardHeader className="pb-3">
           <h3 className="text-xl text-orange-500 font-bold line-clamp-2">
-            {tour.title}
+            {title}
           </h3>
         </CardHeader>
 
@@ -51,14 +93,14 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
           <div className="space-y-2 text-sm text-muted-foreground mb-3">
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 flex-shrink-0 text-orange-400" />
-              <span>{tour.destination}</span>
+              <span>{destination}</span>
             </div>
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 flex-shrink-0 text-orange-400" />
-              <span>{tour.duration}</span>
+              <span>{duration}</span>
             </div>
           </div>
-          <p className="text-sm line-clamp-3">{tour.short}</p>
+          <p className="text-sm line-clamp-3">{short}</p>
         </CardContent>
 
         <CardFooter className="pt-3 flex flex-col gap-3">
@@ -66,10 +108,10 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
             <div className="flex items-baseline gap-1">
               <DollarSign className="h-4 w-4 text-orange-400" />
               <span className="text-2xl font-bold text-orange-500">
-                {tour.price}
+                {price}
               </span>
               <span className="text-xs text-muted-foreground">
-                {t("tours.card.perPerson")}
+                {perPersonLabel}
               </span>
             </div>
           </div>
@@ -90,7 +132,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
                 scale: 0.95,
               }}
             >
-              {t("tours.card.viewDetails")}
+              {viewDetailsLabel}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 opacity-0"
                 whileHover={{
@@ -113,7 +155,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
                 scale: 0.95,
               }}
             >
-              {t("tours.card.register")}
+              {registerLabel}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-orange-600 via-yellow-400 to-orange-600 opacity-0"
                 whileHover={{
@@ -124,6 +166,10 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
               />
             </motion.button>
           </div>
+
+
+
+          {/* Note: itinerary is not rendered fully here to keep card compact — use modal/page to show full itinerary */}
         </CardFooter>
       </Card>
     </motion.div>

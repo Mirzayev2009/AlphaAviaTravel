@@ -7,6 +7,9 @@ import { lazy, Suspense } from "react";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import TourDetail from "./pages/ToursDetail";
+import Services from "./pages/Services";
+import VisaQuestion from "./pages/VisaQuestion";
+import VisaAnswer from "./pages/VisaAnswer";
 
  
 
@@ -92,6 +95,22 @@ const App = () => (
                   <TourDetail />
                 </Suspense>
           }/>
+          <Route path="services" element={
+            <Suspense fallback={<PageLoader />}>
+              <Services />
+            </Suspense>
+          }/>
+          <Route path="/visa/questions" element={
+            <Suspense fallback={<PageLoader />}>
+              <VisaQuestion />
+            </Suspense>
+          }/>
+               <Route path="/visa/answer" element={
+            <Suspense fallback={<PageLoader />}>
+              <VisaAnswer />
+            </Suspense>
+          }/>
+
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

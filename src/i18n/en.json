@@ -6,7 +6,8 @@
       "destinations": "Destinations",
       "about": "About",
       "gallery": "Gallery",
-      "contact": "Contact"
+      "contact": "Contact",
+      "services": "Services"
     },
     "language": "Language"
   },
@@ -32,6 +33,152 @@
       "duration": "By Duration",
       "price": "By Price"
     },
+
+  "detail": {
+    "tour1": {
+      "id": "tour1",
+      "title": "Silk Road Highlights",
+      "duration": "10 Days",
+      "price": "$1,200",
+      "dates": "Available Year-Round",
+      "highlights": [
+        "Explore Samarkand's Registan Square",
+        "Visit Bukhara's ancient mosques",
+        "Discover Khiva's walled city"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            "Arrival in Tashkent",
+            "City tour of Tashkent"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "Travel to Samarkand",
+            "Visit Gur-e-Amir Mausoleum"
+          ]
+        }
+      ]
+    },
+    "tour2": {
+      "id": "tour2",
+      "title": "Cultural Treasures of Uzbekistan",
+      "duration": "7 Days",
+      "price": "$900",
+      "dates": "Available Year-Round",
+      "highlights": [
+        "Experience traditional Uzbek cuisine",
+        "Visit local artisan workshops",
+        "Explore historic Silk Road sites"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            "Arrival in Tashkent",
+            "Welcome dinner with traditional music"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "Travel to Bukhara",
+            "Guided tour of Bukhara's old town"
+          ]
+        }
+      ]
+    },
+    "tour3": {
+      "id": "tour3",
+      "title": "Desert Adventures in Uzbekistan",
+      "duration": "5 Days",
+      "price": "$700",
+      "dates": "Available Year-Round",
+      "highlights": [
+        "Camel trek in the Kyzylkum Desert",
+        "Overnight stay in a yurt camp",
+        "Sunset views over the desert dunes"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            "Arrival in Tashkent",
+            "Evening briefing and dinner"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "Travel to the Kyzylkum Desert",
+            "Begin camel trek"
+          ]
+        }
+      ]
+    },
+    "tour4": {
+      "id": "tour4",
+      "title": "Uzbekistan Family Fun",
+      "duration": "8 Days",
+      "price": "$1,100",
+      "dates": "Available Year-Round",
+      "highlights": [
+        "Interactive workshops for kids",
+        "Family-friendly sightseeing tours",
+        "Cultural performances and activities"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            "Arrival in Tashkent",
+            "Family welcome event"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "Visit Tashkent Zoo",
+            "Explore local parks and playgrounds"
+          ]
+        }
+      ]
+    },
+    "tour5": {
+      "id": "tour5",
+      "title": "Luxury Uzbekistan Experience",
+      "duration": "12 Days",
+      "price": "$3,500",
+      "dates": "Available Year-Round",
+      "highlights": [
+        "Stay in 5-star hotels",
+        "Private guided tours",
+        "Exclusive dining experiences"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "activities": [
+            "Arrival in Tashkent",
+            "Private city tour with luxury transport"
+          ]
+        },
+        {
+          "day": 2,
+          "activities": [
+            "Travel to Samarkand in a private car",
+            "VIP tour of Registan Square"
+          ]
+        }
+      ]
+    }
+  },
+
+
+
     "card": {
       "from": "From",
       "perPerson": "per person",

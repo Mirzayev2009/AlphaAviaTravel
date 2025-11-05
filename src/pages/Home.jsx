@@ -6,9 +6,17 @@ import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
 import RegistrationForm from "@/components/RegistrationForm";
 import { Button } from "@/components/ui/button";
-import { tours } from "@/data/seed";
 import { useState } from "react";
-import { ArrowRight, CheckCircle, Users, Award, Heart } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Award,
+  Heart,
+  Map,
+  Globe,
+} from "lucide-react";
+import { tours } from "@/data/seed";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -16,8 +24,13 @@ const Home = () => {
   const [selectedTour, setSelectedTour] = useState(null);
   const [registrationTour, setRegistrationTour] = useState(null);
 
-  // Featured tours (first 3)
-  const featuredTours = tours.slice(0, 3);
+  // Category filter state (added)
+  const [selectedCategory, setSelectedCategory] = useState("uzbekistan");
+
+  // Featured tours are now derived from the selected category
+  const allTours =
+    selectedCategory === "uzbekistan" ? tours.uzbekistan : tours.world;
+  const featuredTours = allTours.slice(0, 3);
 
   return (
     <div>
@@ -40,6 +53,47 @@ const Home = () => {
               {t("home.featuredSubtitle")}
             </p>
           </motion.div>
+          {/* Category selector (UZ / World) */}
+          <div className="flex justify-center gap-6 mb-6">
+            <motion.button
+              onClick={() => setSelectedCategory("uzbekistan")}
+              className={`relative px-6 py-3 rounded-2xl font-bold text-lg transition-all duration-300 ${
+                selectedCategory === "uzbekistan"
+                  ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-2xl scale-105"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <div className="flex items-center gap-3">
+                <Map className="h-5 w-5" />
+                <div className="text-left">
+                  <div className="text-sm opacity-80">Explore</div>
+                  <div className="text-base font-semibold">Uzbekistan</div>
+                </div>
+              </div>
+            </motion.button>
+
+            <motion.button
+              onClick={() => setSelectedCategory("world")}
+              className={`relative px-6 py-3 rounded-2xl font-bold text-lg transition-all duration-300 ${
+                selectedCategory === "world"
+                  ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              }`}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              <div className="flex items-center w-25 gap-3">
+                <Globe className="h-5 w-5" />
+                <div className="text-left">
+                  <div className="text-sm opacity-80">Discover</div>
+                  <div className="text-base font-semibold">World</div>
+                </div>
+              </div>
+            </motion.button>
+          </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {featuredTours.map((tour) => (

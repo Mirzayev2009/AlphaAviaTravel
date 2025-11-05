@@ -32,6 +32,7 @@ const Header = () => {
     { name: t("header.nav.about"), path: "/about" },
     { name: t("header.nav.gallery"), path: "/gallery" },
     { name: t("header.nav.contact"), path: "/contact" },
+    { name: t("header.nav.services"), path: "/services" },
   ];
 
   const changeLanguage = (lng) => {
@@ -93,6 +94,53 @@ const Header = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+         <Link to="/visa/questions">
+    
+            <motion.button
+              onClick={() => navigate("/visa/questions")}
+              className="relative flex  items-center justify-center  px-4 py-2 rounded-xl font-semibold text-orange-500 bg-white border border-orange-300 shadow-md overflow-hidden transition-all duration-300"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, type: "spring" }}
+              whileHover={{
+                scale: 1.07,
+                color: "#fff",
+                backgroundColor: "#fb923c",
+                boxShadow: "0 0 40px rgba(255,140,0,0.6)",
+                transition: { type: "spring", stiffness: 200, damping: 12 },
+              }}
+              whileTap={{
+                scale: 0.94,
+                boxShadow: "0 0 20px rgba(255,100,0,0.7)",
+              }}
+            >
+              <motion.span
+                initial={{ x: 0 }}
+                whileHover={{ x: 3 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="font-semibold"
+              >
+                VISA
+              </motion.span>
+              <motion.div
+                initial={{ x: 0 }}
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 250 }}
+              >
+              </motion.div>
+
+              {/* Animated shimmer overlay */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 opacity-0 rounded-xl"
+                whileHover={{
+                  opacity: 0.25,
+                  x: [0, 50, 0],
+                }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              />
+            </motion.button>
+          
+         </Link>
 
           {/* Mobile Menu Toggle */}
           <Button

@@ -84,15 +84,17 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Page Header */}
-      <section className="bg-muted/50 py-16">
+      <section className="bg-gradient-to-r from-orange-500 to-amber-500 py-20">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-4xl md:text-5xl text-orange-400 font-bold mb-4">{t("contact.title")}</h1>
-            <p className="text-xl text-blue-600 max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
+              {t("contact.title")}
+            </h1>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
               {t("contact.subtitle")}
             </p>
           </motion.div>
