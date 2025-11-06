@@ -10,6 +10,7 @@ import {
   DialogClose,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useNavigate } from "react-router-dom";
 
 /**
  * TourModal - Displays full tour details
@@ -20,6 +21,8 @@ import { ScrollArea } from "@/components/ui/scroll-area";
  */
 const TourModal = ({ tour, open, onClose, onRegister }) => {
   const { t } = useTranslation();
+
+  const navigate = useNavigate();
 
   if (!tour) return null;
 
@@ -123,7 +126,7 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
             <div className="sticky bottom-0 bg-background pt-4 border-t">
               <Button
                 size="lg"
-                onClick={onRegister}
+                onClick={navigate(`/tours/${tour.id}`)}
                 className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
               >
                 {t("tours.modal.registerNow")}

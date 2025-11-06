@@ -1,9 +1,8 @@
-// ToursDetail.jsx
-import { useState, useEffect } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate, useLocation, useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import {
+  Calendar,
   MapPin,
   DollarSign,
   Users,
@@ -11,639 +10,714 @@ import {
   Phone,
   User,
   ChevronUp,
-  Clock,
-  Star,
   Send,
   CheckCircle2,
+  Star,
+  Facebook,
+  MessageCircle,
+  Clock, // Added Clock for Duration
 } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Layout from "@/components/Layout";
 import { tours } from "@/data/seed";
+import { Skeleton } from "@/components/ui/skeleton"; // Use skeleton for smooth loading
 
-/**
- * Utility: normalize the `tours` import into a single flat array.
- * Accepts:
- *  - an array (already flat)
- *  - an object with array values (e.g. { uzbekistan: [...], world: [...] })
- *  - null/undefined -> returns []
- */
-function normalizeTours(toursInput) {
-  if (!toursInput) return [];
-  if (Array.isArray(toursInput)) return toursInput;
-  // object-of-arrays
-  return Object.values(toursInput)
-    .filter((v) => Array.isArray(v))
-    .flat();
+// --- Utility Functions ---
+
+function normalizeAllTours(seed) {
+  if (!seed) return [];
+  if (Array.isArray(seed)) return seed;
+  return Object.values(seed).reduce((acc, val) => {
+    if (Array.isArray(val)) acc.push(...val);
+    return acc;
+  }, []);
 }
 
+// --- Component Start ---
+
 const ToursDetail = () => {
-  const { t } = useTranslation("tours");
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Support both param names (many routes use either `id` or `tourid`)
   const params = useParams();
-  const tourParam = params.tourid ?? params.id ?? params.slug ?? null;
 
+  const tourParam = params.tourid ?? params.id ?? null;
   const tourFromState = location.state?.tour ?? null;
 
-  // Prepare a normalized list once (safe even if seed shape differs)
-  const allTours = normalizeTours(tours);
+  // Simplified data loading logic
+  const findTourById = (idToFind) => {
+    const allTours = normalizeAllTours(tours);
+    return allTours.find((x) => String(x?.id) === String(idToFind)) ?? null;
+  };
 
-  // Initialize tour synchronously if possible (state navigation or seed)
-  const [tour, setTour] = useState(() => {
-    if (tourFromState) return tourFromState;
-    if (tourParam) {
-      return allTours.find((tt) => tt?.id?.toString() === tourParam) ?? null;
-    }
-    return null;
-  });
-
+  const [tour, setTour] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [expandedDay, setExpandedDay] = useState(null);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [registrationDetails, setRegistrationDetails] = useState(null);
 
-  // Form state: ensure tourTitle is synced if tour exists at start
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     people: 1,
-    tourTitle: (tour && tour.title) || tourFromState?.title || "",
+    tourTitle: "",
+    unitPrice: 0,
   });
 
-  // Keep formData.tourTitle in sync when tour changes later
-  useEffect(() => {
-    if (tour?.title) {
-      setFormData((prev) => ({ ...prev, tourTitle: tour.title }));
-    }
-  }, [tour]);
+  const contactColors = {
+    orange: {
+      bg: "bg-gradient-to-br from-orange-500 to-orange-700",
+      hoverShadow: "rgba(255, 165, 0, 0.3)",
+      hoverText: "text-orange-600",
+    },
+    amber: {
+      bg: "bg-gradient-to-br from-amber-500 to-amber-700",
+      hoverShadow: "rgba(255, 193, 7, 0.3)",
+      hoverText: "text-amber-600",
+    },
+    blue: {
+      bg: "bg-gradient-to-br from-blue-600 to-blue-800",
+      hoverShadow: "rgba(59, 89, 152, 0.3)",
+      hoverText: "text-blue-600",
+    },
+    green: {
+      bg: "bg-gradient-to-br from-green-500 to-green-700",
+      hoverShadow: "rgba(37, 211, 102, 0.3)",
+      hoverText: "text-green-600",
+    },
+  };
+  // This section is placed near the end of the ToursDetail function body:
+const organizerEmail = tour?.organizer?.email ?? "info@tourcompany.com";
+const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Defined here
 
-  // Sync fallback: if we didn't have tour at init, try to find it when param or state changes
+
+
+  // 2. Update the array data to use the color key
+  const contactItems = [
+    {
+      icon: Phone,
+      title: "Call Us",
+      value: organizerPhone,
+      colorKey: "orange",
+      href: `tel:${organizerPhone}`,
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      value: organizerEmail,
+      colorKey: "amber",
+      href: `mailto:${organizerEmail}`,
+    },
+    {
+      icon: Facebook,
+      title: "Facebook",
+      value: "Visit Page",
+      colorKey: "blue",
+      href: `https://www.facebook.com/${tour?.organizer?.facebookHandle || "tourcompany"}`,
+    },
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      value: "Chat Now",
+      colorKey: "green",
+      href: `https://wa.me/${organizerPhone.replace(/\D/g, "")}`,
+    },
+  ];
+
+  // --- Data Initialization and Effects ---
   useEffect(() => {
-    if (tourFromState && (!tour || tour.id !== tourFromState.id)) {
-      setTour(tourFromState);
-      return;
+    setLoading(true);
+    let foundTour = tourFromState;
+
+    if (!foundTour && tourParam) {
+      foundTour = findTourById(tourParam);
     }
 
-    if (tourParam) {
-      const found =
-        allTours.find((tt) => tt?.id?.toString() === tourParam) ?? null;
-      // Only update if changed to avoid unnecessary rerenders
-      if (!tour || (found && tour.id !== found.id)) {
-        setTour(found);
-      } else if (!found && tour === null) {
-        // keep null to show Not Found (no overwrite)
-        setTour(null);
-      }
+    if (foundTour) {
+      setTour(foundTour);
+      setFormData((p) => ({
+        ...p,
+        tourTitle: foundTour.title || "",
+        unitPrice: foundTour.price || 0,
+      }));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setLoading(false);
   }, [tourFromState, tourParam]);
 
-  // DEBUG - keep these while you're testing, remove in production
-  // console.log("ToursDetail render:", { tourParam, tour, allToursLength: allTours.length });
+  // Calculate Total Price dynamically using useMemo
+  const totalPrice = useMemo(() => {
+    return formData.unitPrice ? formData.people * formData.unitPrice : 0;
+  }, [formData.people, formData.unitPrice]);
 
-  // Guard: Loading or Not Found
-  if (!tour) {
-    return (
-      <Layout>
-        <div className="container mx-auto p-8 text-center min-h-screen flex items-center justify-center">
-          <div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-4">
-              {tourParam ? "Loading / Tour Not Found" : "Tour Not Found"}
-            </h1>
-            <p className="text-gray-600 mb-6">
-              {tourParam
-                ? "We couldn't find a tour for that id. Try refreshing or go back to tours."
-                : "No tour selected."}
-            </p>
-            <div className="flex justify-center gap-3">
-              <Button type="button" onClick={() => navigate("/tours")}>
-                {t("detail.backToTours", {
-                  defaultValue: "← Back to All Tours",
-                })}
-              </Button>
-            </div>
-            <div className="mt-6 text-left">
-              <details className="text-left">
-                <summary className="cursor-pointer text-sm text-gray-500">
-                  Debug info
-                </summary>
-                <pre className="bg-gray-50 p-3 rounded text-xs mt-2 overflow-auto">
-                  {JSON.stringify(
-                    {
-                      tourParam,
-                      tourFromState: !!tourFromState,
-                      allToursLength: allTours.length,
-                    },
-                    null,
-                    2
-                  )}
-                </pre>
-              </details>
-            </div>
-          </div>
-        </div>
-      </Layout>
-    );
-  }
+  const itinerary = Array.isArray(tour?.itinerary) ? tour.itinerary : [];
+  const highlights = Array.isArray(tour?.highlights) ? tour.highlights : [];
+  const images = Array.isArray(tour?.images) ? tour.images : [];
 
-  // Derived data rebuilt each render (safe)
-  const imageSrc =
-    (tour.images && tour.images.length > 0 && tour.images[0]) ||
-    tour.image ||
-    "";
-  const itinerary = tour.itinerary || [];
-  const highlights = tour.highlights || [];
-
-  const toggleDay = (index) => {
-    setExpandedDay((prev) => (prev === index ? null : index));
-  };
+  const toggleDay = (idx) => setExpandedDay((p) => (p === idx ? null : idx));
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+    let newValue = value;
+
     if (name === "people") {
-      const num = parseInt(value, 10);
-      setFormData((prev) => ({ ...prev, [name]: isNaN(num) ? "" : num }));
-    } else {
-      setFormData((prev) => ({ ...prev, [name]: value }));
+      const n = parseInt(value, 10);
+      // Ensure positive integer and prevent non-numeric input
+      newValue = isNaN(n) || n < 1 ? 1 : n;
     }
+
+    setFormData((p) => ({ ...p, [name]: newValue }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      formData.people < 1
+    ) {
+      // Simple error handling
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    // Set final registration details
+    setRegistrationDetails({
+      ...formData,
+      totalPrice: totalPrice,
+      organizerEmail: tour?.organizer?.email ?? "support@travel.com",
+    });
+
     setFormSubmitted(true);
-    // TODO: send to backend / supabase
-    console.log("Registration data:", formData);
-    setTimeout(() => setFormSubmitted(false), 3000);
+    console.log("Registration complete. Details:", {
+      ...formData,
+      totalPrice: totalPrice,
+    });
+
+    // Smooth scroll back up to the success message
+    setTimeout(() => {
+      document
+        .getElementById("top-of-page")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 100);
   };
 
-  return (
-    <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-amber-50">
-        {/* Hero */}
-        <section className="relative h-[60vh] overflow-hidden">
-          <div className="absolute inset-0">
-            {imageSrc ? (
-              <img
-                src={imageSrc}
-                alt={tour.title}
-                className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.currentTarget.style.display = "none";
-                }}
-              />
-            ) : (
-              <div className="w-full h-full bg-gradient-to-br from-orange-200 to-amber-100" />
-            )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-          </div>
 
-          <div className="relative h-full container mx-auto px-4 flex items-end pb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-white"
-            >
-              <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                {tour.title}
-              </h1>
-              <div className="flex flex-wrap gap-4 text-lg">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5" />
-                  <span>{tour.destination}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5" />
-                  <span>{tour.duration}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <DollarSign className="h-5 w-5" />
-                  <span className="text-2xl font-bold">{tour.price}</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
+
+  if (loading || !tour) {
+    return (
+      <div className="min-h-screen p-8">
+        <Header />
+        <Skeleton className="h-40 w-full mb-8" />
+        <Skeleton className="h-[500px] w-full" />
+        <Footer />
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+
+      <main className="flex-1">
+        {/* ==================================================================== */}
+        {/* 1. HERO / TITLE / MINIMAL INFO (ALWAYS VISIBLE) */}
+        {/* ==================================================================== */}
+        <section
+          id="top-of-page"
+          className="py-12 container mx-auto px-4 max-w-5xl text-center"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <h1 className="text-6xl font-extrabold mb-4 text-orange-600 tracking-tight">
+              {tour.title}
+            </h1>
+            <p className="text-gray-700 text-xl mb-4 max-w-2xl mx-auto">
+              {tour.short || "A breathtaking journey awaits!"}
+            </p>
+          </motion.div>
         </section>
 
-        {/* Registration Form */}
-        <section className="py-16 bg-white">
+        {/* --- */}
+
+        {/* ==================================================================== */}
+        {/* 2. REGISTRATION / SUCCESS MESSAGE (DYNAMIC PRICING, SUPER SMOOTH) */}
+        {/* ==================================================================== */}
+        <section className="pb-12 bg-gray-50 border-t border-b border-orange-200">
           <div className="container mx-auto px-4 max-w-4xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="text-center mb-10">
-                <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                  {t("detail.registration.title", {
-                    defaultValue: "Book Your Adventure",
-                  })}
-                </h2>
-                <p className="text-gray-600 text-lg">
-                  {t("detail.registration.subtitle", {
-                    defaultValue: "Fill in your details to reserve your spot",
-                  })}
-                </p>
-              </div>
+            <AnimatePresence mode="wait">
+              {formSubmitted && registrationDetails ? (
+                // --- SUCCESS MESSAGE (Enhanced details) ---
+                <motion.div
+                  key="success"
+                  initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.9, y: -20 }}
+                  transition={{
+                    duration: 0.6,
+                    ease: [0.68, -0.55, 0.265, 1.55],
+                  }} // Bouncy animation
+                  className="mt-12"
+                >
+                  <Card className="shadow-2xl border-4 border-green-400 bg-green-50">
+                    <CardContent className="p-10 text-center">
+                      <motion.div
+                        initial={{ scale: 0, rotate: -180 }}
+                        animate={{ scale: 1, rotate: 0 }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 200,
+                          damping: 10,
+                        }}
+                      >
+                        <CheckCircle2 className="h-20 w-20 text-green-600 mx-auto mb-6" />
+                      </motion.div>
 
-              <Card className="shadow-2xl border-2 border-orange-100">
-                <form onSubmit={handleSubmit}>
-                  <CardContent className="p-8">
-                    <div className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-6">
-                        {/* Name */}
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          className="space-y-2"
-                        >
-                          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                            <User className="h-4 w-4 text-orange-500" />
-                            {t("detail.registration.name", {
-                              defaultValue: "Full Name",
-                            })}
-                          </label>
-                          <Input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder={t(
-                              "detail.registration.namePlaceholder",
-                              { defaultValue: "Enter your full name" }
-                            )}
-                            required
-                            className="border-2 border-gray-200 focus:border-orange-400 transition-colors"
-                          />
-                        </motion.div>
+                      <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">
+                        Booking Secured!
+                      </h2>
 
-                        {/* Email */}
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          className="space-y-2"
-                        >
-                          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                            <Mail className="h-4 w-4 text-orange-500" />
-                            {t("detail.registration.email", {
-                              defaultValue: "Email Address",
-                            })}
-                          </label>
-                          <Input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder={t(
-                              "detail.registration.emailPlaceholder",
-                              { defaultValue: "your@email.com" }
-                            )}
-                            required
-                            className="border-2 border-gray-200 focus:border-orange-400 transition-colors"
-                          />
-                        </motion.div>
+                      <p className="text-gray-700 text-lg mb-8 max-w-lg mx-auto">
+                        Your incredible journey is confirmed, **
+                        {registrationDetails.name}**! We're thrilled to have you
+                        and your party join us.
+                      </p>
 
-                        {/* Phone */}
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          className="space-y-2"
-                        >
-                          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                            <Phone className="h-4 w-4 text-orange-500" />
-                            {t("detail.registration.phone", {
-                              defaultValue: "Phone Number",
-                            })}
-                          </label>
-                          <Input
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder={t(
-                              "detail.registration.phonePlaceholder",
-                              { defaultValue: "+998 XX XXX XX XX" }
-                            )}
-                            required
-                            className="border-2 border-gray-200 focus:border-orange-400 transition-colors"
-                          />
-                        </motion.div>
-
-                        {/* People */}
-                        <motion.div
-                          whileHover={{ scale: 1.02 }}
-                          className="space-y-2"
-                        >
-                          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                            <Users className="h-4 w-4 text-orange-500" />
-                            {t("detail.registration.people", {
-                              defaultValue: "Number of People",
-                            })}
-                          </label>
-                          <Input
-                            type="number"
-                            name="people"
-                            min="1"
-                            value={formData.people}
-                            onChange={handleInputChange}
-                            className="border-2 border-gray-200 focus:border-orange-400 transition-colors"
-                          />
-                        </motion.div>
+                      <div className="bg-white p-6 rounded-xl border border-green-300 shadow-xl text-left mx-auto max-w-md space-y-3">
+                        <h4 className="font-extrabold text-2xl text-green-700 mb-3 border-b pb-2">
+                          <Star className="h-6 w-6 inline-block mr-2" /> Summary
+                        </h4>
+                        <div className="flex justify-between items-center text-gray-800 text-lg">
+                          <span>**Tour:**</span>{" "}
+                          <span>{registrationDetails.tourTitle}</span>
+                        </div>
+                        <div className="flex justify-between items-center text-gray-800 text-lg">
+                          <span>**Guests:**</span>{" "}
+                          <span className="font-bold text-orange-600">
+                            {registrationDetails.people} people
+                          </span>
+                        </div>
+                        <div className="flex justify-between items-center text-2xl font-black text-white bg-orange-600 p-2 rounded mt-4">
+                          <span>**Total Cost:**</span>{" "}
+                          <span>${registrationDetails.totalPrice}</span>
+                        </div>
                       </div>
 
-                      {/* Chosen Tour (Read-only) */}
-                      <motion.div
-                        whileHover={{ scale: 1.02 }}
-                        className="space-y-2"
-                      >
-                        <label className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                          <Star className="h-4 w-4 text-orange-500" />
-                          {t("detail.registration.chosenTour", {
-                            defaultValue: "Chosen Tour",
-                          })}
-                        </label>
-                        <Input
-                          type="text"
-                          name="tourTitle"
-                          value={formData.tourTitle}
-                          readOnly
-                          className="border-2 border-orange-200 bg-orange-50 font-semibold text-orange-700"
-                        />
-                      </motion.div>
+                      <p className="mt-8 text-sm italic text-gray-600">
+                        A detailed confirmation receipt has been sent to **
+                        {registrationDetails.email}**.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ) : (
+                // --- REGISTRATION FORM (Dynamic Price Calculation) ---
+                <motion.div
+                  key="form"
+                  initial={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20, scale: 0.98 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
+                  className="mt-12"
+                >
+                  <div className="text-center mb-6">
+                    <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                      Book Your Trip
+                    </h2>
+                    <p className="text-gray-600">
+                      Secure your place today! Price per person: **$
+                      {tour.price || 0}**.
+                    </p>
+                  </div>
+                  <Card className="shadow-2xl border-2 border-orange-300">
+                    <form onSubmit={handleSubmit}>
+                      <CardContent className="p-6">
+                        <div className="grid md:grid-cols-2 gap-4">
+                          {/* Input Fields */}
+                          <motion.label
+                            className="space-y-1"
+                            initial={{ x: -10, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.1 }}
+                          >
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
+                              <User className="h-4 w-4 text-orange-500" /> Full
+                              Name
+                            </div>
+                            <Input
+                              required
+                              name="name"
+                              value={formData.name}
+                              onChange={handleInputChange}
+                              placeholder="Enter your full name"
+                            />
+                          </motion.label>
+                          <motion.label
+                            className="space-y-1"
+                            initial={{ x: 10, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.2 }}
+                          >
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
+                              <Mail className="h-4 w-4 text-orange-500" /> Email
+                              Address
+                            </div>
+                            <Input
+                              required
+                              name="email"
+                              type="email"
+                              value={formData.email}
+                              onChange={handleInputChange}
+                              placeholder="you@email.com"
+                            />
+                          </motion.label>
+                          <motion.label
+                            className="space-y-1"
+                            initial={{ x: -10, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.3 }}
+                          >
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
+                              <Phone className="h-4 w-4 text-orange-500" />{" "}
+                              Phone Number
+                            </div>
+                            <Input
+                              required
+                              name="phone"
+                              value={formData.phone}
+                              onChange={handleInputChange}
+                              placeholder="+XXX XX XXX XX XX"
+                            />
+                          </motion.label>
+                          <motion.label
+                            className="space-y-1"
+                            initial={{ x: 10, opacity: 0 }}
+                            animate={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 0.3, delay: 0.4 }}
+                          >
+                            <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
+                              <Users className="h-4 w-4 text-orange-500" />{" "}
+                              Number of People
+                            </div>
+                            <Input
+                              required
+                              name="people"
+                              type="number"
+                              min={1}
+                              value={formData.people}
+                              onChange={handleInputChange}
+                            />
+                          </motion.label>
+                        </div>
 
-                      {/* Submit */}
-                      <motion.div
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-                        <Button
-                          type="submit"
-                          className="w-full h-14 text-lg font-bold bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500 hover:from-orange-600 hover:via-amber-500 hover:to-orange-600 shadow-lg"
+                        <motion.div
+                          className="mt-6 p-4 rounded-xl bg-orange-50 border-l-4 border-orange-500 shadow-inner"
+                          initial={{ scale: 0.95, opacity: 0 }}
+                          animate={{ scale: 1, opacity: 1 }}
+                          transition={{ duration: 0.3 }}
                         >
-                          {formSubmitted ? (
-                            <span className="flex items-center gap-2">
-                              <CheckCircle2 className="h-5 w-5" />
-                              {t("detail.registration.submitted", {
-                                defaultValue: "Submitted!",
-                              })}
-                            </span>
-                          ) : (
-                            <span className="flex items-center gap-2">
+                          <div className="flex items-center justify-between text-xl font-bold text-gray-800">
+                            <span>Total Estimated Price:</span>
+                            <motion.span
+                              key={formData.people} // Key change forces re-animation on price update
+                              initial={{ scale: 1.1, opacity: 0.5 }}
+                              animate={{ scale: 1, opacity: 1 }}
+                              transition={{ duration: 0.2 }}
+                              className="text-orange-700 text-3xl font-extrabold"
+                            >
+                              ${totalPrice}
+                            </motion.span>
+                          </div>
+                          <p className="text-sm text-gray-500 text-right mt-1">
+                            (Price for {formData.people}{" "}
+                            {formData.people === 1 ? "person" : "people"})
+                          </p>
+                        </motion.div>
+
+                        <div className="mt-6">
+                          <Button
+                            type="submit"
+                            className="w-full h-12 text-xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-orange-600 shadow-xl hover:shadow-2xl transition-all duration-300"
+                            disabled={formSubmitted}
+                          >
+                            <span className="flex items-center justify-center gap-3">
                               <Send className="h-5 w-5" />
-                              {t("detail.registration.submit", {
-                                defaultValue: "Submit Registration",
-                              })}
+                              Confirm Booking
                             </span>
-                          )}
-                        </Button>
-                      </motion.div>
-                    </div>
-                  </CardContent>
-                </form>
-              </Card>
-            </motion.div>
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </form>
+                  </Card>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </section>
 
-        {/* Itinerary */}
-        <section className="py-16 bg-gradient-to-br from-orange-50 to-amber-50">
+        {/* --- */}
+
+        {/* ==================================================================== */}
+        {/* 3. FULL ADVENTURE DETAILS (ALWAYS VISIBLE, ENRICHED WITH DURATION) */}
+        {/* ==================================================================== */}
+        <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
           <div className="container mx-auto px-4 max-w-6xl">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.7 }}
             >
-              <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                  {t("detail.itinerary.title", {
-                    defaultValue: "Tour Itinerary",
-                  })}
-                </h2>
-                <p className="text-gray-600 text-lg">
-                  {t("detail.itinerary.subtitle", {
-                    defaultValue: "Click any day to see details",
-                  })}
-                </p>
+              <h2 className="text-center text-4xl font-extrabold pb-8 text-orange-700">
+                Your Full Adventure Details
+              </h2>
+
+              {/* Duration and Day Count */}
+              <div className="flex justify-center items-center gap-12 mb-10 bg-white p-6 rounded-2xl shadow-2xl border-b-4 border-orange-400">
+                <motion.div
+                  className="text-center"
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 100 }}
+                >
+                  <Clock className="h-10 w-10 text-orange-600 mx-auto mb-2" />
+                  <p className="text-xl font-bold text-gray-800">Duration:</p>
+                  <p className="text-3xl font-extrabold text-orange-700">
+                    {tour.duration || "N/A"}
+                  </p>
+                </motion.div>
+                <motion.div
+                  className="text-center"
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
+                >
+                  <Calendar className="h-10 w-10 text-orange-600 mx-auto mb-2" />
+                  <p className="text-xl font-bold text-gray-800">Days:</p>
+                  <p className="text-3xl font-extrabold text-orange-700">
+                    {itinerary.length} Days
+                  </p>
+                </motion.div>
               </div>
 
+              {/* Images (Super Smooth Hovered Cards) */}
+              {images.length > 0 && (
+                <div className="grid md:grid-cols-3 gap-6 mb-12">
+                  {images.map((img, idx) => (
+                    <motion.img
+                      key={idx}
+                      src={img}
+                      alt={`Tour Image ${idx + 1}`}
+                      className="rounded-xl shadow-xl object-cover w-full h-56 cursor-pointer border-4 border-white"
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      whileHover={{
+                        scale: 1.05,
+                        rotate: [0, 1, -1, 0],
+                        boxShadow: "0 15px 25px -5px rgba(0,0,0,0.3)",
+                      }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.5, delay: idx * 0.1 }}
+                    />
+                  ))}
+                </div>
+              )}
+
+              {/* Highlights (Smooth Entrance and Hover) */}
               {highlights.length > 0 && (
                 <div className="mb-12">
-                  <h3 className="text-2xl font-bold mb-6 text-orange-500">
-                    {t("detail.highlights.title", {
-                      defaultValue: "Tour Highlights",
-                    })}
+                  <h3 className="text-3xl font-bold mb-6 text-orange-600 border-b pb-2">
+                    Key Highlights
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     {highlights.map((h, i) => (
-                      <div
+                      <motion.div
                         key={i}
-                        className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-md"
+                        className="flex items-start gap-3 bg-white p-5 rounded-xl shadow-lg cursor-pointer border border-orange-200"
+                        initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        whileHover={{
+                          scale: 1.02,
+                          backgroundColor: "#fff7ed",
+                          boxShadow: "0 6px 12px rgba(255,165,0,0.2)",
+                        }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.4, delay: i * 0.08 }}
                       >
-                        <Star className="h-5 w-5 text-orange-500 flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{h}</span>
-                      </div>
+                        <Star className="h-5 w-5 text-orange-500 mt-1 flex-shrink-0 animate-pulse" />
+                        <div className="text-gray-700 font-medium">{h}</div>
+                      </motion.div>
                     ))}
                   </div>
                 </div>
               )}
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-8">
-                {itinerary.map((day, idx) => (
-                  <motion.button
-                    key={idx}
-                    type="button"
-                    onClick={() => toggleDay(idx)}
-                    className={`relative p-6 rounded-xl font-bold text-lg transition-all duration-300 ${
-                      expandedDay === idx
-                        ? "bg-gradient-to-br from-orange-500 to-amber-500 text-white shadow-2xl scale-110 z-10"
-                        : "bg-white text-gray-700 shadow-md hover:shadow-lg hover:scale-105"
-                    }`}
-                    whileHover={{ scale: expandedDay === idx ? 1.1 : 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    aria-expanded={expandedDay === idx}
-                    aria-controls={`itinerary-day-${idx}`}
-                  >
-                    <div className="text-sm opacity-80 mb-1">
-                      {t("modal.day", { defaultValue: "Day" })}
-                    </div>
-                    <div className="text-3xl font-black">{idx + 1}</div>
-                    {expandedDay === idx && (
-                      <ChevronUp className="absolute bottom-2 right-2 h-5 w-5" />
-                    )}
-                  </motion.button>
-                ))}
-              </div>
-
-              <AnimatePresence mode="wait">
-                {expandedDay !== null && (
-                  <motion.div
-                    key={expandedDay}
-                    initial={{ opacity: 0, y: 20, height: 0 }}
-                    animate={{ opacity: 1, y: 0, height: "auto" }}
-                    exit={{ opacity: 0, y: -20, height: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Card className="shadow-2xl border-2 border-orange-200 overflow-hidden">
-                      <CardHeader className="bg-gradient-to-r from-orange-500 to-amber-500 text-white p-6">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <h3 className="text-3xl font-bold mb-2">
-                              {t("modal.day", { defaultValue: "Day" })}{" "}
-                              {expandedDay + 1}
-                            </h3>
-                            <p className="text-white/90 text-lg">
-                              {itinerary[expandedDay]?.title ||
-                                "Tour Activities"}
-                            </p>
-                          </div>
-                          <motion.button
-                            type="button"
-                            onClick={() => setExpandedDay(null)}
-                            className="bg-white/20 hover:bg-white/30 rounded-full p-2"
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            aria-label="Close day details"
+              {/* Itinerary (Dynamic Day Expansion) */}
+              {itinerary.length > 0 && (
+                <>
+                  <h3 className="text-3xl font-bold mb-6 mt-12 text-orange-600 border-b pb-2">
+                    Day-by-Day Itinerary
+                  </h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-6">
+                    {itinerary.map((dayObj, idx) => (
+                      <motion.button
+                        key={idx}
+                        type="button"
+                        onClick={() => toggleDay(idx)}
+                        initial={{ scale: 0.9, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.02 }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.3, delay: idx * 0.05 }}
+                        className={`relative p-5 rounded-xl text-lg font-bold transition-all ${
+                          expandedDay === idx
+                            ? "bg-gradient-to-br from-orange-600 to-amber-600 text-white shadow-2xl scale-105 z-10"
+                            : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                        }`}
+                      >
+                        <div className="text-sm opacity-80 mb-1">Day</div>
+                        <div className="text-2xl font-black">
+                          {dayObj?.day ?? idx + 1}
+                        </div>
+                        {expandedDay === idx ? (
+                          <ChevronUp className="absolute bottom-2 right-2 h-5 w-5" />
+                        ) : (
+                          <motion.div
+                            initial={{ opacity: 0 }}
+                            whileHover={{ opacity: 1 }}
+                            className="absolute bottom-2 right-2 text-sm"
                           >
-                            <ChevronUp className="h-6 w-6" />
-                          </motion.button>
-                        </div>
-                      </CardHeader>
-                      <CardContent className="p-8">
-                        <div className="prose max-w-none">
-                          <p className="text-gray-700 text-lg leading-relaxed">
-                            {itinerary[expandedDay]?.description ||
-                              "Detailed itinerary for this day is not available."}
-                          </p>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                            View
+                          </motion.div>
+                        )}
+                      </motion.button>
+                    ))}
+                  </div>
+
+                  <AnimatePresence mode="wait">
+                    {expandedDay !== null && (
+                      <motion.div
+                        key={expandedDay}
+                        initial={{ opacity: 0, y: 8, height: 0 }}
+                        animate={{ opacity: 1, y: 0, height: "auto" }}
+                        exit={{ opacity: 0, y: -8, height: 0 }}
+                        transition={{ duration: 0.4 }}
+                      >
+                        <Card className="shadow-2xl border-4 border-orange-400 overflow-hidden mt-6">
+                          <CardHeader className="bg-gradient-to-r from-orange-600 to-amber-600 text-white p-6">
+                            <h3 className="text-3xl font-bold">
+                              Day{" "}
+                              {itinerary[expandedDay]?.day ?? expandedDay + 1}:{" "}
+                              {itinerary[expandedDay]?.title ??
+                                "Daily Activities"}
+                            </h3>
+                          </CardHeader>
+                          <CardContent className="p-6">
+                            <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
+                              {Array.isArray(
+                                itinerary[expandedDay]?.activities
+                              ) &&
+                                itinerary[expandedDay].activities.map(
+                                  (act, i) => (
+                                    <li key={i} className="mb-1 text-base">
+                                      {act}
+                                    </li>
+                                  )
+                                )}
+                            </ul>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </>
+              )}
             </motion.div>
           </div>
         </section>
 
-        {/* Contact */}
+        {/* --- */}
+
+        {/* ==================================================================== */}
+        {/* 4. CONTACT & SOCIAL (ALWAYS VISIBLE, SUPER SMOOTH CARDS) */}
+        {/* ==================================================================== */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-5xl">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ duration: 0.6 }}
             >
-              <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                  {t("detail.contact.title", {
-                    defaultValue: "Contact Our Team",
-                  })}
+              <div className="text-center mb-10">
+                <h2 className="text-4xl font-extrabold mb-2 bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
+                  Direct Contact
                 </h2>
                 <p className="text-gray-600 text-lg">
-                  {t("detail.contact.subtitle", {
-                    defaultValue: "Have questions? We're here to help!",
-                  })}
+                  Need assistance? Our team is ready to help!
                 </p>
               </div>
-
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="relative overflow-hidden">
-                  <Card className="h-full border-2 border-orange-200 shadow-xl hover:shadow-2xl transition-all bg-gradient-to-br from-orange-50 to-white">
-                    <CardContent className="p-8 text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-amber-500 mb-4">
-                        <Phone className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-3 text-gray-800">
-                        {t("detail.contact.phone", { defaultValue: "Call Us" })}
-                      </h3>
-                      <a
-                        href={`tel:${tour.organizer?.phone ?? "+998901234567"}`}
-                        className="text-2xl font-bold text-orange-500 hover:text-orange-600 transition-colors"
-                      >
-                        {tour.organizer?.phone ?? "+998 90 123 45 67"}
-                      </a>
-                      <p className="text-sm text-gray-600 mt-2">
-                        {t("detail.contact.phoneHours", {
-                          defaultValue: "Mon-Fri: 9AM-6PM",
-                        })}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <div className="relative overflow-hidden">
-                  <Card className="h-full border-2 border-orange-200 shadow-xl hover:shadow-2xl transition-all bg-gradient-to-br from-amber-50 to-white">
-                    <CardContent className="p-8 text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 mb-4">
-                        <Mail className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-3 text-gray-800">
-                        {t("detail.contact.email", {
-                          defaultValue: "Email Us",
-                        })}
-                      </h3>
-                      <a
-                        href={`mailto:${
-                          tour.organizer?.email ?? "info@yourtours.com"
-                        }`}
-                        className="text-xl font-bold text-orange-500 hover:text-orange-600 transition-colors break-all"
-                      >
-                        {tour.organizer?.email ?? "info@yourtours.com"}
-                      </a>
-                      <p className="text-sm text-gray-600 mt-2">
-                        {t("detail.contact.emailResponse", {
-                          defaultValue: "Response within 24h",
-                        })}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <div className="relative overflow-hidden">
-                  <Card className="h-full border-2 border-orange-200 shadow-xl hover:shadow-2xl transition-all bg-gradient-to-br from-orange-50 to-white">
-                    <CardContent className="p-8 text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 to-amber-500 mb-4">
-                        <MapPin className="h-8 w-8 text-white" />
-                      </div>
-                      <h3 className="text-xl font-bold mb-3 text-gray-800">
-                        {t("detail.contact.visit", {
-                          defaultValue: "Visit Us",
-                        })}
-                      </h3>
-                      <p className="text-lg font-semibold text-orange-500">
-                        {tour.organizer?.name ?? "Alpha Travel"}
-                      </p>
-                      <p className="text-sm text-gray-600 mt-2">
-                        {tour.organizer?.address ?? "Address not provided"}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </div>
+              <div className="grid md:grid-cols-4 gap-6 text-center">
+                {contactItems.map((item, index) => (
+                  <motion.a
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-6 flex flex-col items-center justify-center border-2 border-gray-100 rounded-xl shadow-lg bg-white group cursor-pointer"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    // Use the static color map for box shadow on hover
+                    whileHover={{
+                      scale: 1.05,
+                      boxShadow: `0 10px 20px ${
+                        contactColors[item.colorKey].hoverShadow
+                      }`,
+                    }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 150,
+                      damping: 10,
+                      delay: index * 0.1,
+                    }}
+                  >
+                    <motion.div
+                      // Use the static background class here
+                      className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-3 text-white ${
+                        contactColors[item.colorKey].bg
+                      }`}
+                      whileHover={{ rotate: 10 }}
+                    >
+                      <item.icon className="h-8 w-8" />
+                    </motion.div>
+                    <h4
+                      className={`text-xl font-bold text-gray-800 transition-colors group-hover:${
+                        contactColors[item.colorKey].hoverText
+                      }`}
+                    >
+                      {item.title}
+                    </h4>
+                    <p className="text-sm font-semibold text-gray-600 mt-1">
+                      {item.value}
+                    </p>
+                  </motion.a>
+                ))}
               </div>
             </motion.div>
           </div>
         </section>
+      </main>
 
-        {/* Back */}
-        <section className="py-12 bg-gray-50">
-          <div className="container mx-auto px-4 text-center">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button
-                type="button"
-                onClick={() => navigate("/tours")}
-                className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-8 py-6 text-lg font-bold shadow-xl"
-              >
-                {t("detail.backToTours", {
-                  defaultValue: "← Back to All Tours",
-                })}
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-      </div>
-    </Layout>
+      <Footer />
+    </div>
   );
 };
 
