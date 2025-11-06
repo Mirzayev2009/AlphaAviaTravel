@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Calendar, DollarSign, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,11 +17,12 @@ import {
  *
  * @param {Object} tour - Tour data object (must include stable `id`)
  * @param {Function} onViewDetails - Handler for viewing full tour details
- * @param {Function} onRegister - Handler for registration
+ * @param {Function} onRegister - Handler for registration (optional, will navigate to detail page instead)
  */
 const TourCard = ({ tour, onViewDetails, onRegister }) => {
   // use the 'tours' namespace so translations live under public/locales/<lang>/tours.json
   const { t, i18n } = useTranslation("tours");
+  const navigate = useNavigate();
 
   // Safe helper: return translated string or fallback
   const tx = (path, fallback) =>
@@ -59,6 +61,12 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
     (tour.images && tour.images.length > 0 && tour.images[0]) ||
     tour.image ||
     "";
+
+  // Handler for register button - navigate to tour detail page
+  const handleRegisterClick = () => {
+    // Navigate with both route param and state for reliability
+    navigate(`/tours/${tour.id}`, { state: { tour } });
+  };
 
   return (
     <motion.div
@@ -143,9 +151,9 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
               />
             </motion.button>
 
-            {/* Register Button */}
+            {/* Register Button - Now navigates to detail page */}
             <motion.button
-              onClick={() => onRegister(tour)}
+              onClick={handleRegisterClick}
               className="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-orange-500 via-amber-400 to-orange-500 text-white font-semibold shadow-md relative overflow-hidden"
               whileHover={{
                 scale: 1.05,

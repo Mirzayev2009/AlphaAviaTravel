@@ -10,6 +10,7 @@ import TourDetail from "./pages/ToursDetail";
 import Services from "./pages/Services";
 import VisaQuestion from "./pages/VisaQuestion";
 import VisaAnswer from "./pages/VisaAnswer";
+import ToursDetail from "./pages/ToursDetail";
 
  
 
@@ -108,6 +109,11 @@ const App = () => (
                <Route path="/visa/answer" element={
             <Suspense fallback={<PageLoader />}>
               <VisaAnswer />
+            </Suspense>
+          }/>
+          <Route path="tours/:tourid" element={
+            <Suspense fallback={<PageLoader />}>
+              <ToursDetail />
             </Suspense>
           }/>
 
