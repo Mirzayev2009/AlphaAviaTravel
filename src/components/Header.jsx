@@ -29,16 +29,21 @@ const Header = () => {
     { name: t("header.nav.home"), path: "/" },
     { name: t("header.nav.tours"), path: "/tours" },
     { name: t("header.nav.destinations"), path: "/destinations" },
-    { name: t("header.nav.about"), path: "/about" },
-    { name: t("header.nav.gallery"), path: "/gallery" },
-    { name: t("header.nav.contact"), path: "/contact" },
     { name: t("header.nav.services"), path: "/services" },
+    { name: t("header.nav.gallery"), path: "/gallery" },
+    { name: t("header.nav.about"), path: "/about" },
+    { name: t("header.nav.contact"), path: "/contact" },
   ];
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
+  // const changeLanguage = (lng) => {
+  //   i18n.changeLanguage(lng);
+  //   localStorage.setItem("language", lng);
+  // };
+
+  const changeLanguage = (lng) =>{
+    i18n.changeLanguage(lng)
     localStorage.setItem("language", lng);
-  };
+  }
 
   const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[0];
 

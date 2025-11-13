@@ -3,6 +3,9 @@ import { team } from "@/data/seed";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const TeamGrid = () => {
+
+
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {team.map((member, index) => (

@@ -1,0 +1,132 @@
+{
+ "visaData":{
+  "uzbekistan": {
+    "germany": {
+      "purposes": {
+        "tourism": {
+          "base": {
+            "visa_required": null,
+            "documents": [],
+            "notes": "Placeholder: check embassy",
+            "verified": false
+          },
+          "durations": [
+            {
+              "label": "Less than 15 days",
+              "min_days": 0,
+              "max_days": 14,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for <15 days",
+                "verified": false
+              }
+            },
+            {
+              "label": "15-30 days",
+              "min_days": 15,
+              "max_days": 30,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for 15-30 days",
+                "verified": false
+              }
+            },
+            {
+              "label": "1-3 months",
+              "min_days": 31,
+              "max_days": 90,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for 1-3 months",
+                "verified": false
+              }
+            },
+            {
+              "label": "3-6 months",
+              "min_days": 91,
+              "max_days": 180,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for 3-6 months",
+                "verified": false
+              }
+            },
+            {
+              "label": "More than 6 months",
+              "min_days": 181,
+              "max_days": null,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for >6 months",
+                "verified": false
+              }
+            }
+          ]
+        },
+        "study": {
+          "base": {
+            "visa_required": null,
+            "documents": [],
+            "notes": "Placeholder: study visa",
+            "verified": false
+          },
+          "durations": [
+            {
+              "label": "More than 6 months",
+              "min_days": 181,
+              "max_days": null,
+              "result": {
+                "visa_required": null,
+                "documents": [],
+                "notes": "Placeholder for long-term study",
+                "verified": false
+              }
+            }
+          ]
+        }
+      }
+    },
+
+    "turkey": {
+      "purposes": {
+        "tourism": {
+          "base": { "visa_required": null, "documents": [], "notes": "Placeholder", "verified": false },
+          "durations": []
+        }
+      }
+    },
+
+    "united states": {
+      "purposes": {
+        "tourism": {
+          "base": { "visa_required": null, "documents": [], "notes": "Placeholder", "verified": false },
+          "durations": []
+        }
+      }
+    },
+
+
+    "france": {},
+    "italy": {},
+    "spain": {},
+    "china": {}
+  },
+
+
+  "kazakhstan": {
+    "germany": {
+      "purposes": {
+        "tourism": {
+          "base": { "visa_required": null, "documents": [], "notes": "Placeholder", "verified": false },
+          "durations": []
+        }
+      }
+    }
+  }
+}
+}
