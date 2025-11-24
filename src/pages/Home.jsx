@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"; // Added useEffect for the fetch
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -6,17 +7,25 @@ import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
 import RegistrationForm from "@/components/RegistrationForm";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
-import {
-  ArrowRight,
-  CheckCircle,
-  Users,
-  Award,
-  Heart,
-  Map,
-  Globe,
-} from "lucide-react";
+import { ArrowRight, Users, Award, Heart, Map, Globe } from "lucide-react";
 import { tours } from "@/data/seed";
+
+const BASE_URL = "/api";
+
+// 🎯 New: Skeleton Loader Component
+const TourCardSkeleton = () => (
+  <div className="animate-pulse bg-white border border-gray-100 rounded-2xl shadow-sm h-full max-h-[400px]">
+    <div className="h-48 md:h-56 bg-gray-200 rounded-t-2xl"></div>
+    <div className="p-4">
+      <div className="h-6 bg-gray-300 w-3/4 mb-3 rounded"></div>
+      <div className="h-4 bg-gray-200 w-1/2 mb-4 rounded"></div>
+      <div className="flex justify-between items-center pt-2">
+        <div className="h-8 bg-gray-200 w-1/4 rounded-lg"></div>
+        <div className="h-10 bg-orange-300 w-1/3 rounded-xl"></div>
+      </div>
+    </div>
+  </div>
+);
 
 const Home = () => {
   const { t } = useTranslation();
@@ -27,10 +36,42 @@ const Home = () => {
   // Category filter state (added)
   const [selectedCategory, setSelectedCategory] = useState("uzbekistan");
 
-  // Featured tours are now derived from the selected category
-  const allTours =
-    selectedCategory === "uzbekistan" ? tours.uzbekistan : tours.world;
-  const featuredTours = allTours.slice(0, 3);
+  const [toursData, setToursData] = useState(tours);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // 🎯 FIX: Derive currentTours and featuredTours from the state (toursData)
+  const currentTours = toursData[selectedCategory] || [];
+  const featuredTours = currentTours.slice(0, 3);
+
+  useEffect(() => {
+    const fetchTours = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch(`${BASE_URL}/tours`);
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setToursData(data.tours || data);
+      } catch (error) {
+        console.error("Error fetching tours:", error);
+        setToursData(tours);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchTours();
+  }, []);
+
+  // NOTE: Removed console.log(toursData) for cleaner production code.
+  // console.log(toursData);
+
+  // NOTE: Removed duplicated and now incorrect featured tours calculation:
+  // const allTours = selectedCategory === "uzbekistan" ? tours.uzbekistan : tours.world;
+  // const featuredTours = allTours.slice(0, 3);
 
   return (
     <div>
@@ -53,6 +94,7 @@ const Home = () => {
               {t("home.featuredSubtitle")}
             </p>
           </motion.div>
+
           {/* Category selector (UZ / World) */}
           <div className="flex justify-center gap-6 mb-6">
             <motion.button
@@ -94,16 +136,29 @@ const Home = () => {
             </motion.button>
           </div>
 
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {featuredTours.map((tour) => (
-              <TourCard
-                key={tour.id}
-                tour={tour}
-                onViewDetails={setSelectedTour}
-                onRegister={setRegistrationTour}
-              />
-            ))}
+            {/* 🎯 FIX: Conditional rendering for loading state */}
+            {isLoading ? (
+              <>
+                <TourCardSkeleton />
+                <TourCardSkeleton />
+                <TourCardSkeleton />
+              </>
+            ) : currentTours.length > 0 ? (
+              featuredTours.map((tour) => (
+                <TourCard
+                  key={tour.id}
+                  tour={tour}
+                  onViewDetails={setSelectedTour}
+                  onRegister={setRegistrationTour}
+                />
+              ))
+            ) : (
+              // Fallback if the selected category is empty after loading
+              <div className="col-span-full text-center py-12 text-gray-500 text-lg">
+                {t("home.noToursAvailable", "No tours found in this category.")}
+              </div>
+            )}
           </div>
 
           <div className="text-center flex justify-center">
@@ -155,7 +210,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* Why Choose Us Section (no changes needed) */}
+      {/* ... */}
       <section className="py-16 bg-white text-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,165,0,0.05),transparent_70%)] pointer-events-none" />
 
@@ -178,20 +234,20 @@ const Home = () => {
             {[
               {
                 Icon: Users,
-                title:t("home.aboutcard1Title")  , 
-                text: t("home.aboutcard1Text")  ,
+                title: t("home.aboutcard1Title"),
+                text: t("home.aboutcard1Text"),
                 delay: 0.1,
               },
               {
                 Icon: Award,
-                title: t("home.aboutcard2Title") ,
-                text: t("home.aboutcard2Text") ,
+                title: t("home.aboutcard2Title"),
+                text: t("home.aboutcard2Text"),
                 delay: 0.2,
               },
               {
                 Icon: Heart,
-                title: t("home.aboutcard3Title")  ,
-                text: t("home.aboutcard3Text")  ,
+                title: t("home.aboutcard3Title"),
+                text: t("home.aboutcard3Text"),
                 delay: 0.3,
               },
             ].map(({ Icon, title, text, delay }, index) => (
@@ -272,7 +328,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Modals */}
+      {/* Modals (no changes needed) */}
       {selectedTour && (
         <TourModal
           tour={selectedTour}
