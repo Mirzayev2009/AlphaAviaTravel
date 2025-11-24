@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Award, Heart, Map, Globe } from "lucide-react";
 import { tours } from "@/data/seed";
 
-const BASE_URL = "/api";
+const BASE_URL = import.meta.env.VITE_API_URL || "/api";
 
 // 🎯 New: Skeleton Loader Component
 const TourCardSkeleton = () => (

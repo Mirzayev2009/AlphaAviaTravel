@@ -6,7 +6,8 @@ import TourModal from "@/components/TourModal";
 import { tours } from "@/data/seed";
 import { useTranslation } from "react-i18next";
 
-const BASE_URL = "/api";
+const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+
 
 // Main Tours Component
 const ToursPage = () => {
