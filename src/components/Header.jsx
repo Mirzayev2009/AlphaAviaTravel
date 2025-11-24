@@ -99,7 +99,7 @@ const Header = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-         <Link to="/visa/questions">
+         {/* <Link to="/visa/questions">
     
             <motion.button
               onClick={() => navigate("/visa/questions")}
@@ -135,7 +135,7 @@ const Header = () => {
               </motion.div>
 
               {/* Animated shimmer overlay */}
-              <motion.div
+              {/* <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 opacity-0 rounded-xl"
                 whileHover={{
                   opacity: 0.25,
@@ -145,7 +145,7 @@ const Header = () => {
               />
             </motion.button>
           
-         </Link>
+         </Link> */} 
 
           {/* Mobile Menu Toggle */}
           <Button

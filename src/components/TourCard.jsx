@@ -10,6 +10,10 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 
+
+
+
+
 /**
  * TourCard component
  * - Uses translations from `tours` namespace (detail.<tour.id>.*)
@@ -56,11 +60,16 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
   const registerLabel = t("card.register", { defaultValue: "Register Now" });
   const dayLabel = t("modal.day", { defaultValue: "Day" });
 
+  
   // image fallback (some tours use `images` array, some `image`)
-  const imageSrc =
+
+  const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com"
+
+  const imagePath =
     (tour.images && tour.images.length > 0 && tour.images[0]) ||
     tour.image ||
     "";
+    const imageSrc = imagePath ? `${IMAGE_BASE_URL}${imagePath}` : "";
 
   // Handler for register button - navigate to tour detail page
   const handleRegisterClick = () => {
@@ -119,7 +128,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
                 {price}
               </span>
               <span className="text-xs text-muted-foreground">
-                {perPersonLabel}
+                {t("card.perPerson")}
               </span>
             </div>
           </div>

@@ -2,48 +2,205 @@
   "header": {
     "nav": {
       "home": "首页",
-      "tours": "旅游",
+      "tours": "旅行团",
       "destinations": "目的地",
       "about": "关于我们",
       "gallery": "画廊",
-      "contact": "联系"
+      "contact": "联系我们",
+      "services": "服务"
     },
     "language": "语言"
   },
   "hero": {
     "title": "探索乌兹别克斯坦的隐藏宝藏",
-    "subtitle": "通过精心策划的旅行体验丝绸之路的魔力",
-    "cta": "探索旅游",
-    "ctaSecondary": "查看目的地"
+    "subtitle": "通过精心策划的旅行团体验丝绸之路的魔力",
+    "cta": "探索旅行团",
+    "ctaSecondary": "查看目的地",
+    "slides": {
+      "1": {
+        "title": "发现丝绸之路",
+        "subtitle": "穿越古老的城市和永恒的美景"
+      },
+      "2": {
+        "title": "体验鲜活的历史",
+        "subtitle": "沿着商人和学者的足迹前行"
+      },
+      "3": {
+        "title": "揭开隐藏的宝藏",
+        "subtitle": "探索联合国教科文组织世界遗产的奇观"
+      }
+    }
   },
   "home": {
-    "featuredTitle": "精选旅游",
-    "featuredSubtitle": "乌兹别克斯坦最具代表性目的地的精选旅行",
-    "aboutTitle": "为什么选择AlphaTravel？",
-    "aboutText": "凭借15年以上的经验，AlphaTravel在乌兹别克斯坦提供真实且沉浸式的旅行体验。我们的专业导游让历史生动呈现，同时关注细节，确保您的旅程顺畅且难忘。",
-    "aboutCta": "了解更多关于我们"
+    "featuredTitle": "特色旅行团",
+    "featuredSubtitle": "精选乌兹别克斯坦最具标志性目的地的旅程",
+    "aboutTitle": "为什么选择 AlphaTravel？",
+    "aboutText": "凭借超过 15 年的经验，AlphaTravel 在整个乌兹别克斯坦提供真实、沉浸式的体验。我们的专家导游让历史栩栩如生，而我们对细节的关注确保您的旅程顺利而难忘。",
+    "aboutCta": "了解更多关于我们",
+    "aboutcard1Title": "专家导游",
+    "aboutcard1Text": "我们充满热情的导游凭借深厚的本地知识，让历史和文化焕发活力。",
+    "aboutcard2Title": "15+ 年经验",
+    "aboutcard2Text": "十多年来，我们为全球旅行者创造了难忘的乌兹别克斯坦冒险之旅。",
+    "aboutcard3Title": "个性化服务",
+    "aboutcard3Text": "我们根据您的兴趣定制每个旅行团，确保真正的个人体验。"
   },
   "tours": {
-    "title": "我们的旅游",
-    "subtitle": "乌兹别克斯坦的精选体验",
-    "filter": {
-      "all": "所有旅游",
-      "destination": "按目的地",
-      "duration": "按时长",
-      "price": "按价格"
-    },
-    "card": {
-      "from": "起价",
-      "perPerson": "每人",
-      "viewDetails": "查看详情",
-      "register": "立即报名"
+    "title": "发现您的下一次冒险",
+    "subtitle": "从乌兹别克斯坦的宝藏到全球目的地，选择您的完美旅程",
+    "explore": "探索",
+    "uzTours": "乌兹别克斯坦旅行团",
+    "discover": "发现",
+    "worldTours": "全球旅行团",
+    "uzSubtitle": "探索丝绸之路的奇观和乌兹别克斯坦丰富的遗产",
+    "worldSubtitle": "从乌兹别克斯坦出发，体验世界上最迷人的目的地",
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "丝绸之路亮点",
+        "duration": "10 天",
+        "price": "$1,200",
+        "dates": "全年可用",
+        "highlights": [
+          "探索撒马尔罕的雷吉斯坦广场",
+          "参观布哈拉的古代清真寺",
+          "发现希瓦的围城"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "抵达塔什干",
+              "塔什干城市游"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "前往撒马尔罕",
+              "参观古尔-埃米尔陵墓"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "乌兹别克斯坦文化宝藏",
+        "duration": "7 天",
+        "price": "$900",
+        "dates": "全年可用",
+        "highlights": [
+          "体验传统乌兹别克美食",
+          "参观当地手工艺作坊",
+          "探索历史悠久的丝绸之路遗址"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "抵达塔什干",
+              "伴有传统音乐的欢迎晚宴"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "前往布哈拉",
+              "布哈拉老城区导览游"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "乌兹别克斯坦沙漠探险",
+        "duration": "5 天",
+        "price": "$700",
+        "dates": "全年可用",
+        "highlights": [
+          "在克孜勒库姆沙漠进行骆驼徒步旅行",
+          "在蒙古包营地过夜",
+          "沙漠沙丘上的日落美景"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "抵达塔什干",
+              "晚间简报和晚餐"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "前往克孜勒库姆沙漠",
+              "开始骆驼徒步"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "乌兹别克斯坦家庭乐趣",
+        "duration": "8 天",
+        "price": "$1,100",
+        "dates": "全年可用",
+        "highlights": [
+          "儿童互动工作坊",
+          "家庭友好型观光旅游",
+          "文化表演和活动"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "抵达塔什干",
+              "家庭欢迎活动"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "参观塔什干动物园",
+              "探索当地公园和游乐场"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "乌兹别克斯坦豪华体验",
+        "duration": "12 天",
+        "price": "$3,500",
+        "dates": "全年可用",
+        "highlights": [
+          "入住五星级酒店",
+          "私人导览游",
+          "独家用餐体验"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "抵达塔什干",
+              "豪华交通工具私人城市游"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "乘坐私家车前往撒马尔罕",
+              "雷吉斯坦广场贵宾游"
+            ]
+          }
+        ]
+      }
     },
     "modal": {
-      "itinerary": "行程",
+      "itinerary": "行程安排",
       "highlights": "亮点",
       "day": "天",
       "close": "关闭",
-      "registerNow": "报名此行程"
+      "registerNow": "注册此旅行团"
     }
   },
   "destinations": {
@@ -51,149 +208,255 @@
     "subtitle": "探索乌兹别克斯坦最迷人的地方",
     "card": {
       "learnMore": "了解更多",
-      "bestTime": "最佳访问时间"
+      "bestTime": "最佳旅游时间"
     },
     "drawer": {
       "close": "关闭",
-      "relatedTours": "相关旅游",
-      "viewTours": "查看可用旅游"
+      "relatedTours": "相关旅行团",
+      "viewTours": "查看可用旅行团"
     }
   },
   "registration": {
-    "title": "旅游报名",
-    "subtitle": "填写以下表格，我们将在24小时内与您联系",
+    "title": "旅行团注册",
+    "subtitle": "填写以下表格，我们将在 24 小时内联系您",
     "form": {
       "name": "全名",
       "namePlaceholder": "张三",
-      "email": "电子邮件",
-      "emailPlaceholder": "zhang@example.com",
+      "email": "电子邮件地址",
+      "emailPlaceholder": "zhangsan@example.com",
       "phone": "电话号码",
-      "phonePlaceholder": "+86 123 4567 8900",
+      "phonePlaceholder": "+86 138 0000 0000",
       "numberOfPeople": "人数",
       "notes": "附加说明",
       "notesPlaceholder": "饮食限制、特殊要求等",
-      "submit": "提交报名",
-      "submitting": "提交中..."
+      "submit": "提交注册",
+      "submitting": "正在提交..."
     },
     "validation": {
-      "nameRequired": "姓名为必填项",
-      "emailRequired": "电子邮件为必填项",
-      "emailInvalid": "请输入有效电子邮件",
-      "phoneRequired": "电话号码为必填项",
-      "phoneInvalid": "请输入有效电话号码",
-      "peopleMin": "至少需要1人"
+      "nameRequired": "姓名是必需的",
+      "emailRequired": "电子邮件是必需的",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "phoneRequired": "电话号码是必需的",
+      "phoneInvalid": "请输入有效的电话号码",
+      "peopleMin": "至少需要 1 人"
     },
-    "success": "报名成功！我们将在24小时内与您联系。",
-    "error": "报名失败，请重试。",
+    "success": "注册成功！我们将在 24 小时内联系您。",
+    "error": "注册失败。请重试。",
     "organizer": {
-      "title": "联系旅游组织者",
-      "phone": "拨打电话",
-      "email": "发送邮件",
-      "hours": "服务时间 9:00 - 20:00 (GMT+5)"
+      "title": "联系我们的旅行团组织者",
+      "phone": "致电我们",
+      "email": "发邮件给我们",
+      "hours": "服务时间 9 AM - 8 PM (GMT+5)"
     }
   },
   "about": {
-    "title": "关于AlphaTravel",
-    "subtitle": "您在乌兹别克斯坦冒险的可靠伙伴",
-    "story": "AlphaTravel由撒马尔罕本地人Aziza Karimova于2008年创立，已发展为乌兹别克斯坦领先的旅行社。我们热衷于与世界各地的旅行者分享我们国家丰富的历史、壮丽的建筑和热情好客。",
-    "mission": "我们的使命是创造真实、可持续的旅游体验，为当地社区带来益处，同时为游客留下难忘的回忆。",
+    "title": "关于 AlphaTravel",
+    "subtitle": "您值得信赖的乌兹别克斯坦探险伙伴",
+    "story": "AlphaTravel 由撒马尔罕本地人 Aziza Karimova 于 2008 年创立，现已发展成为乌兹别克斯坦主要的旅行社。我们热衷于与世界各地的旅行者分享我们国家丰富的历史、令人惊叹的建筑和热情的待客之道。",
+    "mission": "我们的使命是创造真实的、可持续的旅游体验，造福当地社区，同时为我们的客人提供难忘的回忆。",
     "teamTitle": "认识我们的团队",
-    "teamSubtitle": "专业导游和充满热情的专业人士",
-    "storiesTitle": "成功故事",
-    "storiesSubtitle": "听听与我们一起体验乌兹别克斯坦的旅行者的故事"
+    "teamSubtitle": "专家导游和充满热情的专业人士",
+    "storiesTitle": "成功案例",
+    "storiesSubtitle": "听听与我们一起体验过乌兹别克斯坦的旅行者的心声"
   },
   "contact": {
     "title": "联系我们",
-    "subtitle": "我们为您的乌兹别克斯坦完美旅行提供帮助",
+    "subtitle": "我们在这里帮助您规划完美的乌兹别克斯坦冒险之旅",
     "form": {
       "name": "您的姓名",
       "namePlaceholder": "张三",
-      "email": "您的邮箱",
-      "emailPlaceholder": "zhang@example.com",
+      "email": "您的电子邮件",
+      "emailPlaceholder": "zhangsan@example.com",
       "subject": "主题",
-      "subjectPlaceholder": "旅游咨询",
-      "message": "信息",
+      "subjectPlaceholder": "旅行团咨询",
+      "message": "留言",
       "messagePlaceholder": "告诉我们您的旅行计划...",
-      "submit": "发送信息",
-      "submitting": "发送中..."
+      "submit": "发送留言",
+      "submitting": "正在发送..."
     },
     "validation": {
-      "nameRequired": "姓名为必填项",
-      "emailRequired": "电子邮件为必填项",
-      "emailInvalid": "请输入有效电子邮件",
-      "subjectRequired": "主题为必填项",
-      "messageRequired": "信息为必填项"
+      "nameRequired": "姓名是必需的",
+      "emailRequired": "电子邮件是必需的",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "subjectRequired": "主题是必需的",
+      "messageRequired": "留言是必需的"
     },
-    "success": "信息发送成功！我们将尽快回复。",
-    "error": "信息发送失败，请重试。",
+    "success": "留言发送成功！我们会尽快回复。",
+    "error": "留言发送失败。请重试。",
     "info": {
       "title": "联系信息",
-      "office": "主办公室",
-      "address": "乌兹别克斯坦撒马尔罕，雷吉斯坦街123号",
+      "office": "总公司",
+      "address": "乌兹别克斯坦撒马尔罕雷吉斯坦街 123 号",
       "phone": "电话",
       "email": "电子邮件",
-      "hours": "办公时间",
-      "hoursDetail": "周一至周六: 9:00 - 20:00\n周日: 10:00 - 18:00"
+      "hours": "营业时间",
+      "hoursDetail": "周一至周六：9 AM - 8 PM\n周日：10 AM - 6 PM"
     }
   },
+  "card": {
+    "from": "起",
+    "perPerson": "每人",
+    "viewDetails": "查看详情",
+    "register": "立即注册"
+  },
   "gallery": {
-    "title": "照片库",
+    "title": "图片画廊",
     "subtitle": "乌兹别克斯坦奇观的视觉之旅",
     "lightbox": {
-      "previous": "上一张",
-      "next": "下一张",
+      "previous": "上一个",
+      "next": "下一个",
       "close": "关闭"
     }
   },
   "footer": {
-    "about": "AlphaTravel专注于乌兹别克斯坦的真实旅游，从丝绸之路古城到隐藏的文化宝藏。",
+    "about": "AlphaTravel 专注于真实的乌兹别克斯坦旅行团，从丝绸之路的古老城市到隐藏的文化瑰宝。",
     "quickLinks": "快速链接",
     "contactInfo": "联系信息",
     "followUs": "关注我们",
-    "copyright": "© 2025 AlphaTravel. 保留所有权利。"
+    "copyright": "© 2025 AlphaTravel. 版权所有。"
   },
   "common": {
-    "loading": "加载中...",
+    "loading": "正在加载...",
     "error": "发生错误",
-    "backToTop": "回到顶部",
+    "backToTop": "返回顶部",
     "readMore": "阅读更多",
     "bookNow": "立即预订",
     "learnMore": "了解更多"
   },
-  "contact": {
+  "form": {
+    "bookThisTour": "注册此旅行团",
+    "fillDetails": "填写您的联系信息以预留一个位置",
+    "name": "全名",
+    "email": "电子邮件",
+    "phone": "电话",
+    "participants": "参与者",
+    "notes": "备注（可选）",
+    "bookNow": "立即预订",
+    "submitting": "正在提交...",
+    "thanks": "谢谢 — 我们已收到您的注册。",
+    "savedOffline": "本地保存 — 我们会稍后尝试发送。",
+    "contactOrganizer": "联系组织者"
+  },
+  "toursCard": {
+    "detail": {
+      "title": "Alpha Avia 旅行团",
+      "subtitle": "我们在这里帮助您规划完美的乌兹别克斯坦冒险之旅",
+      "duration": "持续时间",
+      "dates": "日期",
+      "price": "价格",
+      "highlights": "亮点",
+      "itinerary": "行程安排",
+      "organizerContact": "组织者联系方式"
+    },
+    "card": {
+      "viewDetails": "查看详情",
+      "register": "立即注册",
+      "perPerson": "每人"
+    },
+    "filter": {
+      "all": "所有旅行团"
+    }
+  },
+  "contactCard": {
+    "phone": "电话",
+    "email": "电子邮件",
+    "website": "网站"
+  },
+  "validation": {
+    "required": "{{field}} 是必需的",
+    "invalidEmail": "无效的电子邮件地址",
+    "minParticipants": "至少需要一位参与者"
+  },
+  "contactService": {
     "title": "联系我们",
-    "subtitle": "我们帮助您规划完美的乌兹别克斯坦之旅",
+    "subtitle": "我们在这里帮助您规划完美的乌兹别克斯坦冒险之旅",
     "form": {
       "name": "您的姓名",
       "namePlaceholder": "张三",
-      "email": "您的邮箱",
-      "emailPlaceholder": "zhang@example.com",
+      "email": "您的电子邮件",
+      "emailPlaceholder": "zhangsan@example.com",
       "subject": "主题",
-      "subjectPlaceholder": "旅游咨询",
-      "message": "信息",
+      "subjectPlaceholder": "旅行团咨询",
+      "message": "留言",
       "messagePlaceholder": "告诉我们您的旅行计划...",
-      "submit": "发送信息",
-      "submitting": "发送中..."
+      "submit": "发送留言",
+      "submitting": "正在发送..."
     },
     "validation": {
-      "nameRequired": "姓名为必填项",
-      "emailRequired": "电子邮件为必填项",
-      "emailInvalid": "请输入有效电子邮件",
-      "subjectRequired": "主题为必填项",
-      "messageRequired": "信息为必填项"
+      "nameRequired": "姓名是必需的",
+      "emailRequired": "电子邮件是必需的",
+      "emailInvalid": "请输入有效的电子邮件地址",
+      "subjectRequired": "主题是必需的",
+      "messageRequired": "留言是必需的"
     },
-    "success": "信息发送成功！我们将尽快回复。",
-    "error": "信息发送失败，请重试。",
+    "success": "留言发送成功！我们会尽快回复。",
+    "error": "留言发送失败。请重试。",
     "info": {
       "title": "联系信息",
-      "office": "主办公室",
-      "address": "乌兹别克斯坦撒马尔罕，雷吉斯坦街123号",
+      "office": "总公司",
+      "address": "乌兹别克斯坦撒马尔罕雷吉斯坦街 123 号",
       "phone": "电话",
       "email": "电子邮件",
-      "hours": "办公时间",
-      "hoursDetail": "周一至周六: 9:00 - 20:00\n周日: 10:00 - 18:00"
+      "hours": "营业时间",
+      "hoursDetail": "周一至周六：9 AM - 8 PM\n周日：10 AM - 6 PM"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "为您的乌兹别克斯坦冒险提供全面的旅行解决方案",
+    "transport": {
+      "title": "交通服务",
+      "subtitle": "可靠舒适的交通选择，包括机场接送、私家车和团体班车，确保您的整个旅程顺利无阻。"
+    },
+    "hotels": {
+      "title": "酒店预订",
+      "subtitle": "我们提供从经济型到豪华酒店的广泛住宿选择，确保您找到符合您的喜好和预算的完美住宿。"
+    },
+    "question": "准备好预订了吗？",
+    "contactUs": "联系我们定制您的完美旅行套餐",
+    "GetInTouch": "联系我们",
+    "book": "立即预订",
+    "close": "关闭",
+    "category": "类别"
+  },
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "您的预订已确定！",
+      "confirm": "您的精彩旅程已确认，",
+      "congraluate": "！我们很高兴您和您的团队加入我们。",
+      "summary": "摘要",
+      "tour": "旅行团：",
+      "guests": "客人：",
+      "totalCost": "总费用：",
+      "people": "人",
+      "detailedReceipt": "详细的确认收据已发送至",
+      "callus": "致电我们"
+    },
+    "registrationDetails": {
+      "name": "姓名",
+      "people": "人数",
+      "totalPrice": "总价：",
+      "email": "电子邮件地址",
+      "phone": "电话号码",
+      "tourTitle": "旅行团标题",
+      "bookTrip": "预订您的行程",
+      "securePlace": "立即确定您的位置！每人价格：$",
+      "priceForPerson": "价格为",
+      "confirmBooking": "确认预订"
+    },
+    "FullAdventure": {
+      "adventure": "您的完整探险详情",
+      "highlights": "关键亮点",
+      "duration": "持续时间：",
+      "itinerary": "每日行程安排",
+      "days": "天",
+      "day": "日",
+      "day:": "天：",
+      "activities": "活动",
+      "close": "关闭",
+      "view": "查看",
+      "DirectContact": "直接联系",
+      "assist": "需要协助？我们的团队随时准备为您服务！"
     }
   }
-
-
 }

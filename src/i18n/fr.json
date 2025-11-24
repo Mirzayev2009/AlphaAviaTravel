@@ -6,138 +6,301 @@
       "destinations": "Destinations",
       "about": "À propos",
       "gallery": "Galerie",
-      "contact": "Contact"
+      "contact": "Contact",
+      "services": "Services"
     },
     "language": "Langue"
   },
   "hero": {
     "title": "Découvrez les Trésors Cachés de l'Ouzbékistan",
-    "subtitle": "Vivez la magie de la Route de la Soie avec des circuits soigneusement sélectionnés",
-    "cta": "Explorer les Tours",
-    "ctaSecondary": "Voir les Destinations"
+    "subtitle": "Vivez la magie de la Route de la Soie avec des circuits soigneusement conçus",
+    "cta": "Explorer les Circuits",
+    "ctaSecondary": "Voir les Destinations",
+    "slides": {
+      "1": {
+        "title": "Découvrez la Route de la Soie",
+        "subtitle": "Voyagez à travers des villes anciennes et une beauté intemporelle"
+      },
+      "2": {
+        "title": "Vivez l'Histoire Vivante",
+        "subtitle": "Marchez sur les traces des marchands et des érudits"
+      },
+      "3": {
+        "title": "Dévoilez les Trésors Cachés",
+        "subtitle": "Explorez les merveilles du patrimoine mondial de l'UNESCO"
+      }
+    }
   },
   "home": {
-    "featuredTitle": "Tours en Vedette",
-    "featuredSubtitle": "Voyages sélectionnés à travers les destinations les plus emblématiques de l'Ouzbékistan",
+    "featuredTitle": "Circuits Mis en Avant",
+    "featuredSubtitle": "Voyages triés sur le volet à travers les destinations les plus emblématiques de l'Ouzbékistan",
     "aboutTitle": "Pourquoi Choisir AlphaTravel ?",
-    "aboutText": "Avec plus de 15 ans d'expérience, AlphaTravel offre des expériences authentiques et immersives à travers l'Ouzbékistan. Nos guides experts donnent vie à l'histoire, tandis que notre attention aux détails garantit un voyage fluide et inoubliable.",
-    "aboutCta": "En savoir plus sur nous"
+    "aboutText": "Avec plus de 15 ans d'expérience, AlphaTravel offre des expériences authentiques et immersives à travers tout l'Ouzbékistan. Nos guides experts font revivre l'histoire, tandis que notre souci du détail assure que votre voyage sera fluide et inoubliable.",
+    "aboutCta": "En Savoir Plus Sur Nous",
+    "aboutcard1Title": "Guides Experts",
+    "aboutcard1Text": "Nos guides passionnés donnent vie à l'histoire et à la culture grâce à une connaissance locale approfondie.",
+    "aboutcard2Title": "+15 Ans d'Expérience",
+    "aboutcard2Text": "Plus d'une décennie à créer des aventures inoubliables en Ouzbékistan pour les voyageurs du monde entier.",
+    "aboutcard3Title": "Service Personnalisé",
+    "aboutcard3Text": "Nous adaptons chaque circuit à vos intérêts, garantissant une expérience vraiment personnelle."
   },
   "tours": {
-    "title": "Nos Tours",
-    "subtitle": "Expériences soigneusement sélectionnées à travers l'Ouzbékistan",
-    "filter": {
-      "all": "Tous les Tours",
-      "destination": "Par Destination",
-      "duration": "Par Durée",
-      "price": "Par Prix"
-    },
-    "card": {
-      "from": "À partir de",
-      "perPerson": "par personne",
-      "viewDetails": "Voir les Détails",
-      "register": "S'inscrire Maintenant"
+    "title": "Découvrez Votre Prochaine Aventure",
+    "subtitle": "Choisissez votre voyage parfait, des trésors de l'Ouzbékistan aux destinations mondiales",
+    "explore": "Explorer",
+    "uzTours": "Circuits Ouzbékistan",
+    "discover": "Découvrir",
+    "worldTours": "Circuits Monde",
+    "uzSubtitle": "Explorez les merveilles de la Route de la Soie et le riche patrimoine de l'Ouzbékistan",
+    "worldSubtitle": "Découvrez les destinations les plus captivantes du monde depuis l'Ouzbékistan",
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "Points Forts de la Route de la Soie",
+        "duration": "10 Jours",
+        "price": "$1,200",
+        "dates": "Disponible Toute l'Année",
+        "highlights": [
+          "Explorer la place du Registan à Samarcande",
+          "Visiter les anciennes mosquées de Boukhara",
+          "Découvrir la ville fortifiée de Khiva"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivée à Tachkent",
+              "Visite de la ville de Tachkent"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Voyage à Samarcande",
+              "Visite du Mausolée de Gour Emir"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "Trésors Culturels de l'Ouzbékistan",
+        "duration": "7 Jours",
+        "price": "$900",
+        "dates": "Disponible Toute l'Année",
+        "highlights": [
+          "Goûter à la cuisine traditionnelle ouzbèke",
+          "Visiter les ateliers d'artisans locaux",
+          "Explorer les sites historiques de la Route de la Soie"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivée à Tachkent",
+              "Dîner de bienvenue avec musique traditionnelle"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Voyage à Boukhara",
+              "Visite guidée de la vieille ville de Boukhara"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "Aventures dans le Désert en Ouzbékistan",
+        "duration": "5 Jours",
+        "price": "$700",
+        "dates": "Disponible Toute l'Année",
+        "highlights": [
+          "Randonnée à dos de chameau dans le désert du Kyzylkoum",
+          "Nuitée dans un camp de yourtes",
+          "Vues du coucher de soleil sur les dunes du désert"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivée à Tachkent",
+              "Briefing en soirée et dîner"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Voyage dans le désert du Kyzylkoum",
+              "Début de la randonnée à dos de chameau"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "Plaisirs Familiaux en Ouzbékistan",
+        "duration": "8 Jours",
+        "price": "$1,100",
+        "dates": "Disponible Toute l'Année",
+        "highlights": [
+          "Ateliers interactifs pour enfants",
+          "Visites guidées adaptées aux familles",
+          "Spectacles et activités culturelles"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivée à Tachkent",
+              "Événement de bienvenue familial"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Visite du Zoo de Tachkent",
+              "Exploration des parcs et aires de jeux locaux"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "Expérience Luxe en Ouzbékistan",
+        "duration": "12 Jours",
+        "price": "$3,500",
+        "dates": "Disponible Toute l'Année",
+        "highlights": [
+          "Séjour dans des hôtels 5 étoiles",
+          "Visites guidées privées",
+          "Expériences gastronomiques exclusives"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivée à Tachkent",
+              "Visite privée de la ville avec transport de luxe"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Voyage à Samarcande en voiture privée",
+              "Visite VIP de la place du Registan"
+            ]
+          }
+        ]
+      }
     },
     "modal": {
       "itinerary": "Itinéraire",
       "highlights": "Points Forts",
       "day": "Jour",
       "close": "Fermer",
-      "registerNow": "S'inscrire à ce Tour"
+      "registerNow": "S'inscrire à Ce Circuit"
     }
   },
   "destinations": {
     "title": "Destinations",
     "subtitle": "Explorez les lieux les plus captivants de l'Ouzbékistan",
     "card": {
-      "learnMore": "En savoir plus",
-      "bestTime": "Meilleur moment pour visiter"
+      "learnMore": "En Savoir Plus",
+      "bestTime": "Meilleure Période pour Visiter"
     },
     "drawer": {
       "close": "Fermer",
-      "relatedTours": "Tours Liés",
-      "viewTours": "Voir les Tours Disponibles"
+      "relatedTours": "Circuits Connexes",
+      "viewTours": "Voir les Circuits Disponibles"
     }
   },
   "registration": {
-    "title": "Inscription au Tour",
-    "subtitle": "Remplissez le formulaire ci-dessous et nous vous contacterons sous 24 heures",
+    "title": "Inscription au Circuit",
+    "subtitle": "Remplissez le formulaire ci-dessous et nous vous contacterons dans les 24 heures",
     "form": {
       "name": "Nom Complet",
       "namePlaceholder": "Jean Dupont",
-      "email": "Adresse Email",
+      "email": "Adresse E-mail",
       "emailPlaceholder": "jean@example.com",
       "phone": "Numéro de Téléphone",
-      "phonePlaceholder": "+1 234 567 8900",
+      "phonePlaceholder": "+33 1 23 45 67 89",
       "numberOfPeople": "Nombre de Personnes",
       "notes": "Notes Supplémentaires",
       "notesPlaceholder": "Restrictions alimentaires, demandes spéciales, etc.",
-      "submit": "Envoyer l'Inscription",
-      "submitting": "Envoi..."
+      "submit": "Soumettre l'Inscription",
+      "submitting": "Envoi en cours..."
     },
     "validation": {
       "nameRequired": "Le nom est requis",
-      "emailRequired": "L'email est requis",
-      "emailInvalid": "Veuillez entrer un email valide",
+      "emailRequired": "L'e-mail est requis",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide",
       "phoneRequired": "Le numéro de téléphone est requis",
       "phoneInvalid": "Veuillez entrer un numéro de téléphone valide",
-      "peopleMin": "Au moins 1 personne est requise"
+      "peopleMin": "Au moins 1 personne requise"
     },
-    "success": "Inscription réussie ! Nous vous contacterons sous 24 heures.",
+    "success": "Inscription réussie ! Nous vous contacterons dans les 24 heures.",
     "error": "Échec de l'inscription. Veuillez réessayer.",
     "organizer": {
-      "title": "Contactez notre Organisateur de Tours",
+      "title": "Contacter Notre Organisateur de Circuits",
       "phone": "Appelez-nous",
-      "email": "Envoyez-nous un Email",
+      "email": "Envoyez-nous un E-mail",
       "hours": "Disponible de 9h à 20h (GMT+5)"
     }
   },
   "about": {
-    "title": "À propos de AlphaTravel",
-    "subtitle": "Votre partenaire de confiance pour des aventures en Ouzbékistan",
-    "story": "Fondée en 2008 par Aziza Karimova, originaire de Samarcande, AlphaTravel est devenue le principal opérateur touristique de l'Ouzbékistan. Nous sommes passionnés par le partage de l'histoire riche, de l'architecture impressionnante et de l'hospitalité chaleureuse de notre pays avec les voyageurs du monde entier.",
-    "mission": "Notre mission est de créer des expériences touristiques authentiques et durables qui bénéficient aux communautés locales tout en offrant des souvenirs inoubliables à nos clients.",
-    "teamTitle": "Rencontrez notre Équipe",
+    "title": "À propos d'AlphaTravel",
+    "subtitle": "Votre partenaire de confiance pour les aventures en Ouzbékistan",
+    "story": "Fondée en 2008 par Aziza Karimova, originaire de Samarcande, AlphaTravel est devenue le principal voyagiste en Ouzbékistan. Nous sommes passionnés par le partage de la riche histoire de notre pays, de son architecture magnifique et de son hospitalité chaleureuse avec les voyageurs du monde entier.",
+    "mission": "Notre mission est de créer des expériences touristiques authentiques et durables qui profitent aux communautés locales tout en offrant des souvenirs inoubliables à nos clients.",
+    "teamTitle": "Rencontrez Notre Équipe",
     "teamSubtitle": "Guides experts et professionnels passionnés",
     "storiesTitle": "Histoires de Succès",
     "storiesSubtitle": "Écoutez les voyageurs qui ont découvert l'Ouzbékistan avec nous"
   },
   "contact": {
     "title": "Nous Contacter",
-    "subtitle": "Nous sommes là pour planifier votre aventure parfaite en Ouzbékistan",
+    "subtitle": "Nous sommes là pour vous aider à planifier votre aventure parfaite en Ouzbékistan",
     "form": {
       "name": "Votre Nom",
       "namePlaceholder": "Jean Dupont",
-      "email": "Votre Email",
+      "email": "Votre E-mail",
       "emailPlaceholder": "jean@example.com",
       "subject": "Sujet",
-      "subjectPlaceholder": "Demande de Tour",
+      "subjectPlaceholder": "Demande de circuit",
       "message": "Message",
       "messagePlaceholder": "Parlez-nous de vos projets de voyage...",
       "submit": "Envoyer le Message",
-      "submitting": "Envoi..."
+      "submitting": "Envoi en cours..."
     },
     "validation": {
       "nameRequired": "Le nom est requis",
-      "emailRequired": "L'email est requis",
-      "emailInvalid": "Veuillez entrer un email valide",
+      "emailRequired": "L'e-mail est requis",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide",
       "subjectRequired": "Le sujet est requis",
       "messageRequired": "Le message est requis"
     },
-    "success": "Message envoyé avec succès ! Nous répondrons bientôt.",
+    "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
     "error": "Échec de l'envoi du message. Veuillez réessayer.",
     "info": {
       "title": "Informations de Contact",
       "office": "Bureau Principal",
-      "address": "123 Rue Registan, Samarcande, Ouzbékistan",
+      "address": "123 Rue du Registan, Samarcande, Ouzbékistan",
       "phone": "Téléphone",
-      "email": "Email",
-      "hours": "Heures d'ouverture",
+      "email": "E-mail",
+      "hours": "Heures d'Ouverture",
       "hoursDetail": "Lundi - Samedi : 9h - 20h\nDimanche : 10h - 18h"
     }
   },
+  "card": {
+    "from": "À partir de",
+    "perPerson": "par personne",
+    "viewDetails": "Voir les Détails",
+    "register": "S'inscrire Maintenant"
+  },
   "gallery": {
-    "title": "Galerie Photo",
+    "title": "Galerie de Photos",
     "subtitle": "Un voyage visuel à travers les merveilles de l'Ouzbékistan",
     "lightbox": {
       "previous": "Précédent",
@@ -146,10 +309,10 @@
     }
   },
   "footer": {
-    "about": "AlphaTravel est spécialisé dans les tours authentiques en Ouzbékistan, des anciennes villes de la Route de la Soie aux joyaux culturels cachés.",
+    "about": "AlphaTravel se spécialise dans les circuits authentiques en Ouzbékistan, des villes anciennes de la Route de la Soie aux joyaux culturels cachés.",
     "quickLinks": "Liens Rapides",
-    "contactInfo": "Infos de Contact",
-    "followUs": "Suivez-nous",
+    "contactInfo": "Infos Contact",
+    "followUs": "Suivez-Nous",
     "copyright": "© 2025 AlphaTravel. Tous droits réservés."
   },
   "common": {
@@ -158,42 +321,142 @@
     "backToTop": "Retour en Haut",
     "readMore": "Lire la Suite",
     "bookNow": "Réserver Maintenant",
-    "learnMore": "En savoir plus"
+    "learnMore": "En Savoir Plus"
   },
-  "contact": {
-    "title": "Contactez-nous",
-    "subtitle": "Nous sommes là pour planifier votre aventure parfaite en Ouzbékistan",
+  "form": {
+    "bookThisTour": "S'inscrire à ce circuit",
+    "fillDetails": "Remplissez vos coordonnées pour réserver une place",
+    "name": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "participants": "Participants",
+    "notes": "Notes (facultatif)",
+    "bookNow": "Réserver maintenant",
+    "submitting": "Envoi en cours...",
+    "thanks": "Merci — nous avons reçu votre inscription.",
+    "savedOffline": "Sauvegardé localement — nous essaierons de l'envoyer plus tard.",
+    "contactOrganizer": "Contacter l'organisateur"
+  },
+  "toursCard": {
+    "detail": {
+      "title": "Circuits Alpha Avia",
+      "subtitle": "Nous sommes là pour vous aider à planifier votre aventure parfaite en Ouzbékistan",
+      "duration": "Durée",
+      "dates": "Dates",
+      "price": "Prix",
+      "highlights": "Points Forts",
+      "itinerary": "Itinéraire",
+      "organizerContact": "Contact Organisateur"
+    },
+    "card": {
+      "viewDetails": "Voir les Détails",
+      "register": "S'inscrire Maintenant",
+      "perPerson": "par personne"
+    },
+    "filter": {
+      "all": "Tous les Circuits"
+    }
+  },
+  "contactCard": {
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "website": "Site Web"
+  },
+  "validation": {
+    "required": "{{field}} est requis",
+    "invalidEmail": "Adresse e-mail non valide",
+    "minParticipants": "Au moins un participant requis"
+  },
+  "contactService": {
+    "title": "Nous Contacter",
+    "subtitle": "Nous sommes là pour vous aider à planifier votre aventure parfaite en Ouzbékistan",
     "form": {
-      "name": "Votre nom",
+      "name": "Votre Nom",
       "namePlaceholder": "Jean Dupont",
-      "email": "Votre email",
+      "email": "Votre E-mail",
       "emailPlaceholder": "jean@example.com",
       "subject": "Sujet",
-      "subjectPlaceholder": "Demande de renseignements sur le tour",
+      "subjectPlaceholder": "Demande de circuit",
       "message": "Message",
-      "messagePlaceholder": "Parlez-nous de vos plans de voyage...",
-      "submit": "Envoyer",
-      "submitting": "Envoi..."
+      "messagePlaceholder": "Parlez-nous de vos projets de voyage...",
+      "submit": "Envoyer le Message",
+      "submitting": "Envoi en cours..."
     },
     "validation": {
       "nameRequired": "Le nom est requis",
-      "emailRequired": "L'email est requis",
-      "emailInvalid": "Veuillez entrer un email valide",
+      "emailRequired": "L'e-mail est requis",
+      "emailInvalid": "Veuillez entrer une adresse e-mail valide",
       "subjectRequired": "Le sujet est requis",
       "messageRequired": "Le message est requis"
     },
-    "success": "Message envoyé avec succès ! Nous répondrons bientôt.",
+    "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
     "error": "Échec de l'envoi du message. Veuillez réessayer.",
     "info": {
-      "title": "Informations de contact",
-      "office": "Bureau principal",
-      "address": "123 rue Registan, Samarcande, Ouzbékistan",
+      "title": "Informations de Contact",
+      "office": "Bureau Principal",
+      "address": "123 Rue du Registan, Samarcande, Ouzbékistan",
       "phone": "Téléphone",
-      "email": "Email",
-      "hours": "Heures d'ouverture",
+      "email": "E-mail",
+      "hours": "Heures d'Ouverture",
       "hoursDetail": "Lundi - Samedi : 9h - 20h\nDimanche : 10h - 18h"
     }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions de voyage complètes pour votre aventure en Ouzbékistan",
+    "transport": {
+      "title": "Services de Transport",
+      "subtitle": "Options de transport fiables et confortables, y compris les transferts aéroport, les voitures privées et les navettes de groupe pour assurer un voyage fluide tout au long de votre séjour."
+    },
+    "hotels": {
+      "title": "Réservations d'Hôtels",
+      "subtitle": "Nous proposons un large éventail d'options d'hébergement, des hôtels économiques aux hôtels de luxe, vous assurant de trouver le séjour parfait qui correspond à vos préférences et à votre budget."
+    },
+    "question": "Prêt à Réserver ?",
+    "contactUs": "Contactez-nous pour personnaliser votre forfait de voyage parfait",
+    "GetInTouch": "Nous Contacter",
+    "book": "Réserver Maintenant",
+    "close": "Fermer",
+    "category": "Catégorie"
+  },
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "Votre réservation est sécurisée !",
+      "confirm": "Votre incroyable voyage est confirmé,",
+      "congraluate": "! Nous sommes ravis que vous et votre groupe vous joigniez à nous.",
+      "summary": "Résumé",
+      "tour": "Circuit :",
+      "guests": "Invités :",
+      "totalCost": "Coût Total :",
+      "people": "personnes",
+      "detailedReceipt": "Un reçu de confirmation détaillé a été envoyé à",
+      "callus": "Appelez-nous"
+    },
+    "registrationDetails": {
+      "name": "nom",
+      "people": "nombre de personnes",
+      "totalPrice": "Prix Total :",
+      "email": "adresse e-mail",
+      "phone": "numéro de téléphone",
+      "tourTitle": "titre du circuit",
+      "bookTrip": "Réservez Votre Voyage",
+      "securePlace": "Sécurisez votre place aujourd'hui ! Prix par personne : $",
+      "priceForPerson": "prix pour",
+      "confirmBooking": "Confirmer la Réservation"
+    },
+    "FullAdventure": {
+      "adventure": "Détails Complets de Votre Aventure",
+      "highlights": "Points Saillants Clés",
+      "duration": "Durée :",
+      "itinerary": "Itinéraire Jour par Jour",
+      "days": "Jours",
+      "day": "Jour",
+      "day:": "Jours :",
+      "activities": "Activités",
+      "close": "Fermer",
+      "view": "Voir",
+      "DirectContact": "Contact Direct",
+      "assist": "  Besoin d'assistance ? Notre équipe est prête à vous aider !"
+    }
   }
-
-
 }

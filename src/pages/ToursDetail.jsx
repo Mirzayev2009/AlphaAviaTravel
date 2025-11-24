@@ -15,7 +15,7 @@ import {
   Star,
   Facebook,
   MessageCircle,
-  Clock, // Added Clock for Duration
+  Clock,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -23,7 +23,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { tours } from "@/data/seed";
-import { Skeleton } from "@/components/ui/skeleton"; // Use skeleton for smooth loading
+import { Skeleton } from "@/components/ui/skeleton";
+import { useTranslation } from "react-i18next";
 
 // --- Utility Functions ---
 
@@ -58,6 +59,11 @@ const ToursDetail = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [registrationDetails, setRegistrationDetails] = useState(null);
 
+  const { t } = useTranslation();
+
+  console.log(tour);
+  
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -89,17 +95,14 @@ const ToursDetail = () => {
       hoverText: "text-green-600",
     },
   };
-  // This section is placed near the end of the ToursDetail function body:
-const organizerEmail = tour?.organizer?.email ?? "info@tourcompany.com";
-const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Defined here
 
+  const organizerEmail = tour?.organizer?.email ?? "info@tourcompany.com";
+  const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67";
 
-
-  // 2. Update the array data to use the color key
   const contactItems = [
     {
       icon: Phone,
-      title: "Call Us",
+      title: t("tourDetail.confirmation.callus"),
       value: organizerPhone,
       colorKey: "orange",
       href: `tel:${organizerPhone}`,
@@ -116,7 +119,9 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
       title: "Facebook",
       value: "Visit Page",
       colorKey: "blue",
-      href: `https://www.facebook.com/${tour?.organizer?.facebookHandle || "tourcompany"}`,
+      href: `https://www.facebook.com/${
+        tour?.organizer?.facebookHandle || "tourcompany"
+      }`,
     },
     {
       icon: MessageCircle,
@@ -154,7 +159,25 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
 
   const itinerary = Array.isArray(tour?.itinerary) ? tour.itinerary : [];
   const highlights = Array.isArray(tour?.highlights) ? tour.highlights : [];
-  const images = Array.isArray(tour?.images) ? tour.images : [];
+ 
+// ✅ Corrected Logic
+const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
+
+// 1. Safely access and process the image paths array or string
+const rawImagePaths = Array.isArray(tour?.images) && tour.images.length > 0
+    ? tour.images
+    : tour?.image
+    ? [tour.image]
+    : [];
+
+// 2. Map over the list to construct the full URLs
+const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
+
+  // Handler for register button - navigate to tour detail page
+  const handleRegisterClick = () => {
+    // Navigate with both route param and state for reliability
+    navigate(`/tours/${tour.id}`, { state: { tour } });
+  };
 
   const toggleDay = (idx) => setExpandedDay((p) => (p === idx ? null : idx));
 
@@ -164,7 +187,6 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
 
     if (name === "people") {
       const n = parseInt(value, 10);
-      // Ensure positive integer and prevent non-numeric input
       newValue = isNaN(n) || n < 1 ? 1 : n;
     }
 
@@ -180,12 +202,10 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
       !formData.phone ||
       formData.people < 1
     ) {
-      // Simple error handling
       alert("Please fill out all required fields.");
       return;
     }
 
-    // Set final registration details
     setRegistrationDetails({
       ...formData,
       totalPrice: totalPrice,
@@ -198,15 +218,12 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
       totalPrice: totalPrice,
     });
 
-    // Smooth scroll back up to the success message
     setTimeout(() => {
       document
         .getElementById("top-of-page")
         ?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
   };
-
-
 
   if (loading || !tour) {
     return (
@@ -224,9 +241,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
       <Header />
 
       <main className="flex-1">
-        {/* ==================================================================== */}
-        {/* 1. HERO / TITLE / MINIMAL INFO (ALWAYS VISIBLE) */}
-        {/* ==================================================================== */}
+        {/* HERO SECTION */}
         <section
           id="top-of-page"
           className="py-12 container mx-auto px-4 max-w-5xl text-center"
@@ -245,16 +260,11 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
           </motion.div>
         </section>
 
-        {/* --- */}
-
-        {/* ==================================================================== */}
-        {/* 2. REGISTRATION / SUCCESS MESSAGE (DYNAMIC PRICING, SUPER SMOOTH) */}
-        {/* ==================================================================== */}
+        {/* REGISTRATION SECTION */}
         <section className="pb-12 bg-gray-50 border-t border-b border-orange-200">
           <div className="container mx-auto px-4 max-w-4xl">
             <AnimatePresence mode="wait">
               {formSubmitted && registrationDetails ? (
-                // --- SUCCESS MESSAGE (Enhanced details) ---
                 <motion.div
                   key="success"
                   initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -263,7 +273,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                   transition={{
                     duration: 0.6,
                     ease: [0.68, -0.55, 0.265, 1.55],
-                  }} // Bouncy animation
+                  }}
                   className="mt-12"
                 >
                   <Card className="shadow-2xl border-4 border-green-400 bg-green-50">
@@ -281,44 +291,45 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                       </motion.div>
 
                       <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">
-                        Booking Secured!
+                        {t("tourDetail.confirmation.bookingSecured")}
                       </h2>
 
                       <p className="text-gray-700 text-lg mb-8 max-w-lg mx-auto">
-                        Your incredible journey is confirmed, **
-                        {registrationDetails.name}**! We're thrilled to have you
-                        and your party join us.
+                        {t("tourDetail.confirmation.confirm")}
+                        {registrationDetails.name}
+                        {t("tourDetail.confirmation.congraluate")}
                       </p>
 
                       <div className="bg-white p-6 rounded-xl border border-green-300 shadow-xl text-left mx-auto max-w-md space-y-3">
                         <h4 className="font-extrabold text-2xl text-green-700 mb-3 border-b pb-2">
-                          <Star className="h-6 w-6 inline-block mr-2" /> Summary
+                          <Star className="h-6 w-6 inline-block mr-2" />{" "}
+                          {t("tourDetail.confirmation.summary")}
                         </h4>
                         <div className="flex justify-between items-center text-gray-800 text-lg">
-                          <span>**Tour:**</span>{" "}
+                          <span>{t("tourDetail.confirmation.tour")}</span>
                           <span>{registrationDetails.tourTitle}</span>
                         </div>
                         <div className="flex justify-between items-center text-gray-800 text-lg">
-                          <span>**Guests:**</span>{" "}
+                          <span>{t("tourDetail.confirmation.guests")}</span>
                           <span className="font-bold text-orange-600">
-                            {registrationDetails.people} people
+                            {registrationDetails.people}{" "}
+                            {t("tourDetail.confirmation.people")}
                           </span>
                         </div>
                         <div className="flex justify-between items-center text-2xl font-black text-white bg-orange-600 p-2 rounded mt-4">
-                          <span>**Total Cost:**</span>{" "}
+                          <span>{t("tourDetail.confirmation.totalCost")}</span>
                           <span>${registrationDetails.totalPrice}</span>
                         </div>
                       </div>
 
                       <p className="mt-8 text-sm italic text-gray-600">
-                        A detailed confirmation receipt has been sent to **
-                        {registrationDetails.email}**.
+                        {t("tourDetail.confirmation.detailedReceipt")}
+                        {registrationDetails.email}.
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
               ) : (
-                // --- REGISTRATION FORM (Dynamic Price Calculation) ---
                 <motion.div
                   key="form"
                   initial={{ opacity: 1, y: 0 }}
@@ -328,18 +339,17 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                 >
                   <div className="text-center mb-6">
                     <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                      Book Your Trip
+                      {t("tourDetail.registrationDetails.bookTrip")}
                     </h2>
                     <p className="text-gray-600">
-                      Secure your place today! Price per person: **$
-                      {tour.price || 0}**.
+                      {t("tourDetail.registrationDetails.securePlace")}
+                      {tour.price || 0}.
                     </p>
                   </div>
                   <Card className="shadow-2xl border-2 border-orange-300">
                     <form onSubmit={handleSubmit}>
                       <CardContent className="p-6">
                         <div className="grid md:grid-cols-2 gap-4">
-                          {/* Input Fields */}
                           <motion.label
                             className="space-y-1"
                             initial={{ x: -10, opacity: 0 }}
@@ -347,8 +357,8 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                             transition={{ duration: 0.3, delay: 0.1 }}
                           >
                             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                              <User className="h-4 w-4 text-orange-500" /> Full
-                              Name
+                              <User className="h-4 w-4 text-orange-500" />{" "}
+                              {t("tourDetail.registrationDetails.name")}
                             </div>
                             <Input
                               required
@@ -365,8 +375,8 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                             transition={{ duration: 0.3, delay: 0.2 }}
                           >
                             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
-                              <Mail className="h-4 w-4 text-orange-500" /> Email
-                              Address
+                              <Mail className="h-4 w-4 text-orange-500" />{" "}
+                              {t("tourDetail.registrationDetails.email")}
                             </div>
                             <Input
                               required
@@ -385,7 +395,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                           >
                             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
                               <Phone className="h-4 w-4 text-orange-500" />{" "}
-                              Phone Number
+                              {t("tourDetail.registrationDetails.phone")}
                             </div>
                             <Input
                               required
@@ -403,7 +413,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                           >
                             <div className="flex items-center gap-2 text-sm font-semibold text-gray-700">
                               <Users className="h-4 w-4 text-orange-500" />{" "}
-                              Number of People
+                              {t("tourDetail.registrationDetails.people")}
                             </div>
                             <Input
                               required
@@ -423,9 +433,11 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                           transition={{ duration: 0.3 }}
                         >
                           <div className="flex items-center justify-between text-xl font-bold text-gray-800">
-                            <span>Total Estimated Price:</span>
+                            <span>
+                              {t("tourDetail.registrationDetails.totalPrice")}:
+                            </span>
                             <motion.span
-                              key={formData.people} // Key change forces re-animation on price update
+                              key={formData.people}
                               initial={{ scale: 1.1, opacity: 0.5 }}
                               animate={{ scale: 1, opacity: 1 }}
                               transition={{ duration: 0.2 }}
@@ -435,7 +447,9 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                             </motion.span>
                           </div>
                           <p className="text-sm text-gray-500 text-right mt-1">
-                            (Price for {formData.people}{" "}
+                            (
+                            {t("tourDetail.registrationDetails.priceForPerson")}{" "}
+                            {formData.people}{" "}
                             {formData.people === 1 ? "person" : "people"})
                           </p>
                         </motion.div>
@@ -448,7 +462,9 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                           >
                             <span className="flex items-center justify-center gap-3">
                               <Send className="h-5 w-5" />
-                              Confirm Booking
+                              {t(
+                                "tourDetail.registrationDetails.confirmBooking"
+                              )}
                             </span>
                           </Button>
                         </div>
@@ -461,11 +477,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
           </div>
         </section>
 
-        {/* --- */}
-
-        {/* ==================================================================== */}
-        {/* 3. FULL ADVENTURE DETAILS (ALWAYS VISIBLE, ENRICHED WITH DURATION) */}
-        {/* ==================================================================== */}
+        {/* ADVENTURE DETAILS */}
         <section className="py-16 bg-gradient-to-br from-orange-100 to-amber-100">
           <div className="container mx-auto px-4 max-w-6xl">
             <motion.div
@@ -475,7 +487,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
               transition={{ duration: 0.7 }}
             >
               <h2 className="text-center text-4xl font-extrabold pb-8 text-orange-700">
-                Your Full Adventure Details
+                {t("tourDetail.FullAdventure.adventure")}
               </h2>
 
               {/* Duration and Day Count */}
@@ -487,7 +499,9 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                   transition={{ type: "spring", stiffness: 100 }}
                 >
                   <Clock className="h-10 w-10 text-orange-600 mx-auto mb-2" />
-                  <p className="text-xl font-bold text-gray-800">Duration:</p>
+                  <p className="text-xl font-bold text-gray-800">
+                    {t("tourDetail.FullAdventure.duration")}
+                  </p>
                   <p className="text-3xl font-extrabold text-orange-700">
                     {tour.duration || "N/A"}
                   </p>
@@ -499,22 +513,24 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                   transition={{ type: "spring", stiffness: 100, delay: 0.1 }}
                 >
                   <Calendar className="h-10 w-10 text-orange-600 mx-auto mb-2" />
-                  <p className="text-xl font-bold text-gray-800">Days:</p>
+                  <p className="text-xl font-bold text-gray-800">
+                    {t("tourDetail.FullAdventure.day:")}
+                  </p>
                   <p className="text-3xl font-extrabold text-orange-700">
-                    {itinerary.length} Days
+                    {itinerary.length} {t("tourDetail.FullAdventure.days")}
                   </p>
                 </motion.div>
               </div>
 
-              {/* Images (Super Smooth Hovered Cards) */}
-              {images.length > 0 && (
+              {/* Images */}
+              {imageSources.length > 0 && (
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
-                  {images.map((img, idx) => (
+                  {imageSources.map((img, idx) => (
                     <motion.img
                       key={idx}
                       src={img}
                       alt={`Tour Image ${idx + 1}`}
-                      className="rounded-xl shadow-xl object-cover w-full h-56 cursor-pointer border-4 border-white"
+                      className="rounded-xl  shadow-xl object-cover w-full h-56 cursor-pointer border-4 border-white"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       whileHover={{
@@ -529,11 +545,11 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                 </div>
               )}
 
-              {/* Highlights (Smooth Entrance and Hover) */}
+              {/* Highlights */}
               {highlights.length > 0 && (
                 <div className="mb-12">
                   <h3 className="text-3xl font-bold mb-6 text-orange-600 border-b pb-2">
-                    Key Highlights
+                    {t("tourDetail.FullAdventure.highlights")}
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     {highlights.map((h, i) => (
@@ -558,11 +574,11 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                 </div>
               )}
 
-              {/* Itinerary (Dynamic Day Expansion) */}
+              {/* Itinerary */}
               {itinerary.length > 0 && (
                 <>
                   <h3 className="text-3xl font-bold mb-6 mt-12 text-orange-600 border-b pb-2">
-                    Day-by-Day Itinerary
+                    {t("tourDetail.FullAdventure.itinerary")}
                   </h3>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-6">
                     {itinerary.map((dayObj, idx) => (
@@ -582,7 +598,9 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                             : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:scale-[1.02]"
                         }`}
                       >
-                        <div className="text-sm opacity-80 mb-1">Day</div>
+                        <div className="text-sm opacity-80 mb-1">
+                          {t("tourDetail.FullAdventure.day")}
+                        </div>
                         <div className="text-2xl font-black">
                           {dayObj?.day ?? idx + 1}
                         </div>
@@ -594,7 +612,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                             whileHover={{ opacity: 1 }}
                             className="absolute bottom-2 right-2 text-sm"
                           >
-                            View
+                            {t("tourDetail.FullAdventure.view")}
                           </motion.div>
                         )}
                       </motion.button>
@@ -613,25 +631,17 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                         <Card className="shadow-2xl border-4 border-orange-400 overflow-hidden mt-6">
                           <CardHeader className="bg-gradient-to-r from-orange-600 to-amber-600 text-white p-6">
                             <h3 className="text-3xl font-bold">
-                              Day{" "}
+                              {t("tourDetail.FullAdventure.day")}{" "}
                               {itinerary[expandedDay]?.day ?? expandedDay + 1}:{" "}
-                              {itinerary[expandedDay]?.title ??
+                              {itinerary[expandedDay]?.title ||
                                 "Daily Activities"}
                             </h3>
                           </CardHeader>
                           <CardContent className="p-6">
-                            <ul className="list-disc pl-6 space-y-2 text-lg text-gray-700">
-                              {Array.isArray(
-                                itinerary[expandedDay]?.activities
-                              ) &&
-                                itinerary[expandedDay].activities.map(
-                                  (act, i) => (
-                                    <li key={i} className="mb-1 text-base">
-                                      {act}
-                                    </li>
-                                  )
-                                )}
-                            </ul>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                              {itinerary[expandedDay]?.activity ||
+                                "No details available"}
+                            </p>
                           </CardContent>
                         </Card>
                       </motion.div>
@@ -643,11 +653,7 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
           </div>
         </section>
 
-        {/* --- */}
-
-        {/* ==================================================================== */}
-        {/* 4. CONTACT & SOCIAL (ALWAYS VISIBLE, SUPER SMOOTH CARDS) */}
-        {/* ==================================================================== */}
+        {/* CONTACT SECTION */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-5xl">
             <motion.div
@@ -658,10 +664,10 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
             >
               <div className="text-center mb-10">
                 <h2 className="text-4xl font-extrabold mb-2 bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent">
-                  Direct Contact
+                  {t("tourDetail.FullAdventure.DirectContact")}
                 </h2>
                 <p className="text-gray-600 text-lg">
-                  Need assistance? Our team is ready to help!
+                  {t("tourDetail.FullAdventure.assist")}
                 </p>
               </div>
               <div className="grid md:grid-cols-4 gap-6 text-center">
@@ -674,7 +680,6 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                     className="p-6 flex flex-col items-center justify-center border-2 border-gray-100 rounded-xl shadow-lg bg-white group cursor-pointer"
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    // Use the static color map for box shadow on hover
                     whileHover={{
                       scale: 1.05,
                       boxShadow: `0 10px 20px ${
@@ -690,7 +695,6 @@ const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67"; // <-- Def
                     }}
                   >
                     <motion.div
-                      // Use the static background class here
                       className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-3 text-white ${
                         contactColors[item.colorKey].bg
                       }`}

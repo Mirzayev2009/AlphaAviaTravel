@@ -2,143 +2,306 @@
   "header": {
     "nav": {
       "home": "Bosh sahifa",
-      "tours": "Turlar",
-      "destinations": "Yo‘nalishlar",
+      "tours": "Sayohatlar",
+      "destinations": "Manzillar",
       "about": "Biz haqimizda",
       "gallery": "Galereya",
-      "contact": "Kontaktlar"
+      "contact": "Aloqa",
+      "services": "Xizmatlar"
     },
     "language": "Til"
   },
   "hero": {
-    "title": "O‘zbekistonning Yashirin Xazinalarini Kashf eting",
-    "subtitle": "Ixtisoslashgan sayohatlar orqali Ipak Yo‘li sehrini his qiling",
-    "cta": "Turlarni Ko‘rish",
-    "ctaSecondary": "Yo‘nalishlarni Ko‘rish"
+    "title": "O‘zbekistonning yashirin xazinalarini kashf eting",
+    "subtitle": "Maxsus rejalashtirilgan sayohatlar orqali Buyuk Ipak yo‘lining sehrini his qiling",
+    "cta": "Sayohatlarni ko‘rish",
+    "ctaSecondary": "Manzillarni ko‘rish",
+    "slides": {
+      "1": {
+        "title": "Ipak yo‘lini kashf eting",
+        "subtitle": "Qadimiy shaharlar va boqiy go‘zalliklar bo‘ylab sayohat"
+      },
+      "2": {
+        "title": "Jonli tarixni his qiling",
+        "subtitle": "Savdogarlar va olimlar izidan yuring"
+      },
+      "3": {
+        "title": "Yashirin xazinalarni oching",
+        "subtitle": "YuNESKOning Jahon merosi mo‘jizalarini o‘rganing"
+      }
+    }
   },
   "home": {
-    "featuredTitle": "Tanlangan Turlar",
-    "featuredSubtitle": "O‘zbekistonning eng mashhur yo‘nalishlariga mo‘ljallangan sayohatlar",
+    "featuredTitle": "Tanlangan sayohatlar",
+    "featuredSubtitle": "O‘zbekistonning eng mashhur manzillariga sayohatlar to‘plami",
     "aboutTitle": "Nima uchun AlphaTravel?",
-    "aboutText": "15 yildan ortiq tajribaga ega AlphaTravel O‘zbekistonda haqiqiy va chuqur sayohat tajribasini taklif etadi. Bizning tajribali qo‘llanmalarimiz tarixni jonlantiradi, detallarga e’tibor esa sizning sayohatingizni silliq va unutilmas qiladi.",
-    "aboutCta": "Biz haqimizda ko‘proq bilish"
+    "aboutText": "15 yildan ortiq tajribaga ega AlphaTravel butun O‘zbekiston bo‘ylab chinakam, chuqur taassurotli sayohatlarni taqdim etadi. Bizning tajribali gidlarimiz tarixni jonlantiradi, tafsilotlarga e'tiborimiz esa sayohatingizning silliq va unutilmas bo‘lishini ta'minlaydi.",
+    "aboutCta": "Biz haqimizda ko‘proq bilib oling",
+    "aboutcard1Title": "Mutaxassis gidlar",
+    "aboutcard1Text": "Bizning g‘ayratli gidlarimiz chuqur mahalliy bilimlar bilan tarix va madaniyatni yuzaga chiqaradi.",
+    "aboutcard2Title": "15+ yillik tajriba",
+    "aboutcard2Text": "Biz o‘n yildan ortiq vaqt mobaynida butun dunyo sayohatchilari uchun O‘zbekistonda unutilmas sarguzashtlarni yaratdik.",
+    "aboutcard3Title": "Shaxsiylashtirilgan xizmat",
+    "aboutcard3Text": "Biz har bir sayohatni sizning qiziqishlaringizga moslashtiramiz va chinakam shaxsiy tajribani ta'minlaymiz."
   },
   "tours": {
-    "title": "Bizning Turlar",
-    "subtitle": "O‘zbekiston bo‘ylab tanlab tuzilgan tajribalar",
-    "filter": {
-      "all": "Barcha Turlar",
-      "destination": "Yo‘nalish bo‘yicha",
-      "duration": "Davomiylik bo‘yicha",
-      "price": "Narx bo‘yicha"
-    },
-    "card": {
-      "from": "Dan",
-      "perPerson": "shaxsga",
-      "viewDetails": "Tafsilotlarni Ko‘rish",
-      "register": "Hozir Ro‘yxatdan O‘tish"
+    "title": "Keyingi sarguzashtingizni toping",
+    "subtitle": "O‘zbekiston xazinalaridan tortib, butun dunyo manzillarigacha, mukammal sayohatingizni tanlang",
+    "explore": "Kashf etish",
+    "uzTours": "O‘zbekiston sayohatlari",
+    "discover": "Ochish",
+    "worldTours": "Global sayohatlar",
+    "uzSubtitle": "Ipak yo‘lining mo‘jizalarini va O‘zbekistonning boy merosini o‘rganing",
+    "worldSubtitle": "O‘zbekistondan turib, dunyoning eng jozibali manzillarini his qiling",
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "Ipak yo‘li yorqin joylari",
+        "duration": "10 kun",
+        "price": "$1,200",
+        "dates": "Yil davomida mavjud",
+        "highlights": [
+          "Samarqanddagi Registon maydonini o‘rganish",
+          "Buxorodagi qadimiy masjidlarni ziyorat qilish",
+          "Xivadagi devor bilan o‘ralgan shaharni kashf etish"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Toshkentga yetib kelish",
+              "Toshkent bo‘ylab shahar safari"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Samarqandga yo‘l olish",
+              "Go‘ri Amir maqbarasini ziyorat qilish"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "O‘zbekiston madaniy xazinalari",
+        "duration": "7 kun",
+        "price": "$900",
+        "dates": "Yil davomida mavjud",
+        "highlights": [
+          "An'anaviy O‘zbek taomlarini tatib ko‘rish",
+          "Mahalliy hunarmandchilik ustaxonalariga tashrif buyurish",
+          "Ipak yo‘lining tarixiy joylarini o‘rganish"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Toshkentga yetib kelish",
+              "An'anaviy musiqa bilan kechki ovqat"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Buxoroga yo‘l olish",
+              "Buxoro eski shahriga ekskursiya"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "O‘zbekiston sahro sarguzashtlari",
+        "duration": "5 kun",
+        "price": "$700",
+        "dates": "Yil davomida mavjud",
+        "highlights": [
+          "Qizilqum cho‘lida tuyada sayohat",
+          "O‘tov lagerida tunash",
+          "Sahro qum tepaliklarida quyosh botish manzarasi"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Toshkentga yetib kelish",
+              "Kechki brifing va kechki ovqat"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Qizilqum cho‘liga yo‘l olish",
+              "Tuyada sayohatni boshlash"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "O‘zbekistonda oilaviy dam olish",
+        "duration": "8 kun",
+        "price": "$1,100",
+        "dates": "Yil davomida mavjud",
+        "highlights": [
+          "Bolalar uchun interaktiv ustaxonalar",
+          "Oilaviy sayohatlar",
+          "Madaniy chiqishlar va tadbirlar"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Toshkentga yetib kelish",
+              "Oilaviy kutib olish tadbiri"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Toshkent hayvonot bog‘iga tashrif",
+              "Mahalliy parklar va o‘yin maydonchalarini o‘rganish"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "O‘zbekiston hashamatli tajribasi",
+        "duration": "12 kun",
+        "price": "$3,500",
+        "dates": "Yil davomida mavjud",
+        "highlights": [
+          "Besh yulduzli mehmonxonalarda turar joy",
+          "Shaxsiy ekskursiyalar",
+          "Eksklyuziv kechki ovqat tajribalari"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Toshkentga yetib kelish",
+              "Hashamatli transportda shaxsiy shahar safari"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Shaxsiy mashinada Samarqandga yo‘l olish",
+              "Registonga VIP ekskursiya"
+            ]
+          }
+        ]
+      }
     },
     "modal": {
-      "itinerary": "Marshrut",
-      "highlights": "Asosiy Nuqtalar",
+      "itinerary": "Sayohat rejasi",
+      "highlights": "Yorqin joylar",
       "day": "Kun",
       "close": "Yopish",
-      "registerNow": "Ushbu Turgacha Ro‘yxatdan O‘tish"
+      "registerNow": "Ushbu sayohatga ro‘yxatdan o‘tish"
     }
   },
   "destinations": {
-    "title": "Yo‘nalishlar",
-    "subtitle": "O‘zbekistonning eng qiziqarli joylarini kashf eting",
+    "title": "Manzillar",
+    "subtitle": "O‘zbekistonning eng jozibali joylarini o‘rganing",
     "card": {
-      "learnMore": "Ko‘proq Bilish",
-      "bestTime": "Tashrif uchun Eng Yaxshi Vaqt"
+      "learnMore": "Ko‘proq bilib oling",
+      "bestTime": "Sayohat uchun eng yaxshi vaqt"
     },
     "drawer": {
       "close": "Yopish",
-      "relatedTours": "Tegishli Turlar",
-      "viewTours": "Mavjud Turlarni Ko‘rish"
+      "relatedTours": "Tegishli sayohatlar",
+      "viewTours": "Mavjud sayohatlarni ko‘rish"
     }
   },
   "registration": {
-    "title": "Turga Ro‘yxatdan O‘tish",
-    "subtitle": "Quyidagi shaklni to‘ldiring va biz 24 soat ichida siz bilan bog‘lanamiz",
+    "title": "Sayohatga ro‘yxatdan o‘tish",
+    "subtitle": "Quyidagi shaklni to‘ldiring, biz 24 soat ichida siz bilan bog‘lanamiz",
     "form": {
-      "name": "To‘liq Ism",
-      "namePlaceholder": "Ali Mirzayev",
-      "email": "Elektron Pochta",
-      "emailPlaceholder": "ali@example.com",
-      "phone": "Telefon Raqami",
+      "name": "To‘liq ism",
+      "namePlaceholder": "Alijon Valiyev",
+      "email": "Elektron pochta manzili",
+      "emailPlaceholder": "alijon@example.com",
+      "phone": "Telefon raqami",
       "phonePlaceholder": "+998 90 123 45 67",
       "numberOfPeople": "Odamlar soni",
-      "notes": "Qo‘shimcha Izohlar",
-      "notesPlaceholder": "Dietaga oid cheklovlar, maxsus so‘rovlar va h.k.",
-      "submit": "Ro‘yxatdan O‘tishni Yuborish",
+      "notes": "Qo‘shimcha eslatmalar",
+      "notesPlaceholder": "Parhez cheklovlari, maxsus so‘rovlar va h.k.",
+      "submit": "Ro‘yxatdan o‘tishni yuborish",
       "submitting": "Yuborilmoqda..."
     },
     "validation": {
       "nameRequired": "Ism talab qilinadi",
       "emailRequired": "Elektron pochta talab qilinadi",
-      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "emailInvalid": "Yaroqli elektron pochta manzilini kiriting",
       "phoneRequired": "Telefon raqami talab qilinadi",
-      "phoneInvalid": "Iltimos, haqiqiy telefon raqami kiriting",
-      "peopleMin": "Kamida 1 kishi talab qilinadi"
+      "phoneInvalid": "Yaroqli telefon raqamini kiriting",
+      "peopleMin": "Kamida 1 kishi bo‘lishi kerak"
     },
-    "success": "Ro‘yxatdan o‘tish muvaffaqiyatli! Biz 24 soat ichida siz bilan bog‘lanamiz.",
-    "error": "Ro‘yxatdan o‘tishda xatolik yuz berdi. Iltimos, qayta urinib ko‘ring.",
+    "success": "Muvaffaqiyatli ro‘yxatdan o‘tildi! Biz 24 soat ichida siz bilan bog‘lanamiz.",
+    "error": "Ro‘yxatdan o‘tishda xatolik. Iltimos, qayta urinib ko‘ring.",
     "organizer": {
-      "title": "Tur Tashkilotchimiz bilan Bog‘lanish",
-      "phone": "Qo‘ng‘iroq Qilish",
-      "email": "Email Yuborish",
-      "hours": "9:00 dan 20:00 gacha mavjud (GMT+5)"
+      "title": "Sayohat tashkilotchimiz bilan bog‘laning",
+      "phone": "Bizga qo‘ng‘iroq qiling",
+      "email": "Bizga elektron pochta yuboring",
+      "hours": "Ish vaqti 9:00 - 20:00 (GMT+5)"
     }
   },
   "about": {
     "title": "AlphaTravel haqida",
-    "subtitle": "O‘zbekistondagi sarguzashtlaringiz uchun ishonchli hamkoringiz",
-    "story": "2008 yilda Samarqandlik Aziza Karimova tomonidan tashkil etilgan AlphaTravel O‘zbekistonning yetakchi tur operatoriga aylangan. Biz mamlakatimizning boy tarixini, ajoyib arxitekturasini va iliq mehmondo‘stligini butun dunyo sayohatchilari bilan baham ko‘rishni yaxshi ko‘ramiz.",
-    "mission": "Bizning missiyamiz — mahalliy jamoalarga foyda keltiradigan, mehmonlarimiz uchun unutilmas xotiralar qoldiradigan haqiqiy va barqaror turizm tajribalarini yaratishdir.",
+    "subtitle": "O‘zbekistondagi sarguzashtingiz uchun ishonchli hamkor",
+    "story": "2008 yilda Samarqandlik Aziza Karimova tomonidan tashkil etilgan AlphaTravel O‘zbekistonda yetakchi turistik agentlikka aylandi. Biz mamlakatimizning boy tarixi, ajoyib arxitekturasi va iliq mehmondo‘stligini butun dunyo sayohatchilari bilan bo‘lishishga ishtiyoqlimiz.",
+    "mission": "Bizning maqsadimiz mahalliy hamjamiyatlarga foyda keltiradigan, shuningdek, mehmonlarimizga unutilmas xotiralar taqdim etadigan haqiqiy, barqaror sayohat tajribalarini yaratishdir.",
     "teamTitle": "Jamoamiz bilan tanishing",
-    "teamSubtitle": "Tajriba qo‘llanmalar va ishtiyoqli mutaxassislar",
-    "storiesTitle": "Muvaffaqiyat Hikoyalari",
-    "storiesSubtitle": "Biz bilan O‘zbekistonda sayohat qilgan sayohatchilardan hikoyalar"
+    "teamSubtitle": "Mutaxassis gidlar va g‘ayratli mutaxassislar",
+    "storiesTitle": "Muvaffaqiyat hikoyalari",
+    "storiesSubtitle": "Biz bilan O‘zbekistonni kashf etgan sayohatchilarning fikrlarini tinglang"
   },
   "contact": {
-    "title": "Bog‘lanish",
-    "subtitle": "Biz sizning mukammal O‘zbekiston sarguzashtingizni rejalashtirishga yordam beramiz",
+    "title": "Biz bilan bog‘lanish",
+    "subtitle": "Biz sizga mukammal O‘zbekiston sarguzashtini rejalashtirishda yordam berishga tayyormiz",
     "form": {
       "name": "Ismingiz",
-      "namePlaceholder": "Ali Mirzayev",
+      "namePlaceholder": "Alijon Valiyev",
       "email": "Elektron pochtangiz",
-      "emailPlaceholder": "ali@example.com",
+      "emailPlaceholder": "alijon@example.com",
       "subject": "Mavzu",
-      "subjectPlaceholder": "Tur bo‘yicha so‘rov",
+      "subjectPlaceholder": "Sayohat bo‘yicha so‘rov",
       "message": "Xabar",
-      "messagePlaceholder": "Sayohat rejalaringiz haqida ayting...",
-      "submit": "Xabar Yuborish",
+      "messagePlaceholder": "Bizga sayohat rejalaringiz haqida xabar bering...",
+      "submit": "Xabarni yuborish",
       "submitting": "Yuborilmoqda..."
     },
     "validation": {
       "nameRequired": "Ism talab qilinadi",
       "emailRequired": "Elektron pochta talab qilinadi",
-      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "emailInvalid": "Yaroqli elektron pochta manzilini kiriting",
       "subjectRequired": "Mavzu talab qilinadi",
       "messageRequired": "Xabar talab qilinadi"
     },
     "success": "Xabar muvaffaqiyatli yuborildi! Tez orada javob beramiz.",
-    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+    "error": "Xabar yuborishda xatolik. Iltimos, qayta urinib ko‘ring.",
     "info": {
-      "title": "Kontakt Ma’lumotlari",
-      "office": "Bosh Ofis",
-      "address": "123 Registon ko‘chasi, Samarqand, O‘zbekiston",
+      "title": "Aloqa ma'lumotlari",
+      "office": "Bosh ofis",
+      "address": "Registon ko‘chasi, 123-uy, Samarqand, O‘zbekiston",
       "phone": "Telefon",
-      "email": "Email",
+      "email": "Elektron pochta",
       "hours": "Ish vaqti",
-      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshanba: 10:00 - 18:00"
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshaNba: 10:00 - 18:00"
     }
   },
+  "card": {
+    "from": "dan boshlab",
+    "perPerson": "kishi uchun",
+    "viewDetails": "Tafsilotlarni ko‘rish",
+    "register": "Hozir ro‘yxatdan o‘tish"
+  },
   "gallery": {
-    "title": "Foto Galereya",
-    "subtitle": "O‘zbekiston mo‘jizalariga vizual sayohat",
+    "title": "Foto galereya",
+    "subtitle": "O‘zbekiston mo‘jizalarining vizual sayohati",
     "lightbox": {
       "previous": "Oldingi",
       "next": "Keyingi",
@@ -146,55 +309,154 @@
     }
   },
   "footer": {
-    "about": "AlphaTravel O‘zbekistondagi haqiqiy turlarga ixtisoslashgan, Ipak Yo‘li qadimiy shaharlaridan yashirin madaniy xazinalargacha.",
-    "quickLinks": "Tezkor Havolalar",
-    "contactInfo": "Kontakt Ma’lumotlari",
-    "followUs": "Bizni Kuzatish",
+    "about": "AlphaTravel Ipak yo‘lining qadimiy shaharlaridan tortib, yashirin madaniy xazinalargacha, O‘zbekiston bo‘ylab chinakam sayohatlarga ixtisoslashgan.",
+    "quickLinks": "Tezkor havolalar",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "followUs": "Bizni kuzating",
     "copyright": "© 2025 AlphaTravel. Barcha huquqlar himoyalangan."
   },
   "common": {
     "loading": "Yuklanmoqda...",
     "error": "Xatolik yuz berdi",
-    "backToTop": "Yuqoriga",
-    "readMore": "Batafsil o‘qish",
-    "bookNow": "Hozir Buyurtma Berish",
-    "learnMore": "Batafsil Bilish"
+    "backToTop": "Yuqoriga qaytish",
+    "readMore": "Ko‘proq o‘qish",
+    "bookNow": "Hozir band qilish",
+    "learnMore": "Ko‘proq bilib oling"
   },
-  
-  "contact": {
-    "title": "Bog‘lanish",
-    "subtitle": "Biz sizning mukammal O‘zbekiston sarguzashtingizni rejalashtirishga yordam beramiz",
+  "form": {
+    "bookThisTour": "Ushbu sayohatga ro‘yxatdan o‘tish",
+    "fillDetails": "O‘rningizni band qilish uchun aloqa ma'lumotlaringizni to‘ldiring",
+    "name": "To‘liq ism",
+    "email": "Elektron pochta",
+    "phone": "Telefon",
+    "participants": "Ishtirokchilar",
+    "notes": "Eslatmalar (majburiy emas)",
+    "bookNow": "Hozir band qilish",
+    "submitting": "Yuborilmoqda...",
+    "thanks": "Rahmat — Ro‘yxatdan o‘tishingizni qabul qildik.",
+    "savedOffline": "Mahalliy saqlandi — Keyinroq yuborishga harakat qilamiz.",
+    "contactOrganizer": "Tashkilotchi bilan bog‘lanish"
+  },
+  "toursCard": {
+    "detail": {
+      "title": "Alpha Avia Sayohatlari",
+      "subtitle": "Biz sizga mukammal O‘zbekiston sarguzashtini rejalashtirishda yordam berishga tayyormiz",
+      "duration": "Davomiyligi",
+      "dates": "Sanalar",
+      "price": "Narxi",
+      "highlights": "Yorqin joylar",
+      "itinerary": "Sayohat rejasi",
+      "organizerContact": "Tashkilotchi bilan aloqa"
+    },
+    "card": {
+      "viewDetails": "Tafsilotlarni ko‘rish",
+      "register": "Hozir ro‘yxatdan o‘tish",
+      "perPerson": "kishi uchun"
+    },
+    "filter": {
+      "all": "Barcha sayohatlar"
+    }
+  },
+  "contactCard": {
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "website": "Veb-sayt"
+  },
+  "validation": {
+    "required": "{{field}} talab qilinadi",
+    "invalidEmail": "Yaroqsiz elektron pochta manzili",
+    "minParticipants": "Kamida bitta ishtirokchi talab qilinadi"
+  },
+  "contactService": {
+    "title": "Biz bilan bog‘lanish",
+    "subtitle": "Biz sizga mukammal O‘zbekiston sarguzashtini rejalashtirishda yordam berishga tayyormiz",
     "form": {
       "name": "Ismingiz",
-      "namePlaceholder": "Ali Mirzayev",
-      "email": "Elektron pochta",
-      "emailPlaceholder": "ali@example.com",
+      "namePlaceholder": "Alijon Valiyev",
+      "email": "Elektron pochtangiz",
+      "emailPlaceholder": "alijon@example.com",
       "subject": "Mavzu",
-      "subjectPlaceholder": "Tur bo‘yicha so‘rov",
+      "subjectPlaceholder": "Sayohat bo‘yicha so‘rov",
       "message": "Xabar",
-      "messagePlaceholder": "Sayohat rejalaringiz haqida ayting...",
-      "submit": "Xabar Yuborish",
+      "messagePlaceholder": "Bizga sayohat rejalaringiz haqida xabar bering...",
+      "submit": "Xabarni yuborish",
       "submitting": "Yuborilmoqda..."
     },
     "validation": {
       "nameRequired": "Ism talab qilinadi",
       "emailRequired": "Elektron pochta talab qilinadi",
-      "emailInvalid": "Iltimos, haqiqiy elektron pochta kiriting",
+      "emailInvalid": "Yaroqli elektron pochta manzilini kiriting",
       "subjectRequired": "Mavzu talab qilinadi",
       "messageRequired": "Xabar talab qilinadi"
     },
     "success": "Xabar muvaffaqiyatli yuborildi! Tez orada javob beramiz.",
-    "error": "Xabar yuborilmadi. Iltimos, qayta urinib ko‘ring.",
+    "error": "Xabar yuborishda xatolik. Iltimos, qayta urinib ko‘ring.",
     "info": {
-      "title": "Kontakt Ma’lumotlari",
-      "office": "Bosh Ofis",
-      "address": "123 Registon ko‘chasi, Samarqand, O‘zbekiston",
+      "title": "Aloqa ma'lumotlari",
+      "office": "Bosh ofis",
+      "address": "Registon ko‘chasi, 123-uy, Samarqand, O‘zbekiston",
       "phone": "Telefon",
-      "email": "Email",
+      "email": "Elektron pochta",
       "hours": "Ish vaqti",
-      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshanba: 10:00 - 18:00"
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshaNba: 10:00 - 18:00"
+    }
+  },
+  "services": {
+    "title": "Bizning xizmatlarimiz",
+    "subtitle": "O‘zbekistondagi sarguzashtingiz uchun keng qamrovli sayohat yechimlari",
+    "transport": {
+      "title": "Transport xizmatlari",
+      "subtitle": "Aeroport transferlari, shaxsiy mashinalar va guruh shattllarini o‘z ichiga olgan ishonchli va qulay transport imkoniyatlari sayohatingizning uzluksiz bo‘lishini ta'minlaydi."
+    },
+    "hotels": {
+      "title": "Mehmonxona band qilish",
+      "subtitle": "Biz byudjetdan hashamatligacha bo‘lgan keng turar joy variantlarini taklif etamiz, bu esa sizning xohishingiz va byudjetingizga mos keladigan mukammal joyni topishingizni ta'minlaydi."
+    },
+    "question": "Band qilishga tayyormisiz?",
+    "contactUs": "Mukammal sayohat paketingizni sozlash uchun biz bilan bog‘laning",
+    "GetInTouch": "Biz bilan bog‘lanish",
+    "book": "Hozir band qilish",
+    "close": "Yopish",
+    "category": "Kategoriya"
+  },
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "Bandlash muvaffaqiyatli amalga oshirildi!",
+      "confirm": "Sizning ajoyib sayohatingiz tasdiqlandi,",
+      "congraluate": "! Sizni va jamoangizni kutib olishdan xursandmiz.",
+      "summary": "Qisqacha ma'lumot",
+      "tour": "Sayohat:",
+      "guests": "Mehmonlar:",
+      "totalCost": "Jami xarajat:",
+      "people": "kishi",
+      "detailedReceipt": "Batafsil tasdiqlovchi chek yuborildi",
+      "callus": "Bizga qo‘ng‘iroq qiling"
+    },
+    "registrationDetails": {
+      "name": "Ism",
+      "people": "Odamlar",
+      "totalPrice": "Jami narx:",
+      "email": "Elektron pochta manzili",
+      "phone": "Telefon raqami",
+      "tourTitle": "Sayohat nomi",
+      "bookTrip": "Sayohatni band qilish",
+      "securePlace": "Hozir joyingizni band qiling! Narxi kishi boshiga: $",
+      "priceForPerson": "Narx kishi uchun",
+      "confirmBooking": "Bandlashni tasdiqlash"
+    },
+    "FullAdventure": {
+      "adventure": "To‘liq sarguzasht tafsilotlaringiz",
+      "highlights": "Asosiy yorqin joylar",
+      "duration": "Davomiyligi:",
+      "itinerary": "Kunlik sayohat rejasi",
+      "days": "kun",
+      "day": "kun",
+      "day:": "Kun:",
+      "activities": "Faoliyatlar",
+      "close": "Yopish",
+      "view": "Ko‘rish",
+      "DirectContact": "To‘g‘ridan-to‘g‘ri aloqa",
+      "assist": "Yordam kerakmi? Bizning jamoamiz sizga yordam berishga tayyor!"
     }
   }
-
-
 }

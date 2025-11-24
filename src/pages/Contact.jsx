@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
-import { submitContactForm } from "@/services/api";
+// import { submitContactForm } from "@/services/api";
 
 const Contact = () => {
   const { t } = useTranslation();

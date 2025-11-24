@@ -23,16 +23,24 @@ app.use(express.json());       // Parse JSON request bodies
 const PORT = process.env.PORT || 5000;
 
 // 6️⃣ Create helper function to load JSON safely
+// const loadJSON = (path) => {
+//   const data = fs.readFileSync(path);
+//   return JSON.parse(data);
+// };
 const loadJSON = (path) => {
   const data = fs.readFileSync(path);
-  return JSON.parse(data);
-};
+  return JSON.parse(data)
+}
 
 // 7️⃣ Create GET endpoints for your data files
-app.get("/api/tours", (req, res) => {
+// app.get("/api/tours", (req, res) => {
+//   const tours = loadJSON("./server/data/tours.json");
+//   res.json(tours);
+// });
+app.get("/api/tours", (req, res)=> {
   const tours = loadJSON("./server/data/tours.json");
-  res.json(tours);
-});
+  res.json(tours)
+})
 
 app.get("/api/destinations", (req, res) => {
   const destinations = loadJSON("./server/data/destinations.json");

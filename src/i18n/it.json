@@ -6,37 +6,194 @@
       "destinations": "Destinazioni",
       "about": "Chi Siamo",
       "gallery": "Galleria",
-      "contact": "Contatti"
+      "contact": "Contatti",
+      "services": "Servizi"
     },
     "language": "Lingua"
   },
   "hero": {
-    "title": "Scopri i Tesori Nascosti dell'Uzbekistan",
-    "subtitle": "Vivi la magia della Via della Seta con tour selezionati con cura",
-    "cta": "Esplora i Tour",
-    "ctaSecondary": "Visualizza le Destinazioni"
+    "title": "Esplora i Tesori Nascosti dell'Uzbekistan",
+    "subtitle": "Vivi la magia della Via della Seta con i nostri tour curati",
+    "cta": "Scopri i Tour",
+    "ctaSecondary": "Vedi le Destinazioni",
+    "slides": {
+      "1": {
+        "title": "Scopri la Via della Seta",
+        "subtitle": "Attraversa città antiche e bellezze senza tempo"
+      },
+      "2": {
+        "title": "Vivi la Storia Vivente",
+        "subtitle": "Segui le orme di mercanti e studiosi"
+      },
+      "3": {
+        "title": "Svela Tesori Nascosti",
+        "subtitle": "Esplora le meraviglie dei siti Patrimonio Mondiale UNESCO"
+      }
+    }
   },
   "home": {
     "featuredTitle": "Tour in Evidenza",
-    "featuredSubtitle": "Viaggi selezionati attraverso le destinazioni più iconiche dell'Uzbekistan",
+    "featuredSubtitle": "Una selezione di viaggi verso le destinazioni più iconiche dell'Uzbekistan",
     "aboutTitle": "Perché Scegliere AlphaTravel?",
-    "aboutText": "Con oltre 15 anni di esperienza, AlphaTravel offre esperienze autentiche e coinvolgenti in tutto l'Uzbekistan. Le nostre guide esperte danno vita alla storia, mentre la nostra attenzione ai dettagli garantisce un viaggio senza intoppi e indimenticabile.",
-    "aboutCta": "Scopri di più su di noi"
+    "aboutText": "Con oltre 15 anni di esperienza, AlphaTravel offre esperienze autentiche e immersive in tutto l'Uzbekistan. Le nostre guide esperte danno vita alla storia, mentre la nostra attenzione ai dettagli assicura che il tuo viaggio sia fluido e indimenticabile.",
+    "aboutCta": "Scopri di più su di noi",
+    "aboutcard1Title": "Guide Esperte",
+    "aboutcard1Text": "Le nostre guide appassionate danno vita a storia e cultura con una profonda conoscenza locale.",
+    "aboutcard2Title": "Oltre 15 Anni di Esperienza",
+    "aboutcard2Text": "Per più di un decennio, abbiamo creato avventure indimenticabili in Uzbekistan per viaggiatori di tutto il mondo.",
+    "aboutcard3Title": "Servizio Personalizzato",
+    "aboutcard3Text": "Personalizziamo ogni tour in base ai tuoi interessi, garantendo un'esperienza veramente personale."
   },
   "tours": {
-    "title": "I Nostri Tour",
-    "subtitle": "Esperienze curate in tutto l'Uzbekistan",
-    "filter": {
-      "all": "Tutti i Tour",
-      "destination": "Per Destinazione",
-      "duration": "Per Durata",
-      "price": "Per Prezzo"
-    },
-    "card": {
-      "from": "Da",
-      "perPerson": "a persona",
-      "viewDetails": "Vedi Dettagli",
-      "register": "Iscriviti Ora"
+    "title": "Trova la Tua Prossima Avventura",
+    "subtitle": "Dai tesori dell'Uzbekistan alle destinazioni globali, scegli il tuo viaggio perfetto",
+    "explore": "Esplora",
+    "uzTours": "Tour dell'Uzbekistan",
+    "discover": "Scopri",
+    "worldTours": "Tour Globali",
+    "uzSubtitle": "Esplora le meraviglie della Via della Seta e il ricco patrimonio dell'Uzbekistan",
+    "worldSubtitle": "Parti dall'Uzbekistan per vivere le destinazioni più affascinanti del mondo",
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "I Punti Salienti della Via della Seta",
+        "duration": "10 Giorni",
+        "price": "$1,200",
+        "dates": "Disponibile tutto l'anno",
+        "highlights": [
+          "Esplora Piazza Registan a Samarcanda",
+          "Visita le antiche moschee di Bukhara",
+          "Scopri la città murata di Khiva"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivo a Tashkent",
+              "Tour della città di Tashkent"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaggio per Samarcanda",
+              "Visita al Mausoleo di Gur-e Amir"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "Tesori Culturali dell'Uzbekistan",
+        "duration": "7 Giorni",
+        "price": "$900",
+        "dates": "Disponibile tutto l'anno",
+        "highlights": [
+          "Prova la cucina tradizionale uzbeka",
+          "Visita ai laboratori di artigianato locale",
+          "Esplora siti storici della Via della Seta"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivo a Tashkent",
+              "Cena di benvenuto con musica tradizionale"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaggio per Bukhara",
+              "Tour guidato della città vecchia di Bukhara"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "Avventura nel Deserto dell'Uzbekistan",
+        "duration": "5 Giorni",
+        "price": "$700",
+        "dates": "Disponibile tutto l'anno",
+        "highlights": [
+          "Trekking in cammello nel deserto del Kyzylkum",
+          "Pernottamento in un campo di yurte",
+          "Vista del tramonto sulle dune del deserto"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivo a Tashkent",
+              "Briefing serale e cena"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaggio per il deserto del Kyzylkum",
+              "Inizio del trekking in cammello"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "Divertimento per Famiglie in Uzbekistan",
+        "duration": "8 Giorni",
+        "price": "$1,100",
+        "dates": "Disponibile tutto l'anno",
+        "highlights": [
+          "Laboratori interattivi per bambini",
+          "Visite guidate adatte alle famiglie",
+          "Spettacoli ed eventi culturali"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivo a Tashkent",
+              "Attività di benvenuto per famiglie"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Visita allo Zoo di Tashkent",
+              "Esplorazione di parchi e aree gioco locali"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "Esperienza di Lusso in Uzbekistan",
+        "duration": "12 Giorni",
+        "price": "$3,500",
+        "dates": "Disponibile tutto l'anno",
+        "highlights": [
+          "Sistemazione in hotel a cinque stelle",
+          "Tour privati e guidati",
+          "Esperienze culinarie esclusive"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrivo a Tashkent",
+              "Tour privato della città con trasporto di lusso"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Trasferimento privato a Samarcanda",
+              "Tour VIP di Piazza Registan"
+            ]
+          }
+        ]
+      }
     },
     "modal": {
       "itinerary": "Itinerario",
@@ -51,90 +208,96 @@
     "subtitle": "Esplora i luoghi più affascinanti dell'Uzbekistan",
     "card": {
       "learnMore": "Scopri di più",
-      "bestTime": "Periodo Migliore per Visitare"
+      "bestTime": "Miglior periodo per viaggiare"
     },
     "drawer": {
       "close": "Chiudi",
       "relatedTours": "Tour Correlati",
-      "viewTours": "Visualizza Tour Disponibili"
+      "viewTours": "Vedi i Tour Disponibili"
     }
   },
   "registration": {
-    "title": "Registrazione al Tour",
-    "subtitle": "Compila il modulo sottostante e ti contatteremo entro 24 ore",
+    "title": "Iscrizione al Tour",
+    "subtitle": "Compila il modulo qui sotto e ti contatteremo entro 24 ore",
     "form": {
       "name": "Nome Completo",
-      "namePlaceholder": "Mario Rossi",
-      "email": "Email",
-      "emailPlaceholder": "mario@example.com",
+      "namePlaceholder": "Marco Rossi",
+      "email": "Indirizzo Email",
+      "emailPlaceholder": "marco.rossi@example.com",
       "phone": "Numero di Telefono",
-      "phonePlaceholder": "+39 123 456 7890",
+      "phonePlaceholder": "+39 333 123 4567",
       "numberOfPeople": "Numero di Persone",
       "notes": "Note Aggiuntive",
-      "notesPlaceholder": "Restrizioni alimentari, richieste speciali, ecc.",
-      "submit": "Invia Registrazione",
+      "notesPlaceholder": "Restrizioni dietetiche, richieste speciali, ecc.",
+      "submit": "Invia Iscrizione",
       "submitting": "Invio in corso..."
     },
     "validation": {
       "nameRequired": "Il nome è obbligatorio",
       "emailRequired": "L'email è obbligatoria",
-      "emailInvalid": "Inserisci un'email valida",
+      "emailInvalid": "Inserisci un indirizzo email valido",
       "phoneRequired": "Il numero di telefono è obbligatorio",
       "phoneInvalid": "Inserisci un numero di telefono valido",
-      "peopleMin": "È richiesta almeno 1 persona"
+      "peopleMin": "È richiesto almeno 1 partecipante"
     },
-    "success": "Registrazione completata! Ti contatteremo entro 24 ore.",
-    "error": "Registrazione fallita. Riprova.",
+    "success": "Iscrizione avvenuta con successo! Ti contatteremo entro 24 ore.",
+    "error": "Errore durante l'iscrizione. Riprova.",
     "organizer": {
-      "title": "Contatta il nostro Organizzatore del Tour",
+      "title": "Contatta il nostro Organizzatore di Viaggi",
       "phone": "Chiamaci",
-      "email": "Scrivici una Email",
-      "hours": "Disponibile dalle 9 alle 20 (GMT+5)"
+      "email": "Inviaci un'email",
+      "hours": "Orari di Servizio 9:00 - 20:00 (GMT+5)"
     }
   },
   "about": {
     "title": "Informazioni su AlphaTravel",
-    "subtitle": "Il tuo partner di fiducia per avventure in Uzbekistan",
-    "story": "Fondata nel 2008 dalla nativa di Samarcanda Aziza Karimova, AlphaTravel è diventata il principale tour operator dell'Uzbekistan. Siamo appassionati nel condividere la ricca storia, l'architettura straordinaria e l'ospitalità calorosa del nostro paese con viaggiatori da tutto il mondo.",
-    "mission": "La nostra missione è creare esperienze turistiche autentiche e sostenibili che beneficiano le comunità locali offrendo ricordi indimenticabili ai nostri ospiti.",
+    "subtitle": "Il tuo partner di fiducia per le avventure in Uzbekistan",
+    "story": "Fondata nel 2008 da Aziza Karimova, nativa di Samarcanda, AlphaTravel è cresciuta fino a diventare un'agenzia di viaggi leader in Uzbekistan. Siamo appassionati nel condividere la ricca storia, la splendida architettura e la calorosa ospitalità del nostro paese con viaggiatori di tutto il mondo.",
+    "mission": "La nostra missione è creare esperienze di viaggio autentiche e sostenibili che beneficino le comunità locali, offrendo al contempo ricordi indimenticabili ai nostri ospiti.",
     "teamTitle": "Incontra il Nostro Team",
     "teamSubtitle": "Guide esperte e professionisti appassionati",
     "storiesTitle": "Storie di Successo",
-    "storiesSubtitle": "Ascolta i viaggiatori che hanno scoperto l'Uzbekistan con noi"
+    "storiesSubtitle": "Ascolta i viaggiatori che hanno vissuto l'Uzbekistan con noi"
   },
   "contact": {
     "title": "Contattaci",
-    "subtitle": "Siamo qui per pianificare la tua avventura perfetta in Uzbekistan",
+    "subtitle": "Siamo qui per aiutarti a pianificare la tua perfetta avventura in Uzbekistan",
     "form": {
-      "name": "Il tuo Nome",
-      "namePlaceholder": "Mario Rossi",
-      "email": "La tua Email",
-      "emailPlaceholder": "mario@example.com",
+      "name": "Il Tuo Nome",
+      "namePlaceholder": "Marco Rossi",
+      "email": "La Tua Email",
+      "emailPlaceholder": "marco.rossi@example.com",
       "subject": "Oggetto",
-      "subjectPlaceholder": "Richiesta Tour",
+      "subjectPlaceholder": "Richiesta di informazioni sul tour",
       "message": "Messaggio",
-      "messagePlaceholder": "Parlaci dei tuoi piani di viaggio...",
+      "messagePlaceholder": "Raccontaci i tuoi piani di viaggio...",
       "submit": "Invia Messaggio",
       "submitting": "Invio in corso..."
     },
     "validation": {
       "nameRequired": "Il nome è obbligatorio",
       "emailRequired": "L'email è obbligatoria",
-      "emailInvalid": "Inserisci un'email valida",
+      "emailInvalid": "Inserisci un indirizzo email valido",
       "subjectRequired": "L'oggetto è obbligatorio",
       "messageRequired": "Il messaggio è obbligatorio"
     },
-    "success": "Messaggio inviato con successo! Risponderemo presto.",
-    "error": "Invio del messaggio fallito. Riprova.",
+    "success": "Messaggio inviato con successo! Ti risponderemo al più presto.",
+    "error": "Errore durante l'invio del messaggio. Riprova.",
     "info": {
       "title": "Informazioni di Contatto",
-      "office": "Ufficio Principale",
-      "address": "123 Via Registan, Samarcanda, Uzbekistan",
+      "office": "Sede Centrale",
+      "address": "Via Registan, 123, Samarcanda, Uzbekistan",
       "phone": "Telefono",
       "email": "Email",
       "hours": "Orari di Apertura",
-      "hoursDetail": "Lunedì - Sabato: 9 - 20\nDomenica: 10 - 18"
+      "hoursDetail": "Lunedì - Sabato: 9:00 - 20:00\nDomenica: 10:00 - 18:00"
     }
+  },
+  "card": {
+    "from": "A partire da",
+    "perPerson": "a persona",
+    "viewDetails": "Vedi Dettagli",
+    "register": "Iscriviti Ora"
   },
   "gallery": {
     "title": "Galleria Fotografica",
@@ -146,55 +309,154 @@
     }
   },
   "footer": {
-    "about": "AlphaTravel è specializzato in tour autentici in Uzbekistan, dalle antiche città della Via della Seta ai tesori culturali nascosti.",
+    "about": "AlphaTravel è specializzata in autentici tour dell'Uzbekistan, dalle antiche città della Via della Seta ai tesori culturali nascosti.",
     "quickLinks": "Link Veloci",
-    "contactInfo": "Contatti",
+    "contactInfo": "Informazioni di Contatto",
     "followUs": "Seguici",
     "copyright": "© 2025 AlphaTravel. Tutti i diritti riservati."
   },
   "common": {
-    "loading": "Caricamento...",
+    "loading": "Caricamento in corso...",
     "error": "Si è verificato un errore",
-    "backToTop": "Torna Su",
+    "backToTop": "Torna su",
     "readMore": "Leggi di più",
     "bookNow": "Prenota Ora",
     "learnMore": "Scopri di più"
   },
-  
-  "contact": {
+  "form": {
+    "bookThisTour": "Iscriviti a Questo Tour",
+    "fillDetails": "Compila i tuoi dettagli di contatto per prenotare un posto",
+    "name": "Nome Completo",
+    "email": "Email",
+    "phone": "Telefono",
+    "participants": "Partecipanti",
+    "notes": "Note (Opzionale)",
+    "bookNow": "Prenota Ora",
+    "submitting": "Invio in corso...",
+    "thanks": "Grazie — Abbiamo ricevuto la tua iscrizione.",
+    "savedOffline": "Salvato in locale — Proveremo a inviare più tardi.",
+    "contactOrganizer": "Contatta l'Organizzatore"
+  },
+  "toursCard": {
+    "detail": {
+      "title": "Tour Alpha Avia",
+      "subtitle": "Siamo qui per aiutarti a pianificare la tua perfetta avventura in Uzbekistan",
+      "duration": "Durata",
+      "dates": "Date",
+      "price": "Prezzo",
+      "highlights": "Punti Salienti",
+      "itinerary": "Itinerario",
+      "organizerContact": "Contatto Organizzatore"
+    },
+    "card": {
+      "viewDetails": "Vedi Dettagli",
+      "register": "Iscriviti Ora",
+      "perPerson": "a persona"
+    },
+    "filter": {
+      "all": "Tutti i Tour"
+    }
+  },
+  "contactCard": {
+    "phone": "Telefono",
+    "email": "Email",
+    "website": "Sito Web"
+  },
+  "validation": {
+    "required": "{{field}} è obbligatorio",
+    "invalidEmail": "Indirizzo email non valido",
+    "minParticipants": "È richiesto almeno un partecipante"
+  },
+  "contactService": {
     "title": "Contattaci",
     "subtitle": "Siamo qui per aiutarti a pianificare la tua perfetta avventura in Uzbekistan",
     "form": {
-      "name": "Il tuo nome",
-      "namePlaceholder": "Mario Rossi",
-      "email": "La tua email",
-      "emailPlaceholder": "mario@example.com",
+      "name": "Il Tuo Nome",
+      "namePlaceholder": "Marco Rossi",
+      "email": "La Tua Email",
+      "emailPlaceholder": "marco.rossi@example.com",
       "subject": "Oggetto",
-      "subjectPlaceholder": "Richiesta sul tour",
+      "subjectPlaceholder": "Richiesta di informazioni sul tour",
       "message": "Messaggio",
-      "messagePlaceholder": "Raccontaci dei tuoi piani di viaggio...",
-      "submit": "Invia",
-      "submitting": "Invio..."
+      "messagePlaceholder": "Raccontaci i tuoi piani di viaggio...",
+      "submit": "Invia Messaggio",
+      "submitting": "Invio in corso..."
     },
     "validation": {
       "nameRequired": "Il nome è obbligatorio",
       "emailRequired": "L'email è obbligatoria",
-      "emailInvalid": "Inserisci un'email valida",
+      "emailInvalid": "Inserisci un indirizzo email valido",
       "subjectRequired": "L'oggetto è obbligatorio",
       "messageRequired": "Il messaggio è obbligatorio"
     },
-    "success": "Messaggio inviato con successo! Risponderemo presto.",
-    "error": "Invio del messaggio fallito. Riprova.",
+    "success": "Messaggio inviato con successo! Ti risponderemo al più presto.",
+    "error": "Errore durante l'invio del messaggio. Riprova.",
     "info": {
-      "title": "Informazioni di contatto",
-      "office": "Ufficio principale",
-      "address": "123 via Registan, Samarcanda, Uzbekistan",
+      "title": "Informazioni di Contatto",
+      "office": "Sede Centrale",
+      "address": "Via Registan, 123, Samarcanda, Uzbekistan",
       "phone": "Telefono",
       "email": "Email",
-      "hours": "Orari di apertura",
+      "hours": "Orari di Apertura",
       "hoursDetail": "Lunedì - Sabato: 9:00 - 20:00\nDomenica: 10:00 - 18:00"
     }
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Soluzioni di viaggio complete per la tua avventura in Uzbekistan",
+    "transport": {
+      "title": "Servizi di Trasporto",
+      "subtitle": "Opzioni di trasporto affidabili e confortevoli, inclusi trasferimenti aeroportuali, auto private e navette di gruppo, per garantire un viaggio senza interruzioni."
+    },
+    "hotels": {
+      "title": "Prenotazioni Alberghiere",
+      "subtitle": "Offriamo una vasta gamma di opzioni di alloggio, dal budget al lusso, assicurandoti di trovare la sistemazione perfetta per le tue preferenze e il tuo budget."
+    },
+    "question": "Pronto a Prenotare?",
+    "contactUs": "Contattaci per personalizzare il tuo pacchetto di viaggio perfetto",
+    "GetInTouch": "Contattaci",
+    "book": "Prenota Ora",
+    "close": "Chiudi",
+    "category": "Categoria"
+  },
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "La tua prenotazione è confermata!",
+      "confirm": "Il tuo fantastico viaggio è confermato,",
+      "congraluate": "! Non vediamo l'ora di averti a bordo insieme al tuo gruppo.",
+      "summary": "Riepilogo",
+      "tour": "Tour:",
+      "guests": "Ospiti:",
+      "totalCost": "Costo Totale:",
+      "people": "persone",
+      "detailedReceipt": "Una ricevuta di conferma dettagliata è stata inviata a",
+      "callus": "Chiamaci"
+    },
+    "registrationDetails": {
+      "name": "Nome",
+      "people": "Persone",
+      "totalPrice": "Prezzo Totale:",
+      "email": "Indirizzo Email",
+      "phone": "Numero di Telefono",
+      "tourTitle": "Titolo del Tour",
+      "bookTrip": "Prenota il Tuo Viaggio",
+      "securePlace": "Assicurati il tuo posto ora! Prezzo a persona: $",
+      "priceForPerson": "Prezzo per persona",
+      "confirmBooking": "Conferma Prenotazione"
+    },
+    "FullAdventure": {
+      "adventure": "I Dettagli Completi della Tua Avventura",
+      "highlights": "Punti Salienti Chiave",
+      "duration": "Durata:",
+      "itinerary": "Itinerario Giornaliero",
+      "days": "giorni",
+      "day": "Giorno",
+      "day:": "Giorno:",
+      "activities": "Attività",
+      "close": "Chiudi",
+      "view": "Visualizza",
+      "DirectContact": "Contatto Diretto",
+      "assist": "Hai bisogno di assistenza? Il nostro team è pronto ad aiutarti!"
+    }
   }
-
-
 }

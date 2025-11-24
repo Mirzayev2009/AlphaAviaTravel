@@ -12,6 +12,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { MapPin, Calendar, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
 
+const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
 /**
  * DestinationDetailsDrawer - Right-side drawer with full destination info
  */
@@ -34,14 +35,17 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
 
         {/* Scrollable Content */}
         <ScrollArea className="h-[calc(100vh-120px)]">
-          <div className="p-6 pt-0">
+          <div className="p-6 pt-4">
             {/* Hero Image */}
-            <img
-              src={destination.heroImage}
-              alt={destination.name}
-              className="w-full h-64 object-cover rounded-xl mb-6"
-              loading="lazy"
-            />
+            {destination.heroImage && (
+              <img
+                // 2. Prepend the Base URL to the heroImage path
+                src={`${IMAGE_BASE_URL}${destination.heroImage}`}
+                alt={destination.name}
+                className="w-full h-64 object-cover rounded-xl mb-6 shadow-md"
+                loading="lazy"
+              />
+            )}
 
             {/* Quick Info */}
             <div className="grid grid-cols-1 gap-4 mb-6 p-4 bg-orange-50 rounded-xl border border-orange-100">
@@ -71,19 +75,85 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
                   <p className="text-xs text-muted-foreground mb-1">
                     Travel Tips
                   </p>
-                  <p className="text-sm text-gray-700">{destination.travelTips}</p>
+                  <p className="text-sm text-gray-700">
+                    {destination.travelTips}
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Extended Content */}
-            <div
-              className="prose prose-sm max-w-none mb-6 [&>h3]:text-lg [&>h3]:font-bold [&>h3]:mt-4 [&>h3]:mb-2 [&>ul]:ml-4 [&>ul]:space-y-1 [&>li]:text-sm"
-              dangerouslySetInnerHTML={{ __html: destination.extendedHtml }}
-            />
+            {/* Feature Description */}
+            <div className="mb-6 p-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border border-orange-200">
+              <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <span className="text-orange-500">✦</span>
+                What Makes It Special
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {destination.featureDescription}
+              </p>
+            </div>
+
+            {/* Must See Attractions */}
+            <div className="mb-6">
+              <h3 className="text-lg font-bold text-gray-800 mb-3">
+                🎯 Must-See Attractions
+              </h3>
+              <div className="space-y-3">
+                {destination.mustSee.map((item, index) => {
+                  const [title, ...descParts] = item.split(":");
+                  const description = descParts.join(":").trim();
+                  return (
+                    <div
+                      key={index}
+                      className="p-4 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
+                    >
+                      <p className="font-semibold text-gray-800 mb-1">
+                        {title}
+                      </p>
+                      {description && (
+                        <p className="text-sm text-gray-600">{description}</p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Nature & Landscape */}
+            <div className="mb-6 p-5 bg-green-50 rounded-xl border border-green-200">
+              <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <span className="text-green-600">🌿</span>
+                Nature & Landscape
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {destination.nature}
+              </p>
+            </div>
+
+            {/* Food & Cuisine */}
+            <div className="mb-6 p-5 bg-amber-50 rounded-xl border border-amber-200">
+              <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <span className="text-amber-600">🍽️</span>
+                Food & Cuisine
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {destination.food}
+              </p>
+            </div>
+
+            {/* Getting There */}
+            <div className="mb-6 p-5 bg-blue-50 rounded-xl border border-blue-200">
+              <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
+                <span className="text-blue-600">🚂</span>
+                Getting There
+              </h3>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                {destination.gettingThere}
+              </p>
+            </div>
 
             {/* Call To Action */}
-            <div className="sticky bottom-0 bg-white pt-4 border-t">
+            <div className="sticky bottom-0 bg-white pt-4 pb-2 border-t">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}

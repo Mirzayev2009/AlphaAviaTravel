@@ -15,24 +15,47 @@
     "title": "Discover Uzbekistan's Hidden Treasures",
     "subtitle": "Experience the magic of the Silk Road with expertly curated tours",
     "cta": "Explore Tours",
-    "ctaSecondary": "View Destinations"
+    "ctaSecondary": "View Destinations",
+    "slides": {
+      "1": {
+        "title": "Discover the Silk Road",
+        "subtitle": "Journey through ancient cities and timeless beauty"
+      },
+      "2": {
+        "title": "Experience Living History",
+        "subtitle": "Walk in the footsteps of merchants and scholars"
+      },
+      "3": {
+        "title": "Uncover Hidden Treasures",
+        "subtitle": "Explore UNESCO World Heritage wonders"
+      }
+    }
+    
   },
   "home": {
     "featuredTitle": "Featured Tours",
     "featuredSubtitle": "Handpicked journeys through Uzbekistan's most iconic destinations",
     "aboutTitle": "Why Choose AlphaTravel?",
     "aboutText": "With over 15 years of experience, AlphaTravel offers authentic, immersive experiences across Uzbekistan. Our expert guides bring history alive, while our attention to detail ensures your journey is seamless and unforgettable.",
-    "aboutCta": "Learn More About Us"
+    "aboutCta": "Learn More About Us",
+    "aboutcard1Title": "Expert Guides",
+    "aboutcard1Text": "Our passionate guides bring history and culture alive with deep local knowledge.",
+    "aboutcard2Title": "15+ Years Experience",
+    "aboutcard2Text": "Over a decade of creating unforgettable Uzbekistan adventures for travelers worldwide.",
+    "aboutcard3Title": "Personalized Service",
+    "aboutcard3Text": "We tailor every tour to your interests, ensuring a truly personal experience."
+
   },
   "tours": {
-    "title": "Our Tours",
-    "subtitle": "Curated experiences across Uzbekistan",
-    "filter": {
-      "all": "All Tours",
-      "destination": "By Destination",
-      "duration": "By Duration",
-      "price": "By Price"
-    },
+    "title": " Discover Your Next Adventure",
+    "subtitle": " Choose your perfect journey from Uzbekistan's treasures to global destinations",
+    "explore": "Explore",
+    "uzTours": "Uzbekistan Tours",
+    "discover": "Discover",
+    "worldTours": "World Tours",
+    "uzSubtitle": " Explore the wonders of the Silk Road and Uzbekistan's rich heritage",
+    "worldSubtitle": " Experience the world's most captivating destinations from Uzbekistan",
+    
 
   "detail": {
     "tour1": {
@@ -179,12 +202,7 @@
 
 
 
-    "card": {
-      "from": "From",
-      "perPerson": "per person",
-      "viewDetails": "View Details",
-      "register": "Register Now"
-    },
+  
     "modal": {
       "itinerary": "Itinerary",
       "highlights": "Highlights",
@@ -283,6 +301,12 @@
       "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
     }
   },
+    "card": {
+      "from": "From",
+      "perPerson": "per person",
+      "viewDetails": "View Details",
+      "register": "Register Now"
+    },
   "gallery": {
     "title": "Photo Gallery",
     "subtitle": "A visual journey through Uzbekistan's wonders",
@@ -322,7 +346,7 @@
     "savedOffline": "Saved locally — we'll try to send it later.",
     "contactOrganizer": "Contact organizer"
   },
-  "tours": {
+  "toursCard": {
     "detail": {
       "title": "Alpha Avia tours",
       "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
@@ -343,7 +367,7 @@
     }
 
   },
-  "contact": {
+  "contactCard": {
     "phone": "Phone",
     "email": "Email",
     "website": "Website"
@@ -354,7 +378,7 @@
     "minParticipants": "At least one participant required"
   
 },
-  "contact": {
+  "contactService": {
     "title": "Get in Touch",
     "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
     "form": {
@@ -387,26 +411,71 @@
       "hours": "Business Hours",
       "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
     }
+  
+},
+"services":{
+  "title": "Our Services",
+  "subtitle": "Comprehensive travel solutions for your Uzbekistan adventure",
+  "transport": {
+    "title": "Transportation Services",
+    "subtitle": "Reliable and comfortable transportation options including airport transfers, private cars, and group shuttles to ensure smooth travel throughout your trip."
   },
-  "hero": {
-  "title": "Discover Uzbekistan's Hidden Treasures",
-  "subtitle": "Experience the magic of the Silk Road with expertly curated tours",
-  "cta": "Explore Tours",
-  "ctaSecondary": "View Destinations",
-  "slides": [
-    {
-      "title": "Discover the Silk Road",
-      "subtitle": "Journey through ancient cities and timeless beauty"
-    },
-    {
-      "title": "Experience Living History",
-      "subtitle": "Walk in the footsteps of merchants and scholars"
-    },
-    {
-      "title": "Uncover Hidden Treasures",
-      "subtitle": "Explore UNESCO World Heritage wonders"
-    }
-  ]
+  "hotels": {
+    "title": "Hotel Bookings",
+    "subtitle": "We offer a wide range of accommodation options from budget to luxury hotels, ensuring you find the perfect stay that suits your preferences and budget."
+  },
+  "question":"Ready to Book",
+  "contactUs":"Contact us to customize your perfect travel package",
+  "GetInTouch":"Get in Touch",
+  "book": "Book Now",
+  "close": "Close",
+  "category":"Category"
+
+  
+   
+}, 
+"tourDetail":{
+ "confirmation":{ 
+   "bookingSecured":"Your booking is secured!",
+  "confirm": "Your incredible journey is confirmed,",
+  "congraluate": "! We're thrilled to have you and your party join us.",
+  "summary": "summary",
+  "tour": "Tour:",
+  "guests": "Guests:",
+  "totalCost": "Total Cost:",
+  "people": "people",
+  "detailedReceipt":"A detailed confirmation receipt has been sent to",
+  "callus":"Call us"
+
+}, 
+"registrationDetails":{
+  "name":"name",
+  "people":"number of people",
+  "totalPrice":"Total Price:",
+  "email":"email address",
+  "phone":"phonenumber",
+  "tourTitle":"tour title",
+  "bookTrip":"Book Your Trip",
+  "securePlace":"Secure your place today! Price per person: $",
+  "priceForPerson":"price for ",
+  "confirmBooking":"Confirm Booking"
+  
+},
+"FullAdventure": {
+  "adventure" : "Your Full Adventure Details",
+  "highlights":" Key Highlights",
+  "duration":" Duration:",
+  "itinerary":"    Day-by-Day Itinerary"  , 
+  "days":"Days",
+  "day":"Day",
+  "day:":"Days:",
+  "activities":"Activities",
+  "close":"Close",
+  "view": "View",
+  "DirectContact":"Direct Contactact",
+  "assist" : "  Need assistance? Our team is ready to help! "
+ }
+
 }
 
   

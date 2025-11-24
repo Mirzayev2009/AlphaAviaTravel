@@ -4,54 +4,211 @@
       "home": "Inicio",
       "tours": "Tours",
       "destinations": "Destinos",
-      "about": "Acerca de",
+      "about": "Nosotros",
       "gallery": "Galería",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "services": "Servicios"
     },
     "language": "Idioma"
   },
   "hero": {
-    "title": "Descubre los Tesoros Ocultos de Uzbekistán",
-    "subtitle": "Experimenta la magia de la Ruta de la Seda con tours cuidadosamente seleccionados",
+    "title": "Descubra los Tesoros Ocultos de Uzbekistán",
+    "subtitle": "Experimente la magia de la Ruta de la Seda con tours diseñados por expertos",
     "cta": "Explorar Tours",
-    "ctaSecondary": "Ver Destinos"
+    "ctaSecondary": "Ver Destinos",
+    "slides": {
+      "1": {
+        "title": "Descubra la Ruta de la Seda",
+        "subtitle": "Viaje a través de ciudades antiguas y belleza atemporal"
+      },
+      "2": {
+        "title": "Experimente la Historia Viva",
+        "subtitle": "Camine tras los pasos de comerciantes y académicos"
+      },
+      "3": {
+        "title": "Descubra Tesoros Ocultos",
+        "subtitle": "Explore las maravillas del Patrimonio Mundial de la UNESCO"
+      }
+    }
   },
   "home": {
     "featuredTitle": "Tours Destacados",
-    "featuredSubtitle": "Viajes seleccionados por los destinos más icónicos de Uzbekistán",
+    "featuredSubtitle": "Viajes seleccionados a mano por los destinos más icónicos de Uzbekistán",
     "aboutTitle": "¿Por qué elegir AlphaTravel?",
-    "aboutText": "Con más de 15 años de experiencia, AlphaTravel ofrece experiencias auténticas e inmersivas por todo Uzbekistán. Nuestros guías expertos dan vida a la historia, mientras que nuestra atención al detalle asegura un viaje impecable e inolvidable.",
-    "aboutCta": "Conozca más sobre nosotros"
+    "aboutText": "Con más de 15 años de experiencia, AlphaTravel ofrece experiencias auténticas e inmersivas en todo Uzbekistán. Nuestros guías expertos dan vida a la historia, mientras que nuestra atención al detalle garantiza que su viaje sea fluido e inolvidable.",
+    "aboutCta": "Saber Más Sobre Nosotros",
+    "aboutcard1Title": "Guías Expertos",
+    "aboutcard1Text": "Nuestros apasionados guías dan vida a la historia y la cultura con profundo conocimiento local.",
+    "aboutcard2Title": "+15 Años de Experiencia",
+    "aboutcard2Text": "Más de una década creando aventuras inolvidables en Uzbekistán para viajeros de todo el mundo.",
+    "aboutcard3Title": "Servicio Personalizado",
+    "aboutcard3Text": "Adaptamos cada tour a sus intereses, asegurando una experiencia verdaderamente personal."
   },
   "tours": {
-    "title": "Nuestros Tours",
-    "subtitle": "Experiencias cuidadosamente seleccionadas en Uzbekistán",
-    "filter": {
-      "all": "Todos los Tours",
-      "destination": "Por Destino",
-      "duration": "Por Duración",
-      "price": "Por Precio"
-    },
-    "card": {
-      "from": "Desde",
-      "perPerson": "por persona",
-      "viewDetails": "Ver Detalles",
-      "register": "Registrarse Ahora"
+    "title": "Descubra Su Próxima Aventura",
+    "subtitle": "Elija su viaje perfecto, desde los tesoros de Uzbekistán hasta destinos globales",
+    "explore": "Explorar",
+    "uzTours": "Tours por Uzbekistán",
+    "discover": "Descubrir",
+    "worldTours": "Tours Mundiales",
+    "uzSubtitle": "Explore las maravillas de la Ruta de la Seda y el rico patrimonio de Uzbekistán",
+    "worldSubtitle": "Experimente los destinos más cautivadores del mundo desde Uzbekistán",
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "Lo Más Destacado de la Ruta de la Seda",
+        "duration": "10 Días",
+        "price": "$1,200",
+        "dates": "Disponible Todo el Año",
+        "highlights": [
+          "Explore la Plaza Registan de Samarcanda",
+          "Visite las antiguas mezquitas de Bujará",
+          "Descubra la ciudad amurallada de Jiva"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Llegada a Taskent",
+              "Tour por la ciudad de Taskent"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaje a Samarcanda",
+              "Visite el Mausoleo de Gur-e-Amir"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "Tesoros Culturales de Uzbekistán",
+        "duration": "7 Días",
+        "price": "$900",
+        "dates": "Disponible Todo el Año",
+        "highlights": [
+          "Experimente la cocina tradicional uzbeka",
+          "Visite talleres de artesanos locales",
+          "Explore sitios históricos de la Ruta de la Seda"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Llegada a Taskent",
+              "Cena de bienvenida con música tradicional"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaje a Bujará",
+              "Visita guiada por el casco antiguo de Bujará"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "Aventuras en el Desierto de Uzbekistán",
+        "duration": "5 Días",
+        "price": "$700",
+        "dates": "Disponible Todo el Año",
+        "highlights": [
+          "Trekking en camello por el desierto de Kyzylkum",
+          "Pernocte en un campamento de yurtas",
+          "Vistas del atardecer sobre las dunas del desierto"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Llegada a Taskent",
+              "Sesión informativa nocturna y cena"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaje al desierto de Kyzylkum",
+              "Comienzo del trekking en camello"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "Diversión Familiar en Uzbekistán",
+        "duration": "8 Días",
+        "price": "$1,100",
+        "dates": "Disponible Todo el Año",
+        "highlights": [
+          "Talleres interactivos para niños",
+          "Tours turísticos aptos para familias",
+          "Actuaciones y actividades culturales"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Llegada a Taskent",
+              "Evento de bienvenida familiar"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Visita al Zoológico de Taskent",
+              "Exploración de parques y zonas de juego locales"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "Experiencia de Lujo en Uzbekistán",
+        "duration": "12 Días",
+        "price": "$3,500",
+        "dates": "Disponible Todo el Año",
+        "highlights": [
+          "Alojamiento en hoteles de 5 estrellas",
+          "Tours guiados privados",
+          "Experiencias gastronómicas exclusivas"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Llegada a Taskent",
+              "Tour privado por la ciudad con transporte de lujo"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Viaje a Samarcanda en coche privado",
+              "Tour VIP por la Plaza Registan"
+            ]
+          }
+        ]
+      }
     },
     "modal": {
       "itinerary": "Itinerario",
-      "highlights": "Aspectos Destacados",
+      "highlights": "Puntos Destacados",
       "day": "Día",
       "close": "Cerrar",
-      "registerNow": "Registrarse en este Tour"
+      "registerNow": "Registrarse para Este Tour"
     }
   },
   "destinations": {
     "title": "Destinos",
-    "subtitle": "Explora los lugares más fascinantes de Uzbekistán",
+    "subtitle": "Explore los lugares más cautivadores de Uzbekistán",
     "card": {
-      "learnMore": "Aprende Más",
-      "bestTime": "Mejor época para visitar"
+      "learnMore": "Saber Más",
+      "bestTime": "Mejor Época para Visitar"
     },
     "drawer": {
       "close": "Cerrar",
@@ -60,85 +217,91 @@
     }
   },
   "registration": {
-    "title": "Registro para el Tour",
-    "subtitle": "Rellena el formulario y nos pondremos en contacto en 24 horas",
+    "title": "Registro para Tour",
+    "subtitle": "Rellene el formulario a continuación y le contactaremos en 24 horas",
     "form": {
       "name": "Nombre Completo",
       "namePlaceholder": "Juan Pérez",
       "email": "Correo Electrónico",
-      "emailPlaceholder": "juan@ejemplo.com",
+      "emailPlaceholder": "juan@example.com",
       "phone": "Número de Teléfono",
-      "phonePlaceholder": "+1 234 567 8900",
+      "phonePlaceholder": "+34 123 456 789",
       "numberOfPeople": "Número de Personas",
       "notes": "Notas Adicionales",
-      "notesPlaceholder": "Restricciones dietéticas, solicitudes especiales, etc.",
+      "notesPlaceholder": "Restricciones dietéticas, peticiones especiales, etc.",
       "submit": "Enviar Registro",
       "submitting": "Enviando..."
     },
     "validation": {
-      "nameRequired": "El nombre es obligatorio",
-      "emailRequired": "El correo electrónico es obligatorio",
-      "emailInvalid": "Ingrese un correo válido",
-      "phoneRequired": "El número de teléfono es obligatorio",
-      "phoneInvalid": "Ingrese un número de teléfono válido",
+      "nameRequired": "Se requiere el nombre",
+      "emailRequired": "Se requiere el correo electrónico",
+      "emailInvalid": "Por favor, introduzca un correo electrónico válido",
+      "phoneRequired": "Se requiere el número de teléfono",
+      "phoneInvalid": "Por favor, introduzca un número de teléfono válido",
       "peopleMin": "Se requiere al menos 1 persona"
     },
-    "success": "¡Registro exitoso! Nos pondremos en contacto en 24 horas.",
-    "error": "El registro falló. Intente de nuevo.",
+    "success": "¡Registro exitoso! Le contactaremos en 24 horas.",
+    "error": "Error de registro. Por favor, inténtelo de nuevo.",
     "organizer": {
-      "title": "Contacta a nuestro organizador de tours",
-      "phone": "Llámanos",
-      "email": "Envíanos un correo",
+      "title": "Contactar con Nuestro Organizador de Tours",
+      "phone": "Llámenos",
+      "email": "Envíenos un Correo",
       "hours": "Disponible de 9 AM a 8 PM (GMT+5)"
     }
   },
   "about": {
     "title": "Acerca de AlphaTravel",
-    "subtitle": "Tu socio confiable para aventuras en Uzbekistán",
-    "story": "Fundada en 2008 por la nativa de Samarcanda Aziza Karimova, AlphaTravel se ha convertido en el principal operador turístico de Uzbekistán. Nos apasiona compartir la rica historia, la arquitectura impresionante y la cálida hospitalidad de nuestro país con viajeros de todo el mundo.",
-    "mission": "Nuestra misión es crear experiencias turísticas auténticas y sostenibles que beneficien a las comunidades locales mientras brindamos recuerdos inolvidables a nuestros invitados.",
-    "teamTitle": "Conoce a nuestro equipo",
+    "subtitle": "Su socio de confianza para aventuras en Uzbekistán",
+    "story": "Fundada en 2008 por Aziza Karimova, nativa de Samarcanda, AlphaTravel se ha convertido en el principal operador turístico de Uzbekistán. Nos apasiona compartir la rica historia de nuestro país, su impresionante arquitectura y su cálida hospitalidad con viajeros de todo el mundo.",
+    "mission": "Nuestra misión es crear experiencias de turismo auténticas y sostenibles que beneficien a las comunidades locales, a la vez que proporcionan recuerdos inolvidables a nuestros huéspedes.",
+    "teamTitle": "Conozca a Nuestro Equipo",
     "teamSubtitle": "Guías expertos y profesionales apasionados",
     "storiesTitle": "Historias de Éxito",
-    "storiesSubtitle": "Escucha a viajeros que han experimentado Uzbekistán con nosotros"
+    "storiesSubtitle": "Escuche a los viajeros que han experimentado Uzbekistán con nosotros"
   },
   "contact": {
-    "title": "Ponte en Contacto",
-    "subtitle": "Estamos aquí para planear tu aventura perfecta en Uzbekistán",
+    "title": "Póngase en Contacto",
+    "subtitle": "Estamos aquí para ayudarle a planificar su aventura perfecta en Uzbekistán",
     "form": {
-      "name": "Tu Nombre",
+      "name": "Su Nombre",
       "namePlaceholder": "Juan Pérez",
-      "email": "Tu Correo",
-      "emailPlaceholder": "juan@ejemplo.com",
+      "email": "Su Correo Electrónico",
+      "emailPlaceholder": "juan@example.com",
       "subject": "Asunto",
-      "subjectPlaceholder": "Consulta sobre tour",
+      "subjectPlaceholder": "Consulta sobre un tour",
       "message": "Mensaje",
-      "messagePlaceholder": "Cuéntanos sobre tus planes de viaje...",
+      "messagePlaceholder": "Cuéntenos sobre sus planes de viaje...",
       "submit": "Enviar Mensaje",
       "submitting": "Enviando..."
     },
     "validation": {
-      "nameRequired": "El nombre es obligatorio",
-      "emailRequired": "El correo electrónico es obligatorio",
-      "emailInvalid": "Ingrese un correo válido",
-      "subjectRequired": "El asunto es obligatorio",
-      "messageRequired": "El mensaje es obligatorio"
+      "nameRequired": "Se requiere el nombre",
+      "emailRequired": "Se requiere el correo electrónico",
+      "emailInvalid": "Por favor, introduzca un correo electrónico válido",
+      "subjectRequired": "Se requiere el asunto",
+      "messageRequired": "Se requiere el mensaje"
     },
     "success": "¡Mensaje enviado con éxito! Responderemos pronto.",
-    "error": "Error al enviar el mensaje. Intente de nuevo.",
+    "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo.",
     "info": {
       "title": "Información de Contacto",
       "office": "Oficina Principal",
-      "address": "123 Calle Registán, Samarcanda, Uzbekistán",
+      "address": "123 Calle Registan, Samarcanda, Uzbekistán",
       "phone": "Teléfono",
-      "email": "Correo",
-      "hours": "Horario de Atención",
+      "email": "Correo Electrónico",
+      "hours": "Horario Comercial",
       "hoursDetail": "Lunes - Sábado: 9 AM - 8 PM\nDomingo: 10 AM - 6 PM"
     }
   },
+  "card": {
+    "from": "Desde",
+    "perPerson": "por persona",
+    "viewDetails": "Ver Detalles",
+    "register": "Registrarse Ahora"
+  },
   "gallery": {
     "title": "Galería de Fotos",
-    "subtitle": "Un viaje visual por las maravillas de Uzbekistán",
+    "subtitle": "Un viaje visual a través de las maravillas de Uzbekistán",
     "lightbox": {
       "previous": "Anterior",
       "next": "Siguiente",
@@ -146,54 +309,154 @@
     }
   },
   "footer": {
-    "about": "AlphaTravel se especializa en tours auténticos en Uzbekistán, desde las antiguas ciudades de la Ruta de la Seda hasta joyas culturales ocultas.",
+    "about": "AlphaTravel se especializa en tours auténticos por Uzbekistán, desde las antiguas ciudades de la Ruta de la Seda hasta joyas culturales ocultas.",
     "quickLinks": "Enlaces Rápidos",
     "contactInfo": "Información de Contacto",
-    "followUs": "Síguenos",
+    "followUs": "Síganos",
     "copyright": "© 2025 AlphaTravel. Todos los derechos reservados."
   },
   "common": {
     "loading": "Cargando...",
-    "error": "Ocurrió un error",
+    "error": "Ha ocurrido un error",
     "backToTop": "Volver Arriba",
     "readMore": "Leer Más",
     "bookNow": "Reservar Ahora",
     "learnMore": "Saber Más"
   },
-  "contact": {
-    "title": "Contáctanos",
-    "subtitle": "Estamos aquí para ayudarte a planificar tu aventura perfecta en Uzbekistán",
+  "form": {
+    "bookThisTour": "Registrarse para este tour",
+    "fillDetails": "Rellene su información de contacto para reservar un lugar",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "participants": "Participantes",
+    "notes": "Notas (opcional)",
+    "bookNow": "Reservar ahora",
+    "submitting": "Enviando...",
+    "thanks": "Gracias — hemos recibido su registro.",
+    "savedOffline": "Guardado localmente — intentaremos enviarlo más tarde.",
+    "contactOrganizer": "Contactar con el organizador"
+  },
+  "toursCard": {
+    "detail": {
+      "title": "Tours Alpha Avia",
+      "subtitle": "Estamos aquí para ayudarle a planificar su aventura perfecta en Uzbekistán",
+      "duration": "Duración",
+      "dates": "Fechas",
+      "price": "Precio",
+      "highlights": "Puntos Destacados",
+      "itinerary": "Itinerario",
+      "organizerContact": "Contacto del Organizador"
+    },
+    "card": {
+      "viewDetails": "Ver Detalles",
+      "register": "Registrarse Ahora",
+      "perPerson": "por persona"
+    },
+    "filter": {
+      "all": "Todos los Tours"
+    }
+  },
+  "contactCard": {
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "website": "Sitio Web"
+  },
+  "validation": {
+    "required": "{{field}} es obligatorio",
+    "invalidEmail": "Dirección de correo electrónico no válida",
+    "minParticipants": "Se requiere al menos un participante"
+  },
+  "contactService": {
+    "title": "Póngase en Contacto",
+    "subtitle": "Estamos aquí para ayudarle a planificar su aventura perfecta en Uzbekistán",
     "form": {
-      "name": "Su nombre",
+      "name": "Su Nombre",
       "namePlaceholder": "Juan Pérez",
-      "email": "Su correo electrónico",
+      "email": "Su Correo Electrónico",
       "emailPlaceholder": "juan@example.com",
       "subject": "Asunto",
-      "subjectPlaceholder": "Consulta sobre el tour",
+      "subjectPlaceholder": "Consulta sobre un tour",
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntenos sobre sus planes de viaje...",
-      "submit": "Enviar mensaje",
+      "submit": "Enviar Mensaje",
       "submitting": "Enviando..."
     },
     "validation": {
-      "nameRequired": "El nombre es obligatorio",
-      "emailRequired": "El correo electrónico es obligatorio",
-      "emailInvalid": "Por favor ingrese un correo electrónico válido",
-      "subjectRequired": "El asunto es obligatorio",
-      "messageRequired": "El mensaje es obligatorio"
+      "nameRequired": "Se requiere el nombre",
+      "emailRequired": "Se requiere el correo electrónico",
+      "emailInvalid": "Por favor, introduzca un correo electrónico válido",
+      "subjectRequired": "Se requiere el asunto",
+      "messageRequired": "Se requiere el mensaje"
     },
     "success": "¡Mensaje enviado con éxito! Responderemos pronto.",
     "error": "Error al enviar el mensaje. Por favor, inténtelo de nuevo.",
     "info": {
-      "title": "Información de contacto",
-      "office": "Oficina principal",
-      "address": "Calle Registán 123, Samarcanda, Uzbekistán",
+      "title": "Información de Contacto",
+      "office": "Oficina Principal",
+      "address": "123 Calle Registan, Samarcanda, Uzbekistán",
       "phone": "Teléfono",
-      "email": "Correo electrónico",
-      "hours": "Horario de atención",
-      "hoursDetail": "Lunes - Sábado: 9:00 - 20:00\nDomingo: 10:00 - 18:00"
+      "email": "Correo Electrónico",
+      "hours": "Horario Comercial",
+      "hoursDetail": "Lunes - Sábado: 9 AM - 8 PM\nDomingo: 10 AM - 6 PM"
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones de viaje completas para su aventura en Uzbekistán",
+    "transport": {
+      "title": "Servicios de Transporte",
+      "subtitle": "Opciones de transporte confiables y cómodas, incluyendo traslados al aeropuerto, coches privados y lanzaderas grupales para garantizar un viaje fluido durante todo su recorrido."
+    },
+    "hotels": {
+      "title": "Reservas de Hotel",
+      "subtitle": "Ofrecemos una amplia gama de opciones de alojamiento, desde hoteles económicos hasta de lujo, asegurando que encuentre la estancia perfecta que se adapte a sus preferencias y presupuesto."
+    },
+    "question": "¿Listo para Reservar?",
+    "contactUs": "Contáctenos para personalizar su paquete de viaje perfecto",
+    "GetInTouch": "Póngase en Contacto",
+    "book": "Reservar Ahora",
+    "close": "Cerrar",
+    "category": "Categoría"
+  },
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "¡Su reserva está asegurada!",
+      "confirm": "Su increíble viaje está confirmado,",
+      "congraluate": "! Estamos encantados de que usted y su grupo se unan a nosotros.",
+      "summary": "Resumen",
+      "tour": "Tour:",
+      "guests": "Invitados:",
+      "totalCost": "Costo Total:",
+      "people": "personas",
+      "detailedReceipt": "Se ha enviado un recibo de confirmación detallado a",
+      "callus": "Llámenos"
+    },
+    "registrationDetails": {
+      "name": "nombre",
+      "people": "número de personas",
+      "totalPrice": "Precio Total:",
+      "email": "dirección de correo electrónico",
+      "phone": "número de teléfono",
+      "tourTitle": "título del tour",
+      "bookTrip": "Reserve Su Viaje",
+      "securePlace": "¡Asegure su lugar hoy! Precio por persona: $",
+      "priceForPerson": "precio para",
+      "confirmBooking": "Confirmar Reserva"
+    },
+    "FullAdventure": {
+      "adventure": "Detalles Completos de Su Aventura",
+      "highlights": "Puntos Clave Destacados",
+      "duration": "Duración:",
+      "itinerary": "Itinerario Día a Día",
+      "days": "Días",
+      "day": "Día",
+      "day:": "Días:",
+      "activities": "Actividades",
+      "close": "Cerrar",
+      "view": "Ver",
+      "DirectContact": "Contacto Directo",
+      "assist": "  ¿Necesita ayuda? ¡Nuestro equipo está listo para ayudar!"
     }
   }
-
-
 }

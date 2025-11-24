@@ -178,20 +178,20 @@ const Home = () => {
             {[
               {
                 Icon: Users,
-                title: "Expert Guides",
-                text: "Our passionate guides bring history and culture alive with deep local knowledge.",
+                title:t("home.aboutcard1Title")  , 
+                text: t("home.aboutcard1Text")  ,
                 delay: 0.1,
               },
               {
                 Icon: Award,
-                title: "15+ Years Experience",
-                text: "Over a decade of creating unforgettable Uzbekistan adventures for travelers worldwide.",
+                title: t("home.aboutcard2Title") ,
+                text: t("home.aboutcard2Text") ,
                 delay: 0.2,
               },
               {
                 Icon: Heart,
-                title: "Personalized Service",
-                text: "We tailor every tour to your interests, ensuring a truly personal experience.",
+                title: t("home.aboutcard3Title")  ,
+                text: t("home.aboutcard3Text")  ,
                 delay: 0.3,
               },
             ].map(({ Icon, title, text, delay }, index) => (

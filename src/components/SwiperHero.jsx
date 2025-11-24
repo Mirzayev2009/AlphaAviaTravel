@@ -15,22 +15,22 @@ const heroSlides = [
     image:
       "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg?s=612x612&w=0&k=20&c=4dssHu44u48kyZmzw5IzpWff1zAev9vRcZ1HKIzHJ8I=",
     alt: "Registan Square, Samarkand",
-    titleKey: "hero.slides.0.title",
-    subtitleKey: "hero.slides.0.subtitle",
-  },
-  {
-    image:
-      "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg?s=612x612&w=0&k=20&c=GJV7czcCrZ0jaa9K7J9juZDu84Ke7f-U2cswo6Z7SKQ=",
-    alt: "Bukhara Old Town",
     titleKey: "hero.slides.1.title",
     subtitleKey: "hero.slides.1.subtitle",
   },
   {
     image:
-      "https://media.gettyimages.com/id/1402157472/photo/khiva-kalta-minor-minaret-itchan-kala-uzbekistan.jpg?s=612x612&w=0&k=20&c=FvS0cjMNaR0Z-_h-oDT1QZXjHzfhQS9uxP3QRY8zcOc=",
-    alt: "Khiva Fortress",
+      "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg?s=612x612&w=0&k=20&c=GJV7czcCrZ0jaa9K7J9juZDu84Ke7f-U2cswo6Z7SKQ=",
+    alt: "Bukhara Old Town",
     titleKey: "hero.slides.2.title",
     subtitleKey: "hero.slides.2.subtitle",
+  },
+  {
+    image:
+      "https://media.gettyimages.com/id/1402157472/photo/khiva-kalta-minor-minaret-itchan-kala-uzbekistan.jpg?s=612x612&w=0&k=20&c=FvS0cjMNaR0Z-_h-oDT1QZXjHzfhQS9uxP3QRY8zcOc=",
+    alt: "Khiva Fortress",
+    titleKey: "hero.slides.3.title",
+    subtitleKey: "hero.slides.3.subtitle",
   },
 ];
 
