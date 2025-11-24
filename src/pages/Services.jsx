@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { set } from "zod";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+const BASE_URL = "https://alpha-backend-iieo.onrender.com/api"
 
 
 const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";

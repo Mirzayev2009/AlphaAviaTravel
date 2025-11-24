@@ -5,7 +5,7 @@ import DestinationCard from "@/components/DestinationCard";
 import DestinationDetailsDrawer from "@/components/DestinationDetailsDrawer";
 import { destinations } from "@/data/seed";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "/api";
+const BASE_URL = "https://alpha-backend-iieo.onrender.com/api"
 
 
 
