@@ -1,31 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Globe, Map } from "lucide-react";
 import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
-import { tours } from "@/data/seed";
 import { useTranslation } from "react-i18next";
 
-const BASE_URL = "https://alpha-backend-iieo.onrender.com/api"
+const BASE_URL = "https://alpha-backend-iieo.onrender.com/api";
 
-
-// Main Tours Component
 const ToursPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("uzbekistan");
   const [selectedTour, setSelectedTour] = useState(null);
   const [registrationTour, setRegistrationTour] = useState(null);
-  // Initialize with the seed data structure to prevent undefined errors
-  const [toursData, setToursData] = useState(tours);
+  const [allToursData, setAllToursData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  
+  const currentLang = i18n.language || 'en';
 
-  const currentTours = toursData[selectedCategory] || [];
-
+  // Fetch ALL tours data once on mount
   useEffect(() => {
-    const fetchTours = async () => {
+    const fetchAllTours = async () => {
       try {
         setIsLoading(true);
+        setError(null);
+        
+        console.log("🔍 Fetching tours from:", `${BASE_URL}/tours`);
         const response = await fetch(`${BASE_URL}/tours`);
 
         if (!response.ok) {
@@ -33,23 +34,62 @@ const ToursPage = () => {
         }
 
         const data = await response.json();
-        // The API returns { tours: { uzbekistan: [...], world: [...] } }
-        // so we need to access data.tours
-        setToursData(data.tours || data);
+        console.log("✅ Tours data received:", data);
+        
+        setAllToursData(data);
       } catch (error) {
-        console.error("Error fetching tours:", error);
-        // Fallback to seed data if fetch fails
-        setToursData(tours);
+        console.error("❌ Error fetching tours:", error);
+        setError(error.message);
+        setAllToursData(null);
       } finally {
         setIsLoading(false);
       }
     };
 
-    fetchTours();
+    fetchAllTours();
   }, []);
 
-  console.log(toursData);
-  
+  // Filter tours based on current language and category
+  const filteredTours = useMemo(() => {
+    console.log("🎯 Filtering tours with:", { 
+      allToursData, 
+      selectedCategory, 
+      currentLang 
+    });
+
+    if (!allToursData) {
+      console.log("⚠️ No tours data available");
+      return [];
+    }
+    
+    // Get tours for selected category
+    const categoryData = allToursData[selectedCategory];
+    console.log(`📁 Category data for '${selectedCategory}':`, categoryData);
+    
+    if (!categoryData) {
+      console.log("⚠️ No data for category:", selectedCategory);
+      return [];
+    }
+    
+    // Get tours for current language
+    const languageTours = categoryData[currentLang];
+    console.log(`🌐 Tours for language '${currentLang}':`, languageTours);
+    
+    if (!languageTours || !Array.isArray(languageTours)) {
+      console.log(`⚠️ No tours for language '${currentLang}', falling back to English`);
+      const fallbackTours = categoryData['en'] || [];
+      console.log("📦 Fallback tours:", fallbackTours);
+      return fallbackTours;
+    }
+    
+    console.log(`✅ Returning ${languageTours.length} tours`);
+    return languageTours;
+  }, [allToursData, selectedCategory, currentLang]);
+
+  // Debug: Log filtered tours whenever they change
+  useEffect(() => {
+    console.log("🎨 Filtered tours to render:", filteredTours);
+  }, [filteredTours]);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -127,9 +167,21 @@ const ToursPage = () => {
             <div className="flex justify-center items-center py-20">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-500"></div>
             </div>
+          ) : error ? (
+            <div className="col-span-full text-center py-12">
+              <p className="text-red-500 text-lg mb-4">
+                Error loading tours: {error}
+              </p>
+              <button
+                onClick={() => window.location.reload()}
+                className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600"
+              >
+                Retry
+              </button>
+            </div>
           ) : (
             <motion.div
-              key={selectedCategory}
+              key={`${selectedCategory}-${currentLang}`}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -145,22 +197,32 @@ const ToursPage = () => {
                     ? t("tours.uzDescription")
                     : t("tours.worldDescription")}
                 </p>
+                {/* Debug info */}
+                <p className="text-xs text-gray-400 mt-2">
+                  Showing {filteredTours.length} tours | Category: {selectedCategory} | Language: {currentLang}
+                </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {currentTours.length > 0 ? (
-                  currentTours.map((tour) => (
-                    <TourCard
-                      key={tour.id}
-                      tour={tour}
-                      onViewDetails={setSelectedTour}
-                      onRegister={setRegistrationTour}
-                    />
-                  ))
+                {filteredTours.length > 0 ? (
+                  filteredTours.map((tour, index) => {
+                    console.log(`🎴 Rendering tour ${index}:`, tour);
+                    return (
+                      <TourCard
+                        key={tour.id || index}
+                        tour={tour}
+                        onViewDetails={setSelectedTour}
+                        onRegister={setRegistrationTour}
+                      />
+                    );
+                  })
                 ) : (
                   <div className="col-span-full text-center py-12">
-                    <p className="text-gray-500 text-lg">
-                      No tours available in this category yet.
+                    <p className="text-gray-500 text-lg mb-4">
+                      {t("tours.noToursAvailable")}
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      Debug: Check console for details
                     </p>
                   </div>
                 )}
@@ -182,16 +244,16 @@ const ToursPage = () => {
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-lg p-6 max-w-md w-full">
             <h3 className="text-2xl font-bold mb-4">
-              Register for {registrationTour.title}
+              {t("tours.registerFor")} {registrationTour.title}
             </h3>
             <p className="text-gray-600 mb-4">
-              Registration form would go here. Contact us to book this tour!
+              {t("tours.registrationMessage")}
             </p>
             <button
               onClick={() => setRegistrationTour(null)}
               className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg"
             >
-              Close
+              {t("tours.close")}
             </button>
           </div>
         </div>

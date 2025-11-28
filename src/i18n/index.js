@@ -27,6 +27,7 @@ i18n
   .init({
     resources,
     fallbackLng: "en",
+    supportedLngs: ["en", "ru", "es", "fr", "it", "zh", "uz"], // Define supported languages
     interpolation: {
       escapeValue: false,
     },
@@ -34,6 +35,16 @@ i18n
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
     },
+    // React options
+    react: {
+      useSuspense: false, // Avoid suspense-related issues
+    },
   });
+
+// Optional: Log language changes (useful for debugging)
+i18n.on('languageChanged', (lng) => {
+  console.log(`Language changed to: ${lng}`);
+  // You can add additional logic here if needed
+});
 
 export default i18n;
