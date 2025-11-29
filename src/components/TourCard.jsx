@@ -38,7 +38,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
   console.log("Extracted data:", { id, title, price, duration, destination });
 
   // UI labels (these come from frontend translation files)
-  const perPersonLabel = t("tours.perPerson", "per person");
+  const perPersonLabel = t("card.perPerson", "per person");
   const viewDetailsLabel = t("tours.viewDetails", "View Details");
   const registerLabel = t("tours.register", "Register Now");
 

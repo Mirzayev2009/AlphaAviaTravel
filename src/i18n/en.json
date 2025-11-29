@@ -445,7 +445,10 @@
   "totalCost": "Total Cost:",
   "people": "people",
   "detailedReceipt":"A detailed confirmation receipt has been sent to",
-  "callus":"Call us"
+  "callus":"Call us",
+  "contactAdminViaTelegram": "Want to message the trip organizer directly?",
+    "goToTelegram": "Message {{username}}",
+    "openInBrowser": "Open in browser"
 
 }, 
 "registrationDetails":{

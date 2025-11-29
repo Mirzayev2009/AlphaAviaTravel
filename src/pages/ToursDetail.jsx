@@ -62,7 +62,6 @@ const ToursDetail = () => {
   const { t } = useTranslation();
 
   console.log(tour);
-  
 
   const [formData, setFormData] = useState({
     name: "",
@@ -159,19 +158,20 @@ const ToursDetail = () => {
 
   const itinerary = Array.isArray(tour?.itinerary) ? tour.itinerary : [];
   const highlights = Array.isArray(tour?.highlights) ? tour.highlights : [];
- 
-// ✅ Corrected Logic
-const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
 
-// 1. Safely access and process the image paths array or string
-const rawImagePaths = Array.isArray(tour?.images) && tour.images.length > 0
-    ? tour.images
-    : tour?.image
-    ? [tour.image]
-    : [];
+  // ✅ Corrected Logic
+  const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
 
-// 2. Map over the list to construct the full URLs
-const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
+  // 1. Safely access and process the image paths array or string
+  const rawImagePaths =
+    Array.isArray(tour?.images) && tour.images.length > 0
+      ? tour.images
+      : tour?.image
+      ? [tour.image]
+      : [];
+
+  // 2. Map over the list to construct the full URLs
+  const imageSources = rawImagePaths.map((path) => `${IMAGE_BASE_URL}${path}`);
 
   // Handler for register button - navigate to tour detail page
   const handleRegisterClick = () => {
@@ -193,7 +193,9 @@ const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
     setFormData((p) => ({ ...p, [name]: newValue }));
   };
 
-  const handleSubmit = (e) => {
+  // ... inside ToursDetail component, replace your current handleSubmit ...
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (
@@ -206,24 +208,72 @@ const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
       return;
     }
 
-    setRegistrationDetails({
+    const registrationPayload = {
       ...formData,
-      totalPrice: totalPrice,
-      organizerEmail: tour?.organizer?.email ?? "support@travel.com",
-    });
+      totalPrice: totalPrice, // Already calculated via useMemo
+      // The backend doesn't need organizerEmail, but we keep it here for local confirmation display
+    };
 
-    setFormSubmitted(true);
-    console.log("Registration complete. Details:", {
-      ...formData,
-      totalPrice: totalPrice,
-    });
+    try {
+      const response = await fetch(`${IMAGE_BASE_URL}/api/registrations`, {
+        // Use your constant IMAGE_BASE_URL
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(registrationPayload),
+      });
 
-    setTimeout(() => {
-      document
-        .getElementById("top-of-page")
-        ?.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 100);
+      if (!response.ok) {
+        // Read the error message from the backend response
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Failed to submit registration.");
+      }
+
+      const result = await response.json();
+
+      // Success: Update state to show confirmation card
+      setRegistrationDetails(registrationPayload);
+      setFormSubmitted(true);
+
+      console.log("Registration saved successfully:", result.data);
+
+      // Scroll to the top of the page to show the success message
+      setTimeout(() => {
+        document
+          .getElementById("top-of-page")
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert(`Error submitting form: ${error.message}`);
+      // Optionally, reset formSubmitted if you want them to retry
+      setFormSubmitted(false);
+    }
   };
+
+  // Telegram contact
+  const TELEGRAM_USERNAME = "Tour_OrganizerUzbekistan";
+  const TELEGRAM_WEB_LINK = `https://t.me/${TELEGRAM_USERNAME}`;
+  const TELEGRAM_NATIVE_LINK = `tg://resolve?domain=${TELEGRAM_USERNAME}`;
+
+  const openTelegram = (e) => {
+    // Try to open native app, then fallback to web
+    // We open native in current window then open web in new tab after a short delay as fallback.
+    // This is a commonly used UX pattern (not perfect but works in most browsers/devices).
+    try {
+      window.location.href = TELEGRAM_NATIVE_LINK;
+      // fallback to web after 500ms
+      setTimeout(() => {
+        window.open(TELEGRAM_WEB_LINK, "_blank", "noopener,noreferrer");
+      }, 500);
+    } catch (err) {
+      // If something goes wrong, open web link
+      window.open(TELEGRAM_WEB_LINK, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  // ... rest of the component
 
   if (loading || !tour) {
     return (
@@ -276,7 +326,7 @@ const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
                   }}
                   className="mt-12"
                 >
-                  <Card className="shadow-2xl border-4 border-green-400 bg-green-50">
+                  <Card className="shadow-2xl border-0 bg-gradient-to-br from-green-50 to-white">
                     <CardContent className="p-10 text-center">
                       <motion.div
                         initial={{ scale: 0, rotate: -180 }}
@@ -284,47 +334,110 @@ const imageSources = rawImagePaths.map(path => `${IMAGE_BASE_URL}${path}`);
                         transition={{
                           type: "spring",
                           stiffness: 200,
-                          damping: 10,
+                          damping: 12,
                         }}
                       >
                         <CheckCircle2 className="h-20 w-20 text-green-600 mx-auto mb-6" />
                       </motion.div>
 
-                      <h2 className="text-4xl font-bold mb-3 bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">
+                      <h2 className="text-4xl font-extrabold mb-3 bg-gradient-to-r from-green-600 to-teal-500 bg-clip-text text-transparent">
                         {t("tourDetail.confirmation.bookingSecured")}
                       </h2>
 
-                      <p className="text-gray-700 text-lg mb-8 max-w-lg mx-auto">
+                      <p className="text-gray-700 text-lg mb-6 max-w-lg mx-auto">
                         {t("tourDetail.confirmation.confirm")}
-                        {registrationDetails.name}
+                        <span className="font-bold">
+                          {" "}
+                          {registrationDetails.name}{" "}
+                        </span>
                         {t("tourDetail.confirmation.congraluate")}
                       </p>
 
-                      <div className="bg-white p-6 rounded-xl border border-green-300 shadow-xl text-left mx-auto max-w-md space-y-3">
-                        <h4 className="font-extrabold text-2xl text-green-700 mb-3 border-b pb-2">
-                          <Star className="h-6 w-6 inline-block mr-2" />{" "}
-                          {t("tourDetail.confirmation.summary")}
-                        </h4>
-                        <div className="flex justify-between items-center text-gray-800 text-lg">
-                          <span>{t("tourDetail.confirmation.tour")}</span>
-                          <span>{registrationDetails.tourTitle}</span>
-                        </div>
-                        <div className="flex justify-between items-center text-gray-800 text-lg">
-                          <span>{t("tourDetail.confirmation.guests")}</span>
-                          <span className="font-bold text-orange-600">
-                            {registrationDetails.people}{" "}
-                            {t("tourDetail.confirmation.people")}
-                          </span>
-                        </div>
-                        <div className="flex justify-between items-center text-2xl font-black text-white bg-orange-600 p-2 rounded mt-4">
-                          <span>{t("tourDetail.confirmation.totalCost")}</span>
-                          <span>${registrationDetails.totalPrice}</span>
+                      {/* Compact Summary */}
+                      <div className="mx-auto max-w-md bg-white p-5 rounded-2xl border border-green-200 shadow-lg mb-6">
+                        <div className="text-left space-y-2">
+                          <div className="flex justify-between items-center text-gray-800">
+                       
+                            <span className="font-bold text-2xl">
+                              {registrationDetails.tourTitle}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center text-gray-800">
+                            <span className="text-xl opacity-80">
+                              {t("tourDetail.confirmation.guests")}
+                            </span>
+                            <span className="font-bold text-xl text-orange-600">
+                              {registrationDetails.people}{" "}
+                              {t("tourDetail.confirmation.people")}
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center mt-3 p-3 rounded-lg bg-orange-600 text-white font-extrabold text-lg">
+                            <span>
+                              {t("tourDetail.confirmation.totalCost")}
+                            </span>
+                            <span>${registrationDetails.totalPrice}</span>
+                          </div>
                         </div>
                       </div>
 
-                      <p className="mt-8 text-sm italic text-gray-600">
-                        {t("tourDetail.confirmation.detailedReceipt")}
-                        {registrationDetails.email}.
+                      {/* Single Large Animated Telegram CTA */}
+                      <motion.div
+                        initial={{ scale: 0.98, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.4, ease: "easeOut" }}
+                      >
+                        <motion.button
+                          onClick={openTelegram}
+                          aria-label={`Message @${TELEGRAM_USERNAME} on Telegram`}
+                          whileHover={{ scale: 1.03, y: -4 }}
+                          whileTap={{ scale: 0.98 }}
+                          className="relative inline-flex items-center justify-center w-full max-w-2xl px-8 py-5 rounded-3xl text-white font-extrabold text-2xl shadow-2xl overflow-hidden focus:outline-none"
+                          style={{ WebkitTapHighlightColor: "transparent" }}
+                        >
+                          {/* Animated gradient background layers */}
+                          <span
+                            aria-hidden
+                            className="absolute inset-0 transform-gpu -skew-x-12 bg-gradient-to-r from-blue-500 via-indigo-600 to-violet-600"
+                            style={{ filter: "saturate(1.05)", opacity: 0.98 }}
+                          />
+                          <span
+                            aria-hidden
+                            className="absolute inset-0 bg-white/5 backdrop-blur-sm"
+                            style={{ mixBlendMode: "overlay" }}
+                          />
+                          {/* Glowing pulse */}
+                          <motion.span
+                            aria-hidden
+                            className="absolute -bottom-6 -right-6 w-36 h-36 rounded-full opacity-30"
+                            animate={{
+                              scale: [1, 1.2, 1],
+                              opacity: [0.35, 0.15, 0.35],
+                            }}
+                            transition={{ duration: 2.4, repeat: Infinity }}
+                            style={{
+                              background:
+                                "radial-gradient(circle at 30% 30%, rgba(255,255,255,0.18), transparent 40%)",
+                            }}
+                          />
+
+                          {/* Button content */}
+                          <span className="relative z-10 flex items-center gap-4">
+                            <MessageCircle className="h-8 w-8 text-white drop-shadow-lg" />
+                            <span>
+                              {t("tourDetail.confirmation.goToTelegram", {
+                                username: `@${TELEGRAM_USERNAME}`,
+                              }) || `Message @${TELEGRAM_USERNAME}`}
+                            </span>
+                          </span>
+                        </motion.button>
+                      </motion.div>
+
+                      <p className="mt-6 text-sm italic text-gray-600">
+                        {t("tourDetail.confirmation.detailedReceipt")}{" "}
+                        <span className="font-medium">
+                          {registrationDetails.email}
+                        </span>
+                        .
                       </p>
                     </CardContent>
                   </Card>
