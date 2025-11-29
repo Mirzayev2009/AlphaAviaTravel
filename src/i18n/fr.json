@@ -394,11 +394,11 @@
     "info": {
       "title": "Informations de Contact",
       "office": "Bureau Principal",
-      "address": "123 Rue du Registan, Samarcande, Ouzbékistan",
+      "address": "65 rue Abu Raykhon Beruniy, Samarcande, Ouzbékistan",
       "phone": "Téléphone",
       "email": "E-mail",
       "hours": "Heures d'Ouverture",
-      "hoursDetail": "Lundi - Samedi : 9h - 20h\nDimanche : 10h - 18h"
+      "hoursDetail": "Lundi - Samedi : 9h - 18h"
     }
   },
   "services": {

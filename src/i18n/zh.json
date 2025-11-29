@@ -286,11 +286,11 @@
     "info": {
       "title": "联系信息",
       "office": "总公司",
-      "address": "乌兹别克斯坦撒马尔罕雷吉斯坦街 123 号",
+      "address": "乌兹别克斯坦，撒马尔罕，阿布·雷洪·贝鲁尼街 65 号",
       "phone": "电话",
       "email": "电子邮件",
       "hours": "营业时间",
-      "hoursDetail": "周一至周六：9 AM - 8 PM\n周日：10 AM - 6 PM"
+      "hoursDetail": "周一至周六：9 AM - 6 PM"
     }
   },
   "card": {
