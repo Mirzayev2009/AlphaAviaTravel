@@ -96,7 +96,7 @@ const ToursDetail = () => {
   };
 
   const organizerEmail = tour?.organizer?.email ?? "info@tourcompany.com";
-  const organizerPhone = tour?.organizer?.phone ?? "+998 90 123 45 67";
+  const organizerPhone = tour?.organizer?.phone ?? "+998 98 101 33 11";
 
   const contactItems = [
     {

@@ -224,7 +224,7 @@ const Contact = () => {
                           href="tel:+998901234567"
                           className="text-sm text-primary hover:underline"
                         >
-                          +998 90 123 45 67
+                         +998 98 101 33 11
                         </a>
                       </div>
                     </div>
@@ -237,7 +237,7 @@ const Contact = () => {
                           href="mailto:info@alphatravel.uz"
                           className="text-sm text-primary hover:underline"
                         >
-                          info@alphatravel.uz
+                         alpha.avia.travel@gmail.com
                         </a>
                       </div>
                     </div>
