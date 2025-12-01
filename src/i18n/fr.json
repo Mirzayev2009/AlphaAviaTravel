@@ -35,7 +35,7 @@
     "featuredTitle": "Circuits Mis en Avant",
     "featuredSubtitle": "Voyages triés sur le volet à travers les destinations les plus emblématiques de l'Ouzbékistan",
     "aboutTitle": "Pourquoi Choisir AlphaTravel ?",
-    "aboutText": "Avec plus de 15 ans d'expérience, AlphaTravel offre des expériences authentiques et immersives à travers tout l'Ouzbékistan. Nos guides experts font revivre l'histoire, tandis que notre souci du détail assure que votre voyage sera fluide et inoubliable.",
+    "aboutText": "Avec plus de 5 ans d'expérience, AlphaTravel offre des expériences authentiques et immersives à travers tout l'Ouzbékistan. Nos guides experts font revivre l'histoire, tandis que notre souci du détail assure que votre voyage sera fluide et inoubliable.",
     "aboutCta": "En Savoir Plus Sur Nous",
     "aboutcard1Title": "Guides Experts",
     "aboutcard1Text": "Nos guides passionnés donnent vie à l'histoire et à la culture grâce à une connaissance locale approfondie.",
@@ -286,11 +286,11 @@
     "info": {
       "title": "Informations de Contact",
       "office": "Bureau Principal",
-      "address": "123 Rue du Registan, Samarcande, Ouzbékistan",
+           "address": "65 rue Abu Raykhon Beruniy, Samarcande, Ouzbékistan",
       "phone": "Téléphone",
       "email": "E-mail",
       "hours": "Heures d'Ouverture",
-      "hoursDetail": "Lundi - Samedi : 9h - 20h\nDimanche : 10h - 18h"
+      "hoursDetail": "Lundi - Samedi : 9h - 21h\nDimanche : 9h - 21h"
     }
   },
   "card": {
@@ -398,7 +398,7 @@
       "phone": "Téléphone",
       "email": "E-mail",
       "hours": "Heures d'Ouverture",
-      "hoursDetail": "Lundi - Samedi : 9h - 21h"
+      "hoursDetail": "Lundi - Samedi : 9h - 21h \nDimanche : 9h - 21h"
     }
   },
   "services": {

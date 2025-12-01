@@ -35,7 +35,7 @@
     "featuredTitle": "Tour in Evidenza",
     "featuredSubtitle": "Una selezione di viaggi verso le destinazioni più iconiche dell'Uzbekistan",
     "aboutTitle": "Perché Scegliere AlphaTravel?",
-    "aboutText": "Con oltre 15 anni di esperienza, AlphaTravel offre esperienze autentiche e immersive in tutto l'Uzbekistan. Le nostre guide esperte danno vita alla storia, mentre la nostra attenzione ai dettagli assicura che il tuo viaggio sia fluido e indimenticabile.",
+    "aboutText": "Con oltre 5 anni di esperienza, AlphaTravel offre esperienze autentiche e immersive in tutto l'Uzbekistan. Le nostre guide esperte danno vita alla storia, mentre la nostra attenzione ai dettagli assicura che il tuo viaggio sia fluido e indimenticabile.",
     "aboutCta": "Scopri di più su di noi",
     "aboutcard1Title": "Guide Esperte",
     "aboutcard1Text": "Le nostre guide appassionate danno vita a storia e cultura con una profonda conoscenza locale.",
@@ -286,11 +286,12 @@
     "info": {
       "title": "Informazioni di Contatto",
       "office": "Sede Centrale",
-      "address": "Via Registan, 123, Samarcanda, Uzbekistan",
+            "address": "Via Abu Raykhon Beruniy 65, Samarcanda, Uzbekistan",
+
       "phone": "Telefono",
       "email": "Email",
       "hours": "Orari di Apertura",
-      "hoursDetail": "Lunedì - Sabato: 9:00 - 20:00\nDomenica: 10:00 - 18:00"
+      "hoursDetail": "Lunedì - Sabato: 9:00 - 21:00\nDomenica: 9:00 - 21:00"
     }
   },
   "card": {
@@ -398,7 +399,8 @@
       "phone": "Telefono",
       "email": "Email",
       "hours": "Orari di Apertura",
-      "hoursDetail": "Lunedì - Sabato: 9:00 - 21:00"
+            "hoursDetail": "Lunedì - Sabato: 9:00 - 21:00\nDomenica: 9:00 - 21:00"
+
     }
   },
   "services": {

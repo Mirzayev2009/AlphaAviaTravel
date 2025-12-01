@@ -137,8 +137,8 @@ const Home = () => {
               <div className="flex items-center gap-3">
                 <Map className="h-5 w-5" />
                 <div className="text-left">
-                  <div className="text-sm opacity-80">Explore</div>
-                  <div className="text-base font-semibold">Uzbekistan</div>
+                  <div className="text-sm opacity-80">{t("tours.explore")}</div>
+                  <div className="text-base font-semibold">{t("tours.uzTours")}</div>
                 </div>
               </div>
             </motion.button>
@@ -153,11 +153,11 @@ const Home = () => {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
-              <div className="flex items-center w-25 gap-3">
+              <div className="flex items-center w-35 gap-3">
                 <Globe className="h-5 w-5" />
                 <div className="text-left">
-                  <div className="text-sm opacity-80">Discover</div>
-                  <div className="text-base font-semibold">World</div>
+                  <div className="text-sm opacity-80">{t("tours.discover")}</div>
+                  <div className="text-base font-semibold">{t("tours.worldTours")}</div>
                 </div>
               </div>
             </motion.button>

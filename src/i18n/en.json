@@ -40,7 +40,7 @@
     "aboutCta": "Learn More About Us",
     "aboutcard1Title": "Expert Guides",
     "aboutcard1Text": "Our passionate guides bring history and culture alive with deep local knowledge.",
-    "aboutcard2Title": "15+ Years Experience",
+    "aboutcard2Title": "5+ Years Experience",
     "aboutcard2Text": "Over a decade of creating unforgettable Uzbekistan adventures for travelers worldwide.",
     "aboutcard3Title": "Personalized Service",
     "aboutcard3Text": "We tailor every tour to your interests, ensuring a truly personal experience."
@@ -298,7 +298,7 @@
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
-      "hoursDetail": "Monday - Saturday: 9 AM - 9 PM"
+"hoursDetail": "Monday - Saturday: 9 AM - 9 PM\nSunday: 9 AM - 9 PM"
     }
   },
     "card": {
@@ -409,7 +409,7 @@
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
-      "hoursDetail": "Monday - Saturday: 9 AM - 8 PM\nSunday: 10 AM - 6 PM"
+      "hoursDetail": "Monday - Saturday: 9 AM - 9 PM\nSunday: 10 AM - 9 PM"
     }
   
 },

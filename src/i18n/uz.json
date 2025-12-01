@@ -39,7 +39,7 @@
     "aboutCta": "Biz haqimizda ko‘proq bilib oling",
     "aboutcard1Title": "Mutaxassis gidlar",
     "aboutcard1Text": "Bizning g‘ayratli gidlarimiz chuqur mahalliy bilimlar bilan tarix va madaniyatni yuzaga chiqaradi.",
-    "aboutcard2Title": "15+ yillik tajriba",
+    "aboutcard2Title": "5+ yillik tajriba",
     "aboutcard2Text": "Biz o‘n yildan ortiq vaqt mobaynida butun dunyo sayohatchilari uchun O‘zbekistonda unutilmas sarguzashtlarni yaratdik.",
     "aboutcard3Title": "Shaxsiylashtirilgan xizmat",
     "aboutcard3Text": "Biz har bir sayohatni sizning qiziqishlaringizga moslashtiramiz va chinakam shaxsiy tajribani ta'minlaymiz."
@@ -286,11 +286,12 @@
     "info": {
       "title": "Aloqa ma'lumotlari",
       "office": "Bosh ofis",
-      "address": "Registon ko‘chasi, 123-uy, Samarqand, O‘zbekiston",
+            "address": "Abu Rayhon Beruniy ko‘chasi 65, Samarqand, O‘zbekiston",
+
       "phone": "Telefon",
       "email": "Elektron pochta",
       "hours": "Ish vaqti",
-      "hoursDetail": "Dushanba - Shanba: 9:00 - 20:00\nYakshaNba: 10:00 - 18:00"
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 21:00\nYakshaNba: 9:00 - 21:00"
     }
   },
   "card": {
@@ -398,7 +399,8 @@
       "phone": "Telefon",
       "email": "Elektron pochta",
       "hours": "Ish vaqti",
-      "hoursDetail": "Dushanba - Shanba: 9:00 - 21:00"
+         "hoursDetail": "Dushanba - Shanba: 9:00 - 21:00\nYakshaNba: 9:00 - 21:00"
+
     }
   },
   "services": {

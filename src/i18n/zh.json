@@ -39,7 +39,7 @@
     "aboutCta": "了解更多关于我们",
     "aboutcard1Title": "专家导游",
     "aboutcard1Text": "我们充满热情的导游凭借深厚的本地知识，让历史和文化焕发活力。",
-    "aboutcard2Title": "15+ 年经验",
+    "aboutcard2Title": "5+ 年经验",
     "aboutcard2Text": "十多年来，我们为全球旅行者创造了难忘的乌兹别克斯坦冒险之旅。",
     "aboutcard3Title": "个性化服务",
     "aboutcard3Text": "我们根据您的兴趣定制每个旅行团，确保真正的个人体验。"
@@ -290,7 +290,7 @@
       "phone": "电话",
       "email": "电子邮件",
       "hours": "营业时间",
-      "hoursDetail": "周一至周六：9 AM - 9 PM"
+      "hoursDetail": "周一至周六：9 AM - 9 PM \n周日：9 AM - 9 PM"
     }
   },
   "card": {
@@ -394,11 +394,12 @@
     "info": {
       "title": "联系信息",
       "office": "总公司",
-      "address": "乌兹别克斯坦撒马尔罕雷吉斯坦街 123 号",
+      "address": "阿布·拉伊洪·贝鲁尼街 65 号, 撒马尔罕, 乌兹别克斯坦",
       "phone": "电话",
       "email": "电子邮件",
       "hours": "营业时间",
-      "hoursDetail": "周一至周六：9 AM - 8 PM\n周日：10 AM - 6 PM"
+      "hoursDetail": "周一至周六：9 AM - 9 PM \n周日：9 AM - 9 PM"
+
     }
   },
   "services": {

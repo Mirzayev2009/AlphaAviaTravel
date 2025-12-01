@@ -63,7 +63,7 @@ const Header = () => {
           to="/"
           className="flex items-center space-x-2 font-bold text-xl text-orange-400 hover:opacity-80 transition-opacity"
         >
-          <span>AlphaTravel</span>
+          <span>Alpha Avia Travel</span>
         </Link>
 
         {/* Desktop Navigation */}
