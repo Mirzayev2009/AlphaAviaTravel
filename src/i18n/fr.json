@@ -252,8 +252,8 @@
   "about": {
     "title": "À propos d'AlphaTravel",
     "subtitle": "Votre partenaire de confiance pour les aventures en Ouzbékistan",
-    "story": "Fondée en 2008 par Aziza Karimova, originaire de Samarcande, AlphaTravel est devenue le principal voyagiste en Ouzbékistan. Nous sommes passionnés par le partage de la riche histoire de notre pays, de son architecture magnifique et de son hospitalité chaleureuse avec les voyageurs du monde entier.",
-    "mission": "Notre mission est de créer des expériences touristiques authentiques et durables qui profitent aux communautés locales tout en offrant des souvenirs inoubliables à nos clients.",
+    "story": "Alpha Avia Travel, fondée en 2020 par Eshmirzayev Nurislom, est une entreprise de voyage de confiance spécialisée dans le tourisme entrant, sortant et intérieur. Nous organisons des circuits culturels et historiques exclusifs pour les visiteurs venant en Ouzbékistan, tout en proposant également une large gamme de forfaits pour les voyages à l'étranger et locaux. Nos services incluent la réservation d'hôtels, l'assistance pour les billets d'avion, les transferts, des guides touristiques professionnels et diverses solutions de voyage personnalisées adaptées aux besoins de chaque client.",
+    "mission": "Notre mission est d'offrir aux voyageurs des expériences de voyage confortables, sûres et mémorables. Chez Alpha Avia Travel, notre équipe dévouée met l'accent sur la qualité, la responsabilité et un service exceptionnel afin de garantir que chaque étape de votre voyage soit fluide et agréable. Avec nous, votre expérience de voyage est entre de bonnes mains.",
     "teamTitle": "Rencontrez Notre Équipe",
     "teamSubtitle": "Guides experts et professionnels passionnés",
     "storiesTitle": "Histoires de Succès",
@@ -262,6 +262,7 @@
   "contact": {
     "title": "Nous Contacter",
     "subtitle": "Nous sommes là pour vous aider à planifier votre aventure parfaite en Ouzbékistan",
+    "sendMessage": "Envoyez-nous un message",
     "form": {
       "name": "Votre Nom",
       "namePlaceholder": "Jean Dupont",

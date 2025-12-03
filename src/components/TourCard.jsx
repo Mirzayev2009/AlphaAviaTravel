@@ -40,7 +40,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
   // UI labels (these come from frontend translation files)
   const perPersonLabel = t("card.perPerson", "per person");
   const viewDetailsLabel = t("tours.viewDetails", "View Details");
-  const registerLabel = t("tours.register", "Register Now");
+  const registerLabel = t("card.register", "Register Now");
 
   // Handle image path
   const imagePath = (images && images.length > 0 && images[0]) || image || "";

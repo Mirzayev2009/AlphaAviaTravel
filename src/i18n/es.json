@@ -252,8 +252,8 @@
   "about": {
     "title": "Acerca de AlphaTravel",
     "subtitle": "Su socio de confianza para aventuras en Uzbekistán",
-    "story": "Fundada en 2008 por Aziza Karimova, nativa de Samarcanda, AlphaTravel se ha convertido en el principal operador turístico de Uzbekistán. Nos apasiona compartir la rica historia de nuestro país, su impresionante arquitectura y su cálida hospitalidad con viajeros de todo el mundo.",
-    "mission": "Nuestra misión es crear experiencias de turismo auténticas y sostenibles que beneficien a las comunidades locales, a la vez que proporcionan recuerdos inolvidables a nuestros huéspedes.",
+"story": "Alpha Avia Travel, fundada en 2020 por Eshmirzayev Nurislom, es una empresa de viajes de confianza especializada en turismo receptivo, emisivo y nacional. Organizamos tours culturales e históricos exclusivos para visitantes que vienen a Uzbekistán, y también ofrecemos una amplia gama de paquetes para viajes al extranjero y locales. Nuestros servicios incluyen reservas de hotel, asistencia con billetes de avión, traslados, guías turísticos profesionales y diversas soluciones de viaje personalizadas según las necesidades de cada cliente.",
+    "mission": "Nuestra misión es ofrecer a los viajeros experiencias de viaje cómodas, seguras e inolvidables. En Alpha Avia Travel, nuestro equipo dedicado se centra en la calidad, la responsabilidad y un servicio excepcional para asegurar que cada etapa de su viaje sea fluida y placentera. Con nosotros, su experiencia de viaje está en manos fiables.",
     "teamTitle": "Conozca a Nuestro Equipo",
     "teamSubtitle": "Guías expertos y profesionales apasionados",
     "storiesTitle": "Historias de Éxito",
@@ -261,6 +261,7 @@
   },
   "contact": {
     "title": "Póngase en Contacto",
+    "sendMessage": "Envíenos un mensaje",
     "subtitle": "Estamos aquí para ayudarle a planificar su aventura perfecta en Uzbekistán",
     "form": {
       "name": "Su Nombre",

@@ -252,8 +252,8 @@
   "about": {
     "title": "AlphaTravel haqida",
     "subtitle": "O‘zbekistondagi sarguzashtingiz uchun ishonchli hamkor",
-    "story": "2008 yilda Samarqandlik Aziza Karimova tomonidan tashkil etilgan AlphaTravel O‘zbekistonda yetakchi turistik agentlikka aylandi. Biz mamlakatimizning boy tarixi, ajoyib arxitekturasi va iliq mehmondo‘stligini butun dunyo sayohatchilari bilan bo‘lishishga ishtiyoqlimiz.",
-    "mission": "Bizning maqsadimiz mahalliy hamjamiyatlarga foyda keltiradigan, shuningdek, mehmonlarimizga unutilmas xotiralar taqdim etadigan haqiqiy, barqaror sayohat tajribalarini yaratishdir.",
+    "story": "Alpha Avia Travel 2020 yilda Eshmirzayev Nurislom tomonidan tashkil etilgan bo‘lib, kirish, chiqish va ichki turizmga ixtisoslashgan ishonchli sayohat kompaniyasidir. Biz O‘zbekistonga kelayotgan mehmonlar uchun eksklyuziv madaniy va tarixiy turlarni tashkil qilamiz, shuningdek xalqaro va mahalliy sayohatlar uchun keng tur paketlarini taklif etamiz. Bizning xizmatlarimizga mehmonxona bronlari, aviachiptalar bo‘yicha yordam, transferlar, professional gidlar va har bir mijozning ehtiyojiga moslashtirilgan turli tayyorlangan sayohat yechimlari kiradi.",
+    "mission": "Bizning missiyamiz — sayohatchilarga qulay, xavfsiz va unutilmas sayohat tajribalarini taqdim etishdir. Alpha Avia Travelda bizning fidoyi jamoamiz sifat, mas'uliyat va a'lo xizmatga e'tibor qaratadi, shu bilan sayohatingizning har bosqichi silliq va yoqimli bo‘lishini ta’minlaydi. Biz bilan sayohatingiz ishonchli qo‘llarda.",
     "teamTitle": "Jamoamiz bilan tanishing",
     "teamSubtitle": "Mutaxassis gidlar va g‘ayratli mutaxassislar",
     "storiesTitle": "Muvaffaqiyat hikoyalari",
@@ -261,6 +261,7 @@
   },
   "contact": {
     "title": "Biz bilan bog‘lanish",
+    "sendMessage": "Bizga xabar yuboring",
     "subtitle": "Biz sizga mukammal O‘zbekiston sarguzashtini rejalashtirishda yordam berishga tayyormiz",
     "form": {
       "name": "Ismingiz",

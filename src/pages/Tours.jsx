@@ -186,22 +186,7 @@ const ToursPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="mb-8">
-                <h2 className="text-3xl font-bold mb-2">
-                  {selectedCategory === "uzbekistan"
-                    ? t("tours.uzSubtitle")
-                    : t("tours.worldSubtitle")}
-                </h2>
-                <p className="text-gray-600">
-                  {selectedCategory === "uzbekistan"
-                    ? t("tours.uzDescription")
-                    : t("tours.worldDescription")}
-                </p>
-                {/* Debug info */}
-                <p className="text-xs text-gray-400 mt-2">
-                  Showing {filteredTours.length} tours | Category: {selectedCategory} | Language: {currentLang}
-                </p>
-              </div>
+ 
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredTours.length > 0 ? (
@@ -221,9 +206,7 @@ const ToursPage = () => {
                     <p className="text-gray-500 text-lg mb-4">
                       {t("tours.noToursAvailable")}
                     </p>
-                    <p className="text-sm text-gray-400">
-                      Debug: Check console for details
-                    </p>
+                 
                   </div>
                 )}
               </div>

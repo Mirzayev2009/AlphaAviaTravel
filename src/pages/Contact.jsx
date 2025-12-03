@@ -114,7 +114,7 @@ const Contact = () => {
               >
                 <Card>
                   <CardHeader>
-                    <CardTitle>Send us a message</CardTitle>
+                    <CardTitle>{t("contact.sendMessage")}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <form onSubmit={handleSubmit} className="space-y-4">
