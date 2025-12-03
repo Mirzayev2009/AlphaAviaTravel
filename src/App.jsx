@@ -56,14 +56,14 @@ const App = () => (
                 </Suspense>
               }
             />
-            {/* <Route
+            <Route
               path="about"
               element={
                 <Suspense fallback={<PageLoader />}>
                   <About />
                 </Suspense>
               }
-            /> */}
+            />
             <Route
               path="contact"
               element={
