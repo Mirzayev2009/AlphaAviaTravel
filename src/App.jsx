@@ -17,7 +17,7 @@ import ToursDetail from "./pages/ToursDetail";
 // Code-split large pages for better performance
 const Tours = lazy(() => import("./pages/Tours"));
 const Destinations = lazy(() => import("./pages/Destinations"));
-// const About = lazy(() => import("./pages/About"));
+const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const NotFound = lazy(() => import("./pages/NotFound"));
