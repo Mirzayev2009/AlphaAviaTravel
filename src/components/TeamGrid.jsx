@@ -69,7 +69,7 @@ const TeamGrid = ({ members, imageBaseUrl }) => {
             </div>
 
             {/* Text Content */}
-            <CardHeader className="pb-2 pt-4 flex-grow-0">
+            <CardHeader className=" pt-4 flex-grow-0">
               <h3 className="font-extrabold text-xl text-gray-900">{member.name}</h3>
               <p className="text-base text-orange-600 font-semibold">
                 {member.role}

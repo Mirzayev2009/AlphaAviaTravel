@@ -8,7 +8,13 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
-// import { submitContactForm } from "@/services/api";
+import { createClient } from "@supabase/supabase-js";
+
+const SUPABASE_URL = "https://hmjbepqisyfqctddgqwj.supabase.co";
+const SUPABASE_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtamJlcHFpc3lmcWN0ZGRncXdqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDU5MDUyOCwiZXhwIjoyMDgwMTY2NTI4fQ.o-iPHOLzGqesJMwOjwWuX68WhlNPPi_XphxL8ulPaZc";
+
+// Create Supabase client for contact form
+const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY);
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -56,19 +62,39 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await submitContactForm(formData);
+      console.log("Submitting contact form:", formData);
+      
+      // Insert data into Alpha_contact table
+      const { data, error } = await supabase
+        .from("Alpha_contact")
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            subject: formData.subject,
+            message: formData.message,
+          },
+        ])
+        .select();
 
-      if (response.ok) {
-        toast.success(t("contact.success"));
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
+      if (error) {
+        console.error("Supabase error:", error);
+        toast.error(`Error: ${error.message}`);
+        throw error;
       }
+
+      console.log("Contact form submitted successfully:", data);
+      toast.success(t("contact.success") || "Message sent successfully!");
+      
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     } catch (error) {
-      toast.error(t("contact.error"));
+      console.error("Submit error:", error);
+      toast.error(t("contact.error") || "Failed to send message. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -187,7 +213,11 @@ const Contact = () => {
                       </div>
 
                       {/* Submit */}
-                      <Button type="submit" className="w-full text-white bg-orange-400 hover:bg-orange-600" duration="0.2" disabled={loading}>
+                      <Button 
+                        type="submit" 
+                        className="w-full text-white bg-orange-400 hover:bg-orange-600" 
+                        disabled={loading}
+                      >
                         {loading ? t("contact.form.submitting") : t("contact.form.submit")}
                       </Button>
                     </form>
@@ -221,10 +251,10 @@ const Contact = () => {
                       <div>
                         <p className="font-semibold mb-1">{t("contact.info.phone")}</p>
                         <a
-                          href="tel:+998901234567"
+                          href="tel:+998981013311"
                           className="text-sm text-primary hover:underline"
                         >
-                         +998 98 101 33 11
+                          +998 98 101 33 11
                         </a>
                       </div>
                     </div>
@@ -234,10 +264,10 @@ const Contact = () => {
                       <div>
                         <p className="font-semibold mb-1">{t("contact.info.email")}</p>
                         <a
-                          href="mailto:info@alphatravel.uz"
+                          href="mailto:alpha.avia.travel@gmail.com"
                           className="text-sm text-primary hover:underline"
                         >
-                         alpha.avia.travel@gmail.com
+                          alpha.avia.travel@gmail.com
                         </a>
                       </div>
                     </div>

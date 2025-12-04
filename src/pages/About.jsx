@@ -63,14 +63,15 @@ const About = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="flex flex-col items-center justify-center"
           >
                        {" "}
             <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white drop-shadow-md">
-                            {t("about.title")}           {" "}
+                            {t("about.title")}
             </h1>
                        {" "}
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto italic">
-                            {t("about.subtitle")}           {" "}
+                            {t("about.subtitle")}
             </p>
                      {" "}
           </motion.div>
@@ -105,7 +106,7 @@ const About = () => {
         </div>
       </section>
                   {/* Team Section */}     {" "}
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-gray-50">
                {" "}
         <div className="container mx-auto px-4">
                    {" "}
@@ -117,16 +118,14 @@ const About = () => {
             className="text-center mb-16"
           >
                        {" "}
-            <p className="text-sm font-bold text-orange-500 uppercase tracking-widest mb-1">
-              Meet the Visionaries
-            </p>
+        
                        {" "}
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
-                            {t("about.teamTitle")}           {" "}
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 uppercase tracking-widest mb-">
+                            {t("about.teamTitle")}
             </h2>
                        {" "}
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                            {t("about.teamSubtitle")}           {" "}
+                            {t("about.teamSubtitle")}
             </p>
                      {" "}
           </motion.div>
