@@ -46,10 +46,81 @@
       }
     }
     </script>
+
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #CC5500; /* Darker Orange */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .maintenance-container {
+        animation: fadeIn 1.5s ease-in-out;
+        padding: 20px;
+      }
+
+      .icon {
+        font-size: 80px;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .year-tag {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border: 2px solid white;
+        display: inline-block;
+        padding: 5px 20px;
+        border-radius: 50px;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* Simple Clock pulse animation */
+      .pulse {
+        animation: pulse-animation 2s infinite;
+      }
+
+      @keyframes pulse-animation {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+    </style>
   </head>
   <body>
-    <div id="root">
-        </div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    
+    <div class="maintenance-container">
+        <div class="icon pulse">🕒</div>
+        <h1>Under Service</h1>
+        <p>We are currently updating our systems to serve you better.</p>
+        <p>Please check back shortly.</p>
+        <div class="year-tag">Happy New Year 2026</div>
+    </div>
+
+    </body>
 </html>
