@@ -12,7 +12,7 @@ export const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com"; // Esse
 
 const About = () => {
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language || "en";
+  const currentLang = i18n.language ||  "en";
 
   const [allTeamData, setAllTeamData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
