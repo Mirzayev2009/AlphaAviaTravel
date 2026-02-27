@@ -159,7 +159,7 @@ const ToursDetail = () => {
   const highlights = Array.isArray(tour?.highlights) ? tour.highlights : [];
 
   // ✅ Corrected Logic
-  const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
+  const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
 
   // 1. Safely access and process the image paths array or string
   const rawImagePaths =
@@ -705,8 +705,8 @@ const ToursDetail = () => {
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.3, delay: idx * 0.05 }}
                         className={`relative p-5 rounded-xl text-lg font-bold transition-all ${expandedDay === idx
-                            ? "bg-gradient-to-br from-orange-600 to-amber-600 text-white shadow-2xl scale-105 z-10"
-                            : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:scale-[1.02]"
+                          ? "bg-gradient-to-br from-orange-600 to-amber-600 text-white shadow-2xl scale-105 z-10"
+                          : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:scale-[1.02]"
                           }`}
                       >
                         <div className="text-sm opacity-80 mb-1">

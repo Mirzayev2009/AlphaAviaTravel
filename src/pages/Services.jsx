@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 // Static data now served from Vercel CDN (public/data/ folder)
 const BASE_URL = "";
-const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
+const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
 
 // Fallback data for safety/initial load
 const fallbackTransportData = [
@@ -289,8 +289,8 @@ export default function Services() {
                         <button
                           key={idx}
                           className={`w-16 h-16 rounded-md overflow-hidden focus:outline-none ${selectedImage === imgUrl
-                              ? "ring-2 ring-orange-500"
-                              : "opacity-70 hover:opacity-100"
+                            ? "ring-2 ring-orange-500"
+                            : "opacity-70 hover:opacity-100"
                             }`}
                           onClick={() => setSelectedImage(imgUrl)}
                         >

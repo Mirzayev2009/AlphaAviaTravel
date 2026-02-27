@@ -15,7 +15,7 @@ import { ArrowRight } from "lucide-react";
 // import { useNavigate } from "react-router-dom"; // Removed as it is not used directly for the final CTA
 
 // 🎯 FIX 1: Define the base path for images
-const IMAGE_BASE_URL = "" // Images now served from same domain via CDN
+const IMAGE_BASE_URL = "/data" // JSON refs /images/... → actual /data/images/...
 // Adjust this base path as needed for your project structure (e.g., "", "/static", or a CDN URL)
 
 const getAbsoluteImageUrl = (relativePath) => {

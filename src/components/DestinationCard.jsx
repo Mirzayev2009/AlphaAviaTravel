@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
-const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
+const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
 
 const DestinationCard = ({ destination, onLearnMore }) => {
   const { t } = useTranslation();

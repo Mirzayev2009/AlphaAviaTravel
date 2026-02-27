@@ -13,7 +13,7 @@ import {
 
 // Static data now served from Vercel CDN (public/data/ folder)
 const BASE_URL = "";
-
+const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
 const TourCardSkeleton = () => (
   <div className="animate-pulse bg-white border border-gray-100 rounded-2xl shadow-sm h-full max-h-[400px]">
     <div className="h-48 md:h-56 bg-gray-200 rounded-t-2xl"></div>

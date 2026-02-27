@@ -9,7 +9,7 @@ import TeamGrid from "@/components/TeamGrid";
 
 // Static data now served from Vercel CDN (public/data/ folder)
 const BASE_URL = "";
-export const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
+export const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
 
 const About = () => {
   const { t, i18n } = useTranslation();
