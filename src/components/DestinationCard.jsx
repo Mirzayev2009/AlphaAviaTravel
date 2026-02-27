@@ -4,7 +4,7 @@ import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 
-const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
+const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
 
 const DestinationCard = ({ destination, onLearnMore }) => {
   const { t } = useTranslation();
@@ -21,9 +21,9 @@ const DestinationCard = ({ destination, onLearnMore }) => {
       <Card className="h-full flex flex-col overflow-hidden bg-white rounded-xl hover:shadow-lg transition-all duration-300">
         {/* Destination Image */}
         <div className="relative h-56 overflow-hidden">
-        <img
+          <img
             // 2. Prepend the Base URL to the heroImage path
-            src={`${IMAGE_BASE_URL}${destination.heroImage}`} 
+            src={`${IMAGE_BASE_URL}${destination.heroImage}`}
             alt={destination.name}
             className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             loading="lazy"

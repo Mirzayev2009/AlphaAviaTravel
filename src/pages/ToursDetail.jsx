@@ -118,9 +118,8 @@ const ToursDetail = () => {
       title: "Facebook",
       value: "Visit Page",
       colorKey: "blue",
-      href: `https://www.facebook.com/${
-        tour?.organizer?.facebookHandle || "tourcompany"
-      }`,
+      href: `https://www.facebook.com/${tour?.organizer?.facebookHandle || "tourcompany"
+        }`,
     },
     {
       icon: MessageCircle,
@@ -160,15 +159,15 @@ const ToursDetail = () => {
   const highlights = Array.isArray(tour?.highlights) ? tour.highlights : [];
 
   // ✅ Corrected Logic
-  const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
+  const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
 
   // 1. Safely access and process the image paths array or string
   const rawImagePaths =
     Array.isArray(tour?.images) && tour.images.length > 0
       ? tour.images
       : tour?.image
-      ? [tour.image]
-      : [];
+        ? [tour.image]
+        : [];
 
   // 2. Map over the list to construct the full URLs
   const imageSources = rawImagePaths.map((path) => `${IMAGE_BASE_URL}${path}`);
@@ -215,8 +214,8 @@ const ToursDetail = () => {
     };
 
     try {
-      const response = await fetch(`${IMAGE_BASE_URL}/api/registrations`, {
-        // Use your constant IMAGE_BASE_URL
+      const response = await fetch("/api/registrations", {
+        // Now using Vercel serverless function (same domain)
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -357,7 +356,7 @@ const ToursDetail = () => {
                       <div className="mx-auto max-w-md bg-white p-5 rounded-2xl border border-green-200 shadow-lg mb-6">
                         <div className="text-left space-y-2">
                           <div className="flex justify-between items-center text-gray-800">
-                       
+
                             <span className="font-bold text-2xl">
                               {registrationDetails.tourTitle}
                             </span>
@@ -705,11 +704,10 @@ const ToursDetail = () => {
                         whileHover={{ scale: 1.02 }}
                         viewport={{ once: true, amount: 0.5 }}
                         transition={{ duration: 0.3, delay: idx * 0.05 }}
-                        className={`relative p-5 rounded-xl text-lg font-bold transition-all ${
-                          expandedDay === idx
+                        className={`relative p-5 rounded-xl text-lg font-bold transition-all ${expandedDay === idx
                             ? "bg-gradient-to-br from-orange-600 to-amber-600 text-white shadow-2xl scale-105 z-10"
                             : "bg-white text-gray-800 shadow-lg hover:shadow-xl hover:scale-[1.02]"
-                        }`}
+                          }`}
                       >
                         <div className="text-sm opacity-80 mb-1">
                           {t("tourDetail.FullAdventure.day")}
@@ -795,9 +793,8 @@ const ToursDetail = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     whileHover={{
                       scale: 1.05,
-                      boxShadow: `0 10px 20px ${
-                        contactColors[item.colorKey].hoverShadow
-                      }`,
+                      boxShadow: `0 10px 20px ${contactColors[item.colorKey].hoverShadow
+                        }`,
                     }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{
@@ -808,17 +805,15 @@ const ToursDetail = () => {
                     }}
                   >
                     <motion.div
-                      className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-3 text-white ${
-                        contactColors[item.colorKey].bg
-                      }`}
+                      className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-3 text-white ${contactColors[item.colorKey].bg
+                        }`}
                       whileHover={{ rotate: 10 }}
                     >
                       <item.icon className="h-8 w-8" />
                     </motion.div>
                     <h4
-                      className={`text-xl font-bold text-gray-800 transition-colors group-hover:${
-                        contactColors[item.colorKey].hoverText
-                      }`}
+                      className={`text-xl font-bold text-gray-800 transition-colors group-hover:${contactColors[item.colorKey].hoverText
+                        }`}
                     >
                       {item.title}
                     </h4>

@@ -15,8 +15,8 @@ import { ArrowRight } from "lucide-react";
 // import { useNavigate } from "react-router-dom"; // Removed as it is not used directly for the final CTA
 
 // 🎯 FIX 1: Define the base path for images
-  const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com"
- // Adjust this base path as needed for your project structure (e.g., "", "/static", or a CDN URL)
+const IMAGE_BASE_URL = "" // Images now served from same domain via CDN
+// Adjust this base path as needed for your project structure (e.g., "", "/static", or a CDN URL)
 
 const getAbsoluteImageUrl = (relativePath) => {
     if (relativePath.startsWith("/")) {
@@ -65,9 +65,9 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
                 <ScrollArea className="max-h-[calc(90vh-80px)]">
                     <div className="p-6 pt-4">
                         {/* ... (Images, Quick Info, Description, Itinerary, Highlights remain the same) ... */}
-                         {/* Tour Images */}
+                        {/* Tour Images */}
                         <div className="grid grid-cols-2 gap-2 mb-6">
-                            {tour.images.slice(0, 4).map((img, idx) => ( 
+                            {tour.images.slice(0, 4).map((img, idx) => (
                                 <motion.img
                                     key={idx}
                                     src={getAbsoluteImageUrl(img)}
@@ -133,7 +133,7 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
                                                     <li key={actIdx}>• {activity}</li>
                                                 ))
                                             ) : (
-                                                <li className="list-none ml-[-1rem]">{day.activity}</li> 
+                                                <li className="list-none ml-[-1rem]">{day.activity}</li>
                                             )}
                                         </ul>
                                     </motion.div>

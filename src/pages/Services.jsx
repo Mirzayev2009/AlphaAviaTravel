@@ -6,8 +6,9 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-const BASE_URL = "https://alpha-backend-iieo.onrender.com/api";
-const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
+// Static data now served from Vercel CDN (public/data/ folder)
+const BASE_URL = "";
+const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
 
 // Fallback data for safety/initial load
 const fallbackTransportData = [
@@ -37,12 +38,12 @@ export default function Services() {
 
   const [activeService, setActiveService] = useState(null);
   const [panelOpen, setPanelOpen] = useState(false);
-  
+
   // State to hold the ALL-LANGUAGE data object (e.g., { en: [...], ru: [...] })
   const [allTransportData, setAllTransportData] = useState(null);
   const [allHotelData, setAllHotelData] = useState(null);
-  
-  const [isLoadingTransport, setIsLoadingTransport] = useState(true); 
+
+  const [isLoadingTransport, setIsLoadingTransport] = useState(true);
   const [isLoadingHotels, setIsLoadingHotels] = useState(true);
 
   const { t, i18n } = useTranslation();
@@ -53,23 +54,23 @@ export default function Services() {
     const fetchTransport = async () => {
       try {
         setIsLoadingTransport(true);
-        const response = await fetch(`${BASE_URL}/transport`);
+        const response = await fetch("/data/transport.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json(); 
-        
+        const data = await response.json();
+
         // ✅ FIX: Check if data has a 'transport' property and use it
         // The API returns { "transport": { "en": [...], "ru": [...] } }
-        const transportData = data.transport || data;
+        const transportData = data.transportOptions || data.transport || data;
         setAllTransportData(transportData);
-        
+
         console.log("Transport data loaded:", transportData);
-        
+
         // FIX for race condition: Wait 100ms to ensure data is set before removing the spinner
-        await new Promise(resolve => setTimeout(resolve, 100)); 
+        await new Promise(resolve => setTimeout(resolve, 100));
       } catch (error) {
-        console.error("Error fetching transport:", error); 
+        console.error("Error fetching transport:", error);
         // On error, set the data state to the English fallback structure
         setAllTransportData({ en: fallbackTransportData });
       } finally {
@@ -77,26 +78,26 @@ export default function Services() {
       }
     };
     fetchTransport();
-  }, []); 
+  }, []);
 
   // --- DATA FETCHING (Hotels) ---
   useEffect(() => {
     const fetchHotel = async () => {
       try {
         setIsLoadingHotels(true);
-        const response = await fetch(`${BASE_URL}/hotel`);
+        const response = await fetch("/data/hotel.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json(); 
-        
+        const data = await response.json();
+
         // ✅ FIX: Check if data has a 'hotel' property and use it
-        const hotelData = data.hotel || data;
+        const hotelData = data.hotels || data.hotel || data;
         setAllHotelData(hotelData);
-        
+
         console.log("Hotel data loaded:", hotelData);
       } catch (error) {
-        console.error("Error fetching hotels:", error); 
+        console.error("Error fetching hotels:", error);
         setAllHotelData(null);
       } finally {
         setIsLoadingHotels(false);
@@ -110,7 +111,7 @@ export default function Services() {
   // Filter transport services by current language
   const filteredTransportServices = useMemo(() => {
     if (!allTransportData) return [];
-    
+
     // Try to get data for the current language, fallback to English
     const services = allTransportData[currentLang] || allTransportData['en'] || [];
     console.log(`Filtered transport for ${currentLang}:`, services);
@@ -120,7 +121,7 @@ export default function Services() {
   // Filter hotel services by current language
   const filteredHotelServices = useMemo(() => {
     if (!allHotelData) return [];
-    
+
     // Try to get data for the current language, fallback to English
     const services = allHotelData[currentLang] || allHotelData['en'] || [];
     console.log(`Filtered hotels for ${currentLang}:`, services);
@@ -147,8 +148,8 @@ export default function Services() {
       function step(now) {
         if (!running) return;
         const delta = now - last;
-        last = now; 
-        el.scrollLeft += c.speed * (delta / 16); 
+        last = now;
+        el.scrollLeft += c.speed * (delta / 16);
         if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 2) {
           el.scrollLeft = 0;
         }
@@ -163,7 +164,7 @@ export default function Services() {
         if (id) cancelAnimationFrame(id);
       });
     };
-  }, []); 
+  }, []);
 
   function openPanel(service) {
     setActiveService(service);
@@ -171,9 +172,9 @@ export default function Services() {
   }
 
   function closePanel() {
-    setPanelOpen(false); 
+    setPanelOpen(false);
     setTimeout(() => setActiveService(null), 300);
-  } 
+  }
 
   useEffect(() => {
     function onKey(e) {
@@ -181,7 +182,7 @@ export default function Services() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []); 
+  }, []);
 
   // --- COMPONENTS ---
 
@@ -213,7 +214,7 @@ export default function Services() {
         <p className="text-sm text-gray-600 mt-1 line-clamp-2">{subtitle}</p>
       </div>
     </div>
-  ); 
+  );
 
   const SlideInPanel = ({ isOpen, onClose, service }) => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -223,7 +224,7 @@ export default function Services() {
         const initialImage =
           service.images && service.images.length > 0
             ? service.images[0]
-            : service.image; 
+            : service.image;
         setSelectedImage(initialImage);
       }
     }, [isOpen, service]);
@@ -287,11 +288,10 @@ export default function Services() {
                       {service.images.map((imgUrl, idx) => (
                         <button
                           key={idx}
-                          className={`w-16 h-16 rounded-md overflow-hidden focus:outline-none ${
-                            selectedImage === imgUrl
+                          className={`w-16 h-16 rounded-md overflow-hidden focus:outline-none ${selectedImage === imgUrl
                               ? "ring-2 ring-orange-500"
                               : "opacity-70 hover:opacity-100"
-                          }`}
+                            }`}
                           onClick={() => setSelectedImage(imgUrl)}
                         >
                           <img
@@ -342,7 +342,7 @@ export default function Services() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
       <main className="flex-1 bg-gradient-to-b from-gray-50 to-white">
-        {/* Hero */} 
+        {/* Hero */}
         <div className="bg-gradient-to-r from-orange-400 to-orange-400 text-white py-20 px-4">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -354,7 +354,7 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Transport */} 
+        {/* Transport */}
         <section className="py-12 px-4">
           <div className="container mx-auto mb-6">
             <div className="flex items-center gap-3 mb-2">
@@ -374,40 +374,40 @@ export default function Services() {
             </div>
           ) : (
             <motion.div
-                key={`transport-${currentLang}`} 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+              key={`transport-${currentLang}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
               ref={transportRef}
               className="flex gap-6 overflow-x-auto py-4 px-4 scrollbar-hide"
               style={{ scrollBehavior: "auto" }}
             >
               {/* Check if we have data after loading finished */}
               {filteredTransportServices.length > 0 ? (
-                    filteredTransportServices.map((s, idx) => (
-                      <ServiceCard
-                        key={s.id || `transport-${idx}`}
-                        title={s.title}
-                        subtitle={
-                          s.features
-                            ? s.features.slice(0, 3).join(" | ")
-                            : t("services.transport.defaultSubtitle")
-                        }
-                        imageUrl={s.image} 
-                        tag={s.category} 
-                        onClick={() => openPanel(s)}
-                      />
-                    ))
-                ) : (
-                    <div className="flex-shrink-0 w-full text-center py-8 text-gray-500">
-                        {t("services.noTransport")}
-                    </div>
-                )}
+                filteredTransportServices.map((s, idx) => (
+                  <ServiceCard
+                    key={s.id || `transport-${idx}`}
+                    title={s.title}
+                    subtitle={
+                      s.features
+                        ? s.features.slice(0, 3).join(" | ")
+                        : t("services.transport.defaultSubtitle")
+                    }
+                    imageUrl={s.image}
+                    tag={s.category}
+                    onClick={() => openPanel(s)}
+                  />
+                ))
+              ) : (
+                <div className="flex-shrink-0 w-full text-center py-8 text-gray-500">
+                  {t("services.noTransport")}
+                </div>
+              )}
             </motion.div>
           )}
         </section>
 
-        {/* Hotels */} 
+        {/* Hotels */}
         <section className="py-12 px-4 bg-gray-50">
           <div className="container mx-auto mb-6">
             <div className="flex items-center gap-3 mb-2">
@@ -427,38 +427,38 @@ export default function Services() {
             </div>
           ) : (
             <motion.div
-                key={`hotels-${currentLang}`} 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+              key={`hotels-${currentLang}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
               ref={hotelsRef}
               className="flex gap-6 overflow-x-auto py-4 px-4"
               style={{ scrollBehavior: "auto" }}
             >
               {/* Check if we have data after loading finished */}
               {filteredHotelServices.length > 0 ? (
-                filteredHotelServices.map((h, idx) => ( 
-                      <ServiceCard
-                        key={h.id || `hotel-${idx}`}
-                        title={h.title}
-                        subtitle={h.description} 
-                        imageUrl={
-                          h.images && h.images.length > 0
-                            ? h.images[0]
-                            : "/path/to/default-hotel.jpg" 
-                        }
-                        tag={
-                          h.location?.city || 
-                          (h.tags && h.tags.length > 0 ? h.tags[0] : t("services.hotelTag"))
-                        }
-                        onClick={() => openPanel(h)}
-                      />
-                    ))
-                ) : (
-                    <div className="flex-shrink-0 w-full text-center py-8 text-gray-500">
-                        {t("services.noHotels")}
-                    </div>
-                )}
+                filteredHotelServices.map((h, idx) => (
+                  <ServiceCard
+                    key={h.id || `hotel-${idx}`}
+                    title={h.title}
+                    subtitle={h.description}
+                    imageUrl={
+                      h.images && h.images.length > 0
+                        ? h.images[0]
+                        : "/path/to/default-hotel.jpg"
+                    }
+                    tag={
+                      h.location?.city ||
+                      (h.tags && h.tags.length > 0 ? h.tags[0] : t("services.hotelTag"))
+                    }
+                    onClick={() => openPanel(h)}
+                  />
+                ))
+              ) : (
+                <div className="flex-shrink-0 w-full text-center py-8 text-gray-500">
+                  {t("services.noHotels")}
+                </div>
+              )}
             </motion.div>
           )}
         </section>
@@ -479,8 +479,8 @@ export default function Services() {
             </Link>
           </div>
         </div>
-        
-        {/* Slide-in panel */} 
+
+        {/* Slide-in panel */}
         <SlideInPanel
           isOpen={panelOpen}
           onClose={closePanel}

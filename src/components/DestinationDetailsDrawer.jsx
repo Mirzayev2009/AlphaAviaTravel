@@ -12,7 +12,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { MapPin, Calendar, Lightbulb } from "lucide-react";
 import { motion } from "framer-motion";
 
-const IMAGE_BASE_URL = "https://alpha-backend-iieo.onrender.com";
+const IMAGE_BASE_URL = ""; // Images now served from same domain via CDN
 /**
  * DestinationDetailsDrawer - Right-side drawer with full destination info
  */

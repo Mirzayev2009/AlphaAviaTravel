@@ -6,12 +6,13 @@ import SwiperHero from "@/components/SwiperHero";
 import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
 import RegistrationForm from "@/components/RegistrationForm";
-import { 
+import {
   ArrowRight, Users, Award, Heart, Map, Globe, X, MapPin,
   Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle
 } from "lucide-react";
 
-const BASE_URL = "https://alpha-backend-iieo.onrender.com/api";
+// Static data now served from Vercel CDN (public/data/ folder)
+const BASE_URL = "";
 
 const TourCardSkeleton = () => (
   <div className="animate-pulse bg-white border border-gray-100 rounded-2xl shadow-sm h-full max-h-[400px]">
@@ -257,9 +258,8 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                         <motion.button
                           key={option.value}
                           onClick={() => handleOptionSelect(currentQuestion.id, option.value)}
-                          className={`p-4 rounded-xl border-2 transition-all text-left ${
-                            isSelected ? "border-orange-500 bg-orange-50 shadow-md" : "border-gray-200 hover:border-orange-300"
-                          }`}
+                          className={`p-4 rounded-xl border-2 transition-all text-left ${isSelected ? "border-orange-500 bg-orange-50 shadow-md" : "border-gray-200 hover:border-orange-300"
+                            }`}
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                         >
@@ -384,9 +384,10 @@ const Home = () => {
     const fetchTours = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`${BASE_URL}/tours`);
+        const response = await fetch("/data/tours.json");
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const data = await response.json();
+        const rawData = await response.json();
+        const data = rawData.tours || rawData;
         setAllToursData(data);
       } catch (error) {
         console.error("Error fetching tours:", error);
@@ -428,9 +429,8 @@ const Home = () => {
           <div className="flex justify-center gap-6 mb-6">
             <motion.button
               onClick={() => setSelectedCategory("uzbekistan")}
-              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${
-                selectedCategory === "uzbekistan" ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
-              }`}
+              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "uzbekistan" ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
+                }`}
               whileHover={{ scale: 1.03 }}
             >
               <div className="flex items-center gap-3">
@@ -444,9 +444,8 @@ const Home = () => {
 
             <motion.button
               onClick={() => setSelectedCategory("world")}
-              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${
-                selectedCategory === "world" ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
-              }`}
+              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "world" ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
+                }`}
               whileHover={{ scale: 1.03 }}
             >
               <div className="flex items-center gap-3">
@@ -500,7 +499,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-100 rounded-full blur-3xl opacity-30 translate-x-1/2 translate-y-1/2" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
             <motion.div
@@ -565,147 +564,147 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="py-16 bg-white text-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,165,0,0.05),transparent_70%)] pointer-events-none" />
+      {/* Why Choose Us Section */}
+      <section className="py-16 bg-white text-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,165,0,0.05),transparent_70%)] pointer-events-none" />
 
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-500 drop-shadow-[0_0_6px_rgba(255,165,0,0.2)]">
-              {t("home.aboutTitle")}
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              {t("home.aboutText")}
-            </p>
-          </motion.div>
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-orange-500 drop-shadow-[0_0_6px_rgba(255,165,0,0.2)]">
+              {t("home.aboutTitle")}
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              {t("home.aboutText")}
+            </p>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {[
-              {
-                Icon: Users,
-                title: t("home.aboutcard1Title"),
-                text: t("home.aboutcard1Text"),
-                delay: 0.1,
-              },
-              {
-                Icon: Award,
-                title: t("home.aboutcard2Title"),
-                text: t("home.aboutcard2Text"),
-                delay: 0.2,
-              },
-              {
-                Icon: Heart,
-                title: t("home.aboutcard3Title"),
-                text: t("home.aboutcard3Text"),
-                delay: 0.3,
-              },
-            ].map(({ Icon, title, text, delay }, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay }}
-                whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
-                className="text-center bg-white border border-gray-100 shadow-sm hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] rounded-2xl p-8 transition-all duration-300"
-              >
-                <motion.div
-                  whileHover={{
-                    scale: 1.2,
-                    rotate: [0, 10, -10, 0],
-                    transition: {
-                      duration: 1,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    },
-                  }}
-                  className="mx-auto w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-400 flex items-center justify-center mb-6 shadow-md relative overflow-hidden"
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.5),transparent_70%)] opacity-50"
-                    animate={{
-                      rotate: [0, 360],
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  />
-                  <Icon className="h-10 w-10 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]" />
-                </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                Icon: Users,
+                title: t("home.aboutcard1Title"),
+                text: t("home.aboutcard1Text"),
+                delay: 0.1,
+              },
+              {
+                Icon: Award,
+                title: t("home.aboutcard2Title"),
+                text: t("home.aboutcard2Text"),
+                delay: 0.2,
+              },
+              {
+                Icon: Heart,
+                title: t("home.aboutcard3Title"),
+                text: t("home.aboutcard3Text"),
+                delay: 0.3,
+              },
+            ].map(({ Icon, title, text, delay }, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay }}
+                whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
+                className="text-center bg-white border border-gray-100 shadow-sm hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] rounded-2xl p-8 transition-all duration-300"
+              >
+                <motion.div
+                  whileHover={{
+                    scale: 1.2,
+                    rotate: [0, 10, -10, 0],
+                    transition: {
+                      duration: 1,
+                      repeat: Infinity,
+                      ease: "easeInOut",
+                    },
+                  }}
+                  className="mx-auto w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-400 flex items-center justify-center mb-6 shadow-md relative overflow-hidden"
+                >
+                  <motion.div
+                    className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.5),transparent_70%)] opacity-50"
+                    animate={{
+                      rotate: [0, 360],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  />
+                  <Icon className="h-10 w-10 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.6)]" />
+                </motion.div>
 
-                <h3 className="text-xl font-semibold mb-3 text-orange-500 tracking-wide">
-                  {title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">{text}</p>
-              </motion.div>
-            ))}
-          </div>
+                <h3 className="text-xl font-semibold mb-3 text-orange-500 tracking-wide">
+                  {title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{text}</p>
+              </motion.div>
+            ))}
+          </div>
 
-          <motion.div
-            className="text-center"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <motion.button
-              onClick={() => navigate("/about")}
-              className="relative px-8 py-3 rounded-lg border border-orange-400 text-orange-500 hover:text-white hover:bg-orange-500 transition-all duration-300 font-semibold overflow-hidden shadow-sm"
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 0 20px rgba(255,165,0,0.4)",
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <motion.span
-                animate={{ opacity: [0.8, 1, 0.8] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                {t("home.aboutCta")}
-              </motion.span>
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-400 to-orange-600 opacity-0"
-                whileHover={{
-                  opacity: 0.2,
-                  x: [0, 60, 0],
-                }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              />
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
+          <motion.div
+            className="text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+          >
+            <motion.button
+              onClick={() => navigate("/about")}
+              className="relative px-8 py-3 rounded-lg border border-orange-400 text-orange-500 hover:text-white hover:bg-orange-500 transition-all duration-300 font-semibold overflow-hidden shadow-sm"
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0 0 20px rgba(255,165,0,0.4)",
+              }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <motion.span
+                animate={{ opacity: [0.8, 1, 0.8] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                {t("home.aboutCta")}
+              </motion.span>
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-400 to-orange-600 opacity-0"
+                whileHover={{
+                  opacity: 0.2,
+                  x: [0, 60, 0],
+                }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              />
+            </motion.button>
+          </motion.div>
+        </div>
+      </section>
 
----
+      ---
 
-      {/* Modals */}
-      {selectedTour && (
-        <TourModal
-          tour={selectedTour}
-          open={!!selectedTour}
-          onClose={() => setSelectedTour(null)}
-          onRegister={() => {
-            setRegistrationTour(selectedTour);
-            setSelectedTour(null);
-          }}
-        />
-      )}
+      {/* Modals */}
+      {selectedTour && (
+        <TourModal
+          tour={selectedTour}
+          open={!!selectedTour}
+          onClose={() => setSelectedTour(null)}
+          onRegister={() => {
+            setRegistrationTour(selectedTour);
+            setSelectedTour(null);
+          }}
+        />
+      )}
 
-      {registrationTour && (
-        <RegistrationForm
-          tour={registrationTour}
-          open={!!registrationTour}
-          onClose={() => setRegistrationTour(null)}
-        />
-      )}
-    </div>
-  );
+      {registrationTour && (
+        <RegistrationForm
+          tour={registrationTour}
+          open={!!registrationTour}
+          onClose={() => setRegistrationTour(null)}
+        />
+      )}
+    </div>
+  );
 };
 
 export default Home;
