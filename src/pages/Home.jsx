@@ -6,9 +6,15 @@ import SwiperHero from "@/components/SwiperHero";
 import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
 import RegistrationForm from "@/components/RegistrationForm";
+import DestinationCard from "@/components/DestinationCard";
+import DestinationDetailsDrawer from "@/components/DestinationDetailsDrawer";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCards } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 import {
   ArrowRight, Users, Award, Heart, Map, Globe, X, MapPin,
-  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle
+  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane
 } from "lucide-react";
 
 // Static data now served from Vercel CDN (public/data/ folder)
@@ -378,6 +384,9 @@ const Home = () => {
   const [allToursData, setAllToursData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [showTravelAssistant, setShowTravelAssistant] = useState(false);
+  const [allDestinationsData, setAllDestinationsData] = useState(null);
+  const [selectedHomeDestination, setSelectedHomeDestination] = useState(null);
+  const [isDestinationsLoading, setIsDestinationsLoading] = useState(true);
   const currentLang = i18n.language || 'en';
 
   useEffect(() => {
@@ -396,8 +405,35 @@ const Home = () => {
         setIsLoading(false);
       }
     };
+    
+    const fetchDestinations = async () => {
+      try {
+        setIsDestinationsLoading(true);
+        const response = await fetch("/data/destination.json");
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        const rawData = await response.json();
+        const data = rawData.destinations || rawData;
+        setAllDestinationsData(data);
+      } catch (error) {
+        console.error("Error fetching destinations:", error);
+        setAllDestinationsData(null);
+      } finally {
+        setIsDestinationsLoading(false);
+      }
+    };
+    
     fetchTours();
+    fetchDestinations();
   }, []);
+
+  const currentDestinations = useMemo(() => {
+    if (!allDestinationsData) return [];
+    let languageData = allDestinationsData[currentLang];
+    if (!languageData || !Array.isArray(languageData)) {
+      languageData = allDestinationsData['en'] || [];
+    }
+    return Array.isArray(languageData) ? languageData.slice(0, 3) : [];
+  }, [allDestinationsData, currentLang]);
 
   const currentTours = useMemo(() => {
     if (!allToursData) return [];
@@ -411,6 +447,30 @@ const Home = () => {
   }, [allToursData, selectedCategory, currentLang]);
 
   const featuredTours = useMemo(() => currentTours.slice(0, 3), [currentTours]);
+
+  const testimonials = [
+    {
+      name: "Sarah Jenkins",
+      country: "USA",
+      text: "The trip to Samarkand was absolutely magical. The architecture is breathtaking and the local guides were incredibly knowledgeable.",
+      rating: 5,
+      avatar: "SJ"
+    },
+    {
+      name: "Marco Rossi",
+      country: "Italy",
+      text: "A flawless experience from start to finish. The food in Bukhara and the hospitality of the Uzbek people exceeded my expectations.",
+      rating: 5,
+      avatar: "MR"
+    },
+    {
+      name: "Elena Petrova",
+      country: "Russia",
+      text: "Our family trip to the Fergana Valley was unforgettable. Such rich culture and beautiful landscapes. Highly recommended!",
+      rating: 5,
+      avatar: "EP"
+    }
+  ];
 
   return (
     <div>
@@ -490,6 +550,46 @@ const Home = () => {
                 whileHover={{ opacity: 0.25, x: [0, 50, 0] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
               />
+            </motion.button>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Top Destinations Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("destinations.title", "Top Destinations")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">{t("destinations.subtitle", "Discover the most enchanting cities and landscapes.")}</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {isDestinationsLoading ? (
+              <>
+                <TourCardSkeleton />
+                <TourCardSkeleton />
+                <TourCardSkeleton />
+              </>
+            ) : currentDestinations.length > 0 ? (
+              currentDestinations.map((destination) => (
+                <DestinationCard key={destination.id} destination={destination} onLearnMore={setSelectedHomeDestination} />
+              ))
+            ) : (
+              <div className="col-span-full text-center py-12 text-gray-500 text-lg">
+                No destinations available at the moment.
+              </div>
+            )}
+          </div>
+
+          <div className="text-center flex justify-center mt-8">
+            <motion.button
+              onClick={() => navigate("/destinations")}
+              className="relative flex items-center gap-2 px-7 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-500 to-amber-500 shadow-md overflow-hidden hover:shadow-lg transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <span>View All Destinations</span>
+              <ArrowRight className="h-5 w-5" />
             </motion.button>
           </div>
         </div>
@@ -681,6 +781,149 @@ const Home = () => {
         </div>
       </section>
 
+      {/* NEW: Testimonials Section */}
+      <section className="py-20 bg-gray-50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-20 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-200 rounded-full blur-3xl opacity-20 translate-y-1/2" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">What Our Travelers Say</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              Read stories and experiences from explorers who have journeyed with us.
+            </p>
+          </motion.div>
+
+          <div className="max-w-4xl mx-auto">
+             <Swiper
+              effect={'cards'}
+              grabCursor={true}
+              modules={[EffectCards, Autoplay]}
+              autoplay={{ delay: 3500, disableOnInteraction: false }}
+              className="w-full max-w-sm"
+            >
+              {testimonials.map((testimonial, idx) => (
+                <SwiperSlide key={idx} className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 flex flex-col justify-between" style={{ minHeight: "300px" }}>
+                  <div>
+                    <Quote className="h-10 w-10 text-orange-200 mb-4" />
+                    <p className="text-gray-700 italic text-lg leading-relaxed mb-6">"{testimonial.text}"</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">
+                      {testimonial.avatar}
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-500">{testimonial.country}</p>
+                      <div className="flex gap-1 mt-1">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="w-4 h-4 fill-orange-400 text-orange-400" />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Services Preview Section & Contact CTA */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+              We provide comprehensive travel solutions to make your journey to Uzbekistan and beyond seamless.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
+            {/* Service 1 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
+              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
+            >
+              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Plane className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Tour Planning</h3>
+              <p className="text-gray-600 mb-6">Tailor-made itineraries crafted specifically for your interests, budget, and travel style.</p>
+            </motion.div>
+
+            {/* Service 2 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
+              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
+            >
+              <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <ShieldCheck className="w-8 h-8 text-amber-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Visa Processing</h3>
+              <p className="text-gray-600 mb-6">Hassle-free visa assistance to ensure all your travel documentation is perfectly arranged.</p>
+            </motion.div>
+
+            {/* Service 3 */}
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
+              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
+            >
+              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <HeadphonesIcon className="w-8 h-8 text-orange-500" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Local Support</h3>
+              <p className="text-gray-600 mb-6">Round-the-clock assistance throughout your entire journey from our dedicated local team.</p>
+            </motion.div>
+          </div>
+
+          <div className="text-center">
+             <motion.button
+              onClick={() => navigate("/services")}
+              className="relative px-8 py-3 rounded-xl border-2 border-orange-500 text-orange-500 font-bold hover:bg-orange-50 transition-all duration-300 shadow-sm"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Explore All Services
+            </motion.button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact CTA Banner */}
+      <section className="py-20 relative overflow-hidden flex items-center justify-center mb-12">
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-r from-orange-500 via-amber-600 to-orange-500 z-0"
+          animate={{ backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'] }}
+          transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+          style={{ backgroundSize: '200% 200%' }}
+        />
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }} 
+            whileInView={{ opacity: 1, scale: 1 }} 
+            viewport={{ once: true }} 
+            className="text-center"
+          >
+             <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-md">
+              Ready to Start Your Journey?
+            </h2>
+            <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">
+              Our travel experts are here to help you design the perfect experience. Let's make it happen.
+            </p>
+            <motion.button 
+              onClick={() => navigate("/contact")}
+              className="px-10 py-5 bg-white text-orange-600 rounded-2xl font-bold flex items-center justify-center gap-3 text-xl mx-auto shadow-xl hover:shadow-2xl transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Contact Us Today
+              <ArrowRight className="w-6 h-6" />
+            </motion.button>
+          </motion.div>
+        </div>
+      </section>
+
       ---
 
       {/* Modals */}
@@ -701,6 +944,14 @@ const Home = () => {
           tour={registrationTour}
           open={!!registrationTour}
           onClose={() => setRegistrationTour(null)}
+        />
+      )}
+
+      {selectedHomeDestination && (
+        <DestinationDetailsDrawer
+          destination={selectedHomeDestination}
+          open={!!selectedHomeDestination}
+          onClose={() => setSelectedHomeDestination(null)}
         />
       )}
     </div>
