@@ -14,7 +14,7 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import {
   ArrowRight, Users, Award, Heart, Map, Globe, X, MapPin,
-  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane
+  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane, Car, Hotel
 } from "lucide-react";
 
 // Static data now served from Vercel CDN (public/data/ folder)
@@ -556,10 +556,10 @@ const Home = () => {
       </section>
 
       {/* NEW: Top Destinations Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("destinations.title", "Top Destinations")}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">{t("destinations.title", "Top Destinations")}</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">{t("destinations.subtitle", "Discover the most enchanting cities and landscapes.")}</p>
           </motion.div>
 
@@ -581,15 +581,20 @@ const Home = () => {
             )}
           </div>
 
-          <div className="text-center flex justify-center mt-8">
+          <div className="text-center flex justify-center">
             <motion.button
               onClick={() => navigate("/destinations")}
-              className="relative flex items-center gap-2 px-7 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-orange-500 to-amber-500 shadow-md overflow-hidden hover:shadow-lg transition-all"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative flex items-center gap-2 px-7 py-3 rounded-xl font-semibold text-orange-500 bg-white border border-orange-300 shadow-md overflow-hidden"
+              whileHover={{ scale: 1.07, color: "#fff", backgroundColor: "#fb923c" }}
+              whileTap={{ scale: 0.94 }}
             >
-              <span>View All Destinations</span>
+              <span>{t("destinations.viewAll", "View All Destinations")}</span>
               <ArrowRight className="h-5 w-5" />
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 opacity-0 rounded-xl"
+                whileHover={{ opacity: 0.25, x: [0, 50, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              />
             </motion.button>
           </div>
         </div>
@@ -782,15 +787,12 @@ const Home = () => {
       </section>
 
       {/* NEW: Testimonials Section */}
-      <section className="py-20 bg-gray-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full blur-3xl opacity-20 -translate-y-1/2" />
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-200 rounded-full blur-3xl opacity-20 translate-y-1/2" />
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">What Our Travelers Say</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Read stories and experiences from explorers who have journeyed with us.
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">{t("home.testimonialsTitle", "What Our Travelers Say")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {t("home.testimonialsSubtitle", "Read stories and experiences from explorers who have journeyed with us.")}
             </p>
           </motion.div>
 
@@ -829,62 +831,56 @@ const Home = () => {
         </div>
       </section>
 
-      {/* NEW: Services Preview Section & Contact CTA */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Our Premium Services</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              We provide comprehensive travel solutions to make your journey to Uzbekistan and beyond seamless.
+      {/* NEW: Services Preview Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">{t("home.servicesTitle", "Our Premium Services")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {t("home.servicesSubtitle", "We provide comprehensive travel solutions to make your journey seamless.")}
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-5xl mx-auto">
-            {/* Service 1 */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}
-              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Plane className="w-8 h-8 text-orange-500" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Tour Planning</h3>
-              <p className="text-gray-600 mb-6">Tailor-made itineraries crafted specifically for your interests, budget, and travel style.</p>
-            </motion.div>
-
-            {/* Service 2 */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}
-              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="w-8 h-8 text-amber-500" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Visa Processing</h3>
-              <p className="text-gray-600 mb-6">Hassle-free visa assistance to ensure all your travel documentation is perfectly arranged.</p>
-            </motion.div>
-
-            {/* Service 3 */}
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
-              className="bg-gray-50 border border-gray-100 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <HeadphonesIcon className="w-8 h-8 text-orange-500" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">24/7 Local Support</h3>
-              <p className="text-gray-600 mb-6">Round-the-clock assistance throughout your entire journey from our dedicated local team.</p>
-            </motion.div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8">
+            {[
+              { icon: Plane, title: t("home.serviceTours", "Custom Tours"), text: t("home.serviceToursDesc", "Tailor-made itineraries for your interests and budget."), delay: 0.05 },
+              { icon: ShieldCheck, title: t("home.serviceVisa", "Visa Processing"), text: t("home.serviceVisaDesc", "Hassle-free visa assistance for all documentation."), delay: 0.1 },
+              { icon: Car, title: t("home.serviceCars", "Car Rental"), text: t("home.serviceCarsDesc", "Premium vehicles with professional drivers for every trip."), delay: 0.15 },
+              { icon: Hotel, title: t("home.serviceHotels", "Hotel Booking"), text: t("home.serviceHotelsDesc", "Handpicked accommodations from boutique to luxury."), delay: 0.2 },
+              { icon: HeadphonesIcon, title: t("home.serviceSupport", "24/7 Support"), text: t("home.serviceSupportDesc", "Round-the-clock assistance from our dedicated local team."), delay: 0.25 },
+            ].map(({ icon: SvcIcon, title, text, delay }, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay }}
+                whileHover={{ scale: 1.05 }}
+                className="text-center bg-white border border-gray-100 shadow-sm hover:shadow-[0_0_25px_rgba(255,165,0,0.3)] rounded-2xl p-6 transition-all duration-300"
+              >
+                <div className="mx-auto w-16 h-16 rounded-full bg-gradient-to-br from-orange-500 via-amber-400 to-yellow-400 flex items-center justify-center mb-5 shadow-md">
+                  <SvcIcon className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-semibold mb-2 text-orange-500">{title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
+              </motion.div>
+            ))}
           </div>
 
-          <div className="text-center">
-             <motion.button
+          <div className="text-center flex justify-center">
+            <motion.button
               onClick={() => navigate("/services")}
-              className="relative px-8 py-3 rounded-xl border-2 border-orange-500 text-orange-500 font-bold hover:bg-orange-50 transition-all duration-300 shadow-sm"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative flex items-center gap-2 px-7 py-3 rounded-xl font-semibold text-orange-500 bg-white border border-orange-300 shadow-md overflow-hidden"
+              whileHover={{ scale: 1.07, color: "#fff", backgroundColor: "#fb923c" }}
+              whileTap={{ scale: 0.94 }}
             >
-              Explore All Services
+              <span>{t("home.exploreServices", "Explore All Services")}</span>
+              <ArrowRight className="h-5 w-5" />
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400 opacity-0 rounded-xl"
+                whileHover={{ opacity: 0.25, x: [0, 50, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity }}
+              />
             </motion.button>
           </div>
         </div>
