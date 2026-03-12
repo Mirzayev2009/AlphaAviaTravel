@@ -990,6 +990,354 @@
             "Museum camera fees",
             "Personal expenses"
           ]
+        },
+        {
+          "id": "t_turkmenistan_8d_en",
+          "title": "Turkmenistan Grand Tour: Darvaza to Ancient Merv — 8 Days",
+          "short": "An 8-day journey through Turkmenistan exploring the Darvaza Gas Crater, the marble city of Ashgabat, Yangykala Canyons, and the ancient ruins of Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistan",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Price per person for 16+1 pax in 4* hotels. Single supplement (3* hotel): 30$.",
+          "duration": "8 days / 7 nights",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Meet at the 'Shavat' border. Lunch in Dashoguz, followed by a visit to the 'Ancient Kunyaurgench' historical reserve. Drive to the Darvaza Gas Crater. Evening BBQ dinner and overnight in a traditional yurt camp."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Ashgabat",
+              "activity": "Drive to Ashgabat. Visit the international equestrian complex to see Akhal-Teke horses, the Rukhy mosque in Kypchak, and Old Nisa, the ancient capital of the Parthian Empire."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visit the Kov-Ata underground lake and the mountain village of Nokhur. Drive to Turkmenbashy (Nebitdag) and check in at the hotel for the night."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Explore the stunning Yangykala Canyons, known as 'fire fortresses' for their colorful sheer cliffs. Return to Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Ashgabat",
+              "activity": "Drive back to Ashgabat. Afternoon city tour including the Alem Ferris Wheel, Wedding Palace, and free time for shopping at Berkarar Trade Centre."
+            },
+            {
+              "day": 6,
+              "title": "Ashgabat — Mary",
+              "activity": "Drive to Mary. Excursion to Ancient Merv (UNESCO site) to see the mausoleums of Sultan Sanjar and Muhammed ibn-Zeyd. Experience Turkmen culture at the 'Ancient Turkmen Hearth' tourist base."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Ashgabat",
+              "activity": "Return to Ashgabat. Visit the National Museum of Turkmen Carpet, the Arch of Neutrality, and the Independence Monument."
+            },
+            {
+              "day": 8,
+              "title": "Ashgabat — Departure",
+              "activity": "Visit the Gulistan Bazaar (Russian bazaar) for souvenir shopping. Transfer to Ashgabat International Airport for departure."
+            }
+          ],
+          "highlights": [
+            "Darvaza Gas Crater",
+            "Ancient Kunyaurgench",
+            "Ashgabat White Marble City",
+            "Old Nisa",
+            "Kov-Ata Underground Lake",
+            "Yangykala Canyons",
+            "Ancient Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Includes: 4* hotels (Sport, Mary/Margush, Nebitchi), transport, meals, 1L water daily, English-speaking guide, Letter of Invitation (visa support) + visa registration. Excludes: Airport entry fees (Visa ~$50-100, Migration $14, COVID test $35), insurance, tips, international flights.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_en",
+          "title": "Grand Silk Road Adventure: Uzbekistan & Turkmenistan — 14 Days",
+          "short": "A comprehensive 14-day journey through the heart of the Silk Road, covering the blue domes of Uzbekistan and the mysterious landscapes of Turkmenistan.",
+          "destination": "Tashkent, Samarkand, Bukhara, Mary, Merv, Ashgabat, Darvaza, Khiva, Nukus, Aral Sea",
+          "region": "Central Asia",
+          "images": [],
+          "price": 1720,
+          "priceNote": "Price per person based on 5 people. For 3 people: $1840. Single supplement: $90 - $120.",
+          "duration": "14 days / 13 nights",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrival in Tashkent — Amirsoy Mountains",
+              "activity": "Arrival at Tashkent airport, transfer to the Amirsoy Mountains for a refreshing start. Early check-in included. Dinner at the hotel."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent: Urungach Jade Lakes & Khast Imam",
+              "activity": "Visit the stunning Urungach Jade Lakes for a scenic hike and picnic. Return to Tashkent to visit the Khast Imam Complex, home to the oldest Uthman Quran."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent → Samarkand: Timurid Heritage",
+              "activity": "Morning train to Samarkand. Visit the Gur-Emir Mausoleum and the iconic Registan Square. Explore the Konigil Paper Factory. Evening 3D show at Registan."
+            },
+            {
+              "day": 4,
+              "title": "Samarkand: Science & Mountains",
+              "activity": "Visit Ulugbek Observatory. Afternoon excursion to the Zarafshan Mountains for hiking, nature exploration, or horseback riding."
+            },
+            {
+              "day": 5,
+              "title": "Samarkand → Bukhara: The Holy City",
+              "activity": "Fast-speed 'Afrasiab' train to Bukhara. Visit the Ark Fortress, Po-i-Kalyan, and the Samanid Mausoleum. Overnight at the 'Bukhara Oasis' yurt camp."
+            },
+            {
+              "day": 6,
+              "title": "Bukhara Oasis & Border Crossing",
+              "activity": "Enjoy desert activities (ATVs, horses, camels) at the resort. Evening transfer to the Farap border to cross into Turkmenistan."
+            },
+            {
+              "day": 7,
+              "title": "Turkmenabat → Mary: Ancient Merv",
+              "activity": "Drive to Mary and explore 'Ancient Merv' (UNESCO site), visiting the Sultan Sanjar Mausoleum and Kyz Gala fortresses."
+            },
+            {
+              "day": 8,
+              "title": "Mary → Ashgabat: Marble City",
+              "activity": "Drive to Ashgabat. Visit the National Carpet Museum and a city tour of the white marble capital. Overnight in a Yurt Camp near Darvaza."
+            },
+            {
+              "day": 9,
+              "title": "Darvaza → Dashoguz → Khiva",
+              "activity": "Visit the Darvaza gas crater. Drive through Dashoguz province and cross the border back into Uzbekistan toward Khiva."
+            },
+            {
+              "day": 10,
+              "title": "Khiva: The Open-Air Museum",
+              "activity": "Full day tour of Ichan-Kala: Kalta Minor, Kunya Ark, Juma Mosque, and Pahlavon Mahmud Mausoleum."
+            },
+            {
+              "day": 11,
+              "title": "Khiva → Nukus: Aral Desert & Sudochie Lake",
+              "activity": "Drive to Nukus and head towards the Aral Desert. Visit Sudochie Lake and see the remains of the Aral Sea ecosystem. Overnight in a yurt camp."
+            },
+            {
+              "day": 12,
+              "title": "Ustyurt Plateau → Tashkent",
+              "activity": "Sunrise over the Aral Sea. Explore the Ustyurt Plateau canyons. Return to Nukus for an evening flight to Tashkent."
+            },
+            {
+              "day": 13,
+              "title": "Tashkent: Bazaars & Metro",
+              "activity": "Visit Chorsu Bazaar and the famous Tashkent Metro stations, known for their unique underground architecture."
+            },
+            {
+              "day": 14,
+              "title": "Departure from Tashkent",
+              "activity": "Free time before transfer to the airport for the flight home."
+            }
+          ],
+          "highlights": [
+            "Registan Square 3D Show",
+            "Urungach Jade Lakes",
+            "Ancient Merv (UNESCO)",
+            "Darvaza Gas Crater",
+            "Aral Sea & Ustyurt Plateau",
+            "Khiva Ichan-Kala",
+            "Bukhara Oasis Yurt Camp"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 people",
+          "notes": "Includes: Accommodation, full board, domestic flight (Nukus-Tashkent), train tickets (Afrasiab), English-speaking guide, all entrance fees.",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "Silk Road Impressions",
+          "short": "11 days / 10 nights journey through Tashkent, Bukhara, Nurata, Samarkand, and the 7 Lakes of Tajikistan.",
+          "destination": "Tashkent, Bukhara, Nurata, Samarkand, 7 Lakes (Tajikistan)",
+          "region": "Uzbekistan and Tajikistan",
+          "images": [],
+          "price": 1620,
+          "priceNote": "Prices valid for 2026. Based on 2-20 people; reduced prices for larger groups on request.",
+          "duration": "11 days / 10 nights",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europe - Tashkent",
+              "activity": "Arrival at Tashkent airport, welcome by the guide, transfer, and check-in at the 4-star hotel. Free day with optional guided city transport."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent",
+              "activity": "City tour exploring the Khast Imam Complex, Chorsu Bazaar, Kukaldash Madrasah, and a walking tour around Amir Temur Square."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent - Bukhara (Flight)",
+              "activity": "Morning flight to Bukhara. Discover the old town including Ismail Samani Mausoleum, Chashmai Ayub, Bolo Hauz Mosque, and the Ark Citadel."
+            },
+            {
+              "day": 4,
+              "title": "Bukhara",
+              "activity": "Explore the Poyi Kalon Complex, Ulugbek and Abdulaziz Khan Madrasas, Liab-i Khaouz complex, and the ancient covered bazaars with domes."
+            },
+            {
+              "day": 5,
+              "title": "Bukhara",
+              "activity": "Visit Tchor Minor Madrasa, Bahaouddin Nakshbandi necropolis, and Sitora-i-Mokhi Khossa. Enjoy a traditional Kouzacha Kebab dinner."
+            },
+            {
+              "day": 6,
+              "title": "Bukhara - Gijduvon - Nurata",
+              "activity": "Drive to Nurata with a stop in Gijduvon for a ceramics workshop. Visit the Chashma spring, explore Alexander the Great's citadel ruins, and overnight in a yurt camp with camel rides."
+            },
+            {
+              "day": 7,
+              "title": "Nurata - Village Mitan - Samarkand",
+              "activity": "Drive to Samarkand via Mitan village. Participate in a cooking masterclass making 'bitchaks' and traditional rice pilaf with a local family."
+            },
+            {
+              "day": 8,
+              "title": "Samarkand",
+              "activity": "City tour including Gur-Emir Mausoleum, Registan Square, Bibikhanum Mosque, Siab Bazaar, Khazrati Khizr Mosque, Shah-i-Zinda Necropolis, a silk carpet factory, and an evening 3D show."
+            },
+            {
+              "day": 9,
+              "title": "Samarkand - 7 Lakes (Tajikistan) - Samarkand",
+              "activity": "Day trip to Tajikistan to visit the Seven Lakes (Haft Kul) in the Fann Mountains, experiencing the unique landscapes and local culture."
+            },
+            {
+              "day": 10,
+              "title": "Samarkand - Tashkent (Train)",
+              "activity": "Visit the Imam Al-Bukhari Complex and Konigil Meros Paper Factory. Take the high-speed Afrasiab train to Tashkent in the evening."
+            },
+            {
+              "day": 11,
+              "title": "Tashkent - Europe (Flight home)",
+              "activity": "Free time until your transfer to Tashkent airport for your departure flight."
+            }
+          ],
+          "highlights": [
+            "Khast Imam Complex (Tashkent)",
+            "Ark Citadel (Bukhara)",
+            "Yurt Camp and Camel Ride (Nurata)",
+            "Masterclass in Mitan Village",
+            "Registan Square (Samarkand)",
+            "7 Lakes (Tajikistan)",
+            "Afrasiab High-Speed Train"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 people",
+          "notes": "Includes domestic flight (Tashkent-Bukhara), train ticket (Samarkand-Tashkent), 4* hotels, breakfasts, and masterclasses. Excludes international flights, lunches/dinners, and personal expenses. 30% deposit required for reservation.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Road Impressions",
+          "short": "A unique 10-day expedition from the Aral Sea and Nukus through the legendary Silk Road cities of Khiva, Bukhara, Samarkand, and Tashkent.",
+          "destination": "Nukus, Aral Sea, Khiva, Bukhara, Samarkand, Tashkent",
+          "region": "Uzbekistan (Karakalpakstan)",
+          "images": [],
+          "price": null,
+          "priceNote": "Prices valid for 2026. Based on 2-20 people; reduced prices for larger groups on request.",
+          "duration": "10 days / 9 nights",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Nukus - Aral Sea",
+              "activity": "Early drive to the Aral Sea via Mizdakhan and Gaur Kala. Visit Sudochye Lake and the Muynak Ship Cemetery. Dinner and overnight stay in a yurt camp by the Aral Sea."
+            },
+            {
+              "day": 2,
+              "title": "Aral Sea - Nukus",
+              "activity": "Experience the sunrise over the Aralkum Desert and explore the Ustyurt Plateau canyons and escarpments. Transfer back to Nukus for dinner and hotel stay."
+            },
+            {
+              "day": 3,
+              "title": "Nukus - Khiva",
+              "activity": "Visit the Savitsky Art Museum in Nukus. Afternoon drive to Khiva, the ancient walled city. Evening arrival and check-in at the hotel."
+            },
+            {
+              "day": 4,
+              "title": "Khiva",
+              "activity": "Full-day tour of Ichan Kala: Muhammad Aminkhan Madrasa, Kalta Minor, Kohna Ark, Juma Mosque, Pahlavon Mahmud Mausoleum, and Tash Hovli Palace."
+            },
+            {
+              "day": 5,
+              "title": "Khiva - Bukhara",
+              "activity": "Long drive across the Kyzylkum Desert and along the Amu Darya River. Arrival in Bukhara, the 'Pillar of Islam', in the late afternoon."
+            },
+            {
+              "day": 6,
+              "title": "Bukhara",
+              "activity": "City tour: Ismail Samani and Chashmai Ayub Mausoleums, Bolo Hauz, Ark Citadel, Poyi Kalon Complex, and the Lyabi-Hauz ensemble."
+            },
+            {
+              "day": 7,
+              "title": "Bukhara - Samarkand (Train)",
+              "activity": "Transfer to Samarkand by train. Visit Gur-Emir Mausoleum, Registan Square, Bibikhanum Mosque, Siab Bazaar, and the Shah-i-Zinda Necropolis."
+            },
+            {
+              "day": 8,
+              "title": "Samarkand - Tashkent (Train)",
+              "activity": "Early morning transfer to Tashkent. City tour including Khast Imam Complex (Uthman Quran), Chorsu Bazaar, Kukaldash Madrasah, and Independence Square."
+            },
+            {
+              "day": 9,
+              "title": "Tashkent - Europe",
+              "activity": "Free time until transfer to the airport for your flight home. End of services."
+            }
+          ],
+          "highlights": [
+            "Aral Sea & Muynak Ship Cemetery",
+            "Ustyurt Plateau Canyons",
+            "Savitsky Museum (Nukus)",
+            "Ichan Kala UNESCO Site (Khiva)",
+            "Ark Citadel (Bukhara)",
+            "Registan Square (Samarkand)",
+            "Khast Imam Complex (Tashkent)"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 people",
+          "notes": "Includes 10x breakfast, domestic transfers, train tickets (Bukhara-Samarkand-Tashkent), and English-speaking guide. Excludes international flights, lunches, and dinners.",
+          "extras": []
         }
       ],
       "uz": [
@@ -1604,7 +1952,7 @@
           ]
         },
         {
-        "id": "t_silk_road_impressions_10d",
+          "id": "t_silk_road_impressions_10d",
           "title": "Ipak Yo'li Taassurotlari — 10 kun",
           "short": "Orol dengizi qirg'oqlaridan Samarqand va Toshkentning feruza gumbazlarigacha bo'lgan 10 kunlik keng qamrovli ekspeditsiya.",
           "destination": "Nukus, Orol dengizi, Xiva, Buxoro, Samarqand, Toshkent",
@@ -1975,6 +2323,333 @@
             "Xalqaro aviaparvozlar",
             "Tushlik va kechki ovqat",
             "Muzeylarda rasmga tushish to'lovlari"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_8d_uz",
+          "title": "Turkmaniston bo'ylab katta sayohat: Darvozadan Qadimiy Marvgacha — 8 Kun",
+          "short": "Turkmaniston bo'ylab 8 kunlik sayohat: Darvoza gaz krateri, oq marmar shahar Ashxobod, Yangiqal'a kanyonlari hamda Ko'hna Urganch va Marv xarobalari.",
+          "destination": "Toshhovuz, Ko'hna Urganch, Darvoza, Ashxobod, Kov-Ata, Nuhur, Nebitdog' (Turkmanboshi), Yangiqal'a, Mari",
+          "region": "Turkmaniston",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Kishi boshiga narx (16+1 kishi, 4* mehmonxonalar uchun). Yakkalik joylashuv (3* mehmonxona): qo'shimcha 30$.",
+          "duration": "8 kun / 7 tun",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Toshhovuz — Ko'hna Urganch — Darvoza",
+              "activity": "'Shovot' chegarasida kutib olish. Toshhovuzda tushlik, so'ng 'Ko'hna Urganch' tarixiy qo'riqxonasiga tashrif. Darvoza gaz krateriga yo'l. Kechqurun barbekyu va an'anaviy o'tovda tunash."
+            },
+            {
+              "day": 2,
+              "title": "Darvoza — Ashxobod",
+              "activity": "Ashxobodga yo'l. Axaltekin otlarini ko'rish uchun xalqaro ot majmuasiga, Qipchoqdagi Ruxiy masjidiga va Parfiya imperiyasining poytaxti Qadimiy Nisoga tashrif."
+            },
+            {
+              "day": 3,
+              "title": "Ashxobod — Kov-Ata — Nuhur — Nebitdog'",
+              "activity": "Kov-Ata yerosti ko'li va Nuhur tog' qishlog'iga tashrif. Turkmanboshiga (Nebitdog') yo'l va tunash uchun mehmonxonaga joylashish."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdog' — Yangiqal'a — Nebitdog'",
+              "activity": "Rang-barang qoyalari bilan 'olovli qal'alar' deb ataladigan Yangiqal'a kanyonlarini o'rganish. Turkmanboshiga qaytish."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdog' — Ashxobod",
+              "activity": "Ashxobodga qaytish. Tushdan keyin shahar bo'ylab sayohat: Alem charxpalagi, To'ylar saroyi va 'Berkarar' savdo markazida xaridlar uchun bo'sh vaqt."
+            },
+            {
+              "day": 6,
+              "title": "Ashxobod — Mari",
+              "activity": "Mariga yo'l. Qadimiy Marvga (YUNESKO) Sulton Sanjar va Muhammad ibn-Zayd maqbaralarini ko'rish uchun sayohat. 'Qadimiy Turkman o'chog'i' sayyohlik bazasida turkman madaniyati bilan tanishish."
+            },
+            {
+              "day": 7,
+              "title": "Mari — Ashxobod",
+              "activity": "Ashxobodga qaytish. Turkman gilamlari milliy muzeyi, Bitaraplik archasi va Mustaqillik yodgorligiga tashrif."
+            },
+            {
+              "day": 8,
+              "title": "Ashxobod — Jo'nab ketish",
+              "activity": "Suvenirlar xarid qilish uchun Guliston (Rus) bozoriga tashrif. Parvoz jadvaliga ko'ra Ashxobod xalqaro aeroportiga kuzatish."
+            }
+          ],
+          "highlights": [
+            "Darvoza gaz krateri",
+            "Ko'hna Urganch",
+            "Ashxobod oq marmar shahri",
+            "Qadimiy Niso",
+            "Kov-Ata yerosti ko'li",
+            "Yangiqal'a kanyonlari",
+            "Qadimiy Marv (YUNESKO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 kishi",
+          "notes": "O'z ichiga oladi: 4* mehmonxonalar, transport, ovqatlanish, kunlik 1L suv, ingliz tilida so'zlashuvchi gid, Taklifnoma (viza yordami) + viza ro'yxati. O'z ichiga almaydi: Aeroport to'lovlari (Viza ~$50-100, Migratsiya $14, COVID test $35), sug'urta, choychaqa, xalqaro parvozlar.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_uz",
+          "title": "Buyuk Ipak Yo'li Sarguzashti: O'zbekiston va Turkmaniston — 14 Kun",
+          "short": "Ipak yo'lining markaziga 14 kunlik keng qamrovli sayohat: O'zbekistonning moviy gumbazlari va Turkmanistonning sirli manzaralari.",
+          "destination": "Toshkent, Samarqand, Buxoro, Mari, Marv, Ashxobod, Darvoza, Xiva, Nukus, Orol dengizi",
+          "region": "Markaziy Osiyo",
+          "images": [],
+          "price": 1720,
+          "priceNote": "5 kishilik guruh uchun bir kishi boshi narxi. 3 kishi uchun: $1840. Bir kishilik qo'shimcha to'lov: $90 - $120.",
+          "duration": "14 kun / 13 tun",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Toshkentga kelish — Amirsoy tog'lari",
+              "activity": "Toshkent aeroportida kutib olish, Amirsoy tog'lariga transfer. Erta joylashish imkoniyati. Mehmonxonada kechki ovqat."
+            },
+            {
+              "day": 2,
+              "title": "Toshkent: Urungach Jade ko'llari va Xast Imom",
+              "activity": "Urungach ko'llariga sayohat va piknik. Toshkentga qaytib, eng qadimiy Usmon Qur'oni saqlanadigan Xast Imom majmuasini ziyorat qilish."
+            },
+            {
+              "day": 3,
+              "title": "Toshkent → Samarqand: Temuriylar merosi",
+              "activity": "Ertalab poezdda Samarqandga yo'l. Go'ri Amir maqbarasi va Registon maydoni. Konigil qog'oz fabrikasi. Registonda kechki 3D shou."
+            },
+            {
+              "day": 4,
+              "title": "Samarqand: Ilm-fan va tog'lar",
+              "activity": "Ulug'bek rasadxonasi. Tushdan keyin Zarafshon tog'larida piyoda sayr yoki otda yurish."
+            },
+            {
+              "day": 5,
+              "title": "Samarqand → Buxoro: Muqaddas shahar",
+              "activity": "'Afrosiyob' tezyurar poezdida Buxoroga yo'l. Ark qal'asi, Poyi Kalon va Somoniylar maqbarasi. 'Bukhara Oasis' o'tov lagerida tunash."
+            },
+            {
+              "day": 6,
+              "title": "Buxoro vohasi va chegara o'tish",
+              "activity": "Cho'l kurortida dam olish (kvadrotsikllar, otlar, tuyalar). Kechqurun Turkmanistonga o'tish uchun Farob chegarasiga transfer."
+            },
+            {
+              "day": 7,
+              "title": "Turkmanobod → Mari: Qadimiy Marv",
+              "activity": "Mariga yo'l va 'Qadimiy Marv' (YUNESKO) bo'ylab sayohat: Sulton Sanjar maqbarasi va Qiz qal'a qal'alari."
+            },
+            {
+              "day": 8,
+              "title": "Mari → Ashxobod: Marmar shahar",
+              "activity": "Ashxobodga yo'l. Gilam muzeyi va oq marmar poytaxt bo'ylab ekskursiya. Darvoza yaqinidagi o'tov lagerida tunash."
+            },
+            {
+              "day": 9,
+              "title": "Darvoza → Toshovuz → Xiva",
+              "activity": "Darvoza gaz kraterini ko'rish. Toshovuz orqali O'zbekiston chegarasini kesib o'tib, Xivaga qaytish."
+            },
+            {
+              "day": 10,
+              "title": "Xiva: Ochiq osmon ostidagi muzey",
+              "activity": "Ichan-Qal'a bo'ylab to'liq kunlik sayohat: Kalta Minor, Ko'hna Ark, Juma masjidi va Pahlavon Mahmud maqbarasi."
+            },
+            {
+              "day": 11,
+              "title": "Xiva → Nukus: Orol cho'li va Sudoche ko'li",
+              "activity": "Nukusga yo'l va Orol cho'li tomon harakatlanish. Sudoche ko'li va Orol dengizi qoldiqlarini ko'rish. O'tov lagerida tunash."
+            },
+            {
+              "day": 12,
+              "title": "Ustyurt platosi → Toshkent",
+              "activity": "Orol dengizida quyosh chiqishini kutib olish. Ustyurt platosi kanyonlarini o'rganish. Nukusdan Toshkentga kechki reys bilan qaytish."
+            },
+            {
+              "day": 13,
+              "title": "Toshkent: Bozorlar va Metro",
+              "activity": "Chorsu bozori va o'zining noyob arxitekturasi bilan mashhur Toshkent metrosi bekatlari bo'ylab sayohat."
+            },
+            {
+              "day": 14,
+              "title": "Toshkentdan jo'nab ketish",
+              "activity": "Aeroportga transferdan oldin bo'sh vaqt."
+            }
+          ],
+          "highlights": [
+            "Registon maydonidagi 3D shou",
+            "Urungach Jade ko'llari",
+            "Qadimiy Marv (YUNESKO)",
+            "Darvoza gaz krateri",
+            "Orol dengizi va Ustyurt platosi",
+            "Xiva Ichan-Qal'a",
+            "Buxoro vohasi o'tov lageri"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 kishi",
+          "notes": "Ichiga oladi: Turar joy, to'liq pansion, ichki reys (Nukus-Toshkent), poezd chiptalari, ingliz tilida so'zlashuvchi gid, kirish chiptalari.",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "Ipak Yo'li Taassurotlari",
+          "short": "Toshkent, Buxoro, Nurota, Samarqand va Tojikistonning 7 ko'li bo'ylab 11 kun / 10 tunlik sayohat.",
+          "destination": "Toshkent, Buxoro, Nurota, Samarqand, 7 ko'l (Tojikiston)",
+          "region": "O'zbekiston va Tojikiston",
+          "images": [],
+          "price": 1620,
+          "priceNote": "Narxlar 2026 yil uchun amal qiladi. 2-20 kishiga mo'ljallangan; katta guruhlar uchun chegirmalar mavjud.",
+          "duration": "11 kun / 10 tun",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Yevropa - Toshkent",
+              "activity": "Toshkent aeroportiga kelish, gid bilan uchrashuv, transfer va 4 yulduzli mehmonxonaga joylashish. Shahar bo'ylab ixtiyoriy transport bilan erkin kun."
+            },
+            {
+              "day": 2,
+              "title": "Toshkent",
+              "activity": "Hazrati Imom majmuasi, Chorsu bozori, Ko'kaldosh madrasasi va Amir Temur xiyoboni bo'ylab shahar ekskursiyasi."
+            },
+            {
+              "day": 3,
+              "title": "Toshkent - Buxoro (Parvoz)",
+              "activity": "Ertalab Buxoroga parvoz. Ismoil Somoniy maqbarasi, Chashmai Ayub, Bolo Hovuz masjidi va Ark qal'asini o'z ichiga olgan eski shaharni kashf etish."
+            },
+            {
+              "day": 4,
+              "title": "Buxoro",
+              "activity": "Poi Kalon majmuasi, Ulug'bek va Abdulazizxon madrasalari, Lyabi-Hovuz majmuasi va qadimiy gumbazli bozorlarni ziyorat qilish."
+            },
+            {
+              "day": 5,
+              "title": "Buxoro",
+              "activity": "Chor Minor madrasasi, Bahouddin Naqshbandiy majmuasi va Sitorai Mohi Xosani ziyorat qilish. An'anaviy Ko'zacha kabob bilan kechki ovqat."
+            },
+            {
+              "day": 6,
+              "title": "Buxoro - G'ijduvon - Nurota",
+              "activity": "G'ijduvonda kulolchilik ustaxonasiga to'xtab, Nurotaga yo'l olish. Chashma bulog'i va Iskandar Zulqarnayn qal'asi xarobalarini ko'rish. Tuya minib, o'tov (yurta) lagerida tunash."
+            },
+            {
+              "day": 7,
+              "title": "Nurota - Mitan qishlog'i - Samarqand",
+              "activity": "Mitan qishlog'i orqali Samarqandga yo'l olish. Mahalliy oila bilan an'anaviy palov va bichak tayyorlash bo'yicha master-klass."
+            },
+            {
+              "day": 8,
+              "title": "Samarqand",
+              "activity": "Go'ri Amir maqbarasi, Registon maydoni, Bibixonim masjidi, Siyob bozori, Hazrati Xizr masjidi, Shohi Zinda majmuasi, ipak gilam fabrikasi va kechki 3D shou."
+            },
+            {
+              "day": 9,
+              "title": "Samarqand - 7 ko'l (Tojikiston) - Samarqand",
+              "activity": "Fann tog'laridagi Yetti ko'lga (Haft Ko'l) bir kunlik sayohat. Noyob tabiat va mahalliy madaniyat bilan tanishish."
+            },
+            {
+              "day": 10,
+              "title": "Samarqand - Toshkent (Poyezd)",
+              "activity": "Imom Al-Buxoriy majmuasi va Konigil qog'oz fabrikasiga tashrif. Kechqurun \"Afrosiyob\" tezyurar poyezdida Toshkentga qaytish."
+            },
+            {
+              "day": 11,
+              "title": "Toshkent - Yevropa (Uyg'a parvoz)",
+              "activity": "Aeroportga transfergacha bo'lgan erkin vaqt. Xalqaro parvoz."
+            }
+          ],
+          "highlights": [
+            "Hazrati Imom majmuasi (Toshkent)",
+            "Ark qal'asi (Buxoro)",
+            "O'tov lageri va tuya minish (Nurota)",
+            "Mitan qishlog'idagi master-klass",
+            "Registon maydoni (Samarqand)",
+            "7 ko'l (Tojikiston)",
+            "Afrosiyob tezyurar poyezdi"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 kishi",
+          "notes": "Ichki parvoz (Toshkent-Buxoro), poyezd chiptasi (Samarqand-Toshkent), 4* mehmonxonalar, nonushtalar va master-klasslarni o'z ichiga oladi. Xalqaro parvozlar, tushlik/kechki ovqatlar va shaxsiy xarajatlar kiritilmagan. Band qilish uchun 30% to'lov talab qilinadi.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Yo'l Taassurotlari",
+          "short": "Orol dengizi va Nukusdan boshlab Xiva, Buxoro, Samarqand va Toshkent kabi afsonaviy Ipak yo'li shaharlari bo'ylab 10 kunlik ekspeditsiya.",
+          "destination": "Nukus, Orol dengizi, Xiva, Buxoro, Samarqand, Toshkent",
+          "region": "O'zbekiston (Qoraqalpog'iston)",
+          "images": [],
+          "price": null,
+          "priceNote": "Narxlar 2026 yil uchun amal qiladi. 2-20 kishiga mo'ljallangan; guruh kattalashsa chegirmalar mavjud.",
+          "duration": "10 kun / 9 tun",
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Nukus - Orol Dengizi",
+              "activity": "Mizdaxon va Gavir qal'a orqali Orol dengiziga yo'l olish. Sudoche ko'li va Mo'ynoqdagi kemalar qabristonini ziyorat qilish. O'tov lagerida tunash."
+            },
+            {
+              "day": 2,
+              "title": "Orol Dengizi - Nukus",
+              "activity": "Orolqum sahrosida quyosh chiqishini kutib olish va Ustyurt platosining kanyonlarini o'rganish. Nukusga qaytish va mehmonxonaga joylashish."
+            },
+            {
+              "day": 3,
+              "title": "Nukus - Xiva",
+              "activity": "Nukusdagi Savitskiy nomidagi san'at muzeyini ziyorat qilish. Tushdan keyin qadimiy Xiva shahriga yo'l olish."
+            },
+            {
+              "day": 4,
+              "title": "Xiva",
+              "activity": "Ichan-Qal'a bo'ylab to'liq kunlik ekskursiya: Muhammad Aminxon madrasasi, Kalta Minor, Ko'hna Ark, Juma masjidi va Tosh hovli saroyi."
+            },
+            {
+              "day": 5,
+              "title": "Xiva - Buxoro",
+              "activity": "Qizilqum sahrosi va Amudaryo bo'ylab uzoq yo'l yurish. Kechqurun Buxoroga yetib kelish."
+            },
+            {
+              "day": 6,
+              "title": "Buxoro",
+              "activity": "Ismoil Somoniy va Chashmai Ayub maqbaralari, Bolo Hovuz, Ark qal'asi va Poi Kalon majmuasi bo'ylab sayohat."
+            },
+            {
+              "day": 7,
+              "title": "Buxoro - Samarqand (Poyezd)",
+              "activity": "Poyezdda Samarqandga transfer. Go'ri Amir, Registon maydoni, Bibixonim masjidi va Shohi Zinda majmuasini ziyorat qilish."
+            },
+            {
+              "day": 8,
+              "title": "Samarqand - Toshkent (Poyezd)",
+              "activity": "Ertalab Toshkentga yo'l olish. Hazrati Imom majmuasi (Usmon Qur'oni), Chorsu bozori va Mustaqillik maydoni bo'ylab ekskursiya."
+            },
+            {
+              "day": 9,
+              "title": "Tashkent - Yevropa",
+              "activity": "Aeroportga transfergacha bo'lgan bo'sh vaqt. Xizmatlar yakuni."
+            }
           ]
         }
       ],
@@ -2830,7 +3505,8 @@
             "Чаевые",
             "Плата за фотосъемку"
           ]
-        },{
+        },
+        {
           "id": "t_samarkand_1d",
           "title": "Однодневный тур по Самарканду",
           "short": "Увлекательное путешествие по «Жемчужине Востока», знакомство с архитектурой Тимуридов и легендарной атмосферой Шелкового пути.",
@@ -2961,6 +3637,263 @@
             "Обеды и ужины",
             "Плата за фотосъемку"
           ]
+        },
+        {
+          "id": "t_turkmenistan_8d_ru",
+          "title": "Большой тур по Туркменистану: От Дарвазы до Древнего Мерва — 8 Дней",
+          "short": "8-дневное путешествие по Туркменистану: газовый кратер Дарваза, мраморный Ашхабад, каньоны Янгикала и древние руины Мерва.",
+          "destination": "Дашогуз, Куняургенч, Дарваза, Ашхабад, Ков-Ата, Нохур, Небитдаг (Туркменбаши), Янгикала, Мары",
+          "region": "Туркменистан",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Цена на человека для группы 16+1 в отелях 4*. Одноместное размещение (отель 3*): доплата 30$.",
+          "duration": "8 дней / 7 ночей",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Дашогуз — Куняургенч — Дарваза",
+              "activity": "Встреча на границе 'Шават'. Обед в Дашогузе, посещение исторического заповедника 'Древний Куняургенч'. Переезд к газовому кратеру Дарваза. Ужин барбекю и ночевка в юрточном лагере."
+            },
+            {
+              "day": 2,
+              "title": "Дарваза — Ашхабад",
+              "activity": "Переезд в Ашхабад. Посещение конноспортивного комплекса (ахалтекинские лошади), мечети Рухы в Кипчаке и Старой Нисы — столицы Парфянской империи."
+            },
+            {
+              "day": 3,
+              "title": "Ашхабад — Ков-Ата — Нохур — Небитдаг",
+              "activity": "Посещение подземного озера Ков-Ата и горного села Нохур. Переезд в Туркменбаши (Небитдаг), размещение в отеле."
+            },
+            {
+              "day": 4,
+              "title": "Небитдаг — Янгикала — Небитдаг",
+              "activity": "Экскурсия к потрясающим каньонам Янгикала ('огненные крепости'). Возвращение в Туркменбаши."
+            },
+            {
+              "day": 5,
+              "title": "Небитдаг — Ашхабад",
+              "activity": "Возвращение в Ашхабад. Дневная экскурсия: колесо обозрения 'Алем', Дворец бракосочетаний, шопинг в ТЦ 'Беркарар'."
+            },
+            {
+              "day": 6,
+              "title": "Ашхабад — Мары",
+              "activity": "Переезд в Мары. Экскурсия в Древний Мерв (ЮНЕСКО), мавзолеи Султана Санджара и Мухаммеда ибн Зейда. Посещение туристической базы 'Древний туркменский очаг'."
+            },
+            {
+              "day": 7,
+              "title": "Мары — Ашхабад",
+              "activity": "Возвращение в Ашхабад. Посещение Национального музея туркменского ковра, Арки Нейтралитета и Монумента Независимости."
+            },
+            {
+              "day": 8,
+              "title": "Ашхабад — Вылет",
+              "activity": "Посещение Гулистанского (Русского) базара. Трансфер в международный аэропорт Ашхабада. Окончание тура."
+            }
+          ],
+          "highlights": [
+            "Газовый кратер Дарваза",
+            "Древний Куняургенч",
+            "Мраморный Ашхабад",
+            "Старая Ниса",
+            "Подземное озеро Ков-Ата",
+            "Каньоны Янгикала",
+            "Древний Мерв (ЮНЕСКО)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 чел",
+          "notes": "Включено: отели 4*, транспорт, питание, 1л воды/день, англоговорящий гид, приглашение (визовая поддержка) + регистрация. Не включено: сборы в аэропорту (виза ~$50-100, миграция $14, ПЦР-тест $35), страховка, чаевые, международные рейсы.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_ru",
+          "title": "Большое приключение по Шелковому пути: Узбекистан и Туркменистан — 14 Дней",
+          "short": "Комплексное 14-дневное путешествие в сердце Шелкового пути: от голубых куполов Узбекистана до загадочных пейзажей Туркменистана.",
+          "destination": "Ташкент, Самарканд, Бухара, Мары, Мерв, Ашхабад, Дарваза, Хива, Нукус, Аральское море",
+          "region": "Центральная Азия",
+          "images": [],
+          "price": 1720,
+          "priceNote": "Цена на человека для группы из 5 человек. Для 3 человек: $1840. Доплата за одноместное размещение: $90 - $120.",
+          "duration": "14 дней / 13 ночей",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Прибытие в Ташкент — Горы Амирсой",
+              "activity": "Встреча в аэропорту, трансфер в горы Амирсой. Ранний заезд включен. Ужин в отеле."
+            },
+            {
+              "day": 2,
+              "title": "Ташкент: Нефритовые озера Урунгач и Хаст Имам",
+              "activity": "Поездка к озерам Урунгач: поход и пикник. Возвращение в Ташкент, посещение комплекса Хаст Имам (Коран Османа)."
+            },
+            {
+              "day": 3,
+              "title": "Ташкент → Самарканд: Наследие Тимуридов",
+              "activity": "Утренний поезд в Самарканд. Посещение Гур-Эмира и площади Регистан. Бумажная фабрика в Конигиле. Вечернее 3D-шоу на Регистане."
+            },
+            {
+              "day": 4,
+              "title": "Самарканд: Наука и горы",
+              "activity": "Обсерватория Улугбека. Экскурсия в горы Зарафшана: хайкинг или конные прогулки."
+            },
+            {
+              "day": 5,
+              "title": "Самарканд → Бухара: Священный город",
+              "activity": "Скоростной поезд 'Афрасиаб' в Бухару. Крепость Арк, Пои-Калян. Ночевка в юрточном лагере 'Bukhara Oasis'."
+            },
+            {
+              "day": 6,
+              "title": "Оазис Бухары и переход границы",
+              "activity": "Развлечения в пустыне (квадроциклы, лошади, верблюды). Вечерний трансфер на границу Фарап для перехода в Туркменистан."
+            },
+            {
+              "day": 7,
+              "title": "Туркменабад → Мары: Древний Мерв",
+              "activity": "Переезд в Мары, экскурсия в Древний Мерв (ЮНЕСКО): мавзолей Султана Санджара и крепости Кыз-Гала."
+            },
+            {
+              "day": 8,
+              "title": "Мары → Ашхабад: Мраморный город",
+              "activity": "Переезд в Ашхабад. Музей ковра и сити-тур по беломраморной столице. Ночевка в юрточном лагере у Дарвазы."
+            },
+            {
+              "day": 9,
+              "title": "Дарваза → Дашогуз → Хива",
+              "activity": "Осмотр газового кратера Дарваза. Проезд через Дашогуз и возвращение в Узбекистан (в Хиву)."
+            },
+            {
+              "day": 10,
+              "title": "Хива: Музей под открытым небом",
+              "activity": "Полный тур по Ичан-Кале: Кальта-Минор, Куня-Арк, мечеть Джума и мавзолей Пахлавана Махмуда."
+            },
+            {
+              "day": 11,
+              "title": "Хива → Нукус: Пустыня Аралкум и озеро Судочье",
+              "activity": "Переезд в Нукус и далее в сторону Аральского моря. Озеро Судочье и кладбище кораблей. Ночевка в юртах."
+            },
+            {
+              "day": 12,
+              "title": "Плато Устюрт → Ташкент",
+              "activity": "Рассвет на Аральском море. Каньоны плато Устюрт. Возвращение в Нукус и вечерний рейс в Ташкент."
+            },
+            {
+              "day": 13,
+              "title": "Ташкент: Базары и Метро",
+              "activity": "Рынок Чорсу и тур по станциям метро Ташкента, известным своей уникальной архитектурой."
+            },
+            {
+              "day": 14,
+              "title": "Вылет из Ташкента",
+              "activity": "Свободное время и трансфер в аэропорт."
+            }
+          ],
+          "highlights": [
+            "3D-шоу на площади Регистан",
+            "Нефритовые озера Урунгач",
+            "Древний Мерв (ЮНЕСКО)",
+            "Газовый кратер Дарваза",
+            "Аральское море и плато Устюрт",
+            "Хива Ичан-Кала",
+            "Юрточный лагерь Bukhara Oasis"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 человек",
+          "notes": "Включено: Проживание, полный пансион, внутренний перелет (Нукус-Ташкент), ж/д билеты, англоговорящий гид, входные билеты.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Дорожные впечатления",
+          "short": "Уникальная экспедиция на 10 дней: от Аральского моря и Нукуса через легендарные города Шелкового пути: Хиву, Бухару, Самарканд и Ташкент.",
+          "destination": "Нукус, Аральское море, Хива, Бухара, Самарканд, Ташкент",
+          "region": "Узбекистан (Каракалпакстан)",
+          "images": [],
+          "price": null,
+          "priceNote": "Цены действительны на 2026 год. Расчет на 2-20 человек; скидки для больших групп по запросу.",
+          "duration": "10 дней / 9 ночей",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Нукус - Аральское море",
+              "activity": "Ранний выезд к Аральскому морю через комплексы Миздаххан и Гяур-Кала. Посещение озера Судочье и Муйнака (кладбище кораблей). Ужин и ночь в юртовом лагере на берегу моря."
+            },
+            {
+              "day": 2,
+              "title": "Аральское море - Нукус",
+              "activity": "Рассвет над пустыней Аралкум. Исследование каньонов и чинков плато Устюрт. Вечерний трансфер в отель в центре Нукуса."
+            },
+            {
+              "day": 3,
+              "title": "Нукус - Хива",
+              "activity": "Посещение музея Савицкого. После обеда переезд в Хиву (3-3,5 часа) — древний город-крепость. Заселение в отель."
+            },
+            {
+              "day": 4,
+              "title": "Хива",
+              "activity": "Полный день в Ичан-Кала: медресе Мухаммад Амин-хана, Кальта-Минор, крепость Куня-Арк, мечеть Джума, мавзолей Пахлавана Махмуда и дворец Таш-Ховли."
+            },
+            {
+              "day": 5,
+              "title": "Хива - Бухара",
+              "activity": "Длительный переезд через пустыню Кызылкум вдоль реки Амударья (около 6 часов). Прибытие в священную Бухару, отдых."
+            },
+            {
+              "day": 6,
+              "title": "Бухара",
+              "activity": "Экскурсия по городу: мавзолеи Саманидов и Чашма-Аюб, мечеть Боло-Хауз, цитадель Арк, ансамбль Пои-Калян и комплекс Ляби-Хауз."
+            },
+            {
+              "day": 7,
+              "title": "Бухара - Самарканд (Поезд)",
+              "activity": "Переезд в Самарканд на поезде. Экскурсия: мавзолей Гур-Эмир, площадь Регистан, мечеть Биби-Ханум, Сиабский базар и некрополь Шахи-Зинда."
+            },
+            {
+              "day": 8,
+              "title": "Самарканд - Ташкент (Поезд)",
+              "activity": "Утренний переезд в Ташкент. Программа включает: комплекс Хаст-Имам, базар Чорсу, медресе Кукельдаш и площадь Независимости."
+            },
+            {
+              "day": 9,
+              "title": "Ташкент - Европа",
+              "activity": "Свободное время до трансфера в аэропорт. Вылет домой."
+            }
+          ],
+          "highlights": [
+            "Аральское море и Кладбище кораблей в Муйнаке",
+            "Каньоны плато Устюрт",
+            "Музей Савицкого в Нукусе",
+            "Внутренний город Ичан-Кала (Хива)",
+            "Цитадель Арк в Бухаре",
+            "Площадь Регистан в Самарканде",
+            "Комплекс Хаст-Имам в Ташкенте"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com"
+          },
+          "participants": "2-20 человек",
+          "notes": "В стоимость включено: проживание в отелях среднего класса, завтраки, билеты на поезд, услуги англоговорящего гида и входные билеты. Не включено: международные перелеты, обеды и ужины."
         }
       ],
       "es": [
@@ -3848,6 +4781,347 @@
             "Almuerzo y Cena",
             "Tasas de cámara"
           ]
+        },
+        {
+          "id": "t_turkmenistan_8d_es",
+          "title": "Gran Tour de Turkmenistán: De Darvaza a la Antigua Merv — 8 Días",
+          "short": "Un viaje de 8 días por Turkmenistán explorando el cráter de Darvaza, la ciudad de mármol de Asjabad, los cañones de Yangykala y las ruinas de Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Asjabad, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistán",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Precio por persona para 16+1 pax en hoteles de 4*. Suplemento individual (hotel de 3*): 30$.",
+          "duration": "8 días / 7 noches",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Encuentro en la frontera 'Shavat'. Almuerzo en Dashoguz y visita a la reserva histórica de la Antigua Kunyaurgench. Traslado al cráter de gas de Darvaza. Cena de barbacoa y noche en un campamento de yurtas."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Asjabad",
+              "activity": "Traslado a Asjabad. Visita al complejo ecuestre internacional (caballos Akhal-Teke), la mezquita de Rukhy en Kypchak y la Antigua Nisa (Imperio Parto)."
+            },
+            {
+              "day": 3,
+              "title": "Asjabad — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visita al lago subterráneo de Kov-Ata y al pueblo montañoso de Nokhur. Viaje a Turkmenbashy (Nebitdag) y alojamiento en el hotel."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Exploración de los impresionantes cañones de Yangykala, conocidos como 'fortalezas de fuego'. Regreso a Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Asjabad",
+              "activity": "Regreso a Asjabad. Recorrido por la ciudad: noria de Alem, Palacio de Bodas y tiempo libre en el centro comercial Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Asjabad — Mary",
+              "activity": "Traslado a Mary. Excursión a la Antigua Merv (UNESCO) para ver el mausoleo del Sultán Sanjar. Visita a la base turística 'Antiguo Hogar Turcomano'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Asjabad",
+              "activity": "Regreso a Asjabad. Visita al Museo Nacional de la Alfombra Turcomana, el Arco de la Neutralidad y el Monumento a la Independencia."
+            },
+            {
+              "day": 8,
+              "title": "Asjabad — Salida",
+              "activity": "Visita al Bazar Gulistán (bazar ruso) para comprar recuerdos. Traslado al aeropuerto internacional de Asjabad para la salida."
+            }
+          ],
+          "highlights": [
+            "Cráter de gas de Darvaza",
+            "Antigua Kunyaurgench",
+            "Asjabad (Ciudad de Mármol Blanco)",
+            "Antigua Nisa",
+            "Lago subterráneo Kov-Ata",
+            "Cañones de Yangykala",
+            "Antigua Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Incluye: Hoteles de 4*, transporte, comidas, 1L de agua diaria, guía en inglés, Carta de Invitación (apoyo de visado) + registro. No incluye: Tasas de aeropuerto (Visado ~$50-100, Migración $14, Prueba COVID $35), seguro, propinas, vuelos internacionales.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_es",
+          "title": "Gran Aventura en la Ruta de la Seda: Uzbekistán y Turkmenistán — 14 Días",
+          "short": "Un viaje completo de 14 días por el corazón de la Ruta de la Seda, cubriendo las cúpulas azules de Uzbekistán y los paisajes misteriosos de Turkmenistán.",
+          "destination": "Taskent, Samarcanda, Bujará, Mary, Merv, Asjabad, Darvaza, Jiva, Nukus, Mar de Aral",
+          "region": "Asia Central",
+          "images": [],
+          "price": 1720,
+          "priceNote": "Precio por persona basado en 5 personas. Para 3 personas: $1840. Suplemento individual: $90 - $120.",
+          "duration": "14 días / 13 noches",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Llegada a Taskent — Montañas de Amirsoy",
+              "activity": "Llegada al aeropuerto, traslado a las montañas de Amirsoy para un comienzo refrescante. Check-in temprano incluido. Cena en el hotel."
+            },
+            {
+              "day": 2,
+              "title": "Taskent: Lagos de Jade de Urungach y Khast Imam",
+              "activity": "Visita a los impresionantes Lagos de Jade para senderismo y picnic. Regreso a Taskent para visitar el Complejo Khast Imam (Corán de Uthman)."
+            },
+            {
+              "day": 3,
+              "title": "Taskent → Samarcanda: Herencia Timúrida",
+              "activity": "Tren matutino a Samarcanda. Visita al Mausoleo Gur-Emir y la Plaza Registan. Fábrica de papel Konigil. Espectáculo 3D en Registan."
+            },
+            {
+              "day": 4,
+              "title": "Samarcanda: Ciencia y Montañas",
+              "activity": "Observatorio de Ulugbek. Excursión a las montañas de Zarafshan: senderismo o paseos a caballo."
+            },
+            {
+              "day": 5,
+              "title": "Samarcanda → Bujará: La Ciudad Santa",
+              "activity": "Tren de alta velocidad 'Afrasiab' a Bujará. Visita a la Ciudadela Ark y Po-i-Kalyan. Noche en el campamento de yurtas 'Bukhara Oasis'."
+            },
+            {
+              "day": 6,
+              "title": "Oasis de Bujará y Cruce de Frontera",
+              "activity": "Actividades en el desierto (motos, caballos, camellos). Traslado nocturno a la frontera de Farap para entrar en Turkmenistán."
+            },
+            {
+              "day": 7,
+              "title": "Turkmenabat → Mary: Antigua Merv",
+              "activity": "Viaje a Mary y exploración de 'Antigua Merv' (UNESCO): Mausoleo de Sultan Sanjar y fortalezas Kyz Gala."
+            },
+            {
+              "day": 8,
+              "title": "Mary → Asjabad: Ciudad de Mármol",
+              "activity": "Viaje a Asjabad. Museo de la Alfombra y tour por la capital de mármol blanco. Noche en campamento de yurtas cerca de Darvaza."
+            },
+            {
+              "day": 9,
+              "title": "Darvaza → Dashoguz → Jiva",
+              "activity": "Visita al cráter de gas de Darvaza. Viaje por Dashoguz y regreso a Uzbekistán hacia Jiva."
+            },
+            {
+              "day": 10,
+              "title": "Jiva: Museo al Aire Libre",
+              "activity": "Tour de día completo por Ichan-Kala: Kalta Minor, Kunya Ark, Mezquita Juma y Mausoleo de Pahlavon Mahmud."
+            },
+            {
+              "day": 11,
+              "title": "Jiva → Nukus: Desierto de Aral y Lago Sudochie",
+              "activity": "Viaje a Nukus y hacia el desierto de Aral. Visita al Lago Sudochie y restos del ecosistema del Mar de Aral. Noche en yurtas."
+            },
+            {
+              "day": 12,
+              "title": "Meseta de Ustyurt → Taskent",
+              "activity": "Amanecer sobre el Mar de Aral. Exploración de cañones en la Meseta de Ustyurt. Vuelo nocturno de Nukus a Taskent."
+            },
+            {
+              "day": 13,
+              "title": "Taskent: Bazares y Metro",
+              "activity": "Bazar Chorsu y las famosas estaciones del metro de Taskent, conocidas por su arquitectura subterránea única."
+            },
+            {
+              "day": 14,
+              "title": "Salida de Taskent",
+              "activity": "Tiempo libre antes del traslado al aeropuerto."
+            }
+          ],
+          "highlights": [
+            "Espectáculo 3D en Plaza Registan",
+            "Lagos de Jade de Urungach",
+            "Antigua Merv (UNESCO)",
+            "Cráter de Gas de Darvaza",
+            "Mar de Aral y Meseta de Ustyurt",
+            "Jiva Ichan-Kala",
+            "Campamento 'Bukhara Oasis'"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 personas",
+          "notes": "Incluye: Alojamiento, pensión completa, vuelo doméstico, billetes de tren, guía de habla inglesa, entradas.",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "Impresiones de la Ruta de la Seda",
+          "short": "Viaje de 11 días / 10 noches por Taskent, Bujará, Nurata, Samarcanda y los 7 lagos de Tayikistán.",
+          "destination": "Taskent, Bujará, Nurata, Samarcanda, 7 Lagos (Tayikistán)",
+          "region": "Uzbekistán y Tayikistán",
+          "images": [],
+          "price": 1620,
+          "priceNote": "Precios válidos para 2026. Basado en 2-20 personas; precios reducidos para grupos más grandes bajo petición.",
+          "duration": "11 días / 10 noches",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europa - Taskent",
+              "activity": "Llegada al aeropuerto de Taskent, recepción, traslado y check-in en el hotel de 4 estrellas. Día libre con transporte opcional con guía."
+            },
+            {
+              "day": 2,
+              "title": "Taskent",
+              "activity": "Visita de la ciudad explorando el Complejo Khast Imam, el Bazar Chorsu, la Madraza Kukaldash y un paseo por la Plaza Amir Temur."
+            },
+            {
+              "day": 3,
+              "title": "Taskent - Bujará (Vuelo)",
+              "activity": "Vuelo matutino a Bujará. Descubra el casco antiguo, incluyendo el Mausoleo de Ismail Samani, Chashmai Ayub, la Mezquita Bolo Hauz y la Ciudadela Ark."
+            },
+            {
+              "day": 4,
+              "title": "Bujará",
+              "activity": "Explore el Complejo Poyi Kalon, las madrazas de Ulugbek y Abdulaziz Khan, el complejo Liab-i Khaouz y los antiguos bazares cubiertos."
+            },
+            {
+              "day": 5,
+              "title": "Bujará",
+              "activity": "Visite la Madraza Tchor Minor, la necrópolis de Bahaouddin Nakshbandi y Sitora-i-Mokhi Khossa. Cena tradicional con Kouzacha Kebab."
+            },
+            {
+              "day": 6,
+              "title": "Bujará - Gijduvon - Nurata",
+              "activity": "Viaje a Nurata con parada en Gijduvon para un taller de cerámica. Visite el manantial de Chashma, las ruinas de la ciudadela de Alejandro Magno y pase la noche en un campamento de yurtas."
+            },
+            {
+              "day": 7,
+              "title": "Nurata - Pueblo de Mitan - Samarcanda",
+              "activity": "Viaje a Samarcanda vía el pueblo de Mitan. Participe en una clase magistral de cocina preparando pilaf de arroz y 'bitchaks' con una familia local."
+            },
+            {
+              "day": 8,
+              "title": "Samarcanda",
+              "activity": "Tour de la ciudad: Mausoleo Gur-Emir, Plaza Registán, Mezquita Bibikhanum, Bazar Siab, Necrópolis Shah-i-Zinda, fábrica de alfombras de seda y espectáculo 3D nocturno."
+            },
+            {
+              "day": 9,
+              "title": "Samarcanda - 7 Lagos (Tayikistán) - Samarcanda",
+              "activity": "Excursión de un día a Tayikistán para visitar los Siete Lagos (Haft Kul) en las montañas Fann, disfrutando de paisajes únicos."
+            },
+            {
+              "day": 10,
+              "title": "Samarcanda - Taskent (Tren)",
+              "activity": "Visite el Complejo Imam Al-Bukhari y la fábrica de papel Konigil Meros. Tome el tren de alta velocidad Afrasiab a Taskent por la tarde."
+            },
+            {
+              "day": 11,
+              "title": "Taskent - Europa (Vuelo de regreso)",
+              "activity": "Tiempo libre hasta su traslado al aeropuerto de Taskent para su vuelo de salida."
+            }
+          ],
+          "highlights": [
+            "Complejo Khast Imam (Taskent)",
+            "Ciudadela Ark (Bujará)",
+            "Campamento de Yurtas en Nurata",
+            "Clase magistral en Mitan",
+            "Plaza Registán (Samarcanda)",
+            "7 Lagos (Tayikistán)",
+            "Tren de alta velocidad Afrasiab"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 personas",
+          "notes": "Incluye vuelo nacional, billete de tren, hoteles de 4*, desayunos y clases magistrales. Excluye vuelos internacionales, comidas/cenas y gastos personales. Se requiere un depósito del 30% para la reserva.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Impresiones del Camino",
+          "short": "Una expedición única de 10 días: desde el Mar de Aral y Nukus a través de las legendarias ciudades de la Ruta de la Seda: Jiva, Bujará, Samarcanda y Taskent.",
+          "destination": "Nukus, Mar de Aral, Jiva, Bujará, Samarcanda, Taskent",
+          "region": "Uzbekistán (Karakalpakstán)",
+          "images": [],
+          "price": null,
+          "priceNote": "Precios válidos para 2026. Basado en 2-20 personas; precios reducidos para grupos más grandes bajo petición.",
+          "duration": "10 días / 9 noches",
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Nukus - Mar de Aral",
+              "activity": "Salida temprano hacia el Mar de Aral vía Mizdakhan y Gaur Kala. Visita al Lago Sudochye y al Cementerio de Barcos de Muynak. Cena y noche en campamento de yurtas."
+            },
+            {
+              "day": 2,
+              "title": "Mar de Aral - Nukus",
+              "activity": "Amanecer en el desierto de Aralkum. Exploración de los cañones de la meseta de Ustyurt. Traslado de regreso a Nukus por la noche."
+            },
+            {
+              "day": 3,
+              "title": "Nukus - Jiva",
+              "activity": "Visita al Museo de Arte Savitsky. Traslado a Jiva (3-3.5 horas). Llegada a la ciudad amurallada y alojamiento en el hotel."
+            },
+            {
+              "day": 4,
+              "title": "Jiva",
+              "activity": "Día completo en Ichan Kala: Madraza Muhammad Aminkhan, Kalta Minor, Fortaleza Kohna Ark, Mezquita Juma y Palacio Tash Hovli."
+            },
+            {
+              "day": 5,
+              "title": "Jiva - Bujará",
+              "activity": "Largo viaje a través del desierto de Kyzylkum y junto al río Amu Darya. Llegada a Bujará por la tarde."
+            },
+            {
+              "day": 6,
+              "title": "Bujará",
+              "activity": "Tour por la ciudad: Mausoleos de Ismail Samani y Chashmai Ayub, Mezquita Bolo Hauz, Ciudadela Ark y el complejo Lyabi-Hauz."
+            },
+            {
+              "day": 7,
+              "title": "Bujará - Samarcanda (Tren)",
+              "activity": "Traslado en tren a Samarcanda. Visita al Mausoleo Gur-Emir, Plaza Registán, Mezquita Bibikhanum y Necrópolis Shah-i-Zinda."
+            },
+            {
+              "day": 8,
+              "title": "Samarcanda - Taskent (Tren)",
+              "activity": "Traslado matutino a Taskent. Tour que incluye el complejo Khast Imam, Bazar Chorsu, Madraza Kukaldash y Plaza de la Independencia."
+            },
+            {
+              "day": 9,
+              "title": "Taskent - Europa",
+              "activity": "Tiempo libre hasta el traslado al aeropuerto para el vuelo de regreso."
+            }
+          ],
+          "highlights": [
+            "Mar de Aral y Cementerio de Barcos de Muynak",
+            "Cañones de la meseta de Ustyurt",
+            "Museo Savitsky en Nukus",
+            "Ciudad Patrimonio UNESCO Ichan Kala",
+            "Ciudadela Ark en Bujará",
+            "Plaza Registán en Samarcanda"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603"
+          },
+          "participants": "2-20 personas",
+          "notes": "Incluye: alojamiento en hoteles de clase media, desayunos, billetes de tren, guía de habla inglesa y entradas. Excluye: vuelos internacionales y comidas/cenas."
         }
       ],
       "fr": [
@@ -4834,6 +6108,344 @@
             "Déjeuners et Dîners",
             "Droits photo"
           ]
+        },
+        {
+          "id": "t_turkmenistan_8d_fr",
+          "title": "Grand Tour du Turkménistan : De Darvaza à l'Ancienne Merv — 8 Jours",
+          "short": "Un voyage de 8 jours à travers le Turkménistan, incluant le cratère de Darvaza, la ville de marbre d'Achgabat, les canyons de Yangykala et les ruines de Merv.",
+          "destination": "Dashoguz, Kounia-Ourguentch, Darvaza, Achgabat, Kov-Ata, Nokhur, Nebitdag (Türkmenbaşy), Yangykala, Mary",
+          "region": "Turkménistan",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Prix par personne pour 16+1 pax en hôtels 4*. Supplément single (hôtel 3*) : 30$.",
+          "duration": "8 jours / 7 nuits",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kounia-Ourguentch — Darvaza",
+              "activity": "Accueil à la frontière 'Shavat'. Déjeuner à Dashoguz et visite de la réserve historique de Kounia-Ourguentch. Route vers le cratère de gaz de Darvaza. Dîner barbecue et nuit dans un camp de yourtes."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Achgabat",
+              "activity": "Route pour Achgabat. Visite du complexe équestre (chevaux Akhal-Téké), de la mosquée Rukhy à Kypchak et de l'Ancienne Nisa, capitale de l'Empire parthe."
+            },
+            {
+              "day": 3,
+              "title": "Achgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visite du lac souterrain de Kov-Ata et du village de montagne de Nokhur. Route vers Türkmenbaşy (Nebitdag) pour la nuit."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Exploration des impressionnants canyons de Yangykala, aux falaises colorées. Retour à Türkmenbaşy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Achgabat",
+              "activity": "Retour à Achgabat. Tour de ville : grande roue Alem, Palais des Mariages et temps libre au centre commercial Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Achgabat — Mary",
+              "activity": "Route pour Mary. Excursion à l'Ancienne Merv (UNESCO) pour voir le mausolée du Sultan Sanjar. Découverte de la culture locale à la base touristique 'Ancien Foyer Turkmène'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Achgabat",
+              "activity": "Retour à Achgabat. Visite du Musée national du Tapis, de l'Arche de la Neutralité et du Monument de l'Indépendance."
+            },
+            {
+              "day": 8,
+              "title": "Achgabat — Départ",
+              "activity": "Visite du bazar Gulistan (bazar russe). Transfert à l'aéroport international d'Achgabat pour le départ."
+            }
+          ],
+          "highlights": [
+            "Cratère de Darvaza",
+            "Ancienne Kounia-Ourguentch",
+            "Achgabat (ville de marbre)",
+            "Ancienne Nisa",
+            "Lac souterrain de Kov-Ata",
+            "Canyons de Yangykala",
+            "Ancienne Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Inclus : Hôtels 4*, transport, repas, 1L d'eau/jour, guide anglophone, Lettre d'Invitation (support visa) + enregistrement. Non inclus : Frais d'aéroport (Visa ~$50-100, Migration $14, Test COVID $35), assurance, pourboires, vols internationaux.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_fr",
+          "title": "Grande Aventure sur la Route de la Soie : Ouzbékistan et Turkménistan — 14 Jours",
+          "short": "Un voyage complet de 14 jours au cœur de la Route de la Soie, des coupoles bleues d'Ouzbékistan aux paysages mystérieux du Turkménistan.",
+          "destination": "Tachkent, Samarcande, Boukhara, Mary, Merv, Achgabat, Darvaza, Khiva, Noukous, Mer d'Aral",
+          "region": "Asie Centrale",
+          "images": [],
+          "price": 1720,
+          "priceNote": "Prix par personne basé sur 5 personnes. Pour 3 personnes : 1840$. Supplément single : 90$ - 120$.",
+          "duration": "14 jours / 13 nuits",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrivée à Tachkent — Montagnes d'Amirsoy",
+              "activity": "Arrivée, transfert vers les montagnes d'Amirsoy. Check-in matinal inclus. Dîner à l'hôtel."
+            },
+            {
+              "day": 2,
+              "title": "Tachkent : Lacs de Jade d'Ouroungatch et Khast Imam",
+              "activity": "Excursion aux lacs d'Ouroungatch : randonnée et pique-nique. Retour à Tachkent pour visiter l'ensemble Khast Imam (Coran d'Othman)."
+            },
+            {
+              "day": 3,
+              "title": "Tachkent → Samarcande : Héritage Timouride",
+              "activity": "Train matinal pour Samarcande. Visite du Gour-Emir et de la place du Régistan. Fabrique de papier Konigil. Spectacle 3D au Régistan."
+            },
+            {
+              "day": 4,
+              "title": "Samarcande : Science et Montagnes",
+              "activity": "Observatoire d'Oulougbek. Excursion dans les montagnes de Zarafshan : randonnée ou balade à cheval."
+            },
+            {
+              "day": 5,
+              "title": "Samarcande → Boukhara : La Ville Sainte",
+              "activity": "Train rapide 'Afrasiab' pour Boukhara. Visite de la Citadelle Ark et Po-i-Kalyan. Nuit au camp de yourtes 'Bukhara Oasis'."
+            },
+            {
+              "day": 6,
+              "title": "Oasis de Boukhara et Passage de Frontière",
+              "activity": "Activités dans le désert (quads, chevaux, chameaux). Transfert nocturne vers la frontière de Farap pour entrer au Turkménistan."
+            },
+            {
+              "day": 7,
+              "title": "Turkmenabat → Mary : Ancienne Merv",
+              "activity": "Route pour Mary et exploration d'Ancienne Merv (UNESCO) : Mausolée du Sultan Sanjar et forteresses Kyz Gala."
+            },
+            {
+              "day": 8,
+              "title": "Mary → Achgabat : La Ville de Marbre",
+              "activity": "Route vers Achgabat. Musée du tapis et tour de ville. Nuit en camp de yourtes près de Darvaza."
+            },
+            {
+              "day": 9,
+              "title": "Darvaza → Dashoguz → Khiva",
+              "activity": "Visite du cratère de gaz de Darvaza. Passage par Dashoguz et retour en Ouzbékistan vers Khiva."
+            },
+            {
+              "day": 10,
+              "title": "Khiva : Musée à Ciel Ouvert",
+              "activity": "Tour complet d'Itchan-Kala : Kalta Minor, Kounya Ark, mosquée Djouma et mausolée de Pahlavon Mahmoud."
+            },
+            {
+              "day": 11,
+              "title": "Khiva → Noukous : Désert d'Aral et Lac Soudotchié",
+              "activity": "Route vers Noukous puis vers le désert d'Aral. Lac Soudotchié et restes de la mer d'Aral. Nuit en yourtes."
+            },
+            {
+              "day": 12,
+              "title": "Plateau d'Oustyourt → Tachkent",
+              "activity": "Lever de soleil sur la mer d'Aral. Canyons du plateau d'Oustyourt. Vol Noukous-Tachkent en soirée."
+            },
+            {
+              "day": 13,
+              "title": "Tachkent : Bazars et Métro",
+              "activity": "Bazar Chorsu et les célèbres stations du métro de Tachkent à l'architecture unique."
+            },
+            {
+              "day": 14,
+              "title": "Départ de Tachkent",
+              "activity": "Temps libre avant le transfert à l'aéroport."
+            }
+          ],
+          "highlights": [
+            "Spectacle 3D place du Régistan",
+            "Lacs d'Ouroungatch",
+            "Ancienne Merv (UNESCO)",
+            "Cratère de Darvaza",
+            "Mer d'Aral et Plateau d'Oustyourt",
+            "Khiva Itchan-Kala",
+            "Camp de yourtes 'Bukhara Oasis'"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 personnes",
+          "notes": "Inclus : Hébergement, pension complète, vol domestique, billets de train, guide anglophone, entrées.",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "Impressions de la Route de la Soie",
+          "short": "Voyage de 11 jours / 10 nuits à travers Tachkent, Boukhara, Nourata, Samarcande et les 7 lacs du Tadjikistan.",
+          "destination": "Tachkent, Boukhara, Nourata, Samarcande, 7 Lacs (Tadjikistan)",
+          "region": "Ouzbékistan et Tadjikistan",
+          "images": [],
+          "price": 1620,
+          "priceNote": "Prix valables pour 2026. Basé sur 2 à 20 personnes ; tarifs réduits pour les grands groupes sur demande.",
+          "duration": "11 jours / 10 nuits",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europe - Tachkent",
+              "activity": "Arrivée à l'aéroport de Tachkent, accueil, transfert et installation à l'hôtel 4 étoiles. Journée libre avec transport optionnel."
+            },
+            {
+              "day": 2,
+              "title": "Tachkent",
+              "activity": "Visite de la ville : Complexe Khast Imam, Bazar Chorsu, Médersa Kukaldash et promenade autour de la Place Amir Temur."
+            },
+            {
+              "day": 3,
+              "title": "Tachkent - Boukhara (Vol)",
+              "activity": "Vol matinal pour Boukhara. Découverte de la vieille ville incluant le Mausolée d'Ismail Samani, Chashmai Ayub, la Mosquée Bolo Hauz et la Citadelle Ark."
+            },
+            {
+              "day": 4,
+              "title": "Boukhara",
+              "activity": "Explorez le complexe Poyi Kalon, les médersas d'Oulougbek et Abdulaziz Khan, le complexe Liab-i Khaouz et les anciens bazars couverts."
+            },
+            {
+              "day": 5,
+              "title": "Boukhara",
+              "activity": "Visite de la Médersa Tchor Minor, de la nécropole de Bahaouddin Nakshbandi et de Sitora-i-Mokhi Khossa. Dîner traditionnel (Kouzacha Kebab)."
+            },
+            {
+              "day": 6,
+              "title": "Boukhara - Gijduvon - Nourata",
+              "activity": "Route vers Nourata avec arrêt à Gijduvon pour un atelier de céramique. Visite de la source Chashma, ruines d'Alexandre le Grand et nuit en camp de yourtes."
+            },
+            {
+              "day": 7,
+              "title": "Nourata - Village de Mitan - Samarcande",
+              "activity": "Route vers Samarcande via Mitan. Participez à un atelier cuisine (préparation du pilaf traditionnel) avec une famille locale."
+            },
+            {
+              "day": 8,
+              "title": "Samarcande",
+              "activity": "Visite de la ville : Mausolée Gour-Emir, Place Registan, Mosquée Bibikhanum, Bazar Siab, Nécropole Shah-i-Zinda, fabrique de tapis en soie et spectacle 3D."
+            },
+            {
+              "day": 9,
+              "title": "Samarcande - 7 Lacs (Tadjikistan) - Samarcande",
+              "activity": "Excursion d'une journée au Tadjikistan pour visiter les Sept Lacs (Haft Koul) dans les monts Fann."
+            },
+            {
+              "day": 10,
+              "title": "Samarcande - Tachkent (Train)",
+              "activity": "Visite du complexe Imam Al-Bukhari et de la fabrique de papier Konigil. Trajet en train à grande vitesse Afrasiab vers Tachkent."
+            },
+            {
+              "day": 11,
+              "title": "Tachkent - Europe (Vol retour)",
+              "activity": "Temps libre jusqu'à votre transfert à l'aéroport de Tachkent pour votre vol de départ."
+            }
+          ],
+          "highlights": [
+            "Complexe Khast Imam (Tachkent)",
+            "Citadelle Ark (Boukhara)",
+            "Camp de yourtes (Nourata)",
+            "Atelier à Mitan",
+            "Place Registan (Samarcande)",
+            "7 Lacs (Tadjikistan)",
+            "Train à grande vitesse Afrasiab"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 personnes",
+          "notes": "Inclus : vol intérieur, billet de train, hôtels 4*, petits-déjeuners et ateliers. Non inclus : vols internationaux, déjeuners/dîners, dépenses personnelles. Acompte de 30% requis pour la réservation.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Impressions de Route",
+          "short": "Une expédition unique de 10 jours : de la mer d'Aral et Noukous à travers les cités légendaires de la Route de la Soie : Khiva, Boukhara, Samarcande et Tachkent.",
+          "destination": "Noukous, Mer d'Aral, Khiva, Boukhara, Samarcande, Tachkent",
+          "region": "Ouzbékistan (Karakalpakstan)",
+          "images": [],
+          "price": null,
+          "priceNote": "Prix valables pour 2026. Basé sur 2-20 personnes.",
+          "duration": "10 jours / 9 nuits",
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Noukous - Mer d'Aral",
+              "activity": "Départ matinal pour la mer d'Aral via Mizdakhan. Visite du lac Sudochye et du cimetière des bateaux de Mouynak. Dîner et nuit en camp de yourtes."
+            },
+            {
+              "day": 2,
+              "title": "Mer d'Aral - Noukous",
+              "activity": "Lever du soleil sur le désert d'Aralkum. Exploration des canyons du plateau d'Oustyurt. Retour à Noukous en soirée."
+            },
+            {
+              "day": 3,
+              "title": "Noukous - Khiva",
+              "activity": "Visite du musée Savitsky. Route vers Khiva (3-3h30). Arrivée dans la cité médiévale et installation à l'hôtel."
+            },
+            {
+              "day": 4,
+              "title": "Khiva",
+              "activity": "Journée complète à Itchan Kala : Médersa Muhammad Aminkhan, Kalta Minor, Forteresse Kohna Ark, Mosquée Juma et Palais Tach Hovli."
+            },
+            {
+              "day": 5,
+              "title": "Khiva - Boukhara",
+              "activity": "Traversée du désert du Kyzylkoum le long de l'Amou-Daria. Arrivée à Boukhara, la 'perle de l'Islam', en fin d'après-midi."
+            },
+            {
+              "day": 6,
+              "title": "Boukhara",
+              "activity": "Visite de la ville : Mausolées d'Ismaïl Samani et Chashmai Ayub, Mosquée Bolo Haouz, Citadelle Ark et complexe Liab-i Khaouz."
+            },
+            {
+              "day": 7,
+              "title": "Boukhara - Samarcande (Train)",
+              "activity": "Transfert en train vers Samarcande. Visite du Gour-Emir, de la place Registan, de la mosquée Bibikhanum et de Chah-i-Zinda."
+            },
+            {
+              "day": 8,
+              "title": "Samarcande - Tachkent (Train)",
+              "activity": "Train matinal pour Tachkent. Visite du complexe Khast Imam, du bazar Chorsu et de la place de l'Indépendance."
+            },
+            {
+              "day": 9,
+              "title": "Tachkent - Europe",
+              "activity": "Temps libre jusqu'au transfert à l'aéroport pour votre vol retour."
+            }
+          ],
+          "highlights": [
+            "Mer d'Aral et cimetière des bateaux de Mouynak",
+            "Canyons du plateau d'Oustyurt",
+            "Musée Savitsky",
+            "Cité d'Itchan Kala (UNESCO)",
+            "Place Registan à Samarcande"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603"
+          }
         }
       ],
       "it": [
@@ -5819,6 +7431,340 @@
             "Voli internazionali",
             "Pranzi e Cene",
             "Tasse per fotocamera"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_8d_it",
+          "title": "Gran Tour del Turkmenistan: Da Darvaza all'Antica Merv — 8 Giorni",
+          "short": "Un viaggio di 8 giorni attraverso il Turkmenistan esplorando il cratere di Darvaza, la città di marmo di Ashgabat, i canyon di Yangykala e le rovine di Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistan",
+          "images": [],
+          "price": 1010,
+          "priceNote": "Prezzo per persona per 16+1 pax in hotel 4*. Supplemento singola (hotel 3*): 30$.",
+          "duration": "8 giorni / 7 notti",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Incontro al confine 'Shavat'. Pranzo a Dashoguz e visita alla riserva storica dell'Antica Kunyaurgench. Viaggio verso il cratere di gas di Darvaza. Cena barbecue e pernottamento in un campo di yurte."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Ashgabat",
+              "activity": "Trasferimento ad Ashgabat. Visita al complesso equestre (cavalli Akhal-Teke), alla moschea di Rukhy a Kypchak e all'Antica Nisa, capitale dell'Impero Partico."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visita al lago sotterraneo di Kov-Ata e al villaggio di montagna di Nokhur. Trasferimento a Turkmenbashy (Nebitdag) e sistemazione in hotel."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Esplorazione dei favolosi canyon di Yangykala, noti come 'fortezze di fuoco'. Ritorno a Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Ashgabat",
+              "activity": "Ritorno ad Ashgabat. Tour pomeridiano della città: ruota panoramica Alem, Palazzo dei Matrimoni e tempo libero per lo shopping al centro commerciale Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Ashgabat — Mary",
+              "activity": "Trasferimento a Mary. Escursione all'Antica Merv (UNESCO) e al mausoleo del Sultano Sanjar. Scoperta della cultura locale presso la base turistica 'Antico Focolare Turcomanno'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Ashgabat",
+              "activity": "Ritorno ad Ashgabat. Visita al Museo Nazionale del Tappeto, all'Arco della Neutralità e al Monumento all'Indipendenza."
+            },
+            {
+              "day": 8,
+              "title": "Ashgabat — Partenza",
+              "activity": "Visita al bazar Gulistan (bazar russo). Trasferimento all'aeroporto internazionale di Ashgabat per la partenza."
+            }
+          ],
+          "highlights": [
+            "Cratere di Darvaza",
+            "Antica Kunyaurgench",
+            "Ashgabat (Città di Marmo Bianco)",
+            "Antica Nisa",
+            "Lago sotterraneo di Kov-Ata",
+            "Canyon di Yangykala",
+            "Antica Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Include: Hotel 4*, trasporti, pasti, 1L d'acqua/giorno, guida in inglese, Lettera d'Invito (supporto visto) + registrazione. Esclude: Tasse aeroportuali (Visto ~$50-100, Migrazione $14, Test COVID $35), assicurazione, mance, voli internazionali.",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_it",
+          "title": "Grande Avventura sulla Via della Seta: Uzbekistan e Turkmenistan — 14 Giorni",
+          "short": "Un viaggio completo di 14 giorni nel cuore della Via della Seta, dalle cupole blu dell'Uzbekistan ai paesaggi misteriosi del Turkmenistan.",
+          "destination": "Tashkent, Samarcanda, Bukhara, Mary, Merv, Ashgabat, Darvaza, Khiva, Nukus, Mar d'Aral",
+          "region": "Asia Centrale",
+          "images": [],
+          "price": 1720,
+          "priceNote": "Prezzo per persona basato su 5 persone. Per 3 persone: $1840. Supplemento singola: $90 - $120.",
+          "duration": "14 giorni / 13 notti",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrivo a Tashkent — Montagne di Amirsoy",
+              "activity": "Arrivo, trasferimento alle montagne di Amirsoy. Check-in anticipato incluso. Cena in hotel."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent: Laghi di Giada di Urungach e Khast Imam",
+              "activity": "Escursione ai laghi di Urungach: trekking e picnic. Ritorno a Tashkent per visitare il complesso Khast Imam (Corano di Uthman)."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent → Samarcanda: Eredità Timuride",
+              "activity": "Treno mattutino per Samarcanda. Visita al Gur-Emir e Piazza Registan. Fabbrica di carta Konigil. Show 3D a Registan."
+            },
+            {
+              "day": 4,
+              "title": "Samarcanda: Scienza e Montagne",
+              "activity": "Osservatorio di Ulugbek. Escursione alle montagne di Zarafshan: trekking o equitazione."
+            },
+            {
+              "day": 5,
+              "title": "Samarcanda → Bukhara: La Città Santa",
+              "activity": "Treno veloce 'Afrasiab' per Bukhara. Visita alla Cittadella Ark e Po-i-Kalyan. Notte nel campo di yurte 'Bukhara Oasis'."
+            },
+            {
+              "day": 6,
+              "title": "Oasi di Bukhara e Passaggio di Frontiera",
+              "activity": "Attività nel deserto (quad, cavalli, cammelli). Trasferimento notturno alla frontiera di Farap per entrare in Turkmenistan."
+            },
+            {
+              "day": 7,
+              "title": "Turkmenabat → Mary: Antica Merv",
+              "activity": "Viaggio verso Mary ed esplorazione di 'Antica Merv' (UNESCO): Mausoleo di Sultan Sanjar e fortezze Kyz Gala."
+            },
+            {
+              "day": 8,
+              "title": "Mary → Ashgabat: Città di Marmo",
+              "activity": "Viaggio verso Ashgabat. Museo del tappeto e tour della capitale di marmo bianco. Notte in campo di yurte vicino a Darvaza."
+            },
+            {
+              "day": 9,
+              "title": "Darvaza → Dashoguz → Khiva",
+              "activity": "Visita al cratere di gas di Darvaza. Passaggio da Dashoguz e ritorno in Uzbekistan verso Khiva."
+            },
+            {
+              "day": 10,
+              "title": "Khiva: Museo a Cielo Aperto",
+              "activity": "Tour di Ichan-Kala: Kalta Minor, Kunya Ark, Moschea Juma e Mausoleo di Pahlavon Mahmud."
+            },
+            {
+              "day": 11,
+              "title": "Khiva → Nukus: Deserto d'Aral e Lago Sudochie",
+              "activity": "Viaggio a Nukus e verso il deserto d'Aral. Lago Sudochie e resti del Mar d'Aral. Notte in yurte."
+            },
+            {
+              "day": 12,
+              "title": "Altopiano di Ustyurt → Tashkent",
+              "activity": "Alba sul Mar d'Aral. Canyon dell'altopiano di Ustyurt. Volo serale Nukus-Tashkent."
+            },
+            {
+              "day": 13,
+              "title": "Tashkent: Bazar e Metro",
+              "activity": "Bazar Chorsu e le famose stazioni della metropolitana di Tashkent dall'architettura unica."
+            },
+            {
+              "day": 14,
+              "title": "Partenza da Tashkent",
+              "activity": "Tempo libero prima del trasferimento in aeroporto."
+            }
+          ],
+          "highlights": [
+            "Show 3D in Piazza Registan",
+            "Laghi di Giada di Urungach",
+            "Antica Merv (UNESCO)",
+            "Cratere di Darvaza",
+            "Mar d'Aral e Altopiano di Ustyurt",
+            "Khiva Ichan-Kala",
+            "Campo di yurte 'Bukhara Oasis'"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20 persone",
+          "notes": "Include: Alloggio, pensione completa, volo domestico, biglietti del treno, guida parlante inglese, ingressi.",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "Impressioni della Via della Seta",
+          "short": "Viaggio di 11 giorni / 10 notti attraverso Tashkent, Bukhara, Nurata, Samarcanda e i 7 Laghi del Tagikistan.",
+          "destination": "Tashkent, Bukhara, Nurata, Samarcanda, 7 Laghi (Tagikistan)",
+          "region": "Uzbekistan e Tagikistan",
+          "images": [],
+          "price": 1620,
+          "priceNote": "Prezzi validi per il 2026. Basato su 2-20 persone; prezzi ridotti per gruppi numerosi su richiesta.",
+          "duration": "11 giorni / 10 notti",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europa - Tashkent",
+              "activity": "Arrivo all'aeroporto di Tashkent, accoglienza, trasferimento e check-in nell'hotel 4 stelle. Giornata libera con trasporto opzionale guidato."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent",
+              "activity": "Tour della città: Complesso Khast Imam, Bazar Chorsu, Madrasa Kukaldash e passeggiata intorno a Piazza Amir Temur."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent - Bukhara (Volo)",
+              "activity": "Volo mattutino per Bukhara. Scoperta del centro storico: Mausoleo di Ismail Samani, Chashmai Ayub, Moschea Bolo Hauz e Cittadella Ark."
+            },
+            {
+              "day": 4,
+              "title": "Bukhara",
+              "activity": "Esplora il Complesso Poyi Kalon, le madrase di Ulugbek e Abdulaziz Khan, il complesso Liab-i Khaouz e gli antichi bazar coperti."
+            },
+            {
+              "day": 5,
+              "title": "Bukhara",
+              "activity": "Visita della Madrasa Tchor Minor, della necropoli di Bahaouddin Nakshbandi e Sitora-i-Mokhi Khossa. Cena tradizionale (Kouzacha Kebab)."
+            },
+            {
+              "day": 6,
+              "title": "Bukhara - Gijduvon - Nurata",
+              "activity": "Viaggio verso Nurata con sosta a Gijduvon per un laboratorio di ceramica. Visita della sorgente Chashma e pernottamento in un campo di yurte con giro in cammello."
+            },
+            {
+              "day": 7,
+              "title": "Nurata - Villaggio Mitan - Samarcanda",
+              "activity": "Trasferimento a Samarcanda via Mitan. Partecipa a un masterclass di cucina preparando il tradizionale pilaf con una famiglia locale."
+            },
+            {
+              "day": 8,
+              "title": "Samarcanda",
+              "activity": "Tour della città: Mausoleo Gur-Emir, Piazza Registan, Moschea Bibikhanum, Bazar Siab, Necropoli Shah-i-Zinda, fabbrica di tappeti di seta e spettacolo 3D serale."
+            },
+            {
+              "day": 9,
+              "title": "Samarcanda - 7 Laghi (Tagikistan) - Samarcanda",
+              "activity": "Gita di un giorno in Tagikistan per visitare i Sette Laghi (Haft Kul) nelle montagne Fann, esplorando paesaggi unici."
+            },
+            {
+              "day": 10,
+              "title": "Samarcanda - Tashkent (Treno)",
+              "activity": "Visita al Complesso Imam Al-Bukhari e alla fabbrica di carta Konigil Meros. Ritorno a Tashkent in serata con il treno ad alta velocità Afrasiab."
+            },
+            {
+              "day": 11,
+              "title": "Tashkent - Europa (Volo di ritorno)",
+              "activity": "Tempo libero fino al trasferimento all'aeroporto di Tashkent per il volo di partenza."
+            }
+          ],
+          "highlights": [
+            "Complesso Khast Imam (Tashkent)",
+            "Cittadella Ark (Bukhara)",
+            "Campo di Yurte (Nurata)",
+            "Masterclass a Mitan",
+            "Piazza Registan (Samarcanda)",
+            "7 Laghi (Tagikistan)",
+            "Treno Afrasiab"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 persone",
+          "notes": "Include volo interno, biglietto del treno, hotel 4*, colazioni e masterclass. Esclude voli internazionali, pranzi/cene e spese personali. Deposito del 30% richiesto per la prenotazione.",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "Impressioni di Viaggio",
+          "short": "Una spedizione unica di 10 giorni: dal Mar d'Aral e Nukus attraverso le leggendarie città della Via della Seta: Khiva, Bukhara, Samarcanda e Tashkent.",
+          "destination": "Nukus, Mar d'Aral, Khiva, Bukhara, Samarcanda, Tashkent",
+          "region": "Uzbekistan (Karakalpakstan)",
+          "images": [],
+          "price": null,
+          "priceNote": "Prezzi validi per il 2026. Basato su 2-20 persone.",
+          "duration": "10 giorni / 9 notti",
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Nukus - Mar d'Aral",
+              "activity": "Partenza mattutina per il Mar d'Aral via Mizdakhan. Visita al Lago Sudochye e al Cimitero delle Navi di Muynak. Cena e notte in campo di yurte."
+            },
+            {
+              "day": 2,
+              "title": "Mar d'Aral - Nukus",
+              "activity": "Alba sul deserto di Aralkum ed esplorazione dei canyon dell'altopiano di Ustyurt. Rientro a Nukus in serata."
+            },
+            {
+              "day": 3,
+              "title": "Nukus - Khiva",
+              "activity": "Visita al Museo Savitsky. Trasferimento a Khiva (3-3,5 ore). Arrivo e sistemazione in hotel."
+            },
+            {
+              "day": 4,
+              "title": "Khiva",
+              "activity": "Intera giornata a Ichan Kala: Madrassa Muhammad Aminkhan, Kalta Minor, Fortezza Kohna Ark e Palazzo Tash Hovli."
+            },
+            {
+              "day": 5,
+              "title": "Khiva - Bukhara",
+              "activity": "Viaggio attraverso il deserto del Kyzylkum lungo il fiume Amu Darya. Arrivo a Bukhara nel tardo pomeriggio."
+            },
+            {
+              "day": 6,
+              "title": "Bukhara",
+              "activity": "Tour della città: Mausolei di Ismail Samani e Chashmai Ayub, Cittadella Ark e complesso di Lyabi-Hauz."
+            },
+            {
+              "day": 7,
+              "title": "Bukhara - Samarcanda (Treno)",
+              "activity": "Trasferimento in treno a Samarcanda. Visita a Piazza Registan, Mausoleo Gur-Emir e Necropoli Shah-i-Zinda."
+            },
+            {
+              "day": 8,
+              "title": "Samarcanda - Tashkent (Treno)",
+              "activity": "Treno per Tashkent. Visita del complesso Khast Imam, Bazar Chorsu e Piazza dell'Indipendenza."
+            },
+            {
+              "day": 9,
+              "title": "Tashkent - Europa",
+              "activity": "Tempo libero fino al trasferimento in aeroporto per il volo di ritorno."
+            }
+          ],
+          "highlights": [
+            "Mar d'Aral e Cimitero delle Navi",
+            "Canyon dell'altopiano di Ustyurt",
+            "Museo Savitsky",
+            "Ichan Kala (UNESCO)",
+            "Piazza Registan"
           ]
         }
       ],
@@ -6806,6 +8752,340 @@
             "小费",
             "午餐和晚餐",
             "博物馆摄影费"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_8d_zh",
+          "title": "土库曼斯坦大游：从达瓦扎到古梅尔夫 — 8天",
+          "short": "为期8天的土库曼斯坦之旅，探索达瓦扎“地狱之门”、大理石之城阿什哈巴德、仰吉卡拉大峡谷及古梅尔夫遗址。",
+          "destination": "达绍古兹, 库尼亚乌尔根奇, 达瓦扎, 阿什哈巴德, 科夫阿塔, 诺胡尔, 涅比特达格 (土库曼巴希), 仰吉卡拉, 马雷",
+          "region": "土库曼斯坦",
+          "images": [],
+          "price": 1010,
+          "priceNote": "4星级酒店16+1人团体的单人价格。单房差（3星级酒店）：30美元。",
+          "duration": "8天 / 7晚",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "达绍古兹 — 库尼亚乌尔根奇 — 达瓦扎",
+              "activity": "在'Shavat'边境接站。在达绍古兹享用午餐，随后参观古库尼亚乌尔根奇历史保护区。驱车前往达瓦扎天然气坑。晚上享用烧烤晚餐并夜宿传统蒙古包。"
+            },
+            {
+              "day": 2,
+              "title": "达瓦扎 — 阿什哈巴德",
+              "activity": "驱车前往阿什哈巴德。参观国际马术中心（阿哈尔捷金马/汗血宝马）、基普恰克清真寺，以及帕提亚帝国故都——老尼萨。"
+            },
+            {
+              "day": 3,
+              "title": "阿什哈巴德 — 科夫阿塔 — 诺胡尔 — 涅比特达格",
+              "activity": "参观科夫阿塔地下湖和诺胡尔高山村庄。驱车前往土库曼巴希（涅比特达格）入住酒店。"
+            },
+            {
+              "day": 4,
+              "title": "涅比特达格 — 仰吉卡拉 — 涅比特达格",
+              "activity": "探索被誉为“火焰堡垒”的壮丽仰吉卡拉大峡谷。返回土库曼巴希。"
+            },
+            {
+              "day": 5,
+              "title": "涅比特达格 — 阿什哈巴德",
+              "activity": "返回阿什哈巴德。下午市区游览：阿莱姆摩天轮、婚礼宫，并在Berkarar购物中心自由活动。"
+            },
+            {
+              "day": 6,
+              "title": "阿什哈巴德 — 马雷",
+              "activity": "驱车前往马雷。游览古梅尔夫（联合国教科文组织世界遗产），参观苏丹桑贾尔陵墓。在“古土库曼灶台”旅游基地体验土库曼文化。"
+            },
+            {
+              "day": 7,
+              "title": "马雷 — 阿什哈巴德",
+              "activity": "返回阿什哈巴德。参观土库曼地毯国家博物馆、中立门以及独立纪念碑。"
+            },
+            {
+              "day": 8,
+              "title": "阿什哈巴德 — 离境",
+              "activity": "游览古丽斯坦集市（俄罗斯巴扎）购买纪念品。送往阿什哈巴德国际机场，结束行程。"
+            }
+          ],
+          "highlights": [
+            "达瓦扎天然气坑",
+            "古库尼亚乌尔根奇",
+            "阿什哈巴德（白色大理石之城）",
+            "老尼萨遗址",
+            "科夫阿塔地下湖",
+            "仰吉卡拉大峡谷",
+            "古梅尔夫 (联合国教科文组织世界遗产)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1人",
+          "notes": "费用包含：4星级酒店住宿、交通、餐饮、每日1升水、英语导游、邀请函（签证支持）及签证注册。费用不含：机场相关费用（签证约$50-100、移民局费用$14、核酸检测$35）、保险、小费及国际航班。",
+          "extras": []
+        },
+        {
+          "id": "t_grand_silk_road_14d_zh",
+          "title": "丝绸之路大冒险：乌兹别克斯坦与土库曼斯坦 — 14天",
+          "short": "为期14天的全方位丝绸之路核心之旅，涵盖乌兹别克斯坦的蓝色穹顶与土库曼斯坦的神秘风光。",
+          "destination": "塔什干, 撒马尔罕, 布哈拉, 马雷, 梅尔夫, 阿什哈巴德, 达瓦扎, 希瓦, 努库斯, 咸海",
+          "region": "中亚",
+          "images": [],
+          "price": 1720,
+          "priceNote": "基于5人团体的单人价格。3人团体：$1840。单人房差：$90 - $120。",
+          "duration": "14天 / 13晚",
+          "rating": null,
+          "category": "central-asia",
+          "availableDates": [
+            "2026-09-25"
+          ],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "抵达塔什干 — 阿米索伊山区",
+              "activity": "抵达塔什干机场，前往阿米索伊山区感受清新开端。包含提前入住。在酒店享用晚餐。"
+            },
+            {
+              "day": 2,
+              "title": "塔什干：乌伦加奇玉湖与哈斯特伊玛目",
+              "activity": "前往美丽的乌伦加奇玉湖进行徒步和野餐。返回塔什干参观哈斯特伊玛目建筑群（存有古老的奥斯曼古兰经）。"
+            },
+            {
+              "day": 3,
+              "title": "塔什干 → 撒马尔罕：帖木儿遗产",
+              "activity": "早间乘火车前往撒马尔罕。参观古里·埃米尔陵墓和标志性的雷吉斯坦广场。探索科尼吉尔造纸厂。晚上在雷吉斯坦欣赏3D灯光秀。"
+            },
+            {
+              "day": 4,
+              "title": "撒马尔罕：科学与大山",
+              "activity": "参观兀鲁伯天文台。下午前往泽拉夫尚山区徒步、探索自然或骑马。"
+            },
+            {
+              "day": 5,
+              "title": "撒马尔罕 → 布哈拉：圣城",
+              "activity": "乘坐“阿夫拉西阿卜”号高铁前往布哈拉。参观埃克城堡、波伊·卡扬建筑群。夜宿“布哈拉绿洲”蒙古包营地。"
+            },
+            {
+              "day": 6,
+              "title": "布哈拉绿洲与边境穿越",
+              "activity": "在度假村享受沙漠活动（全地形车、骑马、骆驼）。晚上前往法拉普边境进入土库曼斯坦。"
+            },
+            {
+              "day": 7,
+              "title": "土库曼纳巴德 → 马雷：古梅尔夫",
+              "activity": "驱车前往马雷并探索“古梅尔夫”（世界遗产），参观苏丹桑贾尔陵墓和克兹卡拉堡垒。"
+            },
+            {
+              "day": 8,
+              "title": "马雷 → 阿什哈巴德：大理石之城",
+              "activity": "驱车前往阿什哈巴德。参观国家地毯博物馆并进行市区游览。夜宿达瓦扎附近的蒙古包营地。"
+            },
+            {
+              "day": 9,
+              "title": "达瓦扎 → 达绍古兹 → 希瓦",
+              "activity": "参观达瓦扎天然气坑（地狱之门）。穿过达绍古兹省，跨越边境返回乌兹别克斯坦希瓦。"
+            },
+            {
+              "day": 10,
+              "title": "希瓦：露天博物馆",
+              "activity": "全天游览伊钦·卡拉内城：卡尔塔·米纳尔、库尼亚方舟、朱玛清真寺和帕拉翁·马哈茂德陵墓。"
+            },
+            {
+              "day": 11,
+              "title": "希瓦 → 努库斯：咸海沙漠与苏多奇湖",
+              "activity": "驱车前往努库斯并向咸海沙漠进发。参观苏多奇湖及咸海生态遗迹。夜宿蒙古包营地。"
+            },
+            {
+              "day": 12,
+              "title": "乌斯秋尔特高原 → 塔什干",
+              "activity": "在咸海看日出。探索乌斯秋尔特高原峡谷。返回努库斯，搭乘晚间航班飞往塔什干。"
+            },
+            {
+              "day": 13,
+              "title": "塔什干：巴扎与地铁",
+              "activity": "参观楚苏巴扎和著名的塔什干地铁站（以其独特的地下建筑艺术闻名）。"
+            },
+            {
+              "day": 14,
+              "title": "离开塔什干",
+              "activity": "自由活动，随后送往机场搭乘回程航班。"
+            }
+          ],
+          "highlights": [
+            "雷吉斯坦广场3D灯光秀",
+            "乌伦加奇玉湖",
+            "古梅尔夫 (UNESCO)",
+            "达瓦扎天然气坑（地狱之门）",
+            "咸海与乌斯秋尔特高原",
+            "希瓦伊钦·卡拉",
+            "布哈拉绿洲蒙古包营地"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2 - 20人",
+          "notes": "包含：住宿、全餐、国内航班（努库斯-塔什干）、火车票、英语导游、所有景点门票。",
+          "extras": []
+        },
+        {
+          "id": "t_silk_road_impressions_11d",
+          "title": "丝绸之路印象",
+          "short": "为期11天/10晚的旅程，途经塔什干、布哈拉、努拉塔、撒马尔罕和塔吉克斯坦七湖。",
+          "destination": "塔什干, 布哈拉, 努拉塔, 撒马尔罕, 七湖 (塔吉克斯坦)",
+          "region": "乌兹别克斯坦和塔吉克斯坦",
+          "images": [],
+          "price": 1620,
+          "priceNote": "价格适用于2026年。基于2-20人计算；大型团队可申请折扣。",
+          "duration": "11 天 / 10 晚",
+          "rating": null,
+          "category": "multi-country",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "欧洲 - 塔什干",
+              "activity": "抵达塔什干机场，导游迎接，接机并入住四星级酒店。全天自由活动，提供可选的市区游览交通。"
+            },
+            {
+              "day": 2,
+              "title": "塔什干",
+              "activity": "城市游览：参观哈斯特伊玛目建筑群、楚苏巴扎、库卡尔达什清真寺，并在阿米尔帖木儿广场散步。"
+            },
+            {
+              "day": 3,
+              "title": "塔什干 - 布哈拉 (飞行)",
+              "activity": "早晨飞往布哈拉。探索老城区，包括伊斯梅尔·萨马尼陵墓、Chashmai Ayub、Bolo Hauz 清真寺和雅克城堡。"
+            },
+            {
+              "day": 4,
+              "title": "布哈拉",
+              "activity": "参观波伊卡龙建筑群、乌鲁伯格和阿卜杜拉齐兹汗清真寺、Liab-i Khaouz 建筑群以及古老的圆顶巴扎。"
+            },
+            {
+              "day": 5,
+              "title": "布哈拉",
+              "activity": "参观 Tchor Minor 清真寺、Bahaouddin Nakshbandi 墓地和 Sitora-i-Mokhi Khossa。享用传统的 Kouzacha Kebab 晚餐。"
+            },
+            {
+              "day": 6,
+              "title": "布哈拉 - 吉日杜万 - 努拉塔",
+              "activity": "乘车前往努拉塔，途中在吉日杜万停留参观陶瓷工坊。参观 Chashma 泉、亚历山大大帝城堡遗址，晚上入住蒙古包营地并骑骆驼。"
+            },
+            {
+              "day": 7,
+              "title": "努拉塔 - 米坦村 - 撒马尔罕",
+              "activity": "途经米坦村前往撒马尔罕。参与当地家庭的美食制作大师班，学习制作传统手抓饭。"
+            },
+            {
+              "day": 8,
+              "title": "撒马尔罕",
+              "activity": "城市游览：古尔-埃米尔陵墓、雷吉斯坦广场、比比哈努姆清真寺、Siab 巴扎、Shah-i-Zinda 墓地、丝绸地毯厂以及晚间 3D 灯光秀。"
+            },
+            {
+              "day": 9,
+              "title": "撒马尔罕 - 七湖 (塔吉克斯坦) - 撒马尔罕",
+              "activity": "前往塔吉克斯坦范山脉的七湖 (Haft Kul) 进​​行一日游，体验独特的自然景观和当地文化。"
+            },
+            {
+              "day": 10,
+              "title": "撒马尔罕 - 塔什干 (火车)",
+              "activity": "参观伊玛目布哈里建筑群和 Konigil 纸厂。傍晚乘坐 Afrasiab 高铁返回塔什干。"
+            },
+            {
+              "day": 11,
+              "title": "塔什干 - 欧洲 (回国航班)",
+              "activity": "自由活动，随后前往塔什干机场准备搭乘返程航班。"
+            }
+          ],
+          "highlights": [
+            "哈斯特伊玛目建筑群 (塔什干)",
+            "雅克城堡 (布哈拉)",
+            "蒙古包营地体验 (努拉塔)",
+            "米坦村大师班",
+            "雷吉斯坦广场 (撒马尔罕)",
+            "七湖 (塔吉克斯坦)",
+            "Afrasiab 高铁"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 人",
+          "notes": "包含国内机票、火车票、四星级酒店、早餐及大师班活动。不包含国际航班、午晚餐及个人消费。预订需支付 30% 定金。",
+          "extras": []
+        },
+        {
+          "id": "t_road_impressions_10d",
+          "title": "公路印象之旅",
+          "short": "为期10天的独特探险：从咸海和努库斯出发，穿越丝绸之路的传奇城市：希瓦、布哈拉、撒马尔罕和塔什干。",
+          "destination": "努库斯, 咸海, 希瓦, 布哈拉, 撒马尔罕, 塔什干",
+          "region": "乌兹别克斯坦（卡拉卡尔帕克斯坦）",
+          "images": [],
+          "price": null,
+          "priceNote": "价格适用于2026年。基于2-20人计算。",
+          "duration": "10 天 / 9 晚",
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "努库斯 - 咸海",
+              "activity": "清晨乘车经 Mizdakhan 前往咸海。参观 Sudochye 湖和穆伊纳克船只墓地。在咸海边的蒙古包营地享用晚餐并过夜。"
+            },
+            {
+              "day": 2,
+              "title": "咸海 - 努库斯",
+              "activity": "观赏阿兰库姆沙漠的日出。探索乌斯秋尔特高原的峡谷和悬崖。傍晚返回努库斯市中心的酒店。"
+            },
+            {
+              "day": 3,
+              "title": "努库斯 - 希瓦",
+              "activity": "参观萨维茨基艺术博物馆。下午乘车前往希瓦（3-3.5小时）。抵达这座古老的围城并入住酒店。"
+            },
+            {
+              "day": 4,
+              "title": "希瓦",
+              "activity": "全天游览伊钦·卡拉：穆罕默德·阿明汗经学院、卡尔塔·米诺尔、库尼亚·雅克城堡和塔什·豪里宫。"
+            },
+            {
+              "day": 5,
+              "title": "希瓦 - 布哈拉",
+              "activity": "乘车穿越克孜勒库姆沙漠，沿阿姆河行驶。傍晚抵达被誉为“伊斯兰支柱”的布哈拉。"
+            },
+            {
+              "day": 6,
+              "title": "布哈拉",
+              "activity": "城市游览：伊斯梅尔·萨马尼和 Chashmai Ayub 陵墓、雅克城堡、波伊卡隆建筑群和 Liab-i Khaouz 建筑群。"
+            },
+            {
+              "day": 7,
+              "title": "布哈拉 - 撒马尔罕 (火车)",
+              "activity": "乘坐火车前往撒马尔罕。游览古尔-埃米尔陵墓、雷吉斯坦广场、比比哈努姆清真寺和夏伊辛达墓群。"
+            },
+            {
+              "day": 8,
+              "title": "撒马尔罕 - 塔什干 (火车)",
+              "activity": "清晨乘坐火车前往塔什干。游览哈斯特伊玛目建筑群、楚苏巴扎、库卡尔达什经学院和独立广场。"
+            },
+            {
+              "day": 9,
+              "title": "塔什干 - 欧洲",
+              "activity": "自由活动，随后前往机场搭乘返程航班。"
+            }
+          ],
+          "highlights": [
+            "咸海与穆伊纳克船只墓地",
+            "乌斯秋尔特高原峡谷",
+            "努库斯萨维茨基博物馆",
+            "联合国教科文组织世界遗产希瓦古城",
+            "撒马尔罕雷吉斯坦广场"
           ]
         }
       ]

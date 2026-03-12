@@ -12,14 +12,44 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
+import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
+import L from 'leaflet';
 import {
   ArrowRight, Users, Award, Heart, Map, Globe, X, MapPin,
-  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane, Car, Hotel
+  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane, Car, Hotel, Navigation
 } from "lucide-react";
 
 // Static data now served from Vercel CDN (public/data/ folder)
 const BASE_URL = "";
 const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images/...
+
+// Office location – Samarkand
+const OFFICE_LAT = 39.676871;
+const OFFICE_LNG = 66.927456;
+const YANDEX_DIRECTIONS_URL = `https://yandex.uz/maps/?mode=routes&rtext=~${OFFICE_LAT}%2C${OFFICE_LNG}&rtt=auto&z=15`;
+
+// Clicking the map itself opens Yandex directions
+const MapClickHandler = () => {
+  useMapEvents({
+    click: () => {
+      window.open(YANDEX_DIRECTIONS_URL, '_blank');
+    },
+  });
+  return null;
+};
+
+// Custom orange marker icon for the office pin
+const officeIcon = new L.DivIcon({
+  className: '',
+  html: `<div style="
+    width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#f97316,#f59e0b);
+    display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(249,115,22,.45);
+    border:3px solid #fff;
+  "><svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3'/></svg></div>`,
+  iconSize: [38, 38],
+  iconAnchor: [19, 38],
+  popupAnchor: [0, -40],
+});
 const TourCardSkeleton = () => (
   <div className="animate-pulse bg-white border border-gray-100 rounded-2xl shadow-sm h-full max-h-[400px]">
     <div className="h-48 md:h-56 bg-gray-200 rounded-t-2xl"></div>
@@ -828,6 +858,70 @@ const Home = () => {
               ))}
             </Swiper>
           </div>
+        </div>
+      </section>
+
+      {/* Our Office Location Map */}
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12 ">
+            <h2 className="text-3xl md:text-4xl font-bold text-orange-500 mb-4">{t("home.locationTitle", "Visit Our Office")}</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              {t("home.locationSubtitle", "Find us in the heart of Samarkand. We'd love to meet you in person!")}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
+            style={{ height: '450px' }}
+          >
+            <MapContainer
+              center={[OFFICE_LAT, OFFICE_LNG]}
+              zoom={15}
+              scrollWheelZoom={true}
+              zoomControl={true}
+              style={{ height: '100%', width: '100%', cursor: 'pointer' }}
+              className="z-0"
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              />
+              <Marker position={[OFFICE_LAT, OFFICE_LNG]} icon={officeIcon} >
+                <Popup className="text-sm">
+                  <strong>Avia Alfa Travel</strong><br />
+                  Samarkand, Uzbekistan
+                </Popup>
+              </Marker>
+              <MapClickHandler />
+            </MapContainer>
+
+            {/* Get Directions floating button */}
+            <div className="absolute bottom-5 left-5 z-[1000] flex flex-col sm:flex-row gap-3">
+              <motion.a
+                href={YANDEX_DIRECTIONS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2.5 px-5 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all cursor-pointer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Navigation className="h-5 w-5" />
+                <span>{t("home.getDirections", "Get Directions")}</span>
+              </motion.a>
+            </div>
+
+            {/* Address badge top-left */}
+            <div className="absolute top-4 right-4 z-[1000] bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-gray-100">
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-orange-500 flex-shrink-0" />
+                <span className="text-sm font-medium text-gray-800">Samarkand, Uzbekistan</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
