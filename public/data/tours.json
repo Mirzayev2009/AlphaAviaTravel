@@ -997,7 +997,12 @@
           "short": "An 8-day journey through Turkmenistan exploring the Darvaza Gas Crater, the marble city of Ashgabat, Yangykala Canyons, and the ancient ruins of Merv.",
           "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
           "region": "Turkmenistan",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Price per person for 16+1 pax in 4* hotels. Single supplement (3* hotel): 30$.",
           "duration": "8 days / 7 nights",
@@ -1071,7 +1076,12 @@
           "short": "A comprehensive 14-day journey through the heart of the Silk Road, covering the blue domes of Uzbekistan and the mysterious landscapes of Turkmenistan.",
           "destination": "Tashkent, Samarkand, Bukhara, Mary, Merv, Ashgabat, Darvaza, Khiva, Nukus, Aral Sea",
           "region": "Central Asia",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "Price per person based on 5 people. For 3 people: $1840. Single supplement: $90 - $120.",
           "duration": "14 days / 13 nights",
@@ -1177,7 +1187,13 @@
           "short": "11 days / 10 nights journey through Tashkent, Bukhara, Nurata, Samarkand, and the 7 Lakes of Tajikistan.",
           "destination": "Tashkent, Bukhara, Nurata, Samarkand, 7 Lakes (Tajikistan)",
           "region": "Uzbekistan and Tajikistan",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "Prices valid for 2026. Based on 2-20 people; reduced prices for larger groups on request.",
           "duration": "11 days / 10 nights",
@@ -1266,7 +1282,12 @@
           "short": "A unique 10-day expedition from the Aral Sea and Nukus through the legendary Silk Road cities of Khiva, Bukhara, Samarkand, and Tashkent.",
           "destination": "Nukus, Aral Sea, Khiva, Bukhara, Samarkand, Tashkent",
           "region": "Uzbekistan (Karakalpakstan)",
-          "images": [],
+          "images": [
+            "/images/road_tour_1.jpg",
+            "/images/road_tour_2.jpg",
+            "/images/road_tour_3.jpg",
+            "/images/road_tour_4.jpg"
+          ],
           "price": null,
           "priceNote": "Prices valid for 2026. Based on 2-20 people; reduced prices for larger groups on request.",
           "duration": "10 days / 9 nights",
@@ -2331,7 +2352,12 @@
           "short": "Turkmaniston bo'ylab 8 kunlik sayohat: Darvoza gaz krateri, oq marmar shahar Ashxobod, Yangiqal'a kanyonlari hamda Ko'hna Urganch va Marv xarobalari.",
           "destination": "Toshhovuz, Ko'hna Urganch, Darvoza, Ashxobod, Kov-Ata, Nuhur, Nebitdog' (Turkmanboshi), Yangiqal'a, Mari",
           "region": "Turkmaniston",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Kishi boshiga narx (16+1 kishi, 4* mehmonxonalar uchun). Yakkalik joylashuv (3* mehmonxona): qo'shimcha 30$.",
           "duration": "8 kun / 7 tun",
@@ -2405,7 +2431,12 @@
           "short": "Ipak yo'lining markaziga 14 kunlik keng qamrovli sayohat: O'zbekistonning moviy gumbazlari va Turkmanistonning sirli manzaralari.",
           "destination": "Toshkent, Samarqand, Buxoro, Mari, Marv, Ashxobod, Darvoza, Xiva, Nukus, Orol dengizi",
           "region": "Markaziy Osiyo",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "5 kishilik guruh uchun bir kishi boshi narxi. 3 kishi uchun: $1840. Bir kishilik qo'shimcha to'lov: $90 - $120.",
           "duration": "14 kun / 13 tun",
@@ -2511,7 +2542,13 @@
           "short": "Toshkent, Buxoro, Nurota, Samarqand va Tojikistonning 7 ko'li bo'ylab 11 kun / 10 tunlik sayohat.",
           "destination": "Toshkent, Buxoro, Nurota, Samarqand, 7 ko'l (Tojikiston)",
           "region": "O'zbekiston va Tojikiston",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "Narxlar 2026 yil uchun amal qiladi. 2-20 kishiga mo'ljallangan; katta guruhlar uchun chegirmalar mavjud.",
           "duration": "11 kun / 10 tun",
@@ -2600,7 +2637,12 @@
           "short": "Orol dengizi va Nukusdan boshlab Xiva, Buxoro, Samarqand va Toshkent kabi afsonaviy Ipak yo'li shaharlari bo'ylab 10 kunlik ekspeditsiya.",
           "destination": "Nukus, Orol dengizi, Xiva, Buxoro, Samarqand, Toshkent",
           "region": "O'zbekiston (Qoraqalpog'iston)",
-          "images": [],
+          "images": [
+            "/images/road_tour_1.jpg",
+            "/images/road_tour_2.jpg",
+            "/images/road_tour_3.jpg",
+            "/images/road_tour_4.jpg"
+          ],
           "price": null,
           "priceNote": "Narxlar 2026 yil uchun amal qiladi. 2-20 kishiga mo'ljallangan; guruh kattalashsa chegirmalar mavjud.",
           "duration": "10 kun / 9 tun",
@@ -3644,7 +3686,12 @@
           "short": "8-дневное путешествие по Туркменистану: газовый кратер Дарваза, мраморный Ашхабад, каньоны Янгикала и древние руины Мерва.",
           "destination": "Дашогуз, Куняургенч, Дарваза, Ашхабад, Ков-Ата, Нохур, Небитдаг (Туркменбаши), Янгикала, Мары",
           "region": "Туркменистан",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Цена на человека для группы 16+1 в отелях 4*. Одноместное размещение (отель 3*): доплата 30$.",
           "duration": "8 дней / 7 ночей",
@@ -3718,7 +3765,12 @@
           "short": "Комплексное 14-дневное путешествие в сердце Шелкового пути: от голубых куполов Узбекистана до загадочных пейзажей Туркменистана.",
           "destination": "Ташкент, Самарканд, Бухара, Мары, Мерв, Ашхабад, Дарваза, Хива, Нукус, Аральское море",
           "region": "Центральная Азия",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "Цена на человека для группы из 5 человек. Для 3 человек: $1840. Доплата за одноместное размещение: $90 - $120.",
           "duration": "14 дней / 13 ночей",
@@ -3824,7 +3876,12 @@
           "short": "Уникальная экспедиция на 10 дней: от Аральского моря и Нукуса через легендарные города Шелкового пути: Хиву, Бухару, Самарканд и Ташкент.",
           "destination": "Нукус, Аральское море, Хива, Бухара, Самарканд, Ташкент",
           "region": "Узбекистан (Каракалпакстан)",
-          "images": [],
+          "images": [
+            "/images/road_tour_1.jpg",
+            "/images/road_tour_2.jpg",
+            "/images/road_tour_3.jpg",
+            "/images/road_tour_4.jpg"
+          ],
           "price": null,
           "priceNote": "Цены действительны на 2026 год. Расчет на 2-20 человек; скидки для больших групп по запросу.",
           "duration": "10 дней / 9 ночей",
@@ -4788,7 +4845,12 @@
           "short": "Un viaje de 8 días por Turkmenistán explorando el cráter de Darvaza, la ciudad de mármol de Asjabad, los cañones de Yangykala y las ruinas de Merv.",
           "destination": "Dashoguz, Kunyaurgench, Darvaza, Asjabad, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
           "region": "Turkmenistán",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Precio por persona para 16+1 pax en hoteles de 4*. Suplemento individual (hotel de 3*): 30$.",
           "duration": "8 días / 7 noches",
@@ -4862,7 +4924,12 @@
           "short": "Un viaje completo de 14 días por el corazón de la Ruta de la Seda, cubriendo las cúpulas azules de Uzbekistán y los paisajes misteriosos de Turkmenistán.",
           "destination": "Taskent, Samarcanda, Bujará, Mary, Merv, Asjabad, Darvaza, Jiva, Nukus, Mar de Aral",
           "region": "Asia Central",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "Precio por persona basado en 5 personas. Para 3 personas: $1840. Suplemento individual: $90 - $120.",
           "duration": "14 días / 13 noches",
@@ -4968,7 +5035,13 @@
           "short": "Viaje de 11 días / 10 noches por Taskent, Bujará, Nurata, Samarcanda y los 7 lagos de Tayikistán.",
           "destination": "Taskent, Bujará, Nurata, Samarcanda, 7 Lagos (Tayikistán)",
           "region": "Uzbekistán y Tayikistán",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "Precios válidos para 2026. Basado en 2-20 personas; precios reducidos para grupos más grandes bajo petición.",
           "duration": "11 días / 10 noches",
@@ -6115,7 +6188,12 @@
           "short": "Un voyage de 8 jours à travers le Turkménistan, incluant le cratère de Darvaza, la ville de marbre d'Achgabat, les canyons de Yangykala et les ruines de Merv.",
           "destination": "Dashoguz, Kounia-Ourguentch, Darvaza, Achgabat, Kov-Ata, Nokhur, Nebitdag (Türkmenbaşy), Yangykala, Mary",
           "region": "Turkménistan",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Prix par personne pour 16+1 pax en hôtels 4*. Supplément single (hôtel 3*) : 30$.",
           "duration": "8 jours / 7 nuits",
@@ -6189,7 +6267,12 @@
           "short": "Un voyage complet de 14 jours au cœur de la Route de la Soie, des coupoles bleues d'Ouzbékistan aux paysages mystérieux du Turkménistan.",
           "destination": "Tachkent, Samarcande, Boukhara, Mary, Merv, Achgabat, Darvaza, Khiva, Noukous, Mer d'Aral",
           "region": "Asie Centrale",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "Prix par personne basé sur 5 personnes. Pour 3 personnes : 1840$. Supplément single : 90$ - 120$.",
           "duration": "14 jours / 13 nuits",
@@ -6295,7 +6378,13 @@
           "short": "Voyage de 11 jours / 10 nuits à travers Tachkent, Boukhara, Nourata, Samarcande et les 7 lacs du Tadjikistan.",
           "destination": "Tachkent, Boukhara, Nourata, Samarcande, 7 Lacs (Tadjikistan)",
           "region": "Ouzbékistan et Tadjikistan",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "Prix valables pour 2026. Basé sur 2 à 20 personnes ; tarifs réduits pour les grands groupes sur demande.",
           "duration": "11 jours / 10 nuits",
@@ -6384,7 +6473,12 @@
           "short": "Une expédition unique de 10 jours : de la mer d'Aral et Noukous à travers les cités légendaires de la Route de la Soie : Khiva, Boukhara, Samarcande et Tachkent.",
           "destination": "Noukous, Mer d'Aral, Khiva, Boukhara, Samarcande, Tachkent",
           "region": "Ouzbékistan (Karakalpakstan)",
-          "images": [],
+          "images": [
+            "/images/road_tour_1.jpg",
+            "/images/road_tour_2.jpg",
+            "/images/road_tour_3.jpg",
+            "/images/road_tour_4.jpg"
+          ],
           "price": null,
           "priceNote": "Prix valables pour 2026. Basé sur 2-20 personnes.",
           "duration": "10 jours / 9 nuits",
@@ -7439,7 +7533,12 @@
           "short": "Un viaggio di 8 giorni attraverso il Turkmenistan esplorando il cratere di Darvaza, la città di marmo di Ashgabat, i canyon di Yangykala e le rovine di Merv.",
           "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
           "region": "Turkmenistan",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "Prezzo per persona per 16+1 pax in hotel 4*. Supplemento singola (hotel 3*): 30$.",
           "duration": "8 giorni / 7 notti",
@@ -7513,7 +7612,12 @@
           "short": "Un viaggio completo di 14 giorni nel cuore della Via della Seta, dalle cupole blu dell'Uzbekistan ai paesaggi misteriosi del Turkmenistan.",
           "destination": "Tashkent, Samarcanda, Bukhara, Mary, Merv, Ashgabat, Darvaza, Khiva, Nukus, Mar d'Aral",
           "region": "Asia Centrale",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "Prezzo per persona basato su 5 persone. Per 3 persone: $1840. Supplemento singola: $90 - $120.",
           "duration": "14 giorni / 13 notti",
@@ -7619,7 +7723,13 @@
           "short": "Viaggio di 11 giorni / 10 notti attraverso Tashkent, Bukhara, Nurata, Samarcanda e i 7 Laghi del Tagikistan.",
           "destination": "Tashkent, Bukhara, Nurata, Samarcanda, 7 Laghi (Tagikistan)",
           "region": "Uzbekistan e Tagikistan",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "Prezzi validi per il 2026. Basato su 2-20 persone; prezzi ridotti per gruppi numerosi su richiesta.",
           "duration": "11 giorni / 10 notti",
@@ -8760,7 +8870,12 @@
           "short": "为期8天的土库曼斯坦之旅，探索达瓦扎“地狱之门”、大理石之城阿什哈巴德、仰吉卡拉大峡谷及古梅尔夫遗址。",
           "destination": "达绍古兹, 库尼亚乌尔根奇, 达瓦扎, 阿什哈巴德, 科夫阿塔, 诺胡尔, 涅比特达格 (土库曼巴希), 仰吉卡拉, 马雷",
           "region": "土库曼斯坦",
-          "images": [],
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
           "price": 1010,
           "priceNote": "4星级酒店16+1人团体的单人价格。单房差（3星级酒店）：30美元。",
           "duration": "8天 / 7晚",
@@ -8834,7 +8949,12 @@
           "short": "为期14天的全方位丝绸之路核心之旅，涵盖乌兹别克斯坦的蓝色穹顶与土库曼斯坦的神秘风光。",
           "destination": "塔什干, 撒马尔罕, 布哈拉, 马雷, 梅尔夫, 阿什哈巴德, 达瓦扎, 希瓦, 努库斯, 咸海",
           "region": "中亚",
-          "images": [],
+          "images": [
+            "/images/uz_turk_tour_1.jpg",
+            "/images/uz_turk_tour_2.jpg",
+            "/images/uz_turk_tour_3.jpg",
+            "/images/uz_turk_tour_4.jpg"
+          ],
           "price": 1720,
           "priceNote": "基于5人团体的单人价格。3人团体：$1840。单人房差：$90 - $120。",
           "duration": "14天 / 13晚",
@@ -8940,7 +9060,13 @@
           "short": "为期11天/10晚的旅程，途经塔什干、布哈拉、努拉塔、撒马尔罕和塔吉克斯坦七湖。",
           "destination": "塔什干, 布哈拉, 努拉塔, 撒马尔罕, 七湖 (塔吉克斯坦)",
           "region": "乌兹别克斯坦和塔吉克斯坦",
-          "images": [],
+          "images": [
+            "/images/silk_tour_1.jpg",
+            "/images/silk_tour_2.jpg",
+            "/images/silk_tour_3.jpg",
+            "/images/silk_tour_4.jpg",
+            "/images/silk_tour_5.jpg"
+          ],
           "price": 1620,
           "priceNote": "价格适用于2026年。基于2-20人计算；大型团队可申请折扣。",
           "duration": "11 天 / 10 晚",
@@ -9029,7 +9155,12 @@
           "short": "为期10天的独特探险：从咸海和努库斯出发，穿越丝绸之路的传奇城市：希瓦、布哈拉、撒马尔罕和塔什干。",
           "destination": "努库斯, 咸海, 希瓦, 布哈拉, 撒马尔罕, 塔什干",
           "region": "乌兹别克斯坦（卡拉卡尔帕克斯坦）",
-          "images": [],
+          "images": [
+            "/images/road_tour_1.jpg",
+            "/images/road_tour_2.jpg",
+            "/images/road_tour_3.jpg",
+            "/images/road_tour_4.jpg"
+          ],
           "price": null,
           "priceNote": "价格适用于2026年。基于2-20人计算。",
           "duration": "10 天 / 9 晚",
