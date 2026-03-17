@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-400">AlphaTravel</h3>
+            <h3 className="font-bold text-lg mb-4 text-orange-400">Alpha Avia Travel</h3>
             <p className="text-sm text-muted-foreground mb-4">
               {t("footer.about")}
             </p>

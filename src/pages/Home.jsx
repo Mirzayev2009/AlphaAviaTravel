@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/lib/supabase";
 import SwiperHero from "@/components/SwiperHero";
 import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
@@ -417,6 +418,8 @@ const Home = () => {
   const [allDestinationsData, setAllDestinationsData] = useState(null);
   const [selectedHomeDestination, setSelectedHomeDestination] = useState(null);
   const [isDestinationsLoading, setIsDestinationsLoading] = useState(true);
+  const [opinions, setOpinions] = useState([]);
+  const [isOpinionsLoading, setIsOpinionsLoading] = useState(true);
   const currentLang = i18n.language || 'en';
 
   useEffect(() => {
@@ -452,8 +455,26 @@ const Home = () => {
       }
     };
     
+    const fetchOpinions = async () => {
+      try {
+        setIsOpinionsLoading(true);
+        const { data, error } = await supabase
+          .from('Alpha-opinion')
+          .select('*')
+          .order('created_at', { ascending: false });
+        if (error) throw error;
+        setOpinions(data || []);
+      } catch (error) {
+        console.error("Error fetching opinions:", error);
+        setOpinions([]);
+      } finally {
+        setIsOpinionsLoading(false);
+      }
+    };
+
     fetchTours();
     fetchDestinations();
+    fetchOpinions();
   }, []);
 
   const currentDestinations = useMemo(() => {
@@ -478,29 +499,26 @@ const Home = () => {
 
   const featuredTours = useMemo(() => currentTours.slice(0, 3), [currentTours]);
 
-  const testimonials = [
+  // Fallback testimonials in case Supabase fetch fails or returns empty
+  const fallbackTestimonials = [
     {
-      name: "Sarah Jenkins",
-      country: "USA",
-      text: "The trip to Samarkand was absolutely magical. The architecture is breathtaking and the local guides were incredibly knowledgeable.",
-      rating: 5,
-      avatar: "SJ"
+      tourist_name: "Sarah Jenkins",
+      tourist_country: "USA",
+      tourist_opinion: "The trip to Samarkand was absolutely magical. The architecture is breathtaking and the local guides were incredibly knowledgeable.",
     },
     {
-      name: "Marco Rossi",
-      country: "Italy",
-      text: "A flawless experience from start to finish. The food in Bukhara and the hospitality of the Uzbek people exceeded my expectations.",
-      rating: 5,
-      avatar: "MR"
+      tourist_name: "Marco Rossi",
+      tourist_country: "Italy",
+      tourist_opinion: "A flawless experience from start to finish. The food in Bukhara and the hospitality of the Uzbek people exceeded my expectations.",
     },
     {
-      name: "Elena Petrova",
-      country: "Russia",
-      text: "Our family trip to the Fergana Valley was unforgettable. Such rich culture and beautiful landscapes. Highly recommended!",
-      rating: 5,
-      avatar: "EP"
+      tourist_name: "Elena Petrova",
+      tourist_country: "Russia",
+      tourist_opinion: "Our family trip to the Fergana Valley was unforgettable. Such rich culture and beautiful landscapes. Highly recommended!",
     }
   ];
+
+  const testimonials = opinions.length > 0 ? opinions : fallbackTestimonials;
 
   return (
     <div>
@@ -834,21 +852,37 @@ const Home = () => {
               autoplay={{ delay: 3500, disableOnInteraction: false }}
               className="w-full max-w-sm"
             >
-              {testimonials.map((testimonial, idx) => (
-                <SwiperSlide key={idx} className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 flex flex-col justify-between" style={{ minHeight: "300px" }}>
+              {isOpinionsLoading ? (
+                <SwiperSlide className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 flex flex-col justify-between animate-pulse" style={{ minHeight: "300px" }}>
+                  <div>
+                    <div className="h-10 w-10 bg-gray-200 rounded mb-4"></div>
+                    <div className="h-4 bg-gray-200 rounded w-full mb-3"></div>
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-3"></div>
+                    <div className="h-4 bg-gray-200 rounded w-1/2 mb-6"></div>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
+                    <div>
+                      <div className="h-4 bg-gray-300 rounded w-24 mb-2"></div>
+                      <div className="h-3 bg-gray-200 rounded w-16"></div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              ) : testimonials.map((testimonial, idx) => (
+                <SwiperSlide key={testimonial.id || idx} className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100 flex flex-col justify-between" style={{ minHeight: "300px" }}>
                   <div>
                     <Quote className="h-10 w-10 text-orange-200 mb-4" />
-                    <p className="text-gray-700 italic text-lg leading-relaxed mb-6">"{testimonial.text}"</p>
+                    <p className="text-gray-700 italic text-lg leading-relaxed mb-6">"{testimonial.tourist_opinion}"</p>
                   </div>
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner">
-                      {testimonial.avatar}
+                      {testimonial.tourist_name?.split(' ').map(n => n[0]).join('').slice(0, 2)}
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.country}</p>
+                      <h4 className="font-bold text-gray-900">{testimonial.tourist_name}</h4>
+                      <p className="text-sm text-gray-500">{testimonial.tourist_country}</p>
                       <div className="flex gap-1 mt-1">
-                        {[...Array(testimonial.rating)].map((_, i) => (
+                        {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-4 h-4 fill-orange-400 text-orange-400" />
                         ))}
                       </div>
