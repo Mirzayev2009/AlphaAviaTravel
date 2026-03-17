@@ -5,6 +5,10 @@
       "destination": "/api/registrations"
     },
     {
+      "source": "/api/opinions",
+      "destination": "/api/opinions"
+    },
+    {
       "source": "/((?!data|api).*)",
       "destination": "/index.html"
     }

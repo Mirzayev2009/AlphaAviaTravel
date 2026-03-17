@@ -3,11 +3,6 @@
 
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_SERVICE_ROLE_KEY
-);
-
 export default async function handler(req, res) {
     // CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -23,6 +18,16 @@ export default async function handler(req, res) {
     }
 
     try {
+        const supabaseUrl = process.env.SUPABASE_URL;
+        const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+        if (!supabaseUrl || !supabaseKey) {
+            console.error("Missing env vars:", { supabaseUrl: !!supabaseUrl, supabaseKey: !!supabaseKey });
+            return res.status(500).json({ success: false, message: "Server configuration error" });
+        }
+
+        const supabase = createClient(supabaseUrl, supabaseKey);
+
         const { data, error } = await supabase
             .from("Alpha-opinion")
             .select("*")
