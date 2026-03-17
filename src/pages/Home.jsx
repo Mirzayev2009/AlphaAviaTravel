@@ -458,12 +458,33 @@ const Home = () => {
     const fetchOpinions = async () => {
       try {
         setIsOpinionsLoading(true);
-        const { data, error } = await supabase
-          .from('Alpha-opinion')
-          .select('*')
-          .order('created_at', { ascending: false });
-        if (error) throw error;
-        setOpinions(data || []);
+
+        // Try 1: Use /api/opinions (works on Vercel production)
+        try {
+          const response = await fetch("/api/opinions");
+          if (response.ok) {
+            const data = await response.json();
+            setOpinions(data);
+            return;
+          }
+        } catch (e) {
+          // API not available (likely local dev), try Supabase directly
+        }
+
+        // Try 2: Use Supabase client directly (works in local dev with .env)
+        if (supabase) {
+          const { data, error } = await supabase
+            .from('Alpha-opinion')
+            .select('*')
+            .order('created_at', { ascending: false });
+          if (!error && data) {
+            setOpinions(data);
+            return;
+          }
+        }
+
+        // Both failed — fallback data will be used
+        setOpinions([]);
       } catch (error) {
         console.error("Error fetching opinions:", error);
         setOpinions([]);
