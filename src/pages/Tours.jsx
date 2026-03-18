@@ -136,6 +136,28 @@ const ToursPage = () => {
             </motion.button>
 
             <motion.button
+              onClick={() => setSelectedCategory("central_asia")}
+              className={`relative px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 ${selectedCategory === "central_asia"
+                ? "bg-gradient-to-r from-green-500 to-green-500 text-white shadow-2xl scale-105"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="flex items-center gap-3">
+                <Globe className="h-7 w-7" />
+                <div className="text-left">
+                  <div className="text-sm opacity-80">
+                    Find out
+                  </div>
+                  <div className="text-xl font-bold">
+                   Central Asia Tours
+                  </div>
+                </div>
+              </div>
+            </motion.button>
+
+            <motion.button
               onClick={() => setSelectedCategory("world")}
               className={`relative px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 ${selectedCategory === "world"
                 ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105"

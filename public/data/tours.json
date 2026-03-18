@@ -992,85 +992,6 @@
           ]
         },
         {
-          "id": "t_turkmenistan_8d_en",
-          "title": "Turkmenistan Grand Tour: Darvaza to Ancient Merv — 8 Days",
-          "short": "An 8-day journey through Turkmenistan exploring the Darvaza Gas Crater, the marble city of Ashgabat, Yangykala Canyons, and the ancient ruins of Merv.",
-          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
-          "region": "Turkmenistan",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Price per person for 16+1 pax in 4* hotels. Single supplement (3* hotel): 30$.",
-          "duration": "8 days / 7 nights",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Dashoguz — Kunyaurgench — Darvaza",
-              "activity": "Meet at the 'Shavat' border. Lunch in Dashoguz, followed by a visit to the 'Ancient Kunyaurgench' historical reserve. Drive to the Darvaza Gas Crater. Evening BBQ dinner and overnight in a traditional yurt camp."
-            },
-            {
-              "day": 2,
-              "title": "Darvaza — Ashgabat",
-              "activity": "Drive to Ashgabat. Visit the international equestrian complex to see Akhal-Teke horses, the Rukhy mosque in Kypchak, and Old Nisa, the ancient capital of the Parthian Empire."
-            },
-            {
-              "day": 3,
-              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
-              "activity": "Visit the Kov-Ata underground lake and the mountain village of Nokhur. Drive to Turkmenbashy (Nebitdag) and check in at the hotel for the night."
-            },
-            {
-              "day": 4,
-              "title": "Nebitdag — Yangykala — Nebitdag",
-              "activity": "Explore the stunning Yangykala Canyons, known as 'fire fortresses' for their colorful sheer cliffs. Return to Turkmenbashy."
-            },
-            {
-              "day": 5,
-              "title": "Nebitdag — Ashgabat",
-              "activity": "Drive back to Ashgabat. Afternoon city tour including the Alem Ferris Wheel, Wedding Palace, and free time for shopping at Berkarar Trade Centre."
-            },
-            {
-              "day": 6,
-              "title": "Ashgabat — Mary",
-              "activity": "Drive to Mary. Excursion to Ancient Merv (UNESCO site) to see the mausoleums of Sultan Sanjar and Muhammed ibn-Zeyd. Experience Turkmen culture at the 'Ancient Turkmen Hearth' tourist base."
-            },
-            {
-              "day": 7,
-              "title": "Mary — Ashgabat",
-              "activity": "Return to Ashgabat. Visit the National Museum of Turkmen Carpet, the Arch of Neutrality, and the Independence Monument."
-            },
-            {
-              "day": 8,
-              "title": "Ashgabat — Departure",
-              "activity": "Visit the Gulistan Bazaar (Russian bazaar) for souvenir shopping. Transfer to Ashgabat International Airport for departure."
-            }
-          ],
-          "highlights": [
-            "Darvaza Gas Crater",
-            "Ancient Kunyaurgench",
-            "Ashgabat White Marble City",
-            "Old Nisa",
-            "Kov-Ata Underground Lake",
-            "Yangykala Canyons",
-            "Ancient Merv (UNESCO)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 pax",
-          "notes": "Includes: 4* hotels (Sport, Mary/Margush, Nebitchi), transport, meals, 1L water daily, English-speaking guide, Letter of Invitation (visa support) + visa registration. Excludes: Airport entry fees (Visa ~$50-100, Migration $14, COVID test $35), insurance, tips, international flights.",
-          "extras": []
-        },
-        {
           "id": "t_grand_silk_road_14d_en",
           "title": "Grand Silk Road Adventure: Uzbekistan & Turkmenistan — 14 Days",
           "short": "A comprehensive 14-day journey through the heart of the Silk Road, covering the blue domes of Uzbekistan and the mysterious landscapes of Turkmenistan.",
@@ -2347,85 +2268,6 @@
           ]
         },
         {
-          "id": "t_turkmenistan_8d_uz",
-          "title": "Turkmaniston bo'ylab katta sayohat: Darvozadan Qadimiy Marvgacha — 8 Kun",
-          "short": "Turkmaniston bo'ylab 8 kunlik sayohat: Darvoza gaz krateri, oq marmar shahar Ashxobod, Yangiqal'a kanyonlari hamda Ko'hna Urganch va Marv xarobalari.",
-          "destination": "Toshhovuz, Ko'hna Urganch, Darvoza, Ashxobod, Kov-Ata, Nuhur, Nebitdog' (Turkmanboshi), Yangiqal'a, Mari",
-          "region": "Turkmaniston",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Kishi boshiga narx (16+1 kishi, 4* mehmonxonalar uchun). Yakkalik joylashuv (3* mehmonxona): qo'shimcha 30$.",
-          "duration": "8 kun / 7 tun",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Toshhovuz — Ko'hna Urganch — Darvoza",
-              "activity": "'Shovot' chegarasida kutib olish. Toshhovuzda tushlik, so'ng 'Ko'hna Urganch' tarixiy qo'riqxonasiga tashrif. Darvoza gaz krateriga yo'l. Kechqurun barbekyu va an'anaviy o'tovda tunash."
-            },
-            {
-              "day": 2,
-              "title": "Darvoza — Ashxobod",
-              "activity": "Ashxobodga yo'l. Axaltekin otlarini ko'rish uchun xalqaro ot majmuasiga, Qipchoqdagi Ruxiy masjidiga va Parfiya imperiyasining poytaxti Qadimiy Nisoga tashrif."
-            },
-            {
-              "day": 3,
-              "title": "Ashxobod — Kov-Ata — Nuhur — Nebitdog'",
-              "activity": "Kov-Ata yerosti ko'li va Nuhur tog' qishlog'iga tashrif. Turkmanboshiga (Nebitdog') yo'l va tunash uchun mehmonxonaga joylashish."
-            },
-            {
-              "day": 4,
-              "title": "Nebitdog' — Yangiqal'a — Nebitdog'",
-              "activity": "Rang-barang qoyalari bilan 'olovli qal'alar' deb ataladigan Yangiqal'a kanyonlarini o'rganish. Turkmanboshiga qaytish."
-            },
-            {
-              "day": 5,
-              "title": "Nebitdog' — Ashxobod",
-              "activity": "Ashxobodga qaytish. Tushdan keyin shahar bo'ylab sayohat: Alem charxpalagi, To'ylar saroyi va 'Berkarar' savdo markazida xaridlar uchun bo'sh vaqt."
-            },
-            {
-              "day": 6,
-              "title": "Ashxobod — Mari",
-              "activity": "Mariga yo'l. Qadimiy Marvga (YUNESKO) Sulton Sanjar va Muhammad ibn-Zayd maqbaralarini ko'rish uchun sayohat. 'Qadimiy Turkman o'chog'i' sayyohlik bazasida turkman madaniyati bilan tanishish."
-            },
-            {
-              "day": 7,
-              "title": "Mari — Ashxobod",
-              "activity": "Ashxobodga qaytish. Turkman gilamlari milliy muzeyi, Bitaraplik archasi va Mustaqillik yodgorligiga tashrif."
-            },
-            {
-              "day": 8,
-              "title": "Ashxobod — Jo'nab ketish",
-              "activity": "Suvenirlar xarid qilish uchun Guliston (Rus) bozoriga tashrif. Parvoz jadvaliga ko'ra Ashxobod xalqaro aeroportiga kuzatish."
-            }
-          ],
-          "highlights": [
-            "Darvoza gaz krateri",
-            "Ko'hna Urganch",
-            "Ashxobod oq marmar shahri",
-            "Qadimiy Niso",
-            "Kov-Ata yerosti ko'li",
-            "Yangiqal'a kanyonlari",
-            "Qadimiy Marv (YUNESKO)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 kishi",
-          "notes": "O'z ichiga oladi: 4* mehmonxonalar, transport, ovqatlanish, kunlik 1L suv, ingliz tilida so'zlashuvchi gid, Taklifnoma (viza yordami) + viza ro'yxati. O'z ichiga almaydi: Aeroport to'lovlari (Viza ~$50-100, Migratsiya $14, COVID test $35), sug'urta, choychaqa, xalqaro parvozlar.",
-          "extras": []
-        },
-        {
           "id": "t_grand_silk_road_14d_uz",
           "title": "Buyuk Ipak Yo'li Sarguzashti: O'zbekiston va Turkmaniston — 14 Kun",
           "short": "Ipak yo'lining markaziga 14 kunlik keng qamrovli sayohat: O'zbekistonning moviy gumbazlari va Turkmanistonning sirli manzaralari.",
@@ -3681,85 +3523,6 @@
           ]
         },
         {
-          "id": "t_turkmenistan_8d_ru",
-          "title": "Большой тур по Туркменистану: От Дарвазы до Древнего Мерва — 8 Дней",
-          "short": "8-дневное путешествие по Туркменистану: газовый кратер Дарваза, мраморный Ашхабад, каньоны Янгикала и древние руины Мерва.",
-          "destination": "Дашогуз, Куняургенч, Дарваза, Ашхабад, Ков-Ата, Нохур, Небитдаг (Туркменбаши), Янгикала, Мары",
-          "region": "Туркменистан",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Цена на человека для группы 16+1 в отелях 4*. Одноместное размещение (отель 3*): доплата 30$.",
-          "duration": "8 дней / 7 ночей",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Дашогуз — Куняургенч — Дарваза",
-              "activity": "Встреча на границе 'Шават'. Обед в Дашогузе, посещение исторического заповедника 'Древний Куняургенч'. Переезд к газовому кратеру Дарваза. Ужин барбекю и ночевка в юрточном лагере."
-            },
-            {
-              "day": 2,
-              "title": "Дарваза — Ашхабад",
-              "activity": "Переезд в Ашхабад. Посещение конноспортивного комплекса (ахалтекинские лошади), мечети Рухы в Кипчаке и Старой Нисы — столицы Парфянской империи."
-            },
-            {
-              "day": 3,
-              "title": "Ашхабад — Ков-Ата — Нохур — Небитдаг",
-              "activity": "Посещение подземного озера Ков-Ата и горного села Нохур. Переезд в Туркменбаши (Небитдаг), размещение в отеле."
-            },
-            {
-              "day": 4,
-              "title": "Небитдаг — Янгикала — Небитдаг",
-              "activity": "Экскурсия к потрясающим каньонам Янгикала ('огненные крепости'). Возвращение в Туркменбаши."
-            },
-            {
-              "day": 5,
-              "title": "Небитдаг — Ашхабад",
-              "activity": "Возвращение в Ашхабад. Дневная экскурсия: колесо обозрения 'Алем', Дворец бракосочетаний, шопинг в ТЦ 'Беркарар'."
-            },
-            {
-              "day": 6,
-              "title": "Ашхабад — Мары",
-              "activity": "Переезд в Мары. Экскурсия в Древний Мерв (ЮНЕСКО), мавзолеи Султана Санджара и Мухаммеда ибн Зейда. Посещение туристической базы 'Древний туркменский очаг'."
-            },
-            {
-              "day": 7,
-              "title": "Мары — Ашхабад",
-              "activity": "Возвращение в Ашхабад. Посещение Национального музея туркменского ковра, Арки Нейтралитета и Монумента Независимости."
-            },
-            {
-              "day": 8,
-              "title": "Ашхабад — Вылет",
-              "activity": "Посещение Гулистанского (Русского) базара. Трансфер в международный аэропорт Ашхабада. Окончание тура."
-            }
-          ],
-          "highlights": [
-            "Газовый кратер Дарваза",
-            "Древний Куняургенч",
-            "Мраморный Ашхабад",
-            "Старая Ниса",
-            "Подземное озеро Ков-Ата",
-            "Каньоны Янгикала",
-            "Древний Мерв (ЮНЕСКО)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 чел",
-          "notes": "Включено: отели 4*, транспорт, питание, 1л воды/день, англоговорящий гид, приглашение (визовая поддержка) + регистрация. Не включено: сборы в аэропорту (виза ~$50-100, миграция $14, ПЦР-тест $35), страховка, чаевые, международные рейсы.",
-          "extras": []
-        },
-        {
           "id": "t_grand_silk_road_14d_ru",
           "title": "Большое приключение по Шелковому пути: Узбекистан и Туркменистан — 14 Дней",
           "short": "Комплексное 14-дневное путешествие в сердце Шелкового пути: от голубых куполов Узбекистана до загадочных пейзажей Туркменистана.",
@@ -4838,85 +4601,6 @@
             "Almuerzo y Cena",
             "Tasas de cámara"
           ]
-        },
-        {
-          "id": "t_turkmenistan_8d_es",
-          "title": "Gran Tour de Turkmenistán: De Darvaza a la Antigua Merv — 8 Días",
-          "short": "Un viaje de 8 días por Turkmenistán explorando el cráter de Darvaza, la ciudad de mármol de Asjabad, los cañones de Yangykala y las ruinas de Merv.",
-          "destination": "Dashoguz, Kunyaurgench, Darvaza, Asjabad, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
-          "region": "Turkmenistán",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Precio por persona para 16+1 pax en hoteles de 4*. Suplemento individual (hotel de 3*): 30$.",
-          "duration": "8 días / 7 noches",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Dashoguz — Kunyaurgench — Darvaza",
-              "activity": "Encuentro en la frontera 'Shavat'. Almuerzo en Dashoguz y visita a la reserva histórica de la Antigua Kunyaurgench. Traslado al cráter de gas de Darvaza. Cena de barbacoa y noche en un campamento de yurtas."
-            },
-            {
-              "day": 2,
-              "title": "Darvaza — Asjabad",
-              "activity": "Traslado a Asjabad. Visita al complejo ecuestre internacional (caballos Akhal-Teke), la mezquita de Rukhy en Kypchak y la Antigua Nisa (Imperio Parto)."
-            },
-            {
-              "day": 3,
-              "title": "Asjabad — Kov-Ata — Nokhur — Nebitdag",
-              "activity": "Visita al lago subterráneo de Kov-Ata y al pueblo montañoso de Nokhur. Viaje a Turkmenbashy (Nebitdag) y alojamiento en el hotel."
-            },
-            {
-              "day": 4,
-              "title": "Nebitdag — Yangykala — Nebitdag",
-              "activity": "Exploración de los impresionantes cañones de Yangykala, conocidos como 'fortalezas de fuego'. Regreso a Turkmenbashy."
-            },
-            {
-              "day": 5,
-              "title": "Nebitdag — Asjabad",
-              "activity": "Regreso a Asjabad. Recorrido por la ciudad: noria de Alem, Palacio de Bodas y tiempo libre en el centro comercial Berkarar."
-            },
-            {
-              "day": 6,
-              "title": "Asjabad — Mary",
-              "activity": "Traslado a Mary. Excursión a la Antigua Merv (UNESCO) para ver el mausoleo del Sultán Sanjar. Visita a la base turística 'Antiguo Hogar Turcomano'."
-            },
-            {
-              "day": 7,
-              "title": "Mary — Asjabad",
-              "activity": "Regreso a Asjabad. Visita al Museo Nacional de la Alfombra Turcomana, el Arco de la Neutralidad y el Monumento a la Independencia."
-            },
-            {
-              "day": 8,
-              "title": "Asjabad — Salida",
-              "activity": "Visita al Bazar Gulistán (bazar ruso) para comprar recuerdos. Traslado al aeropuerto internacional de Asjabad para la salida."
-            }
-          ],
-          "highlights": [
-            "Cráter de gas de Darvaza",
-            "Antigua Kunyaurgench",
-            "Asjabad (Ciudad de Mármol Blanco)",
-            "Antigua Nisa",
-            "Lago subterráneo Kov-Ata",
-            "Cañones de Yangykala",
-            "Antigua Merv (UNESCO)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 pax",
-          "notes": "Incluye: Hoteles de 4*, transporte, comidas, 1L de agua diaria, guía en inglés, Carta de Invitación (apoyo de visado) + registro. No incluye: Tasas de aeropuerto (Visado ~$50-100, Migración $14, Prueba COVID $35), seguro, propinas, vuelos internacionales.",
-          "extras": []
         },
         {
           "id": "t_grand_silk_road_14d_es",
@@ -6181,85 +5865,6 @@
             "Déjeuners et Dîners",
             "Droits photo"
           ]
-        },
-        {
-          "id": "t_turkmenistan_8d_fr",
-          "title": "Grand Tour du Turkménistan : De Darvaza à l'Ancienne Merv — 8 Jours",
-          "short": "Un voyage de 8 jours à travers le Turkménistan, incluant le cratère de Darvaza, la ville de marbre d'Achgabat, les canyons de Yangykala et les ruines de Merv.",
-          "destination": "Dashoguz, Kounia-Ourguentch, Darvaza, Achgabat, Kov-Ata, Nokhur, Nebitdag (Türkmenbaşy), Yangykala, Mary",
-          "region": "Turkménistan",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Prix par personne pour 16+1 pax en hôtels 4*. Supplément single (hôtel 3*) : 30$.",
-          "duration": "8 jours / 7 nuits",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Dashoguz — Kounia-Ourguentch — Darvaza",
-              "activity": "Accueil à la frontière 'Shavat'. Déjeuner à Dashoguz et visite de la réserve historique de Kounia-Ourguentch. Route vers le cratère de gaz de Darvaza. Dîner barbecue et nuit dans un camp de yourtes."
-            },
-            {
-              "day": 2,
-              "title": "Darvaza — Achgabat",
-              "activity": "Route pour Achgabat. Visite du complexe équestre (chevaux Akhal-Téké), de la mosquée Rukhy à Kypchak et de l'Ancienne Nisa, capitale de l'Empire parthe."
-            },
-            {
-              "day": 3,
-              "title": "Achgabat — Kov-Ata — Nokhur — Nebitdag",
-              "activity": "Visite du lac souterrain de Kov-Ata et du village de montagne de Nokhur. Route vers Türkmenbaşy (Nebitdag) pour la nuit."
-            },
-            {
-              "day": 4,
-              "title": "Nebitdag — Yangykala — Nebitdag",
-              "activity": "Exploration des impressionnants canyons de Yangykala, aux falaises colorées. Retour à Türkmenbaşy."
-            },
-            {
-              "day": 5,
-              "title": "Nebitdag — Achgabat",
-              "activity": "Retour à Achgabat. Tour de ville : grande roue Alem, Palais des Mariages et temps libre au centre commercial Berkarar."
-            },
-            {
-              "day": 6,
-              "title": "Achgabat — Mary",
-              "activity": "Route pour Mary. Excursion à l'Ancienne Merv (UNESCO) pour voir le mausolée du Sultan Sanjar. Découverte de la culture locale à la base touristique 'Ancien Foyer Turkmène'."
-            },
-            {
-              "day": 7,
-              "title": "Mary — Achgabat",
-              "activity": "Retour à Achgabat. Visite du Musée national du Tapis, de l'Arche de la Neutralité et du Monument de l'Indépendance."
-            },
-            {
-              "day": 8,
-              "title": "Achgabat — Départ",
-              "activity": "Visite du bazar Gulistan (bazar russe). Transfert à l'aéroport international d'Achgabat pour le départ."
-            }
-          ],
-          "highlights": [
-            "Cratère de Darvaza",
-            "Ancienne Kounia-Ourguentch",
-            "Achgabat (ville de marbre)",
-            "Ancienne Nisa",
-            "Lac souterrain de Kov-Ata",
-            "Canyons de Yangykala",
-            "Ancienne Merv (UNESCO)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 pax",
-          "notes": "Inclus : Hôtels 4*, transport, repas, 1L d'eau/jour, guide anglophone, Lettre d'Invitation (support visa) + enregistrement. Non inclus : Frais d'aéroport (Visa ~$50-100, Migration $14, Test COVID $35), assurance, pourboires, vols internationaux.",
-          "extras": []
         },
         {
           "id": "t_grand_silk_road_14d_fr",
@@ -7528,85 +7133,6 @@
           ]
         },
         {
-          "id": "t_turkmenistan_8d_it",
-          "title": "Gran Tour del Turkmenistan: Da Darvaza all'Antica Merv — 8 Giorni",
-          "short": "Un viaggio di 8 giorni attraverso il Turkmenistan esplorando il cratere di Darvaza, la città di marmo di Ashgabat, i canyon di Yangykala e le rovine di Merv.",
-          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
-          "region": "Turkmenistan",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "Prezzo per persona per 16+1 pax in hotel 4*. Supplemento singola (hotel 3*): 30$.",
-          "duration": "8 giorni / 7 notti",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "Dashoguz — Kunyaurgench — Darvaza",
-              "activity": "Incontro al confine 'Shavat'. Pranzo a Dashoguz e visita alla riserva storica dell'Antica Kunyaurgench. Viaggio verso il cratere di gas di Darvaza. Cena barbecue e pernottamento in un campo di yurte."
-            },
-            {
-              "day": 2,
-              "title": "Darvaza — Ashgabat",
-              "activity": "Trasferimento ad Ashgabat. Visita al complesso equestre (cavalli Akhal-Teke), alla moschea di Rukhy a Kypchak e all'Antica Nisa, capitale dell'Impero Partico."
-            },
-            {
-              "day": 3,
-              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
-              "activity": "Visita al lago sotterraneo di Kov-Ata e al villaggio di montagna di Nokhur. Trasferimento a Turkmenbashy (Nebitdag) e sistemazione in hotel."
-            },
-            {
-              "day": 4,
-              "title": "Nebitdag — Yangykala — Nebitdag",
-              "activity": "Esplorazione dei favolosi canyon di Yangykala, noti come 'fortezze di fuoco'. Ritorno a Turkmenbashy."
-            },
-            {
-              "day": 5,
-              "title": "Nebitdag — Ashgabat",
-              "activity": "Ritorno ad Ashgabat. Tour pomeridiano della città: ruota panoramica Alem, Palazzo dei Matrimoni e tempo libero per lo shopping al centro commerciale Berkarar."
-            },
-            {
-              "day": 6,
-              "title": "Ashgabat — Mary",
-              "activity": "Trasferimento a Mary. Escursione all'Antica Merv (UNESCO) e al mausoleo del Sultano Sanjar. Scoperta della cultura locale presso la base turistica 'Antico Focolare Turcomanno'."
-            },
-            {
-              "day": 7,
-              "title": "Mary — Ashgabat",
-              "activity": "Ritorno ad Ashgabat. Visita al Museo Nazionale del Tappeto, all'Arco della Neutralità e al Monumento all'Indipendenza."
-            },
-            {
-              "day": 8,
-              "title": "Ashgabat — Partenza",
-              "activity": "Visita al bazar Gulistan (bazar russo). Trasferimento all'aeroporto internazionale di Ashgabat per la partenza."
-            }
-          ],
-          "highlights": [
-            "Cratere di Darvaza",
-            "Antica Kunyaurgench",
-            "Ashgabat (Città di Marmo Bianco)",
-            "Antica Nisa",
-            "Lago sotterraneo di Kov-Ata",
-            "Canyon di Yangykala",
-            "Antica Merv (UNESCO)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1 pax",
-          "notes": "Include: Hotel 4*, trasporti, pasti, 1L d'acqua/giorno, guida in inglese, Lettera d'Invito (supporto visto) + registrazione. Esclude: Tasse aeroportuali (Visto ~$50-100, Migrazione $14, Test COVID $35), assicurazione, mance, voli internazionali.",
-          "extras": []
-        },
-        {
           "id": "t_grand_silk_road_14d_it",
           "title": "Grande Avventura sulla Via della Seta: Uzbekistan e Turkmenistan — 14 Giorni",
           "short": "Un viaggio completo di 14 giorni nel cuore della Via della Seta, dalle cupole blu dell'Uzbekistan ai paesaggi misteriosi del Turkmenistan.",
@@ -8865,85 +8391,6 @@
           ]
         },
         {
-          "id": "t_turkmenistan_8d_zh",
-          "title": "土库曼斯坦大游：从达瓦扎到古梅尔夫 — 8天",
-          "short": "为期8天的土库曼斯坦之旅，探索达瓦扎“地狱之门”、大理石之城阿什哈巴德、仰吉卡拉大峡谷及古梅尔夫遗址。",
-          "destination": "达绍古兹, 库尼亚乌尔根奇, 达瓦扎, 阿什哈巴德, 科夫阿塔, 诺胡尔, 涅比特达格 (土库曼巴希), 仰吉卡拉, 马雷",
-          "region": "土库曼斯坦",
-          "images": [
-            "/images/turkmenistan_tour1.jpg",
-            "/images/turkmenistan_tour2.jpg",
-            "/images/turkmenistan_tour3.jpg",
-            "/images/turkmenistan_tour4.jpg"
-          ],
-          "price": 1010,
-          "priceNote": "4星级酒店16+1人团体的单人价格。单房差（3星级酒店）：30美元。",
-          "duration": "8天 / 7晚",
-          "rating": null,
-          "category": "turkmenistan",
-          "availableDates": [],
-          "itinerary": [
-            {
-              "day": 1,
-              "title": "达绍古兹 — 库尼亚乌尔根奇 — 达瓦扎",
-              "activity": "在'Shavat'边境接站。在达绍古兹享用午餐，随后参观古库尼亚乌尔根奇历史保护区。驱车前往达瓦扎天然气坑。晚上享用烧烤晚餐并夜宿传统蒙古包。"
-            },
-            {
-              "day": 2,
-              "title": "达瓦扎 — 阿什哈巴德",
-              "activity": "驱车前往阿什哈巴德。参观国际马术中心（阿哈尔捷金马/汗血宝马）、基普恰克清真寺，以及帕提亚帝国故都——老尼萨。"
-            },
-            {
-              "day": 3,
-              "title": "阿什哈巴德 — 科夫阿塔 — 诺胡尔 — 涅比特达格",
-              "activity": "参观科夫阿塔地下湖和诺胡尔高山村庄。驱车前往土库曼巴希（涅比特达格）入住酒店。"
-            },
-            {
-              "day": 4,
-              "title": "涅比特达格 — 仰吉卡拉 — 涅比特达格",
-              "activity": "探索被誉为“火焰堡垒”的壮丽仰吉卡拉大峡谷。返回土库曼巴希。"
-            },
-            {
-              "day": 5,
-              "title": "涅比特达格 — 阿什哈巴德",
-              "activity": "返回阿什哈巴德。下午市区游览：阿莱姆摩天轮、婚礼宫，并在Berkarar购物中心自由活动。"
-            },
-            {
-              "day": 6,
-              "title": "阿什哈巴德 — 马雷",
-              "activity": "驱车前往马雷。游览古梅尔夫（联合国教科文组织世界遗产），参观苏丹桑贾尔陵墓。在“古土库曼灶台”旅游基地体验土库曼文化。"
-            },
-            {
-              "day": 7,
-              "title": "马雷 — 阿什哈巴德",
-              "activity": "返回阿什哈巴德。参观土库曼地毯国家博物馆、中立门以及独立纪念碑。"
-            },
-            {
-              "day": 8,
-              "title": "阿什哈巴德 — 离境",
-              "activity": "游览古丽斯坦集市（俄罗斯巴扎）购买纪念品。送往阿什哈巴德国际机场，结束行程。"
-            }
-          ],
-          "highlights": [
-            "达瓦扎天然气坑",
-            "古库尼亚乌尔根奇",
-            "阿什哈巴德（白色大理石之城）",
-            "老尼萨遗址",
-            "科夫阿塔地下湖",
-            "仰吉卡拉大峡谷",
-            "古梅尔夫 (联合国教科文组织世界遗产)"
-          ],
-          "organizer": {
-            "name": "",
-            "phone": "",
-            "email": "",
-            "website": ""
-          },
-          "participants": "16+1人",
-          "notes": "费用包含：4星级酒店住宿、交通、餐饮、每日1升水、英语导游、邀请函（签证支持）及签证注册。费用不含：机场相关费用（签证约$50-100、移民局费用$14、核酸检测$35）、保险、小费及国际航班。",
-          "extras": []
-        },
-        {
           "id": "t_grand_silk_road_14d_zh",
           "title": "丝绸之路大冒险：乌兹别克斯坦与土库曼斯坦 — 14天",
           "short": "为期14天的全方位丝绸之路核心之旅，涵盖乌兹别克斯坦的蓝色穹顶与土库曼斯坦的神秘风光。",
@@ -9221,10 +8668,583 @@
         }
       ]
     },
+    "central_asia": {
+      "en": [
+        {
+          "id": "t_turkmenistan_8d_en",
+          "title": "Turkmenistan Grand Tour: Darvaza to Ancient Merv — 8 Days",
+          "short": "An 8-day journey through Turkmenistan exploring the Darvaza Gas Crater, the marble city of Ashgabat, Yangykala Canyons, and the ancient ruins of Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistan",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Price per person for 16+1 pax in 4* hotels. Single supplement (3* hotel): 30$.",
+          "duration": "8 days / 7 nights",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Meet at the 'Shavat' border. Lunch in Dashoguz, followed by a visit to the 'Ancient Kunyaurgench' historical reserve. Drive to the Darvaza Gas Crater. Evening BBQ dinner and overnight in a traditional yurt camp."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Ashgabat",
+              "activity": "Drive to Ashgabat. Visit the international equestrian complex to see Akhal-Teke horses, the Rukhy mosque in Kypchak, and Old Nisa, the ancient capital of the Parthian Empire."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visit the Kov-Ata underground lake and the mountain village of Nokhur. Drive to Turkmenbashy (Nebitdag) and check in at the hotel for the night."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Explore the stunning Yangykala Canyons, known as 'fire fortresses' for their colorful sheer cliffs. Return to Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Ashgabat",
+              "activity": "Drive back to Ashgabat. Afternoon city tour including the Alem Ferris Wheel, Wedding Palace, and free time for shopping at Berkarar Trade Centre."
+            },
+            {
+              "day": 6,
+              "title": "Ashgabat — Mary",
+              "activity": "Drive to Mary. Excursion to Ancient Merv (UNESCO site) to see the mausoleums of Sultan Sanjar and Muhammed ibn-Zeyd. Experience Turkmen culture at the 'Ancient Turkmen Hearth' tourist base."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Ashgabat",
+              "activity": "Return to Ashgabat. Visit the National Museum of Turkmen Carpet, the Arch of Neutrality, and the Independence Monument."
+            },
+            {
+              "day": 8,
+              "title": "Ashgabat — Departure",
+              "activity": "Visit the Gulistan Bazaar (Russian bazaar) for souvenir shopping. Transfer to Ashgabat International Airport for departure."
+            }
+          ],
+          "highlights": [
+            "Darvaza Gas Crater",
+            "Ancient Kunyaurgench",
+            "Ashgabat White Marble City",
+            "Old Nisa",
+            "Kov-Ata Underground Lake",
+            "Yangykala Canyons",
+            "Ancient Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Includes: 4* hotels (Sport, Mary/Margush, Nebitchi), transport, meals, 1L water daily, English-speaking guide, Letter of Invitation (visa support) + visa registration. Excludes: Airport entry fees (Visa ~$50-100, Migration $14, COVID test $35), insurance, tips, international flights.",
+          "extras": []
+        }
+      ],
+      "uz": [
+        {
+          "id": "t_turkmenistan_8d_uz",
+          "title": "Turkmaniston bo'ylab katta sayohat: Darvozadan Qadimiy Marvgacha — 8 Kun",
+          "short": "Turkmaniston bo'ylab 8 kunlik sayohat: Darvoza gaz krateri, oq marmar shahar Ashxobod, Yangiqal'a kanyonlari hamda Ko'hna Urganch va Marv xarobalari.",
+          "destination": "Toshhovuz, Ko'hna Urganch, Darvoza, Ashxobod, Kov-Ata, Nuhur, Nebitdog' (Turkmanboshi), Yangiqal'a, Mari",
+          "region": "Turkmaniston",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Kishi boshiga narx (16+1 kishi, 4* mehmonxonalar uchun). Yakkalik joylashuv (3* mehmonxona): qo'shimcha 30$.",
+          "duration": "8 kun / 7 tun",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Toshhovuz — Ko'hna Urganch — Darvoza",
+              "activity": "'Shovot' chegarasida kutib olish. Toshhovuzda tushlik, so'ng 'Ko'hna Urganch' tarixiy qo'riqxonasiga tashrif. Darvoza gaz krateriga yo'l. Kechqurun barbekyu va an'anaviy o'tovda tunash."
+            },
+            {
+              "day": 2,
+              "title": "Darvoza — Ashxobod",
+              "activity": "Ashxobodga yo'l. Axaltekin otlarini ko'rish uchun xalqaro ot majmuasiga, Qipchoqdagi Ruxiy masjidiga va Parfiya imperiyasining poytaxti Qadimiy Nisoga tashrif."
+            },
+            {
+              "day": 3,
+              "title": "Ashxobod — Kov-Ata — Nuhur — Nebitdog'",
+              "activity": "Kov-Ata yerosti ko'li va Nuhur tog' qishlog'iga tashrif. Turkmanboshiga (Nebitdog') yo'l va tunash uchun mehmonxonaga joylashish."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdog' — Yangiqal'a — Nebitdog'",
+              "activity": "Rang-barang qoyalari bilan 'olovli qal'alar' deb ataladigan Yangiqal'a kanyonlarini o'rganish. Turkmanboshiga qaytish."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdog' — Ashxobod",
+              "activity": "Ashxobodga qaytish. Tushdan keyin shahar bo'ylab sayohat: Alem charxpalagi, To'ylar saroyi va 'Berkarar' savdo markazida xaridlar uchun bo'sh vaqt."
+            },
+            {
+              "day": 6,
+              "title": "Ashxobod — Mari",
+              "activity": "Mariga yo'l. Qadimiy Marvga (YUNESKO) Sulton Sanjar va Muhammad ibn-Zayd maqbaralarini ko'rish uchun sayohat. 'Qadimiy Turkman o'chog'i' sayyohlik bazasida turkman madaniyati bilan tanishish."
+            },
+            {
+              "day": 7,
+              "title": "Mari — Ashxobod",
+              "activity": "Ashxobodga qaytish. Turkman gilamlari milliy muzeyi, Bitaraplik archasi va Mustaqillik yodgorligiga tashrif."
+            },
+            {
+              "day": 8,
+              "title": "Ashxobod — Jo'nab ketish",
+              "activity": "Suvenirlar xarid qilish uchun Guliston (Rus) bozoriga tashrif. Parvoz jadvaliga ko'ra Ashxobod xalqaro aeroportiga kuzatish."
+            }
+          ],
+          "highlights": [
+            "Darvoza gaz krateri",
+            "Ko'hna Urganch",
+            "Ashxobod oq marmar shahri",
+            "Qadimiy Niso",
+            "Kov-Ata yerosti ko'li",
+            "Yangiqal'a kanyonlari",
+            "Qadimiy Marv (YUNESKO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 kishi",
+          "notes": "O'z ichiga oladi: 4* mehmonxonalar, transport, ovqatlanish, kunlik 1L suv, ingliz tilida so'zlashuvchi gid, Taklifnoma (viza yordami) + viza ro'yxati. O'z ichiga almaydi: Aeroport to'lovlari (Viza ~$50-100, Migratsiya $14, COVID test $35), sug'urta, choychaqa, xalqaro parvozlar.",
+          "extras": []
+        }
+      ],
+      "ru": [
+        {
+          "id": "t_turkmenistan_8d_ru",
+          "title": "Большой тур по Туркменистану: От Дарвазы до Древнего Мерва — 8 Дней",
+          "short": "8-дневное путешествие по Туркменистану: газовый кратер Дарваза, мраморный Ашхабад, каньоны Янгикала и древние руины Мерва.",
+          "destination": "Дашогуз, Куняургенч, Дарваза, Ашхабад, Ков-Ата, Нохур, Небитдаг (Туркменбаши), Янгикала, Мары",
+          "region": "Туркменистан",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Цена на человека для группы 16+1 в отелях 4*. Одноместное размещение (отель 3*): доплата 30$.",
+          "duration": "8 дней / 7 ночей",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Дашогуз — Куняургенч — Дарваза",
+              "activity": "Встреча на границе 'Шават'. Обед в Дашогузе, посещение исторического заповедника 'Древний Куняургенч'. Переезд к газовому кратеру Дарваза. Ужин барбекю и ночевка в юрточном лагере."
+            },
+            {
+              "day": 2,
+              "title": "Дарваза — Ашхабад",
+              "activity": "Переезд в Ашхабад. Посещение конноспортивного комплекса (ахалтекинские лошади), мечети Рухы в Кипчаке и Старой Нисы — столицы Парфянской империи."
+            },
+            {
+              "day": 3,
+              "title": "Ашхабад — Ков-Ата — Нохур — Небитдаг",
+              "activity": "Посещение подземного озера Ков-Ата и горного села Нохур. Переезд в Туркменбаши (Небитдаг), размещение в отеле."
+            },
+            {
+              "day": 4,
+              "title": "Небитдаг — Янгикала — Небитдаг",
+              "activity": "Экскурсия к потрясающим каньонам Янгикала ('огненные крепости'). Возвращение в Туркменбаши."
+            },
+            {
+              "day": 5,
+              "title": "Небитдаг — Ашхабад",
+              "activity": "Возвращение в Ашхабад. Дневная экскурсия: колесо обозрения 'Алем', Дворец бракосочетаний, шопинг в ТЦ 'Беркарар'."
+            },
+            {
+              "day": 6,
+              "title": "Ашхабад — Мары",
+              "activity": "Переезд в Мары. Экскурсия в Древний Мерв (ЮНЕСКО), мавзолеи Султана Санджара и Мухаммеда ибн Зейда. Посещение туристической базы 'Древний туркменский очаг'."
+            },
+            {
+              "day": 7,
+              "title": "Мары — Ашхабад",
+              "activity": "Возвращение в Ашхабад. Посещение Национального музея туркменского ковра, Арки Нейтралитета и Монумента Независимости."
+            },
+            {
+              "day": 8,
+              "title": "Ашхабад — Вылет",
+              "activity": "Посещение Гулистанского (Русского) базара. Трансфер в международный аэропорт Ашхабада. Окончание тура."
+            }
+          ],
+          "highlights": [
+            "Газовый кратер Дарваза",
+            "Древний Куняургенч",
+            "Мраморный Ашхабад",
+            "Старая Ниса",
+            "Подземное озеро Ков-Ата",
+            "Каньоны Янгикала",
+            "Древний Мерв (ЮНЕСКО)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 чел",
+          "notes": "Включено: отели 4*, транспорт, питание, 1л воды/день, англоговорящий гид, приглашение (визовая поддержка) + регистрация. Не включено: сборы в аэропорту (виза ~$50-100, миграция $14, ПЦР-тест $35), страховка, чаевые, международные рейсы.",
+          "extras": []
+        }
+      ],
+      "es": [
+        {
+          "id": "t_turkmenistan_8d_es",
+          "title": "Gran Tour de Turkmenistán: De Darvaza a la Antigua Merv — 8 Días",
+          "short": "Un viaje de 8 días por Turkmenistán explorando el cráter de Darvaza, la ciudad de mármol de Asjabad, los cañones de Yangykala y las ruinas de Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Asjabad, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistán",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Precio por persona para 16+1 pax en hoteles de 4*. Suplemento individual (hotel de 3*): 30$.",
+          "duration": "8 días / 7 noches",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Encuentro en la frontera 'Shavat'. Almuerzo en Dashoguz y visita a la reserva histórica de la Antigua Kunyaurgench. Traslado al cráter de gas de Darvaza. Cena de barbacoa y noche en un campamento de yurtas."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Asjabad",
+              "activity": "Traslado a Asjabad. Visita al complejo ecuestre internacional (caballos Akhal-Teke), la mezquita de Rukhy en Kypchak y la Antigua Nisa (Imperio Parto)."
+            },
+            {
+              "day": 3,
+              "title": "Asjabad — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visita al lago subterráneo de Kov-Ata y al pueblo montañoso de Nokhur. Viaje a Turkmenbashy (Nebitdag) y alojamiento en el hotel."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Exploración de los impresionantes cañones de Yangykala, conocidos como 'fortalezas de fuego'. Regreso a Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Asjabad",
+              "activity": "Regreso a Asjabad. Recorrido por la ciudad: noria de Alem, Palacio de Bodas y tiempo libre en el centro comercial Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Asjabad — Mary",
+              "activity": "Traslado a Mary. Excursión a la Antigua Merv (UNESCO) para ver el mausoleo del Sultán Sanjar. Visita a la base turística 'Antiguo Hogar Turcomano'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Asjabad",
+              "activity": "Regreso a Asjabad. Visita al Museo Nacional de la Alfombra Turcomana, el Arco de la Neutralidad y el Monumento a la Independencia."
+            },
+            {
+              "day": 8,
+              "title": "Asjabad — Salida",
+              "activity": "Visita al Bazar Gulistán (bazar ruso) para comprar recuerdos. Traslado al aeropuerto internacional de Asjabad para la salida."
+            }
+          ],
+          "highlights": [
+            "Cráter de gas de Darvaza",
+            "Antigua Kunyaurgench",
+            "Asjabad (Ciudad de Mármol Blanco)",
+            "Antigua Nisa",
+            "Lago subterráneo Kov-Ata",
+            "Cañones de Yangykala",
+            "Antigua Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Incluye: Hoteles de 4*, transporte, comidas, 1L de agua diaria, guía en inglés, Carta de Invitación (apoyo de visado) + registro. No incluye: Tasas de aeropuerto (Visado ~$50-100, Migración $14, Prueba COVID $35), seguro, propinas, vuelos internacionales.",
+          "extras": []
+        }
+      ],
+      "fr": [
+        {
+          "id": "t_turkmenistan_8d_fr",
+          "title": "Grand Tour du Turkménistan : De Darvaza à l'Ancienne Merv — 8 Jours",
+          "short": "Un voyage de 8 jours à travers le Turkménistan, incluant le cratère de Darvaza, la ville de marbre d'Achgabat, les canyons de Yangykala et les ruines de Merv.",
+          "destination": "Dashoguz, Kounia-Ourguentch, Darvaza, Achgabat, Kov-Ata, Nokhur, Nebitdag (Türkmenbaşy), Yangykala, Mary",
+          "region": "Turkménistan",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Prix par personne pour 16+1 pax en hôtels 4*. Supplément single (hôtel 3*) : 30$.",
+          "duration": "8 jours / 7 nuits",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kounia-Ourguentch — Darvaza",
+              "activity": "Accueil à la frontière 'Shavat'. Déjeuner à Dashoguz et visite de la réserve historique de Kounia-Ourguentch. Route vers le cratère de gaz de Darvaza. Dîner barbecue et nuit dans un camp de yourtes."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Achgabat",
+              "activity": "Route pour Achgabat. Visite du complexe équestre (chevaux Akhal-Téké), de la mosquée Rukhy à Kypchak et de l'Ancienne Nisa, capitale de l'Empire parthe."
+            },
+            {
+              "day": 3,
+              "title": "Achgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visite du lac souterrain de Kov-Ata et du village de montagne de Nokhur. Route vers Türkmenbaşy (Nebitdag) pour la nuit."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Exploration des impressionnants canyons de Yangykala, aux falaises colorées. Retour à Türkmenbaşy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Achgabat",
+              "activity": "Retour à Achgabat. Tour de ville : grande roue Alem, Palais des Mariages et temps libre au centre commercial Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Achgabat — Mary",
+              "activity": "Route pour Mary. Excursion à l'Ancienne Merv (UNESCO) pour voir le mausolée du Sultan Sanjar. Découverte de la culture locale à la base touristique 'Ancien Foyer Turkmène'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Achgabat",
+              "activity": "Retour à Achgabat. Visite du Musée national du Tapis, de l'Arche de la Neutralité et du Monument de l'Indépendance."
+            },
+            {
+              "day": 8,
+              "title": "Achgabat — Départ",
+              "activity": "Visite du bazar Gulistan (bazar russe). Transfert à l'aéroport international d'Achgabat pour le départ."
+            }
+          ],
+          "highlights": [
+            "Cratère de Darvaza",
+            "Ancienne Kounia-Ourguentch",
+            "Achgabat (ville de marbre)",
+            "Ancienne Nisa",
+            "Lac souterrain de Kov-Ata",
+            "Canyons de Yangykala",
+            "Ancienne Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Inclus : Hôtels 4*, transport, repas, 1L d'eau/jour, guide anglophone, Lettre d'Invitation (support visa) + enregistrement. Non inclus : Frais d'aéroport (Visa ~$50-100, Migration $14, Test COVID $35), assurance, pourboires, vols internationaux.",
+          "extras": []
+        }
+      ],
+      "it": [
+        {
+          "id": "t_turkmenistan_8d_it",
+          "title": "Gran Tour del Turkmenistan: Da Darvaza all'Antica Merv — 8 Giorni",
+          "short": "Un viaggio di 8 giorni attraverso il Turkmenistan esplorando il cratere di Darvaza, la città di marmo di Ashgabat, i canyon di Yangykala e le rovine di Merv.",
+          "destination": "Dashoguz, Kunyaurgench, Darvaza, Ashgabat, Kov-Ata, Nokhur, Nebitdag (Turkmenbashy), Yangykala, Mary",
+          "region": "Turkmenistan",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "Prezzo per persona per 16+1 pax in hotel 4*. Supplemento singola (hotel 3*): 30$.",
+          "duration": "8 giorni / 7 notti",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dashoguz — Kunyaurgench — Darvaza",
+              "activity": "Incontro al confine 'Shavat'. Pranzo a Dashoguz e visita alla riserva storica dell'Antica Kunyaurgench. Viaggio verso il cratere di gas di Darvaza. Cena barbecue e pernottamento in un campo di yurte."
+            },
+            {
+              "day": 2,
+              "title": "Darvaza — Ashgabat",
+              "activity": "Trasferimento ad Ashgabat. Visita al complesso equestre (cavalli Akhal-Teke), alla moschea di Rukhy a Kypchak e all'Antica Nisa, capitale dell'Impero Partico."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat — Kov-Ata — Nokhur — Nebitdag",
+              "activity": "Visita al lago sotterraneo di Kov-Ata e al villaggio di montagna di Nokhur. Trasferimento a Turkmenbashy (Nebitdag) e sistemazione in hotel."
+            },
+            {
+              "day": 4,
+              "title": "Nebitdag — Yangykala — Nebitdag",
+              "activity": "Esplorazione dei favolosi canyon di Yangykala, noti come 'fortezze di fuoco'. Ritorno a Turkmenbashy."
+            },
+            {
+              "day": 5,
+              "title": "Nebitdag — Ashgabat",
+              "activity": "Ritorno ad Ashgabat. Tour pomeridiano della città: ruota panoramica Alem, Palazzo dei Matrimoni e tempo libero per lo shopping al centro commerciale Berkarar."
+            },
+            {
+              "day": 6,
+              "title": "Ashgabat — Mary",
+              "activity": "Trasferimento a Mary. Escursione all'Antica Merv (UNESCO) e al mausoleo del Sultano Sanjar. Scoperta della cultura locale presso la base turistica 'Antico Focolare Turcomanno'."
+            },
+            {
+              "day": 7,
+              "title": "Mary — Ashgabat",
+              "activity": "Ritorno ad Ashgabat. Visita al Museo Nazionale del Tappeto, all'Arco della Neutralità e al Monumento all'Indipendenza."
+            },
+            {
+              "day": 8,
+              "title": "Ashgabat — Partenza",
+              "activity": "Visita al bazar Gulistan (bazar russo). Trasferimento all'aeroporto internazionale di Ashgabat per la partenza."
+            }
+          ],
+          "highlights": [
+            "Cratere di Darvaza",
+            "Antica Kunyaurgench",
+            "Ashgabat (Città di Marmo Bianco)",
+            "Antica Nisa",
+            "Lago sotterraneo di Kov-Ata",
+            "Canyon di Yangykala",
+            "Antica Merv (UNESCO)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1 pax",
+          "notes": "Include: Hotel 4*, trasporti, pasti, 1L d'acqua/giorno, guida in inglese, Lettera d'Invito (supporto visto) + registrazione. Esclude: Tasse aeroportuali (Visto ~$50-100, Migrazione $14, Test COVID $35), assicurazione, mance, voli internazionali.",
+          "extras": []
+        }
+      ],
+      "zh": [
+        {
+          "id": "t_turkmenistan_8d_zh",
+          "title": "土库曼斯坦大游：从达瓦扎到古梅尔夫 — 8天",
+          "short": "为期8天的土库曼斯坦之旅，探索达瓦扎“地狱之门”、大理石之城阿什哈巴德、仰吉卡拉大峡谷及古梅尔夫遗址。",
+          "destination": "达绍古兹, 库尼亚乌尔根奇, 达瓦扎, 阿什哈巴德, 科夫阿塔, 诺胡尔, 涅比特达格 (土库曼巴希), 仰吉卡拉, 马雷",
+          "region": "土库曼斯坦",
+          "images": [
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour2.jpg",
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour4.jpg"
+          ],
+          "price": 1010,
+          "priceNote": "4星级酒店16+1人团体的单人价格。单房差（3星级酒店）：30美元。",
+          "duration": "8天 / 7晚",
+          "rating": null,
+          "category": "turkmenistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "达绍古兹 — 库尼亚乌尔根奇 — 达瓦扎",
+              "activity": "在'Shavat'边境接站。在达绍古兹享用午餐，随后参观古库尼亚乌尔根奇历史保护区。驱车前往达瓦扎天然气坑。晚上享用烧烤晚餐并夜宿传统蒙古包。"
+            },
+            {
+              "day": 2,
+              "title": "达瓦扎 — 阿什哈巴德",
+              "activity": "驱车前往阿什哈巴德。参观国际马术中心（阿哈尔捷金马/汗血宝马）、基普恰克清真寺，以及帕提亚帝国故都——老尼萨。"
+            },
+            {
+              "day": 3,
+              "title": "阿什哈巴德 — 科夫阿塔 — 诺胡尔 — 涅比特达格",
+              "activity": "参观科夫阿塔地下湖和诺胡尔高山村庄。驱车前往土库曼巴希（涅比特达格）入住酒店。"
+            },
+            {
+              "day": 4,
+              "title": "涅比特达格 — 仰吉卡拉 — 涅比特达格",
+              "activity": "探索被誉为“火焰堡垒”的壮丽仰吉卡拉大峡谷。返回土库曼巴希。"
+            },
+            {
+              "day": 5,
+              "title": "涅比特达格 — 阿什哈巴德",
+              "activity": "返回阿什哈巴德。下午市区游览：阿莱姆摩天轮、婚礼宫，并在Berkarar购物中心自由活动。"
+            },
+            {
+              "day": 6,
+              "title": "阿什哈巴德 — 马雷",
+              "activity": "驱车前往马雷。游览古梅尔夫（联合国教科文组织世界遗产），参观苏丹桑贾尔陵墓。在“古土库曼灶台”旅游基地体验土库曼文化。"
+            },
+            {
+              "day": 7,
+              "title": "马雷 — 阿什哈巴德",
+              "activity": "返回阿什哈巴德。参观土库曼地毯国家博物馆、中立门以及独立纪念碑。"
+            },
+            {
+              "day": 8,
+              "title": "阿什哈巴德 — 离境",
+              "activity": "游览古丽斯坦集市（俄罗斯巴扎）购买纪念品。送往阿什哈巴德国际机场，结束行程。"
+            }
+          ],
+          "highlights": [
+            "达瓦扎天然气坑",
+            "古库尼亚乌尔根奇",
+            "阿什哈巴德（白色大理石之城）",
+            "老尼萨遗址",
+            "科夫阿塔地下湖",
+            "仰吉卡拉大峡谷",
+            "古梅尔夫 (联合国教科文组织世界遗产)"
+          ],
+          "organizer": {
+            "name": "",
+            "phone": "",
+            "email": "",
+            "website": ""
+          },
+          "participants": "16+1人",
+          "notes": "费用包含：4星级酒店住宿、交通、餐饮、每日1升水、英语导游、邀请函（签证支持）及签证注册。费用不含：机场相关费用（签证约$50-100、移民局费用$14、核酸检测$35）、保险、小费及国际航班。",
+          "extras": []
+        }
+      ]
+    },
     "world": {
       "en": [],
       "uz": [],
-      "ru": []
+      "ru": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "zh": []
     }
   }
 }
