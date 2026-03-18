@@ -579,8 +579,8 @@ const Home = () => {
               <div className="flex items-center gap-3">
                 <Map className="h-5 w-5" />
                 <div className="text-left">
-                  <div className="text-sm opacity-80">{t("tours.explore")}</div>
-                  <div className="text-base font-semibold">{t("tours.uzTours")}</div>
+                  <div className="text-sm opacity-80">Find out</div>
+                  <div className="text-base font-semibold">Central Asia Tours</div>
                 </div>
               </div>
             </motion.button>
