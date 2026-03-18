@@ -570,6 +570,20 @@ const Home = () => {
                 </div>
               </div>
             </motion.button>
+            <motion.button
+              onClick={() => setSelectedCategory("central_asia")}
+              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "central_asia" ? "bg-gradient-to-r from-green-500 to-green-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
+                }`}
+              whileHover={{ scale: 1.03 }}
+            >
+              <div className="flex items-center gap-3">
+                <Map className="h-5 w-5" />
+                <div className="text-left">
+                  <div className="text-sm opacity-80">{t("tours.explore")}</div>
+                  <div className="text-base font-semibold">{t("tours.uzTours")}</div>
+                </div>
+              </div>
+            </motion.button>
 
             <motion.button
               onClick={() => setSelectedCategory("world")}
