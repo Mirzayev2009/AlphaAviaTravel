@@ -8748,6 +8748,46 @@
           "participants": "16+1 pax",
           "notes": "Includes: 4* hotels (Sport, Mary/Margush, Nebitchi), transport, meals, 1L water daily, English-speaking guide, Letter of Invitation (visa support) + visa registration. Excludes: Airport entry fees (Visa ~$50-100, Migration $14, COVID test $35), insurance, tips, international flights.",
           "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Samarkand — Seven Lakes — Samarkand (1 Day)",
+          "short": "A 1-day tour from Samarkand to the beautiful Seven Lakes (Haft Kul) in Tajikistan via Penjikent.",
+          "destination": "Samarkand, Penjikent, Seven Lakes (Haft Kul)",
+          "region": "Uzbekistan & Tajikistan",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "$79 per person (1 day tour).",
+          "duration": "1 day",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Samarkand — Seven Lakes — Samarkand",
+              "activity": "08:00 — Departure from Samarkand. Group meeting at the hotel. Transfer to the \"Jartepa\" border post (20–30 km from the city).\n09:00 — Border crossing and way to Tajikistan. Customs control. A comfortable 4WD SUV meets the group on the Tajik side.\n10:30 — Panoramic stop in Penjikent. Short stop for currency exchange and buying fresh fruits or local flatbreads.\n11:30 – 15:30 — Exploring Haft Kul (Seven Lakes). Cascade of lakes: Mizhgon, Soya, Hushyor, Nofin, Khurdak, Marguzor, Hazorchashma.\n13:30 — Lunch in the mountains. Picnic on the shore of Lake Marguzor or lunch at a traditional guest house in the village of Padrut.\n16:00 — Free time and photo session. Time for hiking to waterfalls or communicating with locals.\n18:00 — Return to the border. Transfer back to the \"Jartepa\" checkpoint.\n20:00 — Arrival in Samarkand. End of the tour, drop-off at the hotel or a convenient place for the group."
+            }
+          ],
+          "highlights": [
+            "Scenic drive through the pass and stop in Penjikent",
+            "Exploring the cascade of the Seven Lakes (Haft Kul)",
+            "Picnic or lunch in a mountain guest house",
+            "Hiking and photo sessions against the backdrop of untouched nature"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 people",
+          "notes": "",
+          "extras": []
         }
       ],
       "uz": [
@@ -8828,6 +8868,46 @@
           },
           "participants": "16+1 kishi",
           "notes": "O'z ichiga oladi: 4* mehmonxonalar, transport, ovqatlanish, kunlik 1L suv, ingliz tilida so'zlashuvchi gid, Taklifnoma (viza yordami) + viza ro'yxati. O'z ichiga almaydi: Aeroport to'lovlari (Viza ~$50-100, Migratsiya $14, COVID test $35), sug'urta, choychaqa, xalqaro parvozlar.",
+          "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Samarqand — Yetti Ko'l — Samarqand (1 Kun)",
+          "short": "Samarqanddan Tojikistondagi go'zal Yetti Ko'lga (Haft Ko'l) Panjakent orqali 1 kunlik sayohat.",
+          "destination": "Samarqand, Panjakent, Yetti Ko'l (Haft Ko'l)",
+          "region": "O'zbekiston va Tojikiston",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "Kishi boshiga $79 (1 kunlik sayohat).",
+          "duration": "1 kun",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Samarqand — Yetti Ko'l — Samarqand",
+              "activity": "08:00 — Samarqanddan jo'nab ketish. Guruh bilan mehmonxonada uchrashish. \"Jartepa\" chegara postiga transfer (shahardan 20–30 km).\n09:00 — Chegaradan o'tish va Tojikistonga yo'l. Bojxona nazorati. Tojikiston tomonida guruhni qulay 4WD yo'ltanlamas mashinasi kutib oladi.\n10:30 — Panjakentda panoramali to'xtash. Valyuta almashtirish va yangi mevalar yoki mahalliy nonlarni sotib olish uchun qisqa to'xtash.\n11:30 – 15:30 — Haft Ko'lni (Yetti Ko'l) o'rganish. Ko'llar kaskadi: Mijg'on, Soya, Hushyor, Nofin, Xurdak, Marg'uzor, Hazorchashma.\n13:30 — Tog'larda tushlik. Marg'uzor ko'li bo'yida piknik yoki Padrut qishlog'idagi an'anaviy mehmon uyida tushlik.\n16:00 — Bo'sh vaqt va fotosessiya. Sharsharalarga piyoda sayr qilish yoki mahalliy aholi bilan suhbatlashish uchun vaqt.\n18:00 — Chegaraga qaytish. \"Jartepa\" o'tkazish punktiga qaytish.\n20:00 — Samarqandga yetib kelish. Sayohat yakuni, mehmonxonaga yoki guruh uchun qulay joyga yetkazib qo'yish."
+            }
+          ],
+          "highlights": [
+            "Panjakent orqali go'zal tog' manzaralari",
+            "Yetti Ko'l (Haft Ko'l) kaskadini o'rganish",
+            "Tog'dagi mehmon uyida tushlik yoki piknik",
+            "Bokira tabiat qo'ynida xeyking va fotosessiyalar"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 kishi",
+          "notes": "",
           "extras": []
         }
       ],
@@ -8910,6 +8990,46 @@
           "participants": "16+1 чел",
           "notes": "Включено: отели 4*, транспорт, питание, 1л воды/день, англоговорящий гид, приглашение (визовая поддержка) + регистрация. Не включено: сборы в аэропорту (виза ~$50-100, миграция $14, ПЦР-тест $35), страховка, чаевые, международные рейсы.",
           "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Самарканд — Семь Озёр — Самарканд (1 день)",
+          "short": "1-дневный тур из Самарканда к прекрасным Семи Озёрам (Хафт-Куль) в Таджикистане через Пенджикент.",
+          "destination": "Самарканд, Пенджикент, Семь Озёр (Хафт-Куль)",
+          "region": "Узбекистан и Таджикистан",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "$79 на человека (1 день).",
+          "duration": "1 день",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Самарканд — Семь Озёр — Самарканд",
+              "activity": "08:00 — Выезд из Самарканда. Встреча группы в отеле. Трансфер до пограничного поста «Джартепа» (20–30 км от города).\n09:00 — Переход границы и путь в Таджикистан. Прохождение таможенного контроля. На таджикской стороне группу встречает комфортабельный внедорожник (4WD). Использование полноприводного автомобиля обязательно, так как дорога после четвёртого озера становится горной и каменистой.\n10:30 — Панорамная остановка в Пенджикенте. Краткая остановка для обмена валюты и закупки свежих фруктов или местных лепешек. Мы минем городскую суету, чтобы уделить максимум времени горам.\n11:30 – 15:30 — Исследование Хафт-Куль (Семь Озёр). Вы проедете по каскаду озёр, каждое из которых уникально по цвету — от бирюзового до глубокого индиго: Мижгон, Соя, Хушёр, Нофин, Хурдак, Маргузор, Хазорчашма.\n13:30 — Обед в горах. Пикник на берегу озера Маргузор или обед в традиционном гостевом доме в поселке Падрут.\n16:00 — Свободное время и фотосессия. Время для хайкинга к водопадам или общения с местными жителями.\n18:00 — Возвращение к границе. Трансфер обратно к КПП «Джартепа».\n20:00 — Прибытие в Самарканд. Завершение тура, высадка в отеле или в удобном для группы месте."
+            }
+          ],
+          "highlights": [
+            "Живописная дорога через перевал и остановка в Пенджикенте",
+            "Исследование каскада из Семи Озёр (Хафт-Куль)",
+            "Пикник или обед в гостевом доме в горах",
+            "Хайкинг и фотосессии на фоне нетронутой природы"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 человек",
+          "notes": "",
+          "extras": []
         }
       ],
       "es": [
@@ -8990,6 +9110,46 @@
           },
           "participants": "16+1 pax",
           "notes": "Incluye: Hoteles de 4*, transporte, comidas, 1L de agua diaria, guía en inglés, Carta de Invitación (apoyo de visado) + registro. No incluye: Tasas de aeropuerto (Visado ~$50-100, Migración $14, Prueba COVID $35), seguro, propinas, vuelos internacionales.",
+          "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Samarcanda — Siete Lagos — Samarcanda (1 Día)",
+          "short": "Un recorrido de 1 día desde Samarcanda hasta los hermosos Siete Lagos (Haft Kul) en Tayikistán vía Penjikent.",
+          "destination": "Samarcanda, Penjikent, Siete Lagos (Haft Kul)",
+          "region": "Uzbekistán y Tayikistán",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "$79 por persona (tour de 1 día).",
+          "duration": "1 día",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Samarcanda — Siete Lagos — Samarcanda",
+              "activity": "08:00 — Salida de Samarcanda. Encuentro del grupo en el hotel. Traslado al puesto fronterizo de \"Jartepa\" (a 20-30 km de la ciudad).\n09:00 — Cruce de frontera y camino a Tayikistán. Control de aduanas. Un cómodo vehículo 4x4 recibe al grupo en el lado tayiko.\n10:30 — Parada panorámica en Penjikent. Breve parada para el cambio de divisas y la compra de frutas frescas o pan local.\n11:30 – 15:30 — Exploración de Haft Kul (Siete Lagos). Cascada de lagos: Mizhgon, Soya, Hushyor, Nofin, Khurdak, Marguzor, Hazorchashma.\n13:30 — Almuerzo en las montañas. Picnic a orillas del lago Marguzor o almuerzo en una casa de huéspedes tradicional en el pueblo de Padrut.\n16:00 — Tiempo libre y sesión de fotos. Tiempo para hacer senderismo hacia las cascadas o interactuar con los lugareños.\n18:00 — Regreso a la frontera. Traslado de vuelta al puesto de control de \"Jartepa\".\n20:00 — Llegada a Samarcanda. Fin del tour, regreso al hotel o lugar conveniente para el grupo."
+            }
+          ],
+          "highlights": [
+            "Viaje panorámico por el paso y parada en Penjikent",
+            "Exploración de la cascada de los Siete Lagos (Haft Kul)",
+            "Picnic o almuerzo en una casa de huéspedes de montaña",
+            "Senderismo y sesiones de fotos en medio de la naturaleza intacta"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 personas",
+          "notes": "",
           "extras": []
         }
       ],
@@ -9072,6 +9232,46 @@
           "participants": "16+1 pax",
           "notes": "Inclus : Hôtels 4*, transport, repas, 1L d'eau/jour, guide anglophone, Lettre d'Invitation (support visa) + enregistrement. Non inclus : Frais d'aéroport (Visa ~$50-100, Migration $14, Test COVID $35), assurance, pourboires, vols internationaux.",
           "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Samarcande — Sept Lacs — Samarcande (1 Jour)",
+          "short": "Une excursion d'une journée de Samarcande aux magnifiques Sept Lacs (Haft Koul) au Tadjikistan via Pendjikent.",
+          "destination": "Samarcande, Pendjikent, Sept Lacs (Haft Koul)",
+          "region": "Ouzbékistan et Tadjikistan",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "79 $ par personne (excursion d'un jour).",
+          "duration": "1 jour",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Samarcande — Sept Lacs — Samarcande",
+              "activity": "08:00 — Départ de Samarcande. Rendez-vous du groupe à l'hôtel. Transfert au poste frontière de \"Jartepa\" (à 20-30 km de la ville).\n09:00 — Passage de la frontière et route vers le Tadjikistan. Contrôle douanier. Un véhicule 4x4 confortable accueille le groupe du côté tadjik.\n10:30 — Arrêt panoramique à Pendjikent. Bref arrêt pour le change de devises et l'achat de fruits frais ou de pains locaux.\n11:30 – 15:30 — Exploration de Haft Koul (Sept Lacs). Cascade de lacs : Mizhgon, Soya, Hushyor, Nofin, Khurdak, Marguzor, Hazorchashma.\n13:30 — Déjeuner dans les montagnes. Pique-nique au bord du lac Marguzor ou déjeuner dans une maison d'hôtes traditionnelle dans le village de Padrut.\n16:00 — Temps libre et séance photo. Temps pour faire de la randonnée vers les cascades ou discuter avec les habitants.\n18:00 — Retour à la frontière. Transfert de retour au point de contrôle de \"Jartepa\".\n20:00 — Arrivée à Samarcande. Fin de l'excursion, retour à l'hôtel ou à un endroit pratique pour le groupe."
+            }
+          ],
+          "highlights": [
+            "Route panoramique par le col et arrêt à Pendjikent",
+            "Exploration de la cascade des Sept Lacs (Haft Koul)",
+            "Pique-nique ou déjeuner dans une maison d'hôtes de montagne",
+            "Randonnée et séances photo au cœur d'une nature intacte"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 personnes",
+          "notes": "",
+          "extras": []
         }
       ],
       "it": [
@@ -9153,6 +9353,46 @@
           "participants": "16+1 pax",
           "notes": "Include: Hotel 4*, trasporti, pasti, 1L d'acqua/giorno, guida in inglese, Lettera d'Invito (supporto visto) + registrazione. Esclude: Tasse aeroportuali (Visto ~$50-100, Migrazione $14, Test COVID $35), assicurazione, mance, voli internazionali.",
           "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "Samarcanda — Sette Laghi — Samarcanda (1 Giorno)",
+          "short": "Un'escursione di 1 giorno da Samarcanda ai bellissimi Sette Laghi (Haft Kul) in Tagikistan via Penjikent.",
+          "destination": "Samarcanda, Penjikent, Sette Laghi (Haft Kul)",
+          "region": "Uzbekistan e Tagikistan",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "79 $ a persona (tour di 1 giorno).",
+          "duration": "1 giorno",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Samarcanda — Sette Laghi — Samarcanda",
+              "activity": "08:00 — Partenza da Samarcanda. Incontro del gruppo in hotel. Trasferimento al posto di frontiera di \"Jartepa\" (a 20-30 km dalla città).\n09:00 — Attraversamento del confine e viaggio in Tagikistan. Controllo doganale. Un comodo fuoristrada 4x4 accoglie il gruppo dal lato tagiko.\n10:30 — Sosta panoramica a Penjikent. Breve sosta per il cambio valuta e l'acquisto di frutta fresca o focacce locali.\n11:30 – 15:30 — Esplorazione di Haft Kul (Sette Laghi). Cascata di laghi: Mizhgon, Soya, Hushyor, Nofin, Khurdak, Marguzor, Hazorchashma.\n13:30 — Pranzo in montagna. Picnic sulle rive del lago Marguzor o pranzo in una pensione tradizionale nel villaggio di Padrut.\n16:00 — Tempo libero e sessione fotografica. Tempo per escursioni verso le cascate o incontri con la gente del posto.\n18:00 — Ritorno al confine. Trasferimento di ritorno al punto di controllo di \"Jartepa\".\n20:00 — Arrivo a Samarcanda. Fine del tour, rientro in hotel o in un luogo conveniente per il gruppo."
+            }
+          ],
+          "highlights": [
+            "Viaggio panoramico attraverso il passo e sosta a Penjikent",
+            "Esplorazione della cascata dei Sette Laghi (Haft Kul)",
+            "Picnic o pranzo in una pensione di montagna",
+            "Escursioni e sessioni fotografiche immersi nella natura incontaminata"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16 persone",
+          "notes": "",
+          "extras": []
         }
       ],
       "zh": [
@@ -9233,6 +9473,46 @@
           },
           "participants": "16+1人",
           "notes": "费用包含：4星级酒店住宿、交通、餐饮、每日1升水、英语导游、邀请函（签证支持）及签证注册。费用不含：机场相关费用（签证约$50-100、移民局费用$14、核酸检测$35）、保险、小费及国际航班。",
+          "extras": []
+        },
+        {
+          "id": "t_samarkand_seven_lakes_1d",
+          "title": "撒马尔罕 — 七湖 — 撒马尔罕（1日游）",
+          "short": "从撒马尔罕出发，经彭吉肯特前往塔吉克斯坦美丽七湖（Haft Kul）的单日游。",
+          "destination": "撒马尔罕, 彭吉肯特, 七湖 (Haft Kul)",
+          "region": "乌兹别克斯坦和塔吉克斯坦",
+          "images": [
+            "/images/turkmenistan_tour3.jpg",
+            "/images/turkmenistan_tour1.jpg",
+            "/images/turkmenistan_tour4.jpg",
+            "/images/turkmenistan_tour2.jpg"
+          ],
+          "price": 79,
+          "priceNote": "每人 $79（1日游）。",
+          "duration": "1天",
+          "category": "central_asia",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "撒马尔罕 — 七湖 — 撒马尔罕",
+              "activity": "08:00 — 从撒马尔罕出发。团队在酒店集合，乘车前往“贾尔特帕”（Jartepa）边境站（距市区20-30公里）。\n09:00 — 穿越边境前往塔吉克斯坦。办理海关手续。在塔吉克斯坦一侧，有一辆舒适的四驱越野车迎接团队。\n10:30 — 在彭吉肯特全景停留。短暂休息，可兑换货币和购买新鲜水果或当地大饼。\n11:30 – 15:30 — 探索七湖（Haft Kul）。参观梯级湖泊：米日贡（Mizhgon）、索亚（Soya）、胡什约尔（Hushyor）、诺芬（Nofin）、胡尔达克（Khurdak）、马尔古佐尔（Marguzor）、哈佐尔查什马（Hazorchashma）。\n13:30 — 高山午餐。在马尔古佐尔湖岸边野餐，或者在帕德鲁特（Padrut）村的传统客栈享用午餐。\n16:00 — 自由活动及拍照时间。可以徒步前往瀑布或与当地人交流。\n18:00 — 返回边境。乘车返回“贾尔特帕”（Jartepa）检查站。\n20:00 — 抵达撒马尔罕。行程结束，将送您回酒店或方便团队的下车点。"
+            }
+          ],
+          "highlights": [
+            "途经彭吉肯特的风景优美的山路",
+            "探索七湖（Haft Kul）梯级湖泊",
+            "在山间客栈享用午餐或湖畔野餐",
+            "在未受破坏的自然风光中徒步和拍照"
+          ],
+          "organizer": {
+            "name": "Shohrukh Umurzakov - Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-16人",
+          "notes": "",
           "extras": []
         }
       ]
