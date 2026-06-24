@@ -108,23 +108,23 @@ const ToursDetail = () => {
     },
     {
       icon: Mail,
-      title: "Email",
+      title: t("tourDetail.contact.email"),
       value: organizerEmail,
       colorKey: "amber",
       href: `mailto:${organizerEmail}`,
     },
     {
       icon: Facebook,
-      title: "Facebook",
-      value: "Visit Page",
+      title: t("tourDetail.contact.facebook"),
+      value: t("tourDetail.contact.visitPage"),
       colorKey: "blue",
       href: `https://www.facebook.com/${tour?.organizer?.facebookHandle || "tourcompany"
         }`,
     },
     {
       icon: MessageCircle,
-      title: "WhatsApp",
-      value: "Chat Now",
+      title: t("tourDetail.contact.whatsapp"),
+      value: t("tourDetail.contact.chatNow"),
       colorKey: "green",
       href: `https://wa.me/${organizerPhone.replace(/\D/g, "")}`,
     },
@@ -203,7 +203,7 @@ const ToursDetail = () => {
       !formData.phone ||
       formData.people < 1
     ) {
-      alert("Please fill out all required fields.");
+      alert(t("tourDetail.validation.requiredFields"));
       return;
     }
 
@@ -226,7 +226,7 @@ const ToursDetail = () => {
       if (!response.ok) {
         // Read the error message from the backend response
         const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to submit registration.");
+        throw new Error(errorData.message || t("tourDetail.validation.submitFailed"));
       }
 
       const result = await response.json();
@@ -245,7 +245,7 @@ const ToursDetail = () => {
       }, 100);
     } catch (error) {
       console.error("Submission error:", error);
-      alert(`Error submitting form: ${error.message}`);
+      alert(`${t("tourDetail.validation.errorPrefix")}: ${error.message}`);
       // Optionally, reset formSubmitted if you want them to retry
       setFormSubmitted(false);
     }
@@ -304,7 +304,7 @@ const ToursDetail = () => {
               {tour.title}
             </h1>
             <p className="text-gray-700 text-xl mb-4 max-w-2xl mx-auto">
-              {tour.short || "A breathtaking journey awaits!"}
+              {tour.short || t("tourDetail.fallback.subtitle")}
             </p>
           </motion.div>
         </section>
@@ -387,7 +387,7 @@ const ToursDetail = () => {
                       >
                         <motion.button
                           onClick={openTelegram}
-                          aria-label={`Message @${TELEGRAM_USERNAME} on Telegram`}
+                          aria-label={t("tourDetail.confirmation.goToTelegram", { username: `@${TELEGRAM_USERNAME}` })}
                           whileHover={{ scale: 1.03, y: -4 }}
                           whileTap={{ scale: 0.98 }}
                           className="relative inline-flex items-center justify-center w-full max-w-2xl px-8 py-5 rounded-3xl text-white font-extrabold text-2xl shadow-2xl overflow-hidden focus:outline-none"
@@ -477,7 +477,7 @@ const ToursDetail = () => {
                               name="name"
                               value={formData.name}
                               onChange={handleInputChange}
-                              placeholder="Enter your full name"
+                              placeholder={t("tourDetail.placeholder.name")}
                             />
                           </motion.label>
                           <motion.label
@@ -496,7 +496,7 @@ const ToursDetail = () => {
                               type="email"
                               value={formData.email}
                               onChange={handleInputChange}
-                              placeholder="you@email.com"
+                              placeholder={t("tourDetail.placeholder.email")}
                             />
                           </motion.label>
                           <motion.label
@@ -514,7 +514,7 @@ const ToursDetail = () => {
                               name="phone"
                               value={formData.phone}
                               onChange={handleInputChange}
-                              placeholder="+XXX XX XXX XX XX"
+                              placeholder={t("tourDetail.placeholder.phone")}
                             />
                           </motion.label>
                           <motion.label
@@ -562,7 +562,7 @@ const ToursDetail = () => {
                             (
                             {t("tourDetail.registrationDetails.priceForPerson")}{" "}
                             {formData.people}{" "}
-                            {formData.people === 1 ? "person" : "people"})
+                            {formData.people === 1 ? t("tourDetail.person") : t("tourDetail.people")})
                           </p>
                         </motion.div>
 
@@ -641,7 +641,7 @@ const ToursDetail = () => {
                     <motion.img
                       key={idx}
                       src={img}
-                      alt={`Tour Image ${idx + 1}`}
+                      alt={t("tourDetail.imageAlt", { number: idx + 1 })}
                       className="rounded-xl  shadow-xl object-cover w-full h-56 cursor-pointer border-4 border-white"
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
@@ -745,13 +745,13 @@ const ToursDetail = () => {
                               {t("tourDetail.FullAdventure.day")}{" "}
                               {itinerary[expandedDay]?.day ?? expandedDay + 1}:{" "}
                               {itinerary[expandedDay]?.title ||
-                                "Daily Activities"}
+                                t("tourDetail.fallback.dayTitle")}
                             </h3>
                           </CardHeader>
                           <CardContent className="p-6">
                             <p className="text-lg text-gray-700 leading-relaxed">
                               {itinerary[expandedDay]?.activity ||
-                                "No details available"}
+                                t("tourDetail.fallback.noDetails")}
                             </p>
                           </CardContent>
                         </Card>

@@ -20,6 +20,7 @@ const Destinations = lazy(() => import("./pages/Destinations"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Gallery = lazy(() => import("./pages/Gallery"));
+const ChatBotPage = lazy(() => import("./pages/ChatBotPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -80,6 +81,11 @@ const App = () => (
                 </Suspense>
               }
             />
+            <Route path="chatbot" element={
+              <Suspense fallback={<PageLoader />}>
+                <ChatBotPage />
+              </Suspense>
+            } />
             <Route
               path="*"
               element={

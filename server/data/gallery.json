@@ -1,0 +1,10 @@
+[
+  { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Registan Square at sunset, Samarkand", "location": "Samarkand" },
+  { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Ancient madrasas of Bukhara", "location": "Bukhara" },
+  { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Ichan-Kala fortress walls, Khiva", "location": "Khiva" },
+  { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Traditional Uzbek ceramics", "location": "Fergana Valley" },
+  { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Silk weaving workshop", "location": "Margilan" },
+  { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Chorsu Bazaar dome", "location": "Tashkent" },
+  { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Shah-i-Zinda necropolis", "location": "Samarkand" },
+  { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Kyzylkum Desert landscape", "location": "Karakalpakstan" }
+]

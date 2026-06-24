@@ -9,7 +9,8 @@
       "contact": "Aloqa",
       "services": "Xizmatlar"
     },
-    "language": "Til"
+    "language": "Til",
+    "toggleMenu": "Menyu"
   },
   "hero": {
     "title": "O‘zbekistonning yashirin xazinalarini kashf eting",
@@ -42,7 +43,88 @@
     "aboutcard2Title": "5+ yillik tajriba",
     "aboutcard2Text": "Biz o‘n yildan ortiq vaqt mobaynida butun dunyo sayohatchilari uchun O‘zbekistonda unutilmas sarguzashtlarni yaratdik.",
     "aboutcard3Title": "Shaxsiylashtirilgan xizmat",
-    "aboutcard3Text": "Biz har bir sayohatni sizning qiziqishlaringizga moslashtiramiz va chinakam shaxsiy tajribani ta'minlaymiz."
+    "aboutcard3Text": "Biz har bir sayohatni sizning qiziqishlaringizga moslashtiramiz va chinakam shaxsiy tajribani ta'minlaymiz.",
+    "noToursAvailable": "Ushbu turkumda sayohatlar topilmadi.",
+    "testimonialsTitle": "Sayohatchilarimizning fikrlari",
+    "testimonialsSubtitle": "Biz bilan sayohat qilgan kashfiyotchilarning hikoyalari va tajribalarini o'qing.",
+    "locationTitle": "Ofisimizga tashrif buyuring",
+    "locationSubtitle": "Bizni Samarqandning markazida toping. Siz bilan shaxsan uchrashishdan xursand bo'lamiz!",
+    "getDirections": "Yo'nalishni olish",
+    "servicesTitle": "Premium xizmatlarimiz",
+    "servicesSubtitle": "Sayohatingizni muammosiz o'tkazish uchun keng qamrovli sayohat yechimlarini taqdim etamiz.",
+    "serviceTours": "Maxsus sayohatlar",
+    "serviceToursDesc": "Sizning qiziqishlaringiz va byudjetingizga moslashtirilgan marshrutlar.",
+    "serviceVisa": "Viza rasmiylashtirish",
+    "serviceVisaDesc": "Barcha hujjatlar uchun muammosiz viza yordami.",
+    "serviceCars": "Avtomobil ijarasi",
+    "serviceCarsDesc": "Professional haydovchilar bilan premium avtomobillar.",
+    "serviceHotels": "Mehmonxona bron qilish",
+    "serviceHotelsDesc": "Boutique dan hashamatli turargohlargacha tanlangan joylar.",
+    "serviceSupport": "24/7 Qo'llab-quvvatlash",
+    "serviceSupportDesc": "Bizning bag'ishlangan mahalliy jamoamiz tomonidan kechayu-kunduz yordam.",
+    "exploreServices": "Barcha xizmatlarni ko'rish",
+    "ctaTitle": "Sayohatingizni boshlashga tayyormisiz?",
+    "ctaDescription": "Sayohat ekspertlarimiz sizga mukammal tajribani yaratishda yordam berish uchun shu yerda. Keling, buni amalga oshiraylik.",
+    "ctaButton": "Bugun biz bilan bog'laning",
+    "travelAssistant": {
+      "popupTitle": "Mukammal sayohatingizni toping",
+      "popupDescription": "Qaysi O'zbekiston sayohati sizga mos kelishini bilmayapsizmi? Keling, ideal sarguzashtingizni topishingizga yordam beraylik.",
+      "popupStart": "Boshlash (1 daqiqa)",
+      "sectionBadge": "Shaxsiy tavsiyalar",
+      "sectionTitle": "O'zbekistonga mukammal sayohatingizni toping",
+      "sectionDescription": "Bir necha tez savolga javob bering va biz sayohat uslubingizni tushunib, sizga yaxshiroq yordam beramiz.",
+      "sectionButton": "Sayohat yordamchisini ishga tushirish (2 daqiqa)",
+      "featureFast": "2 daqiqa vaqt oladi",
+      "featurePersonalized": "Shaxsiy mosliklar",
+      "featurePrivate": "Shaxsiy ma'lumotlar kerak emas",
+      "questionLabel": "{{current}}-savol, jami {{total}}",
+      "back": "Orqaga",
+      "next": "Keyingi",
+      "complete": "Yakunlash",
+      "resultTitle": "Rahmat! 🎉",
+      "resultSubtitle": "Sayohat afzalliklaringizni saqlab qoldik. Mana siz izlayotgan narsa:",
+      "resultTripType": "Sayohat turi",
+      "resultTravelers": "Sayohatchilar",
+      "resultDuration": "Davomiylik",
+      "resultBudget": "Byudjet",
+      "resultRegions": "Hududlar",
+      "resultContact": "Biz bilan bog'laning (Afzalliklaringizni bilamiz)",
+      "resultViewTours": "Tavsiya etilgan sayohatlarni ko'rish",
+      "close": "Yopish",
+      "questionTripType": "Qanday sayohat turi sizni qiziqtiradi?",
+      "questionTravelers": "Kim bilan sayohat qilasiz?",
+      "questionDuration": "O'zbekistonda qancha vaqt qolishni rejalashtiryapsiz?",
+      "questionBudget": "Bir kishi uchun taxminiy byudjetingiz qancha?",
+      "questionRegions": "Qaysi shaharlar yoki hududlar sizni ko'proq qiziqtiradi?",
+      "questionRegionsSubtitle": "Barcha mos variantlarni tanlang",
+      "optionCultural": "Madaniy va tarixiy",
+      "optionNature": "Tabiat va tog'lar",
+      "optionCity": "Shahar va diqqatga sazovor joylar",
+      "optionRelax": "Dam olish va hordiq",
+      "optionFamily": "Oilaviy sayohat",
+      "optionAdventure": "Sarguzasht",
+      "optionReligious": "Diniy va ma'naviy",
+      "optionSolo": "Yolg'iz",
+      "optionCouple": "Juftlik",
+      "optionFamilyKids": "Bolalar bilan oila",
+      "optionFriends": "Do'stlar guruhi",
+      "option2to3": "2–3 kun",
+      "option5to7": "5–7 kun",
+      "option8to14": "8–14 kun",
+      "option14to17": "14-17 kun",
+      "optionFlexible": "Moslashuvchan / Ishonchim komil emas",
+      "optionEconomy": "Iqtisodiy",
+      "optionMidRange": "O'rta daraja",
+      "optionPremium": "Premium",
+      "optionUndecided": "Hali qaror qilmagan",
+      "optionAllUzbekistan": "Butun O'zbekiston bo'ylab",
+      "optionSamarkand": "Samarqand",
+      "optionBukhara": "Buxoro",
+      "optionKhiva": "Xiva",
+      "optionTashkent": "Toshkent",
+      "optionMountains": "Tog'lar / Tabiat",
+      "optionNotDecided": "Qaror qilinmagan"
+    }
   },
   "tours": {
     "title": "Keyingi sarguzashtingizni toping",
@@ -200,8 +282,16 @@
       "highlights": "Yorqin joylar",
       "day": "Kun",
       "close": "Yopish",
-      "registerNow": "Ushbu sayohatga ro‘yxatdan o‘tish"
-    }
+      "registerNow": "Ushbu sayohatga ro‘yxatdan o‘tish",
+      "destination": "Yo'nalish",
+      "duration": "Davomiyligi",
+      "price": "Narx",
+      "goToTourPage": "Sayohat sahifasiga o'tish"
+    },
+    "findOut": "Bilib oling",
+    "centralAsiaTours": "Markaziy Osiyo bo'ylab sayohatlar",
+    "errorLoading": "Sayohatlarni yuklashda xatolik",
+    "retry": "Qayta urinish"
   },
   "destinations": {
     "title": "Manzillar",
@@ -213,8 +303,17 @@
     "drawer": {
       "close": "Yopish",
       "relatedTours": "Tegishli sayohatlar",
-      "viewTours": "Mavjud sayohatlarni ko‘rish"
-    }
+      "viewTours": "Mavjud sayohatlarni ko‘rish",
+      "summary": "Qisqacha ma'lumot",
+      "travelTips": "Sayohat maslahatlari",
+      "feature": "Uni nimada maxsus qiladi",
+      "mustSee": "Ko'rish kerak bo'lgan joylar",
+      "nature": "Tabiat va manzara",
+      "food": "Taom va oshxona",
+      "gettingThere": "Qanday borish mumkin"
+    },
+    "viewAll": "Barcha yo'nalishlarni ko'rish",
+    "noDestinations": "Hozircha yo'nalishlar mavjud emas."
   },
   "registration": {
     "title": "Sayohatga ro‘yxatdan o‘tish",
@@ -257,7 +356,8 @@
     "teamTitle": "Jamoamiz bilan tanishing",
     "teamSubtitle": "Mutaxassis gidlar va g‘ayratli mutaxassislar",
     "storiesTitle": "Muvaffaqiyat hikoyalari",
-    "storiesSubtitle": "Biz bilan O‘zbekistonni kashf etgan sayohatchilarning fikrlarini tinglang"
+    "storiesSubtitle": "Biz bilan O‘zbekistonni kashf etgan sayohatchilarning fikrlarini tinglang",
+    "errorLoading": "Jamoani yuklashda xatolik"
   },
   "contact": {
     "title": "Biz bilan bog‘lanish",
@@ -287,8 +387,7 @@
     "info": {
       "title": "Aloqa ma'lumotlari",
       "office": "Bosh ofis",
-            "address": "Abu Rayhon Beruniy ko‘chasi 65, Samarqand, O‘zbekiston",
-
+      "address": "Abu Rayhon Beruniy ko‘chasi 65, Samarqand, O‘zbekiston",
       "phone": "Telefon",
       "email": "Elektron pochta",
       "hours": "Ish vaqti",
@@ -307,7 +406,12 @@
     "lightbox": {
       "previous": "Oldingi",
       "next": "Keyingi",
-      "close": "Yopish"
+      "close": "Yopish",
+      "lightboxAria": "Rasm yoritgichi",
+      "closeAria": "Yoritgichni yopish",
+      "prevAria": "Oldingi rasm",
+      "nextAria": "Keyingi rasm",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -315,7 +419,10 @@
     "quickLinks": "Tezkor havolalar",
     "contactInfo": "Aloqa ma'lumotlari",
     "followUs": "Bizni kuzating",
-    "copyright": "© 2025 AlphaTravel. Barcha huquqlar himoyalangan."
+    "copyright": "© 2025 AlphaTravel. Barcha huquqlar himoyalangan.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "Yuklanmoqda...",
@@ -400,8 +507,7 @@
       "phone": "Telefon",
       "email": "Elektron pochta",
       "hours": "Ish vaqti",
-         "hoursDetail": "Dushanba - Shanba: 9:00 - 21:00\nYakshaNba: 9:00 - 21:00"
-
+      "hoursDetail": "Dushanba - Shanba: 9:00 - 21:00\nYakshaNba: 9:00 - 21:00"
     }
   },
   "services": {
@@ -433,7 +539,10 @@
       "totalCost": "Jami xarajat:",
       "people": "kishi",
       "detailedReceipt": "Batafsil tasdiqlovchi chek yuborildi",
-      "callus": "Bizga qo‘ng‘iroq qiling"
+      "callus": "Bizga qo‘ng‘iroq qiling",
+      "contactAdminViaTelegram": "Tashkilotchiga bevosita xabar yozmoqchimisiz?",
+      "goToTelegram": "{{username}} ga xabar yozish",
+      "openInBrowser": "Brauzerda ochish"
     },
     "registrationDetails": {
       "name": "Ism",
@@ -460,6 +569,45 @@
       "view": "Ko‘rish",
       "DirectContact": "To‘g‘ridan-to‘g‘ri aloqa",
       "assist": "Yordam kerakmi? Bizning jamoamiz sizga yordam berishga tayyor!"
-    }
+    },
+    "contact": {
+      "email": "Elektron pochta",
+      "facebook": "Facebook",
+      "visitPage": "Sahifaga o'tish",
+      "whatsapp": "WhatsApp",
+      "chatNow": "Hozir suhbatlashish"
+    },
+    "validation": {
+      "requiredFields": "Iltimos, barcha kerakli maydonlarni to'ldiring.",
+      "submitFailed": "Ro'yxatdan o'tish yuborilmadi.",
+      "errorPrefix": "Formani yuborishda xatolik"
+    },
+    "fallback": {
+      "subtitle": "Ajoyib sayohat sizni kutmoqda!",
+      "dayTitle": "Kundalik tadbirlar",
+      "noDetails": "Tafsilotlar mavjud emas"
+    },
+    "placeholder": {
+      "name": "To'liq ismingizni kiriting",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "Sayohat rasmi {{number}}",
+    "person": "kishi",
+    "people": "kishi"
+  },
+  "chatbot": {
+    "title": "Sayohat Yordamchisi",
+    "subtitle": "AI yordami",
+    "navLabel": "AI Chat",
+    "pageTitle": "AI Sayohat Yordamchisi",
+    "pageSubtitle": "AI yordamchisi bilan mukammal sayohatingizni rejalashtiring",
+    "browseTours": "Barcha turlarni ko'rish",
+    "placeholder": "Istalgan narsani so'rang...",
+    "send": "Yuborish",
+    "open": "Chatni ochish",
+    "close": "Chatni yopish",
+    "greeting": "Salom! O'zbekiston bo'ylab sayohatingizni rejalashtirishda qanday yordam bera olaman?",
+    "error": "Kechirasiz, muammo yuz berdi. Iltimos, qayta urinib ko'ring."
   }
 }

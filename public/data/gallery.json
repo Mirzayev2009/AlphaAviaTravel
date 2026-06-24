@@ -1,0 +1,74 @@
+{
+  "gallery": {
+    "en": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Registan Square at sunset, Samarkand", "location": "Samarkand" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Ancient madrasas of Bukhara", "location": "Bukhara" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Ichan-Kala fortress walls, Khiva", "location": "Khiva" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Traditional Uzbek ceramics", "location": "Fergana Valley" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Silk weaving workshop", "location": "Margilan" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Chorsu Bazaar dome", "location": "Tashkent" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Shah-i-Zinda necropolis", "location": "Samarkand" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Kyzylkum Desert landscape", "location": "Karakalpakstan" }
+    ],
+    "ru": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Площадь Регистан на закате, Самарканд", "location": "Самарканд" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Древние медресе Бухары", "location": "Бухара" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Крепостные стены Ичан-Калы, Хива", "location": "Хива" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Традиционная узбекская керамика", "location": "Ферганская долина" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Мастерская шелкоткачества", "location": "Маргилан" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Купол рынка Чорсу", "location": "Ташкент" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Некрополь Шахи-Зинда", "location": "Самарканд" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Пейзаж пустыни Кызылкум", "location": "Каракалпакстан" }
+    ],
+    "es": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Plaza Registán al atardecer, Samarcanda", "location": "Samarcanda" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Antiguas madrasas de Bujará", "location": "Bujará" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Murallas de la fortaleza Ichan-Kala, Jiva", "location": "Jiva" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Cerámica tradicional uzbeka", "location": "Valle de Ferganá" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Taller de tejido de seda", "location": "Margilán" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Cúpula del Bazar Chorsu", "location": "Taskent" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Necrópolis Shah-i-Zinda", "location": "Samarcanda" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Paisaje del desierto Kyzylkum", "location": "Karakalpakistán" }
+    ],
+    "fr": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Place du Registan au coucher du soleil, Samarkand", "location": "Samarkand" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Anciennes madrasas de Boukhara", "location": "Boukhara" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Remparts de la forteresse d'Ichan-Kala, Khiva", "location": "Khiva" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Céramique traditionnelle ouzbèke", "location": "Vallée de Ferghana" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Atelier de tissage de soie", "location": "Marguilan" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Dôme du bazar Chorsu", "location": "Tachkent" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Nécropole de Shah-i-Zinda", "location": "Samarkand" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Paysage du désert Kyzylkoum", "location": "Karakalpakstan" }
+    ],
+    "it": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Piazza Registan al tramonto, Samarcanda", "location": "Samarcanda" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Antiche madrase di Bukhara", "location": "Bukhara" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Mura della fortezza Ichan-Kala, Khiva", "location": "Khiva" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "Ceramica tradizionale uzbeka", "location": "Valle di Fergana" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Laboratorio di tessitura della seta", "location": "Margilan" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Cupola del Bazar Chorsu", "location": "Tashkent" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Necropoli di Shah-i-Zinda", "location": "Samarcanda" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Paesaggio del deserto Kyzylkum", "location": "Karakalpakstan" }
+    ],
+    "zh": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "日落时分的雷吉斯坦广场, 撒马尔罕", "location": "撒马尔罕" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "布哈拉的古伊斯兰学校", "location": "布哈拉" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "伊钦卡拉堡垒城墙, 希瓦", "location": "希瓦" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "传统乌兹别克陶瓷", "location": "费尔干纳山谷" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "丝绸编织工作坊", "location": "马尔吉兰" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "乔尔苏巴扎穹顶", "location": "塔什干" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "沙赫津达陵墓群", "location": "撒马尔罕" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "克孜勒库姆沙漠景观", "location": "卡拉卡尔帕克斯坦" }
+    ],
+    "uz": [
+      { "id": "g1", "src": "https://media.gettyimages.com/id/638640833/photo/uzbekistan-samarkand-shah-i-zinda.jpg", "alt": "Registon maydoni quyosh botishida, Samarqand", "location": "Samarqand" },
+      { "id": "g2", "src": "https://media.gettyimages.com/id/638640851/photo/uzbekistan-bukhara-kalyan-mosque.jpg", "alt": "Buxoroning qadimiy madrasalari", "location": "Buxoro" },
+      { "id": "g3", "src": "https://media.gettyimages.com/id/1213916289/photo/ancient-city-walls-of-khiva-uzbekistan-in-sunset-twilight.jpg", "alt": "Ichan-Qal'a qal'a devorlari, Xiva", "location": "Xiva" },
+      { "id": "g4", "src": "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg", "alt": "An'anaviy o'zbek kulolligi", "location": "Farg'ona vodiysi" },
+      { "id": "g5", "src": "https://media.gettyimages.com/id/71785306/photo/kukand-uzbekistan-uzbek-youths-eat-their-dinner-in-the-courtyard-of-the-local-mosque-and.jpg", "alt": "Ipak to'quv ustaxonasi", "location": "Marg'ilon" },
+      { "id": "g6", "src": "https://media.gettyimages.com/id/2156412688/photo/tashkent-city-park.jpg", "alt": "Chorsu bozori gumbazi", "location": "Toshkent" },
+      { "id": "g7", "src": "https://media.gettyimages.com/id/2160193340/photo/tombs-of-shah-i-zinde-in-semerkand-uzbekistan.jpg", "alt": "Shohizinda maqbarasi", "location": "Samarqand" },
+      { "id": "g8", "src": "https://media.gettyimages.com/id/1055571236/photo/uzbekistan-karakalpakstan-ayaz-kala.jpg", "alt": "Qizilqum cho'li manzarasi", "location": "Qoraqalpog'iston" }
+    ]
+  }
+}

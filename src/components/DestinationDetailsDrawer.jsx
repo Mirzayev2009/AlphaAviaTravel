@@ -52,7 +52,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-xs text-muted-foreground mb-1">Summary</p>
+                  <p className="text-xs text-muted-foreground mb-1">{t("destinations.drawer.summary")}</p>
                   <p className="text-sm text-gray-700">{destination.summary}</p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
                 <Calendar className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-xs text-muted-foreground mb-1">
-                    Best Time to Visit
+                    {t("destinations.card.bestTime")}
                   </p>
                   <p className="text-sm font-semibold text-gray-800">
                     {destination.bestTime}
@@ -73,7 +73,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
                 <Lightbulb className="h-5 w-5 text-orange-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-xs text-muted-foreground mb-1">
-                    Travel Tips
+                    {t("destinations.drawer.travelTips")}
                   </p>
                   <p className="text-sm text-gray-700">
                     {destination.travelTips}
@@ -86,7 +86,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
             <div className="mb-6 p-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl border border-orange-200">
               <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
                 <span className="text-orange-500">✦</span>
-                What Makes It Special
+                {t("destinations.drawer.feature")}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {destination.featureDescription}
@@ -96,7 +96,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
             {/* Must See Attractions */}
             <div className="mb-6">
               <h3 className="text-lg font-bold text-gray-800 mb-3">
-                🎯 Must-See Attractions
+                🎯 {t("destinations.drawer.mustSee")}
               </h3>
               <div className="space-y-3">
                 {destination.mustSee.map((item, index) => {
@@ -123,7 +123,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
             <div className="mb-6 p-5 bg-green-50 rounded-xl border border-green-200">
               <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
                 <span className="text-green-600">🌿</span>
-                Nature & Landscape
+                {t("destinations.drawer.nature")}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {destination.nature}
@@ -134,7 +134,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
             <div className="mb-6 p-5 bg-amber-50 rounded-xl border border-amber-200">
               <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
                 <span className="text-amber-600">🍽️</span>
-                Food & Cuisine
+                {t("destinations.drawer.food")}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {destination.food}
@@ -145,7 +145,7 @@ const DestinationDetailsDrawer = ({ destination, open, onClose }) => {
             <div className="mb-6 p-5 bg-blue-50 rounded-xl border border-blue-200">
               <h3 className="text-lg font-bold text-gray-800 mb-3 flex items-center gap-2">
                 <span className="text-blue-600">🚂</span>
-                Getting There
+                {t("destinations.drawer.gettingThere")}
               </h3>
               <p className="text-sm text-gray-700 leading-relaxed">
                 {destination.gettingThere}

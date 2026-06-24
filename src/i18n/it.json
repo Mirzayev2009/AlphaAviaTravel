@@ -9,7 +9,8 @@
       "contact": "Contatti",
       "services": "Servizi"
     },
-    "language": "Lingua"
+    "language": "Lingua",
+    "toggleMenu": "Menu"
   },
   "hero": {
     "title": "Esplora i Tesori Nascosti dell'Uzbekistan",
@@ -42,7 +43,88 @@
     "aboutcard2Title": "Oltre 5 Anni di Esperienza",
     "aboutcard2Text": "Per più di un decennio, abbiamo creato avventure indimenticabili in Uzbekistan per viaggiatori di tutto il mondo.",
     "aboutcard3Title": "Servizio Personalizzato",
-    "aboutcard3Text": "Personalizziamo ogni tour in base ai tuoi interessi, garantendo un'esperienza veramente personale."
+    "aboutcard3Text": "Personalizziamo ogni tour in base ai tuoi interessi, garantendo un'esperienza veramente personale.",
+    "noToursAvailable": "Nessun tour trovato in questa categoria.",
+    "testimonialsTitle": "Cosa dicono i nostri viaggiatori",
+    "testimonialsSubtitle": "Leggi storie ed esperienze di esploratori che hanno viaggiato con noi.",
+    "locationTitle": "Visita il nostro ufficio",
+    "locationSubtitle": "Trovaci nel cuore di Samarcanda. Saremo felici di incontrarti di persona!",
+    "getDirections": "Ottieni indicazioni",
+    "servicesTitle": "I nostri servizi premium",
+    "servicesSubtitle": "Offriamo soluzioni di viaggio complete per rendere il tuo viaggio senza intoppi.",
+    "serviceTours": "Tour personalizzati",
+    "serviceToursDesc": "Itinerari su misura per i tuoi interessi e budget.",
+    "serviceVisa": "Elaborazione visti",
+    "serviceVisaDesc": "Assistenza senza problemi per tutta la documentazione.",
+    "serviceCars": "Noleggio auto",
+    "serviceCarsDesc": "Veicoli premium con autisti professionisti.",
+    "serviceHotels": "Prenotazione hotel",
+    "serviceHotelsDesc": "Alloggi selezionati dal boutique al lusso.",
+    "serviceSupport": "Supporto 24/7",
+    "serviceSupportDesc": "Assistenza continua dal nostro team locale dedicato.",
+    "exploreServices": "Esplora tutti i servizi",
+    "ctaTitle": "Pronto a iniziare il tuo viaggio?",
+    "ctaDescription": "I nostri esperti di viaggio sono qui per aiutarti a progettare l'esperienza perfetta. Rendiamola realtà.",
+    "ctaButton": "Contattaci oggi",
+    "travelAssistant": {
+      "popupTitle": "Trova il tuo viaggio perfetto",
+      "popupDescription": "Non sai quale tour in Uzbekistan fa per te? Lascia che ti aiutiamo a scoprire la tua avventura ideale.",
+      "popupStart": "Inizia (1 minuto)",
+      "sectionBadge": "Raccomandazioni personalizzate",
+      "sectionTitle": "Trova il tuo viaggio perfetto in Uzbekistan",
+      "sectionDescription": "Rispondi ad alcune domande rapide e capiremo il tuo stile di viaggio per aiutarti meglio.",
+      "sectionButton": "Avvia assistente di viaggio (2 minuti)",
+      "featureFast": "Richiede 2 minuti",
+      "featurePersonalized": "Abbinamenti personalizzati",
+      "featurePrivate": "Nessun dato personale necessario",
+      "questionLabel": "Domanda {{current}} di {{total}}",
+      "back": "Indietro",
+      "next": "Avanti",
+      "complete": "Completa",
+      "resultTitle": "Grazie! 🎉",
+      "resultSubtitle": "Abbiamo salvato le tue preferenze di viaggio. Ecco cosa stai cercando:",
+      "resultTripType": "Tipo di viaggio",
+      "resultTravelers": "Viaggiatori",
+      "resultDuration": "Durata",
+      "resultBudget": "Budget",
+      "resultRegions": "Regioni",
+      "resultContact": "Contattaci (Conosciamo le tue preferenze)",
+      "resultViewTours": "Vedi tour consigliati",
+      "close": "Chiudi",
+      "questionTripType": "Che tipo di viaggio ti interessa?",
+      "questionTravelers": "Con chi viaggi?",
+      "questionDuration": "Quanto tempo pensi di rimanere in Uzbekistan?",
+      "questionBudget": "Qual è il tuo budget approssimativo per persona?",
+      "questionRegions": "Quali città o regioni ti interessano di più?",
+      "questionRegionsSubtitle": "Seleziona tutte le opzioni pertinenti",
+      "optionCultural": "Culturale e storico",
+      "optionNature": "Natura e montagne",
+      "optionCity": "Città e visite turistiche",
+      "optionRelax": "Rilassamento e tempo libero",
+      "optionFamily": "Viaggio in famiglia",
+      "optionAdventure": "Avventura",
+      "optionReligious": "Religioso e spirituale",
+      "optionSolo": "Da solo",
+      "optionCouple": "Coppia",
+      "optionFamilyKids": "Famiglia con bambini",
+      "optionFriends": "Gruppo di amici",
+      "option2to3": "2–3 giorni",
+      "option5to7": "5–7 giorni",
+      "option8to14": "8–14 giorni",
+      "option14to17": "14-17 giorni",
+      "optionFlexible": "Flessibile / Non sicuro",
+      "optionEconomy": "Economico",
+      "optionMidRange": "Media gamma",
+      "optionPremium": "Premium",
+      "optionUndecided": "Non ancora deciso",
+      "optionAllUzbekistan": "In tutto l'Uzbekistan",
+      "optionSamarkand": "Samarcanda",
+      "optionBukhara": "Bukhara",
+      "optionKhiva": "Khiva",
+      "optionTashkent": "Tashkent",
+      "optionMountains": "Montagne / Natura",
+      "optionNotDecided": "Non deciso"
+    }
   },
   "tours": {
     "title": "Trova la Tua Prossima Avventura",
@@ -200,8 +282,16 @@
       "highlights": "Punti Salienti",
       "day": "Giorno",
       "close": "Chiudi",
-      "registerNow": "Iscriviti a questo Tour"
-    }
+      "registerNow": "Iscriviti a questo Tour",
+      "destination": "Destinazione",
+      "duration": "Durata",
+      "price": "Prezzo",
+      "goToTourPage": "Vai alla pagina del tour"
+    },
+    "findOut": "Scopri",
+    "centralAsiaTours": "Tour dell'Asia Centrale",
+    "errorLoading": "Errore nel caricamento dei tour",
+    "retry": "Riprova"
   },
   "destinations": {
     "title": "Destinazioni",
@@ -213,8 +303,17 @@
     "drawer": {
       "close": "Chiudi",
       "relatedTours": "Tour Correlati",
-      "viewTours": "Vedi i Tour Disponibili"
-    }
+      "viewTours": "Vedi i Tour Disponibili",
+      "summary": "Riepilogo",
+      "travelTips": "Consigli di viaggio",
+      "feature": "Cosa lo rende speciale",
+      "mustSee": "Attrazioni imperdibili",
+      "nature": "Natura e paesaggio",
+      "food": "Cibo e cucina",
+      "gettingThere": "Come arrivare"
+    },
+    "viewAll": "Vedi tutte le destinazioni",
+    "noDestinations": "Nessuna destinazione disponibile al momento."
   },
   "registration": {
     "title": "Iscrizione al Tour",
@@ -257,7 +356,8 @@
     "teamTitle": "Incontra il Nostro Team",
     "teamSubtitle": "Guide esperte e professionisti appassionati",
     "storiesTitle": "Storie di Successo",
-    "storiesSubtitle": "Ascolta i viaggiatori che hanno vissuto l'Uzbekistan con noi"
+    "storiesSubtitle": "Ascolta i viaggiatori che hanno vissuto l'Uzbekistan con noi",
+    "errorLoading": "Errore nel caricamento del team"
   },
   "contact": {
     "title": "Contattaci",
@@ -287,8 +387,7 @@
     "info": {
       "title": "Informazioni di Contatto",
       "office": "Sede Centrale",
-            "address": "Via Abu Raykhon Beruniy 65, Samarcanda, Uzbekistan",
-
+      "address": "Via Abu Raykhon Beruniy 65, Samarcanda, Uzbekistan",
       "phone": "Telefono",
       "email": "Email",
       "hours": "Orari di Apertura",
@@ -307,7 +406,12 @@
     "lightbox": {
       "previous": "Precedente",
       "next": "Successivo",
-      "close": "Chiudi"
+      "close": "Chiudi",
+      "lightboxAria": "Lightbox immagini",
+      "closeAria": "Chiudi lightbox",
+      "prevAria": "Immagine precedente",
+      "nextAria": "Immagine successiva",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -315,7 +419,10 @@
     "quickLinks": "Link Veloci",
     "contactInfo": "Informazioni di Contatto",
     "followUs": "Seguici",
-    "copyright": "© 2025 AlphaTravel. Tutti i diritti riservati."
+    "copyright": "© 2025 AlphaTravel. Tutti i diritti riservati.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "Caricamento in corso...",
@@ -400,8 +507,7 @@
       "phone": "Telefono",
       "email": "Email",
       "hours": "Orari di Apertura",
-            "hoursDetail": "Lunedì - Sabato: 9:00 - 21:00\nDomenica: 9:00 - 21:00"
-
+      "hoursDetail": "Lunedì - Sabato: 9:00 - 21:00\nDomenica: 9:00 - 21:00"
     }
   },
   "services": {
@@ -433,7 +539,10 @@
       "totalCost": "Costo Totale:",
       "people": "persone",
       "detailedReceipt": "Una ricevuta di conferma dettagliata è stata inviata a",
-      "callus": "Chiamaci"
+      "callus": "Chiamaci",
+      "contactAdminViaTelegram": "Vuoi scrivere direttamente all'organizzatore?",
+      "goToTelegram": "Messaggio a {{username}}",
+      "openInBrowser": "Apri nel browser"
     },
     "registrationDetails": {
       "name": "Nome",
@@ -460,6 +569,45 @@
       "view": "Visualizza",
       "DirectContact": "Contatto Diretto",
       "assist": "Hai bisogno di assistenza? Il nostro team è pronto ad aiutarti!"
-    }
+    },
+    "contact": {
+      "email": "Email",
+      "facebook": "Facebook",
+      "visitPage": "Visita la pagina",
+      "whatsapp": "WhatsApp",
+      "chatNow": "Chatta ora"
+    },
+    "validation": {
+      "requiredFields": "Si prega di compilare tutti i campi obbligatori.",
+      "submitFailed": "Invio della registrazione fallito.",
+      "errorPrefix": "Errore nell'invio del modulo"
+    },
+    "fallback": {
+      "subtitle": "Un viaggio mozzafiato ti aspetta!",
+      "dayTitle": "Attività quotidiane",
+      "noDetails": "Nessun dettaglio disponibile"
+    },
+    "placeholder": {
+      "name": "Inserisci il tuo nome completo",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "Immagine del tour {{number}}",
+    "person": "persona",
+    "people": "persone"
+  },
+  "chatbot": {
+    "title": "Assistente di Viaggio",
+    "subtitle": "Aiuto AI",
+    "navLabel": "Chat AI",
+    "pageTitle": "Assistente di Viaggio AI",
+    "pageSubtitle": "Pianifica il tuo viaggio perfetto con il nostro assistente di viaggio AI",
+    "browseTours": "Sfoglia tutti i tour",
+    "placeholder": "Chiedimi qualsiasi cosa...",
+    "send": "Invia",
+    "open": "Apri chat",
+    "close": "Chiudi chat",
+    "greeting": "Ciao! Come posso aiutarti a pianificare la tua avventura in Uzbekistan?",
+    "error": "Mi dispiace, ho avuto un problema. Per favore riprova."
   }
 }

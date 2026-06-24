@@ -74,7 +74,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Facebook"
+                aria-label={t("footer.facebook")}
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Instagram"
+                aria-label={t("footer.instagram")}
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -92,7 +92,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter"
+                aria-label={t("footer.twitter")}
               >
                 <Twitter className="h-5 w-5" />
               </a>

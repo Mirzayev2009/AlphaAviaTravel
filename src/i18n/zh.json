@@ -9,7 +9,8 @@
       "contact": "联系我们",
       "services": "服务"
     },
-    "language": "语言"
+    "language": "语言",
+    "toggleMenu": "切换菜单"
   },
   "hero": {
     "title": "探索乌兹别克斯坦的隐藏宝藏",
@@ -42,7 +43,88 @@
     "aboutcard2Title": "5+ 年经验",
     "aboutcard2Text": "十多年来，我们为全球旅行者创造了难忘的乌兹别克斯坦冒险之旅。",
     "aboutcard3Title": "个性化服务",
-    "aboutcard3Text": "我们根据您的兴趣定制每个旅行团，确保真正的个人体验。"
+    "aboutcard3Text": "我们根据您的兴趣定制每个旅行团，确保真正的个人体验。",
+    "noToursAvailable": "未找到此类别中的旅行团。",
+    "testimonialsTitle": "旅行者的心声",
+    "testimonialsSubtitle": "阅读与我们同行的探险家的故事和经历。",
+    "locationTitle": "访问我们的办公室",
+    "locationSubtitle": "在撒马尔罕的中心找到我们。我们很乐意亲自与您会面！",
+    "getDirections": "获取路线",
+    "servicesTitle": "我们的优质服务",
+    "servicesSubtitle": "我们提供全面的旅行解决方案，让您的旅程无缝衔接。",
+    "serviceTours": "定制旅行团",
+    "serviceToursDesc": "根据您的兴趣和预算量身定制的行程。",
+    "serviceVisa": "签证办理",
+    "serviceVisaDesc": "为所有文件提供无忧签证协助。",
+    "serviceCars": "租车服务",
+    "serviceCarsDesc": "配备专业司机的优质车辆。",
+    "serviceHotels": "酒店预订",
+    "serviceHotelsDesc": "从精品到豪华的精选住宿。",
+    "serviceSupport": "24/7 支持",
+    "serviceSupportDesc": "我们专属的当地团队提供全天候协助。",
+    "exploreServices": "探索所有服务",
+    "ctaTitle": "准备好开始您的旅程了吗？",
+    "ctaDescription": "我们的旅行专家将帮助您设计完美的体验。让我们实现它。",
+    "ctaButton": "立即联系我们",
+    "travelAssistant": {
+      "popupTitle": "找到您的完美旅程",
+      "popupDescription": "不确定哪个乌兹别克斯坦旅行团适合您？让我们帮您发现理想的冒险之旅。",
+      "popupStart": "开始（1分钟）",
+      "sectionBadge": "个性化推荐",
+      "sectionTitle": "找到您完美的乌兹别克斯坦之旅",
+      "sectionDescription": "回答几个快速问题，我们将了解您的旅行风格，以便更好地帮助您。",
+      "sectionButton": "启动旅行助手（2分钟）",
+      "featureFast": "只需2分钟",
+      "featurePersonalized": "个性化匹配",
+      "featurePrivate": "无需个人数据",
+      "questionLabel": "问题 {{current}}，共 {{total}}",
+      "back": "返回",
+      "next": "下一步",
+      "complete": "完成",
+      "resultTitle": "谢谢！🎉",
+      "resultSubtitle": "我们已保存您的旅行偏好。以下是您正在寻找的内容：",
+      "resultTripType": "旅行类型",
+      "resultTravelers": "旅行者",
+      "resultDuration": "时长",
+      "resultBudget": "预算",
+      "resultRegions": "地区",
+      "resultContact": "联系我们（我们知道您的偏好）",
+      "resultViewTours": "查看推荐旅行团",
+      "close": "关闭",
+      "questionTripType": "您对什么类型的旅行感兴趣？",
+      "questionTravelers": "您和谁一起旅行？",
+      "questionDuration": "您计划在乌兹别克斯坦停留多久？",
+      "questionBudget": "您每人大概的预算是多少？",
+      "questionRegions": "您最感兴趣的城市或地区是哪些？",
+      "questionRegionsSubtitle": "选择所有适用的选项",
+      "optionCultural": "文化与历史",
+      "optionNature": "自然与山脉",
+      "optionCity": "城市观光",
+      "optionRelax": "休闲与度假",
+      "optionFamily": "家庭旅行",
+      "optionAdventure": "探险",
+      "optionReligious": "宗教与精神",
+      "optionSolo": "独自",
+      "optionCouple": "情侣",
+      "optionFamilyKids": "带孩子的家庭",
+      "optionFriends": "朋友团体",
+      "option2to3": "2–3天",
+      "option5to7": "5–7天",
+      "option8to14": "8–14天",
+      "option14to17": "14-17天",
+      "optionFlexible": "灵活 / 不确定",
+      "optionEconomy": "经济型",
+      "optionMidRange": "中档",
+      "optionPremium": "豪华型",
+      "optionUndecided": "尚未决定",
+      "optionAllUzbekistan": "乌兹别克斯坦全境",
+      "optionSamarkand": "撒马尔罕",
+      "optionBukhara": "布哈拉",
+      "optionKhiva": "希瓦",
+      "optionTashkent": "塔什干",
+      "optionMountains": "山脉 / 自然",
+      "optionNotDecided": "未决定"
+    }
   },
   "tours": {
     "title": "发现您的下一次冒险",
@@ -200,8 +282,16 @@
       "highlights": "亮点",
       "day": "天",
       "close": "关闭",
-      "registerNow": "注册此旅行团"
-    }
+      "registerNow": "注册此旅行团",
+      "destination": "目的地",
+      "duration": "行程天数",
+      "price": "价格",
+      "goToTourPage": "前往旅游页面"
+    },
+    "findOut": "发现",
+    "centralAsiaTours": "中亚旅游",
+    "errorLoading": "加载旅游信息时出错",
+    "retry": "重试"
   },
   "destinations": {
     "title": "目的地",
@@ -213,8 +303,17 @@
     "drawer": {
       "close": "关闭",
       "relatedTours": "相关旅行团",
-      "viewTours": "查看可用旅行团"
-    }
+      "viewTours": "查看可用旅行团",
+      "summary": "概要",
+      "travelTips": "旅行建议",
+      "feature": "独特之处",
+      "mustSee": "必看景点",
+      "nature": "自然与景观",
+      "food": "美食与烹饪",
+      "gettingThere": "如何到达"
+    },
+    "viewAll": "查看所有目的地",
+    "noDestinations": "目前没有可选的目的地。"
   },
   "registration": {
     "title": "旅行团注册",
@@ -252,12 +351,13 @@
   "about": {
     "title": "关于 AlphaTravel",
     "subtitle": "您值得信赖的乌兹别克斯坦探险伙伴",
-        "story": "Alpha Avia Travel 由 Eshmirzayev Nurislom 于 2020 年创立，是一家值得信赖的旅行公司，专注于入境、出境和国内旅游。我们为来乌兹别克斯坦的游客组织独家的文化与历史路线，同时也提供各类出境和本地旅游套餐。我们的服务包括酒店预订、机票协助、接送服务、专业导游以及根据每位客户需求定制的多种旅行解决方案。",
+    "story": "Alpha Avia Travel 由 Eshmirzayev Nurislom 于 2020 年创立，是一家值得信赖的旅行公司，专注于入境、出境和国内旅游。我们为来乌兹别克斯坦的游客组织独家的文化与历史路线，同时也提供各类出境和本地旅游套餐。我们的服务包括酒店预订、机票协助、接送服务、专业导游以及根据每位客户需求定制的多种旅行解决方案。",
     "mission": "我们的使命是为旅客提供舒适、安全且难忘的旅行体验。在 Alpha Avia Travel，我们敬业的团队专注于质量、責任与卓越服务，以确保您旅程的每一个环节都顺畅愉快。选择我们，您的旅行体验将交到值得信赖的双手。",
     "teamTitle": "认识我们的团队",
     "teamSubtitle": "专家导游和充满热情的专业人士",
     "storiesTitle": "成功案例",
-    "storiesSubtitle": "听听与我们一起体验过乌兹别克斯坦的旅行者的心声"
+    "storiesSubtitle": "听听与我们一起体验过乌兹别克斯坦的旅行者的心声",
+    "errorLoading": "加载团队信息时出错"
   },
   "contact": {
     "title": "联系我们",
@@ -306,7 +406,12 @@
     "lightbox": {
       "previous": "上一个",
       "next": "下一个",
-      "close": "关闭"
+      "close": "关闭",
+      "lightboxAria": "图片灯箱",
+      "closeAria": "关闭灯箱",
+      "prevAria": "上一张图片",
+      "nextAria": "下一张图片",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -314,7 +419,10 @@
     "quickLinks": "快速链接",
     "contactInfo": "联系信息",
     "followUs": "关注我们",
-    "copyright": "© 2025 AlphaTravel. 版权所有。"
+    "copyright": "© 2025 AlphaTravel. 版权所有。",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "正在加载...",
@@ -400,7 +508,6 @@
       "email": "电子邮件",
       "hours": "营业时间",
       "hoursDetail": "周一至周六：9 AM - 9 PM \n周日：9 AM - 9 PM"
-
     }
   },
   "services": {
@@ -432,7 +539,10 @@
       "totalCost": "总费用：",
       "people": "人",
       "detailedReceipt": "详细的确认收据已发送至",
-      "callus": "致电我们"
+      "callus": "致电我们",
+      "contactAdminViaTelegram": "想要直接给组织者发消息吗？",
+      "goToTelegram": "发送消息给 {{username}}",
+      "openInBrowser": "在浏览器中打开"
     },
     "registrationDetails": {
       "name": "姓名",
@@ -459,6 +569,45 @@
       "view": "查看",
       "DirectContact": "直接联系",
       "assist": "需要协助？我们的团队随时准备为您服务！"
-    }
+    },
+    "contact": {
+      "email": "电子邮件",
+      "facebook": "Facebook",
+      "visitPage": "访问页面",
+      "whatsapp": "WhatsApp",
+      "chatNow": "立即聊天"
+    },
+    "validation": {
+      "requiredFields": "请填写所有必填字段。",
+      "submitFailed": "提交注册失败。",
+      "errorPrefix": "提交表单时出错"
+    },
+    "fallback": {
+      "subtitle": "激动人心的旅程在等着您！",
+      "dayTitle": "每日活动",
+      "noDetails": "暂无详细信息"
+    },
+    "placeholder": {
+      "name": "请输入您的全名",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "旅游图片 {{number}}",
+    "person": "人",
+    "people": "人"
+  },
+  "chatbot": {
+    "title": "旅行助手",
+    "subtitle": "AI 智能帮助",
+    "navLabel": "AI 聊天",
+    "pageTitle": "AI 旅行助手",
+    "pageSubtitle": "使用我们的 AI 旅行助手规划您的完美旅程",
+    "browseTours": "浏览所有旅游路线",
+    "placeholder": "问我任何问题...",
+    "send": "发送",
+    "open": "打开聊天",
+    "close": "关闭聊天",
+    "greeting": "您好！我能如何帮助您规划乌兹别克斯坦之旅？",
+    "error": "抱歉，我遇到了问题。请再试一次。"
   }
 }

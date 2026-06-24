@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { gallery } from "@/data/seed";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,7 @@ import { Button } from "@/components/ui/button";
  * GalleryGrid - Responsive image grid with lightbox
  */
 const GalleryGrid = () => {
+  const { t } = useTranslation();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -81,7 +83,7 @@ const GalleryGrid = () => {
             onKeyDown={handleKeyDown}
             tabIndex={0}
             role="dialog"
-            aria-label="Image lightbox"
+            aria-label={t("gallery.lightboxAria")}
           >
             {/* Close Button */}
             <Button
@@ -89,7 +91,7 @@ const GalleryGrid = () => {
               size="icon"
               className="absolute top-4 right-4 text-white hover:bg-white/20"
               onClick={closeLightbox}
-              aria-label="Close lightbox"
+              aria-label={t("gallery.closeAria")}
             >
               <X className="h-6 w-6" />
             </Button>
@@ -103,7 +105,7 @@ const GalleryGrid = () => {
                 e.stopPropagation();
                 goToPrevious();
               }}
-              aria-label="Previous image"
+              aria-label={t("gallery.prevAria")}
             >
               <ChevronLeft className="h-8 w-8" />
             </Button>
@@ -124,7 +126,7 @@ const GalleryGrid = () => {
                 className="max-w-full max-h-[90vh] object-contain"
               />
               <p className="text-white text-center mt-4">
-                {gallery[currentIndex].location} ({currentIndex + 1} / {gallery.length})
+                {gallery[currentIndex].location} ({t("gallery.counter", { current: currentIndex + 1, total: gallery.length })})
               </p>
             </motion.div>
 
@@ -137,7 +139,7 @@ const GalleryGrid = () => {
                 e.stopPropagation();
                 goToNext();
               }}
-              aria-label="Next image"
+              aria-label={t("gallery.nextAria")}
             >
               <ChevronRight className="h-8 w-8" />
             </Button>

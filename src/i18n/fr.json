@@ -9,7 +9,8 @@
       "contact": "Contact",
       "services": "Services"
     },
-    "language": "Langue"
+    "language": "Langue",
+    "toggleMenu": "Menu"
   },
   "hero": {
     "title": "Découvrez les Trésors Cachés de l'Ouzbékistan",
@@ -42,7 +43,88 @@
     "aboutcard2Title": "+5 Ans d'Expérience",
     "aboutcard2Text": "Plus d'une décennie à créer des aventures inoubliables en Ouzbékistan pour les voyageurs du monde entier.",
     "aboutcard3Title": "Service Personnalisé",
-    "aboutcard3Text": "Nous adaptons chaque circuit à vos intérêts, garantissant une expérience vraiment personnelle."
+    "aboutcard3Text": "Nous adaptons chaque circuit à vos intérêts, garantissant une expérience vraiment personnelle.",
+    "noToursAvailable": "Aucun circuit trouvé dans cette catégorie.",
+    "testimonialsTitle": "Ce que disent nos voyageurs",
+    "testimonialsSubtitle": "Lisez les histoires et expériences des explorateurs qui ont voyagé avec nous.",
+    "locationTitle": "Visitez notre bureau",
+    "locationSubtitle": "Trouvez-nous au cœur de Samarkand. Nous serions ravis de vous rencontrer en personne !",
+    "getDirections": "Obtenir l'itinéraire",
+    "servicesTitle": "Nos services premium",
+    "servicesSubtitle": "Nous proposons des solutions de voyage complètes pour rendre votre voyage fluide.",
+    "serviceTours": "Circuits personnalisés",
+    "serviceToursDesc": "Itinéraires sur mesure pour vos intérêts et votre budget.",
+    "serviceVisa": "Traitement des visas",
+    "serviceVisaDesc": "Assistance sans tracas pour tous les documents.",
+    "serviceCars": "Location de voitures",
+    "serviceCarsDesc": "Véhicules premium avec chauffeurs professionnels.",
+    "serviceHotels": "Réservation d'hôtels",
+    "serviceHotelsDesc": "Hébergements soigneusement sélectionnés du boutique au luxe.",
+    "serviceSupport": "Assistance 24h/24",
+    "serviceSupportDesc": "Assistance permanente de notre équipe locale dédiée.",
+    "exploreServices": "Explorer tous les services",
+    "ctaTitle": "Prêt à commencer votre voyage ?",
+    "ctaDescription": "Nos experts en voyages sont là pour vous aider à concevoir l'expérience parfaite. Faisons-en une réalité.",
+    "ctaButton": "Contactez-nous aujourd'hui",
+    "travelAssistant": {
+      "popupTitle": "Trouvez votre voyage parfait",
+      "popupDescription": "Vous ne savez pas quel circuit en Ouzbékistan vous convient ? Laissez-nous vous aider à découvrir votre aventure idéale.",
+      "popupStart": "Commencer (1 minute)",
+      "sectionBadge": "Recommandations personnalisées",
+      "sectionTitle": "Trouvez votre voyage parfait en Ouzbékistan",
+      "sectionDescription": "Répondez à quelques questions rapides et nous comprendrons votre style de voyage pour mieux vous aider.",
+      "sectionButton": "Lancer l'assistant voyage (2 minutes)",
+      "featureFast": "Prend 2 minutes",
+      "featurePersonalized": "Correspondances personnalisées",
+      "featurePrivate": "Aucune donnée personnelle requise",
+      "questionLabel": "Question {{current}} sur {{total}}",
+      "back": "Retour",
+      "next": "Suivant",
+      "complete": "Terminer",
+      "resultTitle": "Merci ! 🎉",
+      "resultSubtitle": "Nous avons enregistré vos préférences de voyage. Voici ce que vous cherchez :",
+      "resultTripType": "Type de voyage",
+      "resultTravelers": "Voyageurs",
+      "resultDuration": "Durée",
+      "resultBudget": "Budget",
+      "resultRegions": "Régions",
+      "resultContact": "Contactez-nous (Nous connaissons vos préférences)",
+      "resultViewTours": "Voir les circuits recommandés",
+      "close": "Fermer",
+      "questionTripType": "Quel type de voyage vous intéresse ?",
+      "questionTravelers": "Avec qui voyagez-vous ?",
+      "questionDuration": "Combien de temps prévoyez-vous de rester en Ouzbékistan ?",
+      "questionBudget": "Quel est votre budget approximatif par personne ?",
+      "questionRegions": "Quelles villes ou régions vous intéressent le plus ?",
+      "questionRegionsSubtitle": "Sélectionnez toutes les options applicables",
+      "optionCultural": "Culturel et historique",
+      "optionNature": "Nature et montagnes",
+      "optionCity": "Ville et visites",
+      "optionRelax": "Détente et loisirs",
+      "optionFamily": "Voyage en famille",
+      "optionAdventure": "Aventure",
+      "optionReligious": "Religieux et spirituel",
+      "optionSolo": "Seul",
+      "optionCouple": "En couple",
+      "optionFamilyKids": "Famille avec enfants",
+      "optionFriends": "Groupe d'amis",
+      "option2to3": "2–3 jours",
+      "option5to7": "5–7 jours",
+      "option8to14": "8–14 jours",
+      "option14to17": "14-17 jours",
+      "optionFlexible": "Flexible / Pas sûr",
+      "optionEconomy": "Économique",
+      "optionMidRange": "Moyenne gamme",
+      "optionPremium": "Premium",
+      "optionUndecided": "Pas encore décidé",
+      "optionAllUzbekistan": "Partout en Ouzbékistan",
+      "optionSamarkand": "Samarkand",
+      "optionBukhara": "Boukhara",
+      "optionKhiva": "Khiva",
+      "optionTashkent": "Tachkent",
+      "optionMountains": "Montagnes / Nature",
+      "optionNotDecided": "Pas décidé"
+    }
   },
   "tours": {
     "title": "Découvrez Votre Prochaine Aventure",
@@ -200,8 +282,16 @@
       "highlights": "Points Forts",
       "day": "Jour",
       "close": "Fermer",
-      "registerNow": "S'inscrire à Ce Circuit"
-    }
+      "registerNow": "S'inscrire à Ce Circuit",
+      "destination": "Destination",
+      "duration": "Durée",
+      "price": "Prix",
+      "goToTourPage": "Aller à la page du circuit"
+    },
+    "findOut": "Découvrir",
+    "centralAsiaTours": "Circuits en Asie centrale",
+    "errorLoading": "Erreur de chargement des circuits",
+    "retry": "Réessayer"
   },
   "destinations": {
     "title": "Destinations",
@@ -213,8 +303,17 @@
     "drawer": {
       "close": "Fermer",
       "relatedTours": "Circuits Connexes",
-      "viewTours": "Voir les Circuits Disponibles"
-    }
+      "viewTours": "Voir les Circuits Disponibles",
+      "summary": "Résumé",
+      "travelTips": "Conseils de voyage",
+      "feature": "Ce qui le rend spécial",
+      "mustSee": "Attractions incontournables",
+      "nature": "Nature et paysage",
+      "food": "Cuisine et gastronomie",
+      "gettingThere": "Comment s'y rendre"
+    },
+    "viewAll": "Voir toutes les destinations",
+    "noDestinations": "Aucune destination disponible pour le moment."
   },
   "registration": {
     "title": "Inscription au Circuit",
@@ -257,7 +356,8 @@
     "teamTitle": "Rencontrez Notre Équipe",
     "teamSubtitle": "Guides experts et professionnels passionnés",
     "storiesTitle": "Histoires de Succès",
-    "storiesSubtitle": "Écoutez les voyageurs qui ont découvert l'Ouzbékistan avec nous"
+    "storiesSubtitle": "Écoutez les voyageurs qui ont découvert l'Ouzbékistan avec nous",
+    "errorLoading": "Erreur de chargement de l'équipe"
   },
   "contact": {
     "title": "Nous Contacter",
@@ -287,7 +387,7 @@
     "info": {
       "title": "Informations de Contact",
       "office": "Bureau Principal",
-           "address": "65 rue Abu Raykhon Beruniy, Samarcande, Ouzbékistan",
+      "address": "65 rue Abu Raykhon Beruniy, Samarcande, Ouzbékistan",
       "phone": "Téléphone",
       "email": "E-mail",
       "hours": "Heures d'Ouverture",
@@ -306,7 +406,12 @@
     "lightbox": {
       "previous": "Précédent",
       "next": "Suivant",
-      "close": "Fermer"
+      "close": "Fermer",
+      "lightboxAria": "Boîte à lumière",
+      "closeAria": "Fermer la boîte à lumière",
+      "prevAria": "Image précédente",
+      "nextAria": "Image suivante",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -314,7 +419,10 @@
     "quickLinks": "Liens Rapides",
     "contactInfo": "Infos Contact",
     "followUs": "Suivez-Nous",
-    "copyright": "© 2025 AlphaTravel. Tous droits réservés."
+    "copyright": "© 2025 AlphaTravel. Tous droits réservés.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "Chargement...",
@@ -431,7 +539,10 @@
       "totalCost": "Coût Total :",
       "people": "personnes",
       "detailedReceipt": "Un reçu de confirmation détaillé a été envoyé à",
-      "callus": "Appelez-nous"
+      "callus": "Appelez-nous",
+      "contactAdminViaTelegram": "Vous souhaitez écrire directement à l'organisateur ?",
+      "goToTelegram": "Message à {{username}}",
+      "openInBrowser": "Ouvrir dans le navigateur"
     },
     "registrationDetails": {
       "name": "nom",
@@ -458,6 +569,45 @@
       "view": "Voir",
       "DirectContact": "Contact Direct",
       "assist": "  Besoin d'assistance ? Notre équipe est prête à vous aider !"
-    }
+    },
+    "contact": {
+      "email": "Email",
+      "facebook": "Facebook",
+      "visitPage": "Visiter la page",
+      "whatsapp": "WhatsApp",
+      "chatNow": "Discuter maintenant"
+    },
+    "validation": {
+      "requiredFields": "Veuillez remplir tous les champs obligatoires.",
+      "submitFailed": "Échec de l'envoi de l'inscription.",
+      "errorPrefix": "Erreur lors de l'envoi du formulaire"
+    },
+    "fallback": {
+      "subtitle": "Un voyage à couper le souffle vous attend !",
+      "dayTitle": "Activités quotidiennes",
+      "noDetails": "Aucun détail disponible"
+    },
+    "placeholder": {
+      "name": "Entrez votre nom complet",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "Image du circuit {{number}}",
+    "person": "personne",
+    "people": "personnes"
+  },
+  "chatbot": {
+    "title": "Assistant de Voyage",
+    "subtitle": "Aide IA",
+    "navLabel": "Chat IA",
+    "pageTitle": "Assistant de Voyage IA",
+    "pageSubtitle": "Planifiez votre voyage parfait avec notre assistant de voyage alimenté par l'IA",
+    "browseTours": "Parcourir tous les circuits",
+    "placeholder": "Demandez-moi n'importe quoi...",
+    "send": "Envoyer",
+    "open": "Ouvrir le chat",
+    "close": "Fermer le chat",
+    "greeting": "Bonjour! Comment puis-je vous aider à planifier votre aventure en Ouzbékistan?",
+    "error": "Désolé, j'ai eu un problème. Veuillez réessayer."
   }
 }

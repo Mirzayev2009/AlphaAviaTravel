@@ -4,6 +4,7 @@ import { Globe, Map } from "lucide-react";
 import TourCard from "@/components/TourCard";
 import TourModal from "@/components/TourModal";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
 
 // Static data now served from Vercel CDN (public/data/ folder)
 const BASE_URL = "";
@@ -17,8 +18,14 @@ const ToursPage = () => {
   const [error, setError] = useState(null);
 
   const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   const currentLang = i18n.language || 'en';
+  const recommendParam = searchParams.get("recommend") || "";
+  const recommendedKeywords = useMemo(() => {
+    if (!recommendParam) return [];
+    return recommendParam.split(",").map((k) => k.trim().toLowerCase());
+  }, [recommendParam]);
 
   // Fetch ALL tours data once on mount
   useEffect(() => {
@@ -114,70 +121,30 @@ const ToursPage = () => {
       </section>
 
       {/* Category Selector */}
-      <section className="py-12 bg-white border-b">
+      <section className="py-8 bg-white border-b">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <motion.button
-              onClick={() => setSelectedCategory("uzbekistan")}
-              className={`relative px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 ${selectedCategory === "uzbekistan"
-                ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-2xl scale-105"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { key: "uzbekistan", icon: Map, label: t("tours.uzTours"), sub: t("tours.explore") },
+              { key: "central_asia", icon: Globe, label: t("tours.centralAsiaTours"), sub: t("tours.findOut") },
+              { key: "world", icon: Globe, label: t("tours.worldTours"), sub: t("tours.discover") },
+            ].map(({ key, icon: Icon, label, sub }) => (
+              <motion.button
+                key={key}
+                onClick={() => setSelectedCategory(key)}
+                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl font-semibold text-sm transition-all ${
+                  selectedCategory === key
+                    ? "bg-orange-500 text-white shadow-lg shadow-orange-200"
+                    : "bg-gray-50 text-gray-600 hover:bg-gray-100 border border-gray-200"
                 }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="flex items-center gap-3">
-                <Map className="h-7 w-7" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">{t("tours.explore")}</div>
-                  <div className="text-xl font-bold">{t("tours.uzTours")}</div>
-                </div>
-              </div>
-            </motion.button>
-
-            <motion.button
-              onClick={() => setSelectedCategory("central_asia")}
-              className={`relative px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 ${selectedCategory === "central_asia"
-                ? "bg-gradient-to-r from-green-500 to-green-500 text-white shadow-2xl scale-105"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="flex items-center gap-3">
-                <Globe className="h-7 w-7" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">
-                    Find out
-                  </div>
-                  <div className="text-xl font-bold">
-                   Central Asia Tours
-                  </div>
-                </div>
-              </div>
-            </motion.button>
-
-            <motion.button
-              onClick={() => setSelectedCategory("world")}
-              className={`relative px-8 py-6 rounded-2xl font-bold text-lg transition-all duration-300 ${selectedCategory === "world"
-                ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <div className="flex items-center gap-3">
-                <Globe className="h-7 w-7" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">
-                    {t("tours.discover")}
-                  </div>
-                  <div className="text-xl font-bold">
-                    {t("tours.worldTours")}
-                  </div>
-                </div>
-              </div>
-            </motion.button>
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <Icon className={`h-4 w-4 ${selectedCategory === key ? "text-white" : "text-orange-400"}`} />
+                <span className="hidden sm:inline text-xs opacity-70">{sub}</span>
+                <span className="font-bold">{label}</span>
+              </motion.button>
+            ))}
           </div>
         </div>
       </section>
@@ -192,13 +159,13 @@ const ToursPage = () => {
           ) : error ? (
             <div className="col-span-full text-center py-12">
               <p className="text-red-500 text-lg mb-4">
-                Error loading tours: {error}
+                {t("tours.errorLoading")}: {error}
               </p>
               <button
                 onClick={() => window.location.reload()}
                 className="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600"
               >
-                Retry
+                {t("tours.retry")}
               </button>
             </div>
           ) : (
@@ -218,6 +185,12 @@ const ToursPage = () => {
                       <TourCard
                         key={tour.id || index}
                         tour={tour}
+                        highlighted={recommendedKeywords.some(
+                          (kw) =>
+                            (tour.id && tour.id.toLowerCase().includes(kw)) ||
+                            (tour.title && tour.title.toLowerCase().includes(kw)) ||
+                            (tour.destination && tour.destination.toLowerCase().includes(kw))
+                        )}
                         onViewDetails={setSelectedTour}
                         onRegister={setRegistrationTour}
                       />

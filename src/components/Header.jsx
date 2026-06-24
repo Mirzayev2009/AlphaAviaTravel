@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Bot, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
@@ -86,8 +86,18 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Language Selector & Mobile Menu */}
+        {/* Chatbot, Language Selector & Mobile Menu */}
         <div className="flex items-center space-x-2">
+          {/* Chatbot Button */}
+          <Link
+            to="/chatbot"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white text-sm font-bold shadow-lg hover:shadow-orange-400/50 hover:scale-105 transition-all animate-pulse"
+          >
+            <Bot className="h-4 w-4" />
+            <Sparkles className="h-3 w-3 text-yellow-200" />
+            <span className="hidden sm:inline">{t("chatbot.navLabel")}</span>
+          </Link>
+
           {/* Language Selector */}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -124,7 +134,7 @@ const Header = () => {
             size="sm"
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={t("header.toggleMenu")}
             aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? (

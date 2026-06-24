@@ -9,15 +9,14 @@ import TourModal from "@/components/TourModal";
 import RegistrationForm from "@/components/RegistrationForm";
 import DestinationCard from "@/components/DestinationCard";
 import DestinationDetailsDrawer from "@/components/DestinationDetailsDrawer";
+import LazyMap from "@/components/LazyMap";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCards } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-import L from 'leaflet';
 import {
   ArrowRight, Users, Award, Heart, Map, Globe, X, MapPin,
-  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane, Car, Hotel, Navigation
+  Calendar, Wallet, Compass, CheckCircle2, ArrowLeft, Sparkles, MessageCircle, Star, Quote, ShieldCheck, HeadphonesIcon, Plane, Car, Hotel
 } from "lucide-react";
 
 // Static data now served from Vercel CDN (public/data/ folder)
@@ -27,30 +26,6 @@ const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images
 // Office location – Samarkand
 const OFFICE_LAT = 39.676871;
 const OFFICE_LNG = 66.927456;
-const YANDEX_DIRECTIONS_URL = `https://yandex.uz/maps/?mode=routes&rtext=~${OFFICE_LAT}%2C${OFFICE_LNG}&rtt=auto&z=15`;
-
-// Clicking the map itself opens Yandex directions
-const MapClickHandler = () => {
-  useMapEvents({
-    click: () => {
-      window.open(YANDEX_DIRECTIONS_URL, '_blank');
-    },
-  });
-  return null;
-};
-
-// Custom orange marker icon for the office pin
-const officeIcon = new L.DivIcon({
-  className: '',
-  html: `<div style="
-    width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#f97316,#f59e0b);
-    display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(249,115,22,.45);
-    border:3px solid #fff;
-  "><svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'/><circle cx='12' cy='10' r='3'/></svg></div>`,
-  iconSize: [38, 38],
-  iconAnchor: [19, 38],
-  popupAnchor: [0, -40],
-});
 const TourCardSkeleton = () => (
   <div className="animate-pulse bg-white border border-gray-100 rounded-2xl shadow-sm h-full max-h-[400px]">
     <div className="h-48 md:h-56 bg-gray-200 rounded-t-2xl"></div>
@@ -65,74 +40,11 @@ const TourCardSkeleton = () => (
   </div>
 );
 
-// Travel Assistant Popup Component
-const TravelAssistantPopup = ({ onStart }) => {
-  const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    const hasSeenPopup = sessionStorage.getItem('travelAssistantSeen');
-    if (!hasSeenPopup) {
-      const timer = setTimeout(() => setShow(true), 10000);
-      return () => clearTimeout(timer);
-    }
-  }, []);
-
-  const handleClose = () => {
-    setShow(false);
-    sessionStorage.setItem('travelAssistantSeen', 'true');
-  };
-
-  const handleStart = () => {
-    setShow(false);
-    sessionStorage.setItem('travelAssistantSeen', 'true');
-    onStart();
-  };
-
-  if (!show) return null;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 100, scale: 0.8 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: 100, scale: 0.8 }}
-      className="fixed bottom-8 right-8 z-50 max-w-md"
-    >
-      <div className="bg-gradient-to-br from-orange-500 via-amber-500 to-orange-600 text-white rounded-2xl shadow-2xl p-6 relative overflow-hidden">
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"
-          animate={{ x: [-100, 400], opacity: [0.3, 0.1, 0.3] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-        />
-        <button onClick={handleClose} className="absolute top-3 right-3 text-white/80 hover:text-white z-10">
-          <X className="h-5 w-5" />
-        </button>
-        <div className="relative z-10">
-          <div className="flex items-center gap-3 mb-3">
-            <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 2, repeat: Infinity }}>
-              <Sparkles className="h-6 w-6" />
-            </motion.div>
-            <h3 className="text-lg font-bold">Find Your Perfect Trip</h3>
-          </div>
-          <p className="text-white/90 mb-4 text-sm">
-            Not sure which Uzbekistan tour is right for you? Let us help you discover your ideal adventure.
-          </p>
-          <motion.button
-            onClick={handleStart}
-            className="w-full bg-white text-orange-500 font-semibold py-3 rounded-xl hover:bg-orange-50 shadow-lg flex items-center justify-center gap-2"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <span>Start (1 minutes)</span>
-            <ArrowRight className="h-4 w-4" />
-          </motion.button>
-        </div>
-      </div>
-    </motion.div>
-  );
-};
 
 // Travel Assistant Modal Component
 const TravelAssistantModal = ({ isOpen, onClose }) => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState({
@@ -142,56 +54,56 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
 
   const questions = [
     {
-      id: "tripType", title: "What kind of trip are you interested in?", icon: Compass,
+      id: "tripType", titleKey: "home.travelAssistant.questionTripType", icon: Compass,
       options: [
-        { value: "cultural", label: "Cultural & Historical", emoji: "🏛️" },
-        { value: "nature", label: "Nature & Mountains", emoji: "⛰️" },
-        { value: "city", label: "City & Sightseeing", emoji: "🏙️" },
-        { value: "relax", label: "Relax & Leisure", emoji: "🌴" },
-        { value: "family", label: "Family Trip", emoji: "👨‍👩‍👧‍👦" },
-        { value: "adventure", label: "Adventure", emoji: "🎒" },
-        { value: "religious", label: "Religious & Spiritual", emoji: "🕌" }
+        { value: "cultural", labelKey: "home.travelAssistant.optionCultural", emoji: "🏛️" },
+        { value: "nature", labelKey: "home.travelAssistant.optionNature", emoji: "⛰️" },
+        { value: "city", labelKey: "home.travelAssistant.optionCity", emoji: "🏙️" },
+        { value: "relax", labelKey: "home.travelAssistant.optionRelax", emoji: "🌴" },
+        { value: "family", labelKey: "home.travelAssistant.optionFamily", emoji: "👨‍👩‍👧‍👦" },
+        { value: "adventure", labelKey: "home.travelAssistant.optionAdventure", emoji: "🎒" },
+        { value: "religious", labelKey: "home.travelAssistant.optionReligious", emoji: "🕌" }
       ], multiSelect: false
     },
     {
-      id: "travelers", title: "Who are you traveling with?", icon: Users,
+      id: "travelers", titleKey: "home.travelAssistant.questionTravelers", icon: Users,
       options: [
-        { value: "solo", label: "Solo", emoji: "🧳" },
-        { value: "couple", label: "Couple", emoji: "💑" },
-        { value: "family", label: "Family with Kids", emoji: "👨‍👩‍👧" },
-        { value: "friends", label: "Friends Group", emoji: "👥" }
+        { value: "solo", labelKey: "home.travelAssistant.optionSolo", emoji: "🧳" },
+        { value: "couple", labelKey: "home.travelAssistant.optionCouple", emoji: "💑" },
+        { value: "family", labelKey: "home.travelAssistant.optionFamilyKids", emoji: "👨‍👩‍👧" },
+        { value: "friends", labelKey: "home.travelAssistant.optionFriends", emoji: "👥" }
       ], multiSelect: false
     },
     {
-      id: "duration", title: "How long do you plan to stay in Uzbekistan?", icon: Calendar,
+      id: "duration", titleKey: "home.travelAssistant.questionDuration", icon: Calendar,
       options: [
-        { value: "2-3", label: "2–3 days", emoji: "📅" },
-        { value: "5-7", label: "5–7 days", emoji: "📆" },
-        { value: "8-14", label: "8–14 days", emoji: "🗓️" },
-        { value: "14-17", label: "14-17 days", emoji: "🗓️" },
-        { value: "flexible", label: "Flexible / Not sure", emoji: "❓" }
+        { value: "2-3", labelKey: "home.travelAssistant.option2to3", emoji: "📅" },
+        { value: "5-7", labelKey: "home.travelAssistant.option5to7", emoji: "📆" },
+        { value: "8-14", labelKey: "home.travelAssistant.option8to14", emoji: "🗓️" },
+        { value: "14-17", labelKey: "home.travelAssistant.option14to17", emoji: "🗓️" },
+        { value: "flexible", labelKey: "home.travelAssistant.optionFlexible", emoji: "❓" }
       ], multiSelect: false
     },
     {
-      id: "budget", title: "What is your approximate budget per person?", icon: Wallet,
+      id: "budget", titleKey: "home.travelAssistant.questionBudget", icon: Wallet,
       options: [
-        { value: "economy", label: "Economy", emoji: "💵" },
-        { value: "mid-range", label: "Mid-range", emoji: "💰" },
-        { value: "premium", label: "Premium", emoji: "💎" },
-        { value: "undecided", label: "Not decided yet", emoji: "🤔" }
+        { value: "economy", labelKey: "home.travelAssistant.optionEconomy", emoji: "💵" },
+        { value: "mid-range", labelKey: "home.travelAssistant.optionMidRange", emoji: "💰" },
+        { value: "premium", labelKey: "home.travelAssistant.optionPremium", emoji: "💎" },
+        { value: "undecided", labelKey: "home.travelAssistant.optionUndecided", emoji: "🤔" }
       ], multiSelect: false
     },
     {
-      id: "regions", title: "Which cities or regions interest you most?", icon: MapPin,
-      subtitle: "Select all that apply",
+      id: "regions", titleKey: "home.travelAssistant.questionRegions", icon: MapPin,
+      subtitleKey: "home.travelAssistant.questionRegionsSubtitle",
       options: [
-        { value: "uzbekistan", label: "All over Uzbekistan", emoji: "🕌 🏰 🏛️ 🌆 🏔️ " },
-        { value: "samarkand", label: "Samarkand", emoji: "🕌" },
-        { value: "bukhara", label: "Bukhara", emoji: "🏰" },
-        { value: "khiva", label: "Khiva", emoji: "🏛️" },
-        { value: "tashkent", label: "Tashkent", emoji: "🌆" },
-        { value: "mountains", label: "Mountains / Nature", emoji: "🏔️" },
-        { value: "undecided", label: "Not decided", emoji: "🗺️" }
+        { value: "uzbekistan", labelKey: "home.travelAssistant.optionAllUzbekistan", emoji: "🕌 🏰 🏛️ 🌆 🏔️ " },
+        { value: "samarkand", labelKey: "home.travelAssistant.optionSamarkand", emoji: "🕌" },
+        { value: "bukhara", labelKey: "home.travelAssistant.optionBukhara", emoji: "🏰" },
+        { value: "khiva", labelKey: "home.travelAssistant.optionKhiva", emoji: "🏛️" },
+        { value: "tashkent", labelKey: "home.travelAssistant.optionTashkent", emoji: "🌆" },
+        { value: "mountains", labelKey: "home.travelAssistant.optionMountains", emoji: "🏔️" },
+        { value: "undecided", labelKey: "home.travelAssistant.optionNotDecided", emoji: "🗺️" }
       ], multiSelect: true
     }
   ];
@@ -218,7 +130,8 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
 
   const getAnswerLabel = (questionId, value) => {
     const question = questions.find(q => q.id === questionId);
-    return question?.options.find(opt => opt.value === value)?.label || value;
+    const option = question?.options.find(opt => opt.value === value);
+    return option ? t(option.labelKey) : value;
   };
 
   const handleReset = () => {
@@ -262,10 +175,10 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                 </button>
                 <div className="flex items-center gap-3 mb-2">
                   {Icon && <Icon className="h-7 w-7" />}
-                  <h2 className="text-2xl font-bold">Find Your Perfect Trip</h2>
+                  <h2 className="text-2xl font-bold">{t("home.travelAssistant.popupTitle")}</h2>
                 </div>
                 <div className="flex items-center gap-2 mt-4">
-                  <span className="text-sm text-white/80">Question {currentStep + 1} of {questions.length}</span>
+                  <span className="text-sm text-white/80">{t("home.travelAssistant.questionLabel", { current: currentStep + 1, total: questions.length })}</span>
                   <div className="flex-1 bg-white/30 rounded-full h-2">
                     <motion.div
                       className="bg-white h-full rounded-full"
@@ -284,8 +197,8 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{currentQuestion.title}</h3>
-                  {currentQuestion.subtitle && <p className="text-gray-600 mb-6">{currentQuestion.subtitle}</p>}
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{t(currentQuestion.titleKey)}</h3>
+                  {currentQuestion.subtitleKey && <p className="text-gray-600 mb-6">{t(currentQuestion.subtitleKey)}</p>}
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     {currentQuestion.options.map((option) => {
                       const isSelected = currentQuestion.multiSelect
@@ -303,7 +216,7 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                           <div className="flex items-center gap-3">
                             <span className="text-2xl">{option.emoji}</span>
                             <span className={`font-semibold ${isSelected ? "text-orange-600" : "text-gray-700"}`}>
-                              {option.label}
+                              {t(option.labelKey)}
                             </span>
                           </div>
                         </motion.button>
@@ -321,7 +234,7 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                 className="flex items-center gap-2 text-gray-600 hover:text-gray-900 disabled:opacity-40 font-semibold"
               >
                 <ArrowLeft className="h-5 w-5" />
-                Back
+                {t("home.travelAssistant.back")}
               </button>
               {currentQuestion.multiSelect && (
                 <motion.button
@@ -330,7 +243,7 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                   className="flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold disabled:opacity-40"
                   whileHover={{ scale: 1.02 }}
                 >
-                  {currentStep === questions.length - 1 ? "Complete" : "Next"}
+                  {currentStep === questions.length - 1 ? t("home.travelAssistant.complete") : t("home.travelAssistant.next")}
                   <ArrowRight className="h-5 w-5" />
                 </motion.button>
               )}
@@ -345,37 +258,37 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
             >
               <CheckCircle2 className="h-12 w-12 text-green-500" />
             </motion.div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-3">Thank You! 🎉</h3>
-            <p className="text-gray-600 mb-8">We've saved your travel preferences. Here's what you're looking for:</p>
+            <h3 className="text-3xl font-bold text-gray-900 mb-3">{t("home.travelAssistant.resultTitle")}</h3>
+            <p className="text-gray-600 mb-8">{t("home.travelAssistant.resultSubtitle")}</p>
             <div className="bg-gray-50 rounded-2xl p-6 mb-8 text-left space-y-3">
               {answers.tripType && (
                 <div className="flex gap-3">
                   <Compass className="h-5 w-5 text-orange-500 mt-0.5" />
-                  <div><span className="font-semibold">Trip Type:</span> {getAnswerLabel("tripType", answers.tripType)}</div>
+                  <div><span className="font-semibold">{t("home.travelAssistant.resultTripType")}:</span> {getAnswerLabel("tripType", answers.tripType)}</div>
                 </div>
               )}
               {answers.travelers && (
                 <div className="flex gap-3">
                   <Users className="h-5 w-5 text-orange-500 mt-0.5" />
-                  <div><span className="font-semibold">Traveling:</span> {getAnswerLabel("travelers", answers.travelers)}</div>
+                  <div><span className="font-semibold">{t("home.travelAssistant.resultTravelers")}:</span> {getAnswerLabel("travelers", answers.travelers)}</div>
                 </div>
               )}
               {answers.duration && (
                 <div className="flex gap-3">
                   <Calendar className="h-5 w-5 text-orange-500 mt-0.5" />
-                  <div><span className="font-semibold">Duration:</span> {getAnswerLabel("duration", answers.duration)}</div>
+                  <div><span className="font-semibold">{t("home.travelAssistant.resultDuration")}:</span> {getAnswerLabel("duration", answers.duration)}</div>
                 </div>
               )}
               {answers.budget && (
                 <div className="flex gap-3">
                   <Wallet className="h-5 w-5 text-orange-500 mt-0.5" />
-                  <div><span className="font-semibold">Budget:</span> {getAnswerLabel("budget", answers.budget)}</div>
+                  <div><span className="font-semibold">{t("home.travelAssistant.resultBudget")}:</span> {getAnswerLabel("budget", answers.budget)}</div>
                 </div>
               )}
               {answers.regions?.length > 0 && (
                 <div className="flex gap-3">
                   <MapPin className="h-5 w-5 text-orange-500 mt-0.5" />
-                  <div><span className="font-semibold">Regions:</span> {answers.regions.map(r => getAnswerLabel("regions", r)).join(", ")}</div>
+                  <div><span className="font-semibold">{t("home.travelAssistant.resultRegions")}:</span> {answers.regions.map(r => getAnswerLabel("regions", r)).join(", ")}</div>
                 </div>
               )}
             </div>
@@ -386,17 +299,17 @@ const TravelAssistantModal = ({ isOpen, onClose }) => {
                 whileHover={{ scale: 1.02 }}
               >
                 <MessageCircle className="h-5 w-5" />
-                Contact Us (We Know Your Preferences)
+                {t("home.travelAssistant.resultContact")}
               </motion.button>
               <motion.button
                 onClick={() => navigate("/tours")}
                 className="w-full bg-white border-2 border-orange-500 text-orange-500 py-4 rounded-xl font-semibold hover:bg-orange-50"
                 whileHover={{ scale: 1.02 }}
               >
-                View Recommended Tours
+                {t("home.travelAssistant.resultViewTours")}
               </motion.button>
               <button onClick={handleReset} className="text-gray-500 hover:text-gray-700 text-sm font-medium">
-                Close
+                {t("home.travelAssistant.close")}
               </button>
             </div>
           </div>
@@ -543,7 +456,6 @@ const Home = () => {
 
   return (
     <div>
-      <TravelAssistantPopup onStart={() => setShowTravelAssistant(true)} />
       <TravelAssistantModal isOpen={showTravelAssistant} onClose={() => setShowTravelAssistant(false)} />
       <SwiperHero />
 
@@ -555,50 +467,28 @@ const Home = () => {
             <p className="text-muted-foreground max-w-2xl mx-auto">{t("home.featuredSubtitle")}</p>
           </motion.div>
 
-          <div className="flex justify-center gap-6 mb-6">
-            <motion.button
-              onClick={() => setSelectedCategory("uzbekistan")}
-              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "uzbekistan" ? "bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            {[
+              { key: "uzbekistan", icon: Map, label: t("tours.uzTours"), sub: t("tours.explore") },
+              { key: "central_asia", icon: Globe, label: t("tours.centralAsiaTours"), sub: t("tours.findOut") },
+              { key: "world", icon: Globe, label: t("tours.worldTours"), sub: t("tours.discover") },
+            ].map(({ key, icon: Icon, label, sub }) => (
+              <motion.button
+                key={key}
+                onClick={() => setSelectedCategory(key)}
+                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl font-semibold text-sm transition-all ${
+                  selectedCategory === key
+                    ? "bg-orange-500 text-white shadow-lg shadow-orange-200"
+                    : "bg-gray-50 text-gray-600 hover:bg-gray-100 border border-gray-200"
                 }`}
-              whileHover={{ scale: 1.03 }}
-            >
-              <div className="flex items-center gap-3">
-                <Map className="h-5 w-5" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">{t("tours.explore")}</div>
-                  <div className="text-base font-semibold">{t("tours.uzTours")}</div>
-                </div>
-              </div>
-            </motion.button>
-            <motion.button
-              onClick={() => setSelectedCategory("central_asia")}
-              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "central_asia" ? "bg-gradient-to-r from-green-500 to-green-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
-                }`}
-              whileHover={{ scale: 1.03 }}
-            >
-              <div className="flex items-center gap-3">
-                <Map className="h-5 w-5" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">Find out</div>
-                  <div className="text-base font-semibold">Central Asia Tours</div>
-                </div>
-              </div>
-            </motion.button>
-
-            <motion.button
-              onClick={() => setSelectedCategory("world")}
-              className={`px-6 py-3 rounded-2xl font-bold text-lg transition-all ${selectedCategory === "world" ? "bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-2xl scale-105" : "bg-gray-100 text-gray-700"
-                }`}
-              whileHover={{ scale: 1.03 }}
-            >
-              <div className="flex items-center gap-3">
-                <Globe className="h-5 w-5" />
-                <div className="text-left">
-                  <div className="text-sm opacity-80">{t("tours.discover")}</div>
-                  <div className="text-base font-semibold">{t("tours.worldTours")}</div>
-                </div>
-              </div>
-            </motion.button>
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+              >
+                <Icon className={`h-4 w-4 ${selectedCategory === key ? "text-white" : "text-orange-400"}`} />
+                <span className="hidden sm:inline text-xs opacity-70">{sub}</span>
+                <span className="font-bold">{label}</span>
+              </motion.button>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -659,7 +549,7 @@ const Home = () => {
               ))
             ) : (
               <div className="col-span-full text-center py-12 text-gray-500 text-lg">
-                No destinations available at the moment.
+                {t("destinations.noDestinations")}
               </div>
             )}
           </div>
@@ -697,22 +587,19 @@ const Home = () => {
               className="inline-flex items-center gap-2 bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-semibold mb-4"
             >
               <Sparkles className="h-4 w-4" />
-              <span>Personalized Recommendations</span>
+              <span>{t("home.travelAssistant.sectionBadge")}</span>
             </motion.div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Find Your Perfect{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">
-                Uzbekistan Trip
-              </span>
+              {t("home.travelAssistant.sectionTitle")}
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Answer a few quick questions and we'll understand your travel style to help you better.
+              {t("home.travelAssistant.sectionDescription")}
             </p>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="max-w-2xl mx-auto">
             <motion.button
-              onClick={() => setShowTravelAssistant(true)}
+              onClick={() => navigate("/chatbot")}
               className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-bold py-6 rounded-2xl shadow-xl hover:shadow-2xl relative overflow-hidden group"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -724,16 +611,16 @@ const Home = () => {
               />
               <span className="relative z-10 flex items-center justify-center gap-3 text-lg">
                 <Compass className="h-6 w-6" />
-                Start Travel Assistant (2 minutes)
+                {t("home.travelAssistant.sectionButton")}
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </motion.button>
 
             <div className="grid grid-cols-3 gap-4 mt-8">
               {[
-                { icon: "⚡", text: "Takes 2 minutes" },
-                { icon: "🎯", text: "Personalized matches" },
-                { icon: "🔒", text: "No personal data needed" }
+                { icon: "⚡", textKey: "home.travelAssistant.featureFast" },
+                { icon: "🎯", textKey: "home.travelAssistant.featurePersonalized" },
+                { icon: "🔒", textKey: "home.travelAssistant.featurePrivate" }
               ].map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -744,7 +631,7 @@ const Home = () => {
                   className="text-center"
                 >
                   <div className="text-2xl mb-2">{item.icon}</div>
-                  <p className="text-sm text-gray-600">{item.text}</p>
+                  <p className="text-sm text-gray-600">{t(item.textKey)}</p>
                 </motion.div>
               ))}
             </div>
@@ -940,57 +827,7 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
-            style={{ height: '450px' }}
-          >
-            <MapContainer
-              center={[OFFICE_LAT, OFFICE_LNG]}
-              zoom={15}
-              scrollWheelZoom={true}
-              zoomControl={true}
-              style={{ height: '100%', width: '100%', cursor: 'pointer' }}
-              className="z-0"
-            >
-              <TileLayer
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              />
-              <Marker position={[OFFICE_LAT, OFFICE_LNG]} icon={officeIcon} >
-                <Popup className="text-sm">
-                  <strong>Avia Alfa Travel</strong><br />
-                  Samarkand, Uzbekistan
-                </Popup>
-              </Marker>
-              <MapClickHandler />
-            </MapContainer>
-
-            {/* Get Directions floating button */}
-            <div className="absolute bottom-5 left-5 z-[1000] flex flex-col sm:flex-row gap-3">
-              <motion.a
-                href={YANDEX_DIRECTIONS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2.5 px-5 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all cursor-pointer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Navigation className="h-5 w-5" />
-                <span>{t("home.getDirections", "Get Directions")}</span>
-              </motion.a>
-            </div>
-
-            {/* Address badge top-left */}
-            <div className="absolute top-4 right-4 z-[1000] bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-gray-100">
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-orange-500 flex-shrink-0" />
-                <span className="text-sm font-medium text-gray-800">Samarkand, Uzbekistan</span>
-              </div>
-            </div>
-          </motion.div>
+          <LazyMap officeLat={OFFICE_LAT} officeLng={OFFICE_LNG} />
         </div>
       </section>
 
@@ -1065,20 +902,20 @@ const Home = () => {
             className="text-center"
           >
              <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 drop-shadow-md">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">
-              Our travel experts are here to help you design the perfect experience. Let's make it happen.
-            </p>
-            <motion.button 
-              onClick={() => navigate("/contact")}
-              className="px-10 py-5 bg-white text-orange-600 rounded-2xl font-bold flex items-center justify-center gap-3 text-xl mx-auto shadow-xl hover:shadow-2xl transition-all"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Contact Us Today
-              <ArrowRight className="w-6 h-6" />
-            </motion.button>
+               {t("home.ctaTitle")}
+             </h2>
+             <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium">
+               {t("home.ctaDescription")}
+             </p>
+             <motion.button 
+               onClick={() => navigate("/contact")}
+               className="px-10 py-5 bg-white text-orange-600 rounded-2xl font-bold flex items-center justify-center gap-3 text-xl mx-auto shadow-xl hover:shadow-2xl transition-all"
+               whileHover={{ scale: 1.05 }}
+               whileTap={{ scale: 0.95 }}
+             >
+               {t("home.ctaButton")}
+               <ArrowRight className="w-6 h-6" />
+             </motion.button>
           </motion.div>
         </div>
       </section>

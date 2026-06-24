@@ -71,7 +71,7 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
                                 <motion.img
                                     key={idx}
                                     src={getAbsoluteImageUrl(img)}
-                                    alt={`${tour.title} - ${idx + 1}`}
+                                    alt={`${tour.title} - ${t("tourDetail.imageAlt", { number: idx + 1 })}`}
                                     className="w-full h-48 object-cover rounded-lg shadow-md"
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
@@ -86,21 +86,21 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
                             <div className="flex items-center gap-2">
                                 <MapPin className="h-5 w-5 text-orange-500" />
                                 <div>
-                                    <p className="text-xs text-muted-foreground">Destination</p>
+                                    <p className="text-xs text-muted-foreground">{t("tours.modal.destination")}</p>
                                     <p className="font-semibold">{tour.destination}</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Calendar className="h-5 w-5 text-orange-500" />
                                 <div>
-                                    <p className="text-xs text-muted-foreground">Duration</p>
+                                    <p className="text-xs text-muted-foreground">{t("tours.modal.duration")}</p>
                                     <p className="font-semibold">{tour.duration}</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-2">
                                 <DollarSign className="h-5 w-5 text-orange-500" />
                                 <div>
-                                    <p className="text-xs text-muted-foreground">Price</p>
+                                    <p className="text-xs text-muted-foreground">{t("tours.modal.price")}</p>
                                     <p className="font-semibold">${tour.price}</p>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@ const TourModal = ({ tour, open, onClose, onRegister }) => {
                                 className="bg-white hover:bg-gray-50 text-orange-500 border-orange-400"
                             >
                                 <ArrowRight className="h-5 w-5" />
-                                <span className="sr-only">Go to Tour Page</span>
+                                <span className="sr-only">{t("tours.modal.goToTourPage")}</span>
                             </Button>
                         </div>
                     </div>

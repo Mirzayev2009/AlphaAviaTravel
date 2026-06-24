@@ -9,7 +9,8 @@
       "contact": "Contacto",
       "services": "Servicios"
     },
-    "language": "Idioma"
+    "language": "Idioma",
+    "toggleMenu": "Menú"
   },
   "hero": {
     "title": "Descubra los Tesoros Ocultos de Uzbekistán",
@@ -42,7 +43,88 @@
     "aboutcard2Title": "+5 Años de Experiencia",
     "aboutcard2Text": "Más de una década creando aventuras inolvidables en Uzbekistán para viajeros de todo el mundo.",
     "aboutcard3Title": "Servicio Personalizado",
-    "aboutcard3Text": "Adaptamos cada tour a sus intereses, asegurando una experiencia verdaderamente personal."
+    "aboutcard3Text": "Adaptamos cada tour a sus intereses, asegurando una experiencia verdaderamente personal.",
+    "noToursAvailable": "No se encontraron tours en esta categoría.",
+    "testimonialsTitle": "Lo que dicen nuestros viajeros",
+    "testimonialsSubtitle": "Lea historias y experiencias de exploradores que han viajado con nosotros.",
+    "locationTitle": "Visite nuestra oficina",
+    "locationSubtitle": "Encuéntrenos en el corazón de Samarcanda. ¡Nos encantaría conocerle en persona!",
+    "getDirections": "Obtener direcciones",
+    "servicesTitle": "Nuestros servicios premium",
+    "servicesSubtitle": "Ofrecemos soluciones de viaje integrales para que su viaje sea perfecto.",
+    "serviceTours": "Tours personalizados",
+    "serviceToursDesc": "Itinerarios hechos a medida para sus intereses y presupuesto.",
+    "serviceVisa": "Procesamiento de visas",
+    "serviceVisaDesc": "Asistencia sin complicaciones para toda la documentación.",
+    "serviceCars": "Alquiler de coches",
+    "serviceCarsDesc": "Vehículos premium con conductores profesionales.",
+    "serviceHotels": "Reserva de hoteles",
+    "serviceHotelsDesc": "Alojamientos seleccionados de boutique a lujo.",
+    "serviceSupport": "Soporte 24/7",
+    "serviceSupportDesc": "Asistencia las 24 horas de nuestro dedicado equipo local.",
+    "exploreServices": "Explorar todos los servicios",
+    "ctaTitle": "¿Listo para comenzar su viaje?",
+    "ctaDescription": "Nuestros expertos en viajes están aquí para ayudarle a diseñar la experiencia perfecta. Hagámoslo realidad.",
+    "ctaButton": "Contáctenos hoy",
+    "travelAssistant": {
+      "popupTitle": "Encuentre su viaje perfecto",
+      "popupDescription": "¿No está seguro de qué tour en Uzbekistán es adecuado para usted? Permítanos ayudarle a descubrir su aventura ideal.",
+      "popupStart": "Comenzar (1 minuto)",
+      "sectionBadge": "Recomendaciones personalizadas",
+      "sectionTitle": "Encuentre su viaje perfecto a Uzbekistán",
+      "sectionDescription": "Responda algunas preguntas rápidas y entenderemos su estilo de viaje para ayudarle mejor.",
+      "sectionButton": "Iniciar asistente de viaje (2 minutos)",
+      "featureFast": "Toma 2 minutos",
+      "featurePersonalized": "Coincidencias personalizadas",
+      "featurePrivate": "No se necesitan datos personales",
+      "questionLabel": "Pregunta {{current}} de {{total}}",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "complete": "Completar",
+      "resultTitle": "¡Gracias! 🎉",
+      "resultSubtitle": "Hemos guardado sus preferencias de viaje. Esto es lo que busca:",
+      "resultTripType": "Tipo de viaje",
+      "resultTravelers": "Viajeros",
+      "resultDuration": "Duración",
+      "resultBudget": "Presupuesto",
+      "resultRegions": "Regiones",
+      "resultContact": "Contáctenos (Conocemos sus preferencias)",
+      "resultViewTours": "Ver tours recomendados",
+      "close": "Cerrar",
+      "questionTripType": "¿Qué tipo de viaje le interesa?",
+      "questionTravelers": "¿Con quién viaja?",
+      "questionDuration": "¿Cuánto tiempo planea quedarse en Uzbekistán?",
+      "questionBudget": "¿Cuál es su presupuesto aproximado por persona?",
+      "questionRegions": "¿Qué ciudades o regiones le interesan más?",
+      "questionRegionsSubtitle": "Seleccione todas las que correspondan",
+      "optionCultural": "Cultural e histórico",
+      "optionNature": "Naturaleza y montañas",
+      "optionCity": "Ciudad y turismo",
+      "optionRelax": "Relajación y ocio",
+      "optionFamily": "Viaje familiar",
+      "optionAdventure": "Aventura",
+      "optionReligious": "Religioso y espiritual",
+      "optionSolo": "Solo",
+      "optionCouple": "Pareja",
+      "optionFamilyKids": "Familia con niños",
+      "optionFriends": "Grupo de amigos",
+      "option2to3": "2–3 días",
+      "option5to7": "5–7 días",
+      "option8to14": "8–14 días",
+      "option14to17": "14-17 días",
+      "optionFlexible": "Flexible / No seguro",
+      "optionEconomy": "Económico",
+      "optionMidRange": "Medio",
+      "optionPremium": "Premium",
+      "optionUndecided": "Aún no decidido",
+      "optionAllUzbekistan": "Todo Uzbekistán",
+      "optionSamarkand": "Samarcanda",
+      "optionBukhara": "Bujará",
+      "optionKhiva": "Jiva",
+      "optionTashkent": "Taskent",
+      "optionMountains": "Montañas / Naturaleza",
+      "optionNotDecided": "No decidido"
+    }
   },
   "tours": {
     "title": "Descubra Su Próxima Aventura",
@@ -200,8 +282,16 @@
       "highlights": "Puntos Destacados",
       "day": "Día",
       "close": "Cerrar",
-      "registerNow": "Registrarse para Este Tour"
-    }
+      "registerNow": "Registrarse para Este Tour",
+      "destination": "Destino",
+      "duration": "Duración",
+      "price": "Precio",
+      "goToTourPage": "Ir a la página del tour"
+    },
+    "findOut": "Descubrir",
+    "centralAsiaTours": "Tours por Asia Central",
+    "errorLoading": "Error al cargar los tours",
+    "retry": "Reintentar"
   },
   "destinations": {
     "title": "Destinos",
@@ -213,8 +303,17 @@
     "drawer": {
       "close": "Cerrar",
       "relatedTours": "Tours Relacionados",
-      "viewTours": "Ver Tours Disponibles"
-    }
+      "viewTours": "Ver Tours Disponibles",
+      "summary": "Resumen",
+      "travelTips": "Consejos de viaje",
+      "feature": "Lo que lo hace especial",
+      "mustSee": "Atracciones imperdibles",
+      "nature": "Naturaleza y paisaje",
+      "food": "Comida y gastronomía",
+      "gettingThere": "Cómo llegar"
+    },
+    "viewAll": "Ver todos los destinos",
+    "noDestinations": "No hay destinos disponibles en este momento."
   },
   "registration": {
     "title": "Registro para Tour",
@@ -252,12 +351,13 @@
   "about": {
     "title": "Acerca de AlphaTravel",
     "subtitle": "Su socio de confianza para aventuras en Uzbekistán",
-"story": "Alpha Avia Travel, fundada en 2020 por Eshmirzayev Nurislom, es una empresa de viajes de confianza especializada en turismo receptivo, emisivo y nacional. Organizamos tours culturales e históricos exclusivos para visitantes que vienen a Uzbekistán, y también ofrecemos una amplia gama de paquetes para viajes al extranjero y locales. Nuestros servicios incluyen reservas de hotel, asistencia con billetes de avión, traslados, guías turísticos profesionales y diversas soluciones de viaje personalizadas según las necesidades de cada cliente.",
+    "story": "Alpha Avia Travel, fundada en 2020 por Eshmirzayev Nurislom, es una empresa de viajes de confianza especializada en turismo receptivo, emisivo y nacional. Organizamos tours culturales e históricos exclusivos para visitantes que vienen a Uzbekistán, y también ofrecemos una amplia gama de paquetes para viajes al extranjero y locales. Nuestros servicios incluyen reservas de hotel, asistencia con billetes de avión, traslados, guías turísticos profesionales y diversas soluciones de viaje personalizadas según las necesidades de cada cliente.",
     "mission": "Nuestra misión es ofrecer a los viajeros experiencias de viaje cómodas, seguras e inolvidables. En Alpha Avia Travel, nuestro equipo dedicado se centra en la calidad, la responsabilidad y un servicio excepcional para asegurar que cada etapa de su viaje sea fluida y placentera. Con nosotros, su experiencia de viaje está en manos fiables.",
     "teamTitle": "Conozca a Nuestro Equipo",
     "teamSubtitle": "Guías expertos y profesionales apasionados",
     "storiesTitle": "Historias de Éxito",
-    "storiesSubtitle": "Escuche a los viajeros que han experimentado Uzbekistán con nosotros"
+    "storiesSubtitle": "Escuche a los viajeros que han experimentado Uzbekistán con nosotros",
+    "errorLoading": "Error al cargar el equipo"
   },
   "contact": {
     "title": "Póngase en Contacto",
@@ -287,7 +387,7 @@
     "info": {
       "title": "Información de Contacto",
       "office": "Oficina Principal",
-       "address": "Calle Abu Raykhon Beruniy 65, Samarcanda, Uzbekistán",
+      "address": "Calle Abu Raykhon Beruniy 65, Samarcanda, Uzbekistán",
       "phone": "Teléfono",
       "email": "Correo Electrónico",
       "hours": "Horario Comercial",
@@ -306,7 +406,12 @@
     "lightbox": {
       "previous": "Anterior",
       "next": "Siguiente",
-      "close": "Cerrar"
+      "close": "Cerrar",
+      "lightboxAria": "Ligero de imágenes",
+      "closeAria": "Cerrar ligero",
+      "prevAria": "Imagen anterior",
+      "nextAria": "Siguiente imagen",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -314,7 +419,10 @@
     "quickLinks": "Enlaces Rápidos",
     "contactInfo": "Información de Contacto",
     "followUs": "Síganos",
-    "copyright": "© 2025 AlphaTravel. Todos los derechos reservados."
+    "copyright": "© 2025 AlphaTravel. Todos los derechos reservados.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "Cargando...",
@@ -431,7 +539,10 @@
       "totalCost": "Costo Total:",
       "people": "personas",
       "detailedReceipt": "Se ha enviado un recibo de confirmación detallado a",
-      "callus": "Llámenos"
+      "callus": "Llámenos",
+      "contactAdminViaTelegram": "¿Quiere escribirle al organizador directamente?",
+      "goToTelegram": "Enviar mensaje a {{username}}",
+      "openInBrowser": "Abrir en el navegador"
     },
     "registrationDetails": {
       "name": "nombre",
@@ -458,6 +569,45 @@
       "view": "Ver",
       "DirectContact": "Contacto Directo",
       "assist": "  ¿Necesita ayuda? ¡Nuestro equipo está listo para ayudar!"
-    }
+    },
+    "contact": {
+      "email": "Correo electrónico",
+      "facebook": "Facebook",
+      "visitPage": "Visitar página",
+      "whatsapp": "WhatsApp",
+      "chatNow": "Chatear ahora"
+    },
+    "validation": {
+      "requiredFields": "Por favor complete todos los campos obligatorios.",
+      "submitFailed": "Error al enviar el registro.",
+      "errorPrefix": "Error al enviar el formulario"
+    },
+    "fallback": {
+      "subtitle": "¡Un viaje impresionante te espera!",
+      "dayTitle": "Actividades diarias",
+      "noDetails": "No hay detalles disponibles"
+    },
+    "placeholder": {
+      "name": "Ingrese su nombre completo",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "Imagen del tour {{number}}",
+    "person": "persona",
+    "people": "personas"
+  },
+  "chatbot": {
+    "title": "Asistente de Viaje",
+    "subtitle": "Ayuda con IA",
+    "navLabel": "Chat IA",
+    "pageTitle": "Asistente de Viaje IA",
+    "pageSubtitle": "Planifica tu viaje perfecto con nuestro asistente de viaje impulsado por IA",
+    "browseTours": "Explorar todos los tours",
+    "placeholder": "Pregúntame lo que sea...",
+    "send": "Enviar",
+    "open": "Abrir chat",
+    "close": "Cerrar chat",
+    "greeting": "Hola! Cómo puedo ayudarte a planificar tu aventura en Uzbekistán?",
+    "error": "Lo siento, tuve un problema. Por favor, inténtalo de nuevo."
   }
 }

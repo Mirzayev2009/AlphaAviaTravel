@@ -140,7 +140,7 @@ const About = () => {
             </div>
           ) : error ? (
             <div className="col-span-full text-center py-12 text-2xl text-red-500 bg-red-50 p-6 rounded-xl border border-red-200 shadow-md">
-              🚨 Error loading team: {error}           {" "}
+              🚨 {t("about.errorLoading")}: {error}           {" "}
             </div>
           ) : (
             // The JSX element that caused the error:

@@ -15,7 +15,7 @@ const IMAGE_BASE_URL = "/data"; // JSON refs /images/... → actual /data/images
  * TourCard component - Displays tour data directly from backend
  * Backend already provides translated data based on language
  */
-const TourCard = ({ tour, onViewDetails, onRegister }) => {
+const TourCard = ({ tour, onViewDetails, onRegister, highlighted }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -73,7 +73,7 @@ const TourCard = ({ tour, onViewDetails, onRegister }) => {
       whileHover={{ y: -8, transition: { duration: 0.2 } }}
       className="h-full w-full"
     >
-      <Card className="h-full p-0 pb-7 flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 bg-white rounded-xl">
+      <Card className={`h-full p-0 pb-7 flex flex-col overflow-hidden hover:shadow-xl transition-all duration-300 bg-white rounded-xl ${highlighted ? "ring-4 ring-orange-400 animate-pulse shadow-[0_0_30px_rgba(255,165,0,0.6)]" : ""}`}>
         {/* Tour Image */}
         <div className="relative h-64 overflow-hidden">
           {imageSrc ? (

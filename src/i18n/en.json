@@ -9,7 +9,8 @@
       "contact": "Contact",
       "services": "Services"
     },
-    "language": "Language"
+    "language": "Language",
+    "toggleMenu": "Toggle menu"
   },
   "hero": {
     "title": "Discover Uzbekistan's Hidden Treasures",
@@ -30,9 +31,89 @@
         "subtitle": "Explore UNESCO World Heritage wonders"
       }
     }
-    
   },
   "home": {
+    "noToursAvailable": "No tours available",
+    "testimonialsTitle": "What Our Travelers Say",
+    "testimonialsSubtitle": "Hear from fellow adventurers who explored Uzbekistan with us",
+    "locationTitle": "Our Location",
+    "locationSubtitle": "Visit us in the heart of Samarkand",
+    "getDirections": "Get Directions",
+    "servicesTitle": "Our Services",
+    "servicesSubtitle": "Comprehensive travel solutions for your Uzbekistan adventure",
+    "serviceTours": "Guided Tours",
+    "serviceToursDesc": "Expert-led tours through Uzbekistan's most fascinating destinations with rich cultural insights.",
+    "serviceVisa": "Visa Support",
+    "serviceVisaDesc": "Hassle-free visa assistance and documentation services for travelers to Uzbekistan.",
+    "serviceCars": "Car Rental",
+    "serviceCarsDesc": "Comfortable, reliable vehicles for self-drive adventures or chauffeur-driven experiences.",
+    "serviceHotels": "Hotel Booking",
+    "serviceHotelsDesc": "Carefully selected accommodation options from boutique hotels to luxury resorts.",
+    "serviceSupport": "24/7 Support",
+    "serviceSupportDesc": "Round-the-clock customer support to assist you before and during your journey.",
+    "exploreServices": "Explore All Services",
+    "ctaTitle": "Ready to Start Your Journey?",
+    "ctaDescription": "Let us create the perfect Uzbekistan itinerary tailored to your preferences. Contact our travel experts today!",
+    "ctaButton": "Get a Free Consultation",
+    "travelAssistant": {
+      "popupTitle": "Hi! I'm your travel assistant!",
+      "popupDescription": "Answer a few quick questions and I'll find the perfect tour for you",
+      "popupStart": "Find my tour",
+      "sectionBadge": "Travel Assistant",
+      "sectionTitle": "Find Your Dream Tour",
+      "sectionDescription": "Answer a few simple questions and our smart assistant will find the perfect tour for you!",
+      "sectionButton": "Start Planning",
+      "featureFast": "Fast & Easy",
+      "featurePersonalized": "Personalized",
+      "featurePrivate": "Tailored tours just for you",
+      "questionLabel": "Question {{number}} of {{total}}",
+      "back": "Back",
+      "next": "Next",
+      "complete": "Get Results",
+      "resultTitle": "Your Perfect Tour",
+      "resultSubtitle": "Based on your preferences, here's what we recommend",
+      "resultTripType": "Trip Type",
+      "resultTravelers": "Travelers",
+      "resultDuration": "Duration",
+      "resultBudget": "Budget",
+      "resultRegions": "Regions of Interest",
+      "resultContact": "Contact us to book this personalized experience",
+      "resultViewTours": "View Available Tours",
+      "close": "Close",
+      "questionTripType": "What type of trip interests you?",
+      "questionTravelers": "Who will be traveling?",
+      "questionDuration": "How long would you like your trip to be?",
+      "questionBudget": "What's your preferred budget per person?",
+      "questionRegions": "Which regions of Uzbekistan interest you?",
+      "questionRegionsSubtitle": "Choose one or more",
+      "optionCultural": "Cultural & Historical",
+      "optionNature": "Nature & Adventure",
+      "optionCity": "City Tours",
+      "optionRelax": "Relaxation",
+      "optionFamily": "Family Fun",
+      "optionAdventure": "Adventure & Extreme",
+      "optionReligious": "Religious & Pilgrimage",
+      "optionSolo": "Solo Traveler",
+      "optionCouple": "Couple / Romantic",
+      "optionFamilyKids": "Family with Kids",
+      "optionFriends": "Group of Friends",
+      "option2to3": "2-3 Days (Short Trip)",
+      "option5to7": "5-7 Days (Standard)",
+      "option8to14": "8-14 Days (Extended)",
+      "option14to17": "14-17 Days (Grand Tour)",
+      "optionFlexible": "Flexible / Not Sure",
+      "optionEconomy": "Economy ($500-$1000)",
+      "optionMidRange": "Mid-Range ($1000-$2000)",
+      "optionPremium": "Premium ($2000+)",
+      "optionUndecided": "Not decided yet",
+      "optionAllUzbekistan": "All over Uzbekistan",
+      "optionSamarkand": "Samarkand",
+      "optionBukhara": "Bukhara",
+      "optionKhiva": "Khiva",
+      "optionTashkent": "Tashkent",
+      "optionMountains": "Mountains / Nature",
+      "optionNotDecided": "Not decided"
+    },
     "featuredTitle": "Featured Tours",
     "featuredSubtitle": "Handpicked journeys through Uzbekistan's most iconic destinations",
     "aboutTitle": "Why Choose AlphaTravel?",
@@ -44,7 +125,6 @@
     "aboutcard2Text": "Over a decade of creating unforgettable Uzbekistan adventures for travelers worldwide.",
     "aboutcard3Title": "Personalized Service",
     "aboutcard3Text": "We tailor every tour to your interests, ensuring a truly personal experience."
-
   },
   "tours": {
     "title": " Discover Your Next Adventure",
@@ -55,161 +135,163 @@
     "worldTours": "World Tours",
     "uzSubtitle": " Explore the wonders of the Silk Road and Uzbekistan's rich heritage",
     "worldSubtitle": " Experience the world's most captivating destinations from Uzbekistan",
-    
-
-  "detail": {
-    "tour1": {
-      "id": "tour1",
-      "title": "Silk Road Highlights",
-      "duration": "10 Days",
-      "price": "$1,200",
-      "dates": "Available Year-Round",
-      "highlights": [
-        "Explore Samarkand's Registan Square",
-        "Visit Bukhara's ancient mosques",
-        "Discover Khiva's walled city"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "activities": [
-            "Arrival in Tashkent",
-            "City tour of Tashkent"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Travel to Samarkand",
-            "Visit Gur-e-Amir Mausoleum"
-          ]
-        }
-      ]
+    "detail": {
+      "tour1": {
+        "id": "tour1",
+        "title": "Silk Road Highlights",
+        "duration": "10 Days",
+        "price": "$1,200",
+        "dates": "Available Year-Round",
+        "highlights": [
+          "Explore Samarkand's Registan Square",
+          "Visit Bukhara's ancient mosques",
+          "Discover Khiva's walled city"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrival in Tashkent",
+              "City tour of Tashkent"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Travel to Samarkand",
+              "Visit Gur-e-Amir Mausoleum"
+            ]
+          }
+        ]
+      },
+      "tour2": {
+        "id": "tour2",
+        "title": "Cultural Treasures of Uzbekistan",
+        "duration": "7 Days",
+        "price": "$900",
+        "dates": "Available Year-Round",
+        "highlights": [
+          "Experience traditional Uzbek cuisine",
+          "Visit local artisan workshops",
+          "Explore historic Silk Road sites"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrival in Tashkent",
+              "Welcome dinner with traditional music"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Travel to Bukhara",
+              "Guided tour of Bukhara's old town"
+            ]
+          }
+        ]
+      },
+      "tour3": {
+        "id": "tour3",
+        "title": "Desert Adventures in Uzbekistan",
+        "duration": "5 Days",
+        "price": "$700",
+        "dates": "Available Year-Round",
+        "highlights": [
+          "Camel trek in the Kyzylkum Desert",
+          "Overnight stay in a yurt camp",
+          "Sunset views over the desert dunes"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrival in Tashkent",
+              "Evening briefing and dinner"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Travel to the Kyzylkum Desert",
+              "Begin camel trek"
+            ]
+          }
+        ]
+      },
+      "tour4": {
+        "id": "tour4",
+        "title": "Uzbekistan Family Fun",
+        "duration": "8 Days",
+        "price": "$1,100",
+        "dates": "Available Year-Round",
+        "highlights": [
+          "Interactive workshops for kids",
+          "Family-friendly sightseeing tours",
+          "Cultural performances and activities"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrival in Tashkent",
+              "Family welcome event"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Visit Tashkent Zoo",
+              "Explore local parks and playgrounds"
+            ]
+          }
+        ]
+      },
+      "tour5": {
+        "id": "tour5",
+        "title": "Luxury Uzbekistan Experience",
+        "duration": "12 Days",
+        "price": "$3,500",
+        "dates": "Available Year-Round",
+        "highlights": [
+          "Stay in 5-star hotels",
+          "Private guided tours",
+          "Exclusive dining experiences"
+        ],
+        "itinerary": [
+          {
+            "day": 1,
+            "activities": [
+              "Arrival in Tashkent",
+              "Private city tour with luxury transport"
+            ]
+          },
+          {
+            "day": 2,
+            "activities": [
+              "Travel to Samarkand in a private car",
+              "VIP tour of Registan Square"
+            ]
+          }
+        ]
+      }
     },
-    "tour2": {
-      "id": "tour2",
-      "title": "Cultural Treasures of Uzbekistan",
-      "duration": "7 Days",
-      "price": "$900",
-      "dates": "Available Year-Round",
-      "highlights": [
-        "Experience traditional Uzbek cuisine",
-        "Visit local artisan workshops",
-        "Explore historic Silk Road sites"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "activities": [
-            "Arrival in Tashkent",
-            "Welcome dinner with traditional music"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Travel to Bukhara",
-            "Guided tour of Bukhara's old town"
-          ]
-        }
-      ]
-    },
-    "tour3": {
-      "id": "tour3",
-      "title": "Desert Adventures in Uzbekistan",
-      "duration": "5 Days",
-      "price": "$700",
-      "dates": "Available Year-Round",
-      "highlights": [
-        "Camel trek in the Kyzylkum Desert",
-        "Overnight stay in a yurt camp",
-        "Sunset views over the desert dunes"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "activities": [
-            "Arrival in Tashkent",
-            "Evening briefing and dinner"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Travel to the Kyzylkum Desert",
-            "Begin camel trek"
-          ]
-        }
-      ]
-    },
-    "tour4": {
-      "id": "tour4",
-      "title": "Uzbekistan Family Fun",
-      "duration": "8 Days",
-      "price": "$1,100",
-      "dates": "Available Year-Round",
-      "highlights": [
-        "Interactive workshops for kids",
-        "Family-friendly sightseeing tours",
-        "Cultural performances and activities"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "activities": [
-            "Arrival in Tashkent",
-            "Family welcome event"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Visit Tashkent Zoo",
-            "Explore local parks and playgrounds"
-          ]
-        }
-      ]
-    },
-    "tour5": {
-      "id": "tour5",
-      "title": "Luxury Uzbekistan Experience",
-      "duration": "12 Days",
-      "price": "$3,500",
-      "dates": "Available Year-Round",
-      "highlights": [
-        "Stay in 5-star hotels",
-        "Private guided tours",
-        "Exclusive dining experiences"
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "activities": [
-            "Arrival in Tashkent",
-            "Private city tour with luxury transport"
-          ]
-        },
-        {
-          "day": 2,
-          "activities": [
-            "Travel to Samarkand in a private car",
-            "VIP tour of Registan Square"
-          ]
-        }
-      ]
-    }
-  },
-
-
-
-  
     "modal": {
       "itinerary": "Itinerary",
       "highlights": "Highlights",
       "day": "Day",
       "close": "Close",
-      "registerNow": "Register for This Tour"
-    }
+      "registerNow": "Register for This Tour",
+      "destination": "Destination",
+      "duration": "Duration",
+      "price": "Price",
+      "goToTourPage": "Go to Tour Page"
+    },
+    "findOut": "Find out",
+    "centralAsiaTours": "Central Asia Tours",
+    "errorLoading": "Error loading tours",
+    "retry": "Retry"
   },
   "destinations": {
     "title": "Destinations",
@@ -221,8 +303,17 @@
     "drawer": {
       "close": "Close",
       "relatedTours": "Related Tours",
-      "viewTours": "View Available Tours"
-    }
+      "viewTours": "View Available Tours",
+      "summary": "Summary",
+      "travelTips": "Travel Tips",
+      "feature": "What Makes It Special",
+      "mustSee": "Must-See Attractions",
+      "nature": "Nature & Landscape",
+      "food": "Food & Cuisine",
+      "gettingThere": "Getting There"
+    },
+    "viewAll": "View All Destinations",
+    "noDestinations": "No destinations available at the moment."
   },
   "registration": {
     "title": "Register for Tour",
@@ -260,12 +351,13 @@
   "about": {
     "title": "About AlphaTravel",
     "subtitle": "Your trusted partner for Uzbekistan adventures",
-     "story": "Alpha Avia Travel, founded in 2020 by Eshmirzayev Nurislom, is a trusted travel company specializing in inbound, outbound, and domestic tourism. We organize exclusive cultural and historical tours for visitors coming to Uzbekistan, while also offering a wide range of outbound and local travel packages. Our services include hotel reservations, flight ticket assistance, transfers, professional tour guides, and various customized travel solutions tailored to each client’s needs.",
+    "story": "Alpha Avia Travel, founded in 2020 by Eshmirzayev Nurislom, is a trusted travel company specializing in inbound, outbound, and domestic tourism. We organize exclusive cultural and historical tours for visitors coming to Uzbekistan, while also offering a wide range of outbound and local travel packages. Our services include hotel reservations, flight ticket assistance, transfers, professional tour guides, and various customized travel solutions tailored to each client’s needs.",
     "mission": "Our mission is to provide travelers with comfortable, safe, and memorable travel experiences. At Alpha Avia Travel, our dedicated team focuses on quality, responsibility, and exceptional service to ensure every stage of your journey is smooth and enjoyable. With us, your travel experience is in reliable hands.",
     "teamTitle": "Meet Our Team",
     "teamSubtitle": "Expert guides and passionate professionals",
     "storiesTitle": "Success Stories",
-    "storiesSubtitle": "Hear from travelers who've experienced Uzbekistan with us"
+    "storiesSubtitle": "Hear from travelers who've experienced Uzbekistan with us",
+    "errorLoading": "Error loading team"
   },
   "contact": {
     "title": "Get in Touch",
@@ -299,22 +391,27 @@
       "phone": "Phone",
       "email": "Email",
       "hours": "Business Hours",
-"hoursDetail": "Monday - Saturday: 9 AM - 9 PM\nSunday: 9 AM - 9 PM"
+      "hoursDetail": "Monday - Saturday: 9 AM - 9 PM\nSunday: 9 AM - 9 PM"
     }
   },
-    "card": {
-      "from": "From",
-      "perPerson": "per person",
-      "viewDetails": "View Details",
-      "register": "Register Now"
-    },
+  "card": {
+    "from": "From",
+    "perPerson": "per person",
+    "viewDetails": "View Details",
+    "register": "Register Now"
+  },
   "gallery": {
     "title": "Photo Gallery",
     "subtitle": "A visual journey through Uzbekistan's wonders",
     "lightbox": {
       "previous": "Previous",
       "next": "Next",
-      "close": "Close"
+      "close": "Close",
+      "lightboxAria": "Image lightbox",
+      "closeAria": "Close lightbox",
+      "prevAria": "Previous image",
+      "nextAria": "Next image",
+      "counter": "{{current}} / {{total}}"
     }
   },
   "footer": {
@@ -322,7 +419,10 @@
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Info",
     "followUs": "Follow Us",
-    "copyright": "© 2025 AlphaTravel. All rights reserved."
+    "copyright": "© 2025 AlphaTravel. All rights reserved.",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
   },
   "common": {
     "loading": "Loading...",
@@ -332,7 +432,6 @@
     "bookNow": "Book Now",
     "learnMore": "Learn More"
   },
-  
   "form": {
     "bookThisTour": "Register for this tour",
     "fillDetails": "Fill your contact info to reserve a spot",
@@ -359,14 +458,13 @@
       "organizerContact": "Organizer contact"
     },
     "card": {
-      "viewDetails":"View Details",
-      "register":"Register Now",
-      "perPerson":"per person"
+      "viewDetails": "View Details",
+      "register": "Register Now",
+      "perPerson": "per person"
     },
     "filter": {
-        "all":"All Tours"
+      "all": "All Tours"
     }
-
   },
   "contactCard": {
     "phone": "Phone",
@@ -377,8 +475,7 @@
     "required": "{{field}} is required",
     "invalidEmail": "Invalid email address",
     "minParticipants": "At least one participant required"
-  
-},
+  },
   "contactService": {
     "title": "Get in Touch",
     "subtitle": "We're here to help plan your perfect Uzbekistan adventure",
@@ -412,78 +509,105 @@
       "hours": "Business Hours",
       "hoursDetail": "Monday - Saturday: 9 AM - 9 PM\nSunday: 10 AM - 9 PM"
     }
-  
-},
-"services":{
-  "title": "Our Services",
-  "subtitle": "Comprehensive travel solutions for your Uzbekistan adventure",
-  "transport": {
-    "title": "Transportation Services",
-    "subtitle": "Reliable and comfortable transportation options including airport transfers, private cars, and group shuttles to ensure smooth travel throughout your trip."
   },
-  "hotels": {
-    "title": "Hotel Bookings",
-    "subtitle": "We offer a wide range of accommodation options from budget to luxury hotels, ensuring you find the perfect stay that suits your preferences and budget."
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive travel solutions for your Uzbekistan adventure",
+    "transport": {
+      "title": "Transportation Services",
+      "subtitle": "Reliable and comfortable transportation options including airport transfers, private cars, and group shuttles to ensure smooth travel throughout your trip."
+    },
+    "hotels": {
+      "title": "Hotel Bookings",
+      "subtitle": "We offer a wide range of accommodation options from budget to luxury hotels, ensuring you find the perfect stay that suits your preferences and budget."
+    },
+    "question": "Ready to Book",
+    "contactUs": "Contact us to customize your perfect travel package",
+    "GetInTouch": "Get in Touch",
+    "book": "Book Now",
+    "close": "Close",
+    "category": "Category"
   },
-  "question":"Ready to Book",
-  "contactUs":"Contact us to customize your perfect travel package",
-  "GetInTouch":"Get in Touch",
-  "book": "Book Now",
-  "close": "Close",
-  "category":"Category"
-
-  
-   
-}, 
-"tourDetail":{
- "confirmation":{ 
-   "bookingSecured":"Your booking is secured!",
-  "confirm": "Your incredible journey is confirmed,",
-  "congraluate": "! We're thrilled to have you and your party join us.",
-  "summary": "summary",
-  "tour": "Tour:",
-  "guests": "Guests:",
-  "totalCost": "Total Cost:",
-  "people": "people",
-  "detailedReceipt":"A detailed confirmation receipt has been sent to",
-  "callus":"Call us",
-  "contactAdminViaTelegram": "Want to message the trip organizer directly?",
-    "goToTelegram": "Message {{username}}",
-    "openInBrowser": "Open in browser"
-
-}, 
-"registrationDetails":{
-  "name":"name",
-  "people":"number of people",
-  "totalPrice":"Total Price:",
-  "email":"email address",
-  "phone":"phonenumber",
-  "tourTitle":"tour title",
-  "bookTrip":"Book Your Trip",
-  "securePlace":"Secure your place today! Price per person: $",
-  "priceForPerson":"price for ",
-  "confirmBooking":"Confirm Booking"
-  
-},
-"FullAdventure": {
-  "adventure" : "Your Full Adventure Details",
-  "highlights":" Key Highlights",
-  "duration":" Duration:",
-  "itinerary":"    Day-by-Day Itinerary"  , 
-  "days":"Days",
-  "day":"Day",
-  "day:":"Days:",
-  "activities":"Activities",
-  "close":"Close",
-  "view": "View",
-  "DirectContact":"Direct Contactact",
-  "assist" : "  Need assistance? Our team is ready to help! "
- }
-
-}
-
-  
-
-
-
+  "tourDetail": {
+    "confirmation": {
+      "bookingSecured": "Your booking is secured!",
+      "confirm": "Your incredible journey is confirmed,",
+      "congraluate": "! We're thrilled to have you and your party join us.",
+      "summary": "summary",
+      "tour": "Tour:",
+      "guests": "Guests:",
+      "totalCost": "Total Cost:",
+      "people": "people",
+      "detailedReceipt": "A detailed confirmation receipt has been sent to",
+      "callus": "Call us",
+      "contactAdminViaTelegram": "Want to message the trip organizer directly?",
+      "goToTelegram": "Message {{username}}",
+      "openInBrowser": "Open in browser"
+    },
+    "registrationDetails": {
+      "name": "name",
+      "people": "number of people",
+      "totalPrice": "Total Price:",
+      "email": "email address",
+      "phone": "phonenumber",
+      "tourTitle": "tour title",
+      "bookTrip": "Book Your Trip",
+      "securePlace": "Secure your place today! Price per person: $",
+      "priceForPerson": "price for ",
+      "confirmBooking": "Confirm Booking"
+    },
+    "FullAdventure": {
+      "adventure": "Your Full Adventure Details",
+      "highlights": " Key Highlights",
+      "duration": " Duration:",
+      "itinerary": "    Day-by-Day Itinerary",
+      "days": "Days",
+      "day": "Day",
+      "day:": "Days:",
+      "activities": "Activities",
+      "close": "Close",
+      "view": "View",
+      "DirectContact": "Direct Contactact",
+      "assist": "  Need assistance? Our team is ready to help! "
+    },
+    "contact": {
+      "email": "Email",
+      "facebook": "Facebook",
+      "visitPage": "Visit Page",
+      "whatsapp": "WhatsApp",
+      "chatNow": "Chat Now"
+    },
+    "validation": {
+      "requiredFields": "Please fill out all required fields.",
+      "submitFailed": "Failed to submit registration.",
+      "errorPrefix": "Error submitting form"
+    },
+    "fallback": {
+      "subtitle": "A breathtaking journey awaits!",
+      "dayTitle": "Daily Activities",
+      "noDetails": "No details available"
+    },
+    "placeholder": {
+      "name": "Enter your full name",
+      "email": "you@email.com",
+      "phone": "+XXX XX XXX XX XX"
+    },
+    "imageAlt": "Tour Image {{number}}",
+    "person": "person",
+    "people": "people"
+  },
+  "chatbot": {
+    "title": "Travel Assistant",
+    "subtitle": "AI-powered help",
+    "navLabel": "AI Chat",
+    "pageTitle": "AI Travel Assistant",
+    "pageSubtitle": "Plan your perfect journey with our AI-powered travel assistant",
+    "browseTours": "Browse All Tours",
+    "placeholder": "Ask me anything...",
+    "send": "Send",
+    "open": "Open chat",
+    "close": "Close chat",
+    "greeting": "Hi! How can I help you plan your Uzbekistan adventure?",
+    "error": "Sorry, I had trouble responding. Please try again."
+  }
 }
