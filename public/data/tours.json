@@ -1280,6 +1280,155 @@
           "participants": "2-20 people",
           "notes": "Includes 10x breakfast, domestic transfers, train tickets (Bukhara-Samarkand-Tashkent), and English-speaking guide. Excludes international flights, lunches, and dinners.",
           "extras": []
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "The Journey of a Thousand Miles — 8 Days",
+          "short": "Guaranteed departures exploring Tashkent, Bukhara, and Samarkand over 8 days.",
+          "destination": "Tashkent, Bukhara, Samarkand",
+          "region": "Uzbekistan",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "Prices are valid for 2026 and are based on 4 people, with reduced prices for larger groups on request.",
+          "duration": "8 days / 7 nights",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Home country – Tashkent",
+              "activity": "Arrival in Tashkent. Transfer to the hotel. Night in the hotel."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent — Heart of Uzbekistan",
+              "activity": "Welcome to Uzbekistan! Visit Khast Imam Complex, Chorsu Bazaar, Kukaldosh Madrasah, and Amir Temur Square. Night in the hotel."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent – Bukhara (morning flight)",
+              "activity": "Transfer to Tashkent airport and flight to Bukhara. Welcome by guide, transfer to hotel. Discover the old town: Ismail Samani Mausoleum, Chashmai Ayub, Bolo Hauz Mosque, and Ark Citadel."
+            },
+            {
+              "day": 4,
+              "title": "Bukhara",
+              "activity": "Explore Bukhara: Complex of Liab-i Khaouz, Ulugbek and Abdulaziz Khan Madrasas, Poyi Kalon Complex, Chor Minor, and Ancient Eastern Covered Bazaars with domes."
+            },
+            {
+              "day": 5,
+              "title": "Bukhara – Samarkand",
+              "activity": "Visit Bahaouddin Nakshbandi necropolis and Sitora-i-Mokhi Khossa. Drive to Samarkand. Dinner with Kouzacha Kebab."
+            },
+            {
+              "day": 6,
+              "title": "Samarkand",
+              "activity": "Explore Samarkand: Gur-Emir Mausoleum, Registan Square, Amir Temur Mosque and Bibikhanum Mausoleum, Siab Bazaar, Khazrati Khizr Mosque, and Shah-i-Zinda Necropolis."
+            },
+            {
+              "day": 7,
+              "title": "Samarkand - Tashkent (Train)",
+              "activity": "Visit the Complex of Imam Al-Bukhari. Evening transfer to Tashkent via 'Afrasiab' high-speed train."
+            },
+            {
+              "day": 8,
+              "title": "Tashkent – Home country",
+              "activity": "Breakfast at the hotel. Free time and departure from Tashkent. End of services."
+            }
+          ],
+          "highlights": [
+            "Khast Imam Complex",
+            "Chorsu Bazaar",
+            "Ismail Samani Mausoleum",
+            "Ark Citadel",
+            "Registan Square",
+            "Gur-Emir Mausoleum",
+            "Shah-i-Zinda Necropolis"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 people",
+          "notes": "Included: Round trip/excursions, accommodation in double rooms, domestic flight (Tashkent-Bukhara), full board (8 breakfasts, 7 dinners), train ticket (Samarkand-Tashkent), English-speaking guide, entrance fees, dance performance in Bukhara, 3D show in Samarkand. Not included: International flights, travel/health insurance, lunches, camera fees, tips, personal expenses, alcohol.",
+          "extras": [
+            "International flights",
+            "Travel and health insurances",
+            "Lunches",
+            "Tips for guides, drivers",
+            "Alcohol drinks"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Ancient Capitals & Desert Infernos — 4 Days",
+          "short": "Discover Turkmenistan's Ancient Merv, the marble city of Ashgabat, the flaming Darvaza Crater, and Kunya-Urgench.",
+          "destination": "Turkmenabad, Mary, Ashgabat, Darvaza, Dashoguz",
+          "region": "Turkmenistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "Prices start from $1075 per person (1 pax, 3*), down to $430 per person (8 pax). Single supplement: $270.",
+          "duration": "4 days / 3 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Meet at the Farap border. Drive to Mary to explore the Cultural and Historical park 'Ancient Merv' (UNESCO site), including Kyz Galas, Complex of Askhabs, Erk Gala, Gyaur Gala, and Sultan Sanjar mausoleum. Overnight in Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Ashgabat",
+              "activity": "Morning drive to Ashgabat. Visit the National Museum of Turkmenistan. Afternoon Ashgabat city tour to see the marble architecture: Ertogrul Gazy Mosque, Independence Park, Arch of Neutrality, and Constitution Monument. Overnight in Ashgabat."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat – Darvaza",
+              "activity": "Free morning in Ashgabat. Afternoon drive to the Karakum desert. Visit the famous Darvaza gas crater ('Door to Hell'). Camp in a traditional yurt or private tents."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Picnic breakfast. Drive to Dashoguz to visit Kunya-Urgench (UNESCO site), including the Mausoleum of Tyurabek-khanym, Kutlug-Timur minaret, and mausoleum of Sultan Tekesh. Cross the border back to Urgench (Uzbekistan)."
+            }
+          ],
+          "highlights": [
+            "Ancient Merv (UNESCO)",
+            "National Museum of Turkmenistan",
+            "Ashgabat Marble Architecture",
+            "Darvaza Gas Crater (Door to Hell)",
+            "Kunya-Urgench (UNESCO)",
+            "Karakum Desert"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 people",
+          "notes": "Included: Letter of invitation, accommodation, guide, transportation, entrance fees, breakfasts, and dinner in the desert. Not Included: International flights, Turkmen visa/border fees (70-100 USD), PCR test, lunches/dinners, tips, and insurance.",
+          "extras": [
+            "Turkmen visa/border fees",
+            "Lunches and Dinners",
+            "Tips for guide and drivers",
+            "Medical insurance"
+          ]
         }
       ],
       "uz": [
@@ -2535,6 +2684,154 @@
               "activity": "Aeroportga transfergacha bo'lgan bo'sh vaqt. Xizmatlar yakuni."
             }
           ]
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "Ming ChaQirimlik Sayohat — 8 Kun",
+          "short": "Toshkent, Buxoro va Samarqand bo'ylab 8 kunlik kafolatlangan sayohatlar.",
+          "destination": "Toshkent, Buxoro, Samarqand",
+          "region": "O'zbekiston",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "Narxlar 2026 yil uchun amal qiladi va 4 kishiga mo'ljallangan, katta guruhlar uchun chegirmalar mavjud.",
+          "duration": "8 kun / 7 tun",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Kelish – Toshkent",
+              "activity": "Toshkentga yetib kelish. Mehmonxonaga transfer. Mehmonxonada tunash."
+            },
+            {
+              "day": 2,
+              "title": "Toshkent — O'zbekiston yuragi",
+              "activity": "O'zbekistonga xush kelibsiz! Xasti Imom majmuasi, Chorsu bozori, Ko'kaldosh madrasasi va Amir Temur maydoniga tashrif."
+            },
+            {
+              "day": 3,
+              "title": "Toshkent – Buxoro (ertalabki reys)",
+              "activity": "Toshkent aeroportiga transfer va Buxoroga parvoz. Gid kutib olishi, eski shahar: Ismoil Somoniy maqbarasi, Chashmai Ayub, Bolo Hovuz va Ark."
+            },
+            {
+              "day": 4,
+              "title": "Buxoro",
+              "activity": "Buxoroni kashf eting: Labi Hovuz majmuasi, Ulug'bek va Abdulazizxon madrasalari, Poyi Kalon, Chor Minor va qadimiy bozorlar."
+            },
+            {
+              "day": 5,
+              "title": "Buxoro – Samarqand",
+              "activity": "Bahouddin Naqshbandiy majmuasi va Sitorai Mohi Xosaga tashrif. Samarqandga yo'l. Ko'zacha kabob bilan kechki ovqat."
+            },
+            {
+              "day": 6,
+              "title": "Samarqand",
+              "activity": "Go'ri Amir maqbarasi, Registon maydoni, Bibixonim masjidi, Siyob bozori, Hazrati Xizr va Shohi Zinda majmualarini tomosha qilish."
+            },
+            {
+              "day": 7,
+              "title": "Samarqand - Toshkent (Poyezd)",
+              "activity": "Imom Al-Buxoriy majmuasiga tashrif. Kechqurun 'Afrosiyob' poyezdida Toshkentga qaytish."
+            },
+            {
+              "day": 8,
+              "title": "Toshkent – Uyga qaytish",
+              "activity": "Mehmonxonada nonushta. Bo'sh vaqt va Toshkentdan uchib ketish. Xizmatlar yakuni."
+            }
+          ],
+          "highlights": [
+            "Xasti Imom",
+            "Chorsu",
+            "Ismoil Somoniy",
+            "Ark",
+            "Registon",
+            "Go'ri Amir",
+            "Shohi Zinda"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 kishi",
+          "notes": "Kiritilgan: Transfer/ekskursiyalar, mehmonxona, mahalliy reys (Toshkent-Buxoro), 3 mahal ovqat (8 nonushta, 7 kechki ovqat), poyezd (Samarqand-Toshkent), gid, kirish chiptalari. Kiritilmagan: Xalqaro reyslar, sug'urta, tushlik, shaxsiy xarajatlar.",
+          "extras": [
+            "Xalqaro reyslar",
+            "Sug'urta",
+            "Tushlik",
+            "Choychaqa",
+            "Alkogol"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Qadimiy Poytaxtlar va Cho'l Olovi — 4 Kun",
+          "short": "Turkmanistonning qadimiy Merv, Ashxobod, Darvoza krateri va Ko'hna Urganch shaharlariga sayohat.",
+          "destination": "Turkmanobod, Mari, Ashxobod, Darvoza, Toshhovuz",
+          "region": "Turkmaniston",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "Narxlar 1 kishi uchun $1075 dan (3*), 8 kishi uchun $430 gacha.",
+          "duration": "4 kun / 3 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmanobod - Mari",
+              "activity": "Farap chegarasida kutib olish. Mariga yo'l va 'Qadimiy Merv' (UNESCO) ziyorati. Marida tunash."
+            },
+            {
+              "day": 2,
+              "title": "Mari – Ashxobod",
+              "activity": "Ashxobodga yo'l. Milliy muzeyni ziyorat qilish. Tushdan keyin oq marmar shahar bo'ylab sayohat."
+            },
+            {
+              "day": 3,
+              "title": "Ashxobod – Darvoza",
+              "activity": "Ertalab bo'sh vaqt. Tushdan keyin Qoraqum cho'liga yo'l. Darvoza gaz kraterini ko'rish. O'tovda tunash."
+            },
+            {
+              "day": 4,
+              "title": "Darvoza – Toshhovuz",
+              "activity": "Toshhovuzga yo'l va Ko'hna Urganchni ziyorat qilish. O'zbekistonning Urganch shahriga chegara orqali o'tish."
+            }
+          ],
+          "highlights": [
+            "Qadimiy Merv",
+            "Turkmaniston Milliy Muzeyi",
+            "Ashxobod",
+            "Darvoza",
+            "Ko'hna Urganch",
+            "Qoraqum cho'li"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 kishi",
+          "notes": "Kiritilgan: Taklifnoma, mehmonxona, gid, transport, kirish chiptalari, nonushta va cho'lda kechki ovqat. Kiritilmagan: Turkmaniston vizasi ($70-100), tushlik va kechki ovqat, choychaqa.",
+          "extras": [
+            "Turkmaniston vizasi",
+            "Tushlik va kechki ovqat",
+            "Choychaqa"
+          ]
         }
       ],
       "ru": [
@@ -3714,6 +4011,154 @@
           },
           "participants": "2-20 человек",
           "notes": "В стоимость включено: проживание в отелях среднего класса, завтраки, билеты на поезд, услуги англоговорящего гида и входные билеты. Не включено: международные перелеты, обеды и ужины."
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "Путешествие в Тысячу Миль — 8 Дней",
+          "short": "Гарантированные туры по Ташкенту, Бухаре и Самарканду на 8 дней.",
+          "destination": "Ташкент, Бухара, Самарканд",
+          "region": "Узбекистан",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "Цены действительны на 2026 год и рассчитаны на 4 человек, скидки для больших групп по запросу.",
+          "duration": "8 дней / 7 ночей",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Домашняя страна – Ташкент",
+              "activity": "Прибытие в Ташкент. Трансфер в отель. Ночь в отеле."
+            },
+            {
+              "day": 2,
+              "title": "Ташкент — Сердце Узбекистана",
+              "activity": "Добро пожаловать в Узбекистан! Посещение комплекса Хаст-Имам, базара Чорсу, медресе Кукельдаш и сквера Амира Темура."
+            },
+            {
+              "day": 3,
+              "title": "Ташкент – Бухара (утренний рейс)",
+              "activity": "Перелет в Бухару. Встреча с гидом. Экскурсия по старому городу: мавзолей Исмаила Самани, Чашма-Аюб, мечеть Боло-Хауз и крепость Арк."
+            },
+            {
+              "day": 4,
+              "title": "Бухара",
+              "activity": "Комплекс Ляби-Хауз, медресе Улугбека и Абдулазиз-хана, комплекс Пои-Калян, Чор-Минор и старинные торговые купола."
+            },
+            {
+              "day": 5,
+              "title": "Бухара – Самарканд",
+              "activity": "Посещение некрополя Бахауддина Накшбанди и Ситораи-Мохи-Хоса. Переезд в Самарканд. Ужин."
+            },
+            {
+              "day": 6,
+              "title": "Самарканд",
+              "activity": "Мавзолей Гур-Эмир, площадь Регистан, мечеть Биби-Ханум, Сиабский базар, мечеть Хазрат-Хизр и некрополь Шахи-Зинда."
+            },
+            {
+              "day": 7,
+              "title": "Самарканд - Ташкент (Поезд)",
+              "activity": "Посещение комплекса Имама Аль-Бухари. Вечерний трансфер в Ташкент на поезде 'Афросиаб'."
+            },
+            {
+              "day": 8,
+              "title": "Ташкент – Домашняя страна",
+              "activity": "Завтрак. Свободное время и вылет из Ташкента. Конец услуг."
+            }
+          ],
+          "highlights": [
+            "Хаст-Имам",
+            "Чорсу",
+            "Исмаил Самани",
+            "Арк",
+            "Регистан",
+            "Гур-Эмир",
+            "Шахи-Зинда"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 человек",
+          "notes": "Включено: Экскурсии, проживание, внутренний рейс, полупансион, билет на поезд, гид, входные билеты. Не включено: Международные рейсы, страховка, обеды, чаевые, личные расходы.",
+          "extras": [
+            "Международные авиабилеты",
+            "Страховка",
+            "Обеды",
+            "Чаевые",
+            "Алкогольные напитки"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Древние столицы и Пламя Пустыни — 4 Дня",
+          "short": "Откройте для себя древний Мерв, мраморный Ашхабад, горящий кратер Дарваза и Куня-Ургенч.",
+          "destination": "Туркменабад, Мары, Ашхабад, Дарваза, Дашогуз",
+          "region": "Туркменистан",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "От $1075 на 1 человека (3*) до $430 на 8 человек.",
+          "duration": "4 дня / 3 ночи",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Туркменабад - Мары",
+              "activity": "Встреча на границе Фарап. Переезд в Мары для экскурсии по Древнему Мерву (ЮНЕСКО). Ночь в Мары."
+            },
+            {
+              "day": 2,
+              "title": "Мары – Ашхабад",
+              "activity": "Переезд в Ашхабад. Национальный музей Туркменистана. Обзорная экскурсия по мраморному городу."
+            },
+            {
+              "day": 3,
+              "title": "Ашхабад – Дарваза",
+              "activity": "Свободное утро. Поездка в пустыню Каракумы к кратеру Дарваза ('Врата Ада'). Ночь в юрте."
+            },
+            {
+              "day": 4,
+              "title": "Дарваза – Дашогуз",
+              "activity": "Поездка в Дашогуз для посещения Куня-Ургенча (ЮНЕСКО). Пересечение границы в Ургенч, Узбекистан."
+            }
+          ],
+          "highlights": [
+            "Древний Мерв",
+            "Национальный музей Туркменистана",
+            "Ашхабад",
+            "Дарваза",
+            "Куня-Ургенч",
+            "Каракумы"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 человек",
+          "notes": "Включено: Приглашение, отели, гид, транспорт, входные билеты, завтраки и ужин в пустыне. Не включено: Виза Туркменистана (70-100 USD), обеды, ужины, чаевые.",
+          "extras": [
+            "Виза Туркменистана",
+            "Обеды и ужины",
+            "Чаевые"
+          ]
         }
       ],
       "es": [
@@ -4879,6 +5324,154 @@
           },
           "participants": "2-20 personas",
           "notes": "Incluye: alojamiento en hoteles de clase media, desayunos, billetes de tren, guía de habla inglesa y entradas. Excluye: vuelos internacionales y comidas/cenas."
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "El Viaje de Mil Millas — 8 Días",
+          "short": "Salidas garantizadas para explorar Taskent, Bujará y Samarcanda durante 8 días.",
+          "destination": "Taskent, Bujará, Samarcanda",
+          "region": "Uzbekistán",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "Los precios son válidos para 2026 y están basados en 4 personas, con precios reducidos para grupos más grandes bajo petición.",
+          "duration": "8 días / 7 noches",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "País de origen – Taskent",
+              "activity": "Llegada a Taskent. Traslado al hotel. Noche en el hotel."
+            },
+            {
+              "day": 2,
+              "title": "Taskent — El corazón de Uzbekistán",
+              "activity": "¡Bienvenido a Uzbekistán! Visita al Complejo Khast Imam, el Bazar Chorsu, la Madraza Kukaldosh y la Plaza Amir Temur. Noche en el hotel."
+            },
+            {
+              "day": 3,
+              "title": "Taskent – Bujará (vuelo matutino)",
+              "activity": "Traslado al aeropuerto de Taskent y vuelo a Bujará. Bienvenida por el guía, traslado al hotel. Descubra el casco antiguo: Mausoleo de Ismail Samani, Chashmai Ayub, Mezquita Bolo Hauz y la Ciudadela Ark."
+            },
+            {
+              "day": 4,
+              "title": "Bujará",
+              "activity": "Explora Bujará: Complejo Liab-i Khaouz, Madrasas de Ulugbek y Abdulaziz Khan, Complejo Poyi Kalon, Chor Minor y los Antiguos Bazares Cubiertos del Este."
+            },
+            {
+              "day": 5,
+              "title": "Bujará – Samarcanda",
+              "activity": "Visita a la necrópolis de Bahaouddin Nakshbandi y Sitora-i-Mokhi Khossa. Viaje a Samarcanda. Cena con Kebab Kouzacha."
+            },
+            {
+              "day": 6,
+              "title": "Samarcanda",
+              "activity": "Explora Samarcanda: Mausoleo Gur-Emir, Plaza Registán, Mezquita Amir Temur y Mausoleo Bibikhanum, Bazar Siab, Mezquita Khazrati Khizr y Necrópolis Shah-i-Zinda."
+            },
+            {
+              "day": 7,
+              "title": "Samarcanda - Taskent (Tren)",
+              "activity": "Visita al Complejo del Imán Al-Bukhari. Traslado nocturno a Taskent en el tren de alta velocità 'Afrasiab'."
+            },
+            {
+              "day": 8,
+              "title": "Taskent – País de origen",
+              "activity": "Desayuno en el hotel. Tiempo libre y salida de Taskent. Fin de nuestros servicios."
+            }
+          ],
+          "highlights": [
+            "Complejo Khast Imam",
+            "Bazar Chorsu",
+            "Mausoleo Ismail Samani",
+            "Ciudadela Ark",
+            "Plaza Registán",
+            "Mausoleo Gur-Emir",
+            "Necrópolis Shah-i-Zinda"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 personas",
+          "notes": "Incluye: Transporte/excursiones, alojamiento en habitación doble, vuelo nacional (Taskent-Bujará), pensión completa (8 desayunos, 7 cenas), billete de tren (Samarcanda-Taskent), guía, entradas, espectáculo de danza en Bujará, show 3D en Samarcanda. No incluye: Vuelos internacionales, seguros, almuerzos, propinas, gastos personales.",
+          "extras": [
+            "Vuelos internacionales",
+            "Seguro médico y de viaje",
+            "Almuerzos",
+            "Propinas",
+            "Bebidas alcohólicas"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Capitales Antiguas e Infiernos del Desierto — 4 Días",
+          "short": "Descubre la antigua Merv, Asjabad, el cráter de Darvaza y Kunya-Urgench en Turkmenistán.",
+          "destination": "Turkmenabad, Mary, Asjabad, Darvaza, Dashoguz",
+          "region": "Turkmenistán",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "Desde $1075 por persona (1 pasajero) hasta $430 (8 pasajeros).",
+          "duration": "4 días / 3 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Reunión en la frontera de Farap. Conducción a Mary para explorar la 'Antigua Merv' (UNESCO). Noche en Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Asjabad",
+              "activity": "Viaje a Asjabad. Visita al Museo Nacional. Tour por la tarde por la ciudad de mármol. Noche en Asjabad."
+            },
+            {
+              "day": 3,
+              "title": "Asjabad – Darvaza",
+              "activity": "Mañana libre. Viaje al desierto de Karakum. Visita al cráter de Darvaza ('Puerta del Infierno'). Campamento en yurta."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Viaje a Dashoguz para visitar Kunya-Urgench (UNESCO). Cruce de frontera hacia Urgench, Uzbekistán."
+            }
+          ],
+          "highlights": [
+            "Antigua Merv",
+            "Museo Nacional de Turkmenistán",
+            "Asjabad",
+            "Cráter de Darvaza",
+            "Kunya-Urgench",
+            "Desierto de Karakum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 personas",
+          "notes": "Incluye: Carta de invitación, alojamiento, guía, transporte, entradas, desayunos y cena en el desierto. No incluye: Vuelos, visa turcomana, almuerzos, cenas, propinas.",
+          "extras": [
+            "Visa turcomana",
+            "Almuerzos y cenas",
+            "Propinas"
+          ]
         }
       ],
       "fr": [
@@ -6145,6 +6738,154 @@
             "name": "Shohrukh Umurzakov - Alpha Travel",
             "phone": "+998976151603"
           }
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "Le Voyage de Mille Lieues — 8 Jours",
+          "short": "Départs garantis pour explorer Tachkent, Boukhara et Samarcande sur 8 jours.",
+          "destination": "Tachkent, Boukhara, Samarcande",
+          "region": "Ouzbékistan",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "Les prix sont valables pour 2026 sur la base de 4 personnes, réductions pour les grands groupes sur demande.",
+          "duration": "8 jours / 7 nuits",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Pays d'origine – Tachkent",
+              "activity": "Arrivée à Tachkent. Transfert à l'hôtel. Nuit à l'hôtel."
+            },
+            {
+              "day": 2,
+              "title": "Tachkent — Cœur de l'Ouzbékistan",
+              "activity": "Bienvenue en Ouzbékistan ! Visite du complexe Khast Imam, du bazar Chorsu, de la médersa Kukaldosh et de la place Amir Temur."
+            },
+            {
+              "day": 3,
+              "title": "Tachkent – Boukhara (vol matinal)",
+              "activity": "Transfert à l'aéroport de Tachkent et vol pour Boukhara. Découverte de la vieille ville : Mausolée d'Ismail Samani, Chashmai Ayub, Mosquée Bolo Hauz et Citadelle Ark."
+            },
+            {
+              "day": 4,
+              "title": "Boukhara",
+              "activity": "Exploration de Boukhara : Complexe Liab-i Khaouz, Médersas Ulugbek et Abdulaziz Khan, Complexe Poyi Kalon, Chor Minor et anciens bazars couverts."
+            },
+            {
+              "day": 5,
+              "title": "Boukhara – Samarcande",
+              "activity": "Visite de la nécropole de Bahaouddin Nakshbandi et du Sitora-i-Mokhi Khossa. Route vers Samarcande. Dîner avec Kebab Kouzacha."
+            },
+            {
+              "day": 6,
+              "title": "Samarcande",
+              "activity": "Exploration de Samarcande : Mausolée Gour-Émir, Place du Régistan, Mosquée Bibi-Khanym, Bazar Siab, Nécropole de Shah-i-Zinda."
+            },
+            {
+              "day": 7,
+              "title": "Samarcande - Tachkent (Train)",
+              "activity": "Visite du complexe de l'Imam Al-Bukhari. Retour à Tachkent en soirée via le train à grande vitesse 'Afrasiab'."
+            },
+            {
+              "day": 8,
+              "title": "Tachkent – Pays d'origine",
+              "activity": "Petit-déjeuner à l'hôtel. Temps libre et départ de Tachkent. Fin des services."
+            }
+          ],
+          "highlights": [
+            "Complexe Khast Imam",
+            "Bazar Chorsu",
+            "Mausolée Ismail Samani",
+            "Citadelle Ark",
+            "Place du Régistan",
+            "Mausolée Gour-Émir",
+            "Nécropole de Shah-i-Zinda"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 personnes",
+          "notes": "Inclus: Transferts/excursions, hébergement en chambre double, vol intérieur, demi-pension, billet de train, guide francophone/anglophone, frais d'entrée. Non inclus: Vols internationaux, assurance, déjeuners, pourboires.",
+          "extras": [
+            "Vols internationaux",
+            "Assurances voyage et santé",
+            "Déjeuners",
+            "Pourboires pour les guides et chauffeurs",
+            "Boissons alcoolisées"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Capitales Antiques et Enfers du Désert — 4 Jours",
+          "short": "Découvrez l'ancienne Merv, Achgabat, le cratère de Darvaza et Kounia-Ourguentch.",
+          "destination": "Turkménabad, Mary, Achgabat, Darvaza, Dachogouz",
+          "region": "Turkménistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "À partir de 1075 $ pour 1 personne jusqu'à 430 $ pour 8 personnes.",
+          "duration": "4 jours / 3 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkménabad - Mary",
+              "activity": "Rendez-vous à la frontière de Farap. Route vers Mary pour explorer l'Ancienne Merv (UNESCO). Nuit à Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Achgabat",
+              "activity": "Route vers Achgabat. Musée National du Turkménistan et tour de ville. Nuit à Achgabat."
+            },
+            {
+              "day": 3,
+              "title": "Achgabat – Darvaza",
+              "activity": "Matinée libre. Route vers le désert du Karakoum et le cratère de Darvaza ('Porte de l'Enfer'). Nuit en yourte."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dachogouz",
+              "activity": "Route vers Dachogouz pour visiter Kounia-Ourguentch. Passage de la frontière vers l'Ouzbékistan."
+            }
+          ],
+          "highlights": [
+            "Ancienne Merv",
+            "Musée National",
+            "Achgabat",
+            "Cratère de Darvaza",
+            "Kounia-Ourguentch",
+            "Désert du Karakoum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 personnes",
+          "notes": "Inclus: Lettre d'invitation, hôtels, guide, transports, billets d'entrée, petits-déjeuners et dîner dans le désert. Non inclus: Visa turkmène, déjeuners et dîners, pourboires.",
+          "extras": [
+            "Visa turkmène",
+            "Repas",
+            "Pourboires"
+          ]
         }
       ],
       "it": [
@@ -7401,6 +8142,154 @@
             "Museo Savitsky",
             "Ichan Kala (UNESCO)",
             "Piazza Registan"
+          ]
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "Il Viaggio di Mille Miglia — 8 Giorni",
+          "short": "Partenze garantite per esplorare Tashkent, Bukhara e Samarcanda in 8 giorni.",
+          "destination": "Tashkent, Bukhara, Samarcanda",
+          "region": "Uzbekistan",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "I prezzi sono validi per il 2026 e basati su 4 persone, con riduzioni per gruppi più grandi su richiesta.",
+          "duration": "8 giorni / 7 notti",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Paese d'origine – Tashkent",
+              "activity": "Arrivo a Tashkent. Trasferimento in hotel. Notte in hotel."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent — Cuore dell'Uzbekistan",
+              "activity": "Benvenuti in Uzbekistan! Visita del Complesso Khast Imam, Bazar Chorsu, Madrasa Kukaldosh e Piazza Amir Temur."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent – Bukhara (volo mattutino)",
+              "activity": "Trasferimento all'aeroporto di Tashkent e volo per Bukhara. Visita del centro storico: Mausoleo di Ismail Samani, Chashmai Ayub, Moschea Bolo Hauz e Cittadella di Ark."
+            },
+            {
+              "day": 4,
+              "title": "Bukhara",
+              "activity": "Esplorazione di Bukhara: Complesso Liab-i Khaouz, Madrase di Ulugbek e Abdulaziz Khan, Complesso Poyi Kalon, Chor Minor e gli antichi bazar coperti."
+            },
+            {
+              "day": 5,
+              "title": "Bukhara – Samarcanda",
+              "activity": "Visita della necropoli di Bahaouddin Nakshbandi e Sitora-i-Mokhi Khossa. Viaggio per Samarcanda. Cena con Kebab Kouzacha."
+            },
+            {
+              "day": 6,
+              "title": "Samarcanda",
+              "activity": "Esplorazione di Samarcanda: Mausoleo Gur-Emir, Piazza Registan, Moschea di Amir Temur e Mausoleo di Bibikhanum, Bazar Siab, Necropoli di Shah-i-Zinda."
+            },
+            {
+              "day": 7,
+              "title": "Samarcanda - Tashkent (Treno)",
+              "activity": "Visita del Complesso dell'Imam Al-Bukhari. Ritorno a Tashkent in serata con il treno ad alta velocità 'Afrasiab'."
+            },
+            {
+              "day": 8,
+              "title": "Tashkent – Paese d'origine",
+              "activity": "Colazione in hotel. Tempo libero e partenza da Tashkent. Fine dei servizi."
+            }
+          ],
+          "highlights": [
+            "Complesso Khast Imam",
+            "Bazar Chorsu",
+            "Mausoleo Ismail Samani",
+            "Cittadella di Ark",
+            "Piazza Registan",
+            "Mausoleo Gur-Emir",
+            "Necropoli di Shah-i-Zinda"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 persone",
+          "notes": "Incluso: Trasferimenti/escursioni, sistemazione in camera doppia, volo interno, mezza pensione, biglietto del treno, guida parlante inglese, ingressi. Escluso: Voli internazionali, assicurazione, pranzi, mance.",
+          "extras": [
+            "Voli internazionali",
+            "Assicurazione di viaggio e sanitaria",
+            "Pranzi",
+            "Mance per guide e autisti",
+            "Bevande alcoliche"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "Capitali Antiche e Inferni nel Deserto — 4 Giorni",
+          "short": "Scopri l'antica Merv in Turkmenistan, Ashgabat, il cratere di Darvaza e Kunya-Urgench.",
+          "destination": "Turkmenabad, Mary, Ashgabat, Darvaza, Dashoguz",
+          "region": "Turkmenistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "Da $1075 per 1 pax fino a $430 per 8 pax.",
+          "duration": "4 giorni / 3 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Incontro al confine di Farap. Viaggio a Mary per l'Antica Merv (UNESCO). Notte a Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Ashgabat",
+              "activity": "Viaggio per Ashgabat. Museo Nazionale del Turkmenistan e tour dell'architettura in marmo."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat – Darvaza",
+              "activity": "Viaggio nel deserto del Karakum. Cratere del gas di Darvaza ('Porta dell'Inferno'). Campeggio in yurta."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Viaggio a Dashoguz per Kunya-Urgench. Attraversamento del confine per l'Uzbekistan."
+            }
+          ],
+          "highlights": [
+            "Antica Merv",
+            "Museo Nazionale",
+            "Ashgabat",
+            "Cratere di Darvaza",
+            "Kunya-Urgench",
+            "Deserto del Karakum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 persone",
+          "notes": "Incluso: Lettera di invito, hotel, guida, trasporti, ingressi, colazioni e cena nel deserto. Escluso: Visto turkmeno, pranzi e cene, mance.",
+          "extras": [
+            "Visto turkmeno",
+            "Pranzi e Cene",
+            "Mance"
           ]
         }
       ],
@@ -8665,6 +9554,154 @@
             "联合国教科文组织世界遗产希瓦古城",
             "撒马尔罕雷吉斯坦广场"
           ]
+        },
+        {
+          "id": "t_journey_thousand_miles_8d",
+          "title": "千里之行 — 8 天",
+          "short": "保证出发的8天乌兹别克斯坦塔什干、布哈拉、撒马尔罕之旅。",
+          "destination": "塔什干, 布哈拉, 撒马尔罕",
+          "region": "乌兹别克斯坦",
+          "images": [
+            "/images/samarqand/samarkand.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 0,
+          "priceNote": "价格适用于2026年，按4人计算，大型团队可申请优惠。",
+          "duration": "8天 / 7晚",
+          "rating": null,
+          "category": "uzbekistan",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "出发地 – 塔什干",
+              "activity": "抵达塔什干，接机入住酒店。在酒店休息。"
+            },
+            {
+              "day": 2,
+              "title": "塔什干 — 乌兹别克斯坦的心脏",
+              "activity": "欢迎来到乌兹别克斯坦！参观哈斯特·伊玛目建筑群，琼苏巴扎，库克尔达什神学院和帖木儿广场。"
+            },
+            {
+              "day": 3,
+              "title": "塔什干 – 布哈拉 (早班机)",
+              "activity": "乘飞机前往布哈拉。导游接机，探索老城区：萨曼王朝陵墓，恰什马·阿尤布，波罗·哈乌兹清真寺和雅克城堡。"
+            },
+            {
+              "day": 4,
+              "title": "布哈拉",
+              "activity": "游览布哈拉：利亚比·哈乌兹，乌鲁伯格和阿卜杜拉齐兹汗神学院，波伊·卡杨建筑群，乔尔·米诺及古代东方圆顶集市。"
+            },
+            {
+              "day": 5,
+              "title": "布哈拉 – 撒马尔罕",
+              "activity": "参观巴哈乌丁·纳克什班迪陵墓和夏宫。驱车前往撒马尔罕。享用Kouzacha Kebab晚餐。"
+            },
+            {
+              "day": 6,
+              "title": "撒马尔罕",
+              "activity": "游览撒马尔罕：古尔·埃米尔陵墓，雷吉斯坦广场，比比哈努姆清真寺，西亚布巴扎及沙赫静达陵墓群。"
+            },
+            {
+              "day": 7,
+              "title": "撒马尔罕 - 塔什干 (高铁)",
+              "activity": "参观伊玛目布哈里建筑群。傍晚乘坐Afrasiab高铁返回塔什干。"
+            },
+            {
+              "day": 8,
+              "title": "塔什干 – 出发地",
+              "activity": "酒店早餐，自由活动，送机。服务结束。"
+            }
+          ],
+          "highlights": [
+            "哈斯特·伊玛目",
+            "琼苏巴扎",
+            "萨曼王朝陵墓",
+            "雅克城堡",
+            "雷吉斯坦广场",
+            "古尔·埃米尔陵墓",
+            "沙赫静达陵墓群"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "2-20 人",
+          "notes": "包含：行程交通，双人间住宿，内陆航班，早晚餐，高铁票，英文导游及门票。不含：国际航班，保险，午餐，小费及个人开销。",
+          "extras": [
+            "国际航班",
+            "旅游及医疗保险",
+            "午餐",
+            "导游及司机小费",
+            "酒精饮料"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_4d",
+          "title": "古代首都与地狱之门 — 4 天",
+          "short": "探索土库曼斯坦的古代梅尔夫，大理石之城阿什哈巴德，达尔瓦扎火山口和库尼亚乌尔根奇。",
+          "destination": "土库曼纳巴德, 马雷, 阿什哈巴德, 达尔瓦扎, 达绍古兹",
+          "region": "土库曼斯坦",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 1075,
+          "priceNote": "单人价从 $1075 起，8人团低至 $430。",
+          "duration": "4天 / 3晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "土库曼纳巴德 - 马雷",
+              "activity": "在法拉普边境会面。前往马雷探索古代梅尔夫遗址（联合国教科文组织）。夜宿马雷。"
+            },
+            {
+              "day": 2,
+              "title": "马雷 – 阿什哈巴德",
+              "activity": "前往阿什哈巴德，参观国家博物馆和城市大理石建筑。夜宿阿什哈巴德。"
+            },
+            {
+              "day": 3,
+              "title": "阿什哈巴德 – 达尔瓦扎",
+              "activity": "上午自由活动。下午前往卡拉库姆沙漠，参观达尔瓦扎火山口（地狱之门）。毡房露营。"
+            },
+            {
+              "day": 4,
+              "title": "达尔瓦扎 – 达绍古兹",
+              "activity": "前往达绍古兹参观库尼亚乌尔根奇遗址。随后过境乌兹别克斯坦乌尔根奇。"
+            }
+          ],
+          "highlights": [
+            "古代梅尔夫",
+            "土库曼斯坦国家博物馆",
+            "阿什哈巴德大理石之城",
+            "达尔瓦扎火山口",
+            "库尼亚乌尔根奇",
+            "卡拉库姆沙漠"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-8 人",
+          "notes": "包含: 邀请函，住宿，导游，交通，门票，早餐，以及沙漠晚餐。不含: 土库曼斯坦签证及过境费，午晚餐，小费。",
+          "extras": [
+            "土库曼斯坦签证费",
+            "午餐和晚餐",
+            "小费"
+          ]
         }
       ]
     },
@@ -8788,6 +9825,476 @@
           "participants": "1-16 people",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "The Great Central Asia Journey — 17 Days",
+          "short": "An epic 17-day journey through Uzbekistan, Tajikistan, and Turkmenistan, exploring ancient Silk Road cities, pristine mountain lakes, and desert craters.",
+          "destination": "Tashkent, Dushanbe, Seven Lakes, Samarkand, Bukhara, Mary, Ashgabat, Darvaza, Khiva",
+          "region": "Central Asia",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Total price is $3744. Valid for 2026 based on 1 person, with reduced prices for larger groups on request.",
+          "duration": "17 days / 16 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europe – Tashkent",
+              "activity": "Arrival at Tashkent airport. Welcome by English-speaking guide. Transfer to the hotel (early check-in included). Free time with optional metro tour."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent",
+              "activity": "Explore Tashkent: Khast Imam Complex (Uthman Quran), Chorsu Bazaar, and Independence Square."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent - Amirsoy",
+              "activity": "Hiking in Tian Shan Mountains. Visit Amirsoy Mountain Resort, Chimgan Mountains, and Charvak Lake. Return to Tashkent."
+            },
+            {
+              "day": 4,
+              "title": "Tashkent",
+              "activity": "Visit Amir Temur Square, State Museum of Amir Temur and the Temurids, Alisher Navoi Drama Theatre, and Magic City Garden."
+            },
+            {
+              "day": 5,
+              "title": "Tashkent – Tajikistan (Dushanbe)",
+              "activity": "Arrival in Dushanbe. Visit National Museum of Antiquities (Sleeping Buddha), the flagpole, and Navruz Palace. Free time at Rudaki Avenue."
+            },
+            {
+              "day": 6,
+              "title": "The Legendary Iskanderkul Lake",
+              "activity": "Depart for Fann Mountains. Explore Iskanderkul Lake, Fan Niagara waterfall, and Snake Lake. Overnight in Sarytag village."
+            },
+            {
+              "day": 7,
+              "title": "The Seven Lakes Adventure (Haft-Kul)",
+              "activity": "Explore the Seven Lakes (Haft Kul). Journey through seven turquoise lakes. Drive to historic Panjakent."
+            },
+            {
+              "day": 8,
+              "title": "Tajikistan – Samarkand",
+              "activity": "Visit UNESCO site Sarazm and Panjakent bazaar. Cross the border into Uzbekistan and transfer to Samarkand."
+            },
+            {
+              "day": 9,
+              "title": "Samarkand",
+              "activity": "Explore Samarkand: Gur-Emir Mausoleum and Registan Square. 3D show at Registan after dinner."
+            },
+            {
+              "day": 10,
+              "title": "Samarkand - Bukhara",
+              "activity": "Visit Complex of Imam Al-Bukhari, Amir Temur Mosque and Bibikhanum Mausoleum, Siab Bazaar, and Shah-i-Zinda. Afternoon drive to Bukhara."
+            },
+            {
+              "day": 11,
+              "title": "Bukhara – Turkmenistan",
+              "activity": "Explore Bukhara: Ismail Samani Mausoleum, Chashma Ayub, Bolo-Khaouz Mosque, Ark Citadel, Po-i-Kalyan complex, and Liabi-Khauz. Evening transfer to Turkmenistan border."
+            },
+            {
+              "day": 12,
+              "title": "Turkmenabad – Mary – Merv",
+              "activity": "Cross Farap border. Drive to Mary. Explore Ancient Merv (UNESCO site), including Kyz Galas, Complex of Askhabs, Erk Gala, Gyaur Gala, and Sultan Sanjar mausoleum."
+            },
+            {
+              "day": 13,
+              "title": "Mary – Ashgabat",
+              "activity": "Drive to Ashgabat. Visit Carpet Museum. City tour: Ertogrul Gazy Mosque, Independence Park, Arch of Neutrality, and Constitution Monument."
+            },
+            {
+              "day": 14,
+              "title": "Darvaza – Dashoguz – Khiva",
+              "activity": "Drive to Dashoguz to cross border back to Urgench (Uzbekistan). Transfer to Khiva and relax."
+            },
+            {
+              "day": 15,
+              "title": "Khiva",
+              "activity": "Explore Khiva's Ichan Kala: Muhammad Aminkhan Madrasa, Kalta Minor, Kohna Ark, Juma Mosque, Pahlavon Mahmud Mausoleum, and Islam Khoja Madrasa."
+            },
+            {
+              "day": 16,
+              "title": "Khiva, Urgench – Tashkent",
+              "activity": "Flight from Urgench to Tashkent. Free time for walking, buying souvenirs, and relaxing. Visit Islam Civilization Center."
+            },
+            {
+              "day": 17,
+              "title": "Tashkent - Europe",
+              "activity": "Breakfast at hotel. Departure from Tashkent. End of the tour."
+            }
+          ],
+          "highlights": [
+            "Khast Imam Complex",
+            "Amirsoy & Charvak Lake",
+            "Iskanderkul Lake",
+            "Seven Lakes (Haft Kul)",
+            "Registan Square",
+            "Ancient Merv",
+            "Ashgabat Marble City",
+            "Ichan Kala (Khiva)"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 people",
+          "notes": "Total package price: $3744. Uzbekistan portion: $1590, Tajikistan portion: $1079, Turkmenistan portion: from $1075. Includes: Transfers/excursions, accommodation, half board (breakfasts), English-speaking guide, entrance fees, dance performance in Bukhara, 3D show in Samarkand. Not included: International flights, travel/health insurance, lunches/dinners (except specified), tips, camera fees, visas.",
+          "extras": [
+            "International flights",
+            "Travel & health insurances",
+            "Tips for guides and drivers",
+            "Lunches and dinners",
+            "Visa fees (Tajikistan E-visa, Turkmenistan visa)",
+            "Personal expenses"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Kazakhstan & Kyrgyzstan Adventure Expedition — 15 Days",
+          "short": "Breathtaking landscapes, alpine lakes, canyons, nomadic culture, and authentic yurt stays in Kazakhstan and Kyrgyzstan.",
+          "destination": "Almaty, Charyn Canyon, Saty, Kolsai, Karakol, Bokonbaevo, Issyk-Kul, Son Kul, Bishkek",
+          "region": "Kazakhstan & Kyrgyzstan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Price: €5,299 per person based on double occupancy. Single supplement available upon request.",
+          "duration": "15 days / 14 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrival in Almaty",
+              "activity": "Welcome to Kazakhstan! Transfer to your hotel. Evening walk in Almaty city center."
+            },
+            {
+              "day": 2,
+              "title": "Almaty City Tour & Mountain Adventure",
+              "activity": "Visit Green Bazaar, Zenkov Cathedral, Panfilov Park, Medeu Ice Skating Rink, and cable car to Shymbulak Mountain Resort."
+            },
+            {
+              "day": 3,
+              "title": "Free Day in Almaty",
+              "activity": "Relaxed and flexible day. Optional activities: Arbat Street, Central State Museum, shopping, café hopping."
+            },
+            {
+              "day": 4,
+              "title": "Charyn Canyon & Saty Village",
+              "activity": "Scenic drive through the Kazakh steppe. Visit Charyn Canyon (Valley of Castles). Arrive in Saty village."
+            },
+            {
+              "day": 5,
+              "title": "Kaindy Lake & Kolsai Lakes",
+              "activity": "Explore Kaindy Lake and its submerged forest. Off-road mountain drive and hiking in Kolsai Lakes National Park."
+            },
+            {
+              "day": 6,
+              "title": "Relaxed Nature Day in Saty",
+              "activity": "Leisure time in nature. Optional hiking or horse riding. Enjoy the peaceful atmosphere of Kazakhstan's mountain region."
+            },
+            {
+              "day": 7,
+              "title": "Border Crossing to Kyrgyzstan & Karakol",
+              "activity": "Cross into Kyrgyzstan. Scenic drive along Issyk-Kul Lake. Arrival in Karakol. Visit Dungan Mosque and Russian Orthodox Church."
+            },
+            {
+              "day": 8,
+              "title": "Jeti-Ögüz Canyon & Karakol Region",
+              "activity": "Visit Jeti-Ögüz Canyon ('Seven Bulls') and Broken Heart Rock. Optional hot spring experience."
+            },
+            {
+              "day": 9,
+              "title": "Bokonbaevo & Eagle Hunter Experience",
+              "activity": "Scenic drive along southern Issyk-Kul. Traditional Eagle Hunter Demonstration. Meet nomadic families and learn about traditional Kyrgyz life."
+            },
+            {
+              "day": 10,
+              "title": "Fairy Tale Canyon & Issyk-Kul Region",
+              "activity": "Explore Skazka Canyon (Fairy Tale Canyon) with incredible red rock formations. Relax by Issyk-Kul Lake."
+            },
+            {
+              "day": 11,
+              "title": "Journey to Son Kul Lake",
+              "activity": "Travel deep into the mountains to Son Kul Lake (3,000m altitude). Tea with local nomadic families and stunning sunset views."
+            },
+            {
+              "day": 12,
+              "title": "Nomadic Life at Son Kul",
+              "activity": "Experience authentic Kyrgyz nomadic lifestyle. Hiking, horse riding, meeting shepherd families, and stargazing."
+            },
+            {
+              "day": 13,
+              "title": "Ala Archa National Park & Bishkek",
+              "activity": "Visit Ala Archa National Park for riverside walks and spectacular mountain scenery. Arrival in Bishkek for a relaxed evening."
+            },
+            {
+              "day": 14,
+              "title": "Bishkek City Experience",
+              "activity": "Discover Bishkek: Osh Bazaar, Ala-Too Square, Soviet monuments, Victory Square, and local parks."
+            },
+            {
+              "day": 15,
+              "title": "Departure",
+              "activity": "Airport transfer and departure."
+            }
+          ],
+          "highlights": [
+            "Almaty & Shymbulak Mountain Resort",
+            "Charyn Canyon",
+            "Kaindy & Kolsai Lakes",
+            "Traditional Eagle Hunter Experience",
+            "Issyk-Kul Lake Region",
+            "Jeti-Ögüz Canyon",
+            "Authentic Yurt Experiences",
+            "Nomadic Life at Son Kul Lake",
+            "Ala Archa National Park",
+            "Bishkek City Experience"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Included: Private English-speaking driver, 14 nights accommodation, daily breakfast, private transportation, airport transfers, fuel/tolls, border crossing assistance. Not Included: International flights, entrance fees & national park fees, optional activities, horse riding, lunches & dinners, personal expenses, travel insurance, visa fees.",
+          "extras": [
+            "International flights",
+            "Entrance fees & national park fees",
+            "Optional activities & attractions",
+            "Horse riding activities",
+            "Lunches & dinners",
+            "Travel insurance",
+            "Visa fees"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Turkmenistan Express — 4 Days",
+          "short": "Experience Ancient Merv, Ashgabat's Marble Architecture, and the Darvaza Gas Crater.",
+          "destination": "Turkmenabad, Mary, Ashgabat, Darvaza, Dashoguz",
+          "region": "Turkmenistan",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "Prices start from $665 per person for 3 pax, to $542 per person for 5 pax (4* accommodation).",
+          "duration": "4 days / 3 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Meet at Farap border. Drive to Mary to explore 'Ancient Merv' (UNESCO). Sights include Kyz Galas, Complex of Askhabs, Erk Gala, Gyaur Gala, and Sultan Sanjar mausoleum. Overnight in Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Ashgabat",
+              "activity": "Drive to Ashgabat. Visit the Carpet Museum, featuring 2000 exhibits. City tour including Ertogrul Gazy Mosque, Independence Park, Arch of Neutrality, and Constitution Monument. Overnight in Ashgabat."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat – Darvaza",
+              "activity": "Free morning. Drive to the Karakum desert to visit the Darvaza gas crater ('Door to Hell'). Camp in a yurt or private tent."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Picnic breakfast. Drive to Dashoguz province to cross the border back to Urgench, Uzbekistan."
+            }
+          ],
+          "highlights": [
+            "Ancient Merv (UNESCO)",
+            "Turkmen Carpet Museum",
+            "Ashgabat Marble City",
+            "Darvaza Gas Crater",
+            "Karakum Desert"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 people",
+          "notes": "Included: Invitation letter, accommodation, guide, transportation, entrance fees, breakfasts, and dinner in the desert. Not Included: Flights, visa fees ($70-100), lunches/dinners, and tips.",
+          "extras": [
+            "Turkmen visa/border fees",
+            "Lunches and Dinners",
+            "Tips for guide and drivers",
+            "Medical insurance"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Legendary Pamir Highway Expedition — 7 Days",
+          "short": "An epic 7-day high-altitude 4x4 expedition from Dushanbe through the Wakhan Valley to Osh.",
+          "destination": "Dushanbe, Kalai Khumb, Khorog, Langar, Bulunkul, Murghab, Karakul Lake, Osh",
+          "region": "Tajikistan & Kyrgyzstan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Total Price: $2,820 USD per person. Full Board (Breakfast, Lunch, Dinner included daily).",
+          "duration": "7 days / 6 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dushanbe – Kalai Khumb",
+              "activity": "Stop at the Nurek Dam viewpoint. Explore the medieval Hulbuk Fortress. Lunch in Kulob. Arrive in Kalai Khumb. Meals: L, D."
+            },
+            {
+              "day": 2,
+              "title": "Kalai Khumb – Khorog (The Capital of the Pamirs)",
+              "activity": "Riverside drive along the Afghan border. Visit Khorog Botanical Garden, Khorog City Park, and De Pamiri Handicraft Centre. Meals: B, L, D."
+            },
+            {
+              "day": 3,
+              "title": "Khorog – Langar (Wakhan Valley)",
+              "activity": "Drive through Ishkashim. Explore the 3rd-century BC Yamchun Fortress. Relax at the sacred Bibi Fatima Hot Springs. Visit the ancient Vrang Buddhist Stupa. Meals: B, L, D."
+            },
+            {
+              "day": 4,
+              "title": "Langar – Bulunkul Lake",
+              "activity": "See the ancient Langar Petroglyphs. Cross the Khargush Pass (4,344 m). Visit the crystal-clear Yashilkul and Bulunkul Lakes. Meals: B, L, D."
+            },
+            {
+              "day": 5,
+              "title": "Bulunkul – Murghab",
+              "activity": "Stop in the nomadic settlement of Alichur. Visit the pristine Aq Balyk (Holy Blue Fish) Spring. Arrive in Murghab, the highest town in the region. Meals: B, L, D."
+            },
+            {
+              "day": 6,
+              "title": "Murghab – Karakul Lake",
+              "activity": "Cross the spectacular Ak-Baital Pass (4,655 m). Descend to Karakul Lake, a meteor-impact crater lake surrounded by 7,000-meter peaks. Meals: B, L, D."
+            },
+            {
+              "day": 7,
+              "title": "Karakul Lake – Osh (Kyrgyzstan)",
+              "activity": "Drive to Kyzylart Pass, complete Tajik border formalities, and cross into Kyrgyzstan. Enjoy views of Peak Lenin before arriving in Osh. Meals: B, L."
+            }
+          ],
+          "highlights": [
+            "Nurek Dam",
+            "Wakhan Valley",
+            "Bibi Fatima Hot Springs",
+            "Khargush Pass",
+            "Bulunkul Lake",
+            "Ak-Baital Pass (4,655m)",
+            "Karakul Lake",
+            "Pamir Highway"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Included: 3* hotels & traditional guesthouses, Full Board meals, private 4x4 SUV with driver, English-speaking guide, GBAO permit, entry fees, and water. Excluded: International flights, visas, insurance, tips, and personal expenses.",
+          "extras": [
+            "International flights",
+            "Visas",
+            "Travel insurance",
+            "Tips",
+            "Personal expenses"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "The Fann Mountains Expedition — 3 Days",
+          "short": "Experience the pinnacle of Central Asian beauty from the Seven Lakes of Shing to legendary Lake Iskanderkul.",
+          "destination": "Panjakent, Seven Lakes (Haftkul), Iskanderkul Lake",
+          "region": "Tajikistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Rate per Person: $160.00 (Based on a group of 29 participants). Child Policy (Under 8 years): 50% Discount on Hotel.",
+          "duration": "3 days / 2 nights",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "The Turquoise Road (Seven Lakes of Shing)",
+              "activity": "Meet at the Jarteppa Border. Scenic journey through the Shing Valley to witness the Haftkul (Seven Lakes). Authentic mountain lunch. Return to Panjakent. Overnight at Sarazm Plaza Hotel 3*."
+            },
+            {
+              "day": 2,
+              "title": "The Legend of Alexander (Lake Iskanderkul)",
+              "activity": "Drive through the Fann Mountain passes. Explore Iskanderkul Lake, the 'Fann Niagara' waterfall, and Snake Lake. Overnight in Lakeside Cottages or a Resort in Sarotog. Farewell mountain dinner."
+            },
+            {
+              "day": 3,
+              "title": "Ancient Heritage & Silk Road Spirit",
+              "activity": "Lakeside breakfast and village walk. Return to Panjakent for a Grand Farewell Lunch featuring 'Festive Panjakent Plov'. Visit the local bazaar. Transfer back to the Jarteppa Border."
+            }
+          ],
+          "highlights": [
+            "Seven Lakes of Shing (Haftkul)",
+            "Lake Iskanderkul",
+            "Fann Niagara Waterfall",
+            "Snake Lake",
+            "Panjakent Bazaar",
+            "Festive Panjakent Plov"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Group of 29 people",
+          "notes": "Included: Premium Transport, 2 nights accommodation, Full Board Meals, bottled water, English/Russian speaking guide, entrance fees. Excluded: Travel insurance, alcoholic beverages, personal expenses, tips.",
+          "extras": [
+            "Travel insurance",
+            "Alcoholic beverages",
+            "Personal expenses and tips"
+          ]
         }
       ],
       "uz": [
@@ -8909,6 +10416,461 @@
           "participants": "1-16 kishi",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "Buyuk Markaziy Osiyo Sayohati — 17 Kun",
+          "short": "O'zbekiston, Tojikiston va Turkmaniston bo'ylab 17 kunlik ajoyib sayohat.",
+          "destination": "Toshkent, Dushanbe, Yetti ko'l, Samarqand, Buxoro, Mari, Ashxobod, Darvoza, Xiva",
+          "region": "Markaziy Osiyo",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Umumiy narx $3744. 2026 yil uchun 1 kishiga mo'ljallangan.",
+          "duration": "17 kun / 16 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Yevropa – Toshkent",
+              "activity": "Toshkentga kelish. Mehmonxonaga joylashish."
+            },
+            {
+              "day": 2,
+              "title": "Toshkent",
+              "activity": "Xasti Imom, Chorsu bozori va Mustaqillik maydoni."
+            },
+            {
+              "day": 3,
+              "title": "Toshkent - Amirsoy",
+              "activity": "Tyan-Shan tog'lari, Amirsoy, Chimyon va Chorvoq."
+            },
+            {
+              "day": 4,
+              "title": "Toshkent",
+              "activity": "Amir Temur maydoni, muzey, Navoiy teatri va Magic City."
+            },
+            {
+              "day": 5,
+              "title": "Toshkent – Tojikiston (Dushanbe)",
+              "activity": "Dushanbega yetib kelish. Milliy muzey va Navro'z saroyi."
+            },
+            {
+              "day": 6,
+              "title": "Iskandarko'l",
+              "activity": "Fan tog'lari, Iskandarko'l va sharshara."
+            },
+            {
+              "day": 7,
+              "title": "Yetti ko'l (Haft ko'l)",
+              "activity": "Haft ko'l bo'ylab sayohat va Panjakent."
+            },
+            {
+              "day": 8,
+              "title": "Tojikiston – Samarqand",
+              "activity": "Sarazm va O'zbekiston chegarasidan o'tish."
+            },
+            {
+              "day": 9,
+              "title": "Samarqand",
+              "activity": "Go'ri Amir va Registon. Kechqurun 3D shou."
+            },
+            {
+              "day": 10,
+              "title": "Samarqand - Buxoro",
+              "activity": "Imom Buxoriy majmuasi, Bibixonim, Siyob bozori va Shohi Zinda. Buxoroga yo'l."
+            },
+            {
+              "day": 11,
+              "title": "Buxoro – Turkmaniston",
+              "activity": "Buxoro ziyorati va Turkmaniston chegarasiga yo'l."
+            },
+            {
+              "day": 12,
+              "title": "Turkmanobod – Mari – Merv",
+              "activity": "Qadimiy Merv (UNESCO) bo'ylab sayohat."
+            },
+            {
+              "day": 13,
+              "title": "Mari – Ashxobod",
+              "activity": "Ashxobodga yo'l. Gilamlar muzeyi va shahar sayohati."
+            },
+            {
+              "day": 14,
+              "title": "Darvoza – Toshhovuz – Xiva",
+              "activity": "O'zbekistonga qaytish va Xivaga yo'l."
+            },
+            {
+              "day": 15,
+              "title": "Xiva",
+              "activity": "Ichan Qal'a bo'ylab sayohat."
+            },
+            {
+              "day": 16,
+              "title": "Xiva, Urganch – Toshkent",
+              "activity": "Toshkentga parvoz va bo'sh vaqt."
+            },
+            {
+              "day": 17,
+              "title": "Toshkent - Yevropa",
+              "activity": "Sayohatning yakuni."
+            }
+          ],
+          "highlights": [
+            "Xasti Imom",
+            "Amirsoy",
+            "Iskandarko'l",
+            "Haft ko'l",
+            "Registon",
+            "Qadimiy Merv",
+            "Ashxobod",
+            "Ichan Qal'a"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 kishi",
+          "notes": "Narxga mehmonxona, nonushta, gid va kirish chiptalari kiritilgan. Viza va xalqaro reyslar kiritilmagan.",
+          "extras": [
+            "Xalqaro reyslar",
+            "Sug'urta",
+            "Viza"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Qozog'iston va Qirg'iziston Sarguzashtlari — 15 Kun",
+          "short": "Qozog'iston va Qirg'izistonda ajoyib manzara, tog' ko'llari, kanyonlar va o'tovlarda yashash tajribasi.",
+          "destination": "Olmaota, Charin Kanyoni, Sati, Kolsay, Qorako'l, Bokonbaevo, Issiqko'l, Sonko'l, Bishkek",
+          "region": "Qozog'iston va Qirg'iziston",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Narx: 1 kishi uchun €5,299 (ikki kishilik joylashuvda).",
+          "duration": "15 kun / 14 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Olmaotaga kelish",
+              "activity": "Qozog'istonga xush kelibsiz! Mehmonxonaga transfer va shahar markazida sayr."
+            },
+            {
+              "day": 2,
+              "title": "Olmaota va tog' sarguzashtlari",
+              "activity": "Yashil bozor, Zenkov sobori, Panfilov bog'i, Medeu muz saroyi, Shimbuloqqa dor yo'li."
+            },
+            {
+              "day": 3,
+              "title": "Olmaotada bo'sh kun",
+              "activity": "Bo'sh vaqt, xaridlar va sayr."
+            },
+            {
+              "day": 4,
+              "title": "Charin Kanyoni va Sati qishlog'i",
+              "activity": "Charin kanyoni bo'ylab sayohat va Satiga kelish."
+            },
+            {
+              "day": 5,
+              "title": "Qayindi va Kolsay ko'llari",
+              "activity": "Qayindi ko'li va uning suv osti o'rmoni. Kolsay ko'llarida piyoda sayr."
+            },
+            {
+              "day": 6,
+              "title": "Satida dam olish",
+              "activity": "Tabiat qo'ynida dam olish, ot minib sayr qilish (ixtiyoriy)."
+            },
+            {
+              "day": 7,
+              "title": "Qirg'iziston chegarasi va Qorako'l",
+              "activity": "Qirg'iziston chegarasidan o'tish. Issiqko'l manzaralari va Qorako'lga kelish."
+            },
+            {
+              "day": 8,
+              "title": "Jeti-O'g'uz kanyoni",
+              "activity": "Jeti-O'g'uz ('Yetti ho'kiz') va Yoriq yurak qoyasi."
+            },
+            {
+              "day": 9,
+              "title": "Bokonbaevo va burgut ovi",
+              "activity": "Burgut bilan ov qilish shousi, ko'chmanchilar madaniyati bilan tanishish."
+            },
+            {
+              "day": 10,
+              "title": "Ertak kanyoni",
+              "activity": "Skazka kanyoni va Issiqko'l bo'yida dam olish."
+            },
+            {
+              "day": 11,
+              "title": "Sonko'lga sayohat",
+              "activity": "3000 metr balandlikdagi Sonko'lga yo'l. O'tovda qolish."
+            },
+            {
+              "day": 12,
+              "title": "Sonko'lda ko'chmanchi hayot",
+              "activity": "Ot minish, piyoda sayr va yulduzlarni tomosha qilish."
+            },
+            {
+              "day": 13,
+              "title": "Ala-Archa milliy bog'i va Bishkek",
+              "activity": "Ala-Archa milliy bog'i manzaralari va Bishkekka qaytish."
+            },
+            {
+              "day": 14,
+              "title": "Bishkek bo'ylab sayohat",
+              "activity": "O'sh bozori, Ala-Too maydoni va shahar sayri."
+            },
+            {
+              "day": 15,
+              "title": "Jo'nab ketish",
+              "activity": "Aeroportga transfer."
+            }
+          ],
+          "highlights": [
+            "Olmaota",
+            "Charin",
+            "Qayindi va Kolsay",
+            "Burgut ovi",
+            "Issiqko'l",
+            "Jeti-O'g'uz",
+            "Sonko'l",
+            "Ala-Archa",
+            "Bishkek"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Moslashuvchan",
+          "notes": "Kiritilgan: Haydovchi, mehmonxona va o'tovlar, nonushta, transferlar. Kiritilmagan: Xalqaro reyslar, bog'larga kirish, tushlik va kechki ovqatlar, sug'urta, viza.",
+          "extras": [
+            "Xalqaro reyslar",
+            "Kirish chiptalari",
+            "Tushlik va kechki ovqatlar",
+            "Sug'urta",
+            "Viza"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Turkmaniston Ekspress — 4 Kun",
+          "short": "Qadimiy Merv, Ashxobod va Darvoza krateriga sayohat.",
+          "destination": "Turkmanobod, Mari, Ashxobod, Darvoza, Toshhovuz",
+          "region": "Turkmaniston",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "Narx 3 kishi uchun $665, 5 kishi uchun $542 (4* mehmonxona).",
+          "duration": "4 kun / 3 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmanobod - Mari",
+              "activity": "Farap chegarasida uchrashuv. Mariga yo'l va 'Qadimiy Merv' (UNESCO)."
+            },
+            {
+              "day": 2,
+              "title": "Mari – Ashxobod",
+              "activity": "Ashxobodga yo'l. Gilam muzeyi va shahar sayohati."
+            },
+            {
+              "day": 3,
+              "title": "Ashxobod – Darvoza",
+              "activity": "Bo'sh tong. Darvoza gaz krateriga sayohat. O'tovda tunash."
+            },
+            {
+              "day": 4,
+              "title": "Darvoza – Toshhovuz",
+              "activity": "Toshhovuz orqali Urganchga o'tish."
+            }
+          ],
+          "highlights": [
+            "Qadimiy Merv",
+            "Gilam muzeyi",
+            "Ashxobod",
+            "Darvoza krateri",
+            "Qoraqum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 kishi",
+          "notes": "Kiritilgan: Mehmonxona, gid, transport, chiptalar, nonushta, cho'lda kechki ovqat. Kiritilmagan: Viza ($70-100), tushlik va kechki ovqatlar.",
+          "extras": [
+            "Viza",
+            "Ovqatlar",
+            "Choychaqa"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Afsonaviy Pomir Trakti Ekspeditsiyasi — 7 Kun",
+          "short": "Dushanbedan O'shgacha bo'lgan 7 kunlik Pomir trakti 4x4 ekspeditsiyasi.",
+          "destination": "Dushanbe, Qal'ai Xumb, Xorug', Langar, Bulunko'l, Murg'ob, Qorako'l, O'sh",
+          "region": "Tojikiston va Qirg'iziston",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Narx: 1 kishi uchun $2,820 USD. 3 mahal ovqat kiritilgan.",
+          "duration": "7 kun / 6 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dushanbe – Qal'ai Xumb",
+              "activity": "Nurek suv ombori, Xulbuk qal'asi. Qal'ai Xumbga yetib kelish."
+            },
+            {
+              "day": 2,
+              "title": "Qal'ai Xumb – Xorug'",
+              "activity": "Afg'oniston chegarasi bo'ylab harakatlanish. Xorug' botanika bog'i."
+            },
+            {
+              "day": 3,
+              "title": "Xorug' – Langar (Vaxon vodiysi)",
+              "activity": "Yamchun qal'asi, Bibi Fotima issiq buloqlari, Vrang Budda stupasi."
+            },
+            {
+              "day": 4,
+              "title": "Langar – Bulunko'l",
+              "activity": "Langar qoyatosh suratlari, Xargush dovoni (4344 m). Yashilko'l va Bulunko'l."
+            },
+            {
+              "day": 5,
+              "title": "Bulunko'l – Murg'ob",
+              "activity": "Alichur ko'chmanchilar qishlog'i. Murg'obga yetib kelish."
+            },
+            {
+              "day": 6,
+              "title": "Murg'ob – Qorako'l",
+              "activity": "Oq-Baytal dovoni (4655 m). Qorako'lga tushish."
+            },
+            {
+              "day": 7,
+              "title": "Qorako'l – O'sh (Qirg'iziston)",
+              "activity": "Qizil-Art dovoni, Qirg'izistonga o'tish va O'sh shahriga yetib kelish."
+            }
+          ],
+          "highlights": [
+            "Vaxon vodiysi",
+            "Oq-Baytal dovoni",
+            "Qorako'l",
+            "Pomir trakti"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Moslashuvchan",
+          "notes": "Kiritilgan: 3* mehmonxona, 3 mahal ovqat, 4x4 avtomobil, gid, TBMV (GBAO) ruxsatnomasi. Kiritilmagan: Reyslar, viza, sug'urta, choychaqa.",
+          "extras": [
+            "Reyslar",
+            "Viza",
+            "Sug'urta",
+            "Choychaqa"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "Fann Tog'lari Ekspeditsiyasi — 3 Kun",
+          "short": "Yetti ko'l va afsonaviy Iskandarko'l bo'ylab sayohat.",
+          "destination": "Panjakent, Yetti ko'l (Haftko'l), Iskandarko'l",
+          "region": "Tojikiston",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Narx: 1 kishi uchun $160.00 (29 kishilik guruh uchun). 8 yoshgacha bolalarga chegirma.",
+          "duration": "3 kun / 2 tun",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Feruza yo'li (Yetti ko'l)",
+              "activity": "Jartepa chegarasida kutib olish. Yetti ko'l bo'ylab sayohat. Panjakentda tunash."
+            },
+            {
+              "day": 2,
+              "title": "Iskandar afsonasi (Iskandarko'l)",
+              "activity": "Iskandarko'l, sharshara va Ilonli ko'lni ziyorat qilish. Ko'l bo'yida tunash."
+            },
+            {
+              "day": 3,
+              "title": "Qadimiy meros",
+              "activity": "Panjakent palovi bilan xayrlashuv tushligi. Bozorga tashrif va chegaraga qaytish."
+            }
+          ],
+          "highlights": [
+            "Yetti ko'l (Haftko'l)",
+            "Iskandarko'l",
+            "Fann sharsharasi",
+            "Panjakent palovi"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "29 kishilik guruh",
+          "notes": "Kiritilgan: Transport, mehmonxona, 3 mahal ovqat, gid va chiptalar. Kiritilmagan: Sug'urta, spirtli ichimliklar, shaxsiy xarajatlar.",
+          "extras": [
+            "Sug'urta",
+            "Choychaqa"
+          ]
         }
       ],
       "ru": [
@@ -9030,6 +10992,459 @@
           "participants": "1-16 человек",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "Великое путешествие по Центральной Азии — 17 Дней",
+          "short": "Эпическое 17-дневное путешествие по Узбекистану, Таджикистану и Туркменистану.",
+          "destination": "Ташкент, Душанбе, Семь озер, Самарканд, Бухара, Мары, Ашхабад, Дарваза, Хива",
+          "region": "Центральная Азия",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Общая стоимость $3744. Действительно на 2026 год для 1 человека.",
+          "duration": "17 дней / 16 ночей",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Европа – Ташкент",
+              "activity": "Прибытие в Ташкент. Трансфер в отель."
+            },
+            {
+              "day": 2,
+              "title": "Ташкент",
+              "activity": "Комплекс Хаст-Имам, базар Чорсу и площадь Независимости."
+            },
+            {
+              "day": 3,
+              "title": "Ташкент - Амирсой",
+              "activity": "Горы Тянь-Шань, Амирсой, Чимган и озеро Чарвак."
+            },
+            {
+              "day": 4,
+              "title": "Ташкент",
+              "activity": "Сквер Амира Темура, музей, театр Навои и Magic City."
+            },
+            {
+              "day": 5,
+              "title": "Ташкент – Таджикистан (Душанбе)",
+              "activity": "Прибытие в Душанбе. Национальный музей, дворец Навруз."
+            },
+            {
+              "day": 6,
+              "title": "Легендарное озеро Искандеркуль",
+              "activity": "Фанские горы, озеро Искандеркуль."
+            },
+            {
+              "day": 7,
+              "title": "Семь Озер (Хафт-Кул)",
+              "activity": "Путешествие по Семи озерам и Пенджикент."
+            },
+            {
+              "day": 8,
+              "title": "Таджикистан – Самарканд",
+              "activity": "Переход границы в Узбекистан."
+            },
+            {
+              "day": 9,
+              "title": "Самарканд",
+              "activity": "Гур-Эмир и Регистан. 3D шоу."
+            },
+            {
+              "day": 10,
+              "title": "Самарканд - Бухара",
+              "activity": "Имам Аль-Бухари, Биби-Ханум, Шахи-Зинда. Переезд в Бухару."
+            },
+            {
+              "day": 11,
+              "title": "Бухара – Туркменистан",
+              "activity": "Экскурсия по Бухаре и переезд к границе с Туркменистаном."
+            },
+            {
+              "day": 12,
+              "title": "Туркменабад – Мары – Мерв",
+              "activity": "Переход границы Фарап. Древний Мерв."
+            },
+            {
+              "day": 13,
+              "title": "Мары – Ашхабад",
+              "activity": "Переезд в Ашхабад. Музей ковров, экскурсия по городу."
+            },
+            {
+              "day": 14,
+              "title": "Дарваза – Дашогуз – Хива",
+              "activity": "Возвращение в Узбекистан, переезд в Хиву."
+            },
+            {
+              "day": 15,
+              "title": "Хива",
+              "activity": "Экскурсия по Ичан-Кале."
+            },
+            {
+              "day": 16,
+              "title": "Хива, Ургенч – Ташкент",
+              "activity": "Перелет в Ташкент."
+            },
+            {
+              "day": 17,
+              "title": "Ташкент - Европа",
+              "activity": "Конец тура."
+            }
+          ],
+          "highlights": [
+            "Хаст-Имам",
+            "Амирсой",
+            "Искандеркуль",
+            "Семь Озер",
+            "Регистан",
+            "Древний Мерв",
+            "Ашхабад",
+            "Ичан-Кала"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 человек",
+          "notes": "Включено: отели, завтраки, гид, билеты. Не включено: визы, обеды, ужины, международные рейсы.",
+          "extras": [
+            "Международные рейсы",
+            "Страховка",
+            "Визы"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Приключение в Казахстане и Кыргызстане — 15 Дней",
+          "short": "Захватывающие пейзажи, альпийские озера, каньоны и культура кочевников.",
+          "destination": "Алматы, Чарынский каньон, Саты, Кольсай, Каракол, Боконбаево, Иссык-Куль, Сон-Куль, Бишкек",
+          "region": "Казахстан и Кыргызстан",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Цена: €5,299 на человека при двухместном размещении.",
+          "duration": "15 дней / 14 ночей",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Прибытие в Алматы",
+              "activity": "Добро пожаловать в Казахстан! Трансфер и вечерняя прогулка."
+            },
+            {
+              "day": 2,
+              "title": "Алматы и горы",
+              "activity": "Зеленый базар, Зенковский собор, Медео, Чимбулак."
+            },
+            {
+              "day": 3,
+              "title": "Свободный день в Алматы",
+              "activity": "Свободное время, шопинг, музеи."
+            },
+            {
+              "day": 4,
+              "title": "Чарынский каньон и Саты",
+              "activity": "Долина замков в Чарынском каньоне. Прибытие в Саты."
+            },
+            {
+              "day": 5,
+              "title": "Озера Каинды и Кольсай",
+              "activity": "Озеро Каинды с затопленным лесом и прогулка на Кольсай."
+            },
+            {
+              "day": 6,
+              "title": "Отдых в Саты",
+              "activity": "Свободное время на природе."
+            },
+            {
+              "day": 7,
+              "title": "Граница с Кыргызстаном и Каракол",
+              "activity": "Переход границы, озеро Иссык-Куль, прибытие в Каракол."
+            },
+            {
+              "day": 8,
+              "title": "Каньон Джеты-Огуз",
+              "activity": "Семь быков и Разбитое сердце. Опционально горячие источники."
+            },
+            {
+              "day": 9,
+              "title": "Боконбаево и охота с орлами",
+              "activity": "Демонстрация охоты с орлами, знакомство с кочевниками."
+            },
+            {
+              "day": 10,
+              "title": "Каньон Сказка",
+              "activity": "Каньон Сказка и отдых на Иссык-Куле."
+            },
+            {
+              "day": 11,
+              "title": "Озеро Сон-Куль",
+              "activity": "Дорога к Сон-Кулю (3000м). Ночь в юрте."
+            },
+            {
+              "day": 12,
+              "title": "Жизнь кочевников на Сон-Куле",
+              "activity": "Верховая езда, прогулки и звезды."
+            },
+            {
+              "day": 13,
+              "title": "Ала-Арча и Бишкек",
+              "activity": "Парк Ала-Арча и приезд в Бишкек."
+            },
+            {
+              "day": 14,
+              "title": "Бишкек",
+              "activity": "Ошский базар, площадь Ала-Тоо."
+            },
+            {
+              "day": 15,
+              "title": "Вылет",
+              "activity": "Трансфер в аэропорт."
+            }
+          ],
+          "highlights": [
+            "Алматы",
+            "Чарын",
+            "Каинды",
+            "Иссык-Куль",
+            "Джеты-Огуз",
+            "Сон-Куль",
+            "Ала-Арча",
+            "Бишкек"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Гибко",
+          "notes": "Включено: водитель, отели и юрты, завтраки. Не включено: авиабилеты, входные билеты в парки, обеды и ужины, визы.",
+          "extras": [
+            "Авиабилеты",
+            "Входные билеты",
+            "Обеды и ужины",
+            "Страховка"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Туркменистан Экспресс — 4 Дня",
+          "short": "Древний Мерв, мраморный Ашхабад и газовый кратер Дарваза.",
+          "destination": "Туркменабад, Мары, Ашхабад, Дарваза, Дашогуз",
+          "region": "Туркменистан",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "От $665 (3 чел) до $542 (5 чел) в 4* отеле.",
+          "duration": "4 дня / 3 ночи",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Туркменабад - Мары",
+              "activity": "Встреча на границе Фарап. Древний Мерв (ЮНЕСКО). Ночь в Мары."
+            },
+            {
+              "day": 2,
+              "title": "Мары – Ашхабад",
+              "activity": "Переезд в Ашхабад. Музей ковров. Экскурсия по городу."
+            },
+            {
+              "day": 3,
+              "title": "Ашхабад – Дарваза",
+              "activity": "Свободное утро. Дарваза ('Врата Ада'). Ночь в юрте."
+            },
+            {
+              "day": 4,
+              "title": "Дарваза – Дашогуз",
+              "activity": "Переезд в Дашогуз и пересечение границы в Ургенч."
+            }
+          ],
+          "highlights": [
+            "Древний Мерв",
+            "Музей ковров",
+            "Ашхабад",
+            "Дарваза",
+            "Каракумы"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 человек",
+          "notes": "Включено: отели, гид, транспорт, входные билеты, завтраки и ужин. Не включено: виза, обеды и ужины.",
+          "extras": [
+            "Виза",
+            "Питание",
+            "Чаевые"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Экспедиция по Легендарному Памирскому Тракту — 7 Дней",
+          "short": "7-дневная высокогорная 4x4 экспедиция от Душанбе до Оша через Ваханскую долину.",
+          "destination": "Душанбе, Калаи-Хумб, Хорог, Лангар, Булункуль, Мургаб, Каракуль, Ош",
+          "region": "Таджикистан и Кыргызстан",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Итого: $2,820 USD на человека. Полный пансион.",
+          "duration": "7 дней / 6 ночей",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Душанбе – Калаи-Хумб",
+              "activity": "Нурекская ГЭС, крепость Хулбук. Переезд в Калаи-Хумб."
+            },
+            {
+              "day": 2,
+              "title": "Калаи-Хумб – Хорог",
+              "activity": "Поездка вдоль афганской границы. Ботанический сад в Хороге."
+            },
+            {
+              "day": 3,
+              "title": "Хорог – Лангар (Ваханская долина)",
+              "activity": "Крепость Ямчун, горячие источники Биби-Фатима, Буддийская ступа во Вранге."
+            },
+            {
+              "day": 4,
+              "title": "Лангар – озеро Булункуль",
+              "activity": "Петроглифы Лангара, перевал Харгуш (4344 м), озера Яшилькуль и Булункуль."
+            },
+            {
+              "day": 5,
+              "title": "Булункуль – Мургаб",
+              "activity": "Поселок Аличур, святой источник Ак Балык. Приезд в Мургаб."
+            },
+            {
+              "day": 6,
+              "title": "Мургаб – озеро Каракуль",
+              "activity": "Перевал Ак-Байтал (4655 м). Озеро Каракуль (кратер метеорита)."
+            },
+            {
+              "day": 7,
+              "title": "Каракуль – Ош (Кыргызстан)",
+              "activity": "Пересечение границы, вид на пик Ленина. Прибытие в Ош."
+            }
+          ],
+          "highlights": [
+            "Ваханская долина",
+            "Перевал Ак-Байтал",
+            "Озеро Каракуль",
+            "Памирский тракт"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Гибко",
+          "notes": "Включено: отели 3* и гостевые дома, полный пансион, 4x4 авто с водителем, гид, пермит ГБАО. Не включено: авиабилеты, визы, страховка, чаевые.",
+          "extras": [
+            "Авиабилеты",
+            "Визы",
+            "Страховка",
+            "Чаевые"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "Экспедиция в Фанские Горы — 3 Дня",
+          "short": "Откройте для себя красоту Семи озер и легендарного Искандеркуля.",
+          "destination": "Пенджикент, Семь Озер (Хафткул), Озеро Искандеркуль",
+          "region": "Таджикистан",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Стоимость: $160.00 на человека (при группе 29 человек).",
+          "duration": "3 дня / 2 ночи",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Бирюзовый путь (Семь Озер)",
+              "activity": "Встреча на границе Джартепа. Поездка на Семь Озер. Ночь в Пенджикенте."
+            },
+            {
+              "day": 2,
+              "title": "Легенда об Александре (Искандеркуль)",
+              "activity": "Искандеркуль, Фанская Ниагара и Змеиное озеро. Ночь на озере."
+            },
+            {
+              "day": 3,
+              "title": "Древнее наследие",
+              "activity": "Возвращение в Пенджикент, праздничный плов, базар и трансфер на границу."
+            }
+          ],
+          "highlights": [
+            "Семь Озер",
+            "Искандеркуль",
+            "Фанская Ниагара",
+            "Пенджикентский Плов"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Группа из 29 человек",
+          "notes": "Включено: Транспорт, проживание, полный пансион, гид и входные билеты. Не включено: Страховка, алкоголь, чаевые.",
+          "extras": [
+            "Страховка",
+            "Чаевые"
+          ]
         }
       ],
       "es": [
@@ -9151,6 +11566,463 @@
           "participants": "1-16 personas",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "El Gran Viaje por Asia Central — 17 Días",
+          "short": "Un viaje épico de 17 días por Uzbekistán, Tayikistán y Turkmenistán.",
+          "destination": "Taskent, Dushambé, Siete Lagos, Samarcanda, Bujará, Mary, Asjabad, Darvaza, Jiva",
+          "region": "Asia Central",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Precio total $3744. Válido para 2026 basado en 1 persona.",
+          "duration": "17 días / 16 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europa – Taskent",
+              "activity": "Llegada a Taskent. Bienvenida y traslado al hotel."
+            },
+            {
+              "day": 2,
+              "title": "Taskent",
+              "activity": "Complejo Khast Imam, Bazar Chorsu y Plaza de la Independencia."
+            },
+            {
+              "day": 3,
+              "title": "Taskent - Amirsoy",
+              "activity": "Senderismo en las montañas Tian Shan. Amirsoy, Chimgan y Lago Charvak."
+            },
+            {
+              "day": 4,
+              "title": "Taskent",
+              "activity": "Plaza Amir Temur, Museo de Amir Temur, Teatro Alisher Navoi y Magic City."
+            },
+            {
+              "day": 5,
+              "title": "Taskent – Tayikistán (Dushambé)",
+              "activity": "Llegada a Dushambé. Museo Nacional de Antigüedades, Palacio Navruz."
+            },
+            {
+              "day": 6,
+              "title": "El legendario lago Iskanderkul",
+              "activity": "Montañas Fann, Lago Iskanderkul, cascada Fan Niagara."
+            },
+            {
+              "day": 7,
+              "title": "Aventura en los Siete Lagos (Haft-Kul)",
+              "activity": "Exploración de los Siete Lagos y viaje a Panjakent."
+            },
+            {
+              "day": 8,
+              "title": "Tayikistán – Samarcanda",
+              "activity": "Visita a Sarazm (UNESCO). Cruce de frontera hacia Uzbekistán."
+            },
+            {
+              "day": 9,
+              "title": "Samarcanda",
+              "activity": "Mausoleo Gur-Emir, Plaza Registán. Espectáculo 3D."
+            },
+            {
+              "day": 10,
+              "title": "Samarcanda - Bujará",
+              "activity": "Complejo Imam Al-Bukhari, Mezquita Bibikhanum, Bazar Siab y Shah-i-Zinda. Viaje a Bujará."
+            },
+            {
+              "day": 11,
+              "title": "Bujará – Turkmenistán",
+              "activity": "Exploración de Bujará y traslado vespertino a la frontera con Turkmenistán."
+            },
+            {
+              "day": 12,
+              "title": "Turkmenabad – Mary – Merv",
+              "activity": "Cruce de frontera Farap. Antigua Merv (UNESCO)."
+            },
+            {
+              "day": 13,
+              "title": "Mary – Asjabad",
+              "activity": "Viaje a Asjabad. Museo de la Alfombra, Mezquita Ertogrul Gazy."
+            },
+            {
+              "day": 14,
+              "title": "Darvaza – Dashoguz – Jiva",
+              "activity": "Viaje a la frontera para regresar a Uzbekistán (Jiva)."
+            },
+            {
+              "day": 15,
+              "title": "Jiva",
+              "activity": "Exploración de Ichan Kala en Jiva."
+            },
+            {
+              "day": 16,
+              "title": "Jiva, Urgench – Taskent",
+              "activity": "Vuelo a Taskent. Tiempo libre."
+            },
+            {
+              "day": 17,
+              "title": "Taskent - Europa",
+              "activity": "Salida de Taskent. Fin del tour."
+            }
+          ],
+          "highlights": [
+            "Complejo Khast Imam",
+            "Amirsoy",
+            "Lago Iskanderkul",
+            "Siete Lagos",
+            "Plaza Registán",
+            "Antigua Merv",
+            "Asjabad",
+            "Ichan Kala"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 personas",
+          "notes": "Incluye alojamiento, desayunos, guía y entradas. No incluye vuelos internacionales, visas, almuerzos ni cenas.",
+          "extras": [
+            "Vuelos internacionales",
+            "Seguro médico",
+            "Visas"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Aventura y Expedición en Kazajistán y Kirguistán — 15 Días",
+          "short": "Paisajes impresionantes, lagos alpinos, cañones, cultura nómada y estancias en yurtas.",
+          "destination": "Almaty, Cañón de Charyn, Saty, Kolsai, Karakol, Bokonbaevo, Issyk-Kul, Son Kul, Biskek",
+          "region": "Kazajistán y Kirguistán",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Precio: €5,299 por persona en base a ocupación doble.",
+          "duration": "15 días / 14 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Llegada a Almaty",
+              "activity": "¡Bienvenido a Kazajistán! Traslado al hotel y paseo nocturno."
+            },
+            {
+              "day": 2,
+              "title": "Tour de Almaty y Aventura en la Montaña",
+              "activity": "Green Bazaar, Catedral Zenkov, Parque Panfilov, Pista de hielo Medeu, y teleférico a Shymbulak."
+            },
+            {
+              "day": 3,
+              "title": "Día Libre en Almaty",
+              "activity": "Día relajado y flexible. Actividades opcionales."
+            },
+            {
+              "day": 4,
+              "title": "Cañón de Charyn y Pueblo Saty",
+              "activity": "Conducción por la estepa. Cañón de Charyn. Llegada a Saty."
+            },
+            {
+              "day": 5,
+              "title": "Lago Kaindy y Lagos Kolsai",
+              "activity": "Lago Kaindy y su bosque sumergido. Senderismo en Kolsai."
+            },
+            {
+              "day": 6,
+              "title": "Día de Naturaleza en Saty",
+              "activity": "Tiempo libre en la naturaleza. Senderismo o equitación opcional."
+            },
+            {
+              "day": 7,
+              "title": "Cruce de frontera a Kirguistán y Karakol",
+              "activity": "Cruce a Kirguistán. Lago Issyk-Kul. Llegada a Karakol."
+            },
+            {
+              "day": 8,
+              "title": "Cañón Jeti-Ögüz y Región de Karakol",
+              "activity": "Cañón Jeti-Ögüz y Roca del Corazón Roto. Aguas termales opcionales."
+            },
+            {
+              "day": 9,
+              "title": "Bokonbaevo y Experiencia con Águilas",
+              "activity": "Demostración de cazadores con águilas. Cultura nómada."
+            },
+            {
+              "day": 10,
+              "title": "Cañón de Cuento de Hadas e Issyk-Kul",
+              "activity": "Cañón Skazka (Cuento de Hadas). Relax en Issyk-Kul."
+            },
+            {
+              "day": 11,
+              "title": "Viaje al Lago Son Kul",
+              "activity": "Viaje a Son Kul (3,000m). Té con familias nómadas."
+            },
+            {
+              "day": 12,
+              "title": "Vida Nómada en Son Kul",
+              "activity": "Estilo de vida nómada, equitación, y observación de estrellas."
+            },
+            {
+              "day": 13,
+              "title": "Parque Nacional Ala Archa y Biskek",
+              "activity": "Parque Nacional Ala Archa y llegada a Biskek."
+            },
+            {
+              "day": 14,
+              "title": "Experiencia en Biskek",
+              "activity": "Osh Bazaar, Plaza Ala-Too, monumentos soviéticos."
+            },
+            {
+              "day": 15,
+              "title": "Salida",
+              "activity": "Traslado al aeropuerto y salida."
+            }
+          ],
+          "highlights": [
+            "Almaty",
+            "Cañón de Charyn",
+            "Lagos Kaindy y Kolsai",
+            "Cazadores con águilas",
+            "Lago Issyk-Kul",
+            "Cañón Jeti-Ögüz",
+            "Estancias en Yurtas",
+            "Lago Son Kul",
+            "Ala Archa",
+            "Biskek"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Incluye: Conductor privado, 14 noches de alojamiento, desayunos, traslados. No incluye: Vuelos internacionales, entradas a parques, actividades opcionales, almuerzos y cenas.",
+          "extras": [
+            "Vuelos internacionales",
+            "Entradas a parques",
+            "Almuerzos y cenas",
+            "Visas"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Turkmenistán Exprés — 4 Días",
+          "short": "Experimenta la antigua Merv, la arquitectura de mármol de Asjabad y el cráter de Darvaza.",
+          "destination": "Turkmenabad, Mary, Asjabad, Darvaza, Dashoguz",
+          "region": "Turkmenistán",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "Desde $665 (3 pax) hasta $542 (5 pax) en hoteles de 4*.",
+          "duration": "4 días / 3 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Encuentro en Farap. Antigua Merv (UNESCO). Noche en Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Asjabad",
+              "activity": "Viaje a Asjabad. Museo de la Alfombra. Tour por la ciudad. Noche en Asjabad."
+            },
+            {
+              "day": 3,
+              "title": "Asjabad – Darvaza",
+              "activity": "Mañana libre. Viaje al cráter de Darvaza ('Puerta del Infierno'). Campamento en yurta."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Viaje a Dashoguz para cruzar la frontera a Urgench, Uzbekistán."
+            }
+          ],
+          "highlights": [
+            "Antigua Merv",
+            "Museo de la Alfombra",
+            "Asjabad",
+            "Cráter de Darvaza",
+            "Desierto Karakum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 personas",
+          "notes": "Incluye: Alojamiento, guía, transporte, entradas, desayunos y cena en el desierto. Excluye: Vuelos, visa turcomana, almuerzos, cenas, propinas.",
+          "extras": [
+            "Visa",
+            "Comidas",
+            "Propinas"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Expedición por la Legendaria Carretera del Pamir — 7 Días",
+          "short": "Una épica expedición 4x4 de 7 días desde Dusambé a través del Valle de Wakhan hasta Osh.",
+          "destination": "Dusambé, Kalai Khumb, Khorog, Langar, Bulunkul, Murghab, Lago Karakul, Osh",
+          "region": "Tayikistán y Kirguistán",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Precio Total: $2,820 USD por persona. Pensión Completa.",
+          "duration": "7 días / 6 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dusambé – Kalai Khumb",
+              "activity": "Presa de Nurek, Fortaleza de Hulbuk. Llegada a Kalai Khumb."
+            },
+            {
+              "day": 2,
+              "title": "Kalai Khumb – Khorog",
+              "activity": "Viaje a lo largo de la frontera afgana. Jardín Botánico de Khorog y Centro de Artesanía."
+            },
+            {
+              "day": 3,
+              "title": "Khorog – Langar (Valle de Wakhan)",
+              "activity": "Fortaleza de Yamchun, Aguas termales de Bibi Fatima y Estupa Budista de Vrang."
+            },
+            {
+              "day": 4,
+              "title": "Langar – Lago Bulunkul",
+              "activity": "Petroglifos de Langar, Paso de Khargush (4,344 m). Lagos Yashilkul y Bulunkul."
+            },
+            {
+              "day": 5,
+              "title": "Bulunkul – Murghab",
+              "activity": "Asentamiento nómada de Alichur. Manantial de Aq Balyk. Llegada a Murghab."
+            },
+            {
+              "day": 6,
+              "title": "Murghab – Lago Karakul",
+              "activity": "Paso de Ak-Baital (4,655 m). Lago Karakul, un cráter de impacto de meteorito."
+            },
+            {
+              "day": 7,
+              "title": "Lago Karakul – Osh (Kirguistán)",
+              "activity": "Cruce de frontera hacia Kirguistán. Vistas del Pico Lenin. Llegada a Osh."
+            }
+          ],
+          "highlights": [
+            "Valle de Wakhan",
+            "Aguas Termales",
+            "Paso Ak-Baital (4,655m)",
+            "Lago Karakul",
+            "Carretera del Pamir"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Incluye: Hoteles 3* y casas de huéspedes, Pensión Completa, 4x4 con conductor, guía, permiso GBAO. No incluye: Vuelos, visas, seguro, propinas.",
+          "extras": [
+            "Vuelos",
+            "Visas",
+            "Seguro",
+            "Propinas"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "Expedición a las Montañas Fann — 3 Días",
+          "short": "Experimenta la belleza de los Siete Lagos y el legendario Lago Iskanderkul.",
+          "destination": "Panjakent, Siete Lagos (Haftkul), Lago Iskanderkul",
+          "region": "Tayikistán",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Precio por persona: $160.00 (Grupo de 29 participantes). Descuento para niños menores de 8 años.",
+          "duration": "3 días / 2 noches",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "El Camino Turquesa (Siete Lagos de Shing)",
+              "activity": "Encuentro en la frontera Jarteppa. Viaje a los Siete Lagos. Almuerzo y noche en Panjakent."
+            },
+            {
+              "day": 2,
+              "title": "La Leyenda de Alejandro (Lago Iskanderkul)",
+              "activity": "Exploración del Lago Iskanderkul, cascada Fann Niagara y el Lago de las Serpientes. Noche en cabañas."
+            },
+            {
+              "day": 3,
+              "title": "Patrimonio Antiguo y Ruta de la Seda",
+              "activity": "Regreso a Panjakent para el Plov Festivo. Visita al bazar y traslado a la frontera."
+            }
+          ],
+          "highlights": [
+            "Siete Lagos (Haftkul)",
+            "Lago Iskanderkul",
+            "Cascada Fann Niagara",
+            "Plov de Panjakent"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Grupo de 29 personas",
+          "notes": "Incluye: Transporte, alojamiento, pensión completa, guía y entradas. No incluye: Seguro, alcohol, gastos personales y propinas.",
+          "extras": [
+            "Seguro",
+            "Alcohol",
+            "Propinas"
+          ]
         }
       ],
       "fr": [
@@ -9272,6 +12144,460 @@
           "participants": "1-16 personnes",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "Le Grand Voyage en Asie Centrale — 17 Jours",
+          "short": "Un voyage épique de 17 jours à travers l'Ouzbékistan, le Tadjikistan et le Turkménistan.",
+          "destination": "Tachkent, Douchanbé, Sept Lacs, Samarcande, Boukhara, Mary, Achgabat, Darvaza, Khiva",
+          "region": "Asie Centrale",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Prix total 3744 $. Valable pour 2026 sur la base d'une personne.",
+          "duration": "17 jours / 16 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europe – Tachkent",
+              "activity": "Arrivée à Tachkent. Transfert à l'hôtel."
+            },
+            {
+              "day": 2,
+              "title": "Tachkent",
+              "activity": "Complexe Khast Imam, Bazar Chorsu et Place de l'Indépendance."
+            },
+            {
+              "day": 3,
+              "title": "Tachkent - Amirsoy",
+              "activity": "Montagnes Tian Shan, Amirsoy, Chimgan et Lac Charvak."
+            },
+            {
+              "day": 4,
+              "title": "Tachkent",
+              "activity": "Place Amir Temur, Musée Amir Temur, Théâtre Navoï."
+            },
+            {
+              "day": 5,
+              "title": "Tachkent – Tadjikistan (Douchanbé)",
+              "activity": "Arrivée à Douchanbé. Musée National, Palais Navruz."
+            },
+            {
+              "day": 6,
+              "title": "Le lac Iskanderkoul",
+              "activity": "Montagnes Fann, Lac Iskanderkoul."
+            },
+            {
+              "day": 7,
+              "title": "Les Sept Lacs (Haft-Koul)",
+              "activity": "Exploration des Sept Lacs et route vers Penjikent."
+            },
+            {
+              "day": 8,
+              "title": "Tadjikistan – Samarcande",
+              "activity": "Passage de la frontière vers Samarcande en Ouzbékistan."
+            },
+            {
+              "day": 9,
+              "title": "Samarcande",
+              "activity": "Mausolée Gour-Émir et Place du Régistan. Spectacle 3D."
+            },
+            {
+              "day": 10,
+              "title": "Samarcande - Boukhara",
+              "activity": "Imam Al-Bukhari, Mosquée Bibi-Khanym, Shah-i-Zinda. Route vers Boukhara."
+            },
+            {
+              "day": 11,
+              "title": "Boukhara – Turkménistan",
+              "activity": "Visite de Boukhara et transfert à la frontière turkmène."
+            },
+            {
+              "day": 12,
+              "title": "Turkménabad – Mary – Merv",
+              "activity": "Passage de la frontière. Ancienne Merv (UNESCO)."
+            },
+            {
+              "day": 13,
+              "title": "Mary – Achgabat",
+              "activity": "Route vers Achgabat. Musée du tapis, tour de ville."
+            },
+            {
+              "day": 14,
+              "title": "Darvaza – Dachogouz – Khiva",
+              "activity": "Retour en Ouzbékistan, route vers Khiva."
+            },
+            {
+              "day": 15,
+              "title": "Khiva",
+              "activity": "Exploration de la vieille ville d'Ichan Kala."
+            },
+            {
+              "day": 16,
+              "title": "Khiva, Ourguentch – Tachkent",
+              "activity": "Vol pour Tachkent et temps libre."
+            },
+            {
+              "day": 17,
+              "title": "Tachkent - Europe",
+              "activity": "Fin du circuit."
+            }
+          ],
+          "highlights": [
+            "Khast Imam",
+            "Amirsoy",
+            "Lac Iskanderkoul",
+            "Sept Lacs",
+            "Régistan",
+            "Ancienne Merv",
+            "Achgabat",
+            "Ichan Kala"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 personnes",
+          "notes": "Inclus: hôtels, petits-déjeuners, guide et billets d'entrée. Non inclus: vols internationaux, visas, déjeuners et dîners.",
+          "extras": [
+            "Vols internationaux",
+            "Assurance",
+            "Visas"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Aventure au Kazakhstan et Kirghizistan — 15 Jours",
+          "short": "Paysages à couper le souffle, lacs alpins, canyons et culture nomade en yourte.",
+          "destination": "Almaty, Canyon de Charyn, Saty, Kolsai, Karakol, Bokonbaevo, Issyk-Koul, Son Koul, Bichkek",
+          "region": "Kazakhstan et Kirghizistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Prix: 5 299 € par personne (base double).",
+          "duration": "15 jours / 14 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrivée à Almaty",
+              "activity": "Bienvenue au Kazakhstan ! Transfert à l'hôtel."
+            },
+            {
+              "day": 2,
+              "title": "Almaty et Montagnes",
+              "activity": "Green Bazaar, Medeu, et téléphérique vers Shymbulak."
+            },
+            {
+              "day": 3,
+              "title": "Journée libre à Almaty",
+              "activity": "Temps libre pour shopping, musées ou cafés."
+            },
+            {
+              "day": 4,
+              "title": "Canyon de Charyn et Saty",
+              "activity": "Visite du Canyon de Charyn. Arrivée à Saty."
+            },
+            {
+              "day": 5,
+              "title": "Lacs Kaindy et Kolsai",
+              "activity": "Lac Kaindy et sa forêt immergée, randonnée à Kolsai."
+            },
+            {
+              "day": 6,
+              "title": "Détente à Saty",
+              "activity": "Journée nature, randonnée ou équitation optionnelle."
+            },
+            {
+              "day": 7,
+              "title": "Frontière Kirghize et Karakol",
+              "activity": "Passage de la frontière, route le long du lac Issyk-Koul."
+            },
+            {
+              "day": 8,
+              "title": "Canyon de Jeti-Ögüz",
+              "activity": "Les Sept Taureaux et le Cœur Brisé."
+            },
+            {
+              "day": 9,
+              "title": "Bokonbaevo et Chasseurs à l'aigle",
+              "activity": "Démonstration de chasse à l'aigle, rencontre avec des nomades."
+            },
+            {
+              "day": 10,
+              "title": "Canyon Skazka",
+              "activity": "Canyon des Contes de Fées et détente au bord du lac Issyk-Koul."
+            },
+            {
+              "day": 11,
+              "title": "Lac Son Koul",
+              "activity": "Route vers Son Koul (3 000 m). Nuit en yourte."
+            },
+            {
+              "day": 12,
+              "title": "Vie nomade à Son Koul",
+              "activity": "Équitation, randonnée, et observation des étoiles."
+            },
+            {
+              "day": 13,
+              "title": "Parc National d'Ala Archa et Bichkek",
+              "activity": "Promenade à Ala Archa et arrivée à Bichkek."
+            },
+            {
+              "day": 14,
+              "title": "Bichkek",
+              "activity": "Bazar d'Och, Place Ala-Too, monuments soviétiques."
+            },
+            {
+              "day": 15,
+              "title": "Départ",
+              "activity": "Transfert à l'aéroport."
+            }
+          ],
+          "highlights": [
+            "Almaty",
+            "Canyon de Charyn",
+            "Lacs Kaindy",
+            "Chasse à l'aigle",
+            "Issyk-Koul",
+            "Son Koul",
+            "Bichkek"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Inclus: chauffeur, hôtels et yourtes, petits-déjeuners. Non inclus: vols, frais d'entrée, déjeuners/dîners, visas.",
+          "extras": [
+            "Vols internationaux",
+            "Frais d'entrée",
+            "Repas",
+            "Assurance",
+            "Visa"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Turkménistan Express — 4 Jours",
+          "short": "Ancienne Merv, Musée du Tapis, Achgabat et Darvaza.",
+          "destination": "Turkménabad, Mary, Achgabat, Darvaza, Dachogouz",
+          "region": "Turkménistan",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "De 665 $ (3 pers.) à 542 $ (5 pers.) en hôtel 4*.",
+          "duration": "4 jours / 3 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkménabad - Mary",
+              "activity": "Ancienne Merv (UNESCO). Nuit à Mary."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Achgabat",
+              "activity": "Musée du Tapis et tour d'Achgabat."
+            },
+            {
+              "day": 3,
+              "title": "Achgabat – Darvaza",
+              "activity": "Cratère de Darvaza ('Porte de l'Enfer'). Nuit en yourte."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dachogouz",
+              "activity": "Route vers la frontière pour Ourguentch."
+            }
+          ],
+          "highlights": [
+            "Ancienne Merv",
+            "Musée du Tapis",
+            "Achgabat",
+            "Darvaza",
+            "Karakoum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 personnes",
+          "notes": "Inclus: Hôtels, guide, transports, billets d'entrée, petits-déjeuners, dîner. Non inclus: Visa, déjeuners/dîners, pourboires.",
+          "extras": [
+            "Visa",
+            "Repas",
+            "Pourboires"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Expédition sur la Mythique Route du Pamir — 7 Jours",
+          "short": "Une expédition épique en 4x4 de Douchanbé à Och via la vallée de Wakhan.",
+          "destination": "Douchanbé, Kalai Khumb, Khorog, Langar, Bulunkul, Murghab, Lac Karakul, Och",
+          "region": "Tadjikistan et Kirghizistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Prix total : 2 820 $ USD par personne. Pension complète.",
+          "duration": "7 jours / 6 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Douchanbé – Kalai Khumb",
+              "activity": "Barrage de Nurek, forteresse de Hulbuk. Arrivée à Kalai Khumb."
+            },
+            {
+              "day": 2,
+              "title": "Kalai Khumb – Khorog",
+              "activity": "Route le long de la frontière afghane. Jardin botanique de Khorog."
+            },
+            {
+              "day": 3,
+              "title": "Khorog – Langar (Vallée de Wakhan)",
+              "activity": "Forteresse de Yamchun, sources chaudes de Bibi Fatima."
+            },
+            {
+              "day": 4,
+              "title": "Langar – Lac Bulunkul",
+              "activity": "Pétroglyphes de Langar, col de Khargush (4 344 m). Lacs Yashilkul et Bulunkul."
+            },
+            {
+              "day": 5,
+              "title": "Bulunkul – Murghab",
+              "activity": "Campement nomade d'Alichur. Arrivée à Murghab."
+            },
+            {
+              "day": 6,
+              "title": "Murghab – Lac Karakul",
+              "activity": "Col d'Ak-Baital (4 655 m). Lac Karakul."
+            },
+            {
+              "day": 7,
+              "title": "Lac Karakul – Och (Kirghizistan)",
+              "activity": "Passage de la frontière kirghize. Vue sur le pic Lénine et arrivée à Och."
+            }
+          ],
+          "highlights": [
+            "Vallée de Wakhan",
+            "Sources de Bibi Fatima",
+            "Col d'Ak-Baital",
+            "Lac Karakul",
+            "Route du Pamir"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flexible",
+          "notes": "Inclus: Hôtels 3* et guesthouses, pension complète, SUV 4x4, guide, permis GBAO. Exclus: Vols, visas, assurance, pourboires.",
+          "extras": [
+            "Vols",
+            "Visas",
+            "Assurance",
+            "Pourboires"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "Expédition dans les Monts Fann — 3 Jours",
+          "short": "Découvrez les Sept Lacs et le légendaire lac Iskanderkoul.",
+          "destination": "Panjakent, Sept Lacs, Lac Iskanderkoul",
+          "region": "Tadjikistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Prix par personne : 160,00 $ (Base de 29 participants).",
+          "duration": "3 jours / 2 nuits",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "La Route Turquoise (Sept Lacs)",
+              "activity": "Rendez-vous à la frontière. Route vers les Sept Lacs. Nuit à Panjakent."
+            },
+            {
+              "day": 2,
+              "title": "La Légende d'Alexandre (Lac Iskanderkoul)",
+              "activity": "Exploration du lac Iskanderkoul et de la cascade. Nuit près du lac."
+            },
+            {
+              "day": 3,
+              "title": "Héritage Ancien",
+              "activity": "Retour à Panjakent pour un Plov festif, visite du bazar et retour à la frontière."
+            }
+          ],
+          "highlights": [
+            "Sept Lacs",
+            "Lac Iskanderkoul",
+            "Cascade Fann",
+            "Plov de Panjakent"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Groupe de 29 personnes",
+          "notes": "Inclus: Transport, hôtels, pension complète, guide, billets. Exclus: Assurance, alcools, pourboires.",
+          "extras": [
+            "Assurance",
+            "Pourboires"
+          ]
         }
       ],
       "it": [
@@ -9393,6 +12719,458 @@
           "participants": "1-16 persone",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "Il Grande Viaggio in Asia Centrale — 17 Giorni",
+          "short": "Un epico viaggio di 17 giorni attraverso Uzbekistan, Tagikistan e Turkmenistan.",
+          "destination": "Tashkent, Dushanbe, Sette Laghi, Samarcanda, Bukhara, Mary, Ashgabat, Darvaza, Khiva",
+          "region": "Asia Centrale",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "Prezzo totale $3744. Valido per il 2026 per 1 persona.",
+          "duration": "17 giorni / 16 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Europa – Tashkent",
+              "activity": "Arrivo a Tashkent. Trasferimento in hotel."
+            },
+            {
+              "day": 2,
+              "title": "Tashkent",
+              "activity": "Complesso Khast Imam, Bazar Chorsu e Piazza dell'Indipendenza."
+            },
+            {
+              "day": 3,
+              "title": "Tashkent - Amirsoy",
+              "activity": "Montagne Tian Shan, Amirsoy, Chimgan e Lago Charvak."
+            },
+            {
+              "day": 4,
+              "title": "Tashkent",
+              "activity": "Piazza Amir Temur, Museo di Amir Temur, Teatro Navoi."
+            },
+            {
+              "day": 5,
+              "title": "Tashkent – Tagikistan (Dushanbe)",
+              "activity": "Arrivo a Dushanbe. Museo Nazionale, Palazzo Navruz."
+            },
+            {
+              "day": 6,
+              "title": "Lago Iskanderkul",
+              "activity": "Montagne Fann, Lago Iskanderkul."
+            },
+            {
+              "day": 7,
+              "title": "Sette Laghi (Haft-Kul)",
+              "activity": "Esplorazione dei Sette Laghi e Panjakent."
+            },
+            {
+              "day": 8,
+              "title": "Tagikistan – Samarcanda",
+              "activity": "Attraversamento del confine per Samarcanda, Uzbekistan."
+            },
+            {
+              "day": 9,
+              "title": "Samarcanda",
+              "activity": "Mausoleo Gur-Emir e Piazza Registan. Spettacolo 3D."
+            },
+            {
+              "day": 10,
+              "title": "Samarcanda - Bukhara",
+              "activity": "Imam Al-Bukhari, Shah-i-Zinda. Trasferimento a Bukhara."
+            },
+            {
+              "day": 11,
+              "title": "Bukhara – Turkmenistan",
+              "activity": "Esplorazione di Bukhara e confine turkmeno."
+            },
+            {
+              "day": 12,
+              "title": "Turkmenabad – Mary – Merv",
+              "activity": "Antica Merv (sito UNESCO)."
+            },
+            {
+              "day": 13,
+              "title": "Mary – Ashgabat",
+              "activity": "Ashgabat, Museo del Tappeto e tour della città."
+            },
+            {
+              "day": 14,
+              "title": "Darvaza – Dashoguz – Khiva",
+              "activity": "Ritorno in Uzbekistan, viaggio per Khiva."
+            },
+            {
+              "day": 15,
+              "title": "Khiva",
+              "activity": "Esplorazione di Ichan Kala."
+            },
+            {
+              "day": 16,
+              "title": "Khiva, Urgench – Tashkent",
+              "activity": "Volo per Tashkent e tempo libero."
+            },
+            {
+              "day": 17,
+              "title": "Tashkent - Europa",
+              "activity": "Fine del tour."
+            }
+          ],
+          "highlights": [
+            "Khast Imam",
+            "Amirsoy",
+            "Lago Iskanderkul",
+            "Sette Laghi",
+            "Registan",
+            "Antica Merv",
+            "Ashgabat",
+            "Ichan Kala"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 persone",
+          "notes": "Inclusi hotel, colazioni, guida e ingressi. Esclusi voli internazionali, visti, pranzi e cene.",
+          "extras": [
+            "Voli internazionali",
+            "Assicurazione",
+            "Visti"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "Avventura in Kazakistan e Kirghizistan — 15 Giorni",
+          "short": "Paesaggi mozzafiato, laghi alpini, canyon e cultura nomade in yurta.",
+          "destination": "Almaty, Canyon di Charyn, Saty, Kolsai, Karakol, Bokonbaevo, Issyk-Kul, Son Kul, Bishkek",
+          "region": "Kazakistan e Kirghizistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "Prezzo: €5.299 a persona su base doppia.",
+          "duration": "15 giorni / 14 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Arrivo ad Almaty",
+              "activity": "Benvenuti in Kazakistan! Trasferimento in hotel."
+            },
+            {
+              "day": 2,
+              "title": "Almaty e Montagne",
+              "activity": "Green Bazaar, Medeu e funivia per Shymbulak."
+            },
+            {
+              "day": 3,
+              "title": "Giorno libero ad Almaty",
+              "activity": "Tempo libero per shopping o musei."
+            },
+            {
+              "day": 4,
+              "title": "Canyon di Charyn e Saty",
+              "activity": "Visita al Canyon di Charyn (Valle dei Castelli). Arrivo a Saty."
+            },
+            {
+              "day": 5,
+              "title": "Laghi Kaindy e Kolsai",
+              "activity": "Il bosco sommerso di Kaindy e trekking a Kolsai."
+            },
+            {
+              "day": 6,
+              "title": "Natura a Saty",
+              "activity": "Relax nella natura, trekking o equitazione opzionale."
+            },
+            {
+              "day": 7,
+              "title": "Confine col Kirghizistan e Karakol",
+              "activity": "Attraversamento del confine, lago Issyk-Kul."
+            },
+            {
+              "day": 8,
+              "title": "Canyon Jeti-Ögüz",
+              "activity": "Canyon dei Sette Tori. Sorgenti termali opzionali."
+            },
+            {
+              "day": 9,
+              "title": "Bokonbaevo e caccia con le aquile",
+              "activity": "Dimostrazione di caccia con aquile e cultura nomade."
+            },
+            {
+              "day": 10,
+              "title": "Canyon Skazka e Issyk-Kul",
+              "activity": "Canyon delle Fiabe e relax sul lago Issyk-Kul."
+            },
+            {
+              "day": 11,
+              "title": "Viaggio verso Son Kul",
+              "activity": "Arrivo a Son Kul (3.000m) e notte in yurta."
+            },
+            {
+              "day": 12,
+              "title": "Vita nomade a Son Kul",
+              "activity": "Equitazione, trekking e osservazione delle stelle."
+            },
+            {
+              "day": 13,
+              "title": "Ala Archa e Bishkek",
+              "activity": "Parco Nazionale Ala Archa. Arrivo a Bishkek."
+            },
+            {
+              "day": 14,
+              "title": "Esperienza a Bishkek",
+              "activity": "Osh Bazaar, Piazza Ala-Too."
+            },
+            {
+              "day": 15,
+              "title": "Partenza",
+              "activity": "Trasferimento in aeroporto."
+            }
+          ],
+          "highlights": [
+            "Almaty",
+            "Canyon di Charyn",
+            "Laghi Kaindy",
+            "Cacciatori con le aquile",
+            "Issyk-Kul",
+            "Son Kul",
+            "Bishkek"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flessibile",
+          "notes": "Incluso: autista, hotel e yurte, colazioni. Escluso: voli, ingressi ai parchi, pranzi/cene, visti.",
+          "extras": [
+            "Voli",
+            "Ingressi",
+            "Pranzi e cene",
+            "Assicurazione"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "Turkmenistan Express — 4 Giorni",
+          "short": "Antica Merv, Museo del Tappeto, Ashgabat e Darvaza.",
+          "destination": "Turkmenabad, Mary, Ashgabat, Darvaza, Dashoguz",
+          "region": "Turkmenistan",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "Da $665 (3 pax) a $542 (5 pax) in hotel 4*.",
+          "duration": "4 giorni / 3 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Turkmenabad - Mary",
+              "activity": "Incontro a Farap. Antica Merv (UNESCO)."
+            },
+            {
+              "day": 2,
+              "title": "Mary – Ashgabat",
+              "activity": "Viaggio ad Ashgabat. Museo del Tappeto e tour della città."
+            },
+            {
+              "day": 3,
+              "title": "Ashgabat – Darvaza",
+              "activity": "Darvaza ('Porta dell'Inferno'). Notte in yurta."
+            },
+            {
+              "day": 4,
+              "title": "Darvaza – Dashoguz",
+              "activity": "Attraversamento del confine per Urgench."
+            }
+          ],
+          "highlights": [
+            "Antica Merv",
+            "Museo del Tappeto",
+            "Ashgabat",
+            "Darvaza",
+            "Karakum"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 persone",
+          "notes": "Incluso: Hotel, guida, trasporto, ingressi, colazioni, cena nel deserto. Escluso: Visto, pranzi/cene, mance.",
+          "extras": [
+            "Visto",
+            "Pasti",
+            "Mance"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "Spedizione sulla Leggendaria Autostrada del Pamir — 7 Giorni",
+          "short": "Un'epica spedizione in 4x4 da Dushanbe a Osh attraverso la Valle di Wakhan.",
+          "destination": "Dushanbe, Kalai Khumb, Khorog, Langar, Bulunkul, Murghab, Karakul Lake, Osh",
+          "region": "Tagikistan e Kirghizistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "Prezzo totale: $2,820 USD a persona. Pensione completa.",
+          "duration": "7 giorni / 6 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "Dushanbe – Kalai Khumb",
+              "activity": "Diga di Nurek, Fortezza di Hulbuk. Arrivo a Kalai Khumb."
+            },
+            {
+              "day": 2,
+              "title": "Kalai Khumb – Khorog",
+              "activity": "Guida lungo il confine afgano. Giardino botanico di Khorog."
+            },
+            {
+              "day": 3,
+              "title": "Khorog – Langar",
+              "activity": "Fortezza di Yamchun, Sorgenti termali di Bibi Fatima."
+            },
+            {
+              "day": 4,
+              "title": "Langar – Bulunkul",
+              "activity": "Passo Khargush (4.344 m). Laghi Yashilkul e Bulunkul."
+            },
+            {
+              "day": 5,
+              "title": "Bulunkul – Murghab",
+              "activity": "Villaggio nomade di Alichur. Arrivo a Murghab."
+            },
+            {
+              "day": 6,
+              "title": "Murghab – Karakul",
+              "activity": "Passo Ak-Baital (4.655 m). Lago Karakul."
+            },
+            {
+              "day": 7,
+              "title": "Karakul – Osh",
+              "activity": "Attraversamento del confine con il Kirghizistan. Arrivo a Osh."
+            }
+          ],
+          "highlights": [
+            "Valle di Wakhan",
+            "Passo Ak-Baital",
+            "Lago Karakul",
+            "Autostrada del Pamir"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Flessibile",
+          "notes": "Incluso: Hotel 3*, pensione completa, SUV 4x4, guida, permesso GBAO. Escluso: voli, visti, assicurazione, mance.",
+          "extras": [
+            "Voli",
+            "Visti",
+            "Assicurazione",
+            "Mance"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "Spedizione sui Monti Fann — 3 Giorni",
+          "short": "Scopri i Sette Laghi e il leggendario Lago Iskanderkul.",
+          "destination": "Panjakent, Sette Laghi, Lago Iskanderkul",
+          "region": "Tagikistan",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "Prezzo a persona: $160.00 (Gruppo di 29 pax).",
+          "duration": "3 giorni / 2 notti",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "La strada turchese (Sette Laghi)",
+              "activity": "Incontro al confine. Viaggio ai Sette Laghi. Notte a Panjakent."
+            },
+            {
+              "day": 2,
+              "title": "La Leggenda di Alessandro (Lago Iskanderkul)",
+              "activity": "Esplorazione del Lago Iskanderkul e cascata. Notte al lago."
+            },
+            {
+              "day": 3,
+              "title": "Patrimonio Antico",
+              "activity": "Ritorno a Panjakent per il Plov festivo, bazar e rientro al confine."
+            }
+          ],
+          "highlights": [
+            "Sette Laghi",
+            "Lago Iskanderkul",
+            "Cascata Fann",
+            "Plov di Panjakent"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "Gruppo di 29 persone",
+          "notes": "Incluso: Trasporto, hotel, pensione completa, guida, ingressi. Escluso: Assicurazione, alcolici, mance.",
+          "extras": [
+            "Assicurazione",
+            "Mance"
+          ]
         }
       ],
       "zh": [
@@ -9514,6 +13292,459 @@
           "participants": "1-16人",
           "notes": "",
           "extras": []
+        },
+        {
+          "id": "t_central_asia_17d",
+          "title": "中亚大环线 — 17 天",
+          "short": "为期17天的乌兹别克斯坦、塔吉克斯坦和土库曼斯坦史诗之旅。",
+          "destination": "塔什干, 杜尚别, 七湖, 撒马尔罕, 布哈拉, 马雷, 阿什哈巴德, 达尔瓦扎, 希瓦",
+          "region": "中亚",
+          "images": [
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg",
+            "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg"
+          ],
+          "price": 3744,
+          "priceNote": "总价 $3744。适用于2026年，按1人计算。",
+          "duration": "17天 / 16晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "欧洲 – 塔什干",
+              "activity": "抵达塔什干。接机入住酒店。"
+            },
+            {
+              "day": 2,
+              "title": "塔什干",
+              "activity": "哈斯特·伊玛目建筑群，琼苏巴扎和独立广场。"
+            },
+            {
+              "day": 3,
+              "title": "塔什干 - Amirsoy",
+              "activity": "天山徒步，Amirsoy滑雪场，钦甘山和查瓦克湖。"
+            },
+            {
+              "day": 4,
+              "title": "塔什干",
+              "activity": "帖木儿广场，帖木儿博物馆，纳沃伊剧院。"
+            },
+            {
+              "day": 5,
+              "title": "塔什干 – 塔吉克斯坦 (杜尚别)",
+              "activity": "抵达杜尚别。国家古迹博物馆，纳夫鲁兹宫。"
+            },
+            {
+              "day": 6,
+              "title": "伊斯坎德尔湖",
+              "activity": "范山，伊斯坎德尔湖。"
+            },
+            {
+              "day": 7,
+              "title": "七湖探险 (Haft-Kul)",
+              "activity": "探索七湖并前往彭吉肯特。"
+            },
+            {
+              "day": 8,
+              "title": "塔吉克斯坦 – 撒马尔罕",
+              "activity": "过境前往乌兹别克斯坦撒马尔罕。"
+            },
+            {
+              "day": 9,
+              "title": "撒马尔罕",
+              "activity": "古尔·埃米尔陵墓和雷吉斯坦广场。晚间3D秀。"
+            },
+            {
+              "day": 10,
+              "title": "撒马尔罕 - 布哈拉",
+              "activity": "伊玛目布哈里建筑群，比比哈努姆清真寺，沙赫静达。前往布哈拉。"
+            },
+            {
+              "day": 11,
+              "title": "布哈拉 – 土库曼斯坦",
+              "activity": "游览布哈拉并前往土库曼斯坦边境。"
+            },
+            {
+              "day": 12,
+              "title": "土库曼纳巴德 – 马雷 – 梅尔夫",
+              "activity": "过境。探索古梅尔夫遗址。"
+            },
+            {
+              "day": 13,
+              "title": "马雷 – 阿什哈巴德",
+              "activity": "前往阿什哈巴德。地毯博物馆，市区游。"
+            },
+            {
+              "day": 14,
+              "title": "达尔瓦扎 – 达绍古兹 – 希瓦",
+              "activity": "返回乌兹别克斯坦，前往希瓦。"
+            },
+            {
+              "day": 15,
+              "title": "希瓦",
+              "activity": "游览伊钱卡拉内城。"
+            },
+            {
+              "day": 16,
+              "title": "希瓦, 乌尔根奇 – 塔什干",
+              "activity": "飞往塔什干，自由活动。"
+            },
+            {
+              "day": 17,
+              "title": "塔什干 - 欧洲",
+              "activity": "行程结束。"
+            }
+          ],
+          "highlights": [
+            "哈斯特·伊玛目",
+            "Amirsoy",
+            "伊斯坎德尔湖",
+            "七湖",
+            "雷吉斯坦",
+            "古梅尔夫",
+            "阿什哈巴德",
+            "伊钱卡拉"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "1-20 人",
+          "notes": "包含住宿、早餐、导游和门票。不含国际航班、签证和午餐晚餐。",
+          "extras": [
+            "国际航班",
+            "旅游保险",
+            "签证"
+          ]
+        },
+        {
+          "id": "t_kazakhstan_kyrgyzstan_15d",
+          "title": "哈萨克斯坦与吉尔吉斯斯坦探险 — 15 天",
+          "short": "高山湖泊，峡谷，游牧文化，以及真实的毡房体验。",
+          "destination": "阿拉木图, 恰伦大峡谷, 萨特, 科尔塞, 卡拉科尔, 博孔巴耶沃, 伊塞克湖, 颂湖, 比什凯克",
+          "region": "哈萨克斯坦与吉尔吉斯斯坦",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_3_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_4_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_5_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_6_2026-06-29_20-29-56.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg"
+          ],
+          "price": 5299,
+          "priceNote": "价格：每人 €5,299（双人入住）。",
+          "duration": "15天 / 14晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "抵达阿拉木图",
+              "activity": "欢迎来到哈萨克斯坦！入住酒店并在市中心漫步。"
+            },
+            {
+              "day": 2,
+              "title": "阿拉木图城市及高山游",
+              "activity": "绿色巴扎，潘菲洛夫公园，麦迪奥溜冰场，琼布拉克高山滑雪场。"
+            },
+            {
+              "day": 3,
+              "title": "阿拉木图自由活动",
+              "activity": "轻松自由的一天。可选择逛街，参观博物馆。"
+            },
+            {
+              "day": 4,
+              "title": "恰伦大峡谷与萨特村",
+              "activity": "恰伦大峡谷，城堡谷，随后抵达萨特村。"
+            },
+            {
+              "day": 5,
+              "title": "卡因迪湖与科尔塞湖",
+              "activity": "沉没森林卡因迪湖及科尔塞湖徒步。"
+            },
+            {
+              "day": 6,
+              "title": "萨特村自然休息日",
+              "activity": "在大自然中放松，可选骑马或徒步。"
+            },
+            {
+              "day": 7,
+              "title": "过境吉尔吉斯斯坦与卡拉科尔",
+              "activity": "过境，欣赏伊塞克湖，抵达卡拉科尔。"
+            },
+            {
+              "day": 8,
+              "title": "杰季奥古兹峡谷",
+              "activity": "七牛岩和心碎石。可选温泉体验。"
+            },
+            {
+              "day": 9,
+              "title": "博孔巴耶沃及猎鹰体验",
+              "activity": "传统猎鹰表演，了解游牧家庭。"
+            },
+            {
+              "day": 10,
+              "title": "童话峡谷与伊塞克湖",
+              "activity": "探索童话峡谷，在伊塞克湖边放松。"
+            },
+            {
+              "day": 11,
+              "title": "前往颂湖",
+              "activity": "前往海拔3000米的颂湖，体验游牧民营地。"
+            },
+            {
+              "day": 12,
+              "title": "颂湖游牧生活",
+              "activity": "骑马，徒步，星空观赏。"
+            },
+            {
+              "day": 13,
+              "title": "阿拉阿查国家公园与比什凯克",
+              "activity": "游览阿拉阿查国家公园，抵达首都比什凯克。"
+            },
+            {
+              "day": 14,
+              "title": "比什凯克城市体验",
+              "activity": "奥什巴扎，阿拉套广场，苏联纪念碑。"
+            },
+            {
+              "day": 15,
+              "title": "离境",
+              "activity": "前往机场，行程结束。"
+            }
+          ],
+          "highlights": [
+            "阿拉木图",
+            "恰伦大峡谷",
+            "卡因迪湖",
+            "猎鹰体验",
+            "伊塞克湖",
+            "颂湖",
+            "比什凯克"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "灵活",
+          "notes": "包含: 司机, 14晚住宿, 早餐。不含: 国际航班, 国家公园门票, 午餐晚餐, 签证及个人花费。",
+          "extras": [
+            "国际航班",
+            "门票",
+            "午晚餐",
+            "签证"
+          ]
+        },
+        {
+          "id": "t_turkmenistan_express_4d",
+          "title": "土库曼斯坦特快 — 4 天",
+          "short": "体验古代梅尔夫，阿什哈巴德的建筑和达尔瓦扎火山口。",
+          "destination": "土库曼纳巴德, 马雷, 阿什哈巴德, 达尔瓦扎, 达绍古兹",
+          "region": "土库曼斯坦",
+          "images": [
+            "/data/images/photo_4_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_5_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_6_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_1_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_2_2026-06-29_20-38-00.jpg",
+            "/data/images/photo_3_2026-06-29_20-38-00.jpg"
+          ],
+          "price": 665,
+          "priceNote": "3人起价$665，5人起价$542 (4*住宿)。",
+          "duration": "4天 / 3晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "土库曼纳巴德 - 马雷",
+              "activity": "法拉普边境集合，前往古代梅尔夫。夜宿马雷。"
+            },
+            {
+              "day": 2,
+              "title": "马雷 – 阿什哈巴德",
+              "activity": "前往阿什哈巴德。参观地毯博物馆和市区。"
+            },
+            {
+              "day": 3,
+              "title": "阿什哈巴德 – 达尔瓦扎",
+              "activity": "早晨自由活动。前往达尔瓦扎（地狱之门）。毡房露营。"
+            },
+            {
+              "day": 4,
+              "title": "达尔瓦扎 – 达绍古兹",
+              "activity": "前往达绍古兹过境前往乌尔根奇。"
+            }
+          ],
+          "highlights": [
+            "古代梅尔夫",
+            "地毯博物馆",
+            "阿什哈巴德",
+            "达尔瓦扎",
+            "卡拉库姆沙漠"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "3-8 人",
+          "notes": "包含: 住宿, 导游, 交通, 门票, 早餐和沙漠晚餐。不含: 签证费, 午晚餐, 小费。",
+          "extras": [
+            "签证费",
+            "餐饮",
+            "小费"
+          ]
+        },
+        {
+          "id": "t_pamir_highway_7d",
+          "title": "传奇帕米尔公路探险 — 7 天",
+          "short": "从杜尚别穿越瓦罕山谷到奥什的史诗级高海拔4x4探险。",
+          "destination": "杜尚别, 卡莱洪布, 霍罗格, 兰加尔, 布伦库尔, 穆尔加布, 喀拉库勒湖, 奥什",
+          "region": "塔吉克斯坦与吉尔吉斯斯坦",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_2_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_3_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-34-47.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 2820,
+          "priceNote": "总价：每人 $2,820 USD。全食宿。",
+          "duration": "7天 / 6晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "杜尚别 – 卡莱洪布",
+              "activity": "努列克大坝观景台，Hulbuk要塞。抵达卡莱洪布。"
+            },
+            {
+              "day": 2,
+              "title": "卡莱洪布 – 霍罗格",
+              "activity": "沿着阿富汗边境行驶。参观霍罗格植物园和手工艺中心。"
+            },
+            {
+              "day": 3,
+              "title": "霍罗格 – 兰加尔 (瓦罕山谷)",
+              "activity": "Yamchun要塞，比比法蒂玛温泉，Vrang佛教佛塔。"
+            },
+            {
+              "day": 4,
+              "title": "兰加尔 – 布伦库尔湖",
+              "activity": "兰加尔岩画，翻越Khargush山口（4344米）。Yashilkul和Bulunkul湖。"
+            },
+            {
+              "day": 5,
+              "title": "布伦库尔 – 穆尔加布",
+              "activity": "Alichur游牧定居点，抵达穆尔加布。"
+            },
+            {
+              "day": 6,
+              "title": "穆尔加布 – 喀拉库勒湖",
+              "activity": "翻越海拔4655米的白马山口 (Ak-Baital)。抵达喀拉库勒湖（陨石坑湖）。"
+            },
+            {
+              "day": 7,
+              "title": "喀拉库勒湖 – 奥什 (吉尔吉斯斯坦)",
+              "activity": "过境吉尔吉斯斯坦。远眺列宁峰。抵达奥什。"
+            }
+          ],
+          "highlights": [
+            "瓦罕山谷",
+            "比比法蒂玛温泉",
+            "白马山口",
+            "喀拉库勒湖",
+            "帕米尔公路"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "灵活",
+          "notes": "包含: 3*酒店与民宿, 一日三餐, 4x4越野车, 导游, GBAO通行证。不含: 国际航班, 签证, 保险, 小费。",
+          "extras": [
+            "国际航班",
+            "签证",
+            "旅游保险",
+            "小费"
+          ]
+        },
+        {
+          "id": "t_fann_mountains_3d",
+          "title": "范山探险 — 3 天",
+          "short": "体验从中亚最美的七湖到传奇的伊斯坎德尔湖之美。",
+          "destination": "彭吉肯特, 七湖 (Haftkul), 伊斯坎德尔湖",
+          "region": "塔吉克斯坦",
+          "images": [
+            "/data/images/photo_1_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_2_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_3_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_4_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_5_2026-06-29_20-36-10.jpg",
+            "/data/images/photo_6_2026-06-29_20-36-10.jpg"
+          ],
+          "price": 160,
+          "priceNote": "每人：$160.00（基于29人团队）。",
+          "duration": "3天 / 2晚",
+          "rating": null,
+          "category": "combined",
+          "availableDates": [],
+          "itinerary": [
+            {
+              "day": 1,
+              "title": "绿松石之路 (七湖)",
+              "activity": "边境集合，前往七湖。彭吉肯特住宿。"
+            },
+            {
+              "day": 2,
+              "title": "亚历山大传说 (伊斯坎德尔湖)",
+              "activity": "探索伊斯坎德尔湖，瀑布和蛇湖。湖畔小木屋住宿。"
+            },
+            {
+              "day": 3,
+              "title": "古代遗产",
+              "activity": "返回彭吉肯特享用特色抓饭，逛巴扎后返回边境。"
+            }
+          ],
+          "highlights": [
+            "七湖",
+            "伊斯坎德尔湖",
+            "范山瀑布",
+            "彭吉肯特特色抓饭"
+          ],
+          "organizer": {
+            "name": "Alpha Travel",
+            "phone": "+998976151603",
+            "email": "Alpha.avia.travel@gmail.com",
+            "website": ""
+          },
+          "participants": "29人团队",
+          "notes": "包含: 交通, 住宿, 一日三餐, 导游和门票。不含: 保险, 酒精饮料, 个人花费和小费。",
+          "extras": [
+            "保险",
+            "小费"
+          ]
         }
       ]
     },

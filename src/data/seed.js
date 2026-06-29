@@ -515,7 +515,7 @@ export const gallery = [
   {
     id: "g4",
     src: "https://media.gettyimages.com/id/2171596692/photo/jalal-abad-kyrgyzstan-wild-horses-are-seen-on-a-plateau-in-the-fergana-valley-in-jalal-abad.jpg?s=612x612&w=0&k=20&c=oh_fATvDnImEitzBv1l9k8MkZb9htNrCaviitOZtJN4=",
-    alt: "Traditional Uzbek ceramics",
+    alt: "Fergana Valley wild horses",
     location: "Fergana Valley",
   },
   {
@@ -542,4 +542,30 @@ export const gallery = [
     alt: "Kyzylkum Desert landscape",
     location: "Karakalpakstan",
   },
+  // Kazakhstan Photos
+  { id: "g_kz1", src: "/data/images/photo_1_2026-06-29_20-29-56.jpg", alt: "Kazakhstan landscapes", location: "Kazakhstan" },
+  { id: "g_kz2", src: "/data/images/photo_2_2026-06-29_20-29-56.jpg", alt: "Kazakhstan scenery", location: "Kazakhstan" },
+  { id: "g_kz3", src: "/data/images/photo_3_2026-06-29_20-29-56.jpg", alt: "Kazakhstan nature", location: "Kazakhstan" },
+  { id: "g_kz4", src: "/data/images/photo_4_2026-06-29_20-29-56.jpg", alt: "Kazakhstan highlights", location: "Kazakhstan" },
+  { id: "g_kz5", src: "/data/images/photo_5_2026-06-29_20-29-56.jpg", alt: "Kazakhstan adventure", location: "Kazakhstan" },
+  { id: "g_kz6", src: "/data/images/photo_6_2026-06-29_20-29-56.jpg", alt: "Kazakhstan mountains", location: "Kazakhstan" },
+  // Kyrgyzstan Photos
+  { id: "g_kg1", src: "/data/images/photo_1_2026-06-29_20-34-47.jpg", alt: "Kyrgyzstan landscapes", location: "Kyrgyzstan" },
+  { id: "g_kg2", src: "/data/images/photo_2_2026-06-29_20-34-47.jpg", alt: "Kyrgyzstan scenery", location: "Kyrgyzstan" },
+  { id: "g_kg3", src: "/data/images/photo_3_2026-06-29_20-34-47.jpg", alt: "Kyrgyzstan mountains", location: "Kyrgyzstan" },
+  { id: "g_kg4", src: "/data/images/photo_4_2026-06-29_20-34-47.jpg", alt: "Pamir Highway, Kyrgyzstan", location: "Kyrgyzstan" },
+  // Tajikistan Photos
+  { id: "g_tj1", src: "/data/images/photo_1_2026-06-29_20-36-10.jpg", alt: "Fann Mountains, Tajikistan", location: "Tajikistan" },
+  { id: "g_tj2", src: "/data/images/photo_2_2026-06-29_20-36-10.jpg", alt: "Seven Lakes, Tajikistan", location: "Tajikistan" },
+  { id: "g_tj3", src: "/data/images/photo_3_2026-06-29_20-36-10.jpg", alt: "Alpine scenery, Tajikistan", location: "Tajikistan" },
+  { id: "g_tj4", src: "/data/images/photo_4_2026-06-29_20-36-10.jpg", alt: "Tajikistan nature", location: "Tajikistan" },
+  { id: "g_tj5", src: "/data/images/photo_5_2026-06-29_20-36-10.jpg", alt: "Tajikistan landscapes", location: "Tajikistan" },
+  { id: "g_tj6", src: "/data/images/photo_6_2026-06-29_20-36-10.jpg", alt: "Iskanderkul Lake, Tajikistan", location: "Tajikistan" },
+  // Turkmenistan Photos
+  { id: "g_tm1", src: "/data/images/photo_1_2026-06-29_20-38-00.jpg", alt: "Ancient Merv, Turkmenistan", location: "Turkmenistan" },
+  { id: "g_tm2", src: "/data/images/photo_2_2026-06-29_20-38-00.jpg", alt: "Ashgabat, Turkmenistan", location: "Turkmenistan" },
+  { id: "g_tm3", src: "/data/images/photo_3_2026-06-29_20-38-00.jpg", alt: "Darvaza Gas Crater, Turkmenistan", location: "Turkmenistan" },
+  { id: "g_tm4", src: "/data/images/photo_4_2026-06-29_20-38-00.jpg", alt: "Turkmenistan landscapes", location: "Turkmenistan" },
+  { id: "g_tm5", src: "/data/images/photo_5_2026-06-29_20-38-00.jpg", alt: "Turkmenistan heritage", location: "Turkmenistan" },
+  { id: "g_tm6", src: "/data/images/photo_6_2026-06-29_20-38-00.jpg", alt: "Turkmenistan scenery", location: "Turkmenistan" },
 ];

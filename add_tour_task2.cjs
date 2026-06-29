@@ -1,0 +1,297 @@
+const fs = require('fs');
+const path = require('path');
+
+const tourId = "t_central_asia_17d";
+
+const translations = {
+  en: {
+    id: tourId,
+    title: "The Great Central Asia Journey — 17 Days",
+    short: "An epic 17-day journey through Uzbekistan, Tajikistan, and Turkmenistan, exploring ancient Silk Road cities, pristine mountain lakes, and desert craters.",
+    destination: "Tashkent, Dushanbe, Seven Lakes, Samarkand, Bukhara, Mary, Ashgabat, Darvaza, Khiva",
+    region: "Central Asia",
+    images: [
+      "/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg",
+      "/images/samarqand/samarkand.jpg",
+      "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"
+    ],
+    price: 3744,
+    priceNote: "Total price is $3744. Valid for 2026 based on 1 person, with reduced prices for larger groups on request.",
+    duration: "17 days / 16 nights",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Europe – Tashkent", activity: "Arrival at Tashkent airport. Welcome by English-speaking guide. Transfer to the hotel (early check-in included). Free time with optional metro tour." },
+      { day: 2, title: "Tashkent", activity: "Explore Tashkent: Khast Imam Complex (Uthman Quran), Chorsu Bazaar, and Independence Square." },
+      { day: 3, title: "Tashkent - Amirsoy", activity: "Hiking in Tian Shan Mountains. Visit Amirsoy Mountain Resort, Chimgan Mountains, and Charvak Lake. Return to Tashkent." },
+      { day: 4, title: "Tashkent", activity: "Visit Amir Temur Square, State Museum of Amir Temur and the Temurids, Alisher Navoi Drama Theatre, and Magic City Garden." },
+      { day: 5, title: "Tashkent – Tajikistan (Dushanbe)", activity: "Arrival in Dushanbe. Visit National Museum of Antiquities (Sleeping Buddha), the flagpole, and Navruz Palace. Free time at Rudaki Avenue." },
+      { day: 6, title: "The Legendary Iskanderkul Lake", activity: "Depart for Fann Mountains. Explore Iskanderkul Lake, Fan Niagara waterfall, and Snake Lake. Overnight in Sarytag village." },
+      { day: 7, title: "The Seven Lakes Adventure (Haft-Kul)", activity: "Explore the Seven Lakes (Haft Kul). Journey through seven turquoise lakes. Drive to historic Panjakent." },
+      { day: 8, title: "Tajikistan – Samarkand", activity: "Visit UNESCO site Sarazm and Panjakent bazaar. Cross the border into Uzbekistan and transfer to Samarkand." },
+      { day: 9, title: "Samarkand", activity: "Explore Samarkand: Gur-Emir Mausoleum and Registan Square. 3D show at Registan after dinner." },
+      { day: 10, title: "Samarkand - Bukhara", activity: "Visit Complex of Imam Al-Bukhari, Amir Temur Mosque and Bibikhanum Mausoleum, Siab Bazaar, and Shah-i-Zinda. Afternoon drive to Bukhara." },
+      { day: 11, title: "Bukhara – Turkmenistan", activity: "Explore Bukhara: Ismail Samani Mausoleum, Chashma Ayub, Bolo-Khaouz Mosque, Ark Citadel, Po-i-Kalyan complex, and Liabi-Khauz. Evening transfer to Turkmenistan border." },
+      { day: 12, title: "Turkmenabad – Mary – Merv", activity: "Cross Farap border. Drive to Mary. Explore Ancient Merv (UNESCO site), including Kyz Galas, Complex of Askhabs, Erk Gala, Gyaur Gala, and Sultan Sanjar mausoleum." },
+      { day: 13, title: "Mary – Ashgabat", activity: "Drive to Ashgabat. Visit Carpet Museum. City tour: Ertogrul Gazy Mosque, Independence Park, Arch of Neutrality, and Constitution Monument." },
+      { day: 14, title: "Darvaza – Dashoguz – Khiva", activity: "Drive to Dashoguz to cross border back to Urgench (Uzbekistan). Transfer to Khiva and relax." },
+      { day: 15, title: "Khiva", activity: "Explore Khiva's Ichan Kala: Muhammad Aminkhan Madrasa, Kalta Minor, Kohna Ark, Juma Mosque, Pahlavon Mahmud Mausoleum, and Islam Khoja Madrasa." },
+      { day: 16, title: "Khiva, Urgench – Tashkent", activity: "Flight from Urgench to Tashkent. Free time for walking, buying souvenirs, and relaxing. Visit Islam Civilization Center." },
+      { day: 17, title: "Tashkent - Europe", activity: "Breakfast at hotel. Departure from Tashkent. End of the tour." }
+    ],
+    highlights: ["Khast Imam Complex", "Amirsoy & Charvak Lake", "Iskanderkul Lake", "Seven Lakes (Haft Kul)", "Registan Square", "Ancient Merv", "Ashgabat Marble City", "Ichan Kala (Khiva)"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 people",
+    notes: "Total package price: $3744. Uzbekistan portion: $1590, Tajikistan portion: $1079, Turkmenistan portion: from $1075. Includes: Transfers/excursions, accommodation, half board (breakfasts), English-speaking guide, entrance fees, dance performance in Bukhara, 3D show in Samarkand. Not included: International flights, travel/health insurance, lunches/dinners (except specified), tips, camera fees, visas.",
+    extras: ["International flights", "Travel & health insurances", "Tips for guides and drivers", "Lunches and dinners", "Visa fees (Tajikistan E-visa, Turkmenistan visa)", "Personal expenses"]
+  },
+  es: {
+    id: tourId,
+    title: "El Gran Viaje por Asia Central — 17 Días",
+    short: "Un viaje épico de 17 días por Uzbekistán, Tayikistán y Turkmenistán.",
+    destination: "Taskent, Dushambé, Siete Lagos, Samarcanda, Bujará, Mary, Asjabad, Darvaza, Jiva",
+    region: "Asia Central",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "Precio total $3744. Válido para 2026 basado en 1 persona.",
+    duration: "17 días / 16 noches",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Europa – Taskent", activity: "Llegada a Taskent. Bienvenida y traslado al hotel." },
+      { day: 2, title: "Taskent", activity: "Complejo Khast Imam, Bazar Chorsu y Plaza de la Independencia." },
+      { day: 3, title: "Taskent - Amirsoy", activity: "Senderismo en las montañas Tian Shan. Amirsoy, Chimgan y Lago Charvak." },
+      { day: 4, title: "Taskent", activity: "Plaza Amir Temur, Museo de Amir Temur, Teatro Alisher Navoi y Magic City." },
+      { day: 5, title: "Taskent – Tayikistán (Dushambé)", activity: "Llegada a Dushambé. Museo Nacional de Antigüedades, Palacio Navruz." },
+      { day: 6, title: "El legendario lago Iskanderkul", activity: "Montañas Fann, Lago Iskanderkul, cascada Fan Niagara." },
+      { day: 7, title: "Aventura en los Siete Lagos (Haft-Kul)", activity: "Exploración de los Siete Lagos y viaje a Panjakent." },
+      { day: 8, title: "Tayikistán – Samarcanda", activity: "Visita a Sarazm (UNESCO). Cruce de frontera hacia Uzbekistán." },
+      { day: 9, title: "Samarcanda", activity: "Mausoleo Gur-Emir, Plaza Registán. Espectáculo 3D." },
+      { day: 10, title: "Samarcanda - Bujará", activity: "Complejo Imam Al-Bukhari, Mezquita Bibikhanum, Bazar Siab y Shah-i-Zinda. Viaje a Bujará." },
+      { day: 11, title: "Bujará – Turkmenistán", activity: "Exploración de Bujará y traslado vespertino a la frontera con Turkmenistán." },
+      { day: 12, title: "Turkmenabad – Mary – Merv", activity: "Cruce de frontera Farap. Antigua Merv (UNESCO)." },
+      { day: 13, title: "Mary – Asjabad", activity: "Viaje a Asjabad. Museo de la Alfombra, Mezquita Ertogrul Gazy." },
+      { day: 14, title: "Darvaza – Dashoguz – Jiva", activity: "Viaje a la frontera para regresar a Uzbekistán (Jiva)." },
+      { day: 15, title: "Jiva", activity: "Exploración de Ichan Kala en Jiva." },
+      { day: 16, title: "Jiva, Urgench – Taskent", activity: "Vuelo a Taskent. Tiempo libre." },
+      { day: 17, title: "Taskent - Europa", activity: "Salida de Taskent. Fin del tour." }
+    ],
+    highlights: ["Complejo Khast Imam", "Amirsoy", "Lago Iskanderkul", "Siete Lagos", "Plaza Registán", "Antigua Merv", "Asjabad", "Ichan Kala"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 personas",
+    notes: "Incluye alojamiento, desayunos, guía y entradas. No incluye vuelos internacionales, visas, almuerzos ni cenas.",
+    extras: ["Vuelos internacionales", "Seguro médico", "Visas"]
+  },
+  uz: {
+    id: tourId,
+    title: "Buyuk Markaziy Osiyo Sayohati — 17 Kun",
+    short: "O'zbekiston, Tojikiston va Turkmaniston bo'ylab 17 kunlik ajoyib sayohat.",
+    destination: "Toshkent, Dushanbe, Yetti ko'l, Samarqand, Buxoro, Mari, Ashxobod, Darvoza, Xiva",
+    region: "Markaziy Osiyo",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "Umumiy narx $3744. 2026 yil uchun 1 kishiga mo'ljallangan.",
+    duration: "17 kun / 16 tun",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Yevropa – Toshkent", activity: "Toshkentga kelish. Mehmonxonaga joylashish." },
+      { day: 2, title: "Toshkent", activity: "Xasti Imom, Chorsu bozori va Mustaqillik maydoni." },
+      { day: 3, title: "Toshkent - Amirsoy", activity: "Tyan-Shan tog'lari, Amirsoy, Chimyon va Chorvoq." },
+      { day: 4, title: "Toshkent", activity: "Amir Temur maydoni, muzey, Navoiy teatri va Magic City." },
+      { day: 5, title: "Toshkent – Tojikiston (Dushanbe)", activity: "Dushanbega yetib kelish. Milliy muzey va Navro'z saroyi." },
+      { day: 6, title: "Iskandarko'l", activity: "Fan tog'lari, Iskandarko'l va sharshara." },
+      { day: 7, title: "Yetti ko'l (Haft ko'l)", activity: "Haft ko'l bo'ylab sayohat va Panjakent." },
+      { day: 8, title: "Tojikiston – Samarqand", activity: "Sarazm va O'zbekiston chegarasidan o'tish." },
+      { day: 9, title: "Samarqand", activity: "Go'ri Amir va Registon. Kechqurun 3D shou." },
+      { day: 10, title: "Samarqand - Buxoro", activity: "Imom Buxoriy majmuasi, Bibixonim, Siyob bozori va Shohi Zinda. Buxoroga yo'l." },
+      { day: 11, title: "Buxoro – Turkmaniston", activity: "Buxoro ziyorati va Turkmaniston chegarasiga yo'l." },
+      { day: 12, title: "Turkmanobod – Mari – Merv", activity: "Qadimiy Merv (UNESCO) bo'ylab sayohat." },
+      { day: 13, title: "Mari – Ashxobod", activity: "Ashxobodga yo'l. Gilamlar muzeyi va shahar sayohati." },
+      { day: 14, title: "Darvoza – Toshhovuz – Xiva", activity: "O'zbekistonga qaytish va Xivaga yo'l." },
+      { day: 15, title: "Xiva", activity: "Ichan Qal'a bo'ylab sayohat." },
+      { day: 16, title: "Xiva, Urganch – Toshkent", activity: "Toshkentga parvoz va bo'sh vaqt." },
+      { day: 17, title: "Toshkent - Yevropa", activity: "Sayohatning yakuni." }
+    ],
+    highlights: ["Xasti Imom", "Amirsoy", "Iskandarko'l", "Haft ko'l", "Registon", "Qadimiy Merv", "Ashxobod", "Ichan Qal'a"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 kishi",
+    notes: "Narxga mehmonxona, nonushta, gid va kirish chiptalari kiritilgan. Viza va xalqaro reyslar kiritilmagan.",
+    extras: ["Xalqaro reyslar", "Sug'urta", "Viza"]
+  },
+  ru: {
+    id: tourId,
+    title: "Великое путешествие по Центральной Азии — 17 Дней",
+    short: "Эпическое 17-дневное путешествие по Узбекистану, Таджикистану и Туркменистану.",
+    destination: "Ташкент, Душанбе, Семь озер, Самарканд, Бухара, Мары, Ашхабад, Дарваза, Хива",
+    region: "Центральная Азия",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "Общая стоимость $3744. Действительно на 2026 год для 1 человека.",
+    duration: "17 дней / 16 ночей",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Европа – Ташкент", activity: "Прибытие в Ташкент. Трансфер в отель." },
+      { day: 2, title: "Ташкент", activity: "Комплекс Хаст-Имам, базар Чорсу и площадь Независимости." },
+      { day: 3, title: "Ташкент - Амирсой", activity: "Горы Тянь-Шань, Амирсой, Чимган и озеро Чарвак." },
+      { day: 4, title: "Ташкент", activity: "Сквер Амира Темура, музей, театр Навои и Magic City." },
+      { day: 5, title: "Ташкент – Таджикистан (Душанбе)", activity: "Прибытие в Душанбе. Национальный музей, дворец Навруз." },
+      { day: 6, title: "Легендарное озеро Искандеркуль", activity: "Фанские горы, озеро Искандеркуль." },
+      { day: 7, title: "Семь Озер (Хафт-Кул)", activity: "Путешествие по Семи озерам и Пенджикент." },
+      { day: 8, title: "Таджикистан – Самарканд", activity: "Переход границы в Узбекистан." },
+      { day: 9, title: "Самарканд", activity: "Гур-Эмир и Регистан. 3D шоу." },
+      { day: 10, title: "Самарканд - Бухара", activity: "Имам Аль-Бухари, Биби-Ханум, Шахи-Зинда. Переезд в Бухару." },
+      { day: 11, title: "Бухара – Туркменистан", activity: "Экскурсия по Бухаре и переезд к границе с Туркменистаном." },
+      { day: 12, title: "Туркменабад – Мары – Мерв", activity: "Переход границы Фарап. Древний Мерв." },
+      { day: 13, title: "Мары – Ашхабад", activity: "Переезд в Ашхабад. Музей ковров, экскурсия по городу." },
+      { day: 14, title: "Дарваза – Дашогуз – Хива", activity: "Возвращение в Узбекистан, переезд в Хиву." },
+      { day: 15, title: "Хива", activity: "Экскурсия по Ичан-Кале." },
+      { day: 16, title: "Хива, Ургенч – Ташкент", activity: "Перелет в Ташкент." },
+      { day: 17, title: "Ташкент - Европа", activity: "Конец тура." }
+    ],
+    highlights: ["Хаст-Имам", "Амирсой", "Искандеркуль", "Семь Озер", "Регистан", "Древний Мерв", "Ашхабад", "Ичан-Кала"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 человек",
+    notes: "Включено: отели, завтраки, гид, билеты. Не включено: визы, обеды, ужины, международные рейсы.",
+    extras: ["Международные рейсы", "Страховка", "Визы"]
+  },
+  zh: {
+    id: tourId,
+    title: "中亚大环线 — 17 天",
+    short: "为期17天的乌兹别克斯坦、塔吉克斯坦和土库曼斯坦史诗之旅。",
+    destination: "塔什干, 杜尚别, 七湖, 撒马尔罕, 布哈拉, 马雷, 阿什哈巴德, 达尔瓦扎, 希瓦",
+    region: "中亚",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "总价 $3744。适用于2026年，按1人计算。",
+    duration: "17天 / 16晚",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "欧洲 – 塔什干", activity: "抵达塔什干。接机入住酒店。" },
+      { day: 2, title: "塔什干", activity: "哈斯特·伊玛目建筑群，琼苏巴扎和独立广场。" },
+      { day: 3, title: "塔什干 - Amirsoy", activity: "天山徒步，Amirsoy滑雪场，钦甘山和查瓦克湖。" },
+      { day: 4, title: "塔什干", activity: "帖木儿广场，帖木儿博物馆，纳沃伊剧院。" },
+      { day: 5, title: "塔什干 – 塔吉克斯坦 (杜尚别)", activity: "抵达杜尚别。国家古迹博物馆，纳夫鲁兹宫。" },
+      { day: 6, title: "伊斯坎德尔湖", activity: "范山，伊斯坎德尔湖。" },
+      { day: 7, title: "七湖探险 (Haft-Kul)", activity: "探索七湖并前往彭吉肯特。" },
+      { day: 8, title: "塔吉克斯坦 – 撒马尔罕", activity: "过境前往乌兹别克斯坦撒马尔罕。" },
+      { day: 9, title: "撒马尔罕", activity: "古尔·埃米尔陵墓和雷吉斯坦广场。晚间3D秀。" },
+      { day: 10, title: "撒马尔罕 - 布哈拉", activity: "伊玛目布哈里建筑群，比比哈努姆清真寺，沙赫静达。前往布哈拉。" },
+      { day: 11, title: "布哈拉 – 土库曼斯坦", activity: "游览布哈拉并前往土库曼斯坦边境。" },
+      { day: 12, title: "土库曼纳巴德 – 马雷 – 梅尔夫", activity: "过境。探索古梅尔夫遗址。" },
+      { day: 13, title: "马雷 – 阿什哈巴德", activity: "前往阿什哈巴德。地毯博物馆，市区游。" },
+      { day: 14, title: "达尔瓦扎 – 达绍古兹 – 希瓦", activity: "返回乌兹别克斯坦，前往希瓦。" },
+      { day: 15, title: "希瓦", activity: "游览伊钱卡拉内城。" },
+      { day: 16, title: "希瓦, 乌尔根奇 – 塔什干", activity: "飞往塔什干，自由活动。" },
+      { day: 17, title: "塔什干 - 欧洲", activity: "行程结束。" }
+    ],
+    highlights: ["哈斯特·伊玛目", "Amirsoy", "伊斯坎德尔湖", "七湖", "雷吉斯坦", "古梅尔夫", "阿什哈巴德", "伊钱卡拉"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 人",
+    notes: "包含住宿、早餐、导游和门票。不含国际航班、签证和午餐晚餐。",
+    extras: ["国际航班", "旅游保险", "签证"]
+  },
+  it: {
+    id: tourId,
+    title: "Il Grande Viaggio in Asia Centrale — 17 Giorni",
+    short: "Un epico viaggio di 17 giorni attraverso Uzbekistan, Tagikistan e Turkmenistan.",
+    destination: "Tashkent, Dushanbe, Sette Laghi, Samarcanda, Bukhara, Mary, Ashgabat, Darvaza, Khiva",
+    region: "Asia Centrale",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "Prezzo totale $3744. Valido per il 2026 per 1 persona.",
+    duration: "17 giorni / 16 notti",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Europa – Tashkent", activity: "Arrivo a Tashkent. Trasferimento in hotel." },
+      { day: 2, title: "Tashkent", activity: "Complesso Khast Imam, Bazar Chorsu e Piazza dell'Indipendenza." },
+      { day: 3, title: "Tashkent - Amirsoy", activity: "Montagne Tian Shan, Amirsoy, Chimgan e Lago Charvak." },
+      { day: 4, title: "Tashkent", activity: "Piazza Amir Temur, Museo di Amir Temur, Teatro Navoi." },
+      { day: 5, title: "Tashkent – Tagikistan (Dushanbe)", activity: "Arrivo a Dushanbe. Museo Nazionale, Palazzo Navruz." },
+      { day: 6, title: "Lago Iskanderkul", activity: "Montagne Fann, Lago Iskanderkul." },
+      { day: 7, title: "Sette Laghi (Haft-Kul)", activity: "Esplorazione dei Sette Laghi e Panjakent." },
+      { day: 8, title: "Tagikistan – Samarcanda", activity: "Attraversamento del confine per Samarcanda, Uzbekistan." },
+      { day: 9, title: "Samarcanda", activity: "Mausoleo Gur-Emir e Piazza Registan. Spettacolo 3D." },
+      { day: 10, title: "Samarcanda - Bukhara", activity: "Imam Al-Bukhari, Shah-i-Zinda. Trasferimento a Bukhara." },
+      { day: 11, title: "Bukhara – Turkmenistan", activity: "Esplorazione di Bukhara e confine turkmeno." },
+      { day: 12, title: "Turkmenabad – Mary – Merv", activity: "Antica Merv (sito UNESCO)." },
+      { day: 13, title: "Mary – Ashgabat", activity: "Ashgabat, Museo del Tappeto e tour della città." },
+      { day: 14, title: "Darvaza – Dashoguz – Khiva", activity: "Ritorno in Uzbekistan, viaggio per Khiva." },
+      { day: 15, title: "Khiva", activity: "Esplorazione di Ichan Kala." },
+      { day: 16, title: "Khiva, Urgench – Tashkent", activity: "Volo per Tashkent e tempo libero." },
+      { day: 17, title: "Tashkent - Europa", activity: "Fine del tour." }
+    ],
+    highlights: ["Khast Imam", "Amirsoy", "Lago Iskanderkul", "Sette Laghi", "Registan", "Antica Merv", "Ashgabat", "Ichan Kala"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 persone",
+    notes: "Inclusi hotel, colazioni, guida e ingressi. Esclusi voli internazionali, visti, pranzi e cene.",
+    extras: ["Voli internazionali", "Assicurazione", "Visti"]
+  },
+  fr: {
+    id: tourId,
+    title: "Le Grand Voyage en Asie Centrale — 17 Jours",
+    short: "Un voyage épique de 17 jours à travers l'Ouzbékistan, le Tadjikistan et le Turkménistan.",
+    destination: "Tachkent, Douchanbé, Sept Lacs, Samarcande, Boukhara, Mary, Achgabat, Darvaza, Khiva",
+    region: "Asie Centrale",
+    images: ["/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg", "/images/samarqand/samarkand.jpg", "/images/buxoro/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg"],
+    price: 3744,
+    priceNote: "Prix total 3744 $. Valable pour 2026 sur la base d'une personne.",
+    duration: "17 jours / 16 nuits",
+    rating: null,
+    category: "combined",
+    availableDates: [],
+    itinerary: [
+      { day: 1, title: "Europe – Tachkent", activity: "Arrivée à Tachkent. Transfert à l'hôtel." },
+      { day: 2, title: "Tachkent", activity: "Complexe Khast Imam, Bazar Chorsu et Place de l'Indépendance." },
+      { day: 3, title: "Tachkent - Amirsoy", activity: "Montagnes Tian Shan, Amirsoy, Chimgan et Lac Charvak." },
+      { day: 4, title: "Tachkent", activity: "Place Amir Temur, Musée Amir Temur, Théâtre Navoï." },
+      { day: 5, title: "Tachkent – Tadjikistan (Douchanbé)", activity: "Arrivée à Douchanbé. Musée National, Palais Navruz." },
+      { day: 6, title: "Le lac Iskanderkoul", activity: "Montagnes Fann, Lac Iskanderkoul." },
+      { day: 7, title: "Les Sept Lacs (Haft-Koul)", activity: "Exploration des Sept Lacs et route vers Penjikent." },
+      { day: 8, title: "Tadjikistan – Samarcande", activity: "Passage de la frontière vers Samarcande en Ouzbékistan." },
+      { day: 9, title: "Samarcande", activity: "Mausolée Gour-Émir et Place du Régistan. Spectacle 3D." },
+      { day: 10, title: "Samarcande - Boukhara", activity: "Imam Al-Bukhari, Mosquée Bibi-Khanym, Shah-i-Zinda. Route vers Boukhara." },
+      { day: 11, title: "Boukhara – Turkménistan", activity: "Visite de Boukhara et transfert à la frontière turkmène." },
+      { day: 12, title: "Turkménabad – Mary – Merv", activity: "Passage de la frontière. Ancienne Merv (UNESCO)." },
+      { day: 13, title: "Mary – Achgabat", activity: "Route vers Achgabat. Musée du tapis, tour de ville." },
+      { day: 14, title: "Darvaza – Dachogouz – Khiva", activity: "Retour en Ouzbékistan, route vers Khiva." },
+      { day: 15, title: "Khiva", activity: "Exploration de la vieille ville d'Ichan Kala." },
+      { day: 16, title: "Khiva, Ourguentch – Tachkent", activity: "Vol pour Tachkent et temps libre." },
+      { day: 17, title: "Tachkent - Europe", activity: "Fin du circuit." }
+    ],
+    highlights: ["Khast Imam", "Amirsoy", "Lac Iskanderkoul", "Sept Lacs", "Régistan", "Ancienne Merv", "Achgabat", "Ichan Kala"],
+    organizer: { name: "Alpha Travel", phone: "+998976151603", email: "Alpha.avia.travel@gmail.com", website: "" },
+    participants: "1-20 personnes",
+    notes: "Inclus: hôtels, petits-déjeuners, guide et billets d'entrée. Non inclus: vols internationaux, visas, déjeuners et dîners.",
+    extras: ["Vols internationaux", "Assurance", "Visas"]
+  }
+};
+
+const toursPath = path.join(__dirname, 'public', 'data', 'tours.json');
+let data = JSON.parse(fs.readFileSync(toursPath, 'utf8'));
+
+// Inject translations into each language
+for (const lang of Object.keys(translations)) {
+  if (!data.tours.uzbekistan[lang]) {
+    data.tours.uzbekistan[lang] = [];
+  }
+  // Check if tour already exists to prevent duplicates
+  const index = data.tours.uzbekistan[lang].findIndex(t => t.id === tourId);
+  if (index !== -1) {
+    data.tours.uzbekistan[lang][index] = translations[lang];
+  } else {
+    data.tours.uzbekistan[lang].push(translations[lang]);
+  }
+}
+
+fs.writeFileSync(toursPath, JSON.stringify(data, null, 2), 'utf8');
+console.log("Successfully updated tours.json with the 17-day Central Asia tour in 7 languages.");
