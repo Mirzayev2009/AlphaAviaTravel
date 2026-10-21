@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import { Mail, Phone as PhoneIcon, User, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -72,16 +71,18 @@ const RegistrationForm = ({ tour, open, onClose }) => {
     setLoading(true);
 
     try {
-      const response = await registerForTour({
-        tourId: tour.id,
-        tourTitle: tour.title,
-        ...formData,
+      const people = Number(formData.numberOfPeople) || 1;
+      const response = await fetch("/api/registrations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...formData, tourId: tour.id, tourTitle: tour.title, people, unitPrice: Number(tour.price), totalPrice: Number(tour.price) * people }),
       });
+      if (!response.ok) throw new Error("Unable to send inquiry");
 
       if (response.ok) {
         setShowSuccess(true);
         toast.success(t("registration.success"));
-        
+
         // Reset form after 3 seconds
         setTimeout(() => {
           setFormData({
@@ -94,7 +95,7 @@ const RegistrationForm = ({ tour, open, onClose }) => {
           setShowSuccess(false);
         }, 3000);
       }
-    } catch (error) {
+    } catch {
       toast.error(t("registration.error"));
     } finally {
       setLoading(false);
@@ -214,11 +215,7 @@ const RegistrationForm = ({ tour, open, onClose }) => {
             </Button>
           </form>
         ) : (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="py-8 text-center"
-          >
+          <div className="py-8 text-center">
             <div className="mb-6">
               <div className="mx-auto w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
                 <svg
@@ -257,7 +254,7 @@ const RegistrationForm = ({ tour, open, onClose }) => {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
         )}
       </DialogContent>
     </Dialog>

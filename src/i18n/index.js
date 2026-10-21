@@ -10,15 +10,16 @@ import fr from "./fr.json";
 import it from "./it.json";
 import zh from "./zh.json";
 import uz from "./uz.json";
+import design from "./design.json";
 
 const resources = {
-  en: { translation: en },
-  ru: { translation: ru },
-  es: { translation: es },
-  fr: { translation: fr },
-  it: { translation: it },
-  zh: { translation: zh },
-  uz: { translation: uz },
+  en: { translation: { ...en, design: design.en } },
+  ru: { translation: { ...ru, design: design.ru } },
+  es: { translation: { ...es, design: design.es } },
+  fr: { translation: { ...fr, design: design.fr } },
+  it: { translation: { ...it, design: design.it } },
+  zh: { translation: { ...zh, design: design.zh } },
+  uz: { translation: { ...uz, design: design.uz } },
 };
 
 i18n
@@ -41,10 +42,9 @@ i18n
     },
   });
 
-// Optional: Log language changes (useful for debugging)
-i18n.on('languageChanged', (lng) => {
-  console.log(`Language changed to: ${lng}`);
-  // You can add additional logic here if needed
+document.documentElement.lang = i18n.resolvedLanguage || "en";
+i18n.on("languageChanged", (language) => {
+  document.documentElement.lang = language.split("-")[0];
 });
 
 export default i18n;

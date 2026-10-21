@@ -1,185 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Globe, Bot, Sparkles } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Menu, X, Globe, MessageCircle, ChevronDown, Check } from "lucide-react";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const languages = [
-  { code: "en", name: "English", flag: "🇬🇧" },
-  { code: "ru", name: "Русский", flag: "🇷🇺" },
-  { code: "es", name: "Español", flag: "🇪🇸" },
-  { code: "fr", name: "Français", flag: "🇫🇷" },
-  { code: "it", name: "Italiano", flag: "🇮🇹" },
-  { code: "zh", name: "中文", flag: "🇨🇳" },
-  { code: "uz", name: "O'zbek", flag: "🇺🇿" },
+  { code: "en", name: "English" }, { code: "ru", name: "Русский" },
+  { code: "es", name: "Español" }, { code: "fr", name: "Français" },
+  { code: "it", name: "Italiano" }, { code: "zh", name: "中文" }, { code: "uz", name: "O‘zbek" },
 ];
 
-const Header = () => {
+export default function Header() {
   const { t, i18n } = useTranslation();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const navItems = [
-    { name: t("header.nav.home"), path: "/" },
-    { name: t("header.nav.tours"), path: "/tours" },
-    { name: t("header.nav.destinations"), path: "/destinations" },
-    { name: t("header.nav.services"), path: "/services" },
-    { name: t("header.nav.gallery"), path: "/gallery" },
-    { name: t("header.nav.about"), path: "/about" },
-    { name: t("header.nav.contact"), path: "/contact" },
-  ];
-
-  const changeLanguage = async (lng) => {
-    try {
-      await i18n.changeLanguage(lng);
-      localStorage.setItem("language", lng);
-
-      // Force a slight delay to ensure state updates propagate
-      setTimeout(() => {
-        window.dispatchEvent(new Event("languageChanged"));
-      }, 0);
-    } catch (error) {
-      console.error("Error changing language:", error);
-    }
-  };
-
-  const currentLang =
-    languages.find((lang) => lang.code === i18n.language) || languages[0];
-
-  return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <nav
-        className="container mx-auto px-4 h-16 flex items-center justify-between"
-        aria-label="Main navigation"
-      >
-        {/* Logo */}
-        <Link
-          to="/"
-          className="flex items-center space-x-2 font-bold text-xl text-orange-400 hover:opacity-80 transition-opacity"
-        >
-          <span>Alpha Avia Travel</span>
-        </Link>
-
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-1">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.path}
-              to={item.path}
-              end={item.path === "/"}
-              className={({ isActive }) =>
-                `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  isActive
-                    ? "bg-orange-400 text-primary-foreground"
-                    : "text-foreground hover:bg-muted"
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
-          ))}
-        </div>
-
-        {/* Chatbot, Language Selector & Mobile Menu */}
-        <div className="flex items-center space-x-2">
-          {/* Chatbot Button */}
-          <Link
-            to="/chatbot"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white text-sm font-bold shadow-lg hover:shadow-orange-400/50 hover:scale-105 transition-all animate-pulse"
-          >
-            <Bot className="h-4 w-4" />
-            <Sparkles className="h-3 w-3 text-yellow-200" />
-            <span className="hidden sm:inline">{t("chatbot.navLabel")}</span>
-          </Link>
-
-          {/* Language Selector */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                size="sm"
-                className="gap-2"
-                aria-label={t("header.language")}
-              >
-                <Globe className="h-4 w-4" />
-                <span className="hidden sm:inline">{currentLang.flag}</span>
-                <span className="hidden sm:inline">
-                  {currentLang.code.toUpperCase()}
-                </span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              {languages.map((lang) => (
-                <DropdownMenuItem
-                  key={lang.code}
-                  onClick={() => changeLanguage(lang.code)}
-                  className={i18n.language === lang.code ? "bg-muted" : ""}
-                >
-                  <span className="mr-2">{lang.flag}</span>
-                  {lang.name}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu>
-
-          {/* Mobile Menu Toggle */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={t("header.toggleMenu")}
-            aria-expanded={mobileMenuOpen}
-          >
-            {mobileMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
-          </Button>
-        </div>
+  const [open, setOpen] = useState(false);
+  const language = (i18n.resolvedLanguage || "en").split("-")[0];
+  const items = [["home", "/"], ["tours", "/tours"], ["destinations", "/destinations"], ["services", "/services"], ["gallery", "/gallery"], ["about", "/about"], ["contact", "/contact"]];
+  useEffect(() => {
+    if (!open) return;
+    const escape = (event) => { if (event.key === "Escape") setOpen(false); };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, [open]);
+  return <header className="site-header">
+    <div className="site-container header-inner">
+      <Link className="brand-name" to="/" onClick={() => setOpen(false)}>Alpha <span>Avia</span> Travel</Link>
+      <nav className="desktop-nav" aria-label={t("design.mainNavigation")}>
+        {items.map(([key, path]) => <NavLink key={path} to={path} end={path === "/"}>{t("header.nav." + key)}</NavLink>)}
       </nav>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.2 }}
-            className="md:hidden border-t bg-background"
-          >
-            <div className="container mx-auto px-4 py-4 space-y-2">
-              {navItems.map((item) => (
-                <NavLink
-                  key={item.path}
-                  to={item.path}
-                  end={item.path === "/"}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    `block px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                      isActive
-                        ? "bg-orange-400 text-primary-foreground"
-                        : "text-foreground hover:bg-muted"
-                    }`
-                  }
-                >
-                  {item.name}
-                </NavLink>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
-  );
-};
-
-export default Header;
+      <div className="header-actions">
+        <Link to="/chatbot" className="header-assistant" aria-label={t("chatbot.navLabel")} onClick={() => setOpen(false)}><MessageCircle size={19}/></Link>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild><button type="button" className="language-button" aria-label={t("header.language")}><Globe size={16}/><span>{language.toUpperCase()}</span><ChevronDown size={12}/></button></DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            {languages.map((item) => <DropdownMenuItem key={item.code} onSelect={() => i18n.changeLanguage(item.code)} className="min-h-11 gap-3">
+              <span className="text-muted-foreground w-6 text-xs">{item.code.toUpperCase()}</span>{item.name}{language === item.code && <Check size={14} className="ml-auto" aria-hidden="true"/>}
+            </DropdownMenuItem>)}
+          </DropdownMenuContent>
+        </DropdownMenu>
+        <button type="button" className="menu-toggle" aria-label={t("header.toggleMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21}/> : <Menu size={21}/>}</button>
+      </div>
+    </div>
+    {open && <nav id="mobile-navigation" className="mobile-nav" aria-label={t("design.mainNavigation")}>
+      {items.map(([key, path]) => <NavLink key={path} to={path} end={path === "/"} onClick={() => setOpen(false)}>{t("header.nav." + key)}</NavLink>)}
+      <NavLink to="/chatbot" onClick={() => setOpen(false)}>{t("chatbot.navLabel")}</NavLink>
+    </nav>}
+  </header>;
+}

@@ -1,112 +1,21 @@
+import { createElement } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
-const Footer = () => {
+export default function Footer() {
   const { t } = useTranslation();
-
-  const quickLinks = [
-    { name: t("header.nav.tours"), path: "/tours" },
-    { name: t("header.nav.destinations"), path: "/destinations" },
-    { name: t("header.nav.about"), path: "/about" },
-    { name: t("header.nav.gallery"), path: "/gallery" },
-    { name: t("header.nav.contact"), path: "/contact" },
-  ];
-
-  return (
-    <footer className="bg-card border-t mt-auto">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* About */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-400">Alpha Avia Travel</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              {t("footer.about")}
-            </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-400">{t("footer.quickLinks")}</h3>
-            <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-400" >{t("footer.contactInfo")}</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>{t("contact.info.address")}</span>
-              </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 flex-shrink-0" />
-                <a href="tel:+998901234567" className="hover:text-primary transition-colors">
-                 +998 98 101 33 11
-                </a>
-              </li>
-              <li className="flex items-center space-x-2 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4 flex-shrink-0" />
-                <a href="mailto:info@alphatravel.uz" className="hover:text-primary transition-colors">
-                alpha.avia.travel@gmail.com
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Social Links */}
-          <div>
-            <h3 className="font-bold text-lg mb-4 text-orange-400">{t("footer.followUs")}</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label={t("footer.facebook")}
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label={t("footer.instagram")}
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label={t("footer.twitter")}
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>{t("footer.copyright")}</p>
-        </div>
-      </div>
-    </footer>
-  );
-};
-
-export default Footer;
+  return <footer className="site-footer"><div className="site-container">
+    <div className="footer-grid">
+      <div className="footer-brand"><Link className="brand-name" to="/">Alpha <span>Avia</span> Travel</Link><p>{t("footer.about")}</p></div>
+      <div className="footer-column"><h3>{t("footer.quickLinks")}</h3><ul>{[["tours", "/tours"], ["destinations", "/destinations"], ["about", "/about"], ["gallery", "/gallery"], ["contact", "/contact"]].map(([key, path]) => <li key={key}><Link to={path}>{t("header.nav." + key)}</Link></li>)}</ul></div>
+      <div className="footer-column footer-contact"><h3>{t("footer.contactInfo")}</h3><ul>
+        <li>{t("contact.info.address")}</li><li><a href="tel:+998981013311">+998 98 101 33 11</a></li><li><a href="mailto:alpha.avia.travel@gmail.com">alpha.avia.travel@gmail.com</a></li>
+      </ul></div>
+      <div className="footer-column footer-social"><h3>{t("footer.followUs")}</h3><div className="social-links">
+        {[[Facebook, "Facebook", "https://www.facebook.com/"], [Instagram, "Instagram", "https://www.instagram.com/"], [Twitter, "Twitter", "https://www.twitter.com/"]].map(([Icon, name, href]) => <a key={name} href={href} aria-label={name} target="_blank" rel="noreferrer">{createElement(Icon, { size: 18 })}</a>)}
+      </div></div>
+    </div>
+    <div className="footer-bottom"><span>© {new Date().getFullYear()} Alpha Avia Travel. {t("design.rights")}</span><span>Samarkand, Uzbekistan</span></div>
+  </div></footer>;
+}

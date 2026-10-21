@@ -48,9 +48,10 @@ function Button({
   return (
     <Comp
       data-slot="button"
+      data-variant={variant || "default"}
       className={cn(buttonVariants({ variant, size, className }))}
       {...props} />
   );
 }
 
-export { Button, buttonVariants }
+export { Button }

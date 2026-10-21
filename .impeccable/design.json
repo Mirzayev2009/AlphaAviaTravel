@@ -1,0 +1,519 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T06:20:00.000Z",
+  "title": "Design System: Alpha Avia Travel",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Travel Orange",
+        "canonical": "#ff8a00",
+        "tonalRamp": [
+          "oklch(0.1500 0.1801 57.36)",
+          "oklch(0.2643 0.1801 57.36)",
+          "oklch(0.3786 0.1801 57.36)",
+          "oklch(0.4929 0.1801 57.36)",
+          "oklch(0.6071 0.1801 57.36)",
+          "oklch(0.7214 0.1801 57.36)",
+          "oklch(0.8357 0.1801 57.36)",
+          "oklch(0.9500 0.1801 57.36)"
+        ]
+      },
+      "brand-hover": {
+        "role": "primary",
+        "displayName": "Amber Hover",
+        "canonical": "#f9a12b",
+        "tonalRamp": [
+          "oklch(0.1500 0.1591 67.82)",
+          "oklch(0.2643 0.1591 67.82)",
+          "oklch(0.3786 0.1591 67.82)",
+          "oklch(0.4929 0.1591 67.82)",
+          "oklch(0.6071 0.1591 67.82)",
+          "oklch(0.7214 0.1591 67.82)",
+          "oklch(0.8357 0.1591 67.82)",
+          "oklch(0.9500 0.1591 67.82)"
+        ]
+      },
+      "brand-strong": {
+        "role": "primary",
+        "displayName": "Deep Orange",
+        "canonical": "#a74b00",
+        "tonalRamp": [
+          "oklch(0.1500 0.1400 49.10)",
+          "oklch(0.2643 0.1400 49.10)",
+          "oklch(0.3786 0.1400 49.10)",
+          "oklch(0.4929 0.1400 49.10)",
+          "oklch(0.6071 0.1400 49.10)",
+          "oklch(0.7214 0.1400 49.10)",
+          "oklch(0.8357 0.1400 49.10)",
+          "oklch(0.9500 0.1400 49.10)"
+        ]
+      },
+      "primary-foreground": {
+        "role": "neutral",
+        "displayName": "Warm Dark Ink",
+        "canonical": "#241708",
+        "tonalRamp": [
+          "oklch(0.1500 0.0331 68.70)",
+          "oklch(0.2643 0.0331 68.70)",
+          "oklch(0.3786 0.0331 68.70)",
+          "oklch(0.4929 0.0331 68.70)",
+          "oklch(0.6071 0.0331 68.70)",
+          "oklch(0.7214 0.0331 68.70)",
+          "oklch(0.8357 0.0331 68.70)",
+          "oklch(0.9500 0.0331 68.70)"
+        ]
+      },
+      "background": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#fff",
+        "tonalRamp": [
+          "oklch(0.1500 0.0000 0)",
+          "oklch(0.2643 0.0000 0)",
+          "oklch(0.3786 0.0000 0)",
+          "oklch(0.4929 0.0000 0)",
+          "oklch(0.6071 0.0000 0)",
+          "oklch(0.7214 0.0000 0)",
+          "oklch(0.8357 0.0000 0)",
+          "oklch(0.9500 0.0000 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Reading Ink",
+        "canonical": "#1d1d1f",
+        "tonalRamp": [
+          "oklch(0.1500 0.0038 286.10)",
+          "oklch(0.2643 0.0038 286.10)",
+          "oklch(0.3786 0.0038 286.10)",
+          "oklch(0.4929 0.0038 286.10)",
+          "oklch(0.6071 0.0038 286.10)",
+          "oklch(0.7214 0.0038 286.10)",
+          "oklch(0.8357 0.0038 286.10)",
+          "oklch(0.9500 0.0038 286.10)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Supporting Gray",
+        "canonical": "#65656b",
+        "tonalRamp": [
+          "oklch(0.1500 0.0094 286.06)",
+          "oklch(0.2643 0.0094 286.06)",
+          "oklch(0.3786 0.0094 286.06)",
+          "oklch(0.4929 0.0094 286.06)",
+          "oklch(0.6071 0.0094 286.06)",
+          "oklch(0.7214 0.0094 286.06)",
+          "oklch(0.8357 0.0094 286.06)",
+          "oklch(0.9500 0.0094 286.06)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Soft Gray",
+        "canonical": "#f5f5f7",
+        "tonalRamp": [
+          "oklch(0.1500 0.0027 286.35)",
+          "oklch(0.2643 0.0027 286.35)",
+          "oklch(0.3786 0.0027 286.35)",
+          "oklch(0.4929 0.0027 286.35)",
+          "oklch(0.6071 0.0027 286.35)",
+          "oklch(0.7214 0.0027 286.35)",
+          "oklch(0.8357 0.0027 286.35)",
+          "oklch(0.9500 0.0027 286.35)"
+        ]
+      },
+      "surface-warm": {
+        "role": "neutral",
+        "displayName": "Warm Cream",
+        "canonical": "#fff5e8",
+        "tonalRamp": [
+          "oklch(0.1500 0.0203 74.66)",
+          "oklch(0.2643 0.0203 74.66)",
+          "oklch(0.3786 0.0203 74.66)",
+          "oklch(0.4929 0.0203 74.66)",
+          "oklch(0.6071 0.0203 74.66)",
+          "oklch(0.7214 0.0203 74.66)",
+          "oklch(0.8357 0.0203 74.66)",
+          "oklch(0.9500 0.0203 74.66)"
+        ]
+      },
+      "accent": {
+        "role": "neutral",
+        "displayName": "Menu Accent",
+        "canonical": "#fff3e2",
+        "tonalRamp": [
+          "oklch(0.1500 0.0259 76.80)",
+          "oklch(0.2643 0.0259 76.80)",
+          "oklch(0.3786 0.0259 76.80)",
+          "oklch(0.4929 0.0259 76.80)",
+          "oklch(0.6071 0.0259 76.80)",
+          "oklch(0.7214 0.0259 76.80)",
+          "oklch(0.8357 0.0259 76.80)",
+          "oklch(0.9500 0.0259 76.80)"
+        ]
+      },
+      "accent-foreground": {
+        "role": "primary",
+        "displayName": "Menu Accent Ink",
+        "canonical": "#924300",
+        "tonalRamp": [
+          "oklch(0.1500 0.1251 50.62)",
+          "oklch(0.2643 0.1251 50.62)",
+          "oklch(0.3786 0.1251 50.62)",
+          "oklch(0.4929 0.1251 50.62)",
+          "oklch(0.6071 0.1251 50.62)",
+          "oklch(0.7214 0.1251 50.62)",
+          "oklch(0.8357 0.1251 50.62)",
+          "oklch(0.9500 0.1251 50.62)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine Line",
+        "canonical": "#e5e5e8",
+        "tonalRamp": [
+          "oklch(0.1500 0.0040 286.32)",
+          "oklch(0.2643 0.0040 286.32)",
+          "oklch(0.3786 0.0040 286.32)",
+          "oklch(0.4929 0.0040 286.32)",
+          "oklch(0.6071 0.0040 286.32)",
+          "oklch(0.7214 0.0040 286.32)",
+          "oklch(0.8357 0.0040 286.32)",
+          "oklch(0.9500 0.0040 286.32)"
+        ]
+      },
+      "input": {
+        "role": "neutral",
+        "displayName": "Field Line",
+        "canonical": "#d1d1d6",
+        "tonalRamp": [
+          "oklch(0.1500 0.0068 286.26)",
+          "oklch(0.2643 0.0068 286.26)",
+          "oklch(0.3786 0.0068 286.26)",
+          "oklch(0.4929 0.0068 286.26)",
+          "oklch(0.6071 0.0068 286.26)",
+          "oklch(0.7214 0.0068 286.26)",
+          "oklch(0.8357 0.0068 286.26)",
+          "oklch(0.9500 0.0068 286.26)"
+        ]
+      },
+      "destructive": {
+        "role": "semantic",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "oklch(0.1500 0.1783 28.70)",
+          "oklch(0.2643 0.1783 28.70)",
+          "oklch(0.3786 0.1783 28.70)",
+          "oklch(0.4929 0.1783 28.70)",
+          "oklch(0.6071 0.1783 28.70)",
+          "oklch(0.7214 0.1783 28.70)",
+          "oklch(0.8357 0.1783 28.70)",
+          "oklch(0.9500 0.1783 28.70)"
+        ]
+      },
+      "error-surface": {
+        "role": "semantic",
+        "displayName": "Error Wash",
+        "canonical": "#fff0ef",
+        "tonalRamp": [
+          "oklch(0.1500 0.0163 22.08)",
+          "oklch(0.2643 0.0163 22.08)",
+          "oklch(0.3786 0.0163 22.08)",
+          "oklch(0.4929 0.0163 22.08)",
+          "oklch(0.6071 0.0163 22.08)",
+          "oklch(0.7214 0.0163 22.08)",
+          "oklch(0.8357 0.0163 22.08)",
+          "oklch(0.9500 0.0163 22.08)"
+        ]
+      },
+      "nav-text": {
+        "role": "neutral",
+        "displayName": "Navigation Gray",
+        "canonical": "#515154",
+        "tonalRamp": [
+          "oklch(0.1500 0.0049 286.20)",
+          "oklch(0.2643 0.0049 286.20)",
+          "oklch(0.3786 0.0049 286.20)",
+          "oklch(0.4929 0.0049 286.20)",
+          "oklch(0.6071 0.0049 286.20)",
+          "oklch(0.7214 0.0049 286.20)",
+          "oklch(0.8357 0.0049 286.20)",
+          "oklch(0.9500 0.0049 286.20)"
+        ]
+      },
+      "description-text": {
+        "role": "neutral",
+        "displayName": "Description Gray",
+        "canonical": "#55555c",
+        "tonalRamp": [
+          "oklch(0.1500 0.0113 285.94)",
+          "oklch(0.2643 0.0113 285.94)",
+          "oklch(0.3786 0.0113 285.94)",
+          "oklch(0.4929 0.0113 285.94)",
+          "oklch(0.6071 0.0113 285.94)",
+          "oklch(0.7214 0.0113 285.94)",
+          "oklch(0.8357 0.0113 285.94)",
+          "oklch(0.9500 0.0113 285.94)"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder Gray",
+        "canonical": "#737378",
+        "tonalRamp": [
+          "oklch(0.1500 0.0076 286.15)",
+          "oklch(0.2643 0.0076 286.15)",
+          "oklch(0.3786 0.0076 286.15)",
+          "oklch(0.4929 0.0076 286.15)",
+          "oklch(0.6071 0.0076 286.15)",
+          "oklch(0.7214 0.0076 286.15)",
+          "oklch(0.8357 0.0076 286.15)",
+          "oklch(0.9500 0.0076 286.15)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Centered hero headlines; switches to the compact mobile size at the documented breakpoints."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page introductions."
+      },
+      "title": {
+        "displayName": "Section Title",
+        "purpose": "Shared section headings."
+      },
+      "card-title": {
+        "displayName": "Card Title",
+        "purpose": "Tour names in comparison cards."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Section descriptions and supporting prose."
+      },
+      "field": {
+        "displayName": "Field",
+        "purpose": "Readable inquiry and contact controls."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Functional field labels and category controls."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Compact desktop navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "tour-card",
+        "value": "0 4px 18px rgb(29 29 31 / .035)",
+        "purpose": "A low resting separation for tour cards."
+      },
+      {
+        "name": "chat-launcher",
+        "value": "0 6px 24px rgb(90 49 0 / .15)",
+        "purpose": "Keeps the fixed assistant control distinct."
+      },
+      {
+        "name": "floating-chat",
+        "value": "0 16px 70px rgb(29 29 31 / .16)",
+        "purpose": "Raises the floating conversation panel."
+      },
+      {
+        "name": "office-marker",
+        "value": "0 3px 12px rgb(29 29 31 / .15)",
+        "purpose": "Local map marker legibility."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Shared CSS state and media easing."
+      },
+      {
+        "name": "state-duration",
+        "value": ".2s",
+        "purpose": "Button background/press, input border, and disclosure icon feedback."
+      },
+      {
+        "name": "media-hover",
+        "value": ".5s",
+        "purpose": "Service and gallery image hover."
+      },
+      {
+        "name": "tour-media-hover",
+        "value": ".65s",
+        "purpose": "Tour and destination image hover, on hover-capable devices."
+      },
+      {
+        "name": "hero-intro",
+        "value": ".75s expo.out",
+        "purpose": "GSAP hero copy entry with .06s stagger; 16px heading and 12px supporting travel."
+      },
+      {
+        "name": "hero-scroll-scale",
+        "value": "1 to 1.045; scrub .7",
+        "purpose": "GSAP panorama scale over the hero's scroll span."
+      },
+      {
+        "name": "carousel-fade",
+        "value": "650ms",
+        "purpose": "Swiper crossfade; 0ms under reduced motion."
+      },
+      {
+        "name": "carousel-autoplay",
+        "value": "7500ms",
+        "purpose": "Pausable slide delay; paused on hover/focus and disabled for reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": ".01ms",
+        "purpose": "CSS transition/animation duration when reduced motion is requested; smooth scrolling, hero animation and autoplay are disabled."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1199px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "1023px"
+      },
+      {
+        "name": "stacked",
+        "value": "767px"
+      },
+      {
+        "name": "single-column",
+        "value": "579px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main inquiry or continue action; the height is a minimum.",
+      "html": "<button type=\"button\" class=\"ds-primary ds-focus\">Send booking inquiry <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid transparent;border-radius:999px;background:var(--brand,#ff8a00);color:var(--primary-foreground,#241708);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-primary:hover{background:#f9a12b}.ds-primary:active{transform:scale(.98)}.ds-primary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Neutral bordered action used beside a primary step; tour cards also apply the small size.",
+      "html": "<button type=\"button\" class=\"ds-secondary ds-focus\">Back</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-secondary:hover{background:var(--surface,#f5f5f7)}.ds-secondary:active{transform:scale(.98)}.ds-secondary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Quiet navigation to a related surface with a directional inline SVG.",
+      "html": "<a class=\"ds-text-link ds-focus\" href=\"/tours\">Browse tours <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;color:var(--brand-strong,#a74b00);font:500 15px -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-decoration:none;text-underline-offset:.2em}.ds-text-link:hover{text-decoration:underline}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "Circular previous/next or other named utility action.",
+      "html": "<button type=\"button\" aria-label=\"Next\" class=\"ds-icon ds-focus\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
+      "css": ".ds-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line,#e5e5e8);border-radius:50%;background:var(--background,#fff);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;cursor:pointer;transition:background .2s}.ds-icon:hover{background:var(--surface,#f5f5f7)}.ds-icon:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Labeled Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "The native labeled field treatment used in the inquiry form; invalid state uses a semantic error stroke.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-email\">Email <span aria-hidden=\"true\">*</span></label><input id=\"ds-email\" type=\"email\" name=\"email\" autocomplete=\"email\" required placeholder=\"Email\"></div>",
+      "css": ".ds-field{display:grid;align-content:start;gap:8px;min-width:0;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-field label{font-size:13px;font-weight:500}.ds-field input{width:100%;min-width:0;min-height:48px;padding:12px 14px;border:1px solid var(--input,#d1d1d6);border-radius:10px;background:var(--background,#fff);color:var(--ink,#1d1d1f);font:16px/1.4 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;caret-color:var(--brand-strong,#a74b00);transition:border-color .2s}.ds-field input::placeholder{color:#737378}.ds-field input:focus,.ds-field input:focus-visible{border-color:var(--ring,#a74b00);outline:2px solid var(--ring,#a74b00);outline-offset:2px}.ds-field input[aria-invalid=\"true\"]{border-color:var(--destructive,#b3261e)}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Responsive Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "The compact current-route navigation and larger mobile link treatment. The mobile sample depicts an already expanded menu; production toggling is handled by React.",
+      "html": "<div class=\"ds-nav\"><nav class=\"ds-nav-desktop\" aria-label=\"Main navigation\"><a class=\"ds-focus\" href=\"/\">Home</a><a class=\"ds-focus\" href=\"/tours\" aria-current=\"page\">Tours</a><a class=\"ds-focus\" href=\"/destinations\">Destinations</a></nav><nav class=\"ds-nav-mobile\" aria-label=\"Expanded mobile navigation\"><a class=\"ds-focus\" href=\"/\">Home</a><a class=\"ds-focus\" href=\"/tours\" aria-current=\"page\">Tours</a><a class=\"ds-focus\" href=\"/destinations\">Destinations</a></nav></div>",
+      "css": ".ds-nav{background:rgb(255 255 255 / .95);border-bottom:1px solid rgb(229 229 232 / .7);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-nav-desktop{display:flex;align-items:center;justify-content:center;gap:22px;min-height:72px}.ds-nav-desktop a{position:relative;padding-block:25px;color:#515154;font-size:12px;font-weight:500;white-space:nowrap;text-decoration:none;transition:color .2s}.ds-nav-desktop a:hover,.ds-nav-desktop a[aria-current]{color:var(--ink,#1d1d1f)}.ds-nav-desktop a[aria-current]::after{content:\"\";position:absolute;left:0;right:0;bottom:15px;height:2px;background:var(--brand,#ff8a00)}.ds-nav-mobile{display:none;border-top:1px solid var(--line,#e5e5e8);padding:12px 24px 24px}.ds-nav-mobile a{display:flex;padding:13px 0;color:var(--ink,#1d1d1f);font-size:18px;font-weight:500;text-decoration:none}.ds-nav-mobile a[aria-current]{color:var(--brand-strong,#a74b00)}@supports(backdrop-filter:blur(12px)){.ds-nav{background:rgb(255 255 255 / .88);backdrop-filter:blur(14px)}}@media(max-width:1199px){.ds-nav-desktop{gap:16px}}@media(max-width:1023px){.ds-nav-desktop{display:none}.ds-nav-mobile{display:grid}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Category Chips",
+      "kind": "chip",
+      "refersTo": "category-chip",
+      "description": "Wrapping category buttons with a dark pressed state; these examples mirror factual catalog category labels.",
+      "html": "<div class=\"ds-chips\" role=\"group\" aria-label=\"Tour categories\"><button type=\"button\" class=\"ds-chip ds-focus\" aria-pressed=\"true\">Uzbekistan</button><button type=\"button\" class=\"ds-chip ds-focus\" aria-pressed=\"false\">Central Asia</button><button type=\"button\" class=\"ds-chip ds-focus\" aria-pressed=\"false\">Worldwide</button></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px}.ds-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:11px 19px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:var(--background,#fff);color:var(--ink-soft,#65656b);font:500 13px -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;cursor:pointer;transition:background .2s,color .2s}.ds-chip:hover{color:var(--ink,#1d1d1f);background:var(--surface,#f5f5f7)}.ds-chip[aria-pressed=\"true\"]{background:var(--ink,#1d1d1f);border-color:var(--ink,#1d1d1f);color:var(--background,#fff)}@media(max-width:767px){.ds-chips{gap:7px}.ds-chip{font-size:12px;padding:10px 14px;gap:6px}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Tour Card Content",
+      "kind": "card",
+      "refersTo": "tour-card",
+      "description": "Actual tour-card content anatomy; descriptive placeholders avoid invented product facts. The photographic media slot is omitted from this portable primitive.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-body\"><p class=\"ds-card-meta\">Duration</p><h3><a class=\"ds-focus\" href=\"/tours\">Tour title</a></h3><p class=\"ds-card-destination\">Destination</p><p class=\"ds-card-description\">Tour description</p><div class=\"ds-card-bottom\"><div class=\"ds-price\"><strong>Price</strong><small>per person</small></div><a class=\"ds-card-action ds-focus\" href=\"/tours\">View tour</a></div></div></article>",
+      "css": ".ds-card{min-width:0;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:var(--background,#fff);color:var(--ink,#1d1d1f);box-shadow:0 4px 18px rgb(29 29 31 / .035);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-card-body{flex:1;display:flex;flex-direction:column;gap:14px;padding:25px}.ds-card p,.ds-card h3{margin:0}.ds-card-meta{color:var(--brand-strong,#a74b00);font-size:12px;font-weight:600}.ds-card h3{font-size:21px;line-height:1.28;font-weight:650;letter-spacing:-.025em;text-wrap:balance}.ds-card h3 a{color:inherit;text-decoration:none}.ds-card h3 a:hover{color:var(--brand-strong,#a74b00)}.ds-card-destination{color:var(--ink-soft,#65656b);font-size:13px;line-height:1.5}.ds-card-description{color:#55555c;font-size:14px;line-height:1.6}.ds-card-bottom{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:20px;border-top:1px solid var(--line,#e5e5e8)}.ds-price{display:flex;flex-direction:column;gap:3px}.ds-price strong{font-size:25px;line-height:1.15;font-weight:650;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.ds-price small{font-size:11px;color:var(--ink-soft,#65656b)}.ds-card-action{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 17px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font-size:13px;line-height:1.3;font-weight:600;text-align:center;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-card-action:hover{background:var(--surface,#f5f5f7)}.ds-card-action:active{transform:scale(.98)}@media(max-width:767px){.ds-card-body{padding:22px}.ds-card h3{font-size:20px}.ds-card-action{font-size:12px;padding-inline:16px}}@media(max-width:579px){.ds-card h3{font-size:22px}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Itinerary Disclosure",
+      "kind": "custom",
+      "refersTo": "itinerary",
+      "description": "A native disclosure row for readable itinerary content; day labels are functional sequence information.",
+      "html": "<details class=\"ds-itinerary\"><summary class=\"ds-focus\"><span><small>Day</small>Itinerary title</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><div class=\"ds-itinerary-content\">Itinerary content</div></details>",
+      "css": ".ds-itinerary{border-bottom:1px solid var(--line,#e5e5e8);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-itinerary summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;list-style:none;font-size:16px;font-weight:550;cursor:pointer}.ds-itinerary summary::-webkit-details-marker{display:none}.ds-itinerary summary small{display:block;color:var(--brand-strong,#a74b00);font-size:12px;font-weight:500;margin-bottom:7px}.ds-itinerary svg{flex-shrink:0;color:var(--ink-soft,#65656b);transition:transform .2s}.ds-itinerary[open] svg{transform:rotate(45deg)}.ds-itinerary-content{color:var(--ink-soft,#65656b);font-size:15px;line-height:1.8;padding-bottom:24px}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Clear Window onto Travel",
+    "overview": "The approved Apple reference appears as quiet light surfaces, generous space, clear system typography, and destination photography. Orange gives the visitor a visible next step; the darker orange carries links and small functional accents. The interface serves both international visitors and Uzbekistan residents, with one consistent visual language across seven languages.\n\nThe system moves from broad introductions to practical comparison and readable inquiry forms. Rounded media and panels soften the presentation without heavy decorative framing. The approved system sans stack is an explicit project decision, including display headings; it is retained with Latin, Cyrillic, and Chinese fallbacks.",
+    "keyCharacteristics": [
+      "White and soft neutral surfaces with deliberate orange actions.",
+      "Large dark headings, compact functional labels, and readable supporting copy.",
+      "Rounded photography, pill controls, and fine neutral dividers.",
+      "Short feedback transitions, a pausable hero carousel, and reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Action Orange Rule",
+        "body": "Use bright orange for primary actions and selected emphasis; use the darker orange for text links and small functional accents.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Voice Rule",
+        "body": "Retain the approved multilingual system sans stack and express emphasis through the established type roles; headings do not need orange fills.",
+        "section": "typography"
+      },
+      {
+        "name": "The Surface First Rule",
+        "body": "Establish hierarchy with surface tone, spacing, and dividers before adding elevation; use the observed shadow roles for cards and floating controls.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the orange/amber action character, neutral reading surfaces, and approved multilingual system sans stack.",
+      "Do reuse the established container, type roles, surface corners, field corners, and pill controls.",
+      "Do keep functional metadata factual and place long translated text in wrapping layouts.",
+      "Do retain clear focus outlines, labeled controls, pressed/current states, pausable motion, and reduced-motion behavior.",
+      "Do keep inquiry labels accurate and use photography already supplied by the product."
+    ],
+    "donts": [
+      "Don't add decorative color families, repeated orange heading fills, oversized glows, or continuous decorative loops.",
+      "Don't replace the approved section order or hide product content to simplify a layout.",
+      "Don't turn functional duration/day labels into decorative kickers on new surfaces.",
+      "Don't treat generated tonal ramps in the sidecar as additional runtime palette tokens.",
+      "Don't inherit dormant legacy theme values as the visual authority; the later shared travel stylesheet controls the active light system."
+    ]
+  }
+}
