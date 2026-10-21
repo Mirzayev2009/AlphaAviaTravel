@@ -7,15 +7,15 @@
     ]
   },
   "after": {
-    "rawBytes": 606429,
-    "gzipBytes": 193388,
+    "rawBytes": 608792,
+    "gzipBytes": 194131,
     "files": [
-      "assets/index-CVD8mM3Z.js"
+      "assets/index-D-Uaez0w.js"
     ]
   },
   "saved": {
-    "rawBytes": 115646,
-    "gzipBytes": 45836
+    "rawBytes": 113283,
+    "gzipBytes": 45093
   },
   "beforeLiveliness": {
     "rawBytes": 679137,
@@ -30,15 +30,57 @@
   },
   "approvedInitialGzipBudget": 222697,
   "deferredMotion": {
-    "rawBytes": 76126,
-    "gzipBytes": 30083,
+    "rawBytes": 78173,
+    "gzipBytes": 30703,
     "files": [
-      "assets/SiteMotion-ANXufeG5.js",
-      "assets/index-BigbF2aW.js"
+      "assets/SiteMotion-BbB5R58a.js",
+      "assets/index-BEHSB_UR.js"
     ]
   },
   "startupIncludingDeferredMotion": {
-    "rawBytes": 682555,
-    "gzipBytes": 223471
+    "rawBytes": 686965,
+    "gzipBytes": 224834
+  },
+  "beforeAmberHeaders": {
+    "initial": {
+      "rawBytes": 606429,
+      "gzipBytes": 193388,
+      "files": [
+        "assets/index-CVD8mM3Z.js"
+      ]
+    },
+    "deferred": {
+      "rawBytes": 76126,
+      "gzipBytes": 30083,
+      "files": [
+        "assets/SiteMotion-ANXufeG5.js",
+        "assets/index-BigbF2aW.js"
+      ]
+    },
+    "combined": {
+      "rawBytes": 682555,
+      "gzipBytes": 223471
+    }
+  },
+  "beforeTimingCorrection": {
+    "initial": {
+      "rawBytes": 608735,
+      "gzipBytes": 194095,
+      "files": [
+        "assets/index-Bv3l1p0e.js"
+      ]
+    },
+    "deferred": {
+      "rawBytes": 77102,
+      "gzipBytes": 30392,
+      "files": [
+        "assets/SiteMotion-AlOMUWLy.js",
+        "assets/index-MWsd9WSj.js"
+      ]
+    },
+    "combined": {
+      "rawBytes": 685837,
+      "gzipBytes": 224487
+    }
   }
 }

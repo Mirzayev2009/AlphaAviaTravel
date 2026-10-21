@@ -1,0 +1,94 @@
+{
+  "desktop": [
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 12px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 12px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 12px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.55; translate: 0px 12px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.6241; translate: 0px 10.0249px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.6876; translate: 0px 8.3296px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.7382; translate: 0px 6.9806px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.7778; translate: 0px 5.9257px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.8163; translate: 0px 4.8985px;"
+    },
+    {
+      "phase": "entering",
+      "runs": "1",
+      "style": "opacity: 0.8602; translate: 0px 3.7278px;"
+    }
+  ],
+  "phone": [
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    },
+    {
+      "phase": "prepared",
+      "style": "opacity: 0.55; translate: 0px 8px;"
+    }
+  ],
+  "note": "Phone samples capture preparation only; completion was checked separately. Header timing shortened about 20% after these card samples."
+}

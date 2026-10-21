@@ -2,6 +2,9 @@
 
 Status: **Approved by the user on 21 October 2026. Implementation authorized.**
 
+Follow-up: after implementation review, the user explicitly requested distinct header motion, warm abstract header backgrounds, and stronger body motion. MOTION_PLAN.md records that subsequent refinement.
+
+
 This approved proposal supersedes the earlier motion direction. Preserve the current page layouts, full-screen homepage hero, section order, orange/amber colors, factual content, routes, integrations, and seven languages.
 
 ## Problem to solve

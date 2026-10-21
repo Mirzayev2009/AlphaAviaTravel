@@ -27,6 +27,8 @@
   --surface: #f5f5f7;
   --surface-warm: #fff5e8;
   --line: #e5e5e8;
+  --intro-surface: #fff8ee;
+  --intro-ink: #705642;
   --ease-out: cubic-bezier(.215, .61, .355, 1);
   --card-hover-shadow: 0 12px 32px rgb(29 29 31 / .1);
 }
@@ -92,7 +94,7 @@ svg { flex-shrink: 0; }
 .page-intro + .catalog-section { padding-top: 36px; }
 .page-intro + .section { padding-top: 48px; }
 .intro-copy { position: relative; }
-.page-intro p { color: #705642; }
+.page-intro p { color: var(--intro-ink); }
 .page-intro h1 { max-width: 1000px; margin-inline: auto; font-size: clamp(38px, 5vw, 64px); line-height: 1.08; font-weight: 650; letter-spacing: -.04em; }
 .page-intro p { max-width: 660px; margin: 20px auto 0; font-size: 19px; line-height: 1.55; color: var(--ink-soft); text-wrap: pretty; }
 .page-intro .text-link { margin-top: 16px; }
@@ -221,7 +223,7 @@ svg { flex-shrink: 0; }
 .catalog-count { margin: 0 0 24px; color: var(--ink-soft); font-size: 13px; }
 .tour-heading { position: relative; isolation: isolate; padding-block: 52px 48px; }
 .tour-heading .intro-backdrop-art { opacity: .45; }
-.tour-heading .breadcrumbs, .tour-heading > .site-container > p, .tour-heading-meta { color: #705642; }
+.tour-heading .breadcrumbs, .tour-heading > .site-container > p, .tour-heading-meta { color: var(--intro-ink); }
 .tour-heading .breadcrumbs { display: flex; align-items: center; gap: 8px; margin-bottom: 28px; font-size: 13px; color: var(--ink-soft); }
 .breadcrumbs a { color: inherit; text-decoration: none; }
 .breadcrumbs a:hover { color: var(--brand-strong); }
@@ -368,8 +370,8 @@ svg { flex-shrink: 0; }
 .chat-page-heading { position: relative; isolation: isolate; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 24px; padding: 28px 30px; border-radius: 16px; flex-shrink: 0; }
 .chat-page-heading .intro-backdrop { border-radius: inherit; }
 .chat-page-heading .intro-backdrop-art { opacity: .4; }
-.chat-page-heading .intro-copy p { color: #705642; }
-.chat-page-heading > a { position: relative; background: #fff8ee; }
+.chat-page-heading .intro-copy p { color: var(--intro-ink); }
+.chat-page-heading > a { position: relative; background: var(--intro-surface); }
 .chat-page-heading > div { min-width: 0; }
 .chat-page-heading h1 { font-size: 32px; font-weight: 650; line-height: 1.15; letter-spacing: -.035em; }
 .chat-page-heading p { margin-top: 9px; color: var(--ink-soft); font-size: 15px; line-height: 1.5; }
@@ -429,7 +431,7 @@ svg { flex-shrink: 0; }
 .chat-launcher { position: fixed; bottom: max(24px, env(safe-area-inset-bottom)); right: 24px; z-index: 35; display: grid; place-items: center; width: 54px; height: 54px; border: 0; border-radius: 50%; background: var(--brand); color: var(--primary-foreground); box-shadow: 0 6px 24px rgb(90 49 0 / .15); transition: background .2s; }
 .chat-launcher:hover { background: #f9a12b; }
 .floating-chat { position: fixed; right: 24px; bottom: 92px; z-index: 45; width: min(420px, calc(100vw - 32px)); height: min(680px, calc(100dvh - 128px)); border-radius: 16px; box-shadow: 0 16px 70px rgb(29 29 31 / .16); border: 1px solid var(--line); background: #fff; overflow: hidden; container: chat-window / size; transform-origin: 100% 100%; }
-.floating-chat[data-state="closed"] { animation: chat-dismiss .14s ease-in both; pointer-events: none; }
+.floating-chat[data-state="closed"] { animation: chat-dismiss .22s ease-in both; pointer-events: none; }
 @keyframes chat-dismiss { to { opacity: 0; transform: translateY(8px); } }
 .floating-chat .chat-toolbar { padding: 14px 16px; gap: 10px; }
 .floating-chat .chat-toolbar-title { font-size: 15px; }
@@ -487,7 +489,7 @@ svg { flex-shrink: 0; }
   .floating-chat .chat-input-area { padding-bottom: max(8px, env(safe-area-inset-bottom, 0px)); }
 }
 .visa-page { background: var(--surface); min-height: 70dvh; }
-.visa-page .page-intro { background: #fff8ee; }
+.visa-page .page-intro { background: var(--intro-surface); }
 .visa-form-wrap { max-width: 650px; margin: 32px auto 0; }
 .visa-form-wrap h2 { font-size: 27px; font-weight: 600; letter-spacing: -.025em; }
 .visa-steps { display: flex; gap: 24px; list-style: none; margin: 0 0 24px; padding: 0; }
@@ -541,42 +543,25 @@ svg { flex-shrink: 0; }
 .category-tabs[data-motion-enhanced] .category-indicator { display: block; }
 .category-tabs button { position: relative; z-index: 1; }
 .category-tabs[data-motion-enhanced] button.is-selected { background: transparent; border-color: transparent; color: white; }
-.mobile-nav { animation: menu-arrive .18s var(--ease-out) both; }
-@keyframes menu-arrive { from { transform: translateY(-4px); opacity: .85; } to { transform: none; opacity: 1; } }
 .text-link svg { transition: transform .2s var(--ease-out); }
 @media (hover: hover) and (pointer: fine) { .text-link:hover svg { transform: translateX(2px); }.footer-column a:hover, .footer-bottom a:hover { text-decoration: underline; text-underline-offset: 4px; } }
 .icon-button:disabled { opacity: .35; cursor: default; transform: none; }
 .testimonial-stack { display: grid; }
 .testimonial-entry { grid-area: 1 / 1; min-height: 260px; }
 .testimonial-entry[data-active="false"] { visibility: hidden; pointer-events: none; }
-.motion-overlay[data-state="open"] { animation: overlay-arrive .16s ease-out both; }
-.motion-overlay[data-state="closed"] { animation: overlay-leave .18s ease-in both; }
+.motion-overlay[data-state="open"] { animation: overlay-arrive .24s ease-out both; }
+.motion-overlay[data-state="closed"] { animation: overlay-leave .3s ease-in both; }
 @keyframes overlay-arrive { from { opacity: 0; } to { opacity: 1; } }
 @keyframes overlay-leave { to { opacity: 0; } }
-.motion-sheet[data-state="closed"] { animation: sheet-leave .18s ease-in both; pointer-events: none; }
+.motion-sheet[data-state="closed"] { animation: sheet-leave .3s cubic-bezier(.37, 0, .63, 1) both; pointer-events: none; }
 .motion-sheet[data-side="right"] { --sheet-exit-x: 100%; --sheet-exit-y: 0%; }
 .motion-sheet[data-side="left"] { --sheet-exit-x: -100%; --sheet-exit-y: 0%; }
 .motion-sheet[data-side="top"] { --sheet-exit-x: 0%; --sheet-exit-y: -100%; }
 .motion-sheet[data-side="bottom"] { --sheet-exit-x: 0%; --sheet-exit-y: 100%; }
 @keyframes sheet-leave { to { transform: translate(var(--sheet-exit-x), var(--sheet-exit-y)); } }
-/* One authored arrival, available immediately without waiting for the motion chunk. */
+/* Page entrances are owned by the scoped GSAP controller. */
 .hero-accent { display: block; width: 72px; height: 2px; margin: 25px auto 20px; background: var(--amber); transform-origin: center; }
-.page-intro .intro-copy > p, .tour-heading .intro-copy > p, .tour-heading .tour-heading-meta, .tour-heading .breadcrumbs { color: #705642; }
+.page-intro .intro-copy > p, .tour-heading .intro-copy > p, .tour-heading .tour-heading-meta, .tour-heading .breadcrumbs { color: var(--intro-ink); }
 .hero-copy > .hero-accent + p { margin-top: 0; }
-@media (prefers-reduced-motion: no-preference) {
-  .hero-copy { animation: hero-arrive .85s cubic-bezier(.22, 1, .36, 1) backwards; }
-  .hero-copy[data-hero-advanced] { animation: none; }
-  .hero-actions { animation: action-arrive .65s .16s cubic-bezier(.22, 1, .36, 1) backwards; }
-  .hero-accent { animation: accent-draw .9s .12s cubic-bezier(.22, 1, .36, 1) backwards; }
-  .hero-controls { animation: control-arrive .5s .25s ease-out backwards; }
-  .intro-copy { animation: intro-arrive .65s cubic-bezier(.22, 1, .36, 1) backwards; }
-  .header-inner { animation: nav-arrive .5s ease-out backwards; }
-}
-@keyframes hero-arrive { from { transform: translateY(32px); opacity: .12; } to { transform: none; opacity: 1; } }
-@keyframes action-arrive { from { transform: translateY(12px); opacity: .25; } to { transform: none; opacity: 1; } }
-@keyframes accent-draw { from { transform: scaleX(.06); opacity: .2; } to { transform: none; opacity: 1; } }
-@keyframes control-arrive { from { opacity: .15; } to { opacity: 1; } }
-@keyframes intro-arrive { from { transform: translateY(20px); opacity: .35; } to { transform: none; opacity: 1; } }
-@keyframes nav-arrive { from { transform: translateY(-8px); opacity: .4; } to { transform: none; opacity: 1; } }
 @media (max-width: 767px) { .chat-page-heading { padding: 22px; }.hero-accent { margin-block: 22px 18px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

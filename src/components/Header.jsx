@@ -49,7 +49,7 @@ export default function Header({ overlay = false }) {
         <button ref={menuButton} type="button" className="menu-toggle" aria-label={t("header.toggleMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21}/> : <Menu size={21}/>}</button>
       </div>
     </div>
-    {open && <nav id="mobile-navigation" className="mobile-nav" aria-label={t("design.mainNavigation")}>
+    {open && <nav id="mobile-navigation" className="mobile-nav" data-motion="menu" aria-label={t("design.mainNavigation")}>
       {items.map(([key, path]) => <NavLink key={path} to={path} end={path === "/"} onClick={() => setOpen(false)}>{t("header.nav." + key)}</NavLink>)}
       <NavLink to="/chatbot" onClick={() => setOpen(false)}>{t("chatbot.navLabel")}</NavLink>
     </nav>}

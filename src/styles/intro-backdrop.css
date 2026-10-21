@@ -4,7 +4,7 @@
   z-index: -1;
   overflow: hidden;
   pointer-events: none;
-  background: #fff8ee;
+  background: var(--intro-surface, #fff8ee);
 }
 
 .intro-backdrop-art {

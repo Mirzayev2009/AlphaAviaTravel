@@ -28,23 +28,27 @@ export default function ChatPanel({ focusInput = false, headerActions, onNavigat
   const context = { language: i18n.resolvedLanguage || "en", page: location.pathname };
   useGSAP(() => {
     const arrived = lastMessage?.id !== previousMessage.current && !!lastMessage;
-    const changedStatus = status !== previousStatus.current;
     previousMessage.current = lastMessage?.id;
-    previousStatus.current = status;
-    if (!arrived && !changedStatus) return;
+    if (!arrived || (lastMessage.role !== "user" && !nearBottom.current)) return;
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
-      const feedback = gsap.timeline({ defaults: { ease: "power2.out", clearProps: "transform,opacity", overwrite: "auto" } });
-      if (arrived && (lastMessage.role === "user" || nearBottom.current)) {
-        const latest = list.current.querySelector(".chat-message:last-child");
-        feedback.fromTo(latest, { y: 5, opacity: .85 }, { y: 0, opacity: 1, duration: .2 }, 0);
-      }
-      if (changedStatus) feedback.fromTo(".chat-send svg", { opacity: .75 }, { opacity: 1, duration: .14 }, 0);
-      const state = root.current.querySelector(".chat-thinking, .chat-feedback");
-      if (changedStatus && state) feedback.fromTo(state, { opacity: .65 }, { opacity: 1, duration: .18 }, 0);
+      const latest = list.current.querySelector(".chat-message:last-child");
+      gsap.fromTo(latest, { y: 5, opacity: .85 }, { y: 0, opacity: 1, duration: .32, ease: "sine.out", clearProps: "transform,opacity" });
     });
     return () => media.revert();
-  }, { scope: root, dependencies: [lastMessage?.id, status], revertOnUpdate: true });
+  }, { scope: root, dependencies: [lastMessage?.id], revertOnUpdate: true });
+  useGSAP(() => {
+    if (status === previousStatus.current) return;
+    previousStatus.current = status;
+    const media = gsap.matchMedia();
+    media.add("(prefers-reduced-motion: no-preference)", () => {
+      const feedback = gsap.timeline({ defaults: { ease: "sine.out", clearProps: "opacity", overwrite: "auto" } });
+      feedback.fromTo(".chat-send svg", { opacity: .75 }, { opacity: 1, duration: .18 }, 0);
+      const state = root.current.querySelector(".chat-thinking, .chat-feedback");
+      if (state) feedback.fromTo(state, { opacity: .75 }, { opacity: 1, duration: .24 }, 0);
+    });
+    return () => media.revert();
+  }, { scope: root, dependencies: [status], revertOnUpdate: true });
   useEffect(() => { if (focusInput) field.current?.focus(); }, [focusInput]);
   useLayoutEffect(() => {
     if (!field.current) return;

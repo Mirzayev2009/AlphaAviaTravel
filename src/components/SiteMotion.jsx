@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -5,59 +6,83 @@ gsap.registerPlugin(useGSAP);
 
 // Loaded separately from the page. Content never waits for this enhancement.
 export default function SiteMotion({ root, page }) {
+  const played = useRef(new WeakSet());
+  const initialized = useRef(false);
   useGSAP(() => {
     const scope = root.current;
-    const seen = new WeakSet();
+    const seen = played.current;
+    const freshPage = initialized.current;
+    initialized.current = true;
     const media = gsap.matchMedia();
+    let freshScan = freshPage && window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
     media.add("(prefers-reduced-motion: no-preference)", (context) => {
       let alive = true;
       const registered = new WeakSet();
       const pendingDisclosures = new Map();
       const cleanups = [];
+      const prepared = new Set();
+      const inView = (node) => {
+        const box = node.getBoundingClientRect();
+        return box.width > 0 && box.height > 0 && box.bottom > 0 && box.top < window.innerHeight;
+      };
+      const begin = (node) => {
+        seen.add(node);
+        node.dataset.motionPhase = "entering";
+        node.dataset.motionRuns = String(Number(node.dataset.motionRuns || 0) + 1);
+      };
+      const finish = (node) => { prepared.delete(node); node.dataset.motionPhase = "entered"; };
+      const settle = (node) => { seen.add(node); node.dataset.motionPhase = "settled"; };
+      const prepare = (node) => {
+        const kind = node.dataset.motion;
+        const distance = window.innerWidth < 768 ? 8 : 12;
+        const story = kind === "composition" && node.matches(".why-layout, .about-story") && window.innerWidth >= 768;
+        gsap.set(node, { translate: kind === "feedback" ? "0px 0px" : story ? "-12px 0px" : "0px " + distance + "px", opacity: kind === "feedback" ? .75 : .55 });
+        prepared.add(node);
+        node.dataset.motionPhase = "prepared";
+        viewport.observe(node);
+      };
       const enter = context.add("enter", (elements) => {
         const cards = elements.filter((node) => node.dataset.motion === "card");
         const others = elements.filter((node) => node.dataset.motion !== "card");
-        if (cards.length) gsap.fromTo(cards, { translate: window.innerWidth < 768 ? "0px 18px" : "0px 28px", opacity: .18 }, { translate: "0px 0px", opacity: 1, duration: .6, stagger: { amount: .18 }, ease: "power3.out", clearProps: "translate,opacity", overwrite: "auto" });
-        for (const node of others) {
-          const moving = node.dataset.motion === "composition";
-          const story = node.matches(".why-layout, .about-story") && window.innerWidth >= 768;
-          gsap.fromTo(node, { translate: moving ? (story ? "-24px 0px" : "0px 20px") : "0px 0px", opacity: moving ? .24 : .65 }, { translate: "0px 0px", opacity: 1, duration: moving ? .65 : .2, ease: "power3.out", clearProps: "translate,opacity", overwrite: "auto" });
-        }
+        elements.forEach(begin);
+        // Play toward the endpoint already prepared offscreen; never reset visible content.
+        if (cards.length) gsap.to(cards, { translate: "0px 0px", opacity: 1, duration: .95, stagger: { amount: Math.min(.14, (cards.length - 1) * .07) }, ease: "sine.out", clearProps: "translate,opacity", overwrite: "auto", onComplete: () => cards.forEach(finish) });
+        for (const node of others) gsap.to(node, { translate: "0px 0px", opacity: 1, duration: node.dataset.motion === "feedback" ? .3 : .9, ease: "sine.out", clearProps: "translate,opacity", overwrite: "auto", onComplete: () => finish(node) });
       });
       const viewport = new IntersectionObserver((entries) => {
         if (!alive) return;
         const entering = [];
         for (const entry of entries) {
-          if (!entry.isIntersecting || entry.intersectionRatio < .12 || seen.has(entry.target)) continue;
+          if (!entry.isIntersecting || seen.has(entry.target) || !prepared.has(entry.target)) continue;
           seen.add(entry.target);
-          entry.target.dataset.motionPhase = "entered";
           viewport.unobserve(entry.target);
           entering.push(entry.target);
         }
         if (entering.length) enter(entering);
-      }, { threshold: .12 });
+      }, { threshold: 0, rootMargin: "0px 0px -32px 0px" });
 
       const intro = context.add("intro", (node) => {
+        begin(node);
         const art = [...node.querySelectorAll(".intro-backdrop-art")];
         const restingOpacity = art.map((element) => Number(getComputedStyle(element).opacity));
-        if (art.length) gsap.fromTo(art, { x: (index) => index ? 80 : -65, y: 14, opacity: .2 }, { x: 0, y: 0, opacity: (index) => restingOpacity[index], duration: .95, stagger: .07, ease: "power3.out", clearProps: "transform,opacity" });
+        const copy = node.querySelector(".intro-copy");
+        const scene = gsap.timeline({ defaults: { ease: "sine.out" }, onComplete: () => finish(node) }).timeScale(1.2);
+        if (copy) scene.fromTo(copy, { translate: "0px 12px", opacity: .65 }, { translate: "0px 0px", opacity: 1, duration: .8, clearProps: "translate,opacity" }, 0);
+        if (art.length) scene.fromTo(art, { x: (index) => index ? 28 : -24, opacity: (index) => restingOpacity[index] * .65 }, { x: 0, opacity: (index) => restingOpacity[index], duration: 1, stagger: .06, clearProps: "transform,opacity" }, 0);
         const lines = node.querySelectorAll(".intro-backdrop-detail path");
-        if (lines.length) gsap.fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.15, stagger: .08, ease: "power2.out", clearProps: "strokeDasharray,strokeDashoffset" });
-        node.dataset.motionPhase = "entered";
+        if (lines.length) scene.fromTo(lines, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.12, stagger: .06, clearProps: "strokeDasharray,strokeDashoffset" }, .08);
       });
-
-      const filterResults = context.add("filterResults", (group) => {
-        const section = group.closest("section");
-        const grid = section?.querySelector(".tour-grid");
-        if (!grid) return;
-        // The result change is one action; later rows still arrive on scroll.
-        for (const cell of [...grid.children].slice(0, 6)) {
-          const bounds = cell.getBoundingClientRect();
-          if (bounds.top < window.innerHeight && bounds.bottom > 0) {
-            seen.add(cell); viewport.unobserve(cell); cell.dataset.motionPhase = "entered";
-          }
-        }
-        gsap.fromTo(grid, { opacity: .82 }, { opacity: 1, duration: .2, ease: "power2.out", clearProps: "opacity", overwrite: "auto" });
+      const hero = context.add("hero", (node) => {
+        begin(node);
+        const scene = gsap.timeline({ defaults: { ease: "sine.out" }, onComplete: () => finish(node) }).timeScale(1.2);
+        scene.fromTo(node, { translate: "0px 16px", opacity: .65 }, { translate: "0px 0px", opacity: 1, duration: .85, clearProps: "translate,opacity" }, 0);
+        const accent = node.querySelector(".hero-accent");
+        if (accent) scene.fromTo(accent, { scaleX: .4 }, { scaleX: 1, duration: .92, clearProps: "transform" }, .08);
+        // The copy/actions travel as one unit, without a second nested rise.
+      });
+      const menu = context.add("menu", (node) => {
+        begin(node);
+        gsap.fromTo(node, { translate: "0px -6px", opacity: .7 }, { translate: "0px 0px", opacity: 1, duration: .4, ease: "sine.out", clearProps: "translate,opacity", onComplete: () => finish(node) });
       });
 
       function selection(group) {
@@ -73,7 +98,7 @@ export default function SiteMotion({ root, page }) {
           gsap.killTweensOf(indicator);
           gsap.set(indicator, { width: next.width, height: next.height });
           const end = { x: next.left - box.left, y: next.top - box.top, scaleX: 1, scaleY: 1 };
-          if (animate && positioned) gsap.fromTo(indicator, { x: current.left - box.left, y: current.top - box.top, scaleX: current.width / next.width, scaleY: current.height / next.height }, { ...end, duration: .22, ease: "power2.out", overwrite: "auto" });
+          if (animate && positioned) gsap.fromTo(indicator, { x: current.left - box.left, y: current.top - box.top, scaleX: current.width / next.width, scaleY: current.height / next.height }, { ...end, duration: .34, ease: "sine.out", overwrite: "auto" });
           else gsap.set(indicator, end);
           group.dataset.motionEnhanced = "true";
           positioned = true;
@@ -82,35 +107,41 @@ export default function SiteMotion({ root, page }) {
         const resize = new ResizeObserver(() => position());
         resize.observe(group);
         group.querySelectorAll("button").forEach((button) => resize.observe(button));
-        const changes = new MutationObserver(() => { if (alive) { position(true); filterResults(group); } });
+        const changes = new MutationObserver(() => { if (alive) { position(true); } });
         changes.observe(group, { subtree: true, attributes: true, attributeFilter: ["aria-pressed"] });
         cleanups.push(() => { resize.disconnect(); changes.disconnect(); delete group.dataset.motionEnhanced; });
       }
 
-      function register(node) {
+      function register(node, fresh, visible) {
         if (registered.has(node)) return;
         registered.add(node);
         const kind = node.dataset.motion;
-        if (kind === "intro") { intro(node); return; }
         if (kind === "selection") { selection(node); return; }
-        if (["step", "review", "form", "hero"].includes(kind)) return;
-        if (["card", "composition", "rail", "feedback"].includes(kind) && !seen.has(node)) viewport.observe(node);
+        if (["step", "review", "form"].includes(kind)) return;
+        if (seen.has(node)) return;
+        // The lazy controller may attach after paint. Never rewind readable content.
+        if (!fresh && visible) { settle(node); return; }
+        if (kind === "intro") { intro(node); return; }
+        if (kind === "hero") { hero(node); return; }
+        if (kind === "menu") { menu(node); return; }
+        if (["card", "composition", "rail", "feedback"].includes(kind)) prepare(node);
       }
-      function scan(node) {
+      function scan(node, fresh = false) {
         if (!(node instanceof Element)) return;
-        if (node.matches("[data-motion]")) register(node);
-        node.querySelectorAll("[data-motion]").forEach(register);
+        const nodes = [...(node.matches("[data-motion]") ? [node] : []), ...node.querySelectorAll("[data-motion]")];
+        // Read eligibility together, then prepare with GSAP before the next paint.
+        const visibility = fresh ? [] : nodes.map(inView);
+        nodes.forEach((element, index) => register(element, fresh, visibility[index]));
       }
 
       const stateChanged = context.add("stateChanged", (node, before) => {
         if (node.dataset.motion === "hero") {
-          node.dataset.heroAdvanced = "true";
-          gsap.fromTo(node, { translate: "0px 18px", opacity: .35 }, { translate: "0px 0px", opacity: 1, duration: .5, ease: "power3.out", clearProps: "translate,opacity", overwrite: "auto" });
+          gsap.to(node, { translate: "0px 0px", opacity: 1, duration: .6, ease: "sine.out", clearProps: "translate,opacity", overwrite: "auto" });
         } else if (node.dataset.motion === "step") {
           const direction = Number(node.dataset.motionState) > Number(before) ? 1 : -1;
-          gsap.fromTo(node, { translate: `${direction * 8}px 0px`, opacity: .84 }, { translate: "0px 0px", opacity: 1, duration: .24, ease: "power2.out", clearProps: "translate,opacity", overwrite: "auto" });
+          gsap.fromTo(node, { translate: `${direction * 6}px 0px`, opacity: .84 }, { translate: "0px 0px", opacity: 1, duration: .42, ease: "sine.out", clearProps: "translate,opacity", overwrite: "auto" });
         } else if (node.dataset.motion === "review") {
-          gsap.fromTo(node, { opacity: .75 }, { opacity: 1, duration: .2, ease: "power2.out", clearProps: "opacity", overwrite: "auto" });
+          gsap.fromTo(node, { opacity: .75 }, { opacity: 1, duration: .32, ease: "sine.out", clearProps: "opacity", overwrite: "auto" });
         } else if (node.dataset.motion === "form") {
           const button = node.querySelector('[type="submit"]');
           if (button) gsap.fromTo(button, { opacity: .75 }, { opacity: 1, duration: .16, clearProps: "opacity", overwrite: "auto" });
@@ -121,16 +152,17 @@ export default function SiteMotion({ root, page }) {
         for (const record of records) {
           if (record.type === "attributes") stateChanged(record.target, record.oldValue);
           else {
-            record.addedNodes.forEach(scan);
+            record.addedNodes.forEach((node) => scan(node, true));
             record.removedNodes.forEach((node) => {
-              if (!(node instanceof Element)) return;
-              viewport.unobserve(node);
-              node.querySelectorAll("[data-motion]").forEach((child) => viewport.unobserve(child));
+              if (!(node instanceof Element) || scope.contains(node)) return;
+              const removed = [node, ...node.querySelectorAll("[data-motion]")];
+              removed.forEach((element) => { viewport.unobserve(element); prepared.delete(element); gsap.killTweensOf(element); });
             });
           }
         }
       });
-      scan(scope);
+      scan(scope, freshScan);
+      freshScan = false;
       updates.observe(scope, { subtree: true, childList: true, attributes: true, attributeOldValue: true, attributeFilter: ["data-motion-state"] });
 
       const disclosure = context.add("disclosure", (event) => {
@@ -146,7 +178,7 @@ export default function SiteMotion({ root, page }) {
         details.open = true;
         const to = opening ? details.getBoundingClientRect().height : summary.getBoundingClientRect().height;
         summary.focus({ preventScroll: true });
-        gsap.fromTo(details, { height: from, overflow: "hidden" }, { height: to, duration: opening ? .24 : .18, ease: "power2.out", onComplete: () => {
+        gsap.fromTo(details, { height: from, overflow: "hidden" }, { height: to, duration: opening ? .36 : .28, ease: "sine.out", onComplete: () => {
           details.open = opening;
           details.style.height = ""; details.style.overflow = "";
           pendingDisclosures.delete(details);
@@ -156,6 +188,8 @@ export default function SiteMotion({ root, page }) {
       return () => {
         alive = false;
         viewport.disconnect(); updates.disconnect();
+        prepared.forEach((node) => { node.dataset.motionPhase = seen.has(node) ? "entered" : "idle"; });
+        prepared.clear();
         scope.removeEventListener("click", disclosure);
         cleanups.forEach((cleanup) => cleanup());
         pendingDisclosures.forEach((opening, details) => { details.open = opening; details.style.height = ""; details.style.overflow = ""; });

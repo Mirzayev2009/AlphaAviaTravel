@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T16:59:52.543Z",
+  "generatedAt": "2026-10-21T18:26:48.110Z",
   "title": "Design System: Alpha Avia Travel",
   "extensions": {
     "colorMeta": {
@@ -273,6 +273,16 @@
           "oklch(0.8357 0.0076 286.15)",
           "oklch(0.9500 0.0076 286.15)"
         ]
+      },
+      "intro-surface": {
+        "role": "neutral",
+        "displayName": "Warm Header Ivory",
+        "canonical": "#fff8ee"
+      },
+      "intro-ink": {
+        "role": "neutral",
+        "displayName": "Warm Header Ink",
+        "canonical": "#705642"
       }
     },
     "typographyMeta": {
@@ -339,8 +349,8 @@
     "motion": [
       {
         "name": "feedback",
-        "value": ".14–.22s power2.out",
-        "purpose": "Immediate control, selection, result, and local form/message feedback."
+      "value": ".16s form; .3s feedback; .32s review",
+      "purpose": "Local response without moving fields or delaying content changes; selection and message timings have separate roles."
       },
       {
         "name": "card-feedback",
@@ -348,44 +358,54 @@
         "purpose": "Keep existing fine-pointer hover independent from whole-card arrival; reduced motion removes travel."
       },
       {
-        "name": "body-arrival",
-        "value": ".36–.38s power2.out; .08s total capped stagger",
-        "purpose": "One observer; whole groups move 6px, cards 6px phone / 10px desktop; at most six cards together."
-      },
-      {
         "name": "drawer",
-        "value": ".3s enter / .18s exit",
+      "value": ".48s sine.out enter / .3s exit",
         "purpose": "Enter from the actual edge with modal semantics, content retention, focus return, and cancellation."
       },
       {
         "name": "photo-viewer",
-        "value": ".32s expand / .2s return / .16s image change",
+      "value": ".48s expand / .3s return, sine.inOut; .26s image change",
         "purpose": "Real thumbnail geometry, inverse scale preserves image proportions; fast navigation cancels old work."
       },
       {
         "name": "disclosure",
-        "value": ".24s open / .18s close",
+      "value": ".36s open / .28s close, sine.out",
         "purpose": "Localized measured expansion, native semantics, and interruption reversal."
       },
       {
         "name": "chat-window-open",
-        "value": ".24s power2.out",
+      "value": ".4s sine.out",
         "purpose": "One anchored 6px phone / 8px desktop composition; no scale pop or prompt cascade."
       },
       {
         "name": "chat-handoff",
-        "value": ".2s message / .14s action icon",
-        "purpose": "Newest message moves 5px; preserve history, draft, and reading position."
+      "value": ".32s message / .18s action icon / .24s status, sine.out",
+      "purpose": "Newest message moves 5px independently of status feedback; preserve history, draft, and reading position."
       },
       {
         "name": "visa-step",
-        "value": ".24s power2.out",
-        "purpose": "8px directional travel, immediate progress and independent accessible heading focus."
+      "value": ".42s sine.out",
+      "purpose": "6px directional travel, immediate progress and independent accessible heading focus."
+      },
+      {
+        "name": "body-arrival",
+      "value": ".95s cards; .9s compositions/rails, sine.out; .14s maximum total stagger",
+      "purpose": "12px desktop / 8px phone travel; desktop stories move 12px horizontally. Prepare offscreen or fresh content before paint, leave already-visible content in place, and never replay the same node."
       },
       {
         "name": "hero-playback",
-        "value": ".4s crossfade",
-        "purpose": "Stable readable copy; no photo zoom. Pause offscreen, hidden, hovered/focused, manually, or under reduced motion."
+      "value": "1.2× entrance playback: ~.708s copy / .767s accent; .6s copy settle, sine.out; .4s photo crossfade",
+      "purpose": "Whole copy/actions travel together 16px. Authored .85s copy / .92s accent / .08s offset stay unchanged; effective accent offset is ~.067s. No nested rise, copy reset, word splitting, or photo zoom. Existing pause/visibility/reduced-motion controls."
+      },
+      {
+        "name": "category-results",
+      "value": ".34s selection pill, sine.out",
+      "purpose": "Results update immediately and use only their own one-time card arrival; no second translating/fading grid layer."
+      },
+      {
+        "name": "header-arrival",
+      "value": "1.2× entrance playback: ~.667s copy / .833s artwork / .933s contour draw, sine.out",
+      "purpose": "GSAP owns the 12px copy entrance, 24–28px amber artwork travel, and finite contour draw. Authored .8s / 1s / 1.12s values stay unchanged; .06s stagger / .08s path offset scale to .05s / ~.067s. Visible content is not rewound when the deferred controller attaches."
       }
     ],
     "breakpoints": [

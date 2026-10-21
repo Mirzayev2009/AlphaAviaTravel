@@ -63,7 +63,7 @@ function SheetContent({
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       const axis = side === "right" || side === "left" ? "xPercent" : "yPercent";
-      gsap.fromTo(node, { [axis]: side === "left" || side === "top" ? -100 : 100 }, { [axis]: 0, duration: .3, ease: "power2.out", clearProps: "transform" });
+      gsap.fromTo(node, { [axis]: side === "left" || side === "top" ? -100 : 100 }, { [axis]: 0, duration: .48, ease: "sine.out", clearProps: "transform" });
     });
     return () => media.revert();
   }, { scope: node, dependencies: [node, side], revertOnUpdate: true });

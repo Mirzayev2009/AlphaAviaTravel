@@ -21,7 +21,7 @@ export default function FloatingChat({ open, onClose, launcher }) {
     if (!node || !open) return;
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
-      gsap.fromTo(node, { y: compact ? 6 : 8, opacity: .9 }, { y: 0, opacity: 1, duration: .24, ease: "power2.out", clearProps: "transform,opacity" });
+      gsap.fromTo(node, { y: compact ? 6 : 8, opacity: .9 }, { y: 0, opacity: 1, duration: .4, ease: "sine.out", clearProps: "transform,opacity" });
     });
     return () => media.revert();
   }, { scope: root, dependencies: [node, compact, open], revertOnUpdate: true });

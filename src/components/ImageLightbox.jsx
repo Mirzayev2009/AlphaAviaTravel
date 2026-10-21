@@ -48,7 +48,7 @@ export default function ImageLightbox({ images, index, origin, onIndexChange, on
       photograph.style.transform = "scale(" + cover / value.sx + "," + cover / value.sy + ")";
     };
     draw();
-    transition.current = gsap.to(value, { x: end.x, y: end.y, sx: end.sx, sy: end.sy, duration, ease: "power2.out", onUpdate: draw, onComplete: () => {
+    transition.current = gsap.to(value, { x: end.x, y: end.y, sx: end.sx, sy: end.sy, duration, ease: "sine.inOut", onUpdate: draw, onComplete: () => {
       element.style.transform = ""; photograph.style.transform = ""; onComplete?.();
     } });
   }
@@ -63,10 +63,10 @@ export default function ImageLightbox({ images, index, origin, onIndexChange, on
         if (closing.current || !photograph?.naturalWidth) return;
         if (first.current && origin?.isConnected) {
           first.current = false;
-          movePhoto(origin.getBoundingClientRect(), null, .32);
+          movePhoto(origin.getBoundingClientRect(), null, .48);
         } else {
           first.current = false;
-          gsap.fromTo(element, { opacity: .8 }, { opacity: 1, duration: .16, clearProps: "opacity", overwrite: "auto" });
+          gsap.fromTo(element, { opacity: .8 }, { opacity: 1, duration: .26, ease: "sine.out", clearProps: "opacity", overwrite: "auto" });
         }
       });
       if (photograph?.complete) ready();
@@ -85,8 +85,8 @@ export default function ImageLightbox({ images, index, origin, onIndexChange, on
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { onClose(); return; }
     transition.current?.kill();
     const source = frame.current?.getBoundingClientRect();
-    if (source && visible) movePhoto(source, destination, .2, onClose);
-    else gsap.to(root.current, { opacity: 0, duration: .14, onComplete: onClose });
+    if (source && visible) movePhoto(source, destination, .3, onClose);
+    else gsap.to(root.current, { opacity: 0, duration: .2, onComplete: onClose });
   });
   const change = (step) => { if (!closing.current) onIndexChange((index + images.length + step) % images.length); };
   return <Dialog open onOpenChange={(open) => { if (!open) close(); }}>
