@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-21T06:20:00.000Z",
+  "generatedAt": "2026-10-21T16:59:52.543Z",
   "title": "Design System: Alpha Avia Travel",
   "extensions": {
     "colorMeta": {
@@ -329,53 +329,63 @@
         "name": "office-marker",
         "value": "0 3px 12px rgb(29 29 31 / .15)",
         "purpose": "Local map marker legibility."
+      },
+      {
+        "name": "card-hover-shadow",
+        "value": "0 12px 32px rgb(29 29 31 / .1)",
+        "purpose": "Shared interactive-card hover and keyboard-focus elevation."
       }
     ],
     "motion": [
       {
-        "name": "ease-out",
-        "value": "cubic-bezier(.16, 1, .3, 1)",
-        "purpose": "Shared CSS state and media easing."
+        "name": "feedback",
+        "value": ".14–.22s power2.out",
+        "purpose": "Immediate control, selection, result, and local form/message feedback."
       },
       {
-        "name": "state-duration",
-        "value": ".2s",
-        "purpose": "Button background/press, input border, and disclosure icon feedback."
+        "name": "card-feedback",
+        "value": ".32s cubic-bezier(.215,.61,.355,1)",
+        "purpose": "Keep existing fine-pointer hover independent from whole-card arrival; reduced motion removes travel."
       },
       {
-        "name": "media-hover",
-        "value": ".5s",
-        "purpose": "Service and gallery image hover."
+        "name": "body-arrival",
+        "value": ".36–.38s power2.out; .08s total capped stagger",
+        "purpose": "One observer; whole groups move 6px, cards 6px phone / 10px desktop; at most six cards together."
       },
       {
-        "name": "tour-media-hover",
-        "value": ".65s",
-        "purpose": "Tour and destination image hover, on hover-capable devices."
+        "name": "drawer",
+        "value": ".3s enter / .18s exit",
+        "purpose": "Enter from the actual edge with modal semantics, content retention, focus return, and cancellation."
       },
       {
-        "name": "hero-intro",
-        "value": ".75s expo.out",
-        "purpose": "GSAP hero copy entry with .06s stagger; 16px heading and 12px supporting travel."
+        "name": "photo-viewer",
+        "value": ".32s expand / .2s return / .16s image change",
+        "purpose": "Real thumbnail geometry, inverse scale preserves image proportions; fast navigation cancels old work."
       },
       {
-        "name": "hero-scroll-scale",
-        "value": "1 to 1.045; scrub .7",
-        "purpose": "GSAP panorama scale over the hero's scroll span."
+        "name": "disclosure",
+        "value": ".24s open / .18s close",
+        "purpose": "Localized measured expansion, native semantics, and interruption reversal."
       },
       {
-        "name": "carousel-fade",
-        "value": "650ms",
-        "purpose": "Swiper crossfade; 0ms under reduced motion."
+        "name": "chat-window-open",
+        "value": ".24s power2.out",
+        "purpose": "One anchored 6px phone / 8px desktop composition; no scale pop or prompt cascade."
       },
       {
-        "name": "carousel-autoplay",
-        "value": "7500ms",
-        "purpose": "Pausable slide delay; paused on hover/focus and disabled for reduced motion."
+        "name": "chat-handoff",
+        "value": ".2s message / .14s action icon",
+        "purpose": "Newest message moves 5px; preserve history, draft, and reading position."
       },
       {
-        "name": "reduced-motion",
-        "value": ".01ms",
-        "purpose": "CSS transition/animation duration when reduced motion is requested; smooth scrolling, hero animation and autoplay are disabled."
+        "name": "visa-step",
+        "value": ".24s power2.out",
+        "purpose": "8px directional travel, immediate progress and independent accessible heading focus."
+      },
+      {
+        "name": "hero-playback",
+        "value": ".4s crossfade",
+        "purpose": "Stable readable copy; no photo zoom. Pause offscreen, hidden, hovered/focused, manually, or under reduced motion."
       }
     ],
     "breakpoints": [
@@ -408,7 +418,7 @@
       "refersTo": "button-primary",
       "description": "The main inquiry or continue action; the height is a minimum.",
       "html": "<button type=\"button\" class=\"ds-primary ds-focus\">Send booking inquiry <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-7-7 7 7-7 7\"/></svg></button>",
-      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid transparent;border-radius:999px;background:var(--brand,#ff8a00);color:var(--primary-foreground,#241708);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-primary:hover{background:#f9a12b}.ds-primary:active{transform:scale(.98)}.ds-primary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid transparent;border-radius:999px;background:var(--brand,#ff8a00);color:var(--primary-foreground,#241708);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.215,.61,.355,1))}.ds-primary:hover{background:#f9a12b}.ds-primary:active{transform:scale(.98)}.ds-primary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
     },
     {
       "name": "Secondary Button",
@@ -416,7 +426,7 @@
       "refersTo": "button-secondary",
       "description": "Neutral bordered action used beside a primary step; tour cards also apply the small size.",
       "html": "<button type=\"button\" class=\"ds-secondary ds-focus\">Back</button>",
-      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-secondary:hover{background:var(--surface,#f5f5f7)}.ds-secondary:active{transform:scale(.98)}.ds-secondary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 23px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font:600 14px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif;text-align:center;white-space:nowrap;cursor:pointer;transition:background .2s,color .2s,transform .2s var(--ease-out,cubic-bezier(.215,.61,.355,1))}.ds-secondary:hover{background:var(--surface,#f5f5f7)}.ds-secondary:active{transform:scale(.98)}.ds-secondary:disabled{cursor:not-allowed;opacity:.5}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
     },
     {
       "name": "Text Link",
@@ -448,7 +458,7 @@
       "refersTo": "navigation",
       "description": "The compact current-route navigation and larger mobile link treatment. The mobile sample depicts an already expanded menu; production toggling is handled by React.",
       "html": "<div class=\"ds-nav\"><nav class=\"ds-nav-desktop\" aria-label=\"Main navigation\"><a class=\"ds-focus\" href=\"/\">Home</a><a class=\"ds-focus\" href=\"/tours\" aria-current=\"page\">Tours</a><a class=\"ds-focus\" href=\"/destinations\">Destinations</a></nav><nav class=\"ds-nav-mobile\" aria-label=\"Expanded mobile navigation\"><a class=\"ds-focus\" href=\"/\">Home</a><a class=\"ds-focus\" href=\"/tours\" aria-current=\"page\">Tours</a><a class=\"ds-focus\" href=\"/destinations\">Destinations</a></nav></div>",
-      "css": ".ds-nav{background:rgb(255 255 255 / .95);border-bottom:1px solid rgb(229 229 232 / .7);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-nav-desktop{display:flex;align-items:center;justify-content:center;gap:22px;min-height:72px}.ds-nav-desktop a{position:relative;padding-block:25px;color:#515154;font-size:12px;font-weight:500;white-space:nowrap;text-decoration:none;transition:color .2s}.ds-nav-desktop a:hover,.ds-nav-desktop a[aria-current]{color:var(--ink,#1d1d1f)}.ds-nav-desktop a[aria-current]::after{content:\"\";position:absolute;left:0;right:0;bottom:15px;height:2px;background:var(--brand,#ff8a00)}.ds-nav-mobile{display:none;border-top:1px solid var(--line,#e5e5e8);padding:12px 24px 24px}.ds-nav-mobile a{display:flex;padding:13px 0;color:var(--ink,#1d1d1f);font-size:18px;font-weight:500;text-decoration:none}.ds-nav-mobile a[aria-current]{color:var(--brand-strong,#a74b00)}@supports(backdrop-filter:blur(12px)){.ds-nav{background:rgb(255 255 255 / .88);backdrop-filter:blur(14px)}}@media(max-width:1199px){.ds-nav-desktop{gap:16px}}@media(max-width:1023px){.ds-nav-desktop{display:none}.ds-nav-mobile{display:grid}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+      "css": ".ds-nav{background:rgb(255 255 255 / .95);border-bottom:1px solid rgb(229 229 232 / .7);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-nav-desktop{display:flex;align-items:center;justify-content:center;gap:22px;min-height:72px}.ds-nav-desktop a{position:relative;padding-block:25px;color:#515154;font-size:14px;font-weight:500;white-space:nowrap;text-decoration:none;transition:color .2s}.ds-nav-desktop a:hover,.ds-nav-desktop a[aria-current]{color:var(--ink,#1d1d1f)}.ds-nav-desktop a[aria-current]::after{content:\"\";position:absolute;left:0;right:0;bottom:15px;height:2px;background:var(--brand,#ff8a00)}.ds-nav-mobile{display:none;border-top:1px solid var(--line,#e5e5e8);padding:12px 24px 24px}.ds-nav-mobile a{display:flex;padding:13px 0;color:var(--ink,#1d1d1f);font-size:18px;font-weight:500;text-decoration:none}.ds-nav-mobile a[aria-current]{color:var(--brand-strong,#a74b00)}@supports(backdrop-filter:blur(12px)){.ds-nav{background:rgb(255 255 255 / .88);backdrop-filter:blur(14px)}}@media(max-width:1199px){.ds-nav-desktop{gap:16px}}@media(max-width:1023px){.ds-nav-desktop{display:none}.ds-nav-mobile{display:grid}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
     },
     {
       "name": "Category Chips",
@@ -464,7 +474,7 @@
       "refersTo": "tour-card",
       "description": "Actual tour-card content anatomy; descriptive placeholders avoid invented product facts. The photographic media slot is omitted from this portable primitive.",
       "html": "<article class=\"ds-card\"><div class=\"ds-card-body\"><p class=\"ds-card-meta\">Duration</p><h3><a class=\"ds-focus\" href=\"/tours\">Tour title</a></h3><p class=\"ds-card-destination\">Destination</p><p class=\"ds-card-description\">Tour description</p><div class=\"ds-card-bottom\"><div class=\"ds-price\"><strong>Price</strong><small>per person</small></div><a class=\"ds-card-action ds-focus\" href=\"/tours\">View tour</a></div></div></article>",
-      "css": ".ds-card{min-width:0;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:var(--background,#fff);color:var(--ink,#1d1d1f);box-shadow:0 4px 18px rgb(29 29 31 / .035);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-card-body{flex:1;display:flex;flex-direction:column;gap:14px;padding:25px}.ds-card p,.ds-card h3{margin:0}.ds-card-meta{color:var(--brand-strong,#a74b00);font-size:12px;font-weight:600}.ds-card h3{font-size:21px;line-height:1.28;font-weight:650;letter-spacing:-.025em;text-wrap:balance}.ds-card h3 a{color:inherit;text-decoration:none}.ds-card h3 a:hover{color:var(--brand-strong,#a74b00)}.ds-card-destination{color:var(--ink-soft,#65656b);font-size:13px;line-height:1.5}.ds-card-description{color:#55555c;font-size:14px;line-height:1.6}.ds-card-bottom{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:20px;border-top:1px solid var(--line,#e5e5e8)}.ds-price{display:flex;flex-direction:column;gap:3px}.ds-price strong{font-size:25px;line-height:1.15;font-weight:650;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.ds-price small{font-size:11px;color:var(--ink-soft,#65656b)}.ds-card-action{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 17px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font-size:13px;line-height:1.3;font-weight:600;text-align:center;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s var(--ease-out,cubic-bezier(.16,1,.3,1))}.ds-card-action:hover{background:var(--surface,#f5f5f7)}.ds-card-action:active{transform:scale(.98)}@media(max-width:767px){.ds-card-body{padding:22px}.ds-card h3{font-size:20px}.ds-card-action{font-size:12px;padding-inline:16px}}@media(max-width:579px){.ds-card h3{font-size:22px}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+      "css": ".ds-card{min-width:0;display:flex;flex-direction:column;border-radius:16px;overflow:hidden;background:var(--background,#fff);color:var(--ink,#1d1d1f);box-shadow:0 4px 18px rgb(29 29 31 / .035);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-card-body{flex:1;display:flex;flex-direction:column;gap:14px;padding:25px}.ds-card p,.ds-card h3{margin:0}.ds-card-meta{color:var(--brand-strong,#a74b00);font-size:12px;font-weight:600}.ds-card h3{font-size:21px;line-height:1.28;font-weight:650;letter-spacing:-.025em;text-wrap:balance}.ds-card h3 a{color:inherit;text-decoration:none}.ds-card h3 a:hover{color:var(--brand-strong,#a74b00)}.ds-card-destination{color:var(--ink-soft,#65656b);font-size:13px;line-height:1.5}.ds-card-description{color:#55555c;font-size:14px;line-height:1.6}.ds-card-bottom{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-top:auto;padding-top:20px;border-top:1px solid var(--line,#e5e5e8)}.ds-price{display:flex;flex-direction:column;gap:3px}.ds-price strong{font-size:25px;line-height:1.15;font-weight:650;letter-spacing:-.03em;font-variant-numeric:tabular-nums}.ds-price small{font-size:11px;color:var(--ink-soft,#65656b)}.ds-card-action{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:10px 17px;border:1px solid var(--line,#e5e5e8);border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font-size:13px;line-height:1.3;font-weight:600;text-align:center;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s var(--ease-out,cubic-bezier(.215,.61,.355,1))}.ds-card-action:hover{background:var(--surface,#f5f5f7)}.ds-card-action:active{transform:scale(.98)}@media(max-width:767px){.ds-card-body{padding:22px}.ds-card h3{font-size:20px}.ds-card-action{font-size:12px;padding-inline:16px}}@media(max-width:579px){.ds-card h3{font-size:22px}}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}.ds-card{transition:transform .32s var(--ease-out,cubic-bezier(.215,.61,.355,1)),box-shadow .32s var(--ease-out,cubic-bezier(.215,.61,.355,1))}.ds-card:focus-within{box-shadow:var(--card-hover-shadow,0 12px 32px rgb(29 29 31 / .1))}.ds-card:focus-within .ds-card-action{background:var(--brand,#ff8a00);border-color:var(--brand,#ff8a00);color:var(--primary-foreground,#241708)}@media(hover:hover) and (pointer:fine){.ds-card:hover{box-shadow:var(--card-hover-shadow,0 12px 32px rgb(29 29 31 / .1))}.ds-card:hover .ds-card-action{background:var(--brand,#ff8a00);border-color:var(--brand,#ff8a00);color:var(--primary-foreground,#241708)}}@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.ds-card:hover{transform:translateY(-4px)}}@media(prefers-reduced-motion:reduce){.ds-card{transition-duration:.01ms!important}}"
     },
     {
       "name": "Itinerary Disclosure",
@@ -473,6 +483,14 @@
       "description": "A native disclosure row for readable itinerary content; day labels are functional sequence information.",
       "html": "<details class=\"ds-itinerary\"><summary class=\"ds-focus\"><span><small>Day</small>Itinerary title</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></summary><div class=\"ds-itinerary-content\">Itinerary content</div></details>",
       "css": ".ds-itinerary{border-bottom:1px solid var(--line,#e5e5e8);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Noto Sans\",\"Noto Sans CJK SC\",Arial,sans-serif}.ds-itinerary summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;list-style:none;font-size:16px;font-weight:550;cursor:pointer}.ds-itinerary summary::-webkit-details-marker{display:none}.ds-itinerary summary small{display:block;color:var(--brand-strong,#a74b00);font-size:12px;font-weight:500;margin-bottom:7px}.ds-itinerary svg{flex-shrink:0;color:var(--ink-soft,#65656b);transition:transform .2s}.ds-itinerary[open] svg{transform:rotate(45deg)}.ds-itinerary-content{color:var(--ink-soft,#65656b);font-size:15px;line-height:1.8;padding-bottom:24px}.ds-focus:focus-visible{outline:2px solid var(--ring,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary,.ds-secondary,.ds-text-link,.ds-icon,.ds-field input,.ds-nav a,.ds-chip,.ds-card a,.ds-itinerary svg{transition-duration:.01ms!important}}"
+    },
+    {
+      "name": "Chat Composer",
+      "kind": "custom",
+      "refersTo": "chat-composer",
+      "description": "Multiline travel question with a visible focus state and 44px send control.",
+      "html": "<label class=\"ds-chat-label\" for=\"ds-chat-message\">Message</label><div class=\"ds-composer\"><textarea id=\"ds-chat-message\" rows=\"1\">Help me plan a trip</textarea><button type=\"button\" aria-label=\"Send\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m5 12 7-7 7 7M12 19V5\"/></svg></button></div>",
+      "css": ".ds-chat-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.ds-composer{display:flex;align-items:flex-end;gap:8px;padding:7px 8px 7px 14px;border:1px solid var(--input,#d1d1d6);border-radius:16px;background:var(--background,#fff);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif}.ds-composer:focus-within{outline:2px solid var(--brand-strong,#a74b00);outline-offset:2px}.ds-composer textarea{width:100%;min-width:0;min-height:44px;max-height:144px;padding:10px 0;border:0;background:transparent;resize:none;font-family:inherit;font-size:16px;line-height:24px;color:var(--ink,#1d1d1f)}.ds-composer textarea:focus-visible{outline:none}.ds-composer button{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border:0;border-radius:12px;background:var(--brand,#ff8a00);color:var(--primary-foreground,#241708);transition:background .2s}.ds-composer button:hover{background:#f9a12b}.ds-composer button:focus-visible{outline:2px solid var(--brand-strong,#a74b00);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-composer button{transition-duration:.01ms}}"
     }
   ],
   "narrative": {

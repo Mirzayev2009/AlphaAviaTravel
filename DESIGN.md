@@ -59,7 +59,7 @@ typography:
     fontWeight: 500
   navigation:
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Noto Sans CJK SC", Arial, sans-serif'
-    fontSize: "12px"
+    fontSize: "14px"
     fontWeight: 500
 rounded:
   detail: "8px"
@@ -135,6 +135,10 @@ components:
   itinerary:
     textColor: "{colors.ink}"
     padding: "22px 0"
+  chat-composer:
+    backgroundColor: "{colors.background}"
+    rounded: "{rounded.surface}"
+    padding: "7px 8px 7px 14px"
 ---
 
 # Design System: Alpha Avia Travel
@@ -201,21 +205,21 @@ The palette combines orange and warm cream with a cool neutral reading surface; 
 
 ## Layout
 
-The main container is centered with width (`min(100% - 80px, 1200px)`). At wide screens (`min-width: 1600px`), it becomes (`min(100% - 120px, 1280px)`). The hero panorama has its own broader width (`min(100% - 48px, 1520px)`) and bounded height (`clamp(240px, 42vh, 520px)`). Shared sections use the section spacing token; alternate surfaces create chapter boundaries.
+The main container is centered with width (`min(100% - 80px, 1200px)`). At wide screens (`min-width: 1600px`), it becomes (`min(100% - 120px, 1280px)`). Following the user's homepage correction, the hero is full-bleed with a minimum height (`100svh`, with `100vh` fallback), centered foreground copy, and absolute cover photography. It offsets the shared navigation's full height (`73px` desktop, `65px` mobile, including its border) so the photograph extends behind the navigation and fills the opening viewport. Equal vertical padding reserves room for navigation and carousel controls; short screens and long translations may expand the minimum height. Shared sections use the section spacing token; alternate surfaces create chapter boundaries.
 
 Tours and destination grids begin at three columns with a gap (`24px`). Tour images use an aspect ratio (`1.48`); the card body has padding (`25px`) and gap (`14px`). Inquiry forms use two fields per row, with column gap (`20px`) and row gap (`22px`). Major reading/form splits use different ratios appropriate to the content, including inquiry (`.85fr 1.3fr`) and tour information (`.75fr 1.5fr`). Do not replace those with uniform cards.
 
 Responsive behavior follows the actual queries:
 - **Below 1200px:** tighten header spacing, simplify service previews to three columns, and reduce assistant-panel padding.
 - **Below 1024px:** desktop navigation becomes a toggle-controlled menu, tour cards become two columns, service rails show two items, and team cards become two columns.
-- **Below 768px:** container gutters become (`20px`); header height becomes (`64px`) from (`72px`); section padding becomes (`58px`). Introductions, assistant content, inquiry, story, contact, and tour information stack. Destination cards become one column; service rails show a partial next item with column width (`82%`) and gap (`16px`). Gallery cards retain two columns, with the lead image spanning the row. Hero media becomes taller in proportion with height (`330px`) and mobile-media corners.
-- **Below 580px:** tour, team, contact-option, and field grids become one column. Hero height becomes (`300px`) and headline size becomes (`38px`); the extra header assistant shortcut hides.
+- **Below 768px:** container gutters become (`20px`); header inner height becomes (`64px`) from (`72px`); section padding becomes (`58px`). Introductions, assistant content, inquiry, story, contact, and tour information stack. Destination cards become one column; service rails show a partial next item with column width (`82%`) and gap (`16px`). Gallery cards retain two columns, with the lead image spanning the row. The hero stays full-viewport and full-bleed; controls wrap when needed and reserve the chat launcher's corner.
+- **Below 580px:** tour, team, contact-option, and field grids become one column. Hero headline size becomes (`38px`); the extra header assistant shortcut hides.
 
-Keep translated controls flexible: category controls wrap, tour action/price rows wrap, contact values break safely, and form grid items have `min-width: 0`. The detail sheet is bounded to (`700px`) with its own scrolling body. Floating chat is bounded by the viewport (`min(390px, calc(100vw - 32px))`) and available dynamic height.
+Keep translated controls flexible: category controls wrap, tour action/price rows wrap, contact values break safely, and form grid items have `min-width: 0`. The detail sheet is bounded to (`700px`) with its own scrolling body. Floating chat is bounded by the viewport (`min(420px, calc(100vw - 32px))`) and available dynamic height. Below (`768px`), or on a short touch viewport, it fills the viewport and follows visual-viewport resizing above the keyboard. A short-window container query compacts the toolbar and footer. The full-page chat uses the available height below the shared navigation, with a compact heading and one conversation workspace.
 
 ## Elevation & Depth
 
-Depth comes mainly from white against soft neutral or warm surfaces, fine dividers, and photographic crops. Shadows are restrained and have specific jobs. The translucent sticky header uses a white layer and, when supported, a backdrop blur (`14px`). Gradients occur locally over images to protect controls or captions; they are not general page decoration.
+Depth comes mainly from white against soft neutral or warm surfaces, fine dividers, and photographic crops. Shadows are restrained and have specific jobs. The translucent sticky header uses a white layer and, when supported, a backdrop blur (`14px`). At the top of the homepage it becomes transparent over the hero, with white controls and amber brand detail; scrolling or opening the mobile menu restores the solid treatment. The hero uses a dark overlay over the entire image to protect centered white text. Gradients occur locally over images to protect text or controls; they are not general page decoration.
 
 ### Shadow Vocabulary
 - **Tour card:** (`0 4px 18px rgb(29 29 31 / .035)`), a low resting separation.
@@ -229,7 +233,7 @@ Depth comes mainly from white against soft neutral or warm surfaces, fine divide
 
 ## Shapes
 
-Cards, large media, sheets' images, and form panels share the surface radius. Inputs use the field radius, while buttons and category controls use pills. Icon controls are circles with explicit dimensions. At mobile widths the hero and gallery media use the smaller mobile-media radius. Images clip inside their rounded frames with `object-fit: cover`; gallery lightboxes use `object-fit: contain` to show the whole image.
+Cards, contained media, sheets' images, and form panels share the surface radius. Inputs use the field radius, while buttons and category controls use pills. Icon controls are circles with explicit dimensions. At mobile widths gallery media use the smaller mobile-media radius. The full-bleed homepage hero has square edges. Images use `object-fit: cover`; gallery lightboxes use `object-fit: contain` to show the whole image.
 
 Borders are normally thin (`1px`) and neutral. A recommended tour receives an orange outline (`2px`) with offset (`4px`). Chat bubbles share rounded corners with a small directional corner (`4px`). Avoid turning these local state treatments into extra decoration on every panel.
 
@@ -247,7 +251,7 @@ Category filters are pill buttons with neutral borders, optional inline Lucide i
 
 ### Cards / Containers
 
-Tour cards are white rounded columns with clipped media, functional duration metadata, a title link, destination, description, price, and a quieter tour action. The footer divider separates comparison information from the action, and `margin-top: auto` keeps it at the bottom. Only the image scales on hover, restricted to hover-capable devices (`1.035`, `.65s`). Recommendation highlighting uses the outline described in Shapes.
+Tour cards are white rounded columns with clipped media, functional duration metadata, a title link, destination, description, price, and a quieter tour action. The footer divider separates comparison information from the action, and `margin-top: auto` keeps it at the bottom. On fine-pointer hover, interactive cards lift (`4px`, `.32s`), receive the shared soft shadow, and scale their clipped photographs (`1.04`). Tour actions take the brand fill; directional icons move (`2px`). Destination and team cards cast their shadow around the media rather than their text. Service rails reserve space for the lift and shadow. Keyboard focus receives the same shadow and action emphasis without positional movement. Reduced motion disables lift, zoom, and arrow travel. Recommendation highlighting uses the outline described in Shapes.
 
 Service cards use a horizontal snapping rail with explicit browsing controls. They keep a media ratio (`1.35`) and body padding (`24px`, mobile `22px`). Destination tiles combine a portrait crop with a local lower image scrim and white destination title; descriptive text sits below the image.
 
@@ -259,7 +263,7 @@ The general keyboard focus rule is an outline (`2px`) in deep orange with offset
 
 ### Navigation
 
-The header is sticky with a fine lower divider. Desktop links are compact, gray at rest, and ink on hover or when current. The current link has an orange underline (`2px`) placed above the bottom edge (`15px`). The mobile menu uses larger link text (`18px`) and deep orange for the current route. Its button exposes `aria-expanded` and `aria-controls`; selecting a route or pressing Escape closes the menu. The language selector retains all seven languages.
+The header is sticky with a fine lower divider. Desktop links use readable text (`14px`), gray at rest and ink on hover or when current; the homepage overlay uses white. The current link has an orange underline (`2px`) placed above the bottom edge (`15px`). The mobile menu uses larger link text (`18px`) and deep orange for the current route. Its button exposes `aria-expanded` and `aria-controls`; selecting a route or pressing Escape closes the menu. The language selector uses (`13px`) and retains all seven languages.
 
 ### Text Links and Icon Controls
 
@@ -271,7 +275,15 @@ Itinerary days use native details/summary rows with a lower divider and generous
 
 ### Motion
 
-The shared easing is (`cubic-bezier(.16, 1, .3, 1)`). State transitions generally last (`.2s`); media hovers last (`.5s` or `.65s`). GSAP hero copy enters with `expo.out` (`.75s`), a small text stagger (`.06s`), and short vertical travel (`16px` heading, `12px` supporting content). The panorama scales from (`1`) to (`1.045`) with scroll and scrub (`.7`). The carousel fades (`650ms`) and advances every (`7500ms`), pauses on hover or focus, and has manual pause controls. Reduced motion disables authored hero animation and autoplay, uses instant slide changes, switches smooth scrolling off, and reduces CSS transition/animation duration to (`.01ms`). Content remains visible without animation.
+Motion explains selection, depth, new content, and feedback throughout page bodies. Headings and hero copy remain still; the hero photograph crossfades in 400ms without decorative zoom. Whole cards enter once (6px phone / 10px desktop, 380ms, 80ms total capped stagger). Complete assistant/story/service/CTA compositions use 6px and 360ms. Selected category pills move for 220ms and result grids acknowledge changes together for 200ms. Drawers enter from their edge in 300ms and exit in 180ms. Photo viewers expand from real thumbnails in 320ms and return in 200ms, using inverse image scale to preserve proportions. Next/previous photos use a 160ms fade. Small disclosures alone may use measured height (240ms open / 180ms close). Visa steps move 8px in the forward/back direction over 240ms, retaining answers and focus. Forms animate only changed feedback/actions. Use gentle power2.out easing, no bounce or independent text cascades.
+
+SiteMotion loads separately from initial page code, uses one shared viewport observer, and releases completed/removed targets. Keep the existing CSS card-hover transform independent from individual translate entrances. Scope GSAP contexts and cancel interrupted tweens. No continuous loops, animated blur, permanent GPU hints, scroll hijacking, or per-frame React state. Reduced motion preserves immediate native semantics and meaningful states while removing spatial animation and autoplay. See MOTION_PLAN.md for coverage and the measured initial/deferred-byte budget.
+
+### Chat workspace
+
+Use three rows: a compact identity/action toolbar, one scrolling transcript (`minmax(0, 1fr)`), and a pinned multiline composer. Replies use readable body text (`16px`, compact `15px`) and a maximum reading width (`70ch`); user messages use the warm surface. The empty state offers three real prompt buttons, stacked in the floating view and on mobile. Toolbar controls and send/stop actions have targets (`44px`). Keep title text flexible and actions fixed. The composer grows to (`144px`) before scrolling; desktop Enter sends and Shift + Enter adds a line, while touch keyboards retain normal newlines. Focus visibly outlines the composer.
+
+Floating chat uses a modeless desktop dialog and a modal full-screen mobile dialog with focus return, scroll locking, and Escape handling. GSAP opens the window as one anchored composition (8px desktop / 6px phone, 240ms power2.out), with no scale pop or prompt cascade. A compositor CSS exit (140ms) retains Radix lifecycle. New messages settle as one readable unit (5px, 200ms); status icons fade for 140ms. Existing history never replays or interrupts reading. Spatial motion is disabled under reduced motion. Conversation and draft persist in memory across views. Loading has an explicit stop action; failures and timeouts offer an adjacent retry without duplicating the user turn. Do not add attachment or voice controls unless those capabilities exist.
 
 ## Do's and Don'ts
 

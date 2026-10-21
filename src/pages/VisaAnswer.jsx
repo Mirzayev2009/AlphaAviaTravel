@@ -77,12 +77,12 @@ export default function VisaAnswer() {
   return <div className="visa-page">
     <PageIntro title={t("design.visaResult")} description={formData.fromCountry + " → " + formData.toCountry}/>
     <section className="site-container catalog-section"><div className="visa-results">
-      <div className="visa-summary"><h2>{t("design.visaOverview")}</h2><dl>{[["nationality", "nationality"], ["visitPurpose", "purpose"], ["stayDuration", "duration"]].map(([field, label]) => <div key={field}><dt>{t("design." + label)}</dt><dd>{formData[field]}</dd></div>)}</dl></div>
-      <div className="visa-document-section"><FileText size={25}/><h2>{t("design.visaDocuments")}</h2><ul>{visaInfo.documents.map((document) => <li key={document}>{document}</li>)}</ul></div>
-      {visaInfo.additional.length > 0 && <div className="visa-document-section"><h2>{t("design.visaAdditional")}</h2><ul>{visaInfo.additional.map((item) => <li key={item}>{item}</li>)}</ul></div>}
-      <div className="visa-facts">{[[Clock, "visaProcessing", visaInfo.processingTime], [Wallet, "visaFee", visaInfo.fee], [Calendar, "visaValidity", visaInfo.validity]].map(([Icon, key, value]) => <div key={key}>{createElement(Icon, { size: 23 })}<h3>{t("design." + key)}</h3><p>{value}</p></div>)}</div>
-      <div className="visa-document-section"><h2>{t("design.visaTips")}</h2><ul>{visaInfo.tips.map((tip) => <li key={tip}>{tip}</li>)}</ul></div>
-      <div className="visa-note"><Info size={21}/><p>{t("design.visaNote")}</p></div>
+      <div className="visa-summary" data-motion="composition"><h2>{t("design.visaOverview")}</h2><dl>{[["nationality", "nationality"], ["visitPurpose", "purpose"], ["stayDuration", "duration"]].map(([field, label]) => <div key={field}><dt>{t("design." + label)}</dt><dd>{formData[field]}</dd></div>)}</dl></div>
+      <div className="visa-document-section" data-motion="composition"><FileText size={25}/><h2>{t("design.visaDocuments")}</h2><ul>{visaInfo.documents.map((document) => <li key={document}>{document}</li>)}</ul></div>
+      {visaInfo.additional.length > 0 && <div className="visa-document-section" data-motion="composition"><h2>{t("design.visaAdditional")}</h2><ul>{visaInfo.additional.map((item) => <li key={item}>{item}</li>)}</ul></div>}
+      <div className="visa-facts" data-motion="composition">{[[Clock, "visaProcessing", visaInfo.processingTime], [Wallet, "visaFee", visaInfo.fee], [Calendar, "visaValidity", visaInfo.validity]].map(([Icon, key, value]) => <div key={key}>{createElement(Icon, { size: 23 })}<h3>{t("design." + key)}</h3><p>{value}</p></div>)}</div>
+      <div className="visa-document-section" data-motion="composition"><h2>{t("design.visaTips")}</h2><ul>{visaInfo.tips.map((tip) => <li key={tip}>{tip}</li>)}</ul></div>
+      <div className="visa-note" data-motion="composition"><Info size={21}/><p>{t("design.visaNote")}</p></div>
       <div className="visa-form-actions"><Link className="button button--secondary" to="/visa/questions"><ArrowLeft size={16}/>{t("design.visaAgain")}</Link><Link className="button" to="/contact">{t("header.nav.contact")}<ArrowRight size={16}/></Link></div>
     </div></section>
   </div>;

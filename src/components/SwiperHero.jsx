@@ -1,16 +1,13 @@
-import { useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Autoplay, EffectFade, Keyboard } from "swiper/modules";
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { bindCarouselPlayback } from "@/lib/carousel-playback";
 import { TravelImage } from "./TravelUI";
 import "swiper/css/effect-fade";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 const slides = [
   { image: "/iStock-1249451586.jpg", alt: "Registan Square, Samarkand" },
   { image: "/55ee4898d3526351afba9e6dcb279e3bfab7a3a5.jpg", alt: "Bukhara Old Town" },
@@ -25,31 +22,26 @@ export default function SwiperHero() {
   const slider = useRef(null);
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const title = t("hero.slides." + (active + 1) + ".title");
   const reduceMotion = useSyncExternalStore(subscribeMotion, () => reducedMotionQuery().matches, () => true);
-  useGSAP(() => {
-    const media = gsap.matchMedia();
-    media.add("(prefers-reduced-motion: no-preference)", () => {
-      const intro = gsap.timeline({ defaults: { duration: .75, ease: "expo.out", clearProps: "transform,opacity" } });
-      intro.fromTo(".hero-copy h1", { y: 16, opacity: .7 }, { y: 0, opacity: 1 })
-        .fromTo(".hero-copy p, .hero-actions", { y: 12, opacity: .75 }, { y: 0, opacity: 1, stagger: .06 }, "<.1");
-      gsap.fromTo(".hero-panorama", { scale: 1 }, { scale: 1.045, ease: "none", scrollTrigger: { trigger: root.current, start: "top top", end: "bottom top", scrub: .7 } });
-    });
-    return () => media.revert();
-  }, { scope: root });
-  return <section ref={root} className="hero" aria-roledescription={t("design.carousel")} aria-label={t("design.destinationsCarousel")}>
-    <div className="hero-copy"><h1>{t("hero.slides." + (active + 1) + ".title")}</h1><p>{t("hero.slides." + (active + 1) + ".subtitle")}</p>
+  useEffect(() => {
+    if (!slider.current?.autoplay) return;
+    return bindCarouselPlayback(root.current, slider.current, { paused, reduceMotion, hoverCapable: window.matchMedia("(hover: hover)").matches });
+  }, [paused, reduceMotion]);
+  return <section ref={root} className="hero" aria-roledescription={t("design.carousel")} aria-label={t("design.destinationsCarousel")} onFocusCapture={() => setPaused(true)}>
+    <div className="hero-copy" data-motion="hero" data-motion-state={active}><h1>{title}</h1><span className="hero-accent" aria-hidden="true"/><p>{t("hero.slides." + (active + 1) + ".subtitle")}</p>
       <div className="hero-actions"><Link className="button" to="/tours">{t("hero.cta")}</Link><Link className="text-link" to="/destinations">{t("hero.ctaSecondary")}<ArrowRight size={16}/></Link></div>
     </div>
     <div className="hero-frame">
-      <Swiper modules={[A11y, Autoplay, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} speed={reduceMotion ? 0 : 650} loop keyboard={{ enabled: true, onlyInViewport: true }}
-        autoplay={reduceMotion ? false : { delay: 7500, disableOnInteraction: false, pauseOnMouseEnter: true }} onSwiper={(instance) => { slider.current = instance; }} onSlideChange={(instance) => setActive(instance.realIndex)}
-        onFocusCapture={() => { slider.current?.autoplay?.stop(); setPaused(true); }}>
-        {slides.map((slide, index) => <SwiperSlide key={slide.image}><TravelImage className="hero-panorama" src={slide.image} alt={slide.alt} eager={index === 0} sizes="(max-width: 580px) calc(100vw - 32px), (max-width: 1568px) calc(100vw - 48px), 1520px"/></SwiperSlide>)}
+      <Swiper modules={[A11y, Autoplay, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} speed={reduceMotion ? 0 : 400} loop keyboard={{ enabled: true, onlyInViewport: true }}
+        autoplay={reduceMotion ? false : { delay: 7500, disableOnInteraction: false }} onSwiper={(instance) => { slider.current = instance; }} onSlideChange={(instance) => setActive(instance.realIndex)}
+        >
+        {slides.map((slide, index) => <SwiperSlide key={slide.image}><TravelImage className="hero-panorama" src={slide.image} alt={slide.alt} eager={index === 0} sizes="100vw"/></SwiperSlide>)}
       </Swiper>
       <div className="hero-controls">
         <div className="slide-tabs" role="group" aria-label={t("design.chooseSlide")}>{slides.map((slide, index) => <button key={slide.image} aria-label={t("design.slide") + " " + (index + 1)} aria-pressed={index === active} onClick={() => slider.current?.slideToLoop(index)}/>)}</div>
         <div className="hero-controls-right"><button className="icon-button" aria-label={t("design.previous")} onClick={() => slider.current?.slidePrev()}><ChevronLeft size={19}/></button><button className="icon-button" aria-label={t("design.next")} onClick={() => slider.current?.slideNext()}><ChevronRight size={19}/></button>
-          {!reduceMotion && <button className="icon-button" aria-label={t(paused ? "design.play" : "design.pause")} onClick={() => { if (paused) slider.current?.autoplay.start(); else slider.current?.autoplay.stop(); setPaused(!paused); }}>{paused ? <Play size={16}/> : <Pause size={16}/>}</button>}
+          {!reduceMotion && <button className="icon-button" aria-label={t(paused ? "design.play" : "design.pause")} onClick={() => setPaused(!paused)}>{paused ? <Play size={16}/> : <Pause size={16}/>}</button>}
         </div>
       </div>
     </div>

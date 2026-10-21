@@ -4,7 +4,7 @@ import { TravelImage } from "./TravelUI";
 
 export default function DestinationCard({ destination, onLearnMore }) {
   const { t } = useTranslation();
-  return <article className="destination-card">
+  return <article className="destination-card" data-motion="card">
     <button className="destination-image" onClick={() => onLearnMore(destination)} aria-label={t("destinations.card.learnMore") + ": " + destination.name}>
       <TravelImage src={destination.heroImage} alt={destination.name}/><h3>{destination.name}</h3><ArrowUpRight className="destination-arrow" size={25} aria-hidden="true"/>
     </button>

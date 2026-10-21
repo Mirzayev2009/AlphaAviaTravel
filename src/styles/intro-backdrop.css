@@ -1,0 +1,47 @@
+.intro-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: #fff8ee;
+}
+
+.intro-backdrop-art {
+  position: absolute;
+  top: -28%;
+  height: 156%;
+  max-width: none;
+  transform-origin: 50% 50%;
+}
+
+.intro-backdrop-art--left {
+  left: -3%;
+  width: clamp(240px, 29vw, 440px);
+}
+
+.intro-backdrop-art--right {
+  right: -3%;
+  width: clamp(300px, 37vw, 570px);
+}
+
+.intro-backdrop-detail {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+}
+
+@media (max-width: 900px) {
+  .intro-backdrop-art--left { left: -13%; width: 300px; opacity: .8; }
+  .intro-backdrop-art--right { right: -13%; width: 360px; opacity: .85; }
+  .intro-backdrop-detail { opacity: .6; }
+}
+
+@media (max-width: 580px) {
+  .intro-backdrop-art { top: -20%; height: 140%; }
+  .intro-backdrop-art--left { left: -158px; width: 260px; opacity: .65; }
+  .intro-backdrop-art--right { right: -186px; width: 310px; opacity: .72; }
+  .intro-backdrop-detail { display: none; }
+}

@@ -37,9 +37,10 @@ function Testimonials() {
     <SectionHeading title={t("home.testimonialsTitle")} description={t("home.testimonialsSubtitle")} centered/>
     {reviews.isPending ? <div className="card-skeleton h-56 max-w-3xl mx-auto" role="status" aria-label={t("design.loading")}><span/><span/><span/></div>
       : review ? <div className="testimonials">
+        <div className="testimonial-stack">{entries.map((item, position) => <div key={item.id || position} className="testimonial-entry" data-active={item === review} aria-hidden={item !== review} inert={item !== review ? true : undefined} data-motion={item === review ? "review" : undefined} data-motion-state={item === review ? index : undefined}>
         <Quote className="testimonial-quote-icon" size={34} aria-hidden="true"/>
-        <blockquote className="testimonial-text">{review.tourist_opinion}</blockquote>
-        <p className="testimonial-author">{review.tourist_name}</p><p className="testimonial-country">{review.tourist_country}</p>
+        <blockquote className="testimonial-text">{item.tourist_opinion}</blockquote>
+        <p className="testimonial-author">{item.tourist_name}</p><p className="testimonial-country">{item.tourist_country}</p></div>)}</div>
         {entries.length > 1 && <div className="testimonial-controls"><button className="icon-button" aria-label={t("design.previous")} onClick={() => setIndex((index + entries.length - 1) % entries.length)}><ChevronLeft size={18}/></button><span aria-live="polite">{index % entries.length + 1} / {entries.length}</span><button className="icon-button" aria-label={t("design.next")} onClick={() => setIndex((index + 1) % entries.length)}><ChevronRight size={18}/></button></div>}
       </div> : <div className="testimonials"><p className="text-muted-foreground leading-relaxed">{t("design.reviewsUnavailable")}</p><TextLink to="/contact">{t("header.nav.contact")}</TextLink></div>}
   </div></section>;
@@ -63,11 +64,11 @@ export default function Home() {
       <SectionHeading title={t("destinations.title")} description={t("destinations.subtitle")}><TextLink to="/destinations">{t("design.allDestinations")}</TextLink></SectionHeading>
       {destinations.isPending ? <LoadingCards/> : destinations.isError ? <StateMessage title={t("design.loadError")} retry={() => destinations.refetch()}/> : <div className="destination-grid">{destinations.localized.slice(0, 3).map((item) => <DestinationCard key={item.id} destination={item} onLearnMore={setDestination}/>)}</div>}
     </div></section>
-    <section className="section pt-0"><div className="site-container"><div className="assistant-feature">
+    <section className="section pt-0"><div className="site-container"><div className="assistant-feature" data-motion="composition">
       <div><h2>{t("home.travelAssistant.sectionTitle")}</h2><p>{t("home.travelAssistant.sectionDescription")}</p><Link className="button" to="/chatbot">{t("home.travelAssistant.sectionButton")}<ArrowRight size={16}/></Link></div>
       <div className="assistant-preview"><Bot size={34} className="assistant-preview-icon" aria-hidden="true"/><p>{t("chatbot.greeting")}</p><div className="assistant-preview-features"><span>{t("home.travelAssistant.featureFast")}</span><span>{t("home.travelAssistant.featurePersonalized")}</span><span>{t("home.travelAssistant.featurePrivate")}</span></div></div>
     </div></div></section>
-    <section className="section"><div className="site-container why-layout">
+    <section className="section"><div className="site-container why-layout" data-motion="composition">
       <TravelImage className="why-image" src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand" sizes="(max-width: 768px) calc(100vw - 40px), 600px"/>
       <div className="why-content"><h2>{t("home.aboutTitle")}</h2><p>{t("home.aboutText")}</p>
         <div className="reason-list">{[[Users, "1"], [Award, "2"], [Heart, "3"]].map(([Icon, key]) => <div className="reason" key={key}>{createElement(Icon, { size: 22, "aria-hidden": true })}<div><h3>{t("home.aboutcard" + key + "Title")}</h3><p>{t("home.aboutcard" + key + "Text")}</p></div></div>)}</div>
@@ -81,10 +82,10 @@ export default function Home() {
     </div></section>
     <section className="section section--soft"><div className="site-container">
       <SectionHeading title={t("home.servicesTitle")} description={t("home.servicesSubtitle")}/>
-      <div className="service-preview-grid">{[[Plane, "Tours"], [ShieldCheck, "Visa"], [Car, "Cars"], [Hotel, "Hotels"], [Headphones, "Support"]].map(([Icon, key]) => <div className="service-preview" key={key}>{createElement(Icon, { size: 25, "aria-hidden": true })}<h3>{t("home.service" + key)}</h3><p>{t("home.service" + key + "Desc")}</p></div>)}</div>
+      <div className="service-preview-grid" data-motion="composition">{[[Plane, "Tours"], [ShieldCheck, "Visa"], [Car, "Cars"], [Hotel, "Hotels"], [Headphones, "Support"]].map(([Icon, key]) => <div className="service-preview" key={key}>{createElement(Icon, { size: 25, "aria-hidden": true })}<h3>{t("home.service" + key)}</h3><p>{t("home.service" + key + "Desc")}</p></div>)}</div>
       <div className="section-end"><TextLink to="/services">{t("home.exploreServices")}</TextLink></div>
     </div></section>
-    <section className="section"><div className="site-container"><div className="contact-invitation"><h2>{t("home.ctaTitle")}</h2><p>{t("home.ctaDescription")}</p><Link className="button" to="/contact">{t("home.ctaButton")}<ArrowRight size={16}/></Link></div></div></section>
-    {destination && <Suspense fallback={null}><DestinationDetailsDrawer destination={destination} open onClose={() => setDestination(null)}/></Suspense>}
+    <section className="section"><div className="site-container"><div className="contact-invitation" data-motion="composition"><h2>{t("home.ctaTitle")}</h2><p>{t("home.ctaDescription")}</p><Link className="button" to="/contact">{t("home.ctaButton")}<ArrowRight size={16}/></Link></div></div></section>
+    {destination && <Suspense fallback={null}><DestinationDetailsDrawer key={destination.id} destination={destination} open onClose={() => setDestination(null)}/></Suspense>}
   </>;
 }

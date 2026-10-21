@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from "lucide-react";
@@ -6,10 +7,12 @@ import { TravelImage } from "./TravelUI";
 
 export default function DestinationDetailsDrawer({ destination, open, onClose }) {
   const { t } = useTranslation();
+  const [closing, setClosing] = useState(false);
+  const launcher = useRef(document.activeElement);
   if (!destination) return null;
   const clean = (text) => typeof text === "string" ? text.replace(/\*+/g, "") : text;
-  return <Sheet open={open} onOpenChange={(next) => { if (!next) onClose(); }}>
-    <SheetContent className="detail-sheet">
+  return <Sheet open={open && !closing} onOpenChange={(next) => { if (!next) setClosing(true); }}>
+    <SheetContent className="detail-sheet" onClosed={onClose} onCloseAutoFocus={(event) => { event.preventDefault(); launcher.current?.focus({ preventScroll: true }); }}>
       <SheetHeader className="sheet-header"><SheetTitle>{destination.name}</SheetTitle><SheetDescription>{t("destinations.drawer.summary")}</SheetDescription></SheetHeader>
       <div className="sheet-body">
         <TravelImage src={destination.heroImage} alt={destination.name} eager sizes="(max-width: 768px) 92vw, 720px"/>

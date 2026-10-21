@@ -14,6 +14,6 @@ export default function Destinations() {
     <section className="catalog-section"><div className="site-container">
       {query.isPending ? <LoadingCards count={6}/> : query.isError ? <StateMessage title={t("design.loadError")} retry={() => query.refetch()}/> : <div className="destination-grid">{query.localized.map((destination) => <DestinationCard key={destination.id} destination={destination} onLearnMore={setSelected}/>)}</div>}
     </div></section>
-    {selected && <DestinationDetailsDrawer destination={selected} open onClose={() => setSelected(null)}/>}
+    {selected && <DestinationDetailsDrawer key={selected.id} destination={selected} open onClose={() => setSelected(null)}/>}
   </>;
 }

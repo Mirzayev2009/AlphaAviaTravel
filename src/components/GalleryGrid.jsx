@@ -16,7 +16,7 @@ export default function GalleryGrid() {
   );
   if (destinations.isPending) return <LoadingCards/>;
   if (destinations.isError) return <StateMessage title={t("design.loadError")} retry={() => destinations.refetch()}/>;
-  return <><div className="gallery-grid">{gallery.map((image, index) => <button className="gallery-tile" key={image.id} onClick={() => setIndex(index)} aria-label={image.alt}><TravelImage src={image.src} alt={image.alt}/><span>{image.location}</span></button>)}</div>
-    {index !== null && <ImageLightbox images={gallery} index={index} onIndexChange={setIndex} onClose={() => setIndex(null)}/>}
+  return <><div className="gallery-grid" data-photo-gallery>{gallery.map((image, index) => <button className="gallery-tile" data-motion="card" data-photo-src={image.src} key={image.id} onClick={(event) => setIndex({ index, origin: event.currentTarget })} aria-label={image.alt}><TravelImage src={image.src} alt={image.alt}/><span>{image.location}</span></button>)}</div>
+    {index !== null && <ImageLightbox images={gallery} index={index.index} origin={index.origin} onIndexChange={(next) => setIndex({ ...index, index: next })} onClose={() => setIndex(null)}/>}
   </>;
 }

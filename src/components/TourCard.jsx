@@ -8,7 +8,7 @@ export default function TourCard({ tour, highlighted = false, option = 0 }) {
   if (!tour?.id) return null;
   const url = "/tours/" + tour.id + (option ? "?option=" + option : "");
   const price = new Intl.NumberFormat(i18n.resolvedLanguage || "en", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(Number(tour.price) || 0);
-  return <article className={"tour-card" + (highlighted ? " tour-card--highlighted" : "")}>
+  return <article data-motion="card" className={"tour-card" + (highlighted ? " tour-card--highlighted" : "")}>
     <Link to={url} className="tour-card-image" aria-label={tour.title}><TravelImage src={tour.images?.[0] || tour.image} alt={tour.title}/></Link>
     <div className="tour-card-body">
       <p className="tour-card-meta">{tour.duration}</p>

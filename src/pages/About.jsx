@@ -7,7 +7,7 @@ export default function About() {
   const team = useTravelData("team", "team");
   return <>
     <PageIntro title={t("about.title")} description={t("about.subtitle")}/>
-    <section className="section pt-5"><div className="site-container about-story">
+    <section className="section pt-5"><div className="site-container about-story" data-motion="composition">
       <TravelImage src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand" sizes="(max-width: 768px) calc(100vw - 40px), 600px"/>
       <div className="about-story-copy"><p>{t("about.story")}</p><p>{t("about.mission")}</p></div>
     </div></section>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Menu, X, Globe, MessageCircle, ChevronDown, Check } from "lucide-react";
@@ -10,18 +10,27 @@ const languages = [
   { code: "it", name: "Italiano" }, { code: "zh", name: "中文" }, { code: "uz", name: "O‘zbek" },
 ];
 
-export default function Header() {
+export default function Header({ overlay = false }) {
   const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const menuButton = useRef(null);
+  const [scrolled, setScrolled] = useState(() => window.scrollY > 24);
   const language = (i18n.resolvedLanguage || "en").split("-")[0];
   const items = [["home", "/"], ["tours", "/tours"], ["destinations", "/destinations"], ["services", "/services"], ["gallery", "/gallery"], ["about", "/about"], ["contact", "/contact"]];
   useEffect(() => {
+    if (!overlay) return;
+    const update = () => setScrolled(window.scrollY > 24);
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, [overlay]);
+  useEffect(() => {
     if (!open) return;
-    const escape = (event) => { if (event.key === "Escape") setOpen(false); };
+    const escape = (event) => { if (event.key === "Escape") { setOpen(false); menuButton.current?.focus(); } };
     window.addEventListener("keydown", escape);
     return () => window.removeEventListener("keydown", escape);
   }, [open]);
-  return <header className="site-header">
+  return <header className={`site-header${overlay ? " site-header--home" : ""}${overlay && !scrolled && !open ? " site-header--over-hero" : ""}`}>
     <div className="site-container header-inner">
       <Link className="brand-name" to="/" onClick={() => setOpen(false)}>Alpha <span>Avia</span> Travel</Link>
       <nav className="desktop-nav" aria-label={t("design.mainNavigation")}>
@@ -37,7 +46,7 @@ export default function Header() {
             </DropdownMenuItem>)}
           </DropdownMenuContent>
         </DropdownMenu>
-        <button type="button" className="menu-toggle" aria-label={t("header.toggleMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21}/> : <Menu size={21}/>}</button>
+        <button ref={menuButton} type="button" className="menu-toggle" aria-label={t("header.toggleMenu")} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X size={21}/> : <Menu size={21}/>}</button>
       </div>
     </div>
     {open && <nav id="mobile-navigation" className="mobile-nav" aria-label={t("design.mainNavigation")}>

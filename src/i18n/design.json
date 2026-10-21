@@ -86,7 +86,23 @@
       "More than 6 months"
     ],
     "noTours": "No tours available yet",
-    "retry": "Try again"
+    "retry": "Try again",
+    "chatWelcome": "What would you like to explore?",
+    "chatWelcomeDescription": "Compare tours, shape an itinerary, or ask about getting around.",
+    "chatNew": "New conversation",
+    "chatExpand": "Open full-page chat",
+    "chatYou": "You",
+    "chatStopped": "Response stopped.",
+    "chatStop": "Stop response",
+    "chatPlaceholder": "Ask about your trip…",
+    "chatInputHint": "Enter to send · Shift + Enter for a new line",
+    "chatContact": "Contact our team",
+    "chatSuggestionTour": "Find my tour",
+    "chatSuggestionRoute": "Plan an itinerary",
+    "chatSuggestionTransport": "Getting around",
+    "chatPromptTour": "Help me choose a tour in Uzbekistan.",
+    "chatPromptRoute": "Suggest a Silk Road itinerary.",
+    "chatPromptTransport": "How can I travel between cities in Uzbekistan?"
   },
   "ru": {
     "viewTour": "Смотреть тур",
@@ -177,7 +193,23 @@
       "Более 6 месяцев"
     ],
     "noTours": "Туров пока нет",
-    "retry": "Попробовать снова"
+    "retry": "Попробовать снова",
+    "chatWelcome": "Что вы хотите открыть для себя?",
+    "chatWelcomeDescription": "Сравните туры, составьте маршрут или узнайте, как добраться.",
+    "chatNew": "Новый разговор",
+    "chatExpand": "Открыть чат на всю страницу",
+    "chatYou": "Вы",
+    "chatStopped": "Ответ остановлен.",
+    "chatStop": "Остановить ответ",
+    "chatPlaceholder": "Спросите о поездке…",
+    "chatInputHint": "Enter — отправить · Shift + Enter — новая строка",
+    "chatContact": "Связаться с командой",
+    "chatSuggestionTour": "Подобрать тур",
+    "chatSuggestionRoute": "Составить маршрут",
+    "chatSuggestionTransport": "Как добраться",
+    "chatPromptTour": "Помогите выбрать тур по Узбекистану.",
+    "chatPromptRoute": "Предложите маршрут по Шёлковому пути.",
+    "chatPromptTransport": "Как путешествовать между городами Узбекистана?"
   },
   "uz": {
     "viewTour": "Turni ko‘rish",
@@ -266,7 +298,23 @@
       "6 oydan ko‘p"
     ],
     "noTours": "Hozircha turlar mavjud emas",
-    "retry": "Qayta urinish"
+    "retry": "Qayta urinish",
+    "chatWelcome": "Nimani kashf etmoqchisiz?",
+    "chatWelcomeDescription": "Turlarni solishtiring, yo‘nalish tuzing yoki transport haqida so‘rang.",
+    "chatNew": "Yangi suhbat",
+    "chatExpand": "Chatni to‘liq sahifada ochish",
+    "chatYou": "Siz",
+    "chatStopped": "Javob to‘xtatildi.",
+    "chatStop": "Javobni to‘xtatish",
+    "chatPlaceholder": "Sayohat haqida yozing…",
+    "chatInputHint": "Enter — yuborish · Shift + Enter — yangi qator",
+    "chatContact": "Jamoamiz bilan bog‘lanish",
+    "chatSuggestionTour": "Tur tanlash",
+    "chatSuggestionRoute": "Yo‘nalish tuzish",
+    "chatSuggestionTransport": "Qanday borish mumkin",
+    "chatPromptTour": "O‘zbekiston bo‘ylab tur tanlashga yordam bering.",
+    "chatPromptRoute": "Ipak yo‘li bo‘ylab sayohat yo‘nalishini taklif qiling.",
+    "chatPromptTransport": "O‘zbekiston shaharlari orasida qanday sayohat qilish mumkin?"
   },
   "es": {
     "viewTour": "Ver viaje",
@@ -355,7 +403,23 @@
       "Más de 6 meses"
     ],
     "noTours": "Aún no hay viajes disponibles",
-    "retry": "Reintentar"
+    "retry": "Reintentar",
+    "chatWelcome": "¿Qué te gustaría descubrir?",
+    "chatWelcomeDescription": "Compara tours, prepara un itinerario o consulta cómo desplazarte.",
+    "chatNew": "Nueva conversación",
+    "chatExpand": "Abrir chat en página completa",
+    "chatYou": "Tú",
+    "chatStopped": "Respuesta detenida.",
+    "chatStop": "Detener respuesta",
+    "chatPlaceholder": "Pregunta sobre tu viaje…",
+    "chatInputHint": "Enter para enviar · Mayús + Enter para una nueva línea",
+    "chatContact": "Contactar con el equipo",
+    "chatSuggestionTour": "Encontrar un tour",
+    "chatSuggestionRoute": "Planear un itinerario",
+    "chatSuggestionTransport": "Cómo desplazarse",
+    "chatPromptTour": "Ayúdame a elegir un tour por Uzbekistán.",
+    "chatPromptRoute": "Sugiere un itinerario por la Ruta de la Seda.",
+    "chatPromptTransport": "¿Cómo puedo viajar entre ciudades de Uzbekistán?"
   },
   "fr": {
     "viewTour": "Voir le circuit",
@@ -444,7 +508,23 @@
       "Plus de 6 mois"
     ],
     "noTours": "Aucun circuit disponible pour le moment",
-    "retry": "Réessayer"
+    "retry": "Réessayer",
+    "chatWelcome": "Que souhaitez-vous découvrir ?",
+    "chatWelcomeDescription": "Comparez les circuits, préparez un itinéraire ou renseignez-vous sur les transports.",
+    "chatNew": "Nouvelle conversation",
+    "chatExpand": "Ouvrir le chat en pleine page",
+    "chatYou": "Vous",
+    "chatStopped": "Réponse interrompue.",
+    "chatStop": "Interrompre la réponse",
+    "chatPlaceholder": "Une question sur votre voyage…",
+    "chatInputHint": "Entrée pour envoyer · Maj + Entrée pour une nouvelle ligne",
+    "chatContact": "Contacter notre équipe",
+    "chatSuggestionTour": "Trouver un circuit",
+    "chatSuggestionRoute": "Préparer un itinéraire",
+    "chatSuggestionTransport": "Se déplacer",
+    "chatPromptTour": "Aidez-moi à choisir un circuit en Ouzbékistan.",
+    "chatPromptRoute": "Proposez un itinéraire sur la Route de la Soie.",
+    "chatPromptTransport": "Comment voyager entre les villes en Ouzbékistan ?"
   },
   "it": {
     "viewTour": "Vedi il tour",
@@ -533,7 +613,23 @@
       "Più di 6 mesi"
     ],
     "noTours": "Nessun tour al momento",
-    "retry": "Riprova"
+    "retry": "Riprova",
+    "chatWelcome": "Cosa vorresti scoprire?",
+    "chatWelcomeDescription": "Confronta i tour, prepara un itinerario o chiedi come spostarti.",
+    "chatNew": "Nuova conversazione",
+    "chatExpand": "Apri la chat a pagina intera",
+    "chatYou": "Tu",
+    "chatStopped": "Risposta interrotta.",
+    "chatStop": "Interrompi la risposta",
+    "chatPlaceholder": "Chiedi del tuo viaggio…",
+    "chatInputHint": "Invio per inviare · Maiusc + Invio per una nuova riga",
+    "chatContact": "Contatta il nostro team",
+    "chatSuggestionTour": "Trovare un tour",
+    "chatSuggestionRoute": "Preparare un itinerario",
+    "chatSuggestionTransport": "Come spostarsi",
+    "chatPromptTour": "Aiutami a scegliere un tour in Uzbekistan.",
+    "chatPromptRoute": "Suggerisci un itinerario sulla Via della Seta.",
+    "chatPromptTransport": "Come posso viaggiare tra le città in Uzbekistan?"
   },
   "zh": {
     "viewTour": "查看行程",
@@ -622,6 +718,22 @@
       "超过6个月"
     ],
     "noTours": "暂无可选行程",
-    "retry": "重试"
+    "retry": "重试",
+    "chatWelcome": "您想探索什么？",
+    "chatWelcomeDescription": "比较旅行团、规划行程，或了解城市间的交通方式。",
+    "chatNew": "新对话",
+    "chatExpand": "打开完整聊天页面",
+    "chatYou": "您",
+    "chatStopped": "回复已停止。",
+    "chatStop": "停止回复",
+    "chatPlaceholder": "咨询您的旅行计划…",
+    "chatInputHint": "Enter 发送 · Shift + Enter 换行",
+    "chatContact": "联系我们的团队",
+    "chatSuggestionTour": "选择旅行团",
+    "chatSuggestionRoute": "规划行程",
+    "chatSuggestionTransport": "交通出行",
+    "chatPromptTour": "请帮我选择乌兹别克斯坦的旅行团。",
+    "chatPromptRoute": "请推荐丝绸之路旅行行程。",
+    "chatPromptTransport": "如何在乌兹别克斯坦的城市之间出行？"
   }
 }

@@ -4,9 +4,10 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, ArrowUpRight, Map, Globe, ImageOff, RefreshCw } from "lucide-react";
 import { imageUrl } from "@/hooks/use-travel-data";
 import { responsiveImage } from "@/lib/responsive-images";
+import IntroBackdrop from "./IntroBackdrop";
 
 export function PageIntro({ title, description, children, className = "" }) {
-  return <section className={`page-intro ${className}`}><div className="site-container">
+  return <section className={`page-intro ${className}`} data-motion="intro"><IntroBackdrop/><div className="site-container intro-copy">
     <h1>{title}</h1>{description && <p>{description}</p>}{children}
   </div></section>;
 }
@@ -38,7 +39,8 @@ export function TravelImage({ src, alt, className = "", eager = false, sizes = "
 
 export function CategoryTabs({ value, onChange }) {
   const { t } = useTranslation();
-  return <div className="category-tabs" role="group" aria-label={t("design.tourCategories")}>
+  return <div className="category-tabs" data-motion="selection" role="group" aria-label={t("design.tourCategories")}>
+    <span className="category-indicator" aria-hidden="true"/>
     {[["uzbekistan", "tours.uzTours", Map], ["central_asia", "tours.centralAsiaTours", Globe], ["world", "tours.worldTours", Globe]].map(([key, label, Icon]) =>
       <button key={key} type="button" aria-pressed={value === key} className={value === key ? "is-selected" : ""} onClick={() => onChange(key)}>
         {createElement(Icon, { size: 16, "aria-hidden": true })}{t(label)}
@@ -55,7 +57,7 @@ export function LoadingCards({ count = 3 }) {
 
 export function StateMessage({ title, description, retry, children }) {
   const { t } = useTranslation();
-  return <div className="state-message" role={retry ? "alert" : "status"}>
+  return <div className="state-message" data-motion="feedback" role={retry ? "alert" : "status"}>
     <h2>{title}</h2>{description && <p>{description}</p>}
     {retry && <button className="button button--secondary" onClick={retry}><RefreshCw size={16}/>{t("design.retry")}</button>}{children}
   </div>;

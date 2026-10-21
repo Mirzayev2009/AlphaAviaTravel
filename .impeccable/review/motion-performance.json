@@ -1,0 +1,44 @@
+{
+  "before": {
+    "rawBytes": 722075,
+    "gzipBytes": 239224,
+    "files": [
+      "assets/index-wEUQpG-F.js"
+    ]
+  },
+  "after": {
+    "rawBytes": 606429,
+    "gzipBytes": 193388,
+    "files": [
+      "assets/index-CVD8mM3Z.js"
+    ]
+  },
+  "saved": {
+    "rawBytes": 115646,
+    "gzipBytes": 45836
+  },
+  "beforeLiveliness": {
+    "rawBytes": 679137,
+    "gzipBytes": 221952,
+    "files": [
+      "assets/index-BVDeYnqo.js"
+    ]
+  },
+  "reworkBefore": {
+    "rawBytes": 681596,
+    "gzipBytes": 222697
+  },
+  "approvedInitialGzipBudget": 222697,
+  "deferredMotion": {
+    "rawBytes": 76126,
+    "gzipBytes": 30083,
+    "files": [
+      "assets/SiteMotion-ANXufeG5.js",
+      "assets/index-BigbF2aW.js"
+    ]
+  },
+  "startupIncludingDeferredMotion": {
+    "rawBytes": 682555,
+    "gzipBytes": 223471
+  }
+}
