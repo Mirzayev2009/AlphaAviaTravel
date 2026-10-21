@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Recreated from original photos and dictionaries by predev / prebuild.
+/public/data/optimized/
+/src/generated/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

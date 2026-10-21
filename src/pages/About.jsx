@@ -8,7 +8,7 @@ export default function About() {
   return <>
     <PageIntro title={t("about.title")} description={t("about.subtitle")}/>
     <section className="section pt-5"><div className="site-container about-story">
-      <TravelImage src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand"/>
+      <TravelImage src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand" sizes="(max-width: 768px) calc(100vw - 40px), 600px"/>
       <div className="about-story-copy"><p>{t("about.story")}</p><p>{t("about.mission")}</p></div>
     </div></section>
     <section className="section section--soft"><div className="site-container"><SectionHeading title={t("about.teamTitle")} description={t("about.teamSubtitle")}/>

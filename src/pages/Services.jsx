@@ -35,7 +35,7 @@ export default function Services() {
       <SheetContent className="detail-sheet">
         <SheetHeader className="sheet-header"><SheetTitle>{selected?.title}</SheetTitle><SheetDescription>{selected?.category || selected?.location?.city || t("services.title")}</SheetDescription></SheetHeader>
         <div className="sheet-body">{selected && <>
-          <TravelImage src={images[0]} alt={selected.title}/><p className="mt-6">{selected.description}</p>
+          <TravelImage src={images[0]} alt={selected.title} eager sizes="(max-width: 768px) 92vw, 720px"/><p className="mt-6">{selected.description}</p>
           {(selected.features || selected.facilities) && <><h3>{t("design.features")}</h3><ul>{(selected.features || selected.facilities).map((feature, index) => <li key={index}>{feature}</li>)}</ul></>}
           {images.length > 1 && <><h3>{t("gallery.title")}</h3><div className="sheet-photos">{images.map((src, index) => <button key={index} onClick={() => setPhoto(index)} aria-label={t("tourDetail.imageAlt", { number: index + 1 })}><TravelImage src={src} alt={selected.title}/></button>)}</div></>}
         </>}</div>

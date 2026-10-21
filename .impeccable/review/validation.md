@@ -27,3 +27,7 @@ The fresh Impeccable finish reviewer returned **recapture**, requiring a current
 ## Scope limits and existing release concerns
 
 Live contact delivery, live AI responses, and backend authorization were not tested. The existing contact code contains a privileged client credential requiring rotation and a server-side submission boundary before publication. This frontend redesign does not resolve that separate security issue. Visa requirements remain the original generic logic; no factual visa validation is claimed. Existing dependency audit findings and the bundle-size warning remain separate follow-up work.
+
+## Subsequent loading-performance pass
+
+After the user reported poor speed, responsive versions were prepared for all 216 local photos, catalog delivery was split by language with English fallback, interface dictionaries became on demand, and noncritical chat/drawer/map-style/notification code was deferred. The production startup script decreased from 913,405 to 721,722 bytes; see root `PERFORMANCE.md` and `performance-results.json` for measured before/after sizes. The new build, scoped lint, 1,162 cross-language tour resolutions, seven asynchronous language switches, failed-dictionary fallback, production image-presence checks, and six local HTTP delivery checks pass. No live browser timing or design approval is claimed.

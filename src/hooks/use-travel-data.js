@@ -3,18 +3,19 @@ import { useTranslation } from "react-i18next";
 
 export function useTravelData(file, rootKey) {
   const { i18n } = useTranslation();
+  const language = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
   const query = useQuery({
-    queryKey: ["travel", file],
+    queryKey: ["travel", file, language],
     queryFn: async ({ signal }) => {
-      const response = await fetch(`/data/${file}.json`, { signal });
+      const response = await fetch(`/data/optimized/${file}.${language}.json`, { signal });
       if (!response.ok) throw new Error("Unable to load travel information");
       return response.json();
     },
-    staleTime: 5 * 60 * 1000,
+    staleTime: Infinity,
+    refetchOnWindowFocus: false,
     retry: 1,
   });
   const data = query.data?.[rootKey] ?? query.data;
-  const language = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
   const localized = data?.[language] ?? data?.en ?? [];
   return { ...query, data, localized, language };
 }

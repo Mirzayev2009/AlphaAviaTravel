@@ -12,7 +12,7 @@ export default function DestinationDetailsDrawer({ destination, open, onClose })
     <SheetContent className="detail-sheet">
       <SheetHeader className="sheet-header"><SheetTitle>{destination.name}</SheetTitle><SheetDescription>{t("destinations.drawer.summary")}</SheetDescription></SheetHeader>
       <div className="sheet-body">
-        <TravelImage src={destination.heroImage} alt={destination.name}/>
+        <TravelImage src={destination.heroImage} alt={destination.name} eager sizes="(max-width: 768px) 92vw, 720px"/>
         <h3>{t("destinations.drawer.summary")}</h3><p>{clean(destination.summary)}</p>
         <h3>{t("destinations.card.bestTime")}</h3><p>{destination.bestTime}</p>
         <h3>{t("destinations.drawer.travelTips")}</h3><p>{clean(destination.travelTips)}</p>

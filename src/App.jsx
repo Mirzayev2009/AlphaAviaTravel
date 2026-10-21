@@ -1,9 +1,6 @@
 import { createElement, lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { LoadingCards } from "@/components/TravelUI";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
@@ -23,12 +20,12 @@ const client = new QueryClient();
 const page = (Component) => <Suspense fallback={<div className="site-container section"><LoadingCards/></div>}>{createElement(Component)}</Suspense>;
 
 export default function App() {
-  return <QueryClientProvider client={client}><TooltipProvider><Toaster/><Sonner/><BrowserRouter><Routes>
+  return <QueryClientProvider client={client}><BrowserRouter><Routes>
     <Route path="/" element={<Layout/>}>
       <Route index element={<Home/>}/><Route path="tours" element={page(Tours)}/><Route path="tours/:tourid" element={page(ToursDetail)}/>
       <Route path="destinations" element={page(Destinations)}/><Route path="services" element={page(Services)}/><Route path="gallery" element={page(Gallery)}/>
       <Route path="about" element={page(About)}/><Route path="contact" element={page(Contact)}/><Route path="chatbot" element={page(ChatBotPage)}/>
       <Route path="visa/questions" element={page(VisaQuestion)}/><Route path="visa/answer" element={page(VisaAnswer)}/><Route path="*" element={page(NotFound)}/>
     </Route>
-  </Routes></BrowserRouter></TooltipProvider></QueryClientProvider>;
+  </Routes></BrowserRouter></QueryClientProvider>;
 }

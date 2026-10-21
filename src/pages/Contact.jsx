@@ -1,4 +1,5 @@
 import { PageIntro } from "@/components/TravelUI";
+import { Toaster } from "@/components/ui/sonner";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Mail, Phone, MapPin, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
@@ -105,7 +106,7 @@ const Contact = () => {
     }
   };
 
-  return <>
+  return <><Toaster/>
     <PageIntro title={t("contact.title")} description={t("contact.subtitle")}/>
     <section className="section pt-4"><div className="site-container contact-layout">
       <div className="contact-form">

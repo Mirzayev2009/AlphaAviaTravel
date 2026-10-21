@@ -44,7 +44,7 @@ export default function SwiperHero() {
       <Swiper modules={[A11y, Autoplay, EffectFade, Keyboard]} effect="fade" fadeEffect={{ crossFade: true }} speed={reduceMotion ? 0 : 650} loop keyboard={{ enabled: true, onlyInViewport: true }}
         autoplay={reduceMotion ? false : { delay: 7500, disableOnInteraction: false, pauseOnMouseEnter: true }} onSwiper={(instance) => { slider.current = instance; }} onSlideChange={(instance) => setActive(instance.realIndex)}
         onFocusCapture={() => { slider.current?.autoplay?.stop(); setPaused(true); }}>
-        {slides.map((slide, index) => <SwiperSlide key={slide.image}><TravelImage className="hero-panorama" src={slide.image} alt={slide.alt} eager={index === 0}/></SwiperSlide>)}
+        {slides.map((slide, index) => <SwiperSlide key={slide.image}><TravelImage className="hero-panorama" src={slide.image} alt={slide.alt} eager={index === 0} sizes="(max-width: 580px) calc(100vw - 32px), (max-width: 1568px) calc(100vw - 48px), 1520px"/></SwiperSlide>)}
       </Swiper>
       <div className="hero-controls">
         <div className="slide-tabs" role="group" aria-label={t("design.chooseSlide")}>{slides.map((slide, index) => <button key={slide.image} aria-label={t("design.slide") + " " + (index + 1)} aria-pressed={index === active} onClick={() => slider.current?.slideToLoop(index)}/>)}</div>

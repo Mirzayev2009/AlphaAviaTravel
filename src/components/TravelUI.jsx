@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ArrowRight, ArrowUpRight, Map, Globe, ImageOff, RefreshCw } from "lucide-react";
 import { imageUrl } from "@/hooks/use-travel-data";
+import { responsiveImage } from "@/lib/responsive-images";
 
 export function PageIntro({ title, description, children, className = "" }) {
   return <section className={`page-intro ${className}`}><div className="site-container">
@@ -23,14 +24,15 @@ export function TextLink({ to, children, external = false, className = "" }) {
     : <Link to={to} className={`text-link ${className}`}>{content}</Link>;
 }
 
-export function TravelImage({ src, alt, className = "", eager = false, ...props }) {
+export function TravelImage({ src, alt, className = "", eager = false, sizes = "(max-width: 580px) calc(100vw - 40px), (max-width: 1024px) calc((100vw - 72px) / 2), 400px", ...props }) {
   const [failedSource, setFailedSource] = useState(null);
   const { t } = useTranslation();
   const resolved = imageUrl(src);
+  const image = responsiveImage(resolved);
   if (!resolved || failedSource === resolved) return <div className={`image-fallback ${className}`} role="img" aria-label={alt}>
     <ImageOff size={24} aria-hidden="true"/><span>{t("design.imageUnavailable")}</span>
   </div>;
-  return <img src={resolved} alt={alt} className={className} loading={eager ? "eager" : "lazy"}
+  return <img {...image} sizes={image.srcSet ? sizes : undefined} alt={alt} className={className} loading={eager ? "eager" : "lazy"}
     decoding="async" fetchPriority={eager ? "high" : undefined} onError={() => setFailedSource(resolved)} {...props}/>;
 }
 

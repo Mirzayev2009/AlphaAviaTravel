@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MessageCircle, X, Bot } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import ChatPanel from "./ChatPanel";
+const ChatPanel = lazy(() => import("./ChatPanel"));
 gsap.registerPlugin(useGSAP);
 
 export default function ChatBot() {
@@ -24,7 +24,7 @@ export default function ChatBot() {
   function close() { setOpen(false); launcher.current?.focus(); }
   return <div ref={root}>
     {open && <section className="floating-chat" role="dialog" aria-modal="false" aria-labelledby="floating-chat-title" id="floating-chat">
-      <div className="floating-chat-header"><Bot size={21}/><h2 id="floating-chat-title">{t("chatbot.title")}</h2><button className="icon-button" aria-label={t("chatbot.close")} onClick={close}><X size={18}/></button></div><ChatPanel focusInput/>
+      <div className="floating-chat-header"><Bot size={21}/><h2 id="floating-chat-title">{t("chatbot.title")}</h2><button className="icon-button" aria-label={t("chatbot.close")} onClick={close}><X size={18}/></button></div><Suspense fallback={<p className="p-6" role="status">{t("design.loading")}</p>}><ChatPanel focusInput/></Suspense>
     </section>}
     <button ref={launcher} className="chat-launcher" aria-label={t(open ? "chatbot.close" : "chatbot.open")} aria-expanded={open} aria-controls={open ? "floating-chat" : undefined} onClick={() => open ? close() : setOpen(true)}>{open ? <X size={22}/> : <MessageCircle size={23}/>}</button>
   </div>;

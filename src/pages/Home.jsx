@@ -1,4 +1,4 @@
-import { createElement, useState } from "react";
+import { createElement, lazy, Suspense, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
@@ -6,10 +6,11 @@ import { ArrowRight, Users, Award, Heart, Bot, Quote, ChevronLeft, ChevronRight,
 import SwiperHero from "@/components/SwiperHero";
 import TourCard from "@/components/TourCard";
 import DestinationCard from "@/components/DestinationCard";
-import DestinationDetailsDrawer from "@/components/DestinationDetailsDrawer";
 import LazyMap from "@/components/LazyMap";
 import { CategoryTabs, SectionHeading, LoadingCards, StateMessage, TextLink, TravelImage } from "@/components/TravelUI";
 import { useTravelData, categoryTours } from "@/hooks/use-travel-data";
+
+const DestinationDetailsDrawer = lazy(() => import("@/components/DestinationDetailsDrawer"));
 
 function Testimonials() {
   const { t } = useTranslation();
@@ -67,7 +68,7 @@ export default function Home() {
       <div className="assistant-preview"><Bot size={34} className="assistant-preview-icon" aria-hidden="true"/><p>{t("chatbot.greeting")}</p><div className="assistant-preview-features"><span>{t("home.travelAssistant.featureFast")}</span><span>{t("home.travelAssistant.featurePersonalized")}</span><span>{t("home.travelAssistant.featurePrivate")}</span></div></div>
     </div></div></section>
     <section className="section"><div className="site-container why-layout">
-      <TravelImage className="why-image" src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand"/>
+      <TravelImage className="why-image" src="/data/images/samarqand/registan_square.png" alt="Registan Square, Samarkand" sizes="(max-width: 768px) calc(100vw - 40px), 600px"/>
       <div className="why-content"><h2>{t("home.aboutTitle")}</h2><p>{t("home.aboutText")}</p>
         <div className="reason-list">{[[Users, "1"], [Award, "2"], [Heart, "3"]].map(([Icon, key]) => <div className="reason" key={key}>{createElement(Icon, { size: 22, "aria-hidden": true })}<div><h3>{t("home.aboutcard" + key + "Title")}</h3><p>{t("home.aboutcard" + key + "Text")}</p></div></div>)}</div>
         <TextLink to="/about">{t("home.aboutCta")}</TextLink>
@@ -84,6 +85,6 @@ export default function Home() {
       <div className="section-end"><TextLink to="/services">{t("home.exploreServices")}</TextLink></div>
     </div></section>
     <section className="section"><div className="site-container"><div className="contact-invitation"><h2>{t("home.ctaTitle")}</h2><p>{t("home.ctaDescription")}</p><Link className="button" to="/contact">{t("home.ctaButton")}<ArrowRight size={16}/></Link></div></div></section>
-    {destination && <DestinationDetailsDrawer destination={destination} open onClose={() => setDestination(null)}/>}
+    {destination && <Suspense fallback={null}><DestinationDetailsDrawer destination={destination} open onClose={() => setDestination(null)}/></Suspense>}
   </>;
 }

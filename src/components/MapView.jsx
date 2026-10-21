@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { useTranslation } from "react-i18next";
 import { ArrowUpRight } from "lucide-react";
 import L from "leaflet";
+import "leaflet/dist/leaflet.css";
 const officeIcon = new L.DivIcon({
   className: "office-marker",
   html: '<span aria-hidden="true"></span>',

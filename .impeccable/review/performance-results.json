@@ -1,0 +1,105 @@
+{
+  "measured": "Production file sizes, not a browser timing or Lighthouse score",
+  "before": {
+    "revision": "2c9af1a",
+    "startupJsBytes": 913405,
+    "startupJsGzipBytes": 298100,
+    "startupCssBytes": 116486
+  },
+  "after": {
+    "startupJsBytes": 721722,
+    "startupJsGzipBytes": 239563,
+    "startupCssBytes": 94721
+  },
+  "checks": {
+    "crossLanguageTourUrls": 1162,
+    "responsivePhotos": 216,
+    "interfaceLanguages": 7
+  },
+  "keyImages": [
+    {
+      "url": "/data/images/samarqand/registan_square.png",
+      "originalBytes": 41204930,
+      "variants": [
+        {
+          "src": "/data/optimized/images/60f2712596ff26c7-480.webp",
+          "width": 480,
+          "bytes": 23066
+        },
+        {
+          "src": "/data/optimized/images/60f2712596ff26c7-960.webp",
+          "width": 960,
+          "bytes": 81290
+        },
+        {
+          "src": "/data/optimized/images/60f2712596ff26c7-1600.webp",
+          "width": 1600,
+          "bytes": 202180
+        },
+        {
+          "src": "/data/optimized/images/60f2712596ff26c7-1920.webp",
+          "width": 1920,
+          "bytes": 271478
+        }
+      ]
+    },
+    {
+      "url": "/iStock-1249451586.jpg",
+      "originalBytes": 4593282,
+      "variants": [
+        {
+          "src": "/data/optimized/images/c8d0c1412da78e9b-480.webp",
+          "width": 480,
+          "bytes": 22992
+        },
+        {
+          "src": "/data/optimized/images/c8d0c1412da78e9b-960.webp",
+          "width": 960,
+          "bytes": 82116
+        },
+        {
+          "src": "/data/optimized/images/c8d0c1412da78e9b-1600.webp",
+          "width": 1600,
+          "bytes": 203656
+        },
+        {
+          "src": "/data/optimized/images/c8d0c1412da78e9b-1920.webp",
+          "width": 1920,
+          "bytes": 272106
+        }
+      ]
+    }
+  ],
+  "englishCatalog": [
+    {
+      "file": "tours",
+      "language": "en",
+      "originalBytes": 701265,
+      "optimizedBytes": 77806
+    },
+    {
+      "file": "destination",
+      "language": "en",
+      "originalBytes": 156117,
+      "optimizedBytes": 17576
+    },
+    {
+      "file": "hotel",
+      "language": "en",
+      "originalBytes": 77350,
+      "optimizedBytes": 7860
+    },
+    {
+      "file": "transport",
+      "language": "en",
+      "originalBytes": 46961,
+      "optimizedBytes": 4552
+    },
+    {
+      "file": "team",
+      "language": "en",
+      "originalBytes": 41244,
+      "optimizedBytes": 4704
+    }
+  ]
+}

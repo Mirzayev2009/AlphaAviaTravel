@@ -1,4 +1,14 @@
 {
+  "headers": [
+    {
+      "source": "/data/optimized/images/:path*",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/data/optimized/:file.json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=600" }]
+    }
+  ],
   "rewrites": [
     {
       "source": "/api/registrations",
