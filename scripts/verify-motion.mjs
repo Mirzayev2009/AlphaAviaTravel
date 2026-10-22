@@ -98,7 +98,7 @@ function visit(key) {
   for (const child of manifest[key]?.imports || []) visit(child);
 }
 visit(entry);
-assert(![...initial].some((key) => /ChatPanel|FloatingChat|MapView|SiteMotion/.test(key)), "Chat, map, and optional motion must stay outside the initial JavaScript graph");
+assert(![...initial].some((key) => /ChatPanel|FloatingChat|MapView|SiteMotion|JourneyLoaderMotion/.test(key)), "Chat, map, and optional page/loader motion must stay outside the initial JavaScript graph");
 const files = [...initial].map((key) => manifest[key].file).filter((file) => file.endsWith(".js"));
 const buffers = await Promise.all(files.map((file) => readFile("dist/" + file)));
 report.reworkBefore ||= { rawBytes: 681596, gzipBytes: 222697 };

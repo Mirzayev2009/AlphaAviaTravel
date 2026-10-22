@@ -2,13 +2,11 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './styles/travel.css'
-import { ready } from "./i18n";
-import App from './App.jsx'
+import AppStartup from './components/AppStartup'
 
-
-
-ready.then(() => createRoot(document.getElementById('root')).render(
+const root = createRoot(document.getElementById('root'))
+root.render(
   <StrictMode>
-    <App />
+    <AppStartup />
   </StrictMode>,
-))
+)

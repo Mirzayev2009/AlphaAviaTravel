@@ -5,9 +5,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ChatBot from "./ChatBot";
 import ScrollToTop from "./ScrollToTop";
-const SiteMotion = lazy(() => import("./SiteMotion"));
+import { loadSiteMotion } from "@/lib/site-motion-loader";
+const SiteMotion = lazy(loadSiteMotion);
 
-export default function Layout() {
+export default function Layout({ motionReady = true }) {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const root = useRef(null);
@@ -16,6 +17,6 @@ export default function Layout() {
     <a className="skip-link" href="#main-content">{t("design.skipToContent")}</a>
     <ScrollToTop/><Header overlay={pathname === "/"}/><main id="main-content" className="site-main" tabIndex={-1}><Outlet/></main><Footer/>
     {!isChatPage && <ChatBot/>}
-    <Suspense fallback={null}><SiteMotion root={root} page={pathname}/></Suspense>
+    <Suspense fallback={null}><SiteMotion root={root} page={pathname} enabled={motionReady}/></Suspense>
   </div>;
 }

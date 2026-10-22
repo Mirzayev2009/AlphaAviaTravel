@@ -390,12 +390,12 @@
       {
         "name": "body-arrival",
       "value": ".95s cards; .9s compositions/rails, sine.out; .14s maximum total stagger",
-      "purpose": "12px desktop / 8px phone travel; desktop stories move 12px horizontally. Prepare offscreen or fresh content before paint, leave already-visible content in place, and never replay the same node."
+      "purpose": "12px desktop / 8px phone travel; desktop stories move 12px horizontally. First activation/routes scan fresh; reduced-motion media re-entry settles visible content. A completed-node WeakSet plus effect-local active Set prevents replay without marking interrupted Strict Mode scenes complete. Context-bound preparation reverts asynchronous sets."
       },
       {
         "name": "hero-playback",
       "value": "1.2× entrance playback: ~.708s copy / .767s accent; .6s copy settle, sine.out; .4s photo crossfade",
-      "purpose": "Whole copy/actions travel together 16px. Authored .85s copy / .92s accent / .08s offset stay unchanged; effective accent offset is ~.067s. No nested rise, copy reset, word splitting, or photo zoom. Existing pause/visibility/reduced-motion controls."
+      "purpose": "Whole copy/actions travel together 16px. Authored .85s copy / .92s accent / .08s offset stay unchanged; effective accent offset is ~.067s. First activation waits until the document intro exits, preserving Home entrance. No nested rise, copy reset, word splitting, or photo zoom. Existing pause/visibility/reduced-motion controls."
       },
       {
         "name": "category-results",
@@ -405,7 +405,27 @@
       {
         "name": "header-arrival",
       "value": "1.2× entrance playback: ~.667s copy / .833s artwork / .933s contour draw, sine.out",
-      "purpose": "GSAP owns the 12px copy entrance, 24–28px amber artwork travel, and finite contour draw. Authored .8s / 1s / 1.12s values stay unchanged; .06s stagger / .08s path offset scale to .05s / ~.067s. Visible content is not rewound when the deferred controller attaches."
+      "purpose": "GSAP owns the 12px copy entrance, 24–28px amber artwork travel, and finite contour draw. Authored .8s / 1s / 1.12s values stay unchanged; .06s stagger / .08s path offset scale to .05s / ~.067s. First activation and route effects scan fresh; completed scenes do not replay."
+      },
+      {
+        "name": "home-reading-arrival",
+        "value": ".9s headings / quote fade / location copy, sine.out",
+        "purpose": "Quote bodies fade from .55 opacity, with distinct loading/body keys. Location copy travels 12px horizontally on desktop / 8px vertically on phones; map geometry stays static. Each scene enters once."
+      },
+      {
+        "name": "home-service-preview",
+        "value": ".7s rule / .85s copy from .06s; .055s sibling delay capped at .18s",
+        "purpose": "Each rule draws from .15 to 1 scale and its whole copy settles 12px desktop / 8px phone. Gentle sine.out timelines run once; the parent service grid stays still."
+      },
+      {
+        "name": "home-invitation",
+        "value": "1.05s route / .85s copy from .08s / .3s destination from .75s",
+        "purpose": "A 160×42 route drawing coordinates with whole-copy arrival and destination resolution, once per node. Header 1.2× playback and .95s cards remain independent."
+      },
+      {
+        "name": "journey-loader",
+        "value": "Fresh-document-only ~2s finite logo-ready intro; .25s GSAP exit / .35s fallback",
+        "purpose": "AppStartup outside the router centers the original public/alpha logo.jpg in amber framing. Required minimum starts at logo load/error with an .8s start deadline, superseding the earlier no-minimum/route-logo contract. Language, initial PageContent commit, and deferred SiteMotion prepare in parallel behind measurable inert/aria-hidden content; motion activates after exit. Static/reduced/import-failure fallbacks prevent animation blocking access. Internal routes use neutral LoadingCards with no logo/wait. Guarded React-only callbacks avoid outer-context cycles; cleanup removes motion/listeners. No invented percentage."
       }
     ],
     "breakpoints": [

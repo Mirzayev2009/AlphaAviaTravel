@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Journey loader — isolated design review</title></head><body><div id="root"></div><script type="module">
+import React from "react";
+import { createRoot } from "react-dom/client";
+import JourneyLoader from "/src/components/JourneyLoader.jsx";
+import "/src/index.css";
+import "/src/styles/travel.css";
+createRoot(document.getElementById("root")).render(React.createElement(JourneyLoader, { label: "Loading…", fullPage: true }));
+</script></body></html>

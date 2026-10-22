@@ -7,15 +7,15 @@
     ]
   },
   "after": {
-    "rawBytes": 608792,
-    "gzipBytes": 194131,
+    "rawBytes": 613886,
+    "gzipBytes": 195008,
     "files": [
-      "assets/index-D-Uaez0w.js"
+      "assets/index-CzIlYGvv.js"
     ]
   },
   "saved": {
-    "rawBytes": 113283,
-    "gzipBytes": 45093
+    "rawBytes": 108189,
+    "gzipBytes": 44216
   },
   "beforeLiveliness": {
     "rawBytes": 679137,
@@ -30,16 +30,16 @@
   },
   "approvedInitialGzipBudget": 222697,
   "deferredMotion": {
-    "rawBytes": 78173,
-    "gzipBytes": 30703,
+    "rawBytes": 79678,
+    "gzipBytes": 30998,
     "files": [
-      "assets/SiteMotion-BbB5R58a.js",
-      "assets/index-BEHSB_UR.js"
+      "assets/SiteMotion-igjJTFNS.js",
+      "assets/index-B_uoqhYI.js"
     ]
   },
   "startupIncludingDeferredMotion": {
-    "rawBytes": 686965,
-    "gzipBytes": 224834
+    "rawBytes": 693564,
+    "gzipBytes": 226006
   },
   "beforeAmberHeaders": {
     "initial": {
@@ -81,6 +81,48 @@
     "combined": {
       "rawBytes": 685837,
       "gzipBytes": 224487
+    }
+  },
+  "beforeHomeEnding": {
+    "initial": {
+      "rawBytes": 608792,
+      "gzipBytes": 194131,
+      "files": [
+        "assets/index-D-Uaez0w.js"
+      ]
+    },
+    "deferred": {
+      "rawBytes": 78173,
+      "gzipBytes": 30703,
+      "files": [
+        "assets/SiteMotion-BbB5R58a.js",
+        "assets/index-BEHSB_UR.js"
+      ]
+    },
+    "combined": {
+      "rawBytes": 686965,
+      "gzipBytes": 224834
+    }
+  },
+  "beforeStartupCorrection": {
+    "initial": {
+      "rawBytes": 611813,
+      "gzipBytes": 194476,
+      "files": [
+        "assets/index-DRlij0Z7.js"
+      ]
+    },
+    "deferred": {
+      "rawBytes": 79647,
+      "gzipBytes": 30978,
+      "files": [
+        "assets/SiteMotion-10JOhUqg.js",
+        "assets/index-D6mq1pjp.js"
+      ]
+    },
+    "combined": {
+      "rawBytes": 691460,
+      "gzipBytes": 225454
     }
   }
 }

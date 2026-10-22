@@ -1,0 +1,142 @@
+/* ─── Journey Loader ──────────────────────────────────────────── */
+.journey-loader {
+  display: grid;
+  min-height: 65vh;
+  min-height: 65svh;
+  width: 100%;
+  place-items: center;
+  padding: 48px 24px;
+  color: var(--ink, #1d1d1f);
+  background: var(--intro-surface, #fff8ee);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.journey-loader--full-page {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* ─── Composition ─────────────────────────────────────────────── */
+.journey-loader__composition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: min(100%, 340px);
+}
+
+/* ─── Emblem stage ────────────────────────────────────────────── */
+.journey-loader__emblem {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Ambient glow behind logo ────────────────────────────────── */
+.journey-loader__glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(255,138,0,.22) 0%, rgba(255,138,0,.06) 55%, transparent 75%);
+  will-change: opacity, transform;
+}
+
+/* ─── Orbital ring SVG ────────────────────────────────────────── */
+.journey-loader__ring-svg {
+  position: absolute;
+  inset: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  overflow: visible;
+}
+
+/* Outer dashed orbit */
+.journey-loader__orbit {
+  stroke: var(--brand-strong, #a74b00);
+  stroke-width: 1;
+  stroke-dasharray: 3 9;
+  fill: none;
+  opacity: 0.18;
+}
+
+/* Traveling arc trace */
+.journey-loader__arc {
+  stroke: var(--brand, #ff8a00);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  opacity: 0;
+  will-change: opacity;
+}
+
+/* ─── Particle dots ───────────────────────────────────────────── */
+.journey-loader__particle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--brand, #ff8a00);
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* ─── Logo ────────────────────────────────────────────────────── */
+.journey-loader__logo {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 112px;
+  height: 112px;
+  border-radius: 22px;
+  object-fit: contain;
+  box-shadow:
+    0 2px 6px rgba(167,75,0,.12),
+    0 12px 32px rgba(29,29,31,.14),
+    0 0 0 1px rgba(255,138,0,.08);
+  will-change: transform, opacity;
+}
+
+/* ─── Label ───────────────────────────────────────────────────── */
+.journey-loader__label {
+  margin-top: 36px;
+  color: var(--intro-ink, #705642);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  text-align: center;
+  will-change: opacity;
+}
+
+/* ─── Progress bar ────────────────────────────────────────────── */
+.journey-loader__progress {
+  position: relative;
+  margin-top: 20px;
+  width: 64px;
+  height: 2px;
+  border-radius: 2px;
+  background: rgba(167,75,0,.12);
+  overflow: hidden;
+}
+
+.journey-loader__progress-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 2px;
+  background: var(--brand, #ff8a00);
+  will-change: transform;
+  transform-origin: left center;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 480px), (max-height: 480px) {
+  .journey-loader__emblem { width: 180px; height: 180px; }
+  .journey-loader__logo   { width: 92px; height: 92px; }
+}
+@media (max-height: 480px) {
+  .journey-loader { padding-block: 24px; }
+}

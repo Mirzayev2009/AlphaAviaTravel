@@ -34,15 +34,15 @@ function Testimonials() {
   const entries = reviews.data || [];
   const review = entries[index % Math.max(entries.length, 1)];
   return <section className="section section--soft"><div className="site-container">
-    <SectionHeading title={t("home.testimonialsTitle")} description={t("home.testimonialsSubtitle")} centered/>
-    {reviews.isPending ? <div className="card-skeleton h-56 max-w-3xl mx-auto" role="status" aria-label={t("design.loading")}><span/><span/><span/></div>
-      : review ? <div className="testimonials">
+    <div data-motion="composition"><SectionHeading title={t("home.testimonialsTitle")} description={t("home.testimonialsSubtitle")} centered/></div>
+    {reviews.isPending ? <div key="reviews-loading" className="card-skeleton h-56 max-w-3xl mx-auto" role="status" aria-label={t("design.loading")}><span/><span/><span/></div>
+      : review ? <div key="reviews-body" className="testimonials" data-motion="quote">
         <div className="testimonial-stack">{entries.map((item, position) => <div key={item.id || position} className="testimonial-entry" data-active={item === review} aria-hidden={item !== review} inert={item !== review ? true : undefined} data-motion={item === review ? "review" : undefined} data-motion-state={item === review ? index : undefined}>
         <Quote className="testimonial-quote-icon" size={34} aria-hidden="true"/>
         <blockquote className="testimonial-text">{item.tourist_opinion}</blockquote>
         <p className="testimonial-author">{item.tourist_name}</p><p className="testimonial-country">{item.tourist_country}</p></div>)}</div>
         {entries.length > 1 && <div className="testimonial-controls"><button className="icon-button" aria-label={t("design.previous")} onClick={() => setIndex((index + entries.length - 1) % entries.length)}><ChevronLeft size={18}/></button><span aria-live="polite">{index % entries.length + 1} / {entries.length}</span><button className="icon-button" aria-label={t("design.next")} onClick={() => setIndex((index + 1) % entries.length)}><ChevronRight size={18}/></button></div>}
-      </div> : <div className="testimonials"><p className="text-muted-foreground leading-relaxed">{t("design.reviewsUnavailable")}</p><TextLink to="/contact">{t("header.nav.contact")}</TextLink></div>}
+      </div> : <div key="reviews-body" className="testimonials" data-motion="quote"><p className="text-muted-foreground leading-relaxed">{t("design.reviewsUnavailable")}</p><TextLink to="/contact">{t("header.nav.contact")}</TextLink></div>}
   </div></section>;
 }
 
@@ -77,15 +77,18 @@ export default function Home() {
     </div></section>
     <Testimonials/>
     <section className="section"><div className="site-container location-layout">
-      <div><h2>{t("home.locationTitle")}</h2><p>{t("home.locationSubtitle")}</p><div className="location-address">{t("contact.info.address")}</div><TextLink external to="https://yandex.com/maps/?pt=66.927456,39.676871&z=17&l=map">{t("home.getDirections")}</TextLink></div>
+      <div data-motion="location"><h2>{t("home.locationTitle")}</h2><p>{t("home.locationSubtitle")}</p><div className="location-address">{t("contact.info.address")}</div><TextLink external to="https://yandex.com/maps/?pt=66.927456,39.676871&z=17&l=map">{t("home.getDirections")}</TextLink></div>
       <LazyMap officeLat={39.676871} officeLng={66.927456}/>
     </div></section>
     <section className="section section--soft"><div className="site-container">
-      <SectionHeading title={t("home.servicesTitle")} description={t("home.servicesSubtitle")}/>
-      <div className="service-preview-grid" data-motion="composition">{[[Plane, "Tours"], [ShieldCheck, "Visa"], [Car, "Cars"], [Hotel, "Hotels"], [Headphones, "Support"]].map(([Icon, key]) => <div className="service-preview" key={key}>{createElement(Icon, { size: 25, "aria-hidden": true })}<h3>{t("home.service" + key)}</h3><p>{t("home.service" + key + "Desc")}</p></div>)}</div>
-      <div className="section-end"><TextLink to="/services">{t("home.exploreServices")}</TextLink></div>
+      <div data-motion="composition"><SectionHeading title={t("home.servicesTitle")} description={t("home.servicesSubtitle")}/></div>
+      <div className="service-preview-grid">{[[Plane, "Tours"], [ShieldCheck, "Visa"], [Car, "Cars"], [Hotel, "Hotels"], [Headphones, "Support"]].map(([Icon, key]) => <div className="service-preview" key={key} data-motion="service"><span className="service-preview-rule" data-motion-part="rule" aria-hidden="true"/><div className="service-preview-content" data-motion-part="copy">{createElement(Icon, { size: 25, "aria-hidden": true })}<h3>{t("home.service" + key)}</h3><p>{t("home.service" + key + "Desc")}</p></div></div>)}</div>
+      <div className="section-end" data-motion="feedback"><TextLink to="/services">{t("home.exploreServices")}</TextLink></div>
     </div></section>
-    <section className="section"><div className="site-container"><div className="contact-invitation" data-motion="composition"><h2>{t("home.ctaTitle")}</h2><p>{t("home.ctaDescription")}</p><Link className="button" to="/contact">{t("home.ctaButton")}<ArrowRight size={16}/></Link></div></div></section>
+    <section className="section"><div className="site-container"><div className="contact-invitation" data-motion="invitation">
+      <svg className="invitation-route" viewBox="0 0 160 42" fill="none" aria-hidden="true"><path d="M8 32C42 32 42 10 80 10S118 32 152 32" stroke="currentColor" strokeOpacity=".18" strokeWidth="1.5"/><path className="invitation-route-trace" data-motion-part="route" d="M8 32C42 32 42 10 80 10S118 32 152 32" pathLength="1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><circle cx="8" cy="32" r="3" fill="currentColor"/><circle className="invitation-route-destination" data-motion-part="destination" cx="152" cy="32" r="4" fill="currentColor"/></svg>
+      <div className="invitation-copy" data-motion-part="copy"><h2>{t("home.ctaTitle")}</h2><p>{t("home.ctaDescription")}</p><Link className="button" to="/contact">{t("home.ctaButton")}<ArrowRight size={16}/></Link></div>
+    </div></div></section>
     {destination && <Suspense fallback={null}><DestinationDetailsDrawer key={destination.id} destination={destination} open onClose={() => setDestination(null)}/></Suspense>}
   </>;
 }
