@@ -424,8 +424,8 @@
       },
       {
         "name": "journey-loader",
-        "value": "Fresh-document-only ~2s finite logo-ready intro; .25s GSAP exit / .35s fallback",
-        "purpose": "AppStartup outside the router centers the original public/alpha logo.jpg in amber framing. Required minimum starts at logo load/error with an .8s start deadline, superseding the earlier no-minimum/route-logo contract. Language, initial PageContent commit, and deferred SiteMotion prepare in parallel behind measurable inert/aria-hidden content; motion activates after exit. Static/reduced/import-failure fallbacks prevent animation blocking access. Internal routes use neutral LoadingCards with no logo/wait. Guarded React-only callbacks avoid outer-context cycles; cleanup removes motion/listeners. No invented percentage."
+        "value": "Fresh-document-only component clocks: 2s logo-ready intro / .25s exit; .8s start ceiling",
+        "purpose": "AppStartup outside the router centers the original public/alpha logo.jpg with visible label/amber orbit. JourneyLoader retains introStartedAt/exitStartedAt; optional GSAP has no callbacks, seeks late decoration/fade to elapsed time, never hides/resets branding, and uses finite children with one glow owner. Language, initial PageContent commit, and deferred SiteMotion prepare in parallel behind measurable inert/aria-hidden content; motion activates after exit. Static/reduced/import-failure paths keep component-clock completion. Internal routes use neutral LoadingCards with no logo/wait. Unchanged generated JSON is not rewritten. Cleanup removes motion/listeners. No invented percentage."
       }
     ],
     "breakpoints": [

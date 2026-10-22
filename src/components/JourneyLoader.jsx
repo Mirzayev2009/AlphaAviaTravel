@@ -35,9 +35,12 @@ export default function JourneyLoader({
   const scope = useRef(null);
   const callbacks = useRef({ onIntroComplete, onExitComplete });
   const completed = useRef({ intro: false, exit: false });
-  const [introStarted, setIntroStarted] = useState(false);
+  const [introStartedAt, setIntroStartedAt] = useState(null);
+  const [exitStartedAt, setExitStartedAt] = useState(null);
   const finiteIntro = typeof onIntroComplete === "function";
-  const startIntro = useCallback(() => setIntroStarted(true), []);
+  const startIntro = useCallback(() => {
+    setIntroStartedAt((previous) => previous ?? performance.now());
+  }, []);
 
   const logoRef = useCallback((node) => {
     if (node?.complete) startIntro();
@@ -60,23 +63,31 @@ export default function JourneyLoader({
   }, [onIntroComplete, onExitComplete]);
 
   useEffect(() => {
-    if (!finiteIntro || introStarted) return;
+    if (!finiteIntro || introStartedAt !== null) return;
     const deadline = window.setTimeout(startIntro, 800);
     return () => window.clearTimeout(deadline);
-  }, [finiteIntro, introStarted, startIntro]);
+  }, [finiteIntro, introStartedAt, startIntro]);
 
   useEffect(() => {
-    if (!finiteIntro || !introStarted) return;
-    const deadline = window.setTimeout(finishIntro, 2000);
+    if (!finiteIntro || introStartedAt === null) return;
+    // One document clock owns the intro, even if the motion chunk arrives late.
+    const remaining = Math.max(0, 2000 - (performance.now() - introStartedAt));
+    const deadline = window.setTimeout(finishIntro, remaining);
     return () => window.clearTimeout(deadline);
-  }, [finiteIntro, introStarted, finishIntro]);
+  }, [finiteIntro, introStartedAt, finishIntro]);
 
   useEffect(() => {
     if (!ready) return;
+    setExitStartedAt((previous) => previous ?? performance.now());
+  }, [ready]);
+
+  useEffect(() => {
+    if (exitStartedAt === null) return;
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const deadline = window.setTimeout(finishExit, reduced ? 0 : 350);
+    const remaining = reduced ? 0 : Math.max(0, 250 - (performance.now() - exitStartedAt));
+    const deadline = window.setTimeout(finishExit, remaining);
     return () => window.clearTimeout(deadline);
-  }, [ready, finishExit]);
+  }, [exitStartedAt, finishExit]);
 
   return (
     <div
@@ -167,10 +178,8 @@ export default function JourneyLoader({
         <JourneyLoaderMotion
           scope={scope}
           finiteIntro={finiteIntro}
-          introStarted={!finiteIntro || introStarted}
-          ready={ready}
-          onIntroComplete={finishIntro}
-          onExitComplete={finishExit}
+          introStartedAt={finiteIntro ? introStartedAt : 0}
+          exitStartedAt={exitStartedAt}
         />
       </Suspense>
     </div>

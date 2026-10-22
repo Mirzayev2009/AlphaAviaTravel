@@ -1,0 +1,324 @@
+{
+  "date": "2026-10-22",
+  "note": "DOM samples, not a frame-rate benchmark. All timings relative to each trace start; the 1500ms case begins after a screenshot.",
+  "development": {
+    "samples": 84,
+    "first": {
+      "wall": 0,
+      "arc": "opacity: 1; stroke-dasharray: 11.6455, 400;",
+      "heroPhase": null,
+      "heroRuns": null,
+      "logoOpacity": "1",
+      "logoStyle": null,
+      "overlay": 1,
+      "rootOpacity": "1"
+    },
+    "motionAttached": {
+      "wall": 0,
+      "arc": "opacity: 1; stroke-dasharray: 11.6455, 400;",
+      "heroPhase": null,
+      "heroRuns": null,
+      "logoOpacity": "1",
+      "logoStyle": null,
+      "overlay": 1,
+      "rootOpacity": "1"
+    },
+    "fadeSamples": [
+      {
+        "wall": 2041,
+        "rootOpacity": "0.9901"
+      },
+      {
+        "wall": 2264,
+        "rootOpacity": "0.8816"
+      },
+      {
+        "wall": 2299,
+        "rootOpacity": "0.7684"
+      },
+      {
+        "wall": 2340,
+        "rootOpacity": "0.463"
+      },
+      {
+        "wall": 2382,
+        "rootOpacity": "0.2877"
+      },
+      {
+        "wall": 2418,
+        "rootOpacity": "0.1274"
+      },
+      {
+        "wall": 2453,
+        "rootOpacity": "0.0026"
+      }
+    ],
+    "transitions": [
+      {
+        "wall": 0,
+        "arc": "opacity: 1; stroke-dasharray: 11.6455, 400;",
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      {
+        "wall": 2492,
+        "arc": null,
+        "heroPhase": "entering",
+        "heroRuns": "1",
+        "logoOpacity": null,
+        "logoStyle": null,
+        "overlay": 0,
+        "rootOpacity": null
+      },
+      {
+        "wall": 3357,
+        "arc": null,
+        "heroPhase": "entered",
+        "heroRuns": "1",
+        "logoOpacity": null,
+        "logoStyle": null,
+        "overlay": 0,
+        "rootOpacity": null
+      }
+    ],
+    "logoOpacity": [
+      "1"
+    ],
+    "logoStyles": [
+      null
+    ]
+  },
+  "productionDelays": {
+    "1500": {
+      "samples": 51,
+      "first": {
+        "wall": 0,
+        "arc": null,
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      "motionAttached": {
+        "wall": 313,
+        "arc": "opacity: 1; stroke-dasharray: 75.5268, 400;",
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      "fadeSamples": [
+        {
+          "wall": 1790,
+          "rootOpacity": "0.0865"
+        }
+      ],
+      "transitions": [
+        {
+          "wall": 0,
+          "arc": null,
+          "heroPhase": null,
+          "heroRuns": null,
+          "logoOpacity": "1",
+          "logoStyle": null,
+          "overlay": 1,
+          "rootOpacity": "1"
+        },
+        {
+          "wall": 2036,
+          "arc": null,
+          "heroPhase": "entering",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        },
+        {
+          "wall": 2884,
+          "arc": null,
+          "heroPhase": "entered",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        }
+      ],
+      "logoOpacity": [
+        "1"
+      ],
+      "logoStyles": [
+        null
+      ]
+    },
+    "2100": {
+      "samples": 35,
+      "first": {
+        "wall": 0,
+        "arc": null,
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      "motionAttached": {
+        "wall": 1847,
+        "arc": "opacity: 1; stroke-dasharray: 199.824, 400;",
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      "fadeSamples": [
+        {
+          "wall": 2066,
+          "rootOpacity": "0.9452"
+        },
+        {
+          "wall": 2216,
+          "rootOpacity": "0.5589"
+        },
+        {
+          "wall": 2282,
+          "rootOpacity": "0.0001"
+        }
+      ],
+      "transitions": [
+        {
+          "wall": 0,
+          "arc": null,
+          "heroPhase": null,
+          "heroRuns": null,
+          "logoOpacity": "1",
+          "logoStyle": null,
+          "overlay": 1,
+          "rootOpacity": "1"
+        },
+        {
+          "wall": 2409,
+          "arc": null,
+          "heroPhase": "entering",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        },
+        {
+          "wall": 3230,
+          "arc": null,
+          "heroPhase": "entered",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        }
+      ],
+      "logoOpacity": [
+        "1"
+      ],
+      "logoStyles": [
+        null
+      ]
+    },
+    "3000": {
+      "samples": 7,
+      "first": {
+        "wall": 0,
+        "arc": null,
+        "heroPhase": null,
+        "heroRuns": null,
+        "logoOpacity": "1",
+        "logoStyle": null,
+        "overlay": 1,
+        "rootOpacity": "1"
+      },
+      "fadeSamples": [],
+      "transitions": [
+        {
+          "wall": 0,
+          "arc": null,
+          "heroPhase": null,
+          "heroRuns": null,
+          "logoOpacity": "1",
+          "logoStyle": null,
+          "overlay": 1,
+          "rootOpacity": "1"
+        },
+        {
+          "wall": 2416,
+          "arc": null,
+          "heroPhase": "entering",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        },
+        {
+          "wall": 3411,
+          "arc": null,
+          "heroPhase": "entered",
+          "heroRuns": "1",
+          "logoOpacity": null,
+          "logoStyle": null,
+          "overlay": 0,
+          "rootOpacity": null
+        }
+      ],
+      "logoOpacity": [
+        "1"
+      ],
+      "logoStyles": [
+        null
+      ]
+    }
+  },
+  "internalTours": {
+    "heading": " Discover Your Next Adventure",
+    "logos": 0,
+    "overlay": 0
+  },
+  "internalHome": {
+    "samples": 3,
+    "first": {
+      "wall": 0,
+      "arc": null,
+      "heroPhase": "entered",
+      "heroRuns": "1",
+      "logoOpacity": null,
+      "logoStyle": null,
+      "overlay": 0,
+      "rootOpacity": null
+    },
+    "fadeSamples": [],
+    "transitions": [
+      {
+        "wall": 0,
+        "arc": null,
+        "heroPhase": "entered",
+        "heroRuns": "1",
+        "logoOpacity": null,
+        "logoStyle": null,
+        "overlay": 0,
+        "rootOpacity": null
+      }
+    ],
+    "logoOpacity": [],
+    "logoStyles": []
+  }
+}

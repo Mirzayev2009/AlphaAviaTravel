@@ -7,15 +7,15 @@
     ]
   },
   "after": {
-    "rawBytes": 613886,
-    "gzipBytes": 195008,
+    "rawBytes": 614540,
+    "gzipBytes": 195382,
     "files": [
-      "assets/index-CzIlYGvv.js"
+      "assets/index-BH_AVoTW.js"
     ]
   },
   "saved": {
-    "rawBytes": 108189,
-    "gzipBytes": 44216
+    "rawBytes": 107535,
+    "gzipBytes": 43842
   },
   "beforeLiveliness": {
     "rawBytes": 679137,
@@ -30,16 +30,16 @@
   },
   "approvedInitialGzipBudget": 222697,
   "deferredMotion": {
-    "rawBytes": 79678,
-    "gzipBytes": 30998,
+    "rawBytes": 79929,
+    "gzipBytes": 31144,
     "files": [
-      "assets/SiteMotion-igjJTFNS.js",
-      "assets/index-B_uoqhYI.js"
+      "assets/SiteMotion-CMw00tXX.js",
+      "assets/index-DppIExwC.js"
     ]
   },
   "startupIncludingDeferredMotion": {
-    "rawBytes": 693564,
-    "gzipBytes": 226006
+    "rawBytes": 694469,
+    "gzipBytes": 226526
   },
   "beforeAmberHeaders": {
     "initial": {
