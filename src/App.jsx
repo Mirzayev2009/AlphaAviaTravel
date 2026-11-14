@@ -1,6 +1,7 @@
 import { createElement, lazy, Suspense, useLayoutEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import { LoadingCards } from "@/components/TravelUI";
 import Layout from "@/components/Layout";
 import Home from "@/pages/Home";
@@ -33,5 +34,5 @@ export default function App({ motionReady = true, onPageReady }) {
       <Route path="about" element={page(About)}/><Route path="contact" element={page(Contact)}/><Route path="chatbot" element={page(ChatBotPage)}/>
       <Route path="visa/questions" element={page(VisaQuestion)}/><Route path="visa/answer" element={page(VisaAnswer)}/><Route path="*" element={page(NotFound)}/>
     </Route>
-  </Routes></BrowserRouter></QueryClientProvider>;
+  </Routes></BrowserRouter><Analytics /></QueryClientProvider>;
 }
