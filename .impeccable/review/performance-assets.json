@@ -22,6 +22,48 @@
       ]
     },
     {
+      "url": "/IMG_1934-0-0-0-0-1738740710.jpg",
+      "originalBytes": 301828,
+      "variants": [
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-480.webp",
+          "width": 480,
+          "bytes": 29638
+        },
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-960.webp",
+          "width": 960,
+          "bytes": 100608
+        },
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-1100.webp",
+          "width": 1100,
+          "bytes": 135466
+        }
+      ]
+    },
+    {
+      "url": "/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp",
+      "originalBytes": 469404,
+      "variants": [
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-480.webp",
+          "width": 480,
+          "bytes": 63178
+        },
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-960.webp",
+          "width": 960,
+          "bytes": 216836
+        },
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-1240.webp",
+          "width": 1240,
+          "bytes": 397784
+        }
+      ]
+    },
+    {
       "url": "/alpha logo.jpg",
       "originalBytes": 44264,
       "variants": [
@@ -80,6 +122,122 @@
       ]
     },
     {
+      "url": "/data/images/Tashkent/2118-entry-5-1574222061.jpg",
+      "originalBytes": 186068,
+      "variants": [
+        {
+          "src": "/data/optimized/images/2e383785cf6ee4fe-480.webp",
+          "width": 480,
+          "bytes": 37728
+        },
+        {
+          "src": "/data/optimized/images/2e383785cf6ee4fe-780.webp",
+          "width": 780,
+          "bytes": 74432
+        }
+      ]
+    },
+    {
+      "url": "/data/images/Tashkent/chorsu_bazaar.png",
+      "originalBytes": 1222386,
+      "variants": [
+        {
+          "src": "/data/optimized/images/ae702c668bb47fe9-480.webp",
+          "width": 480,
+          "bytes": 59080
+        },
+        {
+          "src": "/data/optimized/images/ae702c668bb47fe9-900.webp",
+          "width": 900,
+          "bytes": 184488
+        }
+      ]
+    },
+    {
+      "url": "/data/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg",
+      "originalBytes": 435544,
+      "variants": [
+        {
+          "src": "/data/optimized/images/b8fd327a564479c2-480.webp",
+          "width": 480,
+          "bytes": 32990
+        },
+        {
+          "src": "/data/optimized/images/b8fd327a564479c2-960.webp",
+          "width": 960,
+          "bytes": 125432
+        },
+        {
+          "src": "/data/optimized/images/b8fd327a564479c2-1100.webp",
+          "width": 1100,
+          "bytes": 168808
+        }
+      ]
+    },
+    {
+      "url": "/data/images/Tashkent/khast_imam.png",
+      "originalBytes": 697313,
+      "variants": [
+        {
+          "src": "/data/optimized/images/c389dc6b2909b160-480.webp",
+          "width": 480,
+          "bytes": 23112
+        },
+        {
+          "src": "/data/optimized/images/c389dc6b2909b160-960.webp",
+          "width": 960,
+          "bytes": 70052
+        },
+        {
+          "src": "/data/optimized/images/c389dc6b2909b160-1024.webp",
+          "width": 1024,
+          "bytes": 66004
+        }
+      ]
+    },
+    {
+      "url": "/data/images/Tashkent/tashkent-uzbekistan-april-20-2023-magic-city-amusement-park-on-evening-reflected-in-a-water-free-photo.jpg",
+      "originalBytes": 701020,
+      "variants": [
+        {
+          "src": "/data/optimized/images/8f7dcadc04a602a9-480.webp",
+          "width": 480,
+          "bytes": 24908
+        },
+        {
+          "src": "/data/optimized/images/8f7dcadc04a602a9-960.webp",
+          "width": 960,
+          "bytes": 81690
+        },
+        {
+          "src": "/data/optimized/images/8f7dcadc04a602a9-1600.webp",
+          "width": 1600,
+          "bytes": 206292
+        },
+        {
+          "src": "/data/optimized/images/8f7dcadc04a602a9-1920.webp",
+          "width": 1920,
+          "bytes": 289184
+        }
+      ]
+    },
+    {
+      "url": "/data/images/Tashkent/unnamed.jpg",
+      "originalBytes": 70604,
+      "variants": [
+        {
+          "src": "/data/optimized/images/12cf3b8ce9fe83b0-480.webp",
+          "width": 480,
+          "bytes": 35710
+        },
+        {
+          "src": "/data/optimized/images/12cf3b8ce9fe83b0-512.webp",
+          "width": 512,
+          "bytes": 42168
+        }
+      ]
+    },
+    {
       "url": "/data/images/alpha_azizbek.jpg",
       "originalBytes": 157531,
       "variants": [
@@ -96,22 +254,6 @@
       ]
     },
     {
-      "url": "/data/images/azizbek_alpha.jpg",
-      "originalBytes": 349072,
-      "variants": [
-        {
-          "src": "/data/optimized/images/269e508f34cc34e0-480.webp",
-          "width": 480,
-          "bytes": 71302
-        },
-        {
-          "src": "/data/optimized/images/269e508f34cc34e0-960.webp",
-          "width": 960,
-          "bytes": 286866
-        }
-      ]
-    },
-    {
       "url": "/data/images/aziz_alpha.jpg",
       "originalBytes": 135180,
       "variants": [
@@ -124,6 +266,22 @@
           "src": "/data/optimized/images/dc03ea4b4ebbda4a-720.webp",
           "width": 720,
           "bytes": 69846
+        }
+      ]
+    },
+    {
+      "url": "/data/images/azizbek_alpha.jpg",
+      "originalBytes": 349072,
+      "variants": [
+        {
+          "src": "/data/optimized/images/269e508f34cc34e0-480.webp",
+          "width": 480,
+          "bytes": 71302
+        },
+        {
+          "src": "/data/optimized/images/269e508f34cc34e0-960.webp",
+          "width": 960,
+          "bytes": 286866
         }
       ]
     },
@@ -285,6 +443,122 @@
       ]
     },
     {
+      "url": "/data/images/buxoro/Buxara-2 (1).jpg",
+      "originalBytes": 145843,
+      "variants": [
+        {
+          "src": "/data/optimized/images/9adba2de8b4dbdf4-480.webp",
+          "width": 480,
+          "bytes": 16486
+        },
+        {
+          "src": "/data/optimized/images/9adba2de8b4dbdf4-800.webp",
+          "width": 800,
+          "bytes": 48804
+        }
+      ]
+    },
+    {
+      "url": "/data/images/buxoro/Buxara-2.jpg",
+      "originalBytes": 145843,
+      "variants": [
+        {
+          "src": "/data/optimized/images/9adba2de8b4dbdf4-480.webp",
+          "width": 480,
+          "bytes": 16486
+        },
+        {
+          "src": "/data/optimized/images/9adba2de8b4dbdf4-800.webp",
+          "width": 800,
+          "bytes": 48804
+        }
+      ]
+    },
+    {
+      "url": "/data/images/buxoro/IMGP4417-0-0-0-0-1583740336 (1).jpg",
+      "originalBytes": 188010,
+      "variants": [
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-480.webp",
+          "width": 480,
+          "bytes": 16138
+        },
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-960.webp",
+          "width": 960,
+          "bytes": 58356
+        },
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-1100.webp",
+          "width": 1100,
+          "bytes": 78944
+        }
+      ]
+    },
+    {
+      "url": "/data/images/buxoro/IMGP4417-0-0-0-0-1583740336.jpg",
+      "originalBytes": 188010,
+      "variants": [
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-480.webp",
+          "width": 480,
+          "bytes": 16138
+        },
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-960.webp",
+          "width": 960,
+          "bytes": 58356
+        },
+        {
+          "src": "/data/optimized/images/ca7052d92eebcba7-1100.webp",
+          "width": 1100,
+          "bytes": 78944
+        }
+      ]
+    },
+    {
+      "url": "/data/images/buxoro/IMG_1934-0-0-0-0-1738740710.jpg",
+      "originalBytes": 301828,
+      "variants": [
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-480.webp",
+          "width": 480,
+          "bytes": 29638
+        },
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-960.webp",
+          "width": 960,
+          "bytes": 100608
+        },
+        {
+          "src": "/data/optimized/images/d02d65132a844d21-1100.webp",
+          "width": 1100,
+          "bytes": 135466
+        }
+      ]
+    },
+    {
+      "url": "/data/images/buxoro/Poi_Kalon_Ensemble,_Bukhara_(4933989373).jpg",
+      "originalBytes": 254174,
+      "variants": [
+        {
+          "src": "/data/optimized/images/d21837eed23c007f-480.webp",
+          "width": 480,
+          "bytes": 27064
+        },
+        {
+          "src": "/data/optimized/images/d21837eed23c007f-960.webp",
+          "width": 960,
+          "bytes": 105694
+        },
+        {
+          "src": "/data/optimized/images/d21837eed23c007f-1200.webp",
+          "width": 1200,
+          "bytes": 162722
+        }
+      ]
+    },
+    {
       "url": "/data/images/buxoro/a5140d96-e5c9-4b33-ab43-a9897a75bcf2-shutterstock_289139663.jpg",
       "originalBytes": 1723536,
       "variants": [
@@ -369,38 +643,6 @@
       ]
     },
     {
-      "url": "/data/images/buxoro/Buxara-2 (1).jpg",
-      "originalBytes": 145843,
-      "variants": [
-        {
-          "src": "/data/optimized/images/9adba2de8b4dbdf4-480.webp",
-          "width": 480,
-          "bytes": 16486
-        },
-        {
-          "src": "/data/optimized/images/9adba2de8b4dbdf4-800.webp",
-          "width": 800,
-          "bytes": 48804
-        }
-      ]
-    },
-    {
-      "url": "/data/images/buxoro/Buxara-2.jpg",
-      "originalBytes": 145843,
-      "variants": [
-        {
-          "src": "/data/optimized/images/9adba2de8b4dbdf4-480.webp",
-          "width": 480,
-          "bytes": 16486
-        },
-        {
-          "src": "/data/optimized/images/9adba2de8b4dbdf4-800.webp",
-          "width": 800,
-          "bytes": 48804
-        }
-      ]
-    },
-    {
       "url": "/data/images/buxoro/dobro-pozhalovat-v-bukharu-gorod-v-kotoryi-vliubliaeshsia-s-pervogo-shaga-1.jpeg",
       "originalBytes": 82022,
       "variants": [
@@ -413,69 +655,6 @@
           "src": "/data/optimized/images/18949847cbc0018a-630.webp",
           "width": 630,
           "bytes": 66872
-        }
-      ]
-    },
-    {
-      "url": "/data/images/buxoro/IMGP4417-0-0-0-0-1583740336 (1).jpg",
-      "originalBytes": 188010,
-      "variants": [
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-480.webp",
-          "width": 480,
-          "bytes": 16138
-        },
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-960.webp",
-          "width": 960,
-          "bytes": 58356
-        },
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-1100.webp",
-          "width": 1100,
-          "bytes": 78944
-        }
-      ]
-    },
-    {
-      "url": "/data/images/buxoro/IMGP4417-0-0-0-0-1583740336.jpg",
-      "originalBytes": 188010,
-      "variants": [
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-480.webp",
-          "width": 480,
-          "bytes": 16138
-        },
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-960.webp",
-          "width": 960,
-          "bytes": 58356
-        },
-        {
-          "src": "/data/optimized/images/ca7052d92eebcba7-1100.webp",
-          "width": 1100,
-          "bytes": 78944
-        }
-      ]
-    },
-    {
-      "url": "/data/images/buxoro/IMG_1934-0-0-0-0-1738740710.jpg",
-      "originalBytes": 301828,
-      "variants": [
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-480.webp",
-          "width": 480,
-          "bytes": 29638
-        },
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-960.webp",
-          "width": 960,
-          "bytes": 100608
-        },
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-1100.webp",
-          "width": 1100,
-          "bytes": 135466
         }
       ]
     },
@@ -497,27 +676,6 @@
           "src": "/data/optimized/images/eb67e47c573c90cd-1100.webp",
           "width": 1100,
           "bytes": 169450
-        }
-      ]
-    },
-    {
-      "url": "/data/images/buxoro/Poi_Kalon_Ensemble,_Bukhara_(4933989373).jpg",
-      "originalBytes": 254174,
-      "variants": [
-        {
-          "src": "/data/optimized/images/d21837eed23c007f-480.webp",
-          "width": 480,
-          "bytes": 27064
-        },
-        {
-          "src": "/data/optimized/images/d21837eed23c007f-960.webp",
-          "width": 960,
-          "bytes": 105694
-        },
-        {
-          "src": "/data/optimized/images/d21837eed23c007f-1200.webp",
-          "width": 1200,
-          "bytes": 162722
         }
       ]
     },
@@ -3216,6 +3374,48 @@
       ]
     },
     {
+      "url": "/data/images/samarqand/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp",
+      "originalBytes": 469404,
+      "variants": [
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-480.webp",
+          "width": 480,
+          "bytes": 63178
+        },
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-960.webp",
+          "width": 960,
+          "bytes": 216836
+        },
+        {
+          "src": "/data/optimized/images/1f67ee92c8dbfe95-1240.webp",
+          "width": 1240,
+          "bytes": 397784
+        }
+      ]
+    },
+    {
+      "url": "/data/images/samarqand/Silk-Road-Complex-9.jpg",
+      "originalBytes": 231797,
+      "variants": [
+        {
+          "src": "/data/optimized/images/d1c6a90b54524e83-480.webp",
+          "width": 480,
+          "bytes": 30910
+        },
+        {
+          "src": "/data/optimized/images/d1c6a90b54524e83-960.webp",
+          "width": 960,
+          "bytes": 126208
+        },
+        {
+          "src": "/data/optimized/images/d1c6a90b54524e83-1440.webp",
+          "width": 1440,
+          "bytes": 257496
+        }
+      ]
+    },
+    {
       "url": "/data/images/samarqand/b857bcb0-258e-42b0-9c7f-1a8e4f48e3fb-shutterstock_1949090296.jpg",
       "originalBytes": 123654,
       "variants": [
@@ -3280,27 +3480,6 @@
           "src": "/data/optimized/images/c8d0c1412da78e9b-1920.webp",
           "width": 1920,
           "bytes": 272106
-        }
-      ]
-    },
-    {
-      "url": "/data/images/samarqand/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp",
-      "originalBytes": 469404,
-      "variants": [
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-480.webp",
-          "width": 480,
-          "bytes": 63178
-        },
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-960.webp",
-          "width": 960,
-          "bytes": 216836
-        },
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-1240.webp",
-          "width": 1240,
-          "bytes": 397784
         }
       ]
     },
@@ -3511,27 +3690,6 @@
           "src": "/data/optimized/images/e765140b1ff1173f-1100.webp",
           "width": 1100,
           "bytes": 154514
-        }
-      ]
-    },
-    {
-      "url": "/data/images/samarqand/Silk-Road-Complex-9.jpg",
-      "originalBytes": 231797,
-      "variants": [
-        {
-          "src": "/data/optimized/images/d1c6a90b54524e83-480.webp",
-          "width": 480,
-          "bytes": 30910
-        },
-        {
-          "src": "/data/optimized/images/d1c6a90b54524e83-960.webp",
-          "width": 960,
-          "bytes": 126208
-        },
-        {
-          "src": "/data/optimized/images/d1c6a90b54524e83-1440.webp",
-          "width": 1440,
-          "bytes": 257496
         }
       ]
     },
@@ -3764,122 +3922,6 @@
           "src": "/data/optimized/images/0d98a78c5583725e-1024.webp",
           "width": 1024,
           "bytes": 130768
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/2118-entry-5-1574222061.jpg",
-      "originalBytes": 186068,
-      "variants": [
-        {
-          "src": "/data/optimized/images/2e383785cf6ee4fe-480.webp",
-          "width": 480,
-          "bytes": 37728
-        },
-        {
-          "src": "/data/optimized/images/2e383785cf6ee4fe-780.webp",
-          "width": 780,
-          "bytes": 74432
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/chorsu_bazaar.png",
-      "originalBytes": 1222386,
-      "variants": [
-        {
-          "src": "/data/optimized/images/ae702c668bb47fe9-480.webp",
-          "width": 480,
-          "bytes": 59080
-        },
-        {
-          "src": "/data/optimized/images/ae702c668bb47fe9-900.webp",
-          "width": 900,
-          "bytes": 184488
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/hastiimom -0-0-0-0-1737975962.jpg",
-      "originalBytes": 435544,
-      "variants": [
-        {
-          "src": "/data/optimized/images/b8fd327a564479c2-480.webp",
-          "width": 480,
-          "bytes": 32990
-        },
-        {
-          "src": "/data/optimized/images/b8fd327a564479c2-960.webp",
-          "width": 960,
-          "bytes": 125432
-        },
-        {
-          "src": "/data/optimized/images/b8fd327a564479c2-1100.webp",
-          "width": 1100,
-          "bytes": 168808
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/khast_imam.png",
-      "originalBytes": 697313,
-      "variants": [
-        {
-          "src": "/data/optimized/images/c389dc6b2909b160-480.webp",
-          "width": 480,
-          "bytes": 23112
-        },
-        {
-          "src": "/data/optimized/images/c389dc6b2909b160-960.webp",
-          "width": 960,
-          "bytes": 70052
-        },
-        {
-          "src": "/data/optimized/images/c389dc6b2909b160-1024.webp",
-          "width": 1024,
-          "bytes": 66004
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/tashkent-uzbekistan-april-20-2023-magic-city-amusement-park-on-evening-reflected-in-a-water-free-photo.jpg",
-      "originalBytes": 701020,
-      "variants": [
-        {
-          "src": "/data/optimized/images/8f7dcadc04a602a9-480.webp",
-          "width": 480,
-          "bytes": 24908
-        },
-        {
-          "src": "/data/optimized/images/8f7dcadc04a602a9-960.webp",
-          "width": 960,
-          "bytes": 81690
-        },
-        {
-          "src": "/data/optimized/images/8f7dcadc04a602a9-1600.webp",
-          "width": 1600,
-          "bytes": 206292
-        },
-        {
-          "src": "/data/optimized/images/8f7dcadc04a602a9-1920.webp",
-          "width": 1920,
-          "bytes": 289184
-        }
-      ]
-    },
-    {
-      "url": "/data/images/Tashkent/unnamed.jpg",
-      "originalBytes": 70604,
-      "variants": [
-        {
-          "src": "/data/optimized/images/12cf3b8ce9fe83b0-480.webp",
-          "width": 480,
-          "bytes": 35710
-        },
-        {
-          "src": "/data/optimized/images/12cf3b8ce9fe83b0-512.webp",
-          "width": 512,
-          "bytes": 42168
         }
       ]
     },
@@ -4248,27 +4290,6 @@
       ]
     },
     {
-      "url": "/IMG_1934-0-0-0-0-1738740710.jpg",
-      "originalBytes": 301828,
-      "variants": [
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-480.webp",
-          "width": 480,
-          "bytes": 29638
-        },
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-960.webp",
-          "width": 960,
-          "bytes": 100608
-        },
-        {
-          "src": "/data/optimized/images/d02d65132a844d21-1100.webp",
-          "width": 1100,
-          "bytes": 135466
-        }
-      ]
-    },
-    {
       "url": "/iStock-1249451586.jpg",
       "originalBytes": 4593282,
       "variants": [
@@ -4291,27 +4312,6 @@
           "src": "/data/optimized/images/c8d0c1412da78e9b-1920.webp",
           "width": 1920,
           "bytes": 272106
-        }
-      ]
-    },
-    {
-      "url": "/JEdlGQQRmulKXI53aOAAVzFgOUshxkSjFbyHg92K.webp",
-      "originalBytes": 469404,
-      "variants": [
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-480.webp",
-          "width": 480,
-          "bytes": 63178
-        },
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-960.webp",
-          "width": 960,
-          "bytes": 216836
-        },
-        {
-          "src": "/data/optimized/images/1f67ee92c8dbfe95-1240.webp",
-          "width": 1240,
-          "bytes": 397784
         }
       ]
     },
@@ -4378,169 +4378,169 @@
     {
       "file": "destination",
       "language": "en",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 17576
     },
     {
       "file": "destination",
       "language": "ru",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 51035
     },
     {
       "file": "destination",
       "language": "uz",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 37113
     },
     {
       "file": "destination",
       "language": "es",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 37519
     },
     {
       "file": "destination",
       "language": "fr",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 38374
     },
     {
       "file": "destination",
       "language": "it",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 37212
     },
     {
       "file": "destination",
       "language": "zh",
-      "originalBytes": 156117,
+      "originalBytes": 155351,
       "optimizedBytes": 34536
     },
     {
       "file": "hotel",
       "language": "en",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 7860
     },
     {
       "file": "hotel",
       "language": "ru",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 19006
     },
     {
       "file": "hotel",
       "language": "uz",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 16174
     },
     {
       "file": "hotel",
       "language": "es",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 16168
     },
     {
       "file": "hotel",
       "language": "fr",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 16380
     },
     {
       "file": "hotel",
       "language": "it",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 16030
     },
     {
       "file": "hotel",
       "language": "zh",
-      "originalBytes": 77350,
+      "originalBytes": 75550,
       "optimizedBytes": 15586
     },
     {
       "file": "transport",
       "language": "en",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 4552
     },
     {
       "file": "transport",
       "language": "ru",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 12467
     },
     {
       "file": "transport",
       "language": "uz",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 9529
     },
     {
       "file": "transport",
       "language": "es",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 9503
     },
     {
       "file": "transport",
       "language": "fr",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 9772
     },
     {
       "file": "transport",
       "language": "it",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 9373
     },
     {
       "file": "transport",
       "language": "zh",
-      "originalBytes": 46961,
+      "originalBytes": 46013,
       "optimizedBytes": 8853
     },
     {
       "file": "team",
       "language": "en",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 4704
     },
     {
       "file": "team",
       "language": "ru",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 13438
     },
     {
       "file": "team",
       "language": "uz",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 9693
     },
     {
       "file": "team",
       "language": "es",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 9843
     },
     {
       "file": "team",
       "language": "fr",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 10248
     },
     {
       "file": "team",
       "language": "it",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 9958
     },
     {
       "file": "team",
       "language": "zh",
-      "originalBytes": 41244,
+      "originalBytes": 40888,
       "optimizedBytes": 8647
     }
   ]
